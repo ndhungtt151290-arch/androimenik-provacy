@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { AdBanner } from "../components/AdBanner";
 import { Check, X, RotateCcw, BookOpen, ListOrdered } from "../components/Icons";
 import { CHAPTER_VI } from "../lib/chapters";
 import type { ExamItem, Lang, PersonalStats } from "../types";
@@ -68,11 +67,12 @@ export function ResultsScreen({
   };
 
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}
-      showsVerticalScrollIndicator={false}
-    >
+    <View style={styles.screenContainer}>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
+        showsVerticalScrollIndicator={false}
+      >
       {/* Score card */}
       <View style={styles.scoreCard}>
         <Text style={styles.scoreTitle}>{L.title}</Text>
@@ -169,12 +169,14 @@ export function ResultsScreen({
         <Text style={styles.homeBtnText}>{L.home}</Text>
       </TouchableOpacity>
 
-      <AdBanner />
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  screenContainer: { flex: 1, position: "relative" },
+  scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
   scoreCard: { backgroundColor: "rgba(255,255,255,0.15)", borderRadius: 16, padding: 20, alignItems: "center", marginBottom: 12, borderWidth: 1, borderColor: "rgba(0,0,0,0.1)" },
   scoreTitle: { fontSize: 14, color: "#525252", marginBottom: 8 },

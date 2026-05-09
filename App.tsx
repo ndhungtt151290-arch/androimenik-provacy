@@ -8,7 +8,7 @@ import {
   ActivityIndicator,
   Text,
 } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { LangSwitch } from "./src/components/LangSwitch";
 import { ConfirmDialog } from "./src/components/ConfirmDialog";
 import { HomeScreen } from "./src/screens/HomeScreen";
@@ -26,8 +26,10 @@ const EXAM_SECONDS = 30 * 60;
 const PASS_SCORE = 45;
 
 const practiceBg = require("./src/assets/bgs/Q9.png");
+const homeBg = require("./src/assets/bgs/bgh.jpg");
 
-export default function App() {
+function AppContent() {
+  const insets = useSafeAreaInsets();
   const [lang, setLang] = useState<Lang>("vi");
   const [view, setView] = useState<AppScreen>({ mode: "home" });
   const [examPaper, setExamPaper] = useState<ExamItem[]>([]);
@@ -222,23 +224,46 @@ export default function App() {
   };
 
   return (
-    <SafeAreaProvider>
-      <StatusBar
-        barStyle={isHome ? "dark-content" : "light-content"}
-        backgroundColor="transparent"
-        translucent
-      />
-      <View style={[styles.container, isHome && styles.containerHome]}>
+      <SafeAreaView style={[styles.container, isHome && styles.containerHome]} edges={["top", "bottom"]}>
+        <StatusBar
+          barStyle={isHome ? "dark-content" : "light-content"}
+          backgroundColor="transparent"
+          translucent
+        />
         {/* Background */}
-        {isExam ? (
-          <Image source={practiceBg} style={styles.bgImage} resizeMode="cover" />
-        ) : null}
+        {isHome ? (
+          <Image
+            source={homeBg}
+            style={{
+              position: "absolute",
+              top: -insets.top,
+              left: -insets.left,
+              right: -insets.right,
+              bottom: -insets.bottom,
+              width: Dimensions.get("window").width + insets.left + insets.right,
+              height: Dimensions.get("window").height + insets.top + insets.bottom,
+            }}
+            resizeMode="cover"
+          />
+        ) : (
+          <Image
+            source={practiceBg}
+            style={{
+              position: "absolute",
+              top: -insets.top,
+              left: -insets.left,
+              right: -insets.right,
+              bottom: -insets.bottom,
+              width: Dimensions.get("window").width + insets.left + insets.right,
+              height: Dimensions.get("window").height + insets.top + insets.bottom,
+            }}
+            resizeMode="cover"
+          />
+        )}
 
-        {/* Gradient overlay */}
-        <View style={styles.overlay} />
 
         {/* Language switch */}
-        <View style={styles.langSwitchContainer}>
+        <View style={[styles.langSwitchContainer, { top: insets.top + 8 }]}>
           <LangSwitch lang={lang} onToggle={toggleLang} />
         </View>
 
@@ -267,7 +292,7 @@ export default function App() {
         />
 
         {/* Main content */}
-        <View style={styles.content}>
+        <View style={[styles.content, { paddingTop: insets.top }]}>
           {view.mode === "home" && (
             <HomeScreen
               lang={lang}
@@ -349,41 +374,25 @@ export default function App() {
             />
           )}
         </View>
-      </View>
-    </SafeAreaProvider>
+      </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#78350f",
+    backgroundColor: "transparent",
   },
   containerHome: {
-    backgroundColor: "#fff",
-  },
-  bgImage: {
-    position: "absolute",
-    width: "100%",
-    height: "100%",
-  },
-  overlay: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: "rgba(120,53,15,0.15)",
+    backgroundColor: "transparent",
   },
   langSwitchContainer: {
     position: "absolute",
-    top: 50,
     right: 16,
     zIndex: 100,
   },
   content: {
     flex: 1,
-    paddingTop: 50,
     paddingHorizontal: 12,
   },
   loadingContainer: {
@@ -421,3 +430,11 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
 });
+
+export default function App() {
+  return (
+    <SafeAreaProvider>
+      <AppContent />
+    </SafeAreaProvider>
+  );
+}

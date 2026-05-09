@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
-import { AdBanner } from "../components/AdBanner";
 import type { Lang } from "../types";
 
 interface ExamPrepScreenProps {
@@ -54,11 +53,12 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
   };
 
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}
-      showsVerticalScrollIndicator={false}
-    >
+    <View style={styles.screenContainer}>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
+        showsVerticalScrollIndicator={false}
+      >
       <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
         <ArrowLeft size={14} />
         <Text style={styles.backText}>{L.back}</Text>
@@ -144,12 +144,14 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
         ))}
       </View>
 
-      <AdBanner />
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  screenContainer: { flex: 1, position: "relative" },
+  scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
   backBtn: {
     flexDirection: "row",

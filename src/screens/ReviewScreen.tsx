@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
-import { AdBanner } from "../components/AdBanner";
 import { ArrowLeft, Check, X } from "../components/Icons";
 import type { ExamItem, Lang } from "../types";
 
@@ -47,11 +46,12 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
   };
 
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}
-      showsVerticalScrollIndicator={false}
-    >
+    <View style={styles.screenContainer}>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
+        showsVerticalScrollIndicator={false}
+      >
       <TouchableOpacity onPress={onBackResults} style={styles.backBtn} activeOpacity={0.7}>
         <ArrowLeft size={14} />
         <Text style={styles.backText}>{L.back}</Text>
@@ -143,12 +143,14 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
         <Text style={styles.homeBtnText}>{L.home}</Text>
       </TouchableOpacity>
 
-      <AdBanner />
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  screenContainer: { flex: 1, position: "relative" },
+  scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
   backBtn: { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 12 },
   backText: { fontSize: 14, color: "#fde68a" },

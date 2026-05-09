@@ -8,12 +8,11 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
-import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
-import { NavigationButtons } from "../components/NavigationButtons";
+import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
 import { TimerDisplay } from "../components/TimerDisplay";
-import { AdBanner } from "../components/AdBanner";
-import { ArrowLeft, FlagIcon } from "../components/Icons";
+import { ArrowLeft, QuestionMark } from "../components/Icons";
+import { BackHomeButton } from "../components/BackHomeButton";
 import type { ExamItem, Lang, MaruBatsu, QuestionBank } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
@@ -75,32 +74,28 @@ export function ExamScreen({
   const isCurrentFlagged = flags.has(currentFlagId);
 
   const L = {
-    backHome: lang === "vi" ? "Về trang chủ" : "ホームに戻る",
     submit: lang === "vi" ? "Nộp bài" : "答案を提出",
     prev: lang === "vi" ? "Trước" : "前へ",
     next: lang === "vi" ? "Sau" : "次へ",
-    part1: lang === "vi" ? "Phần 1 · Lý thuyết ○×" : "第1部 · ○×問題",
-    part1Sub: lang === "vi" ? "1 điểm / câu" : "1点 / 問",
     part2: lang === "vi" ? "Phần 2 · Hình ảnh" : "第2部 · イラスト",
     part2Sub: lang === "vi" ? "Cả 3 ý đúng → 2 điểm" : "3問すべて正解 → 2点",
     part2Warning: lang === "vi"
       ? "Phải trả lời đúng TẤT CẢ 3 ý nhỏ mới được điểm."
       : "3題すべて正解で2点獲得。",
-    flag: lang === "vi" ? "Đánh dấu" : "ブックマーク",
-    unflag: lang === "vi" ? "Bỏ đánh dấu" : "ブックマーク解除",
+    flag: lang === "vi" ? "Phân vân" : "迷い",
+    unflag: lang === "vi" ? "Bỏ phân vân" : "迷いを解除",
   };
 
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}
-      showsVerticalScrollIndicator={false}
-    >
+    <View style={styles.screenContainer}>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
+        showsVerticalScrollIndicator={false}
+      >
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={onBack}>
-          <Text style={styles.backHome}>{L.backHome}</Text>
-        </TouchableOpacity>
+        <BackHomeButton onPress={onBack} lang={lang} />
 
         <View style={styles.progressContainer}>
           <View style={styles.progressBar}>
@@ -135,14 +130,7 @@ export function ExamScreen({
         {/* Card header */}
         <View style={styles.cardHeader}>
           <View style={styles.partInfo}>
-            {currentItem.type === "simple" ? (
-              <>
-                <Text style={styles.partLabel}>{L.part1}</Text>
-                <View style={styles.subBadge}>
-                  <Text style={styles.subBadgeText}>{L.part1Sub}</Text>
-                </View>
-              </>
-            ) : (
+            {currentItem.type !== "simple" && (
               <>
                 <Text style={styles.partLabelRose}>{L.part2}</Text>
                 <View style={[styles.subBadge, { backgroundColor: "#ffe4e6" }]}>
@@ -153,8 +141,8 @@ export function ExamScreen({
           </View>
 
           <TouchableOpacity onPress={onToggleFlag} style={[styles.flagBtn, isCurrentFlagged && styles.flagBtnActive]}>
-            <FlagIcon size={12} />
-            <Text style={styles.flagBtnText}>{isCurrentFlagged ? L.unflag : L.flag}</Text>
+            <QuestionMark size={12} />
+            <Text style={[styles.flagBtnText, isCurrentFlagged && styles.flagBtnTextActive]}>{isCurrentFlagged ? L.unflag : L.flag}</Text>
           </TouchableOpacity>
         </View>
 
@@ -193,19 +181,11 @@ export function ExamScreen({
                       【{sub.subKey}】{tx(sub.text, sub.textVi, lang)}
                     </Text>
                   </View>
-                  <View style={styles.subBtns}>
-                    <TouchableOpacity
-                      style={[styles.maruBtn, simpleAns[`${sub.partId}`] === "○" && styles.maruBtnSelected]}
-                      onPress={() => onAnswerScenario(currentItem.group.groupId, sub.partId, "○")}
-                    >
-                      <Text style={styles.maruBtnText}>○</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                      style={[styles.batsuBtn, simpleAns[`${sub.partId}`] === "×" && styles.batsuBtnSelected]}
-                      onPress={() => onAnswerScenario(currentItem.group.groupId, sub.partId, "×")}
-                    >
-                      <Text style={styles.batsuBtnText}>×</Text>
-                    </TouchableOpacity>
+                  <View style={styles.subBtnsWrap}>
+                    <MaruBatsuButtons
+                      value={scenarioAns[currentItem.group.groupId]?.[sub.partId]}
+                      onPick={(v) => onAnswerScenario(currentItem.group.groupId, sub.partId, v)}
+                    />
                   </View>
                 </View>
               ))}
@@ -214,31 +194,29 @@ export function ExamScreen({
         </ScrollView>
       </View>
 
-      {/* Answer buttons */}
+      {/* Answer + Navigation */}
       {currentItem.type === "simple" && (
-        <MaruBatsuButtons
-          value={simpleAns[currentItem.question.id]}
+        <AnswerNavButtons
+          answerValue={simpleAns[currentItem.question.id]}
           onPick={(v) => onAnswer("simple", currentItem.question.id, v)}
           size="large"
+          disabledPrev={examIndex === 0}
+          disabledNext={examIndex >= total - 1}
+          onPrev={() => onJump(Math.max(0, examIndex - 1))}
+          onNext={() => onJump(Math.min(total - 1, examIndex + 1))}
+          prevLabel={L.prev}
+          nextLabel={L.next}
         />
       )}
 
-      {/* Navigation */}
-      <NavigationButtons
-        disabledPrev={examIndex === 0}
-        disabledNext={examIndex >= total - 1}
-        onPrev={() => onJump(Math.max(0, examIndex - 1))}
-        onNext={() => onJump(Math.min(total - 1, examIndex + 1))}
-        prevLabel={L.prev}
-        nextLabel={L.next}
-      />
-
-      <AdBanner />
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  screenContainer: { flex: 1, position: "relative" },
+  scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
   header: {
     flexDirection: "row",
@@ -284,16 +262,17 @@ const styles = StyleSheet.create({
   flagBtn: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 4,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 8,
-    borderWidth: 1,
-    backgroundColor: "rgba(120,53,15,0.3)",
-    borderColor: "rgba(120,53,15,0.5)",
+    gap: 5,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 10,
+    borderWidth: 1.5,
+    backgroundColor: "rgba(120,53,15,0.4)",
+    borderColor: "rgba(120,53,15,0.6)",
   },
-  flagBtnActive: { backgroundColor: "#fbbf24", borderColor: "#d97706" },
-  flagBtnText: { fontSize: 11, fontWeight: "bold", color: "#111" },
+  flagBtnActive: { backgroundColor: "#f59e0b", borderColor: "#d97706" },
+  flagBtnText: { fontSize: 12, fontWeight: "600", color: "#fef3c7" },
+  flagBtnTextActive: { color: "#1c1917" },
   questionContent: { maxHeight: 220 },
   questionText: { fontSize: 14, lineHeight: 22, fontWeight: "500", color: "#111", textAlign: "center" },
   warningText: { fontSize: 12, color: "#be123c", fontWeight: "500", marginBottom: 6 },
@@ -301,13 +280,7 @@ const styles = StyleSheet.create({
   subItem: { borderTopWidth: 2, borderTopColor: "rgba(120,53,15,0.3)", paddingTop: 10, marginBottom: 12 },
   subRow: { flexDirection: "row", gap: 8, alignItems: "flex-start", marginBottom: 8 },
   subText: { flex: 1, fontSize: 12, color: "#111", lineHeight: 18 },
-  subBtns: { flexDirection: "row", gap: 8 },
-  maruBtn: { flex: 1, paddingVertical: 10, borderRadius: 10, backgroundColor: "#059669", borderWidth: 2, borderColor: "#78350f", alignItems: "center" },
-  maruBtnSelected: { backgroundColor: "#16a34a", borderColor: "#fde68a", borderWidth: 3 },
-  batsuBtn: { flex: 1, paddingVertical: 10, borderRadius: 10, backgroundColor: "#be123c", borderWidth: 2, borderColor: "#78350f", alignItems: "center" },
-  batsuBtnSelected: { backgroundColor: "#9f1239", borderColor: "#fde68a", borderWidth: 3 },
-  maruBtnText: { fontWeight: "bold", fontSize: 20, color: "#fff" },
-  batsuBtnText: { fontWeight: "bold", fontSize: 20, color: "#fff" },
+  subBtnsWrap: { marginTop: 8 },
   examImage: { width: "100%", height: 120, borderRadius: 8, marginBottom: 12 },
   examImageInner: { width: "100%", height: 120, borderRadius: 8 },
   subImage: { width: 80, height: 64, borderRadius: 6 },

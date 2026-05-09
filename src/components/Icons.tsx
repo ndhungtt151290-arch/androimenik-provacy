@@ -69,3 +69,7 @@ export const CircleAlert: React.FC<IconProps> = ({ size = 14 }) => (
 export const BookMarked: React.FC<IconProps> = ({ size = 14 }) => (
   <Text style={{ fontSize: size }}>📌</Text>
 );
+
+export const QuestionMark: React.FC<IconProps> = ({ size = 14 }) => (
+  <Text style={{ fontSize: size }}>❓</Text>
+);

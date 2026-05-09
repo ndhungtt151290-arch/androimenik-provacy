@@ -8,10 +8,9 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
-import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
-import { NavigationButtons } from "../components/NavigationButtons";
-import { AdBanner } from "../components/AdBanner";
-import { FlagIcon, ArrowLeft } from "../components/Icons";
+import { AnswerNavButtons } from "../components/AnswerNavButtons";
+import { QuestionMark } from "../components/Icons";
+import { BackHomeButton } from "../components/BackHomeButton";
 import { questionsForChapter } from "../lib/exam";
 import { CHAPTER_VI } from "../lib/chapters";
 import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup } from "../types";
@@ -57,10 +56,7 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   if (total === 0) {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={onBack} style={styles.backBtn}>
-          <ArrowLeft size={14} />
-          <Text style={styles.backText}>{lang === "vi" ? "Quay lại" : "戻る"}</Text>
-        </TouchableOpacity>
+        <BackHomeButton onPress={onBack} lang={lang} />
         <Text style={styles.emptyText}>
           {lang === "vi" ? "Chưa có dữ liệu cho chương này." : "この章のデータはまだありません。"}
         </Text>
@@ -74,8 +70,8 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
     hideAns: lang === "vi" ? "Ẩn đáp án" : "答えを隠す",
     showAns: lang === "vi" ? "Xem đáp án & giải thích" : "答えと解説を見る",
     correct: lang === "vi" ? "Đúng:" : "正解：",
-    flag: lang === "vi" ? "Đánh dấu" : "ブックマーク",
-    unflag: lang === "vi" ? "Bỏ đánh dấu" : "ブックマーク解除",
+    flag: lang === "vi" ? "Phân vân" : "迷い",
+    unflag: lang === "vi" ? "Bỏ phân vân" : "迷いを解除",
   };
 
   const currentId =
@@ -91,35 +87,33 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   };
 
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}
-      showsVerticalScrollIndicator={false}
-    >
-      <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
-        <ArrowLeft size={14} />
-        <Text style={styles.backText}>{lang === "vi" ? "Trang chủ" : "ホーム"}</Text>
-      </TouchableOpacity>
+    <View style={styles.screenContainer}>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
+        showsVerticalScrollIndicator={false}
+      >
+        <BackHomeButton onPress={onBack} lang={lang} />
 
-      <View style={styles.progressRow}>
-        <Text style={styles.progressBadge}>
-          {lang === "vi" ? `Câu ${idx + 1}/${total}` : `${idx + 1}/${total}問`}
-        </Text>
-        <Text style={styles.chapterName}>
-          {tx(CHAPTER_VI[chapterId] ?? chapterId, CHAPTER_VI[chapterId] ?? chapterId, lang)}
-        </Text>
-      </View>
+        <View style={styles.progressRow}>
+          <Text style={styles.progressBadge}>
+            {lang === "vi" ? `Câu ${idx + 1}/${total}` : `${idx + 1}/${total}問`}
+          </Text>
+          <Text style={styles.chapterName}>
+            {tx(CHAPTER_VI[chapterId] ?? chapterId, CHAPTER_VI[chapterId] ?? chapterId, lang)}
+          </Text>
+        </View>
 
-      <View style={styles.questionCard}>
-        {cur.kind === "s" && (
+        <View style={styles.questionCard}>
+          {cur.kind === "s" && (
           <View style={styles.questionInner}>
             <View style={styles.flagRow}>
               <TouchableOpacity
                 onPress={toggleDoubt}
                 style={[styles.flagBtn, doubtful.has(currentId) ? styles.flagBtnActive : styles.flagBtnInactive]}
               >
-                <FlagIcon size={12} />
-                <Text style={styles.flagBtnText}>
+                <QuestionMark size={12} />
+                <Text style={[styles.flagBtnText, doubtful.has(currentId) ? styles.flagBtnTextActive : undefined]}>
                   {doubtful.has(currentId) ? L.unflag : L.flag}
                 </Text>
               </TouchableOpacity>
@@ -156,9 +150,16 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
 
       {cur.kind === "s" && (
         <>
-          <MaruBatsuButtons
-            value={ans[cur.q.id]}
+          <AnswerNavButtons
+            answerValue={ans[cur.q.id]}
             onPick={(v) => setAns((a) => ({ ...a, [cur.q.id]: v }))}
+            size="large"
+            disabledPrev={idx === 0}
+            disabledNext={idx >= total - 1}
+            onPrev={() => setIdx(Math.max(0, idx - 1))}
+            onNext={() => setIdx(Math.min(total - 1, idx + 1))}
+            prevLabel={L.prev}
+            nextLabel={L.next}
           />
           {ans[cur.q.id] && (
             <View style={styles.ansSection}>
@@ -182,17 +183,8 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
         </>
       )}
 
-      <NavigationButtons
-        disabledPrev={idx === 0}
-        disabledNext={idx >= total - 1}
-        onPrev={() => setIdx(Math.max(0, idx - 1))}
-        onNext={() => setIdx(Math.min(total - 1, idx + 1))}
-        prevLabel={L.prev}
-        nextLabel={L.next}
-      />
-
-      <AdBanner />
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 
@@ -235,8 +227,8 @@ function ScenarioBlock({
             onPress={onToggleDoubt}
             style={[styles.flagBtn, isDoubtful ? styles.flagBtnActive : styles.flagBtnInactive]}
           >
-            <FlagIcon size={12} />
-            <Text style={styles.flagBtnText}>
+            <QuestionMark size={12} />
+            <Text style={[styles.flagBtnText, isDoubtful ? styles.flagBtnTextActive : undefined]}>
               {isDoubtful ? unflagLabel : flagLabel}
             </Text>
           </TouchableOpacity>
@@ -288,6 +280,8 @@ function ScenarioBlock({
 }
 
 const styles = StyleSheet.create({
+  screenContainer: { flex: 1, position: "relative" },
+  scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
   backBtn: { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 12 },
   backText: { fontSize: 14, color: "#fde68a" },
@@ -302,17 +296,18 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     borderWidth: 1,
     borderColor: "rgba(0,0,0,0.1)",
-    minHeight: 200,
+    minHeight: 280,
   },
   questionInner: { flex: 1 },
-  questionImage: { width: "100%", height: 100, borderRadius: 8, marginBottom: 8 },
-  questionImageInner: { width: "100%", height: 100, borderRadius: 8 },
+  questionImage: { width: "100%", height: 120, borderRadius: 8, marginBottom: 8 },
+  questionImageInner: { width: "100%", height: 120, borderRadius: 8 },
   questionText: { fontSize: 14, lineHeight: 22, fontWeight: "500", color: "#111", textAlign: "center", marginTop: 8 },
   flagRow: { flexDirection: "row", justifyContent: "flex-end", marginBottom: 8 },
-  flagBtn: { flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: 10, paddingVertical: 6, borderRadius: 8, borderWidth: 1 },
-  flagBtnActive: { backgroundColor: "#fbbf24", borderColor: "#d97706" },
-  flagBtnInactive: { backgroundColor: "rgba(120,53,15,0.3)", borderColor: "rgba(120,53,15,0.5)" },
-  flagBtnText: { fontSize: 12, fontWeight: "bold", color: "#111" },
+  flagBtn: { flexDirection: "row", alignItems: "center", gap: 5, paddingHorizontal: 10, paddingVertical: 6, borderRadius: 10, borderWidth: 1.5 },
+  flagBtnActive: { backgroundColor: "#f59e0b", borderColor: "#d97706" },
+  flagBtnInactive: { backgroundColor: "rgba(120,53,15,0.4)", borderColor: "rgba(120,53,15,0.6)" },
+  flagBtnText: { fontSize: 12, fontWeight: "600", color: "#fef3c7" },
+  flagBtnTextActive: { color: "#1c1917" },
   ansSection: { marginTop: 12 },
   ansToggle: { fontSize: 13, color: "#7f1d1d", textDecorationLine: "underline", textAlign: "center" },
   ansCard: { backgroundColor: "rgba(255,255,255,0.8)", borderRadius: 10, padding: 12, marginTop: 8, borderWidth: 1, borderColor: "rgba(120,53,15,0.3)" },
@@ -322,7 +317,7 @@ const styles = StyleSheet.create({
   warningText: { fontSize: 12, color: "#be123c", fontWeight: "500", marginBottom: 6 },
   stemText: { fontSize: 14, fontWeight: "600", color: "#111", marginBottom: 12 },
   subsList: { gap: 12 },
-  subItem: { borderTopWidth: 2, borderTopColor: "rgba(120,53,15,0.3)", paddingTop: 10 },
+  subItem: { borderTopWidth: 2, borderTopColor: "rgba(120,53,15,0.3)", paddingTop: 10, marginBottom: 12 },
   subRow: { flexDirection: "row", gap: 8, alignItems: "flex-start", marginBottom: 8 },
   subImage: { width: 80, height: 64, borderRadius: 6 },
   subImageInner: { width: 80, height: 64, borderRadius: 6 },

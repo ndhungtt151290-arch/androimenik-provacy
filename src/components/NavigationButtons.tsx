@@ -44,14 +44,14 @@ export function NavigationButtons({
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: "row", gap: 8 },
+  row: { flexDirection: "row", gap: 16 },
   btn: {
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
     gap: 4,
-    paddingVertical: 10,
+    paddingVertical: 7,
     borderRadius: 10,
     backgroundColor: "rgba(120,53,15,0.4)",
     borderWidth: 1,

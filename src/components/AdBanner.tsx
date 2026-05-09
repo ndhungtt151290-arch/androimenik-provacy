@@ -21,9 +21,6 @@ const styles = StyleSheet.create({
     marginTop: 16,
     paddingVertical: 8,
     alignItems: "center",
-    borderTopWidth: 2,
-    borderTopColor: "rgba(120,53,15,0.3)",
-    borderStyle: "dashed",
   },
   label: {
     fontSize: 10,

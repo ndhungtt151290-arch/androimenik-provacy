@@ -9,8 +9,7 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
-import { QuestionMark } from "../components/Icons";
-import { BackHomeButton } from "../components/BackHomeButton";
+import { QuestionMark, ArrowLeft } from "../components/Icons";
 import { questionsForChapter } from "../lib/exam";
 import { CHAPTER_VI } from "../lib/chapters";
 import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup } from "../types";
@@ -56,7 +55,10 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   if (total === 0) {
     return (
       <View style={styles.container}>
-        <BackHomeButton onPress={onBack} lang={lang} />
+        <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
+          <ArrowLeft size={14} />
+          <Text style={styles.backText}>{lang === "vi" ? "← Trang chủ" : "← ホーム"}</Text>
+        </TouchableOpacity>
         <Text style={styles.emptyText}>
           {lang === "vi" ? "Chưa có dữ liệu cho chương này." : "この章のデータはまだありません。"}
         </Text>
@@ -93,7 +95,10 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
         showsVerticalScrollIndicator={false}
       >
-        <BackHomeButton onPress={onBack} lang={lang} />
+        <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
+          <ArrowLeft size={14} />
+          <Text style={styles.backText}>{lang === "vi" ? "← Trang chủ" : "← ホーム"}</Text>
+        </TouchableOpacity>
 
         <View style={styles.progressRow}>
           <Text style={styles.progressBadge}>

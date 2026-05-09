@@ -44,20 +44,20 @@ export function NavigationButtons({
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: "row", gap: 16 },
+  row: { flexDirection: "row", gap: 8, width: 98 },
   btn: {
-    flex: 1,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
     gap: 4,
+    paddingHorizontal: 12,
     paddingVertical: 7,
     borderRadius: 10,
     backgroundColor: "rgba(120,53,15,0.4)",
     borderWidth: 1,
     borderColor: "rgba(120,53,15,0.6)",
   },
-  btnDisabled: { opacity: 0.3 },
+  btnDisabled: { opacity: 0.8 },
   label: {
     fontSize: 13,
     fontWeight: "bold",

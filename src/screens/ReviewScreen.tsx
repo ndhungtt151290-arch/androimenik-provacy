@@ -53,7 +53,6 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
         showsVerticalScrollIndicator={false}
       >
       <TouchableOpacity onPress={onBackResults} style={styles.backBtn} activeOpacity={0.7}>
-        <ArrowLeft size={14} />
         <Text style={styles.backText}>{L.back}</Text>
       </TouchableOpacity>
 
@@ -152,8 +151,21 @@ const styles = StyleSheet.create({
   screenContainer: { flex: 1, position: "relative" },
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
-  backBtn: { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 12 },
-  backText: { fontSize: 14, color: "#fde68a" },
+  backBtn: {
+    backgroundColor: "#059669",
+    borderWidth: 1,
+    borderColor: "#34d399",
+    borderRadius: 999,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    marginBottom: 12,
+    width: 94,
+    opacity: 0.6,
+  },
+  backText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   heading: { fontSize: 16, fontWeight: "bold", color: "#fde68a", marginBottom: 16 },
   list: { gap: 12 },
   itemCard: { borderRadius: 12, padding: 14, borderWidth: 1, borderLeftWidth: 4 },

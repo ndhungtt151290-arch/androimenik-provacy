@@ -16,9 +16,9 @@ function shuffle<T>(arr: T[], rng: () => number = Math.random): T[] {
 }
 
 export function buildMockExam(bank: QuestionBank): ExamItem[] {
-  const pool = [...bank.simpleForExam];
+  const pool = [...bank.simple];
   const picked = shuffle(pool).slice(0, 46);
-  const scenarios = shuffle([...bank.dangerScenarioGroups]).slice(0, 2);
+  const scenarios = shuffle([...bank.scenarioGroups, ...bank.dangerScenarioGroups]).slice(0, 2);
   const simpleItems: ExamItem[] = picked.map((question) => ({
     type: "simple",
     question,
@@ -93,11 +93,23 @@ export function questionsForChapter(
   bank: QuestionBank,
   chapterNames: string[]
 ): { simple: SimpleQuestion[]; scenarios: ScenarioGroup[] } {
-  const set = new Set(chapterNames);
-  const simple = bank.simple.filter((q) => set.has(q.chapter));
-  const scenarios = [
-    ...bank.scenarioGroups.filter((g) => set.has(g.chapter)),
-    ...bank.dangerScenarioGroups.filter((g) => set.has(g.chapter)),
-  ];
+  const simple: SimpleQuestion[] = [];
+  const scenarios: ScenarioGroup[] = [];
+
+  for (const name of chapterNames) {
+    if (/^総合演習[1-5]$/.test(name)) {
+      simple.push(...bank.simple.filter(
+        (q) => q.chapter === "総合演習" && q.section?.startsWith(name + "-")
+      ));
+    } else {
+      simple.push(...bank.simple.filter((q) => q.chapter === name));
+    }
+  }
+
+  scenarios.push(
+    ...bank.scenarioGroups.filter((g) => chapterNames.includes(g.chapter)),
+    ...bank.dangerScenarioGroups.filter((g) => chapterNames.includes(g.chapter))
+  );
+
   return { simple, scenarios };
 }

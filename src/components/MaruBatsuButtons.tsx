@@ -56,7 +56,7 @@ export function MaruBatsuButtons({
 const styles = StyleSheet.create({
   row: { flexDirection: "row", gap: 12, flexWrap: "wrap" },
   btn: {
-    flex: 1,
+    width: 94,
     paddingVertical: 10,
     borderRadius: 10,
     borderWidth: 2,
@@ -67,9 +67,10 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.15,
     shadowRadius: 3,
     elevation: 3,
+    opacity: 0.8,
   },
   btnLarge: {
-    flex: 1,
+    width: 94,
     paddingVertical: 16,
     borderRadius: 10,
     borderWidth: 2,
@@ -80,6 +81,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.15,
     shadowRadius: 3,
     elevation: 3,
+    opacity: 0.8,
   },
   maruUnselected: {
     backgroundColor: "#059669",

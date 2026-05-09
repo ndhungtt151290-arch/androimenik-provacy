@@ -5,11 +5,7 @@
     "道路の走行方法",
     "追い越し・駐停車",
     "危険な状況での運転",
-    "総合演習1",
-    "総合演習2",
-    "総合演習3",
-    "総合演習4",
-    "総合演習5",
+    "総合演習",
     "危険予測【イラスト問題】",
     "総合演習6【イラスト問題】"
   ],
@@ -2803,7 +2799,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_1_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-1",
       "text": "車にはたらく遠心力は、カーブの半径が大きいほど大きい。",
       "answer": "×",
@@ -2814,7 +2810,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_1_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-1",
       "text": "原動機付自転車の定員には、運転者を含む。",
       "answer": "○",
@@ -2825,7 +2821,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_1_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-1",
       "text": "下り坂を走行中に、ブレーキがきかなくなったときは、減速チェンジをしてエンジンブレーキを使い、車を停止させる努力をする。",
       "answer": "○",
@@ -2836,7 +2832,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_1_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-1",
       "text": "車両通行帯のない道路では、原則として原動機付自転車は中央寄りの部分を通行する。",
       "answer": "×",
@@ -2847,7 +2843,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_1_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-1",
       "text": "酒を少量飲んだが、車の運転はしなかった。",
       "answer": "○",
@@ -2858,7 +2854,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_2_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-2",
       "text": "路面電車を追い越す場合は、常にその左側を通行する。",
       "answer": "×",
@@ -2869,7 +2865,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_2_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-2",
       "text": "右腕を垂直に上に曲げる合図は、左折か左に進路変更するときの合図である。",
       "answer": "○",
@@ -2880,7 +2876,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_2_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-2",
       "text": "交通事故は、事故を起こした本人だけに影響をする。",
       "answer": "×",
@@ -2891,7 +2887,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_2_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-2",
       "text": "横断歩道や自転車横断帯の前後30メートルは、追い越し禁止である。",
       "answer": "×",
@@ -2902,7 +2898,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_2_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-2",
       "text": "消火栓の標識・指定消防水利の標識から5メートル以内の場所では、人の乗り降りのため停止してはならない。",
       "answer": "×",
@@ -2913,7 +2909,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_3_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-3",
       "text": "横断歩道に近付いたとき、横断している人が自車の存在に気付き止まったが、一時停止して横断させた。",
       "answer": "○",
@@ -2924,7 +2920,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_3_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-3",
       "text": "事故を起こした際の刑事責任は運転者が負うが、民事責任は保険会社が負う。",
       "answer": "×",
@@ -2935,7 +2931,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_3_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-3",
       "text": "車両横断禁止の標識がある場所でも、右折することはできる。",
       "answer": "○",
@@ -2946,7 +2942,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_3_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-3",
       "text": "眼鏡等使用の条件付き免許を受けた人は、車を運転する際にコンタクトレンズを使用してもよい。",
       "answer": "○",
@@ -2957,7 +2953,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_3_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-3",
       "text": "この標示は、駐車禁止の標示である。",
       "answer": "○",
@@ -2969,7 +2965,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_4_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-4",
       "text": "原動機付自転車でカーブを曲がるときは、あらかじめ加速し、カーブの後半で徐々に減速して抜けるようにする。",
       "answer": "×",
@@ -2980,7 +2976,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_4_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-4",
       "text": "雨天のときはスリップしやすいため、停止するにはブレーキを強くかけるようにする。",
       "answer": "×",
@@ -2991,7 +2987,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_4_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-4",
       "text": "ハンドルに故障を見つけたが、短い距離であったのでそのまま運転した。",
       "answer": "×",
@@ -3002,7 +2998,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_4_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-4",
       "text": "原動機付自転車は、バランスを崩しやすく、転倒するおそれがあるため十分に気を付ける。",
       "answer": "○",
@@ -3013,7 +3009,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_4_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-4",
       "text": "二輪車も内輪差があるので、特に左折の際は歩行者や自転車を巻きこまないように注意が必要である。",
       "answer": "○",
@@ -3024,7 +3020,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_5_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-5",
       "text": "夜間、駐車禁止でない場所に6時間駐車した。",
       "answer": "○",
@@ -3035,7 +3031,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_5_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-5",
       "text": "原動機付自転車を運転する際にかぶるヘルメットは、工事用のものでもかまわない。",
       "answer": "×",
@@ -3046,7 +3042,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_5_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-5",
       "text": "免許証を携帯することを忘れて原付を運転すると、免許不携帯になる。",
       "answer": "○",
@@ -3057,7 +3053,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_5_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-5",
       "text": "原動機付自転車で走行中に、エンジンの回転数が上がったままになっていたので、エンジンの点火スイッチを切り、エンジンの回転を止めた。",
       "answer": "○",
@@ -3068,7 +3064,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_5_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-5",
       "text": "普通免許を受けて1年未満の人は、初心運転者標識をつける義務がある。",
       "answer": "○",
@@ -3079,7 +3075,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_6_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-6",
       "text": "この標識のあるところでは、車は左折を禁じられている。",
       "answer": "×",
@@ -3091,7 +3087,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_6_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-6",
       "text": "踏切を通行する際の安全確認は、目で見てすればよく、耳で聴く必要はない。",
       "answer": "×",
@@ -3102,7 +3098,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_6_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-6",
       "text": "この標識のある交差点を通行する際は、原動機付自転車は直進することができない。",
       "answer": "×",
@@ -3114,7 +3110,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_6_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-6",
       "text": "前車が原動機付自転車を追い越そうとしていたとしても、前車を追い越してもよい。",
       "answer": "○",
@@ -3125,7 +3121,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_6_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-6",
       "text": "人を待つために継続的に停止していれば、それは駐車である。",
       "answer": "○",
@@ -3136,7 +3132,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_7_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-7",
       "text": "車が他の車を追い越すとき、前車の左側に十分な間隔があれば、左側から追い越しても構わない。",
       "answer": "×",
@@ -3147,7 +3143,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_7_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-7",
       "text": "原動機付自転車は、一番左の車両通行帯を進行せねばならないので、通行区分が指定された車両通行帯であっても、常に一番左の車両通行帯を進行する。",
       "answer": "×",
@@ -3158,7 +3154,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_7_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-7",
       "text": "進路変更するときは、合図をした後に安全を確認し、進路を変更する。",
       "answer": "×",
@@ -3169,7 +3165,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_7_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-7",
       "text": "交通整理が行われている片側3車線の交差点では、原動機付自転車は右折をすることができない。",
       "answer": "×",
@@ -3180,7 +3176,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_7_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-7",
       "text": "夜間の運転時には、できるだけ暗い色の服を避けて運転するのがよい。",
       "answer": "○",
@@ -3191,7 +3187,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_8_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-8",
       "text": "信号機において、黄色の矢印の灯火信号は、路面電車のみに対するものであり、車や歩行者は進むことができない。",
       "answer": "○",
@@ -3202,7 +3198,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_8_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-8",
       "text": "一方通行の道路では、道路の右側を通行できる。",
       "answer": "○",
@@ -3213,7 +3209,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_8_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-8",
       "text": "トンネル内では、車両通行帯の有無に関わらず、前の車を追い越してはならない。",
       "answer": "×",
@@ -3224,7 +3220,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_8_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-8",
       "text": "道路の曲がり角を通行するとき、見通しはよかったが、徐行した。",
       "answer": "○",
@@ -3235,7 +3231,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_8_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-8",
       "text": "ハイドロプレーニング現象は、雨天、高速で走行する際に起きやすい現象である。",
       "answer": "○",
@@ -3246,7 +3242,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_9_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-9",
       "text": "原動機付自転車で右折する際は、対向車のかげから直進車が出てくることがあるので注意が必要である。",
       "answer": "○",
@@ -3257,7 +3253,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_9_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-9",
       "text": "路面電車の運行時間外は、軌道敷内での駐停車は禁止ではない。",
       "answer": "×",
@@ -3268,7 +3264,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_9_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-9",
       "text": "運転者が運転席にいる場合には、長時間車を止めていても駐車にならない。",
       "answer": "×",
@@ -3279,7 +3275,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_9_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-9",
       "text": "信号機において、黄色の矢印の灯火信号は、路面電車のみに対するものである。",
       "answer": "○",
@@ -3290,7 +3286,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_9_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-9",
       "text": "徐行とは、その時の速度よりも落として運転することである。",
       "answer": "×",
@@ -3301,7 +3297,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_10_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-10",
       "text": "赤色の点滅信号のときは、車は必ず一時停止しなければならない。",
       "answer": "○",
@@ -3312,7 +3308,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_10_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-10",
       "text": "原動機付自転車の定員は、運転者用以外の座席のあるものは、2人である。",
       "answer": "×",
@@ -3323,7 +3319,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_10_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-10",
       "text": "原動機付自転車の運転の妨げとなるような荷物の積み方をしてはならない。",
       "answer": "○",
@@ -3334,7 +3330,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_10_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-10",
       "text": "正しい乗車姿勢で原動機付自転車に乗ることは、疲労を軽減する効果もある。",
       "answer": "○",
@@ -3345,7 +3341,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_10_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-10",
       "text": "原動機付自転車は、リヤカーを2台までけん引することができる。",
       "answer": "×",
@@ -3356,7 +3352,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_11_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-11",
       "text": "横断歩道のない交差点では、歩行者の横断よりも車の通行が優先される。",
       "answer": "×",
@@ -3367,7 +3363,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_11_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-11",
       "text": "通行している道路が優先道路のときは、左右の見通しがきかない交差点であれば、徐行せねばならない。",
       "answer": "×",
@@ -3378,7 +3374,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_11_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-11",
       "text": "歩行者専用道路は、許可を受けており、かつ法定速度を守れば車も通行可能である。",
       "answer": "×",
@@ -3389,7 +3385,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_11_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-11",
       "text": "原動機付自転車の荷台に、子どもを1人乗せて運転した。",
       "answer": "×",
@@ -3400,7 +3396,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_11_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-11",
       "text": "対向車のヘッドライトがまぶしかったが、目を慣らすためにも、見つめながら運転した。",
       "answer": "×",
@@ -3411,7 +3407,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_12_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-12",
       "text": "軽車両は、片側2車線の道路の交差点では、青信号であれば直進や左折、右折ができる。",
       "answer": "×",
@@ -3422,7 +3418,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_12_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-12",
       "text": "原動機付自転車で走行する際、同一方向に車両通行帯が3つ以上ある場合は、原則として交通量の少ない車両通行帯を走行する。",
       "answer": "×",
@@ -3433,7 +3429,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_12_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-12",
       "text": "この標識のあるところでは、車を道路の端に対して斜めに駐車せねばならない。",
       "answer": "○",
@@ -3445,7 +3441,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_12_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-12",
       "text": "交通事故を起こしてしまったので、車を安全な場所に停止させ、負傷者の救護や事故の続発防止措置をとった後、警察に通報した。",
       "answer": "○",
@@ -3456,7 +3452,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_12_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-12",
       "text": "車は、歩行者がいないときに限り安全地帯を通行できる。",
       "answer": "×",
@@ -3467,7 +3463,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_13_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-13",
       "text": "前照灯は夜間走行のためのものなので、昼間に点灯させることはない。",
       "answer": "×",
@@ -3478,7 +3474,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_13_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-13",
       "text": "交差点やその付近以外の道路を通行中、後方から緊急自動車が接近してきたときは、一方通行の道路であっても、必ず道路の左側に寄って進路を譲らねばならない。",
       "answer": "×",
@@ -3489,7 +3485,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_13_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-13",
       "text": "時速60キロメートルでコンクリートの壁に激突したときは、約100メートルの高さから落ちたときと同じ程度の力を受ける。",
       "answer": "×",
@@ -3500,7 +3496,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_13_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-13",
       "text": "追い越し禁止の場所では、自転車の追い越しも禁じられている。",
       "answer": "×",
@@ -3511,7 +3507,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_13_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-13",
       "text": "原動機付自転車は、歩行者が通行していない場合に限り、路側帯を通行できる。",
       "answer": "×",
@@ -3522,7 +3518,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_14_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-14",
       "text": "速度制限や積載制限は、交通公害を防ぐことには特に役立っていない。",
       "answer": "×",
@@ -3533,7 +3529,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_14_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-14",
       "text": "道路上では、原則として、同じ場所に昼間引き続いて12時間以上駐車してはならない。",
       "answer": "○",
@@ -3544,7 +3540,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_14_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-14",
       "text": "横断歩道のない場所に限り、車が優先であるので、横断する歩行者に道を譲る必要はない。",
       "answer": "×",
@@ -3555,7 +3551,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_14_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-14",
       "text": "踏切周辺で駐停車禁止となる場所は、踏切とその前後5メートル以内である。",
       "answer": "×",
@@ -3566,7 +3562,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_14_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-14",
       "text": "歩行者のそばを通るときは、必ず徐行をせねばならない。",
       "answer": "×",
@@ -3577,7 +3573,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_15_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-15",
       "text": "頭部に傷を受けた負傷者を救護する際は、意識を失わせないよう、揺らしたり、話しかけたりすることが大切である。",
       "answer": "×",
@@ -3588,7 +3584,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_15_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-15",
       "text": "黄色と白色の実線として、二本車両通行帯境界線が引かれている場合、どちらの車両通行帯も、進路を変更することはできない。",
       "answer": "×",
@@ -3599,7 +3595,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_15_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-15",
       "text": "踏切の向こう側が混雑しているときは、立ち往生を避けるため、進入してはならない。",
       "answer": "○",
@@ -3610,7 +3606,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_15_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-15",
       "text": "前方の信号機が青色であれば、道路が混雑していても、常に交差点に進入してかまわない。",
       "answer": "×",
@@ -3621,7 +3617,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_15_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-15",
       "text": "原動機付自転車は、自転車に含まれるので、運転するときにヘルメットをかぶる必要はない。",
       "answer": "×",
@@ -3632,7 +3628,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_16_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-16",
       "text": "運転免許を紛失した場合は、警察に届けを出した場合に限り、車を運転してもよい。",
       "answer": "×",
@@ -3643,7 +3639,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_16_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-16",
       "text": "この標識があったので、時速30キロメートルで走行していたが、時速25キロメートルに落として走行した。",
       "answer": "×",
@@ -3655,7 +3651,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_16_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-16",
       "text": "この標示は、駐停車禁止を表す。",
       "answer": "○",
@@ -3667,7 +3663,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_16_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-16",
       "text": "この標識は、学校、幼稚園、保育所などありを示す。",
       "answer": "○",
@@ -3679,7 +3675,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_16_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-16",
       "text": "横断歩道を通行するときは、必ず一時停止せねばならない。",
       "answer": "×",
@@ -3690,7 +3686,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_17_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-17",
       "text": "この標示がある交差点へは、普通自転車は進入することができる。",
       "answer": "×",
@@ -3702,7 +3698,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_17_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-17",
       "text": "原動機付自転車で走行するときは、ブレーキのみで速度を調整する。",
       "answer": "×",
@@ -3713,7 +3709,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_17_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-17",
       "text": "転回をするときの合図は、その行為をしようとするところから約30メートル手前で出す。",
       "answer": "○",
@@ -3724,7 +3720,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_17_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-17",
       "text": "右折の際、交差点に先に入っていれば、直進車や左折車よりも自車が優先される。",
       "answer": "×",
@@ -3735,7 +3731,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_17_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-17",
       "text": "長い下り坂では、ブレーキを頻繁に使わず、エンジンブレーキも活用する。",
       "answer": "○",
@@ -3746,7 +3742,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_18_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-18",
       "text": "道路の前方に障害物がある場合、対向車が来ていても、距離が十分あり対向車の速度が遅いときは、先に進んでよい。",
       "answer": "○",
@@ -3757,7 +3753,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_18_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-18",
       "text": "この標識は、自転車専用道もしくは自転車道を示す。",
       "answer": "○",
@@ -3769,7 +3765,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_18_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-18",
       "text": "交差点の端から10メートルの場所は、標識等で定められている場合を除き、駐車や停車をしてもよい。",
       "answer": "○",
@@ -3780,7 +3776,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_18_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-18",
       "text": "停止している車のそばを通るときは、突然ドアが開くかもしれないので、注意が必要である。",
       "answer": "○",
@@ -3791,7 +3787,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_18_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-18",
       "text": "遮断機が上がった直後の踏切を通過する際でも、必ず一時停止し、安全を確認して発進する。",
       "answer": "○",
@@ -3802,7 +3798,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_19_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-19",
       "text": "路線バスが発進の合図をしたとしても、後方の車は徐行して路線バスの側方を通過できる。",
       "answer": "×",
@@ -3813,7 +3809,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_19_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-19",
       "text": "この標示のある場所は、停止禁止部分であって、駐車は可能である。",
       "answer": "×",
@@ -3825,7 +3821,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_19_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-19",
       "text": "見通しのきかない交差点では、信号の有無にかかわらず徐行せねばならない。",
       "answer": "×",
@@ -3836,7 +3832,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_19_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-19",
       "text": "この標識は、安全地帯を示す。",
       "answer": "○",
@@ -3848,7 +3844,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_19_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-19",
       "text": "この標識のある場所では、危険を感じた場合、警音器を鳴らさなくてはならない。",
       "answer": "×",
@@ -3860,7 +3856,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_20_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-20",
       "text": "進路を変えず進行中の前の車の前方に出ることを、追い越しという。",
       "answer": "×",
@@ -3871,7 +3867,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_20_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-20",
       "text": "雨天で路面の状態が悪く制動距離が長くなるので、車間距離を通常よりも多めにとった。",
       "answer": "○",
@@ -3882,7 +3878,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_20_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-20",
       "text": "踏切を通行するときは、左端に寄って一気に通行する。",
       "answer": "×",
@@ -3893,7 +3889,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_20_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-20",
       "text": "交通事故を起こしてしまった場合は、車を安全な場所に停止させ、負傷者の救護や事故の続発防止措置をとり、警察官に報告する。",
       "answer": "○",
@@ -3904,7 +3900,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_20_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-20",
       "text": "この標示は、この先に横断歩道や自転車横断帯があることを示す。",
       "answer": "○",
@@ -3916,7 +3912,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_21_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-21",
       "text": "この標識のある道路での最高速度は、全ての車にとって時速40キロメートルである。",
       "answer": "×",
@@ -3928,7 +3924,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_21_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-21",
       "text": "転回の合図を行う時期は、転回の約3秒前である。",
       "answer": "×",
@@ -3939,7 +3935,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_21_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-21",
       "text": "地震警戒宣言が出されて、やむを得ず車を道路上に置いて避難するときは、道路の左側に寄せて車を停止し、エンジンを止め、ハンドルロックをせず、エンジンキーをつけたままにする。",
       "answer": "○",
@@ -3950,7 +3946,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_21_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-21",
       "text": "事故を起こした際の刑事・民事・行政上の責任は、全て運転者が負う。",
       "answer": "○",
@@ -3961,7 +3957,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_21_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-21",
       "text": "疲れているときはブレーキ操作が遅れるため、空走距離は長くなる。",
       "answer": "○",
@@ -3972,7 +3968,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_22_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-22",
       "text": "この標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
       "answer": "○",
@@ -3984,7 +3980,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_22_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-22",
       "text": "進路変更の際は、他車の迷惑にならないよう、合図をしたらなるべく早く進路を変更する。",
       "answer": "×",
@@ -3995,7 +3991,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_22_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-22",
       "text": "交通量の少ない道路では、合図をする必要はない。",
       "answer": "×",
@@ -4006,7 +4002,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_22_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-22",
       "text": "この標識は安全地帯を示し、車の通行は禁じられている。",
       "answer": "○",
@@ -4018,7 +4014,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_22_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-22",
       "text": "この標示があるところでは、普通自動車は、混雑している場合に限り、この車両通行帯を通行できる。",
       "answer": "×",
@@ -4030,7 +4026,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_23_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-23",
       "text": "交通事故の際は、直ちに負傷者を救護する。",
       "answer": "×",
@@ -4041,7 +4037,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_23_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-23",
       "text": "走行中に積み荷を落としてしまったので、その場で停止し、素早く積み荷を回収した。",
       "answer": "×",
@@ -4052,7 +4048,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_23_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-23",
       "text": "交差点で右左折する車は、必ず徐行せねばならない。",
       "answer": "○",
@@ -4063,7 +4059,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_23_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-23",
       "text": "前車を追い越すとき、対向車との正面衝突を回避するため、やむをえずできるだけ前車との側方距離を狭くして通行した。",
       "answer": "×",
@@ -4074,7 +4070,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_23_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-23",
       "text": "このマークは、聴覚に障害のある人が運転していることを示している。",
       "answer": "○",
@@ -4086,7 +4082,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_24_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-24",
       "text": "信号機において、黄色の矢印の灯火信号は、小型車両のみに対するものである。",
       "answer": "×",
@@ -4097,7 +4093,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_24_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-24",
       "text": "左折や左に進路を変更する際に、右腕を使って合図をすることはできない。",
       "answer": "×",
@@ -4108,7 +4104,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_24_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-24",
       "text": "原動機付自転車は、道路の流れを考え、常に最高速度ぎりぎりで走るのが、結果的には安全である。",
       "answer": "×",
@@ -4119,7 +4115,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_24_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-24",
       "text": "上り坂の頂上付近では、見通しが悪いので、車両通行帯の有無に関わらず、徐行せねばならない。",
       "answer": "○",
@@ -4130,7 +4126,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_24_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-24",
       "text": "危険防止のため、やむをえず軌道敷内を走行した。",
       "answer": "○",
@@ -4141,7 +4137,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_25_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-25",
       "text": "この標識があるところでは、駐車禁止場所であっても、標章車に限り駐車できる。",
       "answer": "○",
@@ -4153,7 +4149,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_25_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-25",
       "text": "前車がこちらへ突っ込んできたため、やむをえず警音器を鳴らした。",
       "answer": "○",
@@ -4164,7 +4160,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_25_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-25",
       "text": "本標識とは、規制標識・指示標識・警戒標識・補助標識の4つを指す。",
       "answer": "×",
@@ -4175,7 +4171,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_25_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-25",
       "text": "警笛鳴らせの標識がなかったとしても、見通しの悪い曲がり角を通行するときは、警音器を鳴らさねばならない。",
       "answer": "×",
@@ -4186,7 +4182,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_25_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-25",
       "text": "対向車と行き違うときや、他車の直後を通行するときは、前照灯を下向きに切り替える。",
       "answer": "○",
@@ -4197,7 +4193,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_26_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-26",
       "text": "右折の際は、たとえ交差点に先に入っていたとしても、直進車や左折車の通行を妨げてはならない。",
       "answer": "○",
@@ -4208,7 +4204,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_26_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-26",
       "text": "横断歩道を横断している人がいたが、車が近付いたところ立ち止ったので、そのまま進行した。",
       "answer": "×",
@@ -4219,7 +4215,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_26_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-26",
       "text": "原動機付自転車は普通自動車と異なり、エンストすることがない。",
       "answer": "×",
@@ -4230,7 +4226,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_26_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-26",
       "text": "車両通行帯が黄色の線で区画されている道路では、線を越えて進路を変えてはならないが、右左折のためであれば、線を越えて進路を変えてよい。",
       "answer": "×",
@@ -4241,7 +4237,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_26_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-26",
       "text": "乾いた舗装道路で、時速30キロメートルで走行中の原動機付自転車は、5メートル以上の車間距離をとることが必要である。",
       "answer": "×",
@@ -4252,7 +4248,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_27_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-27",
       "text": "踏切を通行するときは、対向車に注意しながら、できるだけ中央寄りを通行する。",
       "answer": "○",
@@ -4263,7 +4259,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_27_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-27",
       "text": "走行中に積み荷を落としてしまったので、車を安全な場所に停止し、後続車に注意して素早く積み荷を回収した。",
       "answer": "○",
@@ -4274,7 +4270,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_27_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-27",
       "text": "原動機付自転車は、小回りがきくとはいえ、道路が混雑していても、車と車の間をすり抜けてはならない。",
       "answer": "○",
@@ -4285,7 +4281,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_27_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-27",
       "text": "警察官が交差点内で灯火を頭上に上げている場合、どの方向の交通に対しても、全て信号の赤色の灯火と同じである。",
       "answer": "×",
@@ -4296,7 +4292,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_27_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-27",
       "text": "夜間、一般道路を運転するとき、前方がよく見えたが、ライトをつけた。",
       "answer": "○",
@@ -4307,7 +4303,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_28_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-28",
       "text": "原動機付自転車に積むことのできる荷物の量は、30キログラム以下である。",
       "answer": "○",
@@ -4318,7 +4314,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_28_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-28",
       "text": "走っている車を停止させようとする力を、慣性力と呼ぶ。",
       "answer": "×",
@@ -4329,7 +4325,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_28_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-28",
       "text": "待避所のある坂道で行き違う場合は、下りの車が待避所に入り、対向車に道を譲る。",
       "answer": "×",
@@ -4340,7 +4336,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_28_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-28",
       "text": "路線バス専用通行帯は、路線バス以外の車は通行してはならない。",
       "answer": "×",
@@ -4351,7 +4347,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_28_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-28",
       "text": "トンネル内では、車両通行帯の有無に関係なく、追い越しは禁じられている。",
       "answer": "×",
@@ -4362,7 +4358,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_29_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-29",
       "text": "急な進路変更は他車の迷惑になるため、30秒前から合図を始めるべきである。",
       "answer": "×",
@@ -4373,7 +4369,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_29_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-29",
       "text": "安全地帯がなく、乗降者がいないとき、停留所に停止中の路面電車との間に1.5メートル以上の間隔があったので、そのまま進んだ。",
       "answer": "×",
@@ -4384,7 +4380,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_29_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-29",
       "text": "見通しの悪い交差点において、一時停止し、注意をうながすため警音器を鳴らして進行した。",
       "answer": "×",
@@ -4395,7 +4391,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_29_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-29",
       "text": "横断中の歩行者が自車に気付いていなかったので、警音器を鳴らして注意した。",
       "answer": "×",
@@ -4406,7 +4402,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_29_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-29",
       "text": "道路の前方に障害物があり、対向車が来ている場合は、距離が十分あり対向車の速度が遅くとも、対向車を待ってから障害物を避けるべきである。",
       "answer": "×",
@@ -4417,7 +4413,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_30_1",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-30",
       "text": "交通整理の行われていない道幅が同じ交差点では、左から来た場合のみ、路面電車が優先される。",
       "answer": "×",
@@ -4428,7 +4424,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_30_2",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-30",
       "text": "制動距離は、速度が2倍になれば、4倍になる。",
       "answer": "○",
@@ -4439,7 +4435,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_30_3",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-30",
       "text": "前車が右折のために進路を右側に変えていたので、追い越しをしなかった。",
       "answer": "○",
@@ -4450,7 +4446,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_30_4",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-30",
       "text": "停止していた路線バスが発進の合図をしたので、速度を上げ、急いで側方を通過した。",
       "answer": "×",
@@ -4461,7 +4457,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_30_5",
-      "chapter": "総合演習1",
+      "chapter": "総合演習",
       "section": "総合演習1-30",
       "text": "免許は、第一種免許と第二種免許、仮免許の三つの区分が存在する。",
       "answer": "○",
@@ -4472,7 +4468,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_1_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-1",
       "text": "たとえ正面衝突のおそれがあったとしても、道路外に出てはならない。",
       "answer": "×",
@@ -4483,7 +4479,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_1_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-1",
       "text": "この標識は、最低速度が時速30キロメートルであることを示している。",
       "answer": "○",
@@ -4495,7 +4491,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_1_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-1",
       "text": "横断歩道に近付いたところ、横断歩道の直前に停止する車がいたが、横断する人が見えなかったので、徐行して進行した。",
       "answer": "×",
@@ -4506,7 +4502,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_1_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-1",
       "text": "前車を追い越す際、前車がそれに気付かず右に進路を変えようとしたため、危険を感じて警音器を鳴らした。",
       "answer": "○",
@@ -4517,7 +4513,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_1_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-1",
       "text": "見通しのよい踏切警手のいる踏切では、安全が確認できれば徐行して通過することができる。",
       "answer": "×",
@@ -4528,7 +4524,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_2_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-2",
       "text": "通行している道路が優先道路のときは、左右の見通しがきかない交差点であっても、徐行する必要はない。",
       "answer": "○",
@@ -4539,7 +4535,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_2_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-2",
       "text": "標識は、本標識と補助標識に分けられるが、本標識は更に規制・指示・警戒・案内標識に分けられる。",
       "answer": "○",
@@ -4550,7 +4546,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_2_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-2",
       "text": "交通整理の行われていない道幅が同じ交差点では、左右どちらから来たとしても、路面電車が優先される。",
       "answer": "○",
@@ -4561,7 +4557,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_2_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-2",
       "text": "小型特殊免許があれば、原動機付自転車を運転できる。",
       "answer": "×",
@@ -4572,7 +4568,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_2_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-2",
       "text": "道路を走行中、気分が良くなったので、警音器を使用しながら走行した。",
       "answer": "×",
@@ -4583,7 +4579,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_3_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-3",
       "text": "交通事故の現場に偶然居合わせたときは、事故車両の移動や、負傷者の救護に進んで協力する。",
       "answer": "○",
@@ -4594,7 +4590,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_3_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-3",
       "text": "この標示のある場所では、AからBへ進路を変えてもよい。",
       "answer": "○",
@@ -4606,7 +4602,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_3_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-3",
       "text": "一般道路での大型特殊自動車の最高速度は、時速50キロメートルである。",
       "answer": "×",
@@ -4617,7 +4613,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_3_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-3",
       "text": "この標示のあるところでは、転回は禁止されているが、後退は禁止されていない。",
       "answer": "○",
@@ -4629,7 +4625,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_3_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-3",
       "text": "進路変更や転回、後退に限り、他の通行車両がいなければ、合図をする必要はない。",
       "answer": "×",
@@ -4640,7 +4636,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_4_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-4",
       "text": "エンジンを止めて原動機付自転車を押して歩くときは、歩道や路側帯を通行できる。",
       "answer": "○",
@@ -4651,7 +4647,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_4_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-4",
       "text": "正面衝突のおそれが生じた場合、道路外が危険でなければ、やむをえず道路外に出てもかまわない。",
       "answer": "○",
@@ -4662,7 +4658,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_4_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-4",
       "text": "優先道路を通行する車のみ、交差点とその手前30メートル以内であっても追い越しをしてもよい。",
       "answer": "○",
@@ -4673,7 +4669,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_4_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-4",
       "text": "5分を超える人の乗り降りのための停止は、停車である。",
       "answer": "○",
@@ -4684,7 +4680,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_4_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-4",
       "text": "横断歩道に近付いたとき、横断している人が自車の存在に気付き止まったが、一時停止して歩行者に通行させた。",
       "answer": "○",
@@ -4695,7 +4691,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_5_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-5",
       "text": "この標識のある場所では、区間内では、常に警音器を鳴らさなくてはならない。",
       "answer": "×",
@@ -4707,7 +4703,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_5_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-5",
       "text": "追い越しをするときは、進行中の前の車にできるだけ接近した後、すばやく進路を変えるべきである。",
       "answer": "×",
@@ -4718,7 +4714,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_5_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-5",
       "text": "たとえ安全であっても、前の車が自動車を追い越そうとしているときは、それを追い越してはいけない。",
       "answer": "○",
@@ -4729,7 +4725,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_5_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-5",
       "text": "初心者マークをつけた車の追い抜きは、特に禁止されていない。",
       "answer": "○",
@@ -4740,7 +4736,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_5_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-5",
       "text": "免許証の再交付を受けたのち、紛失した免許証が見つかったが、そのまま自分で保管した。",
       "answer": "×",
@@ -4751,7 +4747,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_6_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-6",
       "text": "車は、歩行者がいないときに限り安全地帯を通行できる。",
       "answer": "×",
@@ -4762,7 +4758,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_6_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-6",
       "text": "この標識は、前方の交差する道路が優先道路であることを示す。",
       "answer": "×",
@@ -4774,7 +4770,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_6_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-6",
       "text": "疲れているときは、制動距離が長くなるので、運転には注意が必要である。",
       "answer": "×",
@@ -4785,7 +4781,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_6_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-6",
       "text": "停止中の通学バスのそばを通るときは、バスのかげから人が飛び出してくるおそれがあるため、徐行して進行する。",
       "answer": "○",
@@ -4796,7 +4792,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_6_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-6",
       "text": "夜間の通行は、遠くまで見通すことができないため、車の直前に視線を向けて運転すべきである。",
       "answer": "×",
@@ -4807,7 +4803,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_7_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-7",
       "text": "深い水たまりを通った直後は、ブレーキの効きが悪くなることがあるので、ブレーキの効きを確かめる必要がある。",
       "answer": "○",
@@ -4818,7 +4814,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_7_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-7",
       "text": "この標識は、右折禁止を示す。",
       "answer": "×",
@@ -4830,7 +4826,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_7_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-7",
       "text": "横断歩道のない場所に限り、車が優先であるので、横断する歩行者に道を譲る必要はない。",
       "answer": "×",
@@ -4841,7 +4837,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_7_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-7",
       "text": "二輪車の安定性向上のためにも、正しい乗車姿勢で乗ることが大切である。",
       "answer": "○",
@@ -4852,7 +4848,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_7_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-7",
       "text": "タイヤを点検する際は、空気圧を確認するだけでよい。",
       "answer": "×",
@@ -4863,7 +4859,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_8_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-8",
       "text": "この標識は、一方通行の始まりを示す。",
       "answer": "×",
@@ -4875,7 +4871,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_8_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-8",
       "text": "この標識がある交差点は、直進が禁止されている。",
       "answer": "○",
@@ -4887,7 +4883,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_8_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-8",
       "text": "進行方向別に通行区分が指定された車両通行帯を進行中、後方から緊急自動車が接近してきたが、車両通行帯を変えずに進行した。",
       "answer": "×",
@@ -4898,7 +4894,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_8_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-8",
       "text": "疲れて眠気を感じたので、すみやかに車を止め、休息を取った。",
       "answer": "○",
@@ -4909,7 +4905,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_8_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-8",
       "text": "疲れているときはブレーキ操作が遅れるため、空走距離は短くなる。",
       "answer": "×",
@@ -4920,7 +4916,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_9_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-9",
       "text": "前方の交差点が混雑しており、やむをえない場合に限り、横断歩道や自転車横断帯の上に停止してもよい。",
       "answer": "×",
@@ -4931,7 +4927,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_9_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-9",
       "text": "この中央線のあるところでも、追い越しのために道路の右側部分にはみ出して通行することができる。",
       "answer": "×",
@@ -4943,7 +4939,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_9_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-9",
       "text": "原動機付自転車でカーブを曲がる際は、車体をカーブの外側に傾けるようにする。",
       "answer": "×",
@@ -4954,7 +4950,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_9_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-9",
       "text": "同一方向に進行しながら進路を右に変えるときは、進路を変えようとする地点から30メートル手前の地点で合図をする。",
       "answer": "×",
@@ -4965,7 +4961,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_9_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-9",
       "text": "この標識がある交差点では、原動機付自転車は、二段階右折をせねばならない。",
       "answer": "○",
@@ -4977,7 +4973,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_10_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-10",
       "text": "歩道は軽車両以外の車は通行してはならない。",
       "answer": "×",
@@ -4988,7 +4984,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_10_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-10",
       "text": "一時停止の標識がある交差点でも、交差する道路の交通が無いときは、徐行して進行すればよい。",
       "answer": "×",
@@ -4999,7 +4995,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_10_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-10",
       "text": "駐車場や車庫などの出入り口から3メートル以内の場所では駐車が禁止されている。",
       "answer": "○",
@@ -5010,7 +5006,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_10_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-10",
       "text": "この標示は、前方に交差点があることを示す。",
       "answer": "×",
@@ -5022,7 +5018,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_10_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-10",
       "text": "交差点とその前後30メートル以内の場所では、前の車を追い越してはならない。",
       "answer": "×",
@@ -5033,7 +5029,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_11_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-11",
       "text": "この標示のある車両通行帯を直進することはできない。",
       "answer": "○",
@@ -5045,7 +5041,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_11_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-11",
       "text": "交差点の信号が青信号であったが、警察官が止まれの信号を出していたため、停止した。",
       "answer": "○",
@@ -5056,7 +5052,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_11_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-11",
       "text": "この中央線のあるところでは、AからBへははみ出して追い越しができるが、BからAへははみ出して追い越しができない。",
       "answer": "○",
@@ -5068,7 +5064,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_11_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-11",
       "text": "車両通行帯のない道路では、原動機付自転車は、道路の左に寄って通行する。",
       "answer": "○",
@@ -5079,7 +5075,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_11_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-11",
       "text": "車に乗る前は、車の前後や車の下に人がいないかを確かめる。",
       "answer": "○",
@@ -5090,7 +5086,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_12_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-12",
       "text": "この標識があるときは、原動機付自転車は二段階右折ではなく、自動車と同じ方法で右折する。",
       "answer": "○",
@@ -5102,7 +5098,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_12_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-12",
       "text": "二輪車でブレーキをかけるとき、ハンドルを切っておらず、車輪が傾いていない場合は、前後輪のブレーキを同時にかけるのがよい。",
       "answer": "○",
@@ -5113,7 +5109,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_12_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-12",
       "text": "歩道を横断するときは、歩行者がいるときに限り、一時停止して安全を確認せねばならない。",
       "answer": "×",
@@ -5124,7 +5120,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_12_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-12",
       "text": "正面の信号機の灯火が青色であれば、すぐに発進せねばならない。",
       "answer": "×",
@@ -5135,7 +5131,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_12_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-12",
       "text": "原動機付自転車のブレーキは、あそびがあってはならない。",
       "answer": "×",
@@ -5146,7 +5142,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_13_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-13",
       "text": "眠気を誘う薬を飲んだ時は、車の運転を避けるべきである。",
       "answer": "○",
@@ -5157,7 +5153,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_13_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-13",
       "text": "疲れて眠気を感じたので、速度を落として運転した。",
       "answer": "×",
@@ -5168,7 +5164,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_13_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-13",
       "text": "交差点とその端から5メートル以内の場所は、駐停車禁止である。",
       "answer": "○",
@@ -5179,7 +5175,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_13_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-13",
       "text": "前車が自動車を追い越そうとしているときは、追い越しを始めてはならない。",
       "answer": "○",
@@ -5190,7 +5186,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_13_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-13",
       "text": "エンジンから水やオイルが漏れていたが、気にせず運転した。",
       "answer": "×",
@@ -5201,7 +5197,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_14_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-14",
       "text": "車は、いかなる場合でも、軌道敷内を通行したり、横切ったりしてはならない。",
       "answer": "×",
@@ -5212,7 +5208,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_14_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-14",
       "text": "この標示のあるところでは、転回も後退も禁止されている。",
       "answer": "×",
@@ -5224,7 +5220,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_14_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-14",
       "text": "タクシーを運転する際は、常に第二種免許が必要である。",
       "answer": "×",
@@ -5235,7 +5231,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_14_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-14",
       "text": "すぐに運転できる状態であっても、運転者が短時間車から離れれば、駐車である。",
       "answer": "×",
@@ -5246,7 +5242,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_14_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-14",
       "text": "この標識は、この先が行き止まりであることを示している。",
       "answer": "×",
@@ -5258,7 +5254,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_15_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-15",
       "text": "横断歩道や自転車横断帯を歩行者や自転車が横断しようとしているときは、横断歩道や自転車横断帯の手前や停止線で一時停止し、歩行者や自転車に道を譲らねばならない。",
       "answer": "○",
@@ -5269,7 +5265,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_15_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-15",
       "text": "原動機付自転車を運転する際は、ハンドルをあまり強く握りすぎないようにする。",
       "answer": "○",
@@ -5280,7 +5276,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_15_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-15",
       "text": "この標識のある道路は、二輪自動車の通行止めなので、原動機付自転車は通行できる。",
       "answer": "×",
@@ -5292,7 +5288,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_15_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-15",
       "text": "走行中の携帯電話の使用は厳格に禁止されており、少し手にしただけで罰せられる。",
       "answer": "○",
@@ -5303,7 +5299,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_15_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-15",
       "text": "前車を追い越し、十分に間隔をとった後、安全確認をして追い越した車の前に入った。",
       "answer": "○",
@@ -5314,7 +5310,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_16_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-16",
       "text": "前車が自動車を追い越そうとしているときであっても、追い越しを始めてよい。",
       "answer": "×",
@@ -5325,7 +5321,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_16_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-16",
       "text": "霧の中の運転で危険だったので、見通しをよくするため前照灯を上向きにした。",
       "answer": "×",
@@ -5336,7 +5332,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_16_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-16",
       "text": "路面が濡れている場合、停止距離が長くなるので注意が必要である。",
       "answer": "○",
@@ -5347,7 +5343,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_16_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-16",
       "text": "同じ道幅の交差点で路面電車が進行しているときは、右方・左方にかかわらず、路面電車の進行を妨げない。",
       "answer": "○",
@@ -5358,7 +5354,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_16_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-16",
       "text": "二輪車でぬかるみを走行するときは、その手前で速度を上げて、一気に通り抜ける。",
       "answer": "×",
@@ -5369,7 +5365,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_17_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-17",
       "text": "どんな事情があろうとも、更新期間外には、免許証の更新手続きをすることができない。",
       "answer": "×",
@@ -5380,7 +5376,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_17_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-17",
       "text": "消防用防火水そうの取り入れ口から5メートル以内の場所は、駐車をしてはならないが、停車は構わない。",
       "answer": "○",
@@ -5391,7 +5387,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_17_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-17",
       "text": "この標識のある場所では、原則として停車してはならない。",
       "answer": "×",
@@ -5403,7 +5399,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_17_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-17",
       "text": "雪道を走行するときは、できるだけほかの車の通った跡を走行する。",
       "answer": "○",
@@ -5414,7 +5410,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_17_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-17",
       "text": "原動機付自転車の最高速度は、時速30キロメートルである。",
       "answer": "○",
@@ -5425,7 +5421,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_18_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-18",
       "text": "舗装道路では、雨の降り終わりが最も滑りやすい。",
       "answer": "×",
@@ -5436,7 +5432,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_18_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-18",
       "text": "この標示のある車両通行帯から右折することはできない。",
       "answer": "○",
@@ -5448,7 +5444,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_18_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-18",
       "text": "こう配の急な下り坂は、追い越し禁止であり、かつ徐行せねばならない。",
       "answer": "○",
@@ -5459,7 +5455,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_18_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-18",
       "text": "追い越し禁止の場所では、原動機付自転車の追い越しも禁じられている。",
       "answer": "○",
@@ -5470,7 +5466,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_18_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-18",
       "text": "坂道で行き違いができないときは、下りの車が加速がついていて危ないので、上りの車が道を譲る。",
       "answer": "×",
@@ -5481,7 +5477,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_19_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-19",
       "text": "0.75メートルを超える路側帯のある道路では、この図のような方法で駐車できる。",
       "answer": "○",
@@ -5493,7 +5489,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_19_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-19",
       "text": "たとえ危険防止のためのやむを得ない場合であっても、閑静な住宅地で警音器を使用してはならない。",
       "answer": "×",
@@ -5504,7 +5500,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_19_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-19",
       "text": "夜間の運転時に、街灯等で十分明るいときは、前照灯のみつけなくてもよい。",
       "answer": "×",
@@ -5515,7 +5511,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_19_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-19",
       "text": "原動機付自転車でカーブ中には、できるだけブレーキをかけるのがよい。",
       "answer": "×",
@@ -5526,7 +5522,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_19_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-19",
       "text": "この中央線のある場合は、AからBへはみ出して追い越しをすることはできないが、BからAへはみ出して追い越しをすることはできる。",
       "answer": "○",
@@ -5538,7 +5534,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_20_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-20",
       "text": "夜間、前照灯をつけて走行しているとき、対向車がきたからといって急に前照灯を下向きにするのは、かえって危険である。",
       "answer": "×",
@@ -5549,7 +5545,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_20_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-20",
       "text": "霧が濃かったので、危険防止のために警音器を使った。",
       "answer": "○",
@@ -5560,7 +5556,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_20_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-20",
       "text": "大地震が発生し、やむを得ず原動機付自転車を道路上に置いて避難する際は、道路外の場所に移動し、エンジンを切り、鍵をつけておく。",
       "answer": "○",
@@ -5571,7 +5567,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_20_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-20",
       "text": "マフラーの損傷に気付いたが、すぐに修理せずそのまま運転を続けた。",
       "answer": "×",
@@ -5582,7 +5578,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_20_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-20",
       "text": "交通事故で頭部に強い衝撃を受けたときは、念のために医師の診断を受けるべきである。",
       "answer": "○",
@@ -5593,7 +5589,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_21_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-21",
       "text": "遮断機が上がった直後の踏切は、急に列車が来ることはないので、安全確認をせずに通過した。",
       "answer": "×",
@@ -5604,7 +5600,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_21_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-21",
       "text": "後続車が追い越そうとするとき、相手が追い越しをするための十分な余地がなくとも、進路を譲る必要はない。",
       "answer": "×",
@@ -5615,7 +5611,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_21_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-21",
       "text": "上り坂の頂上付近では、追い越しをしてはならない。",
       "answer": "○",
@@ -5626,7 +5622,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_21_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-21",
       "text": "この交差点では、Ａ車はＢ車の進行を妨げてはならない。",
       "answer": "×",
@@ -5638,7 +5634,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_21_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-21",
       "text": "この標示があるときは、対向車に注意しながら、右側に沿って通行することができる。",
       "answer": "○",
@@ -5650,7 +5646,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_22_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-22",
       "text": "夜間の運転時に、交差点で対面する信号が、黄色の灯火の点滅であったため、一時停止した。",
       "answer": "×",
@@ -5661,7 +5657,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_22_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-22",
       "text": "交差点やその付近以外の道路を通行中、後方から緊急自動車が接近してきたときは、一方通行の道路では、左側もしくは右側に寄って進路を譲る。",
       "answer": "○",
@@ -5672,7 +5668,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_22_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-22",
       "text": "一方通行の道路であっても、安全であれば追い越しをしてもよい。",
       "answer": "○",
@@ -5683,7 +5679,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_22_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-22",
       "text": "エンジンオイルの量はエンジンを切った状態で点検する。",
       "answer": "○",
@@ -5694,7 +5690,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_22_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-22",
       "text": "深い水たまりを走行すると、ブレーキドラムに水が入り、ブレーキの効きが悪くなることがある。",
       "answer": "○",
@@ -5705,7 +5701,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_23_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-23",
       "text": "この標識は、標識に表示されている数字を超える幅の車の通行禁止を示している。",
       "answer": "○",
@@ -5717,7 +5713,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_23_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-23",
       "text": "この標識がある道路では、横風に注意し、ハンドルをとられないようにしっかり握る。",
       "answer": "○",
@@ -5729,7 +5725,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_23_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-23",
       "text": "交差点で右左折する車は、徐行して進行しなくてもよい。",
       "answer": "×",
@@ -5740,7 +5736,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_23_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-23",
       "text": "方向指示器や制動灯などが見えなくなるような荷物の積み方をしてはならない。",
       "answer": "○",
@@ -5751,7 +5747,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_23_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-23",
       "text": "すぐに運転できる状態であれば、運転者が短時間車から離れていても停車である。",
       "answer": "○",
@@ -5762,7 +5758,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_24_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-24",
       "text": "車のタイヤが突然パンクしたため、ハンドルをしっかりと握り、断続的にゆっくりブレーキをかけた。",
       "answer": "○",
@@ -5773,7 +5769,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_24_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-24",
       "text": "違法な駐車車両は、交通事故の原因となり、交通上、また社会生活にとっての大きな障害である。",
       "answer": "○",
@@ -5784,7 +5780,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_24_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-24",
       "text": "左腕を水平に伸ばす合図は、左折か左に進路変更するときの合図である。",
       "answer": "○",
@@ -5795,7 +5791,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_24_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-24",
       "text": "標識や標示によって横断や転回が禁止されているところでは、後退は禁止されていない。",
       "answer": "○",
@@ -5806,7 +5802,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_24_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-24",
       "text": "この標識がある道路は、自転車や原動機付自転車、自動二輪車は通行できない。",
       "answer": "×",
@@ -5818,7 +5814,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_25_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-25",
       "text": "この標識のある場所では、11人乗り以上の自動車は通行できない。",
       "answer": "○",
@@ -5830,7 +5826,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_25_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-25",
       "text": "この標識は、追い越し禁止を表している。",
       "answer": "×",
@@ -5842,7 +5838,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_25_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-25",
       "text": "一方通行の道路では、道路の右側を通行することができる。",
       "answer": "○",
@@ -5853,7 +5849,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_25_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-25",
       "text": "道路を車庫の代わりに使用してはならない。",
       "answer": "○",
@@ -5864,7 +5860,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_25_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-25",
       "text": "地震が発生し、車を置いて避難する際は、できるだけ道路外に停止させる。",
       "answer": "○",
@@ -5875,7 +5871,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_26_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-26",
       "text": "転回の合図を行う時期は、転回の約30メートル手前である。",
       "answer": "○",
@@ -5886,7 +5882,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_26_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-26",
       "text": "この標識は、ロータリーありを示す。",
       "answer": "○",
@@ -5898,7 +5894,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_26_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-26",
       "text": "道路工事の区域から5メートル以内の場所では、駐車は禁止されている。",
       "answer": "○",
@@ -5909,7 +5905,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_26_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-26",
       "text": "夜間に走行するときは、昼間よりも視界が悪いので、車間距離を短めにする。",
       "answer": "×",
@@ -5920,7 +5916,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_26_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-26",
       "text": "側車付きの二輪車は、エンジンを切って押して歩くと、歩行者として扱われる。",
       "answer": "×",
@@ -5931,7 +5927,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_27_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-27",
       "text": "進行方向別に通行区分が規制された車両通行帯に接近したので、あらかじめ自分の進行する方向の車両通行帯に移動した。",
       "answer": "○",
@@ -5942,7 +5938,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_27_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-27",
       "text": "雪道では、できるだけわだちのあとを避けて通行する。",
       "answer": "×",
@@ -5953,7 +5949,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_27_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-27",
       "text": "この中央線のあるところでは、追い越しのために道路の右側部分にはみ出して通行することが禁止されている。",
       "answer": "○",
@@ -5965,7 +5961,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_27_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-27",
       "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
       "answer": "○",
@@ -5976,7 +5972,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_27_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-27",
       "text": "この標識は、歩行者横断禁止を示す。",
       "answer": "×",
@@ -5988,7 +5984,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_28_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-28",
       "text": "この車両通行帯を走行しているときは、右折のためであっても、車線を変更してはならない。",
       "answer": "○",
@@ -6000,7 +5996,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_28_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-28",
       "text": "たとえ電子メールの送信であっても、運転中に携帯電話を操作してはならない。",
       "answer": "○",
@@ -6011,7 +6007,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_28_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-28",
       "text": "夜間、見通しの悪い交差点を通行するときは、ライトを上向きに切り替えるなどして、自車の接近を知らせるとよい。",
       "answer": "○",
@@ -6022,7 +6018,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_28_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-28",
       "text": "こう配の急な上り坂では、追い越しを禁止されていない。",
       "answer": "○",
@@ -6033,7 +6029,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_28_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-28",
       "text": "道路を車庫の代わりに使用してもよい。",
       "answer": "×",
@@ -6044,7 +6040,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_29_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-29",
       "text": "走行中に急ブレーキをかけて後輪が右へ横すべりを始めたときは、ハンドルを左に切るようにする。",
       "answer": "×",
@@ -6055,7 +6051,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_29_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-29",
       "text": "転回を意味する合図の方法は、右折や右に進路変更するときの合図の方法と同じである。",
       "answer": "○",
@@ -6066,7 +6062,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_29_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-29",
       "text": "前車に続いて見通しの良い踏切を通行する場合であっても、一時停止をし、安全を確認する必要がある。",
       "answer": "○",
@@ -6077,7 +6073,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_29_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-29",
       "text": "バス専用通行帯は、原動機付自転車は通行してはならない。",
       "answer": "×",
@@ -6088,7 +6084,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_29_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-29",
       "text": "霧の中を運転するときは、見通しをよくするため、前照灯を上向きにする。",
       "answer": "×",
@@ -6099,7 +6095,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_30_1",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-30",
       "text": "交通事故を起こしても、負傷者や死者がいなければ、警察に報告する必要はない。",
       "answer": "×",
@@ -6110,7 +6106,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_30_2",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-30",
       "text": "この標識は、交差する道路が通学路であることを示す。",
       "answer": "×",
@@ -6122,7 +6118,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_30_3",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-30",
       "text": "道路は公共の場であるので、車を運転するときは自分の利便だけでなく、周囲の人への配慮が必要である。",
       "answer": "○",
@@ -6133,7 +6129,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_30_4",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-30",
       "text": "踏切用の信号が青色のとき、安全を確認すれば、一時停止しなくてもよい。",
       "answer": "○",
@@ -6144,7 +6140,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_30_5",
-      "chapter": "総合演習2",
+      "chapter": "総合演習",
       "section": "総合演習2-30",
       "text": "左側部分の道幅が6メートル未満の見通しのよい道路で追い越しをするときは、中央線が黄線であっても、中央線から右側にはみ出してもよい。",
       "answer": "×",
@@ -6155,7 +6151,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_1_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-1",
       "text": "二輪車で追い越しをするときも、前車の右側を通行する。",
       "answer": "○",
@@ -6166,7 +6162,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_1_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-1",
       "text": "こう配の急な上り坂も下り坂も、駐停車が禁止されている。",
       "answer": "○",
@@ -6177,7 +6173,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_1_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-1",
       "text": "この路側帯の中に入って、駐車や停車をすることは禁じられている。",
       "answer": "○",
@@ -6189,7 +6185,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_1_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-1",
       "text": "この標識は、車線数の減少を示す。",
       "answer": "×",
@@ -6201,7 +6197,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_1_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-1",
       "text": "この標識は、左折可の標識である。",
       "answer": "×",
@@ -6213,7 +6209,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_2_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-2",
       "text": "原動機付自転車の右折方法が小回りで指定されている交差点では、原動機付自転車は青色の矢印の灯火信号に従って右折できる。",
       "answer": "○",
@@ -6224,7 +6220,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_2_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-2",
       "text": "対面している警察官が灯火を横に振っている灯火信号は、信号機の青色信号と同じ意味である。",
       "answer": "×",
@@ -6235,7 +6231,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_2_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-2",
       "text": "車は、原則として軌道敷内を通行できないが、軌道敷を横切ることは可能である。",
       "answer": "○",
@@ -6246,7 +6242,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_2_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-2",
       "text": "二輪車に乗車する時は、周囲に溶け込むため、なるべく暗い服で運転する。",
       "answer": "×",
@@ -6257,7 +6253,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_2_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-2",
       "text": "人を待つために継続的に停止していれば、それは停車である。",
       "answer": "×",
@@ -6268,7 +6264,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_3_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-3",
       "text": "この標識のある道路は、一般の自動車は通行してもよい。",
       "answer": "○",
@@ -6280,7 +6276,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_3_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-3",
       "text": "交差点以外で、横断歩道も自転車横断帯も踏切もない場所で手信号をしているときの停止位置は、その警察官の1メートル手前である。",
       "answer": "○",
@@ -6291,7 +6287,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_3_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-3",
       "text": "原動機付自転車のブレーキには、適度なあそびが必要である。",
       "answer": "○",
@@ -6302,7 +6298,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_3_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-3",
       "text": "右左折をしない場合、交差点を通行するときに徐行する必要はない。",
       "answer": "×",
@@ -6313,7 +6309,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_3_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-3",
       "text": "この標示は、駐車禁止を示している。",
       "answer": "×",
@@ -6325,7 +6321,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_4_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-4",
       "text": "横断歩道や自転車横断帯で一時停止するとき、その手前に停止線があったとしても、横断歩道や自転車横断帯の手前で停止する。",
       "answer": "×",
@@ -6336,7 +6332,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_4_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-4",
       "text": "他の交通の妨害となるときは、たとえ法令で禁止されていなくとも、横断や転回をしてはならない。",
       "answer": "○",
@@ -6347,7 +6343,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_4_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-4",
       "text": "この標識のある所でも、原動機付自転車は通行できる。",
       "answer": "○",
@@ -6359,7 +6355,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_4_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-4",
       "text": "前の車が、原動機付自転車を追い越そうとしているときには、その車を追い越してはならない。",
       "answer": "×",
@@ -6370,7 +6366,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_4_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-4",
       "text": "日頃からガーゼや止血帯を車に備え付ける等、事故に備えて運転するのがよい。",
       "answer": "○",
@@ -6381,7 +6377,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_5_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-5",
       "text": "前車が進路を変更しようとしていたので、急ブレーキをかけ、その車の進行を妨げないようにした。",
       "answer": "×",
@@ -6392,7 +6388,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_5_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-5",
       "text": "歩行者のそばを通るときに、安全な間隔を保てそうになかったが、そのまま進行した。",
       "answer": "×",
@@ -6403,7 +6399,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_5_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-5",
       "text": "頭部に傷を受けた負傷者を救護する際は、意識を失わないよう、体をゆするのがよい。",
       "answer": "×",
@@ -6414,7 +6410,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_5_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-5",
       "text": "前の車が右側に進路を変えようとしている場合であっても、安全であれば追い越してよい。",
       "answer": "×",
@@ -6425,7 +6421,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_5_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-5",
       "text": "坂道で行き違うとき、上り側のほうに待避所があったが、上りが優先されるので、待避所に入らずに進行した。",
       "answer": "×",
@@ -6436,7 +6432,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_6_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-6",
       "text": "駐車場や車庫などの出入り口から3メートル以内の場所では駐車が禁止されているが、その場所の利用者や関係者であれば、駐車をしてもよい。",
       "answer": "×",
@@ -6447,7 +6443,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_6_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-6",
       "text": "初心運転者標識は、普通免許を受けて1年未満の、運転に自信のない人がつける標識である。",
       "answer": "×",
@@ -6458,7 +6454,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_6_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-6",
       "text": "正面衝突のおそれがあるときは、道路外が安全ならば、道路外に出ても構わない。",
       "answer": "○",
@@ -6469,7 +6465,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_6_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-6",
       "text": "対向車のヘッドライトがまぶしかったので、やむをえず少しの間目を閉じて運転した。",
       "answer": "×",
@@ -6480,7 +6476,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_6_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-6",
       "text": "夜間の運転時には、大型車や二輪車が実際より近く見えるので、注意が必要である。",
       "answer": "×",
@@ -6491,7 +6487,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_7_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-7",
       "text": "自車が優先道路を走行していない場合、交差点とその手前30メートル以内の場所では、安全を確認すれば前の車を追い越してよい。",
       "answer": "×",
@@ -6502,7 +6498,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_7_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-7",
       "text": "歩行者専用道路は、許可を受けており、かつ法定速度を守れば車も通行可能である。",
       "answer": "×",
@@ -6513,7 +6509,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_7_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-7",
       "text": "二輪車は風の影響を受けやすいので、できるだけ前かがみの姿勢で運転する。",
       "answer": "×",
@@ -6524,7 +6520,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_7_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-7",
       "text": "トンネル内では、車両通行帯の有無に関わらず、駐停車禁止である。",
       "answer": "○",
@@ -6535,7 +6531,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_7_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-7",
       "text": "追い越しの際には、一時的に最高速度の制限を超えても構わない。",
       "answer": "×",
@@ -6546,7 +6542,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_8_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-8",
       "text": "摩擦力や遠心力等の走行時に働く自然の力は、二輪車にも働く。",
       "answer": "○",
@@ -6557,7 +6553,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_8_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-8",
       "text": "児童・幼児が乗り降りするために停車している通学・通園バスの側方を通行するときは、乗降者がいなくても、必ず徐行して通過する。",
       "answer": "○",
@@ -6568,7 +6564,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_8_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-8",
       "text": "標識や標示によって指定されていない一般道路では、原動機付自転車の最高速度は、時速30キロメートルである。",
       "answer": "○",
@@ -6579,7 +6575,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_8_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-8",
       "text": "このマークを付けた車に、幅寄せをしたり割り込んだりしてはならない。",
       "answer": "○",
@@ -6591,7 +6587,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_8_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-8",
       "text": "対面する信号が黄色の灯火であったので、他の交通に注意しながら進行した。",
       "answer": "×",
@@ -6602,7 +6598,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_9_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-9",
       "text": "横断歩道に近付いたときは、横断する歩行者のあるなしに関わらず、徐行せねばならない。",
       "answer": "×",
@@ -6613,7 +6609,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_9_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-9",
       "text": "追い越しが終わったので、すぐに追い越した車の前に入った。",
       "answer": "×",
@@ -6624,7 +6620,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_9_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-9",
       "text": "対向車と正面衝突しそうになったが、どうしようもなかったので、諦めた。",
       "answer": "×",
@@ -6635,7 +6631,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_9_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-9",
       "text": "山道で行き違うときは、下りの車が上りの車に道を譲る。",
       "answer": "○",
@@ -6646,7 +6642,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_9_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-9",
       "text": "前方の信号が赤色であったが、青色の矢印信号が点灯したため、原動機付自転車を発進させた。",
       "answer": "○",
@@ -6657,7 +6653,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_10_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-10",
       "text": "交通事故で頭部に強い衝撃を受けたときは、目立った外傷がなければ医師の診断を受ける必要はない。",
       "answer": "×",
@@ -6668,7 +6664,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_10_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-10",
       "text": "原動機付自転車の最高速度は時速40キロメートルである。",
       "answer": "×",
@@ -6679,7 +6675,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_10_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-10",
       "text": "車は、たとえ短い距離であっても、道路を逆走してはならない。",
       "answer": "○",
@@ -6690,7 +6686,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_10_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-10",
       "text": "夜間の運転時には、視界が悪いので、前車との車間距離は昼間より長くする。",
       "answer": "○",
@@ -6701,7 +6697,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_10_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-10",
       "text": "この標示のある車両通行帯を直進することができる。",
       "answer": "×",
@@ -6713,7 +6709,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_11_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-11",
       "text": "右左折の合図は、その行為の直前に行う。",
       "answer": "×",
@@ -6724,7 +6720,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_11_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-11",
       "text": "夜間、街路灯がついている明るい道路を通行している場合に限り、前照灯をつけなくてもよい。",
       "answer": "×",
@@ -6735,7 +6731,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_11_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-11",
       "text": "市街地を走行中に大地震に遭遇したので、できるだけ道路の左端に車を止め、ハンドルをロックし、避難した。",
       "answer": "×",
@@ -6746,7 +6742,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_11_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-11",
       "text": "この標示は、自転車専用道路を示す。",
       "answer": "×",
@@ -6758,7 +6754,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_11_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-11",
       "text": "車は、車両通行帯をみだりに変えて通行すると、後続車の迷惑となるだけでなく、事故の原因ともなるので、できるだけ同一の車両通行帯を通行するのが良い。",
       "answer": "○",
@@ -6769,7 +6765,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_12_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-12",
       "text": "交通事故の相手方と話し合ったが、決着がつかなかったので警察に報告した。",
       "answer": "×",
@@ -6780,7 +6776,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_12_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-12",
       "text": "軽車両は、片側二車線の道路の交差点では、青信号であれば直進や左折、右折ができる。",
       "answer": "×",
@@ -6791,7 +6787,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_12_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-12",
       "text": "警察官が、灯火を頭上に上げているとき、警察官の身体の正面に平行する交通については、信号機の赤色信号と同じ意味である。",
       "answer": "×",
@@ -6802,7 +6798,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_12_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-12",
       "text": "二輪車に乗車する時は、両膝でタンクを軽く挟むようにするとよい。",
       "answer": "○",
@@ -6813,7 +6809,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_12_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-12",
       "text": "停止していた路線バスが発進の合図をしたので、後方で一時停止し、バスに進路を譲った。",
       "answer": "○",
@@ -6824,7 +6820,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_13_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-13",
       "text": "進路を変えるときの合図は、進路を変える約3秒前に行う。",
       "answer": "○",
@@ -6835,7 +6831,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_13_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-13",
       "text": "ブレーキが効き始めてから停止するまでの間に車が走る距離を停止距離と呼ぶ。",
       "answer": "×",
@@ -6846,7 +6842,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_13_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-13",
       "text": "この交差点では、原動機付自転車は路面電車を妨げてはならない。",
       "answer": "×",
@@ -6858,7 +6854,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_13_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-13",
       "text": "交通事故を起こした場合は、何よりもまず警察に連絡する。",
       "answer": "×",
@@ -6869,7 +6865,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_13_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-13",
       "text": "原動機付自転車は、エンジンブレーキを使用することができない。",
       "answer": "×",
@@ -6880,7 +6876,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_14_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-14",
       "text": "道路の左側部分の幅が6メートル未満の道路では、たとえ見通しがよくとも、右側部分にはみ出して、他の車を追い越すことはできない。",
       "answer": "×",
@@ -6891,7 +6887,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_14_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-14",
       "text": "前・後輪ブレーキが故障したため、エンジンブレーキを使って停止を試みた。",
       "answer": "○",
@@ -6902,7 +6898,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_14_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-14",
       "text": "運転に自信があれば、強制保険に入る必要はない。",
       "answer": "×",
@@ -6913,7 +6909,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_14_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-14",
       "text": "盲導犬を連れた人のそばを通るときに、一時停止をして、安全を確認して通行した。",
       "answer": "○",
@@ -6924,7 +6920,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_14_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-14",
       "text": "高速走行のときは、車の積み荷の重心が低い方が、安定した走行ができる。",
       "answer": "○",
@@ -6935,7 +6931,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_15_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-15",
       "text": "この標識は、この先工事のため立ち入り禁止を示す。",
       "answer": "×",
@@ -6947,7 +6943,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_15_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-15",
       "text": "徐行や停止をするときと、後退するときの手信号による合図は同じである。",
       "answer": "×",
@@ -6958,7 +6954,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_15_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-15",
       "text": "原動機付自転車でカーブ中にブレーキを使用すると、タイヤがスリップし、転倒するおそれがあるため注意が必要である。",
       "answer": "○",
@@ -6969,7 +6965,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_15_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-15",
       "text": "車両通行帯のない道路では、原則として原動機付自転車は道路の左側に寄って通行する。",
       "answer": "○",
@@ -6980,7 +6976,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_15_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-15",
       "text": "最低速度の道路標識はあるが、最低速度の道路標示はない。",
       "answer": "○",
@@ -6991,7 +6987,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_16_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-16",
       "text": "信号機の信号と手信号が異なる場合は、手信号に従う。",
       "answer": "○",
@@ -7002,7 +6998,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_16_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-16",
       "text": "原動機付自転車の日常点検は、使用状況に応じて日常的に行う。",
       "answer": "○",
@@ -7013,7 +7009,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_16_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-16",
       "text": "安全地帯がなく、乗降者がいないとき、路面電車との間に1.5メートル以上の間隔があったので、徐行して進行した。",
       "answer": "○",
@@ -7024,7 +7020,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_16_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-16",
       "text": "歩行者に泥や水をはねてしまった責任は、徐行して進行しておれば、運転手にはない。",
       "answer": "×",
@@ -7035,7 +7031,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_16_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-16",
       "text": "この標示は、前方優先道路を示す。",
       "answer": "×",
@@ -7047,7 +7043,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_17_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-17",
       "text": "これらの標識は、同じ意味をあらわす。",
       "answer": "○",
@@ -7059,7 +7055,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_17_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-17",
       "text": "雨や雪の日の急ブレーキは、車輪が横すべりを起こしやすいので、特に危険である。",
       "answer": "○",
@@ -7070,7 +7066,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_17_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-17",
       "text": "この標識は、本標識が表す交通規制の終わりを意味している。",
       "answer": "○",
@@ -7082,7 +7078,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_17_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-17",
       "text": "一方通行の道路では、追い越しは禁じられている。",
       "answer": "×",
@@ -7093,7 +7089,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_17_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-17",
       "text": "カーブに入るときは、できるだけそのカーブの手前でしっかりと減速する。",
       "answer": "○",
@@ -7104,7 +7100,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_18_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-18",
       "text": "夜間は、昼間よりも速度を落として運転すべきである。",
       "answer": "○",
@@ -7115,7 +7111,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_18_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-18",
       "text": "初心者マークをつけた車の追い抜きや追い越しは、禁止されている。",
       "answer": "×",
@@ -7126,7 +7122,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_18_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-18",
       "text": "歩行者に泥や水をはねてしまった場合、たとえ徐行していたとしても運転者の責任である。",
       "answer": "○",
@@ -7137,7 +7133,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_18_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-18",
       "text": "歩行者のそばを通るときは、必ず徐行をせねばならない。",
       "answer": "×",
@@ -7148,7 +7144,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_18_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-18",
       "text": "たとえ他の交通の妨害となろうとも、法令で禁止されていなければ、横断や転回をしてもよい。",
       "answer": "×",
@@ -7159,7 +7155,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_19_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-19",
       "text": "この標識のある場所では、道路の左側に面した場所に出入りするための横断もしてはならない。",
       "answer": "×",
@@ -7171,7 +7167,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_19_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-19",
       "text": "横断歩道を通行するとき、横断する人がいないかはっきりしなかったが、そのままの速度で進行した。",
       "answer": "×",
@@ -7182,7 +7178,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_19_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-19",
       "text": "右折や左折をするときは、必ず徐行せねばならない。",
       "answer": "○",
@@ -7193,7 +7189,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_19_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-19",
       "text": "原則として、車の右側に3.5メートル以上の余地のない場所で駐車してはならない。",
       "answer": "○",
@@ -7204,7 +7200,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_19_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-19",
       "text": "標識や標示によって横断や転回が禁止されているところでは、後退も禁止されている。",
       "answer": "×",
@@ -7215,7 +7211,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_20_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-20",
       "text": "一方通行の道路を走行中、交差点付近でない場所で、後方から緊急自動車が接近してきたが、左に寄るとかえって緊急自動車の走行の妨げになりそうだったので、右側に寄って進路を譲った。",
       "answer": "○",
@@ -7226,7 +7222,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_20_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-20",
       "text": "交差点を右折する際は、原則として交差点の中心近くの外側を徐行する。",
       "answer": "×",
@@ -7237,7 +7233,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_20_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-20",
       "text": "こう配の急な上り坂では、追い越しを禁止されていない。",
       "answer": "○",
@@ -7248,7 +7244,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_20_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-20",
       "text": "交差点内を走行中に後方から緊急自動車が接近してきたので、ただちにその場に停止した。",
       "answer": "×",
@@ -7259,7 +7255,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_20_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-20",
       "text": "雪道での運転は、停止距離が長くなるため、乾いた道路より速度をより上げて運転するべきである。",
       "answer": "×",
@@ -7270,7 +7266,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-21",
       "text": "自転車横断帯を自転車が横断していたため、徐行し、十分注意して走行した。",
       "answer": "×",
@@ -7281,7 +7277,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-21",
       "text": "右折の合図は、その行為をしようとする地点の30メートル手前で行う。",
       "answer": "○",
@@ -7292,7 +7288,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-21",
       "text": "この標示は、駐停車禁止を表している。",
       "answer": "×",
@@ -7304,7 +7300,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-21",
       "text": "踏切を通行する際の安全確認は、視覚だけに頼らず、聴覚を働かせる。",
       "answer": "○",
@@ -7315,7 +7311,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-21",
       "text": "この標示は、車両の通行禁止部分を示す。",
       "answer": "×",
@@ -7327,7 +7323,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_22_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-22",
       "text": "雨の日、ブレーキをかけるとスリップしたので、ブレーキの効きが悪いと思い、もう一度強くかけた。",
       "answer": "×",
@@ -7338,7 +7334,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_22_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-22",
       "text": "原動機付自転車が二段階右折をするときは、周囲への混乱に配慮し、右折の合図を出してはならない。",
       "answer": "×",
@@ -7349,7 +7345,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_22_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-22",
       "text": "バスや路面電車の停留所から10メートル以内の場所は、原則として駐停車禁止である。",
       "answer": "○",
@@ -7360,7 +7356,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_22_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-22",
       "text": "前車の発進が遅かったため、警音器を鳴らした。",
       "answer": "×",
@@ -7371,7 +7367,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_22_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-22",
       "text": "盲導犬を連れている歩行者のそばを通ったので、警音器を鳴らして合図した。",
       "answer": "×",
@@ -7382,7 +7378,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_23_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-23",
       "text": "坂道で行き違う場合、片側ががけになっているときは、がけ側の車が安全な場所に停止して、対向車に道を譲る。",
       "answer": "○",
@@ -7393,7 +7389,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_23_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-23",
       "text": "坂道での行き違いは、上りの車が下りの車に道を譲る。",
       "answer": "×",
@@ -7404,7 +7400,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_23_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-23",
       "text": "原動機付自転車のチェーンは、ややゆるみがあるのが望ましい。",
       "answer": "○",
@@ -7415,7 +7411,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_23_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-23",
       "text": "道路上では、原則として、同じ場所に昼間引き続いて8時間以上駐車してはならない。",
       "answer": "×",
@@ -7426,7 +7422,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_23_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-23",
       "text": "雨の日は、工事現場の鉄板の上は特に滑りやすいので注意が必要である。",
       "answer": "○",
@@ -7437,7 +7433,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_24_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-24",
       "text": "歩道を横切る際、歩行者がおらず、安全が確認できたが、一時停止して歩道を横切った。",
       "answer": "○",
@@ -7448,7 +7444,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_24_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-24",
       "text": "原動機付自転車に乗るときは、土ふまずをステップにのせるようにする。",
       "answer": "○",
@@ -7459,7 +7455,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_24_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-24",
       "text": "この標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
       "answer": "○",
@@ -7471,7 +7467,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_24_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-24",
       "text": "安全運転のポイントとして、自分の性格やくせを知り、それをカバーする運転をすることが挙げられる。",
       "answer": "○",
@@ -7482,7 +7478,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_24_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-24",
       "text": "踏切警手のいる踏切では、安全を確認すれば、一時停止しなくてもよい。",
       "answer": "×",
@@ -7493,7 +7489,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_25_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-25",
       "text": "原動機付自転車のナンバープレートは、必ず取り付けねばならない。",
       "answer": "○",
@@ -7504,7 +7500,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_25_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-25",
       "text": "走行中にタイヤがパンクしたときは、危険なのでブレーキを強くかけ、できるだけ早く停止させる。",
       "answer": "×",
@@ -7515,7 +7511,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_25_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-25",
       "text": "青色の矢印信号が右折の矢印であっても、転回は禁止されている。",
       "answer": "×",
@@ -7526,7 +7522,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_25_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-25",
       "text": "この標識のあるところでは、停車はできるが、駐車はできない。",
       "answer": "×",
@@ -7538,7 +7534,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_25_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-25",
       "text": "この標識のある道路は、原動機付自転車は通行できない。",
       "answer": "○",
@@ -7550,7 +7546,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_26_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-26",
       "text": "交差点付近で緊急自動車が接近してきたので、交差点の中央で停止した。",
       "answer": "×",
@@ -7561,7 +7557,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_26_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-26",
       "text": "前車が原動機付自転車を追い越そうとしているときは、追い越しをしてはならない。",
       "answer": "×",
@@ -7572,7 +7568,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_26_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-26",
       "text": "右図のような道幅の違う交差点では、Bの車は、Aの原動機付自転車を先に進行させねばならない。",
       "answer": "○",
@@ -7584,7 +7580,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_26_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-26",
       "text": "安全地帯がなく、乗降者がいないとき、路面電車との間に1.5メートル以上の間隔があったので、徐行して進行した。",
       "answer": "○",
@@ -7595,7 +7591,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_26_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-26",
       "text": "上り坂の頂上付近での追い越しは、反対方向の車と衝突するおそれがあるので、禁止されている。",
       "answer": "○",
@@ -7606,7 +7602,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_27_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-27",
       "text": "この標識は、横断歩道と自転車横断帯があることを示す。",
       "answer": "○",
@@ -7618,7 +7614,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_27_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-27",
       "text": "安全地帯のない停留所に路面電車が停止しており、乗り降りする人がいない場合、常に徐行して通行せねばならない。",
       "answer": "×",
@@ -7629,7 +7625,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_27_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-27",
       "text": "この図のような、道幅が同じような交差点では、普通自動車は、原動機付自転車より先に進むことができる。",
       "answer": "×",
@@ -7641,7 +7637,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_27_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-27",
       "text": "速度制限や積載制限は、交通公害を防ぐことに役立っている。",
       "answer": "○",
@@ -7652,7 +7648,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_27_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-27",
       "text": "内輪差とは、車が曲がるとき、前輪が後輪より内側を通ることによる軌跡の差を呼ぶ。",
       "answer": "×",
@@ -7663,7 +7659,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_28_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-28",
       "text": "警察官はもちろん、交通巡視員の手信号にも従わねばならない。",
       "answer": "○",
@@ -7674,7 +7670,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_28_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-28",
       "text": "原動機付自転車で走行中に、エンジンの回転数が上がったままになっていたが、気にせずそのまま走行した。",
       "answer": "×",
@@ -7685,7 +7681,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_28_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-28",
       "text": "この標識のある交差点を通行する際は、原動機付自転車は直進することができる。",
       "answer": "○",
@@ -7697,7 +7693,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_28_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-28",
       "text": "この標識のある道路では、追い越し自体ではなく、追い越しのために道路の右側部分にはみ出して通行することが禁じられている。",
       "answer": "○",
@@ -7709,7 +7705,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_28_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-28",
       "text": "この標識のある所では、車両は通行できないが、歩行者は通行できる。",
       "answer": "○",
@@ -7721,7 +7717,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_29_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-29",
       "text": "砂利道は、舗装道路に比べて摩擦力が小さい。",
       "answer": "○",
@@ -7732,7 +7728,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_29_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-29",
       "text": "交差点付近以外の所で緊急自動車が接近してきたときは、道路の左側によって一時停止をしなければならない。",
       "answer": "×",
@@ -7743,7 +7739,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_29_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-29",
       "text": "警察官が南北の方向に灯火を振っているとき、東西の方向に走る車は停止せねばならない。",
       "answer": "○",
@@ -7754,7 +7750,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_29_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-29",
       "text": "二段階右折をする原動機付自転車は、交差点の30メートル手前で右折の合図をせねばならない。",
       "answer": "○",
@@ -7765,7 +7761,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_29_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-29",
       "text": "道路の状況に関わらず、昼間に運転するときは、ライトをつける必要はない。",
       "answer": "×",
@@ -7776,7 +7772,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_30_1",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-30",
       "text": "夜間の運転時には、視界が悪く危険なので、前車の合図が見やすいよう、できるだけ前車に近付いて運転すべきである。",
       "answer": "×",
@@ -7787,7 +7783,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_30_2",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-30",
       "text": "安全な車間距離は、停止距離とほぼ同じ距離である。",
       "answer": "○",
@@ -7798,7 +7794,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_30_3",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-30",
       "text": "子どもがひとりで歩いているそばを通るときに、一時停止せず、徐行をして進行した。",
       "answer": "○",
@@ -7809,7 +7805,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_30_4",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-30",
       "text": "交差点付近で駐停車禁止となるのは、交差点とその端から3メートル以内の場所である。",
       "answer": "×",
@@ -7820,7 +7816,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_30_5",
-      "chapter": "総合演習3",
+      "chapter": "総合演習",
       "section": "総合演習3-30",
       "text": "右手を出し、斜め下に向ける合図は、右折することを示す。",
       "answer": "×",
@@ -7831,7 +7827,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_1_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-1",
       "text": "二輪車でぬかるみを走行するときは、速度を落とし、一定の速度を保って通過するべきである。",
       "answer": "○",
@@ -7842,7 +7838,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_1_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-1",
       "text": "進路を変えて前車の側方を通過し、前方に出る行為は、追い抜きではなく、追い越しである。",
       "answer": "○",
@@ -7853,7 +7849,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_1_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-1",
       "text": "正面の信号が赤色の灯火だったので、一時停止して進行した。",
       "answer": "×",
@@ -7864,7 +7860,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_1_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-1",
       "text": "夜間は道路の交通量が少ないので、昼間より速度を上げて運転する方がよい。",
       "answer": "×",
@@ -7875,7 +7871,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_1_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-1",
       "text": "同一方向に2つの車両通行帯がある道路では、左側の車両通行帯を通行する。",
       "answer": "○",
@@ -7886,7 +7882,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_2_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-2",
       "text": "二輪車でぬかるんだ道を通過するときは、ギアをトップにして、惰力で乗り切ろうとする。",
       "answer": "×",
@@ -7897,7 +7893,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_2_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-2",
       "text": "交通事故を起こしてしまったら、民事上の話しあいを円滑にするため、まずは保険会社に連絡する。",
       "answer": "×",
@@ -7908,7 +7904,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_2_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-2",
       "text": "このマークを付けた車を、追い越したり追い抜いたりすることは禁じられている。",
       "answer": "×",
@@ -7920,7 +7916,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_2_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-2",
       "text": "電車が来るようすがなかったので、一時停止せずに徐行して踏切を通過した。",
       "answer": "×",
@@ -7931,7 +7927,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_2_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-2",
       "text": "黄色の点滅信号のときは、徐行して進行しなくてはならない。",
       "answer": "×",
@@ -7942,7 +7938,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_3_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-3",
       "text": "げたやハイヒールを履いて二輪車を運転するのは危険である。",
       "answer": "○",
@@ -7953,7 +7949,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_3_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-3",
       "text": "地震が発生し、道路が通行禁止区間に指定されたため、道路が混雑して時間がかかったが、区間以外の場所に車を移動させた。",
       "answer": "○",
@@ -7964,7 +7960,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_3_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-3",
       "text": "前車を追い越す際に、危険を感じたので、警音器を使用した。",
       "answer": "○",
@@ -7975,7 +7971,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_3_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-3",
       "text": "合図の戻し忘れは、他車に誤認させ、危険を高めるため、行為が終わったらすみやかにやめるべきである。",
       "answer": "○",
@@ -7986,7 +7982,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_3_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-3",
       "text": "この標示のある所では、AからBにはみ出して追い越しはできるが、BからAにはみ出して追い越しをしてはならない。",
       "answer": "○",
@@ -7998,7 +7994,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_4_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-4",
       "text": "車は、みだりに通行帯を変えながら通行してはならない。",
       "answer": "○",
@@ -8009,7 +8005,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_4_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-4",
       "text": "この標示のある交差点を右折するときは、矢印の部分を通行せねばならない。",
       "answer": "○",
@@ -8021,7 +8017,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_4_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-4",
       "text": "横断歩道に近付いたとき、横断している人が自車の存在に気付き止まったので、徐行して進行した。",
       "answer": "×",
@@ -8032,7 +8028,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_4_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-4",
       "text": "路面電車を追い越す場合は、原則としてその左側を通行する。",
       "answer": "○",
@@ -8043,7 +8039,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_4_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-4",
       "text": "この標示のある車両通行帯から右折することができる。",
       "answer": "×",
@@ -8055,7 +8051,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_5_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-5",
       "text": "原動機付自転車は、速度も遅く安全なので、歩行者専用道路を通行してよい。",
       "answer": "×",
@@ -8066,7 +8062,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_5_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-5",
       "text": "この標識のある交差点を通行する際は、原動機付自転車は右折することができない。",
       "answer": "○",
@@ -8078,7 +8074,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_5_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-5",
       "text": "標示や標識によって路線バスなどの専用通行帯に時間が指定されているときは、指定時間帯でなければ一般の車が通行しても構わない。",
       "answer": "○",
@@ -8089,7 +8085,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_5_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-5",
       "text": "対向車と行き違うときや、他車の直後を通行するときは、前照灯を上向きに切り替える。",
       "answer": "×",
@@ -8100,7 +8096,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_5_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-5",
       "text": "後輪が右に横滑りしたときは、ハンドルを左に切る。",
       "answer": "×",
@@ -8111,7 +8107,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_6_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-6",
       "text": "同一方向に3つの車両通行帯がある道路において、原動機付自転車で進行するときは、交通量の少ない車両通行帯を選んで通行する。",
       "answer": "×",
@@ -8122,7 +8118,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_6_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-6",
       "text": "警察官が腕を水平に上げている場合、平行する交通は、青色の灯火信号と同じ意味である。",
       "answer": "○",
@@ -8133,7 +8129,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_6_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-6",
       "text": "消火栓や、指定消防水利の標識が設けられている位置から5メートル以内の場所では、駐車のみが禁じられている。",
       "answer": "○",
@@ -8144,7 +8140,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_6_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-6",
       "text": "左側部分の道幅が6メートル未満の見通しのよい道路で追い越しをするときは、中央線が黄線でなければ、中央線から右側にはみ出してもよい。",
       "answer": "○",
@@ -8155,7 +8151,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_6_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-6",
       "text": "原動機付自転車は、ナンバープレートを取り付ける必要はない。",
       "answer": "×",
@@ -8166,7 +8162,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_7_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-7",
       "text": "ぬかるみで車輪が空回りしたときは、マットや毛布などを滑り止めに使う。",
       "answer": "○",
@@ -8177,7 +8173,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_7_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-7",
       "text": "踏切とその前後10メートル以内の場所は、駐車は禁止されているが、停車は禁止されていない。",
       "answer": "×",
@@ -8188,7 +8184,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_7_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-7",
       "text": "夜間、運転をするときは、前照灯をつけて運転する。",
       "answer": "○",
@@ -8199,7 +8195,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_7_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-7",
       "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
       "answer": "○",
@@ -8210,7 +8206,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_7_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-7",
       "text": "歩行者のそばを通るときに、安全な間隔を保てなかったので、徐行して通行した。",
       "answer": "○",
@@ -8221,7 +8217,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_8_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-8",
       "text": "この標識のある場所では、原動機付自転車も通行してはならない。",
       "answer": "○",
@@ -8233,7 +8229,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_8_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-8",
       "text": "右左折の合図を行う時期は、右左折の約3秒前である。",
       "answer": "×",
@@ -8244,7 +8240,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_8_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-8",
       "text": "歩道や幅の狭い路側帯のある一般道路で駐停車する際は、車道の左端に沿って駐停車する。",
       "answer": "○",
@@ -8255,7 +8251,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_8_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-8",
       "text": "ハイドロプレーニング現象は、雨天、低速で走行する際に起きやすい現象である。",
       "answer": "×",
@@ -8266,7 +8262,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_8_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-8",
       "text": "右折の合図は、その行為をしようとする約3秒前で行う。",
       "answer": "×",
@@ -8277,7 +8273,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_9_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-9",
       "text": "交差点で右折するとき、先に交差点内に入っていたとしても、直進車より先に右折してはならない。",
       "answer": "○",
@@ -8288,7 +8284,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_9_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-9",
       "text": "合図は、その行為が終わったら、すぐにやめなければならない。",
       "answer": "○",
@@ -8299,7 +8295,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_9_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-9",
       "text": "夜間、ほかの車のすぐ後ろを走行するときは、前車の動きをはっきり確認できるよう、ライトを上向きにする。",
       "answer": "×",
@@ -8310,7 +8306,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_9_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-9",
       "text": "雨天のときは地盤がゆるむため、山道では路肩に寄りすぎないようにする。",
       "answer": "○",
@@ -8321,7 +8317,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_9_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-9",
       "text": "踏切の向こう側が混雑しているときは、後続車のために、早めに進入する。",
       "answer": "×",
@@ -8332,7 +8328,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_10_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-10",
       "text": "この交差点では、Ａ車はＢ車の進行を妨げてはならない。",
       "answer": "○",
@@ -8344,7 +8340,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_10_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-10",
       "text": "お酒を飲んだが、少量であり、また運転に自信があったので、運転した。",
       "answer": "×",
@@ -8355,7 +8351,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_10_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-10",
       "text": "車両通行帯のあるトンネルに限り、駐車してよい。",
       "answer": "×",
@@ -8366,7 +8362,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_10_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-10",
       "text": "こう配の急な下り坂では、追い越しをしてはならない。",
       "answer": "○",
@@ -8377,7 +8373,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_10_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-10",
       "text": "バス優先通行帯では、普通自動車は路線バスに進路を譲らなければならないが、通学・通園バスは例外的に譲らなくてよい。",
       "answer": "×",
@@ -8388,7 +8384,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_11_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-11",
       "text": "警察官が両腕を垂直に上げている場合、平行する交通は、原則として停止線の前で停止する。",
       "answer": "○",
@@ -8399,7 +8395,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_11_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-11",
       "text": "路線バスの専用通行帯は、原動機付自転車や、小型特殊自動車も通行してはならない。",
       "answer": "×",
@@ -8410,7 +8406,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_11_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-11",
       "text": "この標識は、転回禁止を示す。",
       "answer": "○",
@@ -8422,7 +8418,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_11_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-11",
       "text": "この標識の道路は、自転車に限り通行できる。",
       "answer": "○",
@@ -8434,7 +8430,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_11_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-11",
       "text": "原動機付自転車が右折する際は、対向車と衝突する危険があるため、できるだけ速度を上げて進行する。",
       "answer": "×",
@@ -8445,7 +8441,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_12_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-12",
       "text": "この標示は、車の駐車場所を示す。",
       "answer": "×",
@@ -8457,7 +8453,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_12_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-12",
       "text": "道路の前方が安全だったので、後続車が追い越しを始めていたが、前車を追い越した。",
       "answer": "×",
@@ -8468,7 +8464,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_12_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-12",
       "text": "この標識は、車の通行禁止を示している。",
       "answer": "×",
@@ -8480,7 +8476,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_12_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-12",
       "text": "運転中に眠気を感じたら、ガムをかむ、コーヒーを飲むなどし、眠気を覚ますようにする。",
       "answer": "×",
@@ -8491,7 +8487,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_12_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-12",
       "text": "警笛鳴らせの標識のある場所では、見通しのきかない交差点、曲がり角、上り坂の頂上を通るときは、警音器を使用しなければならない。",
       "answer": "×",
@@ -8502,7 +8498,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_13_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-13",
       "text": "この標識は、一方通行を示す。",
       "answer": "×",
@@ -8514,7 +8510,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_13_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-13",
       "text": "歩道や路側帯のない道路では、原動機付自転車は道路の中央部分を走らねばならない。",
       "answer": "×",
@@ -8525,7 +8521,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_13_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-13",
       "text": "夜間に運転していて前方から対向車がきたので、灯火を上向きにし、こちらの存在を知らせた。",
       "answer": "×",
@@ -8536,7 +8532,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_13_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-13",
       "text": "警笛鳴らせの標識があるところでは、見通しが悪く、安全が確認できなければ警音器を鳴らす。",
       "answer": "×",
@@ -8547,7 +8543,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_13_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-13",
       "text": "夜間、他車の直後を進行するときは、前照灯を下向きにしなければならない。",
       "answer": "○",
@@ -8558,7 +8554,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_14_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-14",
       "text": "二輪車でブレーキをかけるときは、ハンドルを切っておらず、車輪が傾いていない場合は、前輪のブレーキをかけてから、後輪のブレーキをかけるのがよい。",
       "answer": "×",
@@ -8569,7 +8565,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_14_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-14",
       "text": "安全地帯のない停留所で、停止している路面電車に乗り降りする人がいるときは、後方で停止して待たねばならない。",
       "answer": "○",
@@ -8580,7 +8576,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_14_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-14",
       "text": "青色の矢印信号が右折の矢印だったため、転回した。",
       "answer": "○",
@@ -8591,7 +8587,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_14_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-14",
       "text": "普通自動車が危険防止のためやむをえず、路線バス専用帯に進入した。",
       "answer": "○",
@@ -8602,7 +8598,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_14_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-14",
       "text": "窓から右腕を出して、ひじを垂直に上に曲げる合図は、左折の合図である。",
       "answer": "○",
@@ -8613,7 +8609,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_15_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-15",
       "text": "二輪車は、エンジンを切って押して歩くと、歩行者として扱われる。",
       "answer": "○",
@@ -8624,7 +8620,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_15_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-15",
       "text": "第一種普通免許しか持っていなかったが、タクシーを修理工場まで回送した。",
       "answer": "○",
@@ -8635,7 +8631,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_15_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-15",
       "text": "信号機がある踏切で信号機が青色を示している場合でも、車は直前で一時停止せねばならない。",
       "answer": "×",
@@ -8646,7 +8642,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_15_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-15",
       "text": "歩行者のそばを通るときは、必ずしも徐行しなくてよい。",
       "answer": "○",
@@ -8657,7 +8653,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_15_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-15",
       "text": "歩行者のそばを通るときは、必ず徐行せねばならない。",
       "answer": "×",
@@ -8668,7 +8664,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_16_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-16",
       "text": "原付免許を取得すれば、小型特殊自動車も運転できる。",
       "answer": "×",
@@ -8679,7 +8675,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_16_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-16",
       "text": "効力の失った免許証を携帯して車を運転すると、免許の携帯義務違反になる。",
       "answer": "×",
@@ -8690,7 +8686,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_16_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-16",
       "text": "原動機付自転車は手軽な乗り物であるため、特別な運転技術を習得する必要はない。",
       "answer": "×",
@@ -8701,7 +8697,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_16_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-16",
       "text": "車のタイヤが突然パンクしたため、ハンドルをしっかりと握り、急ブレーキをかけた。",
       "answer": "×",
@@ -8712,7 +8708,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_16_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-16",
       "text": "交通事故は、事故を起こした本人だけでなく、家族にも経済的な損失や、経済的な負担など大きな被害がある。",
       "answer": "○",
@@ -8723,7 +8719,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_17_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-17",
       "text": "安全地帯のない停留所で、停止している路面電車に乗り降りする人がいるときは、後方で停止して待たねばならない。",
       "answer": "○",
@@ -8734,7 +8730,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_17_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-17",
       "text": "下り坂を走行中に、ブレーキがきかなくなったときは、できるだけ早く道路脇の土砂等に突っ込む。",
       "answer": "×",
@@ -8745,7 +8741,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_17_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-17",
       "text": "この標示がある道路では、車は時速30キロメートルを超えて運転してはならない。",
       "answer": "○",
@@ -8757,7 +8753,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_17_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-17",
       "text": "この標識のある位置では、一時停止せねばならない。",
       "answer": "×",
@@ -8769,7 +8765,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_17_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-17",
       "text": "道路の左側に面したガソリンスタンドに入るために、一時停止して安全を確認したのち、歩道を横断した。",
       "answer": "○",
@@ -8780,7 +8776,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_18_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-18",
       "text": "踏切とその手前30メートルは、追い越しが禁じられている。",
       "answer": "○",
@@ -8791,7 +8787,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_18_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-18",
       "text": "運転に自信があったとしても、強制保険に入らねばならない。",
       "answer": "○",
@@ -8802,7 +8798,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_18_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-18",
       "text": "内輪差とは、ハンドルを切ったときの、ハンドルの遊びのことである。",
       "answer": "×",
@@ -8813,7 +8809,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_18_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-18",
       "text": "右折や左折などの合図は、その行為が終わるまで続けねばならない。",
       "answer": "○",
@@ -8824,7 +8820,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_18_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-18",
       "text": "追い越しをするときは、加速しなければならないので、一時的に定められた最高速度を超えてもよい。",
       "answer": "×",
@@ -8835,7 +8831,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_19_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-19",
       "text": "効力を失った免許証を携帯して自動車を運転すると、無免許運転になる。",
       "answer": "○",
@@ -8846,7 +8842,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_19_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-19",
       "text": "安全地帯のそばを通るときに、歩行者がいたので徐行して進行した。",
       "answer": "○",
@@ -8857,7 +8853,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_19_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-19",
       "text": "トンネルでは、車両通行帯がある場合を除き、駐停車禁止である。",
       "answer": "×",
@@ -8868,7 +8864,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_19_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-19",
       "text": "大型特殊免許を取得すると、原動機付自転車も運転できる。",
       "answer": "○",
@@ -8879,7 +8875,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_19_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-19",
       "text": "交差点で警察官が両腕を垂直に上げているとき、警察官の身体に対面する方向の交通に対しては、赤色の灯火信号と同じ意味である。",
       "answer": "○",
@@ -8890,7 +8886,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_20_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-20",
       "text": "人の乗り降りのために10分停止した場合、停車にあたる。",
       "answer": "○",
@@ -8901,7 +8897,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_20_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-20",
       "text": "雨の日は、できるだけ車間距離をとって運転する。",
       "answer": "○",
@@ -8912,7 +8908,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_20_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-20",
       "text": "転回するときの合図の時期と方法は、右折するときと同じである。",
       "answer": "○",
@@ -8923,7 +8919,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_20_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-20",
       "text": "原付免許をもっていれば、自動二輪車の運転が可能である。",
       "answer": "×",
@@ -8934,7 +8930,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_20_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-20",
       "text": "原動機付自転車を選ぶときは、乗ったときに両足のつま先が地面につき、8の字に押して動かせるものにする。",
       "answer": "○",
@@ -8945,7 +8941,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-21",
       "text": "マフラーが損傷した場合、すぐに付け替えるか、修理せねばならない。",
       "answer": "○",
@@ -8956,7 +8952,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-21",
       "text": "危険を避けるためやむを得ない場合を除き、このマークを付けた車に、幅寄せしたり、前方に無理に割り込んではいけない。",
       "answer": "○",
@@ -8968,7 +8964,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-21",
       "text": "この標識のある場所では、子どもの飛び出しに十分注意して進行する。",
       "answer": "○",
@@ -8980,7 +8976,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-21",
       "text": "免許証の再交付を受けたのち、紛失した免許証が見つかったので、速やかに返納した。",
       "answer": "○",
@@ -8991,7 +8987,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-21",
       "text": "この標示がある道路では、黄色の線をはみ出さなければ、追い越しをしても構わない。",
       "answer": "○",
@@ -9003,7 +8999,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_22_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-22",
       "text": "原動機付自転車が交差点を左折するときは、あらかじめできるだけ道路の左端に寄り、交差点の側端に沿って徐行しなければならない。",
       "answer": "○",
@@ -9014,7 +9010,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_22_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-22",
       "text": "この標識は、標識に表示されている数字を超える高さの車の通行禁止を示している。",
       "answer": "×",
@@ -9026,7 +9022,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_22_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-22",
       "text": "夜間に対向車と行き違うときは、お互いのライトで道路中央の歩行者が見にくくなることがあり、注意が必要である。",
       "answer": "○",
@@ -9037,7 +9033,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_22_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-22",
       "text": "原付免許があれば、総排気量が150ccまでの二輪車を運転することができる。",
       "answer": "×",
@@ -9048,7 +9044,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_22_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-22",
       "text": "この標示がある路側帯では、車はその中に入って駐停車ができない。",
       "answer": "○",
@@ -9060,7 +9056,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_23_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-23",
       "text": "路面電車の運行時間外であっても、軌道敷内での駐停車は禁止である。",
       "answer": "○",
@@ -9071,7 +9067,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_23_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-23",
       "text": "この標識は、合流交通ありを示す。",
       "answer": "○",
@@ -9083,7 +9079,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_23_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-23",
       "text": "前車が左折する際、内輪差によって原動機付自転車は巻き込まれてしまうことも多いので注意が必要である。",
       "answer": "○",
@@ -9094,7 +9090,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_23_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-23",
       "text": "四輪車の運転技術と原動機付自転車の運転技術は異なる。",
       "answer": "○",
@@ -9105,7 +9101,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_23_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-23",
       "text": "一般道路において原動機付自転車で前車を追い越したあと進路を左に変えるときは、追い越した車がミラーで見える距離になるまでそのまま進み、進路を変える。",
       "answer": "○",
@@ -9116,7 +9112,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_24_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-24",
       "text": "緊急自動車が本線車道へ入ろうとしていたが、その通行を妨げた。",
       "answer": "×",
@@ -9127,7 +9123,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_24_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-24",
       "text": "仮免許をとったので、一人で車を運転し、買い物に出かけた。",
       "answer": "×",
@@ -9138,7 +9134,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_24_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-24",
       "text": "制動距離は、速度が2倍になれば、2倍になる。",
       "answer": "×",
@@ -9149,7 +9145,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_24_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-24",
       "text": "正面の信号機の灯火が青色だったが、安全を確認した後に発進した。",
       "answer": "○",
@@ -9160,7 +9156,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_24_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-24",
       "text": "子どもが乗り降りしている通園バスの側方を通りすぎるときは、一時停止をしなければならない。",
       "answer": "×",
@@ -9171,7 +9167,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_25_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-25",
       "text": "歩道がある道路で、車道の端に沿って駐車した。",
       "answer": "○",
@@ -9182,7 +9178,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_25_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-25",
       "text": "車は、道路の渋滞を避けるため、通行帯を頻繁に変更しながら通行するのがよい。",
       "answer": "×",
@@ -9193,7 +9189,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_25_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-25",
       "text": "道路の曲がり角付近は、追い越し禁止であり、徐行もせねばならない場所である。",
       "answer": "○",
@@ -9204,7 +9200,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_25_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-25",
       "text": "この標識は、通学路であり、子どもが多く通行する道路なので注意が必要である。",
       "answer": "×",
@@ -9216,7 +9212,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_25_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-25",
       "text": "原動機付自転車は、歩行者が通行していない場合であっても、路側帯を通行してはならない。",
       "answer": "○",
@@ -9227,7 +9223,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_26_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-26",
       "text": "坂の頂上付近で追い越しをする場合、上りは追い越しを禁止されているが、下りは追い越しを禁止されていない。",
       "answer": "○",
@@ -9238,7 +9234,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_26_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-26",
       "text": "この標識は、原動機付自転車が二段階右折せねばならないことを示している。",
       "answer": "○",
@@ -9250,7 +9246,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_26_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-26",
       "text": "この標識のある交差点を通行する際は、原動機付自転車に限り右折することができる。",
       "answer": "×",
@@ -9262,7 +9258,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_26_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-26",
       "text": "自車が優先道路を通行している場合を除き、交差点とその手前30メートル以内の場所では、前の車を追い越してはならない。",
       "answer": "○",
@@ -9273,7 +9269,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_26_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-26",
       "text": "この標識のある所では、二輪車は通行してはならない。",
       "answer": "×",
@@ -9285,7 +9281,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_27_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-27",
       "text": "踏切を通行するときは、キープレフトの原則に従い、できるだけ左寄りを通行する。",
       "answer": "×",
@@ -9296,7 +9292,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_27_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-27",
       "text": "乾いた舗装道路で、時速20キロメートルで走行中の車は、10メートル以上の車間距離をとることが必要である。",
       "answer": "○",
@@ -9307,7 +9303,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_27_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-27",
       "text": "自動二輪車や、原動機付自転車に積める積載物の高さの制限は、地上2メートルまでである。",
       "answer": "○",
@@ -9318,7 +9314,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_27_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-27",
       "text": "たとえ少量でも、お酒を飲んだら車を運転してはならない。",
       "answer": "○",
@@ -9329,7 +9325,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_27_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-27",
       "text": "タイヤに摩擦限度表示があらわれたため、タイヤを交換した。",
       "answer": "○",
@@ -9340,7 +9336,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_28_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-28",
       "text": "運転中の視線は、少しでも早く前方の障害物を発見できるよう、できるだけ一点に集中させる。",
       "answer": "×",
@@ -9351,7 +9347,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_28_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-28",
       "text": "制動距離と停止距離を足したものが、空走距離である。",
       "answer": "×",
@@ -9362,7 +9358,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_28_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-28",
       "text": "安全運転のためには、特に自分の性格やくせを知る必要はなく、交通法規を学べば十分である。",
       "answer": "×",
@@ -9373,7 +9369,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_28_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-28",
       "text": "中央線は、必ず道路の中央に設けられている。",
       "answer": "×",
@@ -9384,7 +9380,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_28_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-28",
       "text": "バッテリーの液量は減らないため、点検の必要はない。",
       "answer": "×",
@@ -9395,7 +9391,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_29_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-29",
       "text": "この標識のある道路は、原動機付自転車は通行できない。",
       "answer": "○",
@@ -9407,7 +9403,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_29_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-29",
       "text": "この標識は、自動車や原動機付自転車の最高速度が時速50キロメートルであることを示す。",
       "answer": "×",
@@ -9419,7 +9415,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_29_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-29",
       "text": "安全地帯のある停留所に停車している路面電車の客が乗降中のときは、車はその後方で一時停止せねばならない。",
       "answer": "×",
@@ -9430,7 +9426,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_29_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-29",
       "text": "前・後輪ブレーキが故障したため、車を停めることを諦め、運を天に任せた。",
       "answer": "×",
@@ -9441,7 +9437,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_29_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-29",
       "text": "原動機付自転車は、荷台の後方にはみ出して荷物を積んではならない。",
       "answer": "×",
@@ -9452,7 +9448,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_30_1",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-30",
       "text": "この標識は、がけ崩れのおそれありを示す。",
       "answer": "×",
@@ -9464,7 +9460,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_30_2",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-30",
       "text": "免許証を携帯することを忘れて車を運転すると、無免許運転になる。",
       "answer": "×",
@@ -9475,7 +9471,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_30_3",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-30",
       "text": "この標示は、ここから転回禁止であることを表す。",
       "answer": "×",
@@ -9487,7 +9483,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_30_4",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-30",
       "text": "雪道では、できるだけわだちのあとを通行した方が安全である。",
       "answer": "○",
@@ -9498,7 +9494,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_30_5",
-      "chapter": "総合演習4",
+      "chapter": "総合演習",
       "section": "総合演習4-30",
       "text": "乗り降りのために停止している通学バスのそばを通ったので、徐行して進行した。",
       "answer": "○",
@@ -9509,7 +9505,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_1_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-1",
       "text": "この標識がある道路は、たとえ原動機付自転車であっても、通行が可能である。",
       "answer": "×",
@@ -9521,7 +9517,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_1_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-1",
       "text": "この標識は、安全地帯であることを示す。",
       "answer": "○",
@@ -9533,7 +9529,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_1_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-1",
       "text": "夜間の運転時に、前照灯をつけずに運転した。",
       "answer": "×",
@@ -9544,7 +9540,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_1_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-1",
       "text": "同一方向に3つの車両通行帯がある道路において、原動機付自転車で進行するときは、最も左よりの通行帯を軽車両のために空け、できるだけ右側の通行帯を通行する。",
       "answer": "×",
@@ -9555,7 +9551,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_1_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-1",
       "text": "同じ道幅の交差点で、左方から進行してくる車を、妨げてはならない。",
       "answer": "○",
@@ -9566,7 +9562,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_2_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-2",
       "text": "ブレーキの故障は、エンジンの故障と比べて危険であるので、早急に修理する必要がある。",
       "answer": "○",
@@ -9577,7 +9573,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_2_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-2",
       "text": "二輪車で追い越しをするときは、前車の左側を通行する。",
       "answer": "×",
@@ -9588,7 +9584,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_2_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-2",
       "text": "この標識は、追い越し自体を禁止している。",
       "answer": "×",
@@ -9600,7 +9596,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_2_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-2",
       "text": "この標識がある交差点では、たとえ自車の走行する道路が優先道路であり、見通しがよくても、必ず一時停止しなければならない。",
       "answer": "○",
@@ -9612,7 +9608,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_2_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-2",
       "text": "安全地帯の側方を通過する際は、歩行者の有無に関わらず、一時停止し、徐行して通過せねばならない。",
       "answer": "×",
@@ -9623,7 +9619,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_3_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-3",
       "text": "白線が1本で幅が1メートルの路側帯のある道路で駐停車するときは、路側帯の中に入り、0.75メートル以上の余地をあける。",
       "answer": "○",
@@ -9634,7 +9630,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_3_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-3",
       "text": "この標識は、原動機付自転車の2人乗りの禁止を示している。",
       "answer": "×",
@@ -9646,7 +9642,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_3_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-3",
       "text": "一般道路で原動機付自転車が追い越しをするときの一時的な最高速度は、時速40キロメートルである。",
       "answer": "×",
@@ -9657,7 +9653,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_3_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-3",
       "text": "交差点を右折するときは、あらかじめ道路の中央によって右折する。",
       "answer": "○",
@@ -9668,7 +9664,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_3_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-3",
       "text": "二輪車に乗車する時は、四輪車の運転者が見落とさないよう、なるべく明るい服で運転する。",
       "answer": "○",
@@ -9679,7 +9675,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_4_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-4",
       "text": "道路で自動車や原動機付自転車を運転するときは、その車種に応じた免許を取得せねばならない。",
       "answer": "○",
@@ -9690,7 +9686,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_4_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-4",
       "text": "交差点を左折するときは、左側を通行する自転車や歩行者に十分注意する。",
       "answer": "○",
@@ -9701,7 +9697,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_4_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-4",
       "text": "白杖を持った人の傍を通ったので、徐行して通行を妨げないようにした。",
       "answer": "○",
@@ -9712,7 +9708,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_4_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-4",
       "text": "相手の車が自分に進路を譲る義務があったので、相手に構わず進行した。",
       "answer": "×",
@@ -9723,7 +9719,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_4_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-4",
       "text": "駐車とは、停車にあたらない短時間の車の停止のことである。",
       "answer": "×",
@@ -9734,7 +9730,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_5_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-5",
       "text": "歩道は軽車両以外の車は通行してはならない。",
       "answer": "×",
@@ -9745,7 +9741,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_5_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-5",
       "text": "この標識のあるところでは、車は左折のみすることができる。",
       "answer": "○",
@@ -9757,7 +9753,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_5_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-5",
       "text": "四輪車の運転と二輪車の運転に必要な技術は全く同じである。",
       "answer": "×",
@@ -9768,7 +9764,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_5_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-5",
       "text": "道路の前方の交通状況から、横断歩道の中で停止するおそれがあるときは、横断歩道に入ってはならない。",
       "answer": "○",
@@ -9779,7 +9775,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_5_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-5",
       "text": "初心運転者標識や、高齢運転者標識を付けている車を追い越したり、追い抜いたりすることは禁止されている。",
       "answer": "×",
@@ -9790,7 +9786,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_6_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-6",
       "text": "この標識のある所では、転回は禁止されているが、後退は禁止されていない。",
       "answer": "○",
@@ -9802,7 +9798,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_6_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-6",
       "text": "下り坂では、重力が働くため、車に勢いがつく。",
       "answer": "○",
@@ -9813,7 +9809,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_6_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-6",
       "text": "横断歩道や自転車横断帯で一時停止するとき、その手前に停止線があれば、そこに停止する。",
       "answer": "○",
@@ -9824,7 +9820,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_6_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-6",
       "text": "原動機付自転車を運転中、信号で停止する際は、足でバランスを取り、ブレーキレバーをしっかりと握る。",
       "answer": "○",
@@ -9835,7 +9831,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_6_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-6",
       "text": "安全地帯に人がいなければ、その側方を通過するときは、徐行する必要はない。",
       "answer": "○",
@@ -9846,7 +9842,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_7_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-7",
       "text": "荷物の積み下ろしのために、3分停止したのは、停車である。",
       "answer": "○",
@@ -9857,7 +9853,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_7_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-7",
       "text": "時速60キロメートルでコンクリートの壁に激突したときは、約14メートルの高さから落ちたときと同じ程度の力を受ける。",
       "answer": "○",
@@ -9868,7 +9864,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_7_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-7",
       "text": "交通整理が行われている片側3車線の交差点では、原動機付自転車は二段階右折をする。",
       "answer": "○",
@@ -9879,7 +9875,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_7_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-7",
       "text": "道路の曲がり角付近では、見通しのよい場合を除き、徐行しなければならない。",
       "answer": "×",
@@ -9890,7 +9886,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_7_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-7",
       "text": "交差点付近でパトカーが接近してきたが、サイレンを鳴らしていなかったので、進路を譲らなかった。",
       "answer": "○",
@@ -9901,7 +9897,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_8_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-8",
       "text": "この標識のある場所では、法定速度の半分から3分の1程度の速度で運転しなければならない。",
       "answer": "×",
@@ -9913,7 +9909,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_8_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-8",
       "text": "速度を半分に落とすと、衝突したときの衝撃力は、約2分の1になる。",
       "answer": "×",
@@ -9924,7 +9920,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_8_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-8",
       "text": "左右の見通しのきかない交差点を通行する際は、必ず徐行しなければならない。",
       "answer": "×",
@@ -9935,7 +9931,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_8_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-8",
       "text": "二輪車を運転するときの服装は、転倒したときの被害を抑えるため、身体の露出が少ないものが望ましい。",
       "answer": "○",
@@ -9946,7 +9942,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_8_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-8",
       "text": "警察官が腕を水平に上げている場合、対面する交通に対しては、信号の赤色の灯火と同じ意味である。",
       "answer": "○",
@@ -9957,7 +9953,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_9_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-9",
       "text": "交差点付近で緊急自動車が接近してきたので、道路の左側に寄って徐行した。",
       "answer": "×",
@@ -9968,7 +9964,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_9_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-9",
       "text": "やむをえない場合を除き、2つの車両通行帯にまたがって運転してはならない。",
       "answer": "○",
@@ -9979,7 +9975,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_9_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-9",
       "text": "時速60キロメートルでコンクリートの壁に激突したときは、約140メートルの高さから落ちたときと同じ程度の力を受ける。",
       "answer": "×",
@@ -9990,7 +9986,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_9_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-9",
       "text": "坂の頂上付近で追い越しをする場合、上りは追い越しを禁止されているが、下りは追い越しを禁止されていない。",
       "answer": "○",
@@ -10001,7 +9997,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_9_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-9",
       "text": "歩行者に泥や水をはねてしまった場合、徐行していたのであれば、特に運転者の責任はない。",
       "answer": "×",
@@ -10012,7 +10008,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_10_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-10",
       "text": "一方通行の道路では、追い越しをしてはならない。",
       "answer": "×",
@@ -10023,7 +10019,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_10_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-10",
       "text": "安全地帯に人がいたので、徐行して側方を通過した。",
       "answer": "○",
@@ -10034,7 +10030,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_10_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-10",
       "text": "前照灯が点灯しない原動機付自転車は、昼間であっても運転してはならない。",
       "answer": "○",
@@ -10045,7 +10041,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_10_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-10",
       "text": "前車を追い越すとき、対向車との正面衝突を回避するため、やむをえずできるだけ対向車との側方距離を狭くして通行した。",
       "answer": "×",
@@ -10056,7 +10052,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_10_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-10",
       "text": "トンネル内では、車両通行帯の有無に関わらず、前の車を追い越してはならない。",
       "answer": "×",
@@ -10067,7 +10063,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_11_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-11",
       "text": "この標識は、近くに踏切があることを示す。",
       "answer": "○",
@@ -10079,7 +10075,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_11_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-11",
       "text": "信号機のない道路で、道幅が同じような交差点では、右方の交通の進行妨害をしてはならない。",
       "answer": "×",
@@ -10090,7 +10086,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_11_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-11",
       "text": "原動機付自転車の乗車定員は、運転者のみ1名である。",
       "answer": "○",
@@ -10101,7 +10097,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_11_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-11",
       "text": "この標示は、立入り禁止部分を表し、車が通行してはいけない部分であることを示す。",
       "answer": "×",
@@ -10113,7 +10109,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_11_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-11",
       "text": "雨の日にブレーキをかけたところ、スリップしたので、強くブレーキをかけた。",
       "answer": "×",
@@ -10124,7 +10120,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_12_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-12",
       "text": "長距離運転をするときは、細かく計画を立てるよりも、状況に応じて臨機応変に対応することが必要である。",
       "answer": "×",
@@ -10135,7 +10131,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_12_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-12",
       "text": "強制保険の証明書は、安全のため、自宅に保管しておくべきである。",
       "answer": "×",
@@ -10146,7 +10142,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_12_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-12",
       "text": "火災報知機から1メートル以内の場所では、駐車してはならない。",
       "answer": "○",
@@ -10157,7 +10153,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_12_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-12",
       "text": "このマークは、聴覚に障害のある人が運転していることを示す。",
       "answer": "×",
@@ -10169,7 +10165,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_12_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-12",
       "text": "この標識で指定された通行帯を、原動機付自転車で走行した。",
       "answer": "○",
@@ -10181,7 +10177,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_13_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-13",
       "text": "舗装された道路では、雨の降り始めより、降っている最中の方がスリップしやすいので注意が必要である。",
       "answer": "×",
@@ -10192,7 +10188,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_13_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-13",
       "text": "原動機付自転車に荷物を積むときは、ロープなどでしっかりと固定する。",
       "answer": "○",
@@ -10203,7 +10199,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_13_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-13",
       "text": "原動機付自転車は、他の車を追い越すことはできない。",
       "answer": "×",
@@ -10214,7 +10210,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_13_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-13",
       "text": "横断歩道を通行するとき、横断する人がいないかはっきりしなかったため、速度を落として進行した。",
       "answer": "○",
@@ -10225,7 +10221,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_13_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-13",
       "text": "ハイドロプレーニング現象とは、高速走行中の車が、固まった雪の上を滑る現象のことである。",
       "answer": "×",
@@ -10236,7 +10232,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_14_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-14",
       "text": "進路変更するときは、あらかじめ安全を確認してから合図をする。",
       "answer": "○",
@@ -10247,7 +10243,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_14_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-14",
       "text": "原動機付自転車でカーブを曲がるときは、あらかじめ減速し、カーブの後半で徐々に加速して抜けるようにする。",
       "answer": "○",
@@ -10258,7 +10254,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_14_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-14",
       "text": "この標識は、この先で交通規制が行われていることを示している。",
       "answer": "×",
@@ -10270,7 +10266,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_14_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-14",
       "text": "この標識のある道路は、原動機付自転車は通行できる。",
       "answer": "×",
@@ -10282,7 +10278,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_14_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-14",
       "text": "この標識から先は、原動機付自転車は時速50キロメートル以下で走行せねばならない。",
       "answer": "×",
@@ -10294,7 +10290,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_15_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-15",
       "text": "原動機付自転車を運転する際は、楽に運転ができるのであれば、身体を斜めにしてもよい。",
       "answer": "×",
@@ -10305,7 +10301,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_15_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-15",
       "text": "交差点において警察官が両腕を垂直に上げている場合、警察官の身体の正面に平行する方向に交差する方向の交通は、赤色の信号と同じ意味である。",
       "answer": "○",
@@ -10316,7 +10312,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_15_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-15",
       "text": "上り坂の頂上付近や、こう配の急な下り坂では、徐行しなければならない。",
       "answer": "○",
@@ -10327,7 +10323,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_15_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-15",
       "text": "合図は、他車を混乱させないためにも、行為が終わった後も出し続ける方がよい。",
       "answer": "×",
@@ -10338,7 +10334,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_15_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-15",
       "text": "エンジンを止めて原動機付自転車を押して歩くときは、歩道や路側帯を通行できる。",
       "answer": "○",
@@ -10349,7 +10345,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_16_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-16",
       "text": "この路側帯は、原動機付自転車が通行してはならない。",
       "answer": "○",
@@ -10361,7 +10357,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_16_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-16",
       "text": "左右の信号が赤色や黄色でも、対面する信号が青色とは限らない。",
       "answer": "○",
@@ -10372,7 +10368,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_16_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-16",
       "text": "交差点を右折する際、直進する対向車がいるときは、たとえ先に交差点に入っていても、直進車を先に通行させる。",
       "answer": "○",
@@ -10383,7 +10379,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_16_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-16",
       "text": "こう配の急な坂の頂上付近は駐停車禁止だが、こう配の急な坂の途中は駐停車禁止ではない。",
       "answer": "×",
@@ -10394,7 +10390,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_16_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-16",
       "text": "普通自動車は、たとえ危険防止のためやむをえなかったとしても、路線バス専用帯に進入してはならない。",
       "answer": "×",
@@ -10405,7 +10401,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_17_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-17",
       "text": "正面の信号が赤色の灯火だったので、停止位置で停止した。",
       "answer": "○",
@@ -10416,7 +10412,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_17_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-17",
       "text": "初心者マークは、普通免許を受けて1年未満の人が普通自動車を運転する際に表示することが望ましい。",
       "answer": "×",
@@ -10427,7 +10423,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_17_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-17",
       "text": "原動機付自転車は、アクセルグリップをゆっくりと回し、バランスをとって発進する。",
       "answer": "○",
@@ -10438,7 +10434,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_17_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-17",
       "text": "二輪車は、内輪差がないため、右左折の際に歩行者や自転車を巻きこむ心配がない。",
       "answer": "×",
@@ -10449,7 +10445,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_17_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-17",
       "text": "この標識は、近くに学校があることを示している。",
       "answer": "×",
@@ -10461,7 +10457,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_18_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-18",
       "text": "頭部に傷を受けた負傷者を救護する際は、むやみに動かさないようにする。",
       "answer": "○",
@@ -10472,7 +10468,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_18_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-18",
       "text": "交通事故の際は、相手のケガが軽く、話し合いで解決しそうな場合であっても、必ず警察を呼ぶ。",
       "answer": "○",
@@ -10483,7 +10479,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_18_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-18",
       "text": "前車が進路を変更しようとしていたので、その車の進行を妨げないようにした。",
       "answer": "○",
@@ -10494,7 +10490,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_18_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-18",
       "text": "原動機付自転車の点検は、毎日必ずせねばならない。",
       "answer": "×",
@@ -10505,7 +10501,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_18_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-18",
       "text": "原動機付自転車は、リヤカーをけん引してはならない。",
       "answer": "×",
@@ -10516,7 +10512,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_19_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-19",
       "text": "走行中、対向車と衝突しそうになったが、急ハンドルや急ブレーキでは避けられないと判断し、道路外の安全な場所に出た。",
       "answer": "○",
@@ -10527,7 +10523,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_19_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-19",
       "text": "原動機付自転車の荷台に積むことのできる荷物の重さは、車検証に記載されている。",
       "answer": "×",
@@ -10538,7 +10534,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_19_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-19",
       "text": "原動機付自転車で交差点を右折するときは、2車線以下の道路でも標識に指定されていないときは、二段階右折によって右折せねばならない。",
       "answer": "×",
@@ -10549,7 +10545,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_19_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-19",
       "text": "路面電車を追い越す場合は、原則としてその右側を通行する。",
       "answer": "×",
@@ -10560,7 +10556,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_19_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-19",
       "text": "対面する信号が青色になったので、直ちに発進した。",
       "answer": "×",
@@ -10571,7 +10567,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_20_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-20",
       "text": "二輪車を運転するときは、バランスをとりやすくするために、両ひざを開いて運転する。",
       "answer": "×",
@@ -10582,7 +10578,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_20_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-20",
       "text": "緊急自動車が本線車道に入ろうとしているときや、本線車道から出ようとしているときは、その通行を妨げてはならない。",
       "answer": "○",
@@ -10593,7 +10589,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_20_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-20",
       "text": "右折や左折などの合図は、その行為の途中でやめてよい。",
       "answer": "×",
@@ -10604,7 +10600,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_20_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-20",
       "text": "違法な駐停車は、死角を作りだし、交通事故の原因となる。",
       "answer": "○",
@@ -10615,7 +10611,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_20_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-20",
       "text": "夜間、一般道路を運転するとき、前方がよく見えなかったが、ライトをつけなかった。",
       "answer": "×",
@@ -10626,7 +10622,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_21_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-21",
       "text": "たとえ危険を避けるためであっても、街中での警音器の使用は禁じられている。",
       "answer": "×",
@@ -10637,7 +10633,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_21_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-21",
       "text": "路線バスの専用通行帯は、原動機付自転車や、小型特殊自動車は通行できる。",
       "answer": "○",
@@ -10648,7 +10644,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_21_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-21",
       "text": "夜間、街路灯がついた明るい道路を通るときでも、前照灯をつけねばならない。",
       "answer": "○",
@@ -10659,7 +10655,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_21_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-21",
       "text": "交通整理の行われていない横断歩道の手前にトラックが停止していたので、安全のため徐行してトラックの側方を通過した。",
       "answer": "×",
@@ -10670,7 +10666,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_21_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-21",
       "text": "横断歩道を横断しようとしている人がいたので、減速した。",
       "answer": "×",
@@ -10681,7 +10677,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_22_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-22",
       "text": "この標示がある路側帯では、車の駐停車や、軽車両の通行が禁じられている。",
       "answer": "○",
@@ -10693,7 +10689,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_22_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-22",
       "text": "舗装道路では、雨の降り始めが最も滑りやすい。",
       "answer": "○",
@@ -10704,7 +10700,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_22_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-22",
       "text": "進路を変更するときは、合図をしてから安全を確認する。",
       "answer": "×",
@@ -10715,7 +10711,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_22_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-22",
       "text": "安全地帯に歩行者がいなかったので、そのままの速度で通過した。",
       "answer": "○",
@@ -10726,7 +10722,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_22_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-22",
       "text": "この標識があったので、対面する信号は赤色の灯火であったが、左折した。",
       "answer": "○",
@@ -10738,7 +10734,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_23_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-23",
       "text": "夜間、交通量が多い市街地の道路では、危険な場所が多いので、つねに前照灯を上向きにし、前方をよく見て通行する。",
       "answer": "×",
@@ -10749,7 +10745,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_23_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-23",
       "text": "この標識のある道路は、特に認められた車に限り、通行が可能である。",
       "answer": "○",
@@ -10761,7 +10757,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_23_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-23",
       "text": "リヤカーをけん引している原動機付自転車は、エンジンを切って押して歩く場合に限り、歩行者専用道路を通行できる。",
       "answer": "×",
@@ -10772,7 +10768,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_23_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-23",
       "text": "こう配の急な上り坂の途中では、前の車を追い越してはならない。",
       "answer": "×",
@@ -10783,7 +10779,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_23_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-23",
       "text": "この標識がある所では、危険を感じた場合直ちに警音器を鳴らさねばならない。",
       "answer": "×",
@@ -10795,7 +10791,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_24_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-24",
       "text": "原動機付自転車の荷台に、高さ2メートルの荷物をくくりつけて走行した。",
       "answer": "×",
@@ -10806,7 +10802,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_24_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-24",
       "text": "自車が優先道路を走行していない場合、交差点とその手前30メートル以内の場所では、安全を確認すれば前の車を追い越してよい。",
       "answer": "×",
@@ -10817,7 +10813,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_24_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-24",
       "text": "徐行や停止、後退をするときはそのときに合図をすればよい。",
       "answer": "○",
@@ -10828,7 +10824,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_24_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-24",
       "text": "原動機付自転車は、運転するときに必ずヘルメットをかぶらねばならない。",
       "answer": "○",
@@ -10839,7 +10835,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_24_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-24",
       "text": "原動機付自転車で進行中、前方で道路工事が行われていたため、やむをえず軌道敷内を通行した。",
       "answer": "○",
@@ -10850,7 +10846,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_25_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-25",
       "text": "坂の頂上は駐停車禁止だが、車輪止めを使用したときに限り、駐停車が認められている。",
       "answer": "×",
@@ -10861,7 +10857,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_25_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-25",
       "text": "正面の信号が黄色の点滅を表示しているときは、一時停止したのち、進行しなければならない。",
       "answer": "×",
@@ -10872,7 +10868,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_25_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-25",
       "text": "道路の曲がり角を通行するとき、見通しがよかったので、徐行せず通行した。",
       "answer": "×",
@@ -10883,7 +10879,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_25_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-25",
       "text": "交通事故の際は、捜査を邪魔しないよう、できるだけ事故現場を保全する必要がある。",
       "answer": "×",
@@ -10894,7 +10890,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_25_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-25",
       "text": "この標示がある路側帯では、原則として路側帯内には入れないが、路側帯の幅が広い場合に限り、中に駐停車できる。",
       "answer": "×",
@@ -10906,7 +10902,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_26_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-26",
       "text": "歩道がある道路で、歩道に乗り上げて駐車した。",
       "answer": "×",
@@ -10917,7 +10913,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_26_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-26",
       "text": "原動機付自転車は、車庫証明がない。",
       "answer": "○",
@@ -10928,7 +10924,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_26_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-26",
       "text": "車は、いかなる場合でも、軌道敷内を通行したり、横切ったりしてはならない。",
       "answer": "×",
@@ -10939,7 +10935,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_26_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-26",
       "text": "三輪の原動機付自転車も存在する。",
       "answer": "○",
@@ -10950,7 +10946,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_26_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-26",
       "text": "他車が進路を譲ってくれたので、警音器を鳴らして、お礼のあいさつをした。",
       "answer": "×",
@@ -10961,7 +10957,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_27_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-27",
       "text": "対面する黄色の矢印信号が点灯していたとしても、原動機付自転車は発進してはならない。",
       "answer": "○",
@@ -10972,7 +10968,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_27_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-27",
       "text": "警察官の手信号が青色の灯火と同じだったが、対面する信号機は赤色の灯火だったので、停止した。",
       "answer": "×",
@@ -10983,7 +10979,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_27_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-27",
       "text": "追い越しをするときは、必ず進行中の前の車の右側を通行する。",
       "answer": "×",
@@ -10994,7 +10990,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_27_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-27",
       "text": "走行中にクラッチを切っても、車がすぐに停止しないのは、車に慣性の力が働いているためである。",
       "answer": "○",
@@ -11005,7 +11001,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_27_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-27",
       "text": "停留所で停止していた路線バスが発進の合図をしたので、進路を譲った。",
       "answer": "○",
@@ -11016,7 +11012,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_28_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-28",
       "text": "この標示のある道路では、たとえ原動機付自転車であっても、転回してはならない。",
       "answer": "○",
@@ -11028,7 +11024,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_28_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-28",
       "text": "原付を駐車するとき、少しの時間だけであったので、鍵をさしたままにした。",
       "answer": "×",
@@ -11039,7 +11035,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_28_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-28",
       "text": "雪道での運転は、停止距離が長くなるため、速度を控えめにした運転を心がけるべきである。",
       "answer": "○",
@@ -11050,7 +11046,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_28_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-28",
       "text": "警察官が南北の方向に灯火を振っている場合、東西の方向に走る車は直進して良い。",
       "answer": "×",
@@ -11061,7 +11057,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_28_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-28",
       "text": "交差点内を通行中に、前方の信号が黄色になったので、その場所で停止した。",
       "answer": "×",
@@ -11072,7 +11068,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_29_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-29",
       "text": "カーブを通行するときや道路の曲がり角では、内側の歩行者や自転車を巻きこむことがあるので、注意する。",
       "answer": "○",
@@ -11083,7 +11079,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_29_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-29",
       "text": "道路の片側に障害物がある場合、行き違うときは、障害物のある側と反対側の車が減速や一時停止をして、対向車に道を譲る。",
       "answer": "×",
@@ -11094,7 +11090,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_29_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-29",
       "text": "踏切内で車が故障して動かなくなったときは、素早く車から降り、安全な場所に避難する。",
       "answer": "×",
@@ -11105,7 +11101,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_29_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-29",
       "text": "高速走行のときは、車の積み荷の重心が高い方が、安定した走行ができる。",
       "answer": "×",
@@ -11116,7 +11112,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_29_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-29",
       "text": "原動機付自転車には、荷台から左右に0.15メートルまではみ出して荷物を積むことができる。",
       "answer": "○",
@@ -11127,7 +11123,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_30_1",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-30",
       "text": "二輪車に乗車する時は、四輪車の運転者を混乱させないために、なるべく地味な服で運転する。",
       "answer": "×",
@@ -11138,7 +11134,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_30_2",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-30",
       "text": "信号機のない道路で、道幅が同じような交差点では、左方から入ろうとしている車の進行を妨げないようにする。",
       "answer": "○",
@@ -11149,7 +11145,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_30_3",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-30",
       "text": "空走距離と制動距離を足したものが、停止距離である。",
       "answer": "○",
@@ -11160,7 +11156,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_30_4",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-30",
       "text": "雨が降っているときは視界が悪くなるため、できるだけ前車に接近して運転する。",
       "answer": "×",
@@ -11171,7 +11167,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_30_5",
-      "chapter": "総合演習5",
+      "chapter": "総合演習",
       "section": "総合演習5-30",
       "text": "徐行とは、すぐに停止できる速度で運転することである。",
       "answer": "○",

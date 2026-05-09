@@ -34,15 +34,10 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <View style={styles.backRow}>
-          <TouchableOpacity onPress={onBack} style={styles.backBtnTouch} activeOpacity={0.7}>
-            <ArrowLeft size={14} />
-            <Text style={styles.backBtnText}>{L.back}</Text>
-          </TouchableOpacity>
-        </View>
-        <Text style={styles.title}>{L.title}</Text>
-      </View>
+      <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
+        <Text style={styles.backBtnText}>{L.back}</Text>
+      </TouchableOpacity>
+      <Text style={styles.title}>{L.title}</Text>
 
       {history.length === 0 ? (
         <View style={styles.empty}>
@@ -91,10 +86,21 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  header: { marginBottom: 12 },
-  backRow: { marginBottom: 8 },
-  backBtnTouch: { flexDirection: "row", alignItems: "center", gap: 4 },
-  backBtnText: { fontSize: 14, color: "#fde68a" },
+  backBtn: {
+    backgroundColor: "#059669",
+    borderWidth: 1,
+    borderColor: "#34d399",
+    borderRadius: 999,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    marginBottom: 12,
+    width: 94,
+    opacity: 0.6,
+  },
+  backBtnText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   title: { fontSize: 20, fontWeight: "bold", color: "#fde68a" },
   empty: { flex: 1, alignItems: "center", justifyContent: "center" },
   emptyText: { fontSize: 14, color: "rgba(253,230,138,0.5)" },

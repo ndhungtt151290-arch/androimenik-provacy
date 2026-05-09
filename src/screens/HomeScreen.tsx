@@ -1,14 +1,14 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import {
   View,
   Text,
-  ScrollView,
   Image,
   TouchableOpacity,
   StyleSheet,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { CHAPTER_VI, CHAPTER_MAP } from "../lib/chapters";
+import { SubChapterPopup } from "../components/SubChapterPopup";
 import type { QuestionBank, Lang, PersonalStats } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
@@ -47,6 +47,37 @@ export function HomeScreen({
     return map;
   }, []);
 
+  const subChapterCountMap = useMemo(() => {
+    const map: Record<string, number> = {};
+    for (const q of bank.simple) {
+      if (q.chapter === "総合演習" && q.section) {
+        const match = q.section.match(/^(総合演習[1-5])-/);
+        if (match) {
+          map[match[1]] = (map[match[1]] ?? 0) + 1;
+        }
+      }
+    }
+    return map;
+  }, []);
+
+  const [showSubChapterPopup, setShowSubChapterPopup] = useState(false);
+
+  const handleChapterPress = (chapterId: string) => {
+    if (chapterId === "総合演習") {
+      setShowSubChapterPopup(true);
+    } else {
+      onChapter(chapterId);
+    }
+  };
+
+  const subChapters = useMemo(() => {
+    return ["総合演習1", "総合演習2", "総合演習3", "総合演習4", "総合演習5"].map((id) => ({
+      id,
+      name: id,
+      count: subChapterCountMap[id] ?? 0,
+    }));
+  }, [subChapterCountMap]);
+
   const L = {
     history: lang === "vi" ? "Lịch sử thi" : "試験履歴",
   };
@@ -68,58 +99,56 @@ export function HomeScreen({
       </TouchableOpacity>
 
       <View style={styles.scrollWrapper}>
-        <ScrollView
-          style={styles.scrollView}
-          contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
-          showsVerticalScrollIndicator={false}
+        <View
+          style={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
         >
           <View style={styles.chapterGrid}>
-            {bank.chapterOrder.map((chapterName) => {
-              const chapterId = CHAPTER_MAP[chapterName] ?? chapterName;
-              const count = chapterCountMap[chapterName] ?? 0;
-              const label =
-                lang === "vi"
-                  ? CHAPTER_VI[chapterId] ?? chapterName
-                  : chapterName;
-              const isIllust = chapterName.includes("イラスト問題");
+            {(() => {
+              const rows: string[][] = [];
+              for (let i = 0; i < bank.chapterOrder.length; i += 2) {
+                rows.push(bank.chapterOrder.slice(i, i + 2));
+              }
+              return rows.map((row, rowIndex) => (
+                <View key={rowIndex} style={styles.gridRow}>
+                  {row.map((chapterName) => {
+                    const chapterId = CHAPTER_MAP[chapterName] ?? chapterName;
+                    const count = chapterCountMap[chapterName] ?? 0;
+                    const label =
+                      lang === "vi"
+                        ? CHAPTER_VI[chapterId] ?? chapterName
+                        : chapterName;
+                    const isIllust = chapterName.includes("イラスト問題");
 
-              return (
-                <TouchableOpacity
-                  key={chapterId}
-                  onPress={() => onChapter(chapterId)}
-                  style={[
-                    styles.chapterTile,
-                    { backgroundColor: isIllust ? "#dcfce7" : "#f5f5f5" },
-                  ]}
-                  activeOpacity={0.7}
-                >
-                  <Text style={styles.chapterLabel} numberOfLines={2}>
-                    {label}
-                  </Text>
-                  <View style={styles.chapterRight}>
-                    <View
-                      style={[
-                        styles.countBadge,
-                        { backgroundColor: isIllust ? "#d1fae5" : "#fef3c7" },
-                      ]}
-                    >
-                      <Text
+                    return (
+                      <TouchableOpacity
+                        key={chapterId}
+                        onPress={() => handleChapterPress(chapterId)}
                         style={[
-                          styles.countText,
-                          { color: isIllust ? "#166534" : "#92400e" },
+                          styles.gridCell,
+                          { backgroundColor: isIllust ? "#dcfce7" : "#f5f5f5" },
                         ]}
+                        activeOpacity={0.7}
                       >
-                        {count}
-                        {lang === "vi" ? " câu" : "問"}
-                      </Text>
-                    </View>
-                    <Text style={styles.chevron}>›</Text>
-                  </View>
-                </TouchableOpacity>
-              );
-            })}
+                        <Text style={styles.chapterLabel} numberOfLines={2}>
+                          {label}
+                        </Text>
+                        <Text
+                          style={[
+                            styles.countText,
+                            { color: isIllust ? "#166534" : "#92400e" },
+                          ]}
+                        >
+                          {count}
+                          {lang === "vi" ? " câu" : "問"}
+                        </Text>
+                      </TouchableOpacity>
+                    );
+                  })}
+                </View>
+              ));
+            })()}
           </View>
-        </ScrollView>
+        </View>
       </View>
 
       <View style={[styles.bottomRow, { paddingBottom: insets.bottom + 8 }]}>
@@ -128,6 +157,18 @@ export function HomeScreen({
         </TouchableOpacity>
         <Text style={styles.credit}>CREATED BY DUYHUNG</Text>
       </View>
+
+      <SubChapterPopup
+        visible={showSubChapterPopup}
+        chapterName="総合演習"
+        subChapters={subChapters}
+        onSelect={(subChapterId) => {
+          setShowSubChapterPopup(false);
+          onChapter(subChapterId);
+        }}
+        onClose={() => setShowSubChapterPopup(false)}
+        lang={lang}
+      />
     </View>
   );
 }
@@ -144,7 +185,24 @@ const styles = StyleSheet.create({
   scrollWrapper: { flex: 1, overflow: "hidden" },
   scrollView: { flex: 1, zIndex: 0 },
   scrollContent: { paddingHorizontal: 0 },
-  chapterGrid: { paddingHorizontal: 12, paddingBottom: 8, marginTop: 6 },
+  chapterGrid: { paddingHorizontal: 8, paddingBottom: 8, marginTop: 6 },
+  gridRow: { flexDirection: "row", marginBottom: 6, gap: 4 },
+  gridCell: {
+    flex: 1,
+    backgroundColor: "#f5f5f5",
+    borderRadius: 10,
+    padding: 10,
+    minHeight: 80,
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: 1,
+    borderColor: "rgba(0,0,0,0.1)",
+    shadowColor: "#000",
+    shadowOffset: { width: 2, height: 3 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
   chapterTile: {
     flexDirection: "row",
     alignItems: "center",
@@ -161,10 +219,10 @@ const styles = StyleSheet.create({
     elevation: 3,
     marginBottom: 6,
   },
-  chapterLabel: { flex: 1, fontSize: 11, fontWeight: "bold", color: "#111" },
+  chapterLabel: { fontSize: 14, fontWeight: "bold", color: "#111", textAlign: "center" },
   chapterRight: { flexDirection: "row", alignItems: "center", gap: 6 },
   countBadge: { paddingHorizontal: 8, paddingVertical: 2, borderRadius: 999 },
-  countText: { fontSize: 11, fontWeight: "bold" },
+  countText: { fontSize: 12, fontWeight: "bold", marginTop: 4 },
   chevron: { fontSize: 16, color: "#a3a3a3" },
   bottomRow: { paddingHorizontal: 12, flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingTop: 8, zIndex: 1, elevation: 5 },
   historyLink: { fontSize: 12, color: "#92400e", textDecorationLine: "underline" },

@@ -20,9 +20,15 @@ export const CHAPTERS: ChapterDef[] = [
   { id: "ch12", jp: "総合演習6【イラスト問題】", vi: "Ôn tập hình ảnh 6" },
 ];
 
-export const CHAPTER_VI: Record<string, string> = Object.fromEntries(
-  CHAPTERS.map((c) => [c.jp, c.vi])
-);
+export const CHAPTER_VI: Record<string, string> = Object.fromEntries([
+  ...CHAPTERS.map((c) => [c.jp, c.vi]),
+  ["総合演習1", "Ôn tập tổng hợp 1"],
+  ["総合演習2", "Ôn tập tổng hợp 2"],
+  ["総合演習3", "Ôn tập tổng hợp 3"],
+  ["総合演習4", "Ôn tập tổng hợp 4"],
+  ["総合演習5", "Ôn tập tổng hợp 5"],
+  ["総合演習", "Ôn tập tổng hợp"],
+]);
 
 export const CHAPTER_JP: Record<string, string> = Object.fromEntries(
   CHAPTERS.map((c) => [c.jp, c.jp])

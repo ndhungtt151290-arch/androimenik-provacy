@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft } from "../components/Icons";
 import type { ExamHistoryEntry, Lang } from "../types";
@@ -36,7 +36,10 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.backRow}>
-          <Text style={styles.backBtn} onPress={onBack}>← {L.back}</Text>
+          <TouchableOpacity onPress={onBack} style={styles.backBtnTouch} activeOpacity={0.7}>
+            <ArrowLeft size={14} />
+            <Text style={styles.backBtnText}>{L.back}</Text>
+          </TouchableOpacity>
         </View>
         <Text style={styles.title}>{L.title}</Text>
       </View>
@@ -90,7 +93,8 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   header: { marginBottom: 12 },
   backRow: { marginBottom: 8 },
-  backBtn: { fontSize: 14, color: "#fde68a" },
+  backBtnTouch: { flexDirection: "row", alignItems: "center", gap: 4 },
+  backBtnText: { fontSize: 14, color: "#fde68a" },
   title: { fontSize: 20, fontWeight: "bold", color: "#fde68a" },
   empty: { flex: 1, alignItems: "center", justifyContent: "center" },
   emptyText: { fontSize: 14, color: "rgba(253,230,138,0.5)" },

@@ -12,7 +12,6 @@ import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
 import { TimerDisplay } from "../components/TimerDisplay";
 import { ArrowLeft, QuestionMark } from "../components/Icons";
-import { BackHomeButton } from "../components/BackHomeButton";
 import type { ExamItem, Lang, MaruBatsu, QuestionBank } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
@@ -95,7 +94,10 @@ export function ExamScreen({
       >
       {/* Header */}
       <View style={styles.header}>
-        <BackHomeButton onPress={onBack} lang={lang} />
+        <TouchableOpacity onPress={onBack} style={styles.backBtnTouch} activeOpacity={0.7}>
+          <ArrowLeft size={14} />
+          <Text style={styles.backBtnText}>{lang === "vi" ? "← Trang chủ" : "← ホーム"}</Text>
+        </TouchableOpacity>
 
         <View style={styles.progressContainer}>
           <View style={styles.progressBar}>
@@ -225,7 +227,8 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     flexWrap: "wrap",
   },
-  backHome: { fontSize: 12, color: "#fde68a", textDecorationLine: "underline" },
+  backBtnTouch: { flexDirection: "row", alignItems: "center", gap: 4 },
+  backBtnText: { fontSize: 14, color: "#fde68a" },
   progressContainer: { flex: 1, minWidth: 80 },
   progressBar: { height: 8, backgroundColor: "rgba(0,0,0,0.3)", borderRadius: 4, overflow: "hidden" },
   progressFill: { height: "100%", backgroundColor: "#059669", borderRadius: 4 },

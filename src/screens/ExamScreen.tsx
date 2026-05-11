@@ -13,6 +13,7 @@ import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
 import { TimerDisplay } from "../components/TimerDisplay";
 import { ArrowLeft, QuestionMark } from "../components/Icons";
+import { PILL } from "../theme/buttonTokens";
 import type { ExamItem, Lang, MaruBatsu, QuestionBank } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
@@ -98,13 +99,6 @@ export function ExamScreen({
         <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
           <Text style={styles.backBtnText}>{lang === "vi" ? "← Trang chủ" : "← ホーム"}</Text>
         </TouchableOpacity>
-
-        <View style={styles.progressContainer}>
-          <View style={styles.progressBar}>
-            <View style={[styles.progressFill, { width: `${(answeredCount / total) * 100}%` }]} />
-          </View>
-          <Text style={styles.progressText}>{examIndex + 1}/{total}</Text>
-        </View>
 
         <TimerDisplay timeLeft={timeLeft} />
 
@@ -228,18 +222,18 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   backBtn: {
-    backgroundColor: "#059669",
-    borderWidth: 1,
-    borderColor: "#34d399",
-    borderRadius: 999,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
+    backgroundColor: PILL.bgColor,
+    borderWidth: PILL.borderWidth,
+    borderColor: PILL.borderColor,
+    borderRadius: PILL.borderRadius,
+    paddingHorizontal: PILL.paddingH,
+    paddingVertical: PILL.paddingV,
     flexDirection: "row",
     alignItems: "center",
-    gap: 4,
+    gap: PILL.gap,
     marginBottom: 12,
     width: 94,
-    opacity: 0.6,
+    opacity: PILL.opacity,
   },
   backBtnText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   progressContainer: { flex: 1, minWidth: 80 },

@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
+import { BTN, PILL } from "../theme/buttonTokens";
 import type { Lang } from "../types";
 
 interface ExamPrepScreenProps {
@@ -117,7 +118,7 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
           </View>
         </View>
         <Text style={styles.cardContent}>{L.part2Content}</Text>
-        <View style={[styles.ruleBox, { backgroundColor: "#fff1f2", borderColor: "#fecdd3" }]}>
+        <View style={[styles.ruleBox, { backgroundColor: "#fef3c7", borderColor: "#fde68a" }]}>
           <BookOpen size={12} />
           <Text style={[styles.ruleText, { color: "#9f1239" }]}>{L.part2Rule}</Text>
         </View>
@@ -153,38 +154,39 @@ const styles = StyleSheet.create({
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
   backBtn: {
-    backgroundColor: "#059669",
-    borderWidth: 1,
-    borderColor: "#34d399",
-    borderRadius: 999,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
+    backgroundColor: PILL.bgColor,
+    borderWidth: PILL.borderWidth,
+    borderColor: PILL.borderColor,
+    borderRadius: PILL.borderRadius,
+    paddingHorizontal: PILL.paddingH,
+    paddingVertical: PILL.paddingV,
     flexDirection: "row",
     alignItems: "center",
-    gap: 4,
+    gap: PILL.gap,
     marginBottom: 12,
     width: 94,
-    opacity: 0.6,
+    opacity: PILL.opacity,
   },
   backText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   startBtn: {
-    backgroundColor: "#fbbf24",
-    borderColor: "#78350f",
+    backgroundColor: "#ffffff",
+    borderColor: "#f5f5f5",
     borderWidth: 3,
-    borderRadius: 12,
+    borderRadius: BTN.borderRadius,
     paddingVertical: 16,
     alignItems: "center",
     marginBottom: 12,
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 6,
-    elevation: 5,
+    shadowOffset: { width: BTN.shadowOffsetW, height: BTN.shadowOffsetH },
+    shadowOpacity: BTN.shadowOpacity,
+    shadowRadius: BTN.shadowRadius,
+    elevation: BTN.elevation,
+    opacity: 0.9,
   },
   startBtnText: {
     fontWeight: "900",
     fontSize: 18,
-    color: "#78350f",
+    color: "#bf0d0d",
   },
   statsRow: { flexDirection: "row", gap: 8, marginBottom: 12 },
   statBox: {
@@ -225,7 +227,7 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 12,
     fontWeight: "bold",
-    color: "#78350f",
+    color: "#10670e",
   },
   badgeRow: { flexDirection: "row", gap: 6 },
   countBadge: {
@@ -233,6 +235,8 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     borderRadius: 999,
     backgroundColor: "#fef3c7",
+    borderWidth: 0,
+    borderColor: "transparent",
   },
   countBadgeText: {
     fontSize: 11,

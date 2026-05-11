@@ -9,9 +9,11 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
+import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
 import { QuestionMark, ArrowLeft } from "../components/Icons";
 import { questionsForChapter } from "../lib/exam";
 import { CHAPTER_VI } from "../lib/chapters";
+import { PILL } from "../theme/buttonTokens";
 import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
@@ -287,23 +289,23 @@ const styles = StyleSheet.create({
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
   backBtn: {
-    backgroundColor: "#059669",
-    borderWidth: 1,
-    borderColor: "#34d399",
-    borderRadius: 888,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
+    backgroundColor: PILL.bgColor,
+    borderWidth: PILL.borderWidth,
+    borderColor: PILL.borderColor,
+    borderRadius: PILL.borderRadius,
+    paddingHorizontal: PILL.paddingH,
+    paddingVertical: PILL.paddingV,
     flexDirection: "row",
     alignItems: "flex-start",
     justifyContent: "center",
-    gap: 4,
+    gap: PILL.gap,
     marginBottom: 12,
-    width: 94,
-    opacity: 0.6,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.15,
-    shadowRadius: 12,
+    width: 115,
+    opacity: PILL.opacity,
+    shadowColor: PILL.shadowColor,
+    shadowOffset: { width: PILL.shadowOffsetW, height: PILL.shadowOffsetH },
+    shadowOpacity: PILL.shadowOpacity,
+    shadowRadius: PILL.shadowRadius,
   },
   backText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   emptyText: { color: "#fde68a", fontSize: 14 },

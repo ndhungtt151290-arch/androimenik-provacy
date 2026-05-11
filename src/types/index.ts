@@ -49,6 +49,7 @@ export type Lang = "jp" | "vi";
 
 export type AppScreen =
   | { mode: "home" }
+  | { mode: "practiceHome" }
   | { mode: "examPrep" }
   | { mode: "chapter"; chapterId: string; subChapter?: string }
   | { mode: "exam" }

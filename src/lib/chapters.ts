@@ -22,12 +22,12 @@ export const CHAPTERS: ChapterDef[] = [
 
 export const CHAPTER_VI: Record<string, string> = Object.fromEntries([
   ...CHAPTERS.map((c) => [c.jp, c.vi]),
+  ["総合演習", "Ôn tập tổng hợp"],
   ["総合演習1", "Ôn tập tổng hợp 1"],
   ["総合演習2", "Ôn tập tổng hợp 2"],
   ["総合演習3", "Ôn tập tổng hợp 3"],
   ["総合演習4", "Ôn tập tổng hợp 4"],
   ["総合演習5", "Ôn tập tổng hợp 5"],
-  ["総合演習", "Ôn tập tổng hợp"],
 ]);
 
 export const CHAPTER_JP: Record<string, string> = Object.fromEntries(

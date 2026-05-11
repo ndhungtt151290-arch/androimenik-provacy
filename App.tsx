@@ -18,6 +18,7 @@ import { ExamScreen } from "./src/screens/ExamScreen";
 import { ResultsScreen } from "./src/screens/ResultsScreen";
 import { ReviewScreen } from "./src/screens/ReviewScreen";
 import { HistoryScreen } from "./src/screens/HistoryScreen";
+import { PracticeHomeScreen } from "./src/screens/PracticeHomeScreen";
 import { buildMockExam, scoreExam } from "./src/lib/exam";
 import { loadHistory, saveHistory, loadStats, saveStats } from "./src/lib/storage";
 import type { ExamItem, Lang, MaruBatsu, PersonalStats, ExamHistoryEntry, AppScreen } from "./src/types";
@@ -63,6 +64,10 @@ function AppContent() {
 
   const goToExamPrep = useCallback(() => {
     setView({ mode: "examPrep" });
+  }, []);
+
+  const goToPracticeHome = useCallback(() => {
+    setView({ mode: "practiceHome" });
   }, []);
 
   const startExam = useCallback(() => {
@@ -297,11 +302,16 @@ function AppContent() {
             <HomeScreen
               lang={lang}
               onStartExam={goToExamPrep}
-              onChapter={(chapterId) =>
-                setView({ mode: "chapter", chapterId })
-              }
+              onStartPractice={goToPracticeHome}
               onShowHistory={() => setView({ mode: "history" })}
-              personalStats={personalStats}
+            />
+          )}
+
+          {view.mode === "practiceHome" && (
+            <PracticeHomeScreen
+              lang={lang}
+              onChapter={(chapterId) => setView({ mode: "chapter", chapterId })}
+              onBack={() => setView({ mode: "home" })}
             />
           )}
 

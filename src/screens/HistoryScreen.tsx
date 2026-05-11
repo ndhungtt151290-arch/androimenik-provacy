@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft } from "../components/Icons";
+import { PILL } from "../theme/buttonTokens";
 import type { ExamHistoryEntry, Lang } from "../types";
 
 interface HistoryScreenProps {
@@ -87,18 +88,18 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
 const styles = StyleSheet.create({
   container: { flex: 1 },
   backBtn: {
-    backgroundColor: "#059669",
-    borderWidth: 1,
-    borderColor: "#34d399",
-    borderRadius: 999,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
+    backgroundColor: PILL.bgColor,
+    borderWidth: PILL.borderWidth,
+    borderColor: PILL.borderColor,
+    borderRadius: PILL.borderRadius,
+    paddingHorizontal: PILL.paddingH,
+    paddingVertical: PILL.paddingV,
     flexDirection: "row",
     alignItems: "center",
-    gap: 4,
+    gap: PILL.gap,
     marginBottom: 12,
     width: 94,
-    opacity: 0.6,
+    opacity: PILL.opacity,
   },
   backBtnText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   title: { fontSize: 20, fontWeight: "bold", color: "#fde68a" },

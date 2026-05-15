@@ -43,6 +43,8 @@ export function AnswerNavButtons({
             btnStyle,
             answerValue === "○"
               ? styles.maruSelected
+              : answerValue === "×"
+              ? styles.maruUnselectedFade
               : styles.maruUnselected,
             disabled && styles.maruDisabled,
           ]}
@@ -58,6 +60,8 @@ export function AnswerNavButtons({
             btnStyle,
             answerValue === "×"
               ? styles.batsuSelected
+              : answerValue === "○"
+              ? styles.batsuUnselectedFade
               : styles.batsuUnselected,
             disabled && styles.maruDisabled,
           ]}
@@ -99,7 +103,7 @@ const styles = StyleSheet.create({
   maruRow: { flexDirection: "row", gap: 12 },
   maruBtn: {
     flex: 1,
-    paddingVertical: 10,
+    paddingVertical: 28,
     borderRadius: 10,
     borderWidth: 2,
     borderColor: "#78350f",
@@ -112,21 +116,23 @@ const styles = StyleSheet.create({
   },
   maruBtnLarge: {
     flex: 1,
-    paddingVertical: 16,
+    paddingVertical: 28,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: "#78350f",
+    borderColor: "rgba(255, 255, 255, 0)",
     alignItems: "center",
-    shadowColor: "#000",
+    shadowColor: "rgba(255, 255, 255, 0)",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15,
     shadowRadius: 3,
     elevation: 3,
   },
-  maruUnselected: { backgroundColor: "#059669" },
-  maruSelected: { backgroundColor: "#16a34a", borderColor: "#fde68a", borderWidth: 3 },
-  batsuUnselected: { backgroundColor: "#be123c" },
-  batsuSelected: { backgroundColor: "#9f1239", borderColor: "#fde68a", borderWidth: 3 },
+  maruUnselected: { backgroundColor: "rgba(19, 156, 19, 0.99)"},
+  maruSelected: { backgroundColor: "rgba(11, 138, 11, 0.95)" },
+  batsuUnselected: { backgroundColor: "rgba(196, 18, 18, 0.79)"},
+  batsuSelected: { backgroundColor: "rgba(177, 18, 18, 0.99)"},
+  maruUnselectedFade: { backgroundColor: "rgba(19, 156, 19, 0.1)"},
+  batsuUnselectedFade: { backgroundColor: "rgba(196, 18, 18, 0.1)"},
   maruDisabled: { opacity: 0.4 },
   text: { fontWeight: "bold", fontSize: 20, color: "#fff" },
   textLarge: { fontWeight: "bold", fontSize: 26, color: "#fff" },
@@ -140,11 +146,11 @@ const styles = StyleSheet.create({
     gap: 4,
     paddingVertical: 7,
     borderRadius: 10,
-    backgroundColor: "rgba(120,53,15,0.4)",
+    backgroundColor: "rgba(14, 13, 12, 0.16)",
     borderWidth: 1,
-    borderColor: "rgba(120,53,15,0.6)",
+    borderColor: "rgba(233, 228, 224, 0.34)",
   },
   navBtnDisabled: { opacity: 0.3 },
-  navLabel: { fontSize: 13, fontWeight: "bold", color: "#fef3c7" },
-  navArrow: { fontSize: 18, color: "#fef3c7" },
+  navLabel: { fontSize: 13, fontWeight: "bold", color: "rgba(255, 248, 248, 0.64)", },
+  navArrow: { fontSize: 18, color: "rgb(255, 255, 255)", },
 });

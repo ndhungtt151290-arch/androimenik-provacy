@@ -36,3 +36,25 @@ export async function saveStats(stats: PersonalStats): Promise<void> {
     await AsyncStorage.setItem(STATS_KEY, JSON.stringify(stats));
   } catch {}
 }
+
+const PRACTICE_KEY = "gentsuki_practice_progress";
+
+export async function loadPracticeProgress(): Promise<Record<string, string[]>> {
+  try {
+    const raw = await AsyncStorage.getItem(PRACTICE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+export async function savePracticeProgress(
+  chapterId: string,
+  answeredIds: string[]
+): Promise<void> {
+  try {
+    const all = await loadPracticeProgress();
+    all[chapterId] = answeredIds;
+    await AsyncStorage.setItem(PRACTICE_KEY, JSON.stringify(all));
+  } catch {}
+}

@@ -12,6 +12,7 @@ import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
 import { TimerDisplay } from "../components/TimerDisplay";
+import { BackHomeButton } from "../components/BackHomeButton";
 import { ArrowLeft, QuestionMark } from "../components/Icons";
 import { PILL } from "../theme/buttonTokens";
 import type { ExamItem, Lang, MaruBatsu, QuestionBank } from "../types";
@@ -78,17 +79,13 @@ export function ExamScreen({
     submit: lang === "vi" ? "Nộp bài" : "答案を提出",
     prev: lang === "vi" ? "Trước" : "前へ",
     next: lang === "vi" ? "Sau" : "次へ",
-    part2: lang === "vi" ? "Phần 2 · Hình ảnh" : "第2部 · イラスト",
-    part2Sub: lang === "vi" ? "Cả 3 ý đúng → 2 điểm" : "3問すべて正解 → 2点",
-    part2Warning: lang === "vi"
-      ? "Phải trả lời đúng TẤT CẢ 3 ý nhỏ mới được điểm."
-      : "3題すべて正解で2点獲得。",
     flag: lang === "vi" ? "Phân vân" : "迷い",
     unflag: lang === "vi" ? "Bỏ phân vân" : "迷いを解除",
   };
 
   return (
     <View style={styles.screenContainer}>
+      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
@@ -96,10 +93,6 @@ export function ExamScreen({
       >
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
-          <Text style={styles.backBtnText}>{lang === "vi" ? "← Trang chủ" : "← ホーム"}</Text>
-        </TouchableOpacity>
-
         <TimerDisplay timeLeft={timeLeft} />
 
         <TouchableOpacity onPress={onSubmit} style={styles.submitBtn} activeOpacity={0.8}>
@@ -108,18 +101,20 @@ export function ExamScreen({
       </View>
 
       {/* Question list */}
-      <ProgressIndicator
-        total={total}
-        current={examIndex}
-        simpleAns={simpleAns}
-        scenarioAns={scenarioAns}
-        paper={paper}
-        flags={flags}
-        onJump={onJump}
-        lang={lang}
-        expanded={expanded}
-        onToggleExpand={() => setExpanded(!expanded)}
-      />
+      <View style={{ alignItems: "flex-start" }}>
+        <ProgressIndicator
+          total={total}
+          current={examIndex}
+          simpleAns={simpleAns}
+          scenarioAns={scenarioAns}
+          paper={paper}
+          flags={flags}
+          onJump={onJump}
+          lang={lang}
+          expanded={expanded}
+          onToggleExpand={() => setExpanded(!expanded)}
+        />
+      </View>
 
       {/* Question card */}
       <View style={styles.questionCard}>
@@ -127,17 +122,11 @@ export function ExamScreen({
         <View style={styles.cardHeader}>
           <View style={styles.partInfo}>
             {currentItem.type !== "simple" && (
-              <>
-                <Text style={styles.partLabelRose}>{L.part2}</Text>
-                <View style={[styles.subBadge, { backgroundColor: "#ffe4e6" }]}>
-                  <Text style={[styles.subBadgeText, { color: "#9f1239" }]}>{L.part2Sub}</Text>
-                </View>
-              </>
+              <></>
             )}
           </View>
 
           <TouchableOpacity onPress={onToggleFlag} style={[styles.flagBtn, isCurrentFlagged && styles.flagBtnActive]}>
-            <QuestionMark size={12} />
             <Text style={[styles.flagBtnText, isCurrentFlagged && styles.flagBtnTextActive]}>{isCurrentFlagged ? L.unflag : L.flag}</Text>
           </TouchableOpacity>
         </View>
@@ -161,7 +150,6 @@ export function ExamScreen({
 
           {currentItem.type === "scenario" && (
             <View>
-              <Text style={styles.warningText}>⚠ {L.part2Warning}</Text>
               <Text style={styles.stemText}>
                 {tx(currentItem.group.stem, currentItem.group.stemVi, lang)}
               </Text>
@@ -221,25 +209,10 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     flexWrap: "wrap",
   },
-  backBtn: {
-    backgroundColor: PILL.bgColor,
-    borderWidth: PILL.borderWidth,
-    borderColor: PILL.borderColor,
-    borderRadius: PILL.borderRadius,
-    paddingHorizontal: PILL.paddingH,
-    paddingVertical: PILL.paddingV,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: PILL.gap,
-    marginBottom: 12,
-    width: 94,
-    opacity: PILL.opacity,
-  },
-  backBtnText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   progressContainer: { flex: 1, minWidth: 80 },
   progressBar: { height: 8, backgroundColor: "rgba(0,0,0,0.3)", borderRadius: 4, overflow: "hidden" },
-  progressFill: { height: "100%", backgroundColor: "#059669", borderRadius: 4 },
-  progressText: { fontSize: 11, color: "#fde68a", textAlign: "right", marginTop: 2 },
+  progressFill: { height: "100%", backgroundColor: "rgba(39, 34, 34, 0.9)", borderRadius: 4 },
+  progressText: { fontSize: 11, color: "rgba(27, 27, 27, 0.9)", textAlign: "right", marginTop: 2 },
   submitBtn: {
     backgroundColor: "#be123c",
     paddingHorizontal: 10,
@@ -247,10 +220,15 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     borderWidth: 1,
     borderColor: "#f43f5e",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 2,
+    opacity: 0.8,
   },
-  submitText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
+  submitText: { fontSize: 15, fontWeight: "bold", color: "#fff" },
   questionCard: {
-    backgroundColor: "rgba(255,255,255,0.15)",
+    backgroundColor: "rgba(255, 255, 255, 0.51)",
     borderRadius: 14,
     padding: 14,
     marginBottom: 12,
@@ -265,10 +243,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   partInfo: { flexDirection: "row", alignItems: "center", gap: 6, flexWrap: "wrap", flex: 1 },
-  partLabel: { fontSize: 12, fontWeight: "bold", color: "#7f1d1d" },
-  partLabelRose: { fontSize: 12, fontWeight: "bold", color: "#9f1239" },
-  subBadge: { backgroundColor: "#fee2e2", paddingHorizontal: 6, paddingVertical: 2, borderRadius: 999 },
-  subBadgeText: { fontSize: 10, fontWeight: "bold", color: "#7f1d1d" },
   flagBtn: {
     flexDirection: "row",
     alignItems: "center",
@@ -277,15 +251,18 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     borderRadius: 10,
     borderWidth: 1.5,
-    backgroundColor: "rgba(120,53,15,0.4)",
-    borderColor: "rgba(120,53,15,0.6)",
+    backgroundColor: "rgb(248, 245, 244)",
+    borderColor: "rgba(231, 228, 227, 0.6)",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
   },
-  flagBtnActive: { backgroundColor: "#f59e0b", borderColor: "#d97706" },
-  flagBtnText: { fontSize: 12, fontWeight: "600", color: "#fef3c7" },
-  flagBtnTextActive: { color: "#1c1917" },
+  flagBtnActive: { backgroundColor: "rgb(247, 164, 12)", borderColor: "rgba(201, 196, 192, 0.25)", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 2, elevation: 2},
+  flagBtnText: { fontSize: 10, fontWeight: "600", color: "rgba(15, 15, 15, 0.89)" },
+  flagBtnTextActive: { color: "rgba(37, 28, 25, 0.89)" },
   questionContent: { maxHeight: 220 },
   questionText: { fontSize: 14, lineHeight: 22, fontWeight: "500", color: "#111", textAlign: "center" },
-  warningText: { fontSize: 12, color: "#be123c", fontWeight: "500", marginBottom: 6 },
   stemText: { fontSize: 14, fontWeight: "600", color: "#111", marginBottom: 12 },
   subItem: { borderTopWidth: 2, borderTopColor: "rgba(120,53,15,0.3)", paddingTop: 10, marginBottom: 12 },
   subRow: { flexDirection: "row", gap: 8, alignItems: "flex-start", marginBottom: 8 },

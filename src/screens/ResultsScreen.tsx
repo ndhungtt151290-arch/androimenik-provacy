@@ -1,8 +1,9 @@
 import React from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Check, X, RotateCcw, BookOpen, ListOrdered } from "../components/Icons";
+import { Check, X, RotateCcw,} from "../components/Icons";
 import { CHAPTER_VI } from "../lib/chapters";
+import { BackHomeButton } from "../components/BackHomeButton";
 import type { ExamItem, Lang, PersonalStats } from "../types";
 
 interface ResultsScreenProps {
@@ -54,11 +55,10 @@ export function ResultsScreen({
     condition: lang === "vi" ? "Điều kiện đạt: từ 45/50 điểm trở lên (≥ 90%)" : "合格条件：50点中45点以上（90%以上）",
     part1: lang === "vi" ? "Phần 1 · Lý thuyết" : "第1部 · 理論",
     part2: lang === "vi" ? "Phần 2 · Hình ảnh" : "第2部 · イラスト",
-    reviewBtn: lang === "vi" ? `Giải thích & xem lại ${wrong.length} phần sai` : `解説を見る · ${wrong.length}問の間違いを復習`,
+    reviewBtn: lang === "vi" ? `Giải thích ${wrong.length} phần sai` : `解説を見る · ${wrong.length}問の間違いを復習`,
     reviewAllBtn: lang === "vi" ? "Xem lại tất cả câu" : "全問を復習",
     perfect: lang === "vi" ? "Không có câu sai — xuất sắc!" : "全問正解 — お見事！",
     retry: lang === "vi" ? "Làm đề mới" : "新しい問題に挑戦",
-    home: lang === "vi" ? "Về trang chủ" : "ホームに戻る",
     passed: lang === "vi" ? "ĐẠT" : "合格",
     failed: lang === "vi" ? "CHƯA ĐẠT" : "不合格",
     maxLabel: lang === "vi" ? "tối đa" : "満点",
@@ -68,6 +68,7 @@ export function ResultsScreen({
 
   return (
     <View style={styles.screenContainer}>
+      <BackHomeButton onPress={onHome} lang={lang} variant="home" />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
@@ -126,7 +127,7 @@ export function ResultsScreen({
         </View>
 
         <View style={styles.partRow}>
-          <View style={[styles.partIcon, { backgroundColor: "#fecdd3" }]}><Text style={[styles.partNum, { color: "#9f1239" }]}>2</Text></View>
+          <View style={[styles.partIcon, { backgroundColor: "rgba(245, 241, 241, 0.4)" }]}><Text style={[styles.partNum, { color: "rgba(42, 104, 11, 0.72)" }]}>2</Text></View>
           <View style={styles.partInfo}>
             <Text style={styles.partLabel}>{L.part2}</Text>
             <Text style={styles.partSub}>{lang === "vi" ? `${totalScenarioGroups} câu hình · ${scenarioCorrect} câu đúng` : `${totalScenarioGroups}イラスト · ${scenarioCorrect}問 正解`}</Text>
@@ -142,7 +143,6 @@ export function ResultsScreen({
       <View style={styles.reviewBtns}>
         {wrong.length > 0 && (
           <TouchableOpacity onPress={onReview} style={styles.reviewBtn} activeOpacity={0.8}>
-            <BookOpen size={14} />
             <Text style={styles.reviewBtnText}>{L.reviewBtn}</Text>
           </TouchableOpacity>
         )}
@@ -151,7 +151,6 @@ export function ResultsScreen({
           style={[styles.reviewBtn, styles.reviewBtnGreen, wrong.length === 0 && styles.reviewBtnFull]}
           activeOpacity={0.8}
         >
-          <ListOrdered size={14} />
           <Text style={[styles.reviewBtnText, { color: "#166534" }]}>{L.reviewAllBtn}</Text>
         </TouchableOpacity>
       </View>
@@ -163,10 +162,6 @@ export function ResultsScreen({
       <TouchableOpacity onPress={onRetry} style={styles.retryBtn} activeOpacity={0.8}>
         <RotateCcw size={16} />
         <Text style={styles.retryBtnText}>{L.retry}</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity onPress={onHome} style={styles.homeBtn} activeOpacity={0.7}>
-        <Text style={styles.homeBtnText}>{L.home}</Text>
       </TouchableOpacity>
 
       </ScrollView>
@@ -202,23 +197,21 @@ const styles = StyleSheet.create({
   pctFillMid: { backgroundColor: "#d97706" },
   pctFillBad: { backgroundColor: "#dc2626" },
   pctFillRest: { height: "100%", backgroundColor: "#a3a3a3" },
-  partRow: { flexDirection: "row", alignItems: "center", gap: 12, padding: 12, backgroundColor: "#fff1f2", borderRadius: 10, marginBottom: 8, borderWidth: 1, borderColor: "#fecdd3" },
-  partIcon: { width: 32, height: 32, borderRadius: 16, backgroundColor: "#fecdd3", alignItems: "center", justifyContent: "center" },
-  partNum: { fontSize: 14, fontWeight: "900", color: "#7f1d1d" },
+  partRow: { flexDirection: "row", alignItems: "center", gap: 12, padding: 12, backgroundColor: "rgba(219, 235, 213, 0.8)", borderRadius: 10, marginBottom: 8, borderWidth: 1, borderColor: "rgba(245, 242, 242, 0.49)" },
+  partIcon: { width: 32, height: 32, borderRadius: 16, backgroundColor: "rgba(251, 252, 251, 0.29)", alignItems: "center", justifyContent: "center" },
+  partNum: { fontSize: 14, fontWeight: "900", color: "rgba(34, 78, 17, 0.8)" },
   partInfo: { flex: 1 },
-  partLabel: { fontSize: 12, fontWeight: "bold", color: "#7f1d1d" },
-  partSub: { fontSize: 11, color: "rgba(127,29,29,0.8)" },
+  partLabel: { fontSize: 12, fontWeight: "bold", color: "rgba(28, 68, 12, 0.8)" },
+  partSub: { fontSize: 11, color: "rgba(44, 35, 35, 0.8)" },
   partScore: { alignItems: "flex-end" },
   partScoreText: { fontSize: 14, fontWeight: "900", color: "#7f1d1d" },
-  partScoreMax: { fontSize: 10, color: "rgba(127,29,29,0.8)" },
+  partScoreMax: { fontSize: 10, color: "rgba(31, 27, 27, 0.8)" },
   reviewBtns: { flexDirection: "row", gap: 8, marginBottom: 8 },
-  reviewBtn: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingVertical: 10, borderRadius: 12, backgroundColor: "#fde68a", borderWidth: 2, borderColor: "#78350f" },
+  reviewBtn: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingVertical: 10, borderRadius: 12, backgroundColor: "rgba(255, 253, 253, 0.77)", borderWidth: 2, borderColor: "rgba(255, 255, 255, 0.34)" },
   reviewBtnFull: { flex: undefined, width: "100%" },
-  reviewBtnGreen: { backgroundColor: "#d1fae5", borderColor: "#166534" },
-  reviewBtnText: { fontSize: 12, fontWeight: "bold", color: "#78350f" },
-  perfect: { textAlign: "center", color: "#86efac", fontSize: 14, fontWeight: "600", marginBottom: 8 },
-  retryBtn: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingVertical: 10, borderRadius: 12, backgroundColor: "#fdba74", borderWidth: 2, borderColor: "#78350f", marginBottom: 8 },
-  retryBtnText: { fontSize: 14, fontWeight: "bold", color: "#78350f" },
-  homeBtn: { alignItems: "center" },
-  homeBtnText: { fontSize: 14, color: "#fde68a", textDecorationLine: "underline" },
+  reviewBtnGreen: { backgroundColor: "rgba(247, 241, 241, 0.61)", borderColor: "rgba(238, 238, 238, 0.97)" },
+  reviewBtnText: { fontSize: 12, fontWeight: "bold", color: "rgba(34, 78, 17, 0.8)"},
+  perfect: { textAlign: "center", color: "rgba(14, 14, 14, 0.8)", fontSize: 14, fontWeight: "600", marginBottom: 8 },
+  retryBtn: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingVertical: 10, borderRadius: 12, backgroundColor: "rgba(214, 49, 49, 0.81)", borderWidth: 2, borderColor: "rgba(247, 247, 247, 0.09)", marginBottom: 8 },
+  retryBtnText: { fontSize: 14, fontWeight: "bold", color: "rgba(34, 26, 26, 0.8)" },
 });

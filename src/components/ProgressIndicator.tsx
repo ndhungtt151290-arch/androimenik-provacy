@@ -128,6 +128,7 @@ const styles = StyleSheet.create({
     borderColor: "rgba(120,53,15,0.3)",
   },
   header: {
+    alignSelf: "flex-start",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -142,6 +143,7 @@ const styles = StyleSheet.create({
     color: "#78350f",
   },
   panel: {
+    alignSelf: "flex-end",
     marginTop: 10,
   },
   progressBar: {

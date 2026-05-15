@@ -1,8 +1,13 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { CHAPTER_VI, CHAPTER_MAP } from "../lib/chapters";
-import { BTN, PILL } from "../theme/buttonTokens";
+import { loadPracticeProgress } from "../lib/storage";
+import { BTN } from "../theme/buttonTokens";
+import { BackHomeButton } from "../components/BackHomeButton";
+import { ConfirmDialog } from "../components/ConfirmDialog";
+import { SubChapterModal } from "../components/SubChapterModal";
 import type { QuestionBank, Lang } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
@@ -15,6 +20,19 @@ interface PracticeHomeScreenProps {
 
 export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScreenProps) {
   const insets = useSafeAreaInsets();
+  const [practiceProgress, setPracticeProgress] = useState<Record<string, string[]>>({});
+  const [showReset, setShowReset] = useState(false);
+  const [showSubChapter, setShowSubChapter] = useState(false);
+
+  useEffect(() => {
+    loadPracticeProgress().then(setPracticeProgress);
+  }, []);
+
+  const handleResetProgress = async () => {
+    await AsyncStorage.removeItem("gentsuki_practice_progress");
+    setPracticeProgress({});
+    setShowReset(false);
+  };
 
   const chapterCountMap = useMemo(() => {
     const map: Record<string, number> = {};
@@ -34,14 +52,13 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
     title: lang === "vi" ? "Luyện tập" : "練習",
     back: lang === "vi" ? "← Trang chủ" : "← ホーム",
     questions: lang === "vi" ? "câu" : "問",
+    resetBtn: lang === "vi" ? "Đặt lại tiến trình" : "進捗をリセット",
   };
 
   return (
     <View style={styles.container}>
+      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
       <View style={styles.header}>
-        <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
-          <Text style={styles.backText}>{L.back}</Text>
-        </TouchableOpacity>
         <Text style={styles.title}>{L.title}</Text>
       </View>
 
@@ -67,20 +84,36 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
                     return (
                       <TouchableOpacity
                         key={chapterId}
-                        onPress={() => onChapter(chapterId)}
+                        onPress={() => {
+                          if (chapterName === "総合演習") {
+                            setShowSubChapter(true);
+                          } else {
+                            onChapter(chapterId);
+                          }
+                        }}
                         style={[
                           styles.gridCell,
-                          { backgroundColor: isIllust ? "#dcfce7" : "#f5f5f5" },
+                          { backgroundColor: isIllust ? "rgba(206, 221, 203, 0.84)" : "rgba(255, 255, 255, 0.7)" },
                         ]}
                         activeOpacity={0.7}
                       >
+                        {(() => {
+                          const answered = practiceProgress[chapterId] ?? [];
+                          if (answered.length === 0 || count === 0) return null;
+                          const pct = Math.min((answered.length / count) * 100, 100);
+                          return (
+                            <View style={styles.progressTrack}>
+                              <View style={[styles.progressFill, { width: `${pct}%` }]} />
+                            </View>
+                          );
+                        })()}
                         <Text style={styles.chapterLabel} numberOfLines={2}>
                           {label}
                         </Text>
                         <Text
                           style={[
                             styles.countText,
-                            { color: isIllust ? "#166534" : "#92400e" },
+                            { color: isIllust ? "rgba(8, 8, 8, 0.8)" : "rgba(24, 73, 5, 0.8)" },
                           ]}
                         >
                           {count}
@@ -93,6 +126,36 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
               ));
             })()}
           </View>
+          <TouchableOpacity
+            style={styles.resetBtn}
+            onPress={() => setShowReset(true)}
+          >
+            <Text style={styles.resetBtnText}>{L.resetBtn}</Text>
+          </TouchableOpacity>
+          <ConfirmDialog
+            visible={showReset}
+            lang={lang}
+            onConfirm={handleResetProgress}
+            onCancel={() => setShowReset(false)}
+            variant="danger"
+          />
+          <SubChapterModal
+            visible={showSubChapter}
+            title={lang === "vi" ? "Chọn chương ôn tập" : "練習 章を選択"}
+            subChapters={[
+              { id: "総合演習1", name: "総合演習 1", viName: "Ôn tập tổng hợp 1" },
+              { id: "総合演習2", name: "総合演習 2", viName: "Ôn tập tổng hợp 2" },
+              { id: "総合演習3", name: "総合演習 3", viName: "Ôn tập tổng hợp 3" },
+              { id: "総合演習4", name: "総合演習 4", viName: "Ôn tập tổng hợp 4" },
+              { id: "総合演習5", name: "総合演習 5", viName: "Ôn tập tổng hợp 5" },
+            ]}
+            lang={lang}
+            onSelect={(id) => {
+              setShowSubChapter(false);
+              onChapter(id);
+            }}
+            onClose={() => setShowSubChapter(false)}
+          />
         </View>
       </View>
     </View>
@@ -102,21 +165,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 50 },
   header: { alignItems: "center", marginBottom: 8 },
-  backBtn: {
-    backgroundColor: PILL.bgColor,
-    borderWidth: PILL.borderWidth,
-    borderColor: PILL.borderColor,
-    borderRadius: PILL.borderRadius,
-    paddingHorizontal: PILL.paddingH,
-    paddingVertical: PILL.paddingV,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: PILL.gap,
-    marginBottom: 8,
-    opacity: PILL.opacity,
-  },
-  backText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
-  title: { fontSize: 22, fontWeight: "900", color: "#111" },
+  title: { fontSize: 22, fontWeight: "900", color: "rgba(48, 122, 19, 0.99)" },
   scrollWrapper: { flex: 1, overflow: "hidden" },
   scrollContent: { paddingHorizontal: 0 },
   chapterGrid: { paddingHorizontal: 8, paddingBottom: 4, marginTop: 6 },
@@ -130,13 +179,41 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 1,
-    borderColor: "rgba(0,0,0,0.1)",
-    shadowColor: "#000",
+    borderColor: "rgba(15, 13, 13, 0.1)",
+    shadowColor: "rgba(241, 236, 236, 0.53)",
     shadowOffset: { width: 2, height: 3 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.5,
     shadowRadius: 4,
     elevation: 3,
   },
   chapterLabel: { fontSize: 14, fontWeight: "bold", color: "#111", textAlign: "center" },
   countText: { fontSize: 12, fontWeight: "bold", marginTop: 4 },
+  progressTrack: {
+    width: "100%",
+    height: 4,
+    backgroundColor: "rgba(0,0,0,0.1)",
+    borderRadius: 2,
+    marginBottom: 4,
+    overflow: "hidden",
+  },
+  progressFill: {
+    height: "100%",
+    backgroundColor: "#4ade80",
+    borderRadius: 2,
+  },
+  resetBtn: {
+    marginTop: 16,
+    marginHorizontal: 8,
+    paddingVertical: 10,
+    borderRadius: 10,
+    borderWidth: 0.5,
+    borderColor: "rgba(0,0,0,0.12)",
+    alignItems: "center",
+    opacity: 0.55,
+  },
+  resetBtnText: {
+    fontSize: 12,
+    color: "#666",
+    fontWeight: "500",
+  },
 });

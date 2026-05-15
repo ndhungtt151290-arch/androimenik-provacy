@@ -1,38 +1,34 @@
 import React from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Image, StyleSheet } from "react-native";
 import type { Lang } from "../types";
+
+const backIcon = require("../assets/home/back-icon.png");
 
 interface BackHomeButtonProps {
   onPress: () => void;
   lang: Lang;
+  variant?: "back" | "home";
 }
 
-export function BackHomeButton({ onPress, lang }: BackHomeButtonProps) {
-  const label = lang === "vi" ? "‹ Quay lại" : "‹ HOME";
-
+export function BackHomeButton({ onPress }: BackHomeButtonProps) {
   return (
     <TouchableOpacity
       onPress={onPress}
       style={styles.button}
       activeOpacity={0.7}
     >
-      <Text style={styles.label}>{label}</Text>
+      <Image source={backIcon} style={styles.icon} />
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "#059669",
-    borderWidth: 1,
-    borderColor: "#34d399",
-    borderRadius: 999,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
+    padding: 4,
+    alignSelf: "flex-start",
   },
-  label: {
-    fontSize: 12,
-    fontWeight: "bold",
-    color: "#fff",
+  icon: {
+    width: 44,
+    height: 44,
   },
 });

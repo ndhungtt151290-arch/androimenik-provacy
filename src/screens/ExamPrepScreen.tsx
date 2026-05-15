@@ -3,7 +3,9 @@ import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-nati
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
 import { BTN, PILL } from "../theme/buttonTokens";
+import { BackHomeButton } from "../components/BackHomeButton";
 import type { Lang } from "../types";
+import { ColorSpace } from "react-native-reanimated";
 
 interface ExamPrepScreenProps {
   lang: Lang;
@@ -55,15 +57,12 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
 
   return (
     <View style={styles.screenContainer}>
+      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
         showsVerticalScrollIndicator={false}
       >
-      <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
-        <Text style={styles.backText}>{L.back}</Text>
-      </TouchableOpacity>
-
       <TouchableOpacity onPress={onStart} style={styles.startBtn} activeOpacity={0.8}>
         <Text style={styles.startBtnText}>{L.start}</Text>
       </TouchableOpacity>
@@ -92,8 +91,8 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
             <View style={styles.countBadge}>
               <Text style={styles.countBadgeText}>{L.part1Count} {lang === "vi" ? "câu" : "問"}</Text>
             </View>
-            <View style={[styles.countBadge, { backgroundColor: "#d1fae5" }]}>
-              <Text style={[styles.countBadgeText, { color: "#166534" }]}>{L.part1Pts}</Text>
+            <View style={[styles.countBadge, { backgroundColor: "rgba(222, 226, 240, 0.8)" }]}>
+              <Text style={[styles.countBadgeText, { color: "rgba(8, 4, 56, 0.8)" }]}>{L.part1Pts}</Text>
             </View>
           </View>
         </View>
@@ -112,20 +111,20 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
             <View style={styles.countBadge}>
               <Text style={styles.countBadgeText}>{L.part2Count} {lang === "vi" ? "câu" : "問"}</Text>
             </View>
-            <View style={[styles.countBadge, { backgroundColor: "#d1fae5" }]}>
-              <Text style={[styles.countBadgeText, { color: "#166534" }]}>{L.part2Pts}</Text>
+            <View style={[styles.countBadge, { backgroundColor: "rgba(220, 226, 247, 0.8)" }]}>
+              <Text style={[styles.countBadgeText, { color: "rgba(7, 6, 6, 0.8)" }]}>{L.part2Pts}</Text>
             </View>
           </View>
         </View>
         <Text style={styles.cardContent}>{L.part2Content}</Text>
-        <View style={[styles.ruleBox, { backgroundColor: "#fef3c7", borderColor: "#fde68a" }]}>
+        <View style={[styles.ruleBox, { backgroundColor: "rgba(255, 255, 255, 0.8)", borderColor: "rgba(209, 204, 204, 0.8)" }]}>
           <BookOpen size={12} />
-          <Text style={[styles.ruleText, { color: "#9f1239" }]}>{L.part2Rule}</Text>
+          <Text style={[styles.ruleText, { color: "rgba(5, 5, 5, 0.95)" }]}>{L.part2Rule}</Text>
         </View>
       </View>
 
       {/* Tips */}
-      <View style={[styles.card, { backgroundColor: "rgba(254,243,199,0.8)" }]}>
+      <View style={[styles.card, { backgroundColor: "rgba(255, 255, 255, 0.8)" }]}>
         <View style={styles.tipsHeader}>
           <Brain size={12} />
           <Text style={styles.tipsTitle}>
@@ -135,7 +134,7 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
         {[
           { icon: <Clock size={11} />, text: L.tip1 },
           { icon: <CircleAlert size={11} />, text: L.tip2 },
-          { icon: <Brain size={11} />, text: L.tip3 },
+          { icon: <CircleAlert size={11} />, text: L.tip3 },
         ].map(({ icon, text }, i) => (
           <View key={i} style={styles.tipRow}>
             <Text style={{ fontSize: 11 }}>{icon}</Text>
@@ -153,21 +152,6 @@ const styles = StyleSheet.create({
   screenContainer: { flex: 1, position: "relative" },
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
-  backBtn: {
-    backgroundColor: PILL.bgColor,
-    borderWidth: PILL.borderWidth,
-    borderColor: PILL.borderColor,
-    borderRadius: PILL.borderRadius,
-    paddingHorizontal: PILL.paddingH,
-    paddingVertical: PILL.paddingV,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: PILL.gap,
-    marginBottom: 12,
-    width: 94,
-    opacity: PILL.opacity,
-  },
-  backText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   startBtn: {
     backgroundColor: "#ffffff",
     borderColor: "#f5f5f5",
@@ -186,21 +170,24 @@ const styles = StyleSheet.create({
   startBtnText: {
     fontWeight: "900",
     fontSize: 18,
-    color: "#bf0d0d",
+    color: "rgba(165, 26, 38, 0.8)",
+    textShadowColor : "rgba(145, 126, 126, 0.8)",
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 1,
   },
   statsRow: { flexDirection: "row", gap: 8, marginBottom: 12 },
   statBox: {
     flex: 1,
-    backgroundColor: "rgba(0,0,0,0.3)",
+    backgroundColor: "rgb(255, 255, 255)",
     borderRadius: 8,
     padding: 8,
     alignItems: "center",
     borderWidth: 1,
-    borderColor: "rgba(120,53,15,0.4)",
+    borderColor: "rgba(255, 254, 254, 0.4)",
   },
   statLabel: {
     fontSize: 10,
-    color: "rgba(253,230,138,0.7)",
+    color: "rgb(105, 102, 102)",
     textTransform: "uppercase",
     letterSpacing: 1,
     marginBottom: 2,
@@ -208,15 +195,15 @@ const styles = StyleSheet.create({
   statValue: {
     fontSize: 16,
     fontWeight: "900",
-    color: "#fef3c7",
+    color: "rgba(6, 17, 68, 0.85)",
   },
   card: {
-    backgroundColor: "rgba(255,255,255,0.15)",
+    backgroundColor: "rgba(248, 248, 248, 0.80)",
     borderRadius: 12,
     padding: 14,
     marginBottom: 10,
     borderWidth: 1,
-    borderColor: "rgba(0,0,0,0.1)",
+    borderColor: "rgba(250, 248, 248, 0.9)",
   },
   cardHeader: {
     flexDirection: "row",
@@ -227,25 +214,25 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 12,
     fontWeight: "bold",
-    color: "#10670e",
+    color: "rgba(3, 9, 56, 0.95)",
   },
   badgeRow: { flexDirection: "row", gap: 6 },
   countBadge: {
     paddingHorizontal: 8,
     paddingVertical: 2,
     borderRadius: 999,
-    backgroundColor: "#fef3c7",
+    backgroundColor: "rgba(247, 247, 247, 0.93)",
     borderWidth: 0,
     borderColor: "transparent",
   },
   countBadgeText: {
     fontSize: 11,
     fontWeight: "bold",
-    color: "#92400e",
+    color: "rgba(10, 4, 65, 0.93)",
   },
   cardContent: {
     fontSize: 12,
-    color: "#404040",
+    color: "rgba(8, 8, 8, 0.93)",
     marginBottom: 8,
     lineHeight: 18,
   },
@@ -253,15 +240,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
-    backgroundColor: "#fef3c7",
+    backgroundColor: "rgba(255, 254, 254, 0.93)",
     borderRadius: 8,
     padding: 8,
     borderWidth: 1,
-    borderColor: "#fde68a",
+    borderColor: "rgba(221, 216, 216, 0.93)",
   },
   ruleText: {
     fontSize: 12,
-    color: "#78350f",
+    color: "rgba(20, 20, 20, 0.93)",
     flex: 1,
   },
   tipsHeader: {
@@ -273,17 +260,18 @@ const styles = StyleSheet.create({
   tipsTitle: {
     fontSize: 12,
     fontWeight: "bold",
-    color: "#78350f",
+    color: "rgba(17, 12, 66, 0.93)",
   },
   tipRow: {
     flexDirection: "row",
     alignItems: "flex-start",
     gap: 6,
     marginBottom: 4,
+    
   },
   tipText: {
     fontSize: 12,
-    color: "#404040",
+    color: "rgba(7, 7, 7, 0.93)",
     flex: 1,
     lineHeight: 18,
   },

@@ -285,6 +285,7 @@ function AppContent() {
         {/* Exit confirm */}
         <ConfirmDialog
           visible={showExitConfirm}
+          lang={lang}
           message={L.confirmExit}
           confirmText={L.confirmExitBtn}
           cancelText={L.cancelBtn}

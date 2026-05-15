@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import {
   View,
   Text,
@@ -10,9 +10,10 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
-import { QuestionMark, ArrowLeft } from "../components/Icons";
+import { BackHomeButton } from "../components/BackHomeButton";
 import { questionsForChapter } from "../lib/exam";
 import { CHAPTER_VI } from "../lib/chapters";
+import { savePracticeProgress, loadPracticeProgress } from "../lib/storage";
 import { PILL } from "../theme/buttonTokens";
 import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup } from "../types";
 
@@ -49,7 +50,20 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   const [idx, setIdx] = useState(0);
   const [ans, setAns] = useState<Record<string, MaruBatsu | undefined>>({});
   const [show, setShow] = useState<Record<string, boolean>>({});
-  const [doubtful, setDoubtful] = useState<Set<string>>(new Set());
+
+  // Load saved practice progress on mount
+  useEffect(() => {
+    loadPracticeProgress().then((all) => {
+      setAns((prev) => ({ ...prev, ...Object.fromEntries((all[chapterId] ?? []).map((id) => [id, prev[id]])) }));
+    });
+  }, [chapterId]);
+
+  // Save progress whenever ans changes
+  useEffect(() => {
+    const simpleIds = simple.filter((q) => ans[q.id] !== undefined).map((q) => q.id);
+    const scenarioIds = scenarios.filter((g) => ans[g.groupId] !== undefined).map((g) => g.groupId);
+    savePracticeProgress(chapterId, [...simpleIds, ...scenarioIds]);
+  }, [ans, chapterId]);
 
   const total = flat.length;
   const cur = flat[idx];
@@ -57,9 +71,7 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   if (total === 0) {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
-          <Text style={styles.backText}>{lang === "vi" ? "← Trang chủ" : "← ホーム"}</Text>
-        </TouchableOpacity>
+        <BackHomeButton onPress={onBack} lang={lang} variant="home" />
         <Text style={styles.emptyText}>
           {lang === "vi" ? "Chưa có dữ liệu cho chương này." : "この章のデータはまだありません。"}
         </Text>
@@ -73,33 +85,16 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
     hideAns: lang === "vi" ? "Ẩn đáp án" : "答えを隠す",
     showAns: lang === "vi" ? "Xem đáp án & giải thích" : "答えと解説を見る",
     correct: lang === "vi" ? "Đúng:" : "正解：",
-    flag: lang === "vi" ? "Phân vân" : "迷い",
-    unflag: lang === "vi" ? "Bỏ phân vân" : "迷いを解除",
-  };
-
-  const currentId =
-    cur.kind === "s" ? cur.q.id : cur.kind === "g" ? cur.g.groupId : "";
-
-  const toggleDoubt = () => {
-    setDoubtful((prev) => {
-      const next = new Set(prev);
-      if (next.has(currentId)) next.delete(currentId);
-      else next.add(currentId);
-      return next;
-    });
   };
 
   return (
     <View style={styles.screenContainer}>
+      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
         showsVerticalScrollIndicator={false}
       >
-        <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
-          <Text style={styles.backText}>{lang === "vi" ? "← Trang chủ" : "← ホーム"}</Text>
-        </TouchableOpacity>
-
         <View style={styles.progressRow}>
           <Text style={styles.progressBadge}>
             {lang === "vi" ? `Câu ${idx + 1}/${total}` : `${idx + 1}/${total}問`}
@@ -112,18 +107,6 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
         <View style={styles.questionCard}>
           {cur.kind === "s" && (
           <View style={styles.questionInner}>
-            <View style={styles.flagRow}>
-              <TouchableOpacity
-                onPress={toggleDoubt}
-                style={[styles.flagBtn, doubtful.has(currentId) ? styles.flagBtnActive : styles.flagBtnInactive]}
-              >
-                <QuestionMark size={12} />
-                <Text style={[styles.flagBtnText, doubtful.has(currentId) ? styles.flagBtnTextActive : undefined]}>
-                  {doubtful.has(currentId) ? L.unflag : L.flag}
-                </Text>
-              </TouchableOpacity>
-            </View>
-
             {cur.q.image && (
               <IllustrationImage
                 file={cur.q.image}
@@ -145,10 +128,6 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
             show={show}
             onPick={(partId, v) => setAns((a) => ({ ...a, [partId]: v }))}
             onToggleExplain={(key) => setShow((s) => ({ ...s, [key]: !s[key] }))}
-            onToggleDoubt={toggleDoubt}
-            isDoubtful={doubtful.has(currentId)}
-            flagLabel={L.flag}
-            unflagLabel={L.unflag}
           />
         )}
       </View>
@@ -200,10 +179,6 @@ interface ScenarioBlockProps {
   show: Record<string, boolean>;
   onPick: (partId: string, v: MaruBatsu) => void;
   onToggleExplain: (key: string) => void;
-  onToggleDoubt?: () => void;
-  isDoubtful?: boolean;
-  flagLabel?: string;
-  unflagLabel?: string;
 }
 
 function ScenarioBlock({
@@ -213,10 +188,6 @@ function ScenarioBlock({
   show,
   onPick,
   onToggleExplain,
-  onToggleDoubt,
-  isDoubtful,
-  flagLabel,
-  unflagLabel,
 }: ScenarioBlockProps) {
   const L = {
     answer: lang === "vi" ? "Đáp án:" : "答え：",
@@ -226,20 +197,6 @@ function ScenarioBlock({
 
   return (
     <View style={styles.scenarioContainer}>
-      <View style={styles.flagRow}>
-        {onToggleDoubt && (
-          <TouchableOpacity
-            onPress={onToggleDoubt}
-            style={[styles.flagBtn, isDoubtful ? styles.flagBtnActive : styles.flagBtnInactive]}
-          >
-            <QuestionMark size={12} />
-            <Text style={[styles.flagBtnText, isDoubtful ? styles.flagBtnTextActive : undefined]}>
-              {isDoubtful ? unflagLabel : flagLabel}
-            </Text>
-          </TouchableOpacity>
-        )}
-      </View>
-
       <Text style={styles.warningText}>
         ⚠ {lang === "vi" ? "Phải trả lời đúng TẤT CẢ 3 ý nhỏ." : "3題すべて正解で2点獲得。"}
       </Text>
@@ -288,30 +245,10 @@ const styles = StyleSheet.create({
   screenContainer: { flex: 1, position: "relative" },
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
-  backBtn: {
-    backgroundColor: PILL.bgColor,
-    borderWidth: PILL.borderWidth,
-    borderColor: PILL.borderColor,
-    borderRadius: PILL.borderRadius,
-    paddingHorizontal: PILL.paddingH,
-    paddingVertical: PILL.paddingV,
-    flexDirection: "row",
-    alignItems: "flex-start",
-    justifyContent: "center",
-    gap: PILL.gap,
-    marginBottom: 12,
-    width: 115,
-    opacity: PILL.opacity,
-    shadowColor: PILL.shadowColor,
-    shadowOffset: { width: PILL.shadowOffsetW, height: PILL.shadowOffsetH },
-    shadowOpacity: PILL.shadowOpacity,
-    shadowRadius: PILL.shadowRadius,
-  },
-  backText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   emptyText: { color: "#fde68a", fontSize: 14 },
   progressRow: { flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 12 },
-  progressBadge: { fontSize: 12, backgroundColor: "rgba(120,53,15,0.5)", color: "#fde68a", paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999 },
-  chapterName: { fontSize: 12, color: "#fcd34d" },
+  progressBadge: { fontSize: 12, backgroundColor: "rgba(31, 26, 24, 0.02)", color: "rgba(22, 21, 21, 0.99)", paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999 },
+  chapterName: { fontSize: 15, color: "rgba(26, 109, 6, 0.93)"},
   questionCard: {
     backgroundColor: "rgba(255,255,255,0.15)",
     borderRadius: 14,
@@ -325,12 +262,6 @@ const styles = StyleSheet.create({
   questionImage: { width: "100%", height: 120, borderRadius: 8, marginBottom: 8 },
   questionImageInner: { width: "100%", height: 120, borderRadius: 8 },
   questionText: { fontSize: 14, lineHeight: 22, fontWeight: "500", color: "#111", textAlign: "center", marginTop: 8 },
-  flagRow: { flexDirection: "row", justifyContent: "flex-end", marginBottom: 8 },
-  flagBtn: { flexDirection: "row", alignItems: "center", gap: 5, paddingHorizontal: 10, paddingVertical: 6, borderRadius: 10, borderWidth: 1.5 },
-  flagBtnActive: { backgroundColor: "#f59e0b", borderColor: "#d97706" },
-  flagBtnInactive: { backgroundColor: "rgba(120,53,15,0.4)", borderColor: "rgba(120,53,15,0.6)" },
-  flagBtnText: { fontSize: 12, fontWeight: "600", color: "#fef3c7" },
-  flagBtnTextActive: { color: "#1c1917" },
   ansSection: { marginTop: 12 },
   ansToggle: { fontSize: 13, color: "#7f1d1d", textDecorationLine: "underline", textAlign: "center" },
   ansCard: { backgroundColor: "rgba(255,255,255,0.8)", borderRadius: 10, padding: 12, marginTop: 8, borderWidth: 1, borderColor: "rgba(120,53,15,0.3)" },

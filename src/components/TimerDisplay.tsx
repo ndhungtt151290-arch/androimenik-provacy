@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 6,
-    backgroundColor: "rgba(0,0,0,0.3)",
+    backgroundColor: "rgba(236, 224, 224, 0.3)",
   },
   warning: {
     backgroundColor: "rgba(220,38,38,0.3)",
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     fontFamily: "monospace",
     fontSize: 13,
     fontWeight: "bold",
-    color: "#fde68a",
+    color: "rgba(34, 34, 33, 0.8)",
   },
   textWarning: {
     color: "#fca5a5",

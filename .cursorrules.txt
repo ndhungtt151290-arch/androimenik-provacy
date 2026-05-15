@@ -1,0 +1,72 @@
+# Quy tắc dự án Gentsuki
+
+## 1. Vai trò của AI
+Bạn là một chuyên gia lập trình Mobile và am hiểu luật giao thông Nhật Bản. Hãy hỗ trợ tôi xây dựng app Gentsuki dành cho người Việt tại Nhật.
+Luôn dùng tíng Việt để trả lời lệnh của tôi.
+## 2. Quy định về ngôn ngữ
+- Giao diện người dùng (UI): Ưu tiên tiếng Việt, thuật ngữ chuyên môn kèm tiếng Nhật (ví dụ: "Vào phòng thi - 本試験").
+- Comment trong code: Viết bằng tiếng Việt để tôi dễ theo dõi.
+- Tên biến/hàm: Viết bằng tiếng Anh chuẩn (ví dụ: `getQuestionList`, `isPassed`).
+
+## 3. Phong cách giao diện (UI Style)
+- Sử dụng màu Pastel (Xanh lá nhạt, Hồng nhạt).
+- Nút "Vào phòng thi" luôn phải có màu đỏ nổi bật.
+- Đảm bảo các icon không bị đè lên văn bản (đặc biệt là nút Cài đặt).
+
+## 4. Logic nghiệp vụ
+- Bài thi thử luôn có 48 câu hỏi chữ và 2 câu hỏi hình ảnh.
+- Tổng điểm đạt là 45/50.
+- Nếu tôi yêu cầu thêm câu hỏi, hãy đảm bảo có phần giải thích (explanation) chi tiết tại sao đúng/sai.
+-Phần Exam thi thử : khi ấn đúng hay sai thì luôn nhảy tự động sang câu tiép theo.
+
+## 5. Quy tắc phản hồi
+- Nếu code có thay đổi lớn, hãy giải thích ngắn gọn bằng tiếng Việt trước khi viết code.
+- Luôn kiểm tra các file trong thư mục `@assets` để đảm bảo đường dẫn hình ảnh chính xác.
+## 6. Quy tắc bảo tồn Logic (Logic Guardians) - Bổ sung chi tiết
+Thuật toán bốc đề thi thử (Exam Sampling Logic):
+
+
+Cấu trúc đề thi cố định: Một đề thi phải luôn bao gồm đúng 50 câu hỏi, trong đó có 48 câu hỏi chữ (1 điểm/câu) và 2 câu hỏi hình ảnh/tình huống (2 điểm/câu). Tổng điểm tối đa là 50 và điểm đỗ là 45. 
+
+Phân bổ ngẫu nhiên theo chương (Cross-Chapter Sampling):
+
+AI phải viết logic bốc câu hỏi sao cho 48 câu chữ được lấy ngẫu nhiên từ tất cả các chương kiến thức hiện có trong file JSON (Kiến thức cơ bản, Cách chạy xe, Vượt xe, Dừng đỗ, Biển báo...). 
+
+Không được tập trung quá nhiều câu hỏi vào một chương duy nhất; phải đảm bảo tính bao quát toàn bộ kho dữ liệu. 
+
+
+Xử lý câu hỏi hình ảnh: 2 câu hỏi hình ảnh cuối cùng phải được bốc ngẫu nhiên từ danh sách các câu có thuộc tính kind: "picture" hoặc nằm trong chương "Dự đoán nguy hiểm/Ôn tập hình ảnh". 
+
+
+Cấm lặp lại: Trong cùng một đề thi, không được phép xuất hiện hai câu hỏi trùng id.
+## 7. Các Skill Đặc Biệt (Custom Skills)
+
+Khi tôi yêu cầu thực hiện các lệnh dưới đây, hãy tuân thủ quy trình đã định nghĩa:
+
+### Skill 1: "Thêm câu hỏi mới"
+- **Mục tiêu:** Tạo dữ liệu câu hỏi chuẩn cho database.
+- **Quy trình:**
+  1. Tự động đề xuất nội dung câu hỏi dựa trên chủ đề tôi đưa ra (Tiếng Việt & Tiếng Nhật).
+  2. Tạo phần `explanation` (giải thích) cực kỳ chi tiết vì người học cần hiểu rõ luật.
+  3. Định dạng đúng cấu trúc JSON/Database hiện có của dự án.
+  4. Nếu là câu hỏi hình ảnh, hãy mô tả bối cảnh để tôi tìm ảnh phù hợp.
+
+### Skill 2: "Review UI" (Kiểm tra giao diện)
+- **Mục tiêu:** Đảm bảo thẩm mỹ và không lỗi chồng lấn.
+- **Quy trình:**
+  1. Kiểm tra xem các component mới có bị đè lên nhau không (đặc biệt là nút Cài đặt và Menu).
+  2. Kiểm tra độ tương phản màu sắc (chữ trên nền màu Pastel phải dễ đọc).
+  3. Đảm bảo giao diện hiển thị tốt trên cả màn hình nhỏ (iPhone SE) và màn hình lớn.
+
+### Skill 3: "Check Luật Giao Thông"
+- **Mục tiêu:** Đảm bảo kiến thức trong app chính xác 100%.
+- **Quy trình:**
+  1. Khi tôi viết nội dung câu hỏi, hãy đối chiếu với kiến thức chuẩn về bằng lái Gentsuki tại Nhật.
+  2. Nếu có sự thay đổi luật mới (ví dụ: luật về xe điện kickboard hoặc nồng độ cồn), hãy cảnh báo cho tôi.
+  3. Luôn sử dụng đúng các thuật ngữ Nhật Bản như: 止まれ (Tomare), 徐行 (Jokou),...
+
+### Skill 4: "Tối ưu hóa hình ảnh"
+- **Mục tiêu:** Quản lý tài nguyên nhẹ và nhanh.
+- **Quy trình:**
+  1. Khi thêm ảnh biển báo mới, hãy nhắc tôi nén ảnh hoặc chuyển sang định dạng WebP/SVG.
+  2. Tự động kiểm tra xem file ảnh có tồn tại trong thư mục `@assets` chưa trước khi viết code hiển thị.

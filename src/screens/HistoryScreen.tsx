@@ -3,6 +3,7 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-nati
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft } from "../components/Icons";
 import { PILL } from "../theme/buttonTokens";
+import { BackHomeButton } from "../components/BackHomeButton";
 import type { ExamHistoryEntry, Lang } from "../types";
 
 interface HistoryScreenProps {
@@ -35,9 +36,7 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={onBack} style={styles.backBtn} activeOpacity={0.7}>
-        <Text style={styles.backBtnText}>{L.back}</Text>
-      </TouchableOpacity>
+      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
       <Text style={styles.title}>{L.title}</Text>
 
       {history.length === 0 ? (
@@ -87,21 +86,6 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  backBtn: {
-    backgroundColor: PILL.bgColor,
-    borderWidth: PILL.borderWidth,
-    borderColor: PILL.borderColor,
-    borderRadius: PILL.borderRadius,
-    paddingHorizontal: PILL.paddingH,
-    paddingVertical: PILL.paddingV,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: PILL.gap,
-    marginBottom: 12,
-    width: 94,
-    opacity: PILL.opacity,
-  },
-  backBtnText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   title: { fontSize: 20, fontWeight: "bold", color: "#fde68a" },
   empty: { flex: 1, alignItems: "center", justifyContent: "center" },
   emptyText: { fontSize: 14, color: "rgba(253,230,138,0.5)" },

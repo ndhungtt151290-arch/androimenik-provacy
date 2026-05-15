@@ -420,9 +420,7 @@ export function IllustrationImage({
 const styles = StyleSheet.create({
   container: {
     overflow: "hidden",
-    backgroundColor: "#f5f5f5",
-    borderWidth: 2,
-    borderColor: "rgba(120, 53, 15, 0.4)",
+    backgroundColor:"rgba(255, 255, 255, 0)",
     alignItems: "center",
     justifyContent: "center",
   },

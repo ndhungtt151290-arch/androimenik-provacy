@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
+import { BackHomeButton } from "../components/BackHomeButton";
 import { ArrowLeft, Check, X } from "../components/Icons";
 import type { ExamItem, Lang } from "../types";
 
@@ -47,15 +48,12 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
 
   return (
     <View style={styles.screenContainer}>
+      <BackHomeButton onPress={onBackResults} lang={lang} variant="back" />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
         showsVerticalScrollIndicator={false}
       >
-      <TouchableOpacity onPress={onBackResults} style={styles.backBtn} activeOpacity={0.7}>
-        <Text style={styles.backText}>{L.back}</Text>
-      </TouchableOpacity>
-
       <Text style={styles.heading}>{reviewAll ? L.titleAll : L.title}</Text>
 
       <View style={styles.list}>
@@ -138,9 +136,7 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
         ))}
       </View>
 
-      <TouchableOpacity onPress={onHome} style={styles.homeBtn} activeOpacity={0.7}>
-        <Text style={styles.homeBtnText}>{L.home}</Text>
-      </TouchableOpacity>
+      <BackHomeButton onPress={onHome} lang={lang} variant="home" />
 
       </ScrollView>
     </View>
@@ -151,21 +147,6 @@ const styles = StyleSheet.create({
   screenContainer: { flex: 1, position: "relative" },
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
-  backBtn: {
-    backgroundColor: "#059669",
-    borderWidth: 1,
-    borderColor: "#34d399",
-    borderRadius: 999,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-    marginBottom: 12,
-    width: 94,
-    opacity: 0.6,
-  },
-  backText: { fontSize: 12, fontWeight: "bold", color: "#fff" },
   heading: { fontSize: 16, fontWeight: "bold", color: "#fde68a", marginBottom: 16 },
   list: { gap: 12 },
   itemCard: { borderRadius: 12, padding: 14, borderWidth: 1, borderLeftWidth: 4 },
@@ -192,16 +173,6 @@ const styles = StyleSheet.create({
   subRow: { flexDirection: "row", gap: 8, alignItems: "flex-start", marginBottom: 6 },
   subText: { flex: 1, fontSize: 12, color: "#111", lineHeight: 18 },
   subAnswer: { fontSize: 12, marginBottom: 4 },
-  homeBtn: {
-    marginTop: 16,
-    paddingVertical: 10,
-    borderRadius: 12,
-    backgroundColor: "rgba(120,53,15,0.5)",
-    borderWidth: 1,
-    borderColor: "rgba(120,53,15,0.6)",
-    alignItems: "center",
-  },
-  homeBtnText: { fontSize: 14, fontWeight: "bold", color: "#fde68a" },
   reviewImage: { width: "100%", height: 150, borderRadius: 10, marginBottom: 12 },
   reviewImageInner: { width: "100%", height: 150, borderRadius: 10 },
   reviewSubImage: { width: 80, height: 64, borderRadius: 6 },

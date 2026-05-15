@@ -7,38 +7,53 @@ import {
   StyleSheet,
   Pressable,
 } from "react-native";
+import type { Lang } from "../types";
 
 interface ConfirmDialogProps {
   visible: boolean;
-  message: string;
-  confirmText: string;
-  cancelText: string;
+  title?: string;
+  message?: string;
+  confirmText?: string;
+  cancelText?: string;
   onConfirm: () => void;
   onCancel: () => void;
   variant?: "danger" | "normal";
+  lang?: Lang;
 }
 
 export function ConfirmDialog({
   visible,
+  title,
   message,
   confirmText,
   cancelText,
   onConfirm,
   onCancel,
   variant = "normal",
+  lang = "jp",
 }: ConfirmDialogProps) {
+  const defaultLabels = lang === "vi"
+    ? { title: "Xác nhận", message: "Tất cả tiến trình luyện tập sẽ bị xóa.", confirm: "Đặt lại", cancel: "Hủy" }
+    : { title: "確認", message: "すべての練習の進捗がクリアされます。", confirm: "リセット", cancel: "キャンセル" };
+
+  const displayTitle = title ?? defaultLabels.title;
+  const displayMessage = message ?? defaultLabels.message;
+  const displayConfirm = confirmText ?? defaultLabels.confirm;
+  const displayCancel = cancelText ?? defaultLabels.cancel;
+
   return (
     <Modal visible={visible} transparent animationType="fade">
       <Pressable style={overlayStyle.overlay} onPress={onCancel}>
         <Pressable style={styles.dialog} onPress={(e) => e.stopPropagation()}>
-          <Text style={styles.message}>{message}</Text>
+          {displayTitle && <Text style={styles.title}>{displayTitle}</Text>}
+          <Text style={styles.message}>{displayMessage}</Text>
           <View style={styles.buttons}>
             <TouchableOpacity
               style={[styles.btn, styles.btnCancel]}
               onPress={onCancel}
               activeOpacity={0.7}
             >
-              <Text style={styles.cancelText}>{cancelText}</Text>
+              <Text style={styles.cancelText}>{displayCancel}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[
@@ -48,7 +63,7 @@ export function ConfirmDialog({
               onPress={onConfirm}
               activeOpacity={0.7}
             >
-              <Text style={styles.confirmText}>{confirmText}</Text>
+              <Text style={styles.confirmText}>{displayConfirm}</Text>
             </TouchableOpacity>
           </View>
         </Pressable>
@@ -69,18 +84,25 @@ const overlayStyle = StyleSheet.create({
 
 const styles = StyleSheet.create({
   dialog: {
-    backgroundColor: "#fff",
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
     borderRadius: 20,
     padding: 20,
     maxWidth: 320,
     width: "100%",
     borderWidth: 4,
-    borderColor: "#78350f",
+    borderColor: "rgba(255, 255, 255, 0.06)",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.3,
     shadowRadius: 20,
     elevation: 10,
+  },
+  title: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#1c1917",
+    textAlign: "center",
+    marginBottom: 12,
   },
   message: {
     fontSize: 14,
@@ -98,16 +120,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   btnCancel: {
-    borderColor: "#d4d4d4",
+    borderColor: "rgba(204, 204, 204, 0.41)",
     backgroundColor: "#fff",
   },
   btnConfirm: {
-    borderColor: "#d97706",
+    borderColor: "rgba(204, 204, 204, 0.41)",
     backgroundColor: "#fbbf24",
   },
   btnDanger: {
-    borderColor: "#be123c",
-    backgroundColor: "#f43f5e",
+    borderColor: "rgba(204, 204, 204, 0.41)",
+    backgroundColor: "rgba(223, 46, 46, 0.85)",
   },
   cancelText: { fontWeight: "bold", color: "#404040" },
   confirmText: { fontWeight: "bold", color: "#fff" },

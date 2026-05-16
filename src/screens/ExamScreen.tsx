@@ -1,13 +1,16 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 import {
   View,
   Text,
   ScrollView,
   TouchableOpacity,
   StyleSheet,
+  Animated,
+  Dimensions,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
+import { AdBanner } from "../components/AdBanner";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
@@ -57,7 +60,17 @@ export function ExamScreen({
   examIndex,
 }: ExamScreenProps) {
   const insets = useSafeAreaInsets();
-  const [expanded, setExpanded] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const SCREEN_WIDTH = Dimensions.get("window").width;
+  const drawerAnim = useRef(new Animated.Value(-SCREEN_WIDTH * 0.52)).current;
+
+  useEffect(() => {
+    Animated.timing(drawerAnim, {
+      toValue: drawerOpen ? 0 : -SCREEN_WIDTH * 0.52,
+      duration: 280,
+      useNativeDriver: true,
+    }).start();
+  }, [drawerOpen]);
 
   const currentItem = paper[examIndex];
   const total = paper.length;
@@ -81,6 +94,7 @@ export function ExamScreen({
     next: lang === "vi" ? "Sau" : "次へ",
     flag: lang === "vi" ? "Phân vân" : "迷い",
     unflag: lang === "vi" ? "Bỏ phân vân" : "迷いを解除",
+    progress: lang === "vi" ? "Tiến trình" : "進捗",
   };
 
   return (
@@ -88,32 +102,35 @@ export function ExamScreen({
       <BackHomeButton onPress={onBack} lang={lang} variant="home" />
       <ScrollView
         style={styles.container}
-        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
+        contentContainerStyle={[
+          styles.scrollContent,
+          { paddingBottom: Math.max(100, insets.bottom + 16) },
+        ]}
         showsVerticalScrollIndicator={false}
       >
       {/* Header */}
       <View style={styles.header}>
-        <TimerDisplay timeLeft={timeLeft} />
+        {/* Left - Progress Indicator */}
+        <View style={styles.headerLeft}>
+          <ProgressIndicator
+            total={total}
+            current={examIndex}
+            onToggleExpand={() => setDrawerOpen(!drawerOpen)}
+            lang={lang}
+          />
+        </View>
 
-        <TouchableOpacity onPress={onSubmit} style={styles.submitBtn} activeOpacity={0.8}>
-          <Text style={styles.submitText}>{L.submit}</Text>
-        </TouchableOpacity>
-      </View>
+        {/* Center - Timer (absolute positioned) */}
+        <View style={styles.headerCenter}>
+          <TimerDisplay timeLeft={timeLeft} />
+        </View>
 
-      {/* Question list */}
-      <View style={{ alignItems: "flex-start" }}>
-        <ProgressIndicator
-          total={total}
-          current={examIndex}
-          simpleAns={simpleAns}
-          scenarioAns={scenarioAns}
-          paper={paper}
-          flags={flags}
-          onJump={onJump}
-          lang={lang}
-          expanded={expanded}
-          onToggleExpand={() => setExpanded(!expanded)}
-        />
+        {/* Right - Submit Button */}
+        <View style={styles.headerRight}>
+          <TouchableOpacity onPress={onSubmit} style={styles.submitBtn} activeOpacity={0.8}>
+            <Text style={styles.submitText}>{L.submit}</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       {/* Question card */}
@@ -194,6 +211,64 @@ export function ExamScreen({
       )}
 
       </ScrollView>
+
+      {/* Ad Banner */}
+      <AdBanner />
+
+      {/* Drawer Overlay */}
+      {drawerOpen && (
+        <>
+          <TouchableOpacity
+            style={styles.drawerBackdrop}
+            activeOpacity={1}
+            onPress={() => setDrawerOpen(false)}
+          />
+          <Animated.View style={[styles.drawerContainer, { transform: [{ translateX: drawerAnim }] }]}>
+            <View style={styles.drawerContent}>
+              <View style={styles.drawerHeader}>
+                <Text style={styles.drawerTitle}>{L.progress || "Tiến trình"}</Text>
+                <TouchableOpacity onPress={() => setDrawerOpen(false)}>
+                  <Text style={styles.drawerClose}>✕</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.drawerProgressBar}>
+                <View style={[styles.drawerProgressFill, { width: `${(answeredCount / total) * 100}%` }]} />
+              </View>
+              <ScrollView showsVerticalScrollIndicator>
+                <View style={styles.drawerGrid}>
+                  {paper.map((item, i) => {
+                    const id = item.type === "simple"
+                      ? `s-${item.question.id}`
+                      : `g-${item.group.groupId}`;
+                    const answered = item.type === "simple"
+                      ? simpleAns[item.question.id] !== undefined
+                      : (scenarioAns[item.group.groupId] != null &&
+                         item.group.subs.every(s => scenarioAns[item.group.groupId]?.[s.partId] !== undefined));
+                    const isFlagged = flags.has(id);
+                    const isCurrent = i === examIndex;
+                    return (
+                      <TouchableOpacity
+                        key={id}
+                        onPress={() => { onJump(i); setDrawerOpen(false); }}
+                        style={[
+                          styles.drawerGridBtn,
+                          isCurrent && styles.drawerGridBtnCurrent,
+                          answered && styles.drawerGridBtnAnswered,
+                          !answered && styles.drawerGridBtnUnanswered,
+                          isFlagged && styles.drawerGridBtnFlagged,
+                        ]}
+                      >
+                        <Text style={styles.drawerGridBtnText}>{i + 1}</Text>
+                        {isFlagged && <Text style={styles.flagDot}>●</Text>}
+                      </TouchableOpacity>
+                    );
+                  })}
+                </View>
+              </ScrollView>
+            </View>
+          </Animated.View>
+        </>
+      )}
     </View>
   );
 }
@@ -205,35 +280,51 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 8,
     marginBottom: 12,
-    flexWrap: "wrap",
+    minHeight: 40,
+  },
+  headerLeft: {
+    marginLeft: 9
+    // Progress stays on the left
+  },
+  headerCenter: {
+    position: "absolute",
+    left: "50%",
+    transform: [{ translateX: -36 }],
+    alignItems: "center",
+    zIndex: 1,
+  },
+  headerRight: {
+    flex: 1,
+    alignItems: "flex-end",
+    marginRight:7,
+    // Pushes submit button to the right
   },
   progressContainer: { flex: 1, minWidth: 80 },
   progressBar: { height: 8, backgroundColor: "rgba(0,0,0,0.3)", borderRadius: 4, overflow: "hidden" },
   progressFill: { height: "100%", backgroundColor: "rgba(39, 34, 34, 0.9)", borderRadius: 4 },
   progressText: { fontSize: 11, color: "rgba(27, 27, 27, 0.9)", textAlign: "right", marginTop: 2 },
   submitBtn: {
-    backgroundColor: "#be123c",
+    backgroundColor: "rgba(10, 41, 128, 0.86)",
     paddingHorizontal: 10,
     paddingVertical: 6,
     borderRadius: 999,
-    borderWidth: 1,
-    borderColor: "#f43f5e",
-    shadowOffset: { width: 0, height: 1 },
+    borderWidth:0.6,
+    borderColor: "rgba(17, 5, 26, 0.14)",
+    shadowOffset: { width:0, height: 1 },
     shadowOpacity: 0.8,
     shadowRadius: 2,
     elevation: 2,
     opacity: 0.8,
   },
-  submitText: { fontSize: 15, fontWeight: "bold", color: "#fff" },
+  submitText: { fontSize: 14, fontWeight: "bold", color: "#fff" },
   questionCard: {
     backgroundColor: "rgba(255, 255, 255, 0.51)",
     borderRadius: 14,
     padding: 14,
     marginBottom: 12,
     borderWidth: 1,
-    borderColor: "rgba(0,0,0,0.1)",
+    borderColor: "rgba(226, 228, 231, 0.03)",
     minHeight: 280,
   },
   cardHeader: {
@@ -272,4 +363,97 @@ const styles = StyleSheet.create({
   examImageInner: { width: "100%", height: 120, borderRadius: 8 },
   subImage: { width: 80, height: 64, borderRadius: 6 },
   subImageInner: { width: 80, height: 64, borderRadius: 6 },
+  // Drawer overlay
+  drawerBackdrop: {
+    position: "absolute",
+    top: 0, left: 0, right: 0, bottom: 0,
+    backgroundColor: "rgba(255, 255, 255, 0)",
+    zIndex: 998,
+  },
+  drawerContainer: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    height: 480, 
+    width: "52%",
+    zIndex: 999,
+    backgroundColor: "rgb(255, 255, 255)",
+    elevation: 8,
+    shadowColor: "#000",
+    shadowOffset: { width: 2, height: 0 },
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    borderTopRightRadius: 20,
+    borderBottomRightRadius: 20,
+    borderTopLeftRadius: 20,
+    borderBottomLeftRadius: 0,
+  },
+  drawerContent: {
+    flex: 1,
+    paddingTop: 15,
+    paddingHorizontal: 14,
+    paddingBottom: 20,
+  },
+  drawerHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 12,
+  },
+  drawerTitle: {
+    fontSize: 14,
+    fontWeight: "bold",
+    color: "#1a1a2e",
+  },
+  drawerClose: {
+    fontSize: 18,
+    color: "#666",
+    padding: 4,
+  },
+  drawerProgressBar: {
+    height: 8,
+    backgroundColor: "#e5e5e5",
+    borderRadius: 3,
+    overflow: "hidden",
+    marginBottom: 15,
+  },
+  drawerProgressFill: {
+    height: "100%",
+    backgroundColor: "#059669",
+    borderRadius: 3,
+  },
+  drawerGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 4,
+    marginBottom: 10 ,
+  },
+  drawerGridBtn: {
+    width: 25,
+    height: 25,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative",
+  },
+  drawerGridBtnCurrent: {
+    borderWidth: 2.5,
+    borderColor: "#fbbf24",
+    transform: [{ scale: 1.12 }],
+  },
+  drawerGridBtnAnswered: { backgroundColor: "#059669" },
+  drawerGridBtnUnanswered: { backgroundColor: "#c4c4c4" },
+  drawerGridBtnFlagged: { borderWidth: 2, borderColor: "#d97706" },
+  drawerGridBtnText: {
+    fontSize: 12,
+    fontWeight: "bold",
+    color: "#fff",
+  },
+  flagDot: {
+    position: "absolute",
+    top: -3,
+    right: -3,
+    fontSize: 6,
+    color: "#000",
+  },
 });

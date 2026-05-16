@@ -5,7 +5,9 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { CHAPTER_VI, CHAPTER_MAP } from "../lib/chapters";
 import { loadPracticeProgress } from "../lib/storage";
 import { BTN } from "../theme/buttonTokens";
+import { AdBanner } from "../components/AdBanner";
 import { BackHomeButton } from "../components/BackHomeButton";
+import { showInterstitialChapter } from "../utils/AdManager";
 import { ConfirmDialog } from "../components/ConfirmDialog";
 import { SubChapterModal } from "../components/SubChapterModal";
 import type { QuestionBank, Lang } from "../types";
@@ -57,7 +59,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
 
   return (
     <View style={styles.container}>
-      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
+      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} lang={lang} variant="home" />
       <View style={styles.header}>
         <Text style={styles.title}>{L.title}</Text>
       </View>
@@ -158,6 +160,9 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
           />
         </View>
       </View>
+
+      {/* Ad Banner */}
+      <AdBanner />
     </View>
   );
 }

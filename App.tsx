@@ -11,6 +11,7 @@ import {
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { LangSwitch } from "./src/components/LangSwitch";
 import { ConfirmDialog } from "./src/components/ConfirmDialog";
+import { AdModal } from "./src/components/AdModal";
 import { HomeScreen } from "./src/screens/HomeScreen";
 import { ExamPrepScreen } from "./src/screens/ExamPrepScreen";
 import { ChapterScreen } from "./src/screens/ChapterScreen";
@@ -21,6 +22,7 @@ import { HistoryScreen } from "./src/screens/HistoryScreen";
 import { PracticeHomeScreen } from "./src/screens/PracticeHomeScreen";
 import { buildMockExam, scoreExam } from "./src/lib/exam";
 import { loadHistory, saveHistory, loadStats, saveStats } from "./src/lib/storage";
+import { showInterstitialExam } from "./src/utils/AdManager";
 import type { ExamItem, Lang, MaruBatsu, PersonalStats, ExamHistoryEntry, AppScreen } from "./src/types";
 
 const EXAM_SECONDS = 30 * 60;
@@ -181,7 +183,7 @@ function AppContent() {
     if (view.mode === "exam" && !submitted) {
       setShowExitConfirm(true);
     } else {
-      setView({ mode: "home" });
+      showInterstitialExam(() => setView({ mode: "home" }));
     }
   }, [view.mode, submitted]);
 
@@ -291,7 +293,7 @@ function AppContent() {
           cancelText={L.cancelBtn}
           onConfirm={() => {
             setShowExitConfirm(false);
-            setView({ mode: "home" });
+            showInterstitialExam(() => setView({ mode: "home" }));
           }}
           onCancel={() => setShowExitConfirm(false)}
           variant="danger"
@@ -328,7 +330,7 @@ function AppContent() {
             <ChapterScreen
               lang={lang}
               chapterId={view.chapterId}
-              onBack={() => setView({ mode: "home" })}
+              onBack={() => setView({ mode: "practiceHome" })}
             />
           )}
 
@@ -385,6 +387,8 @@ function AppContent() {
             />
           )}
         </View>
+
+        <AdModal />
       </SafeAreaView>
   );
 }

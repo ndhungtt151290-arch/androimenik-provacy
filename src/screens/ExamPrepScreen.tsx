@@ -2,8 +2,10 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
-import { BTN, PILL } from "../theme/buttonTokens";
+import { BTN } from "../theme/buttonTokens";
+import { AdBanner } from "../components/AdBanner";
 import { BackHomeButton } from "../components/BackHomeButton";
+import { showInterstitialChapter } from "../utils/AdManager";
 import type { Lang } from "../types";
 import { ColorSpace } from "react-native-reanimated";
 
@@ -57,10 +59,13 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
+      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} lang={lang} variant="home" />
       <ScrollView
         style={styles.container}
-        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
+        contentContainerStyle={[
+          styles.scrollContent,
+          { paddingBottom: Math.max(100, insets.bottom + 16) },
+        ]}
         showsVerticalScrollIndicator={false}
       >
       <TouchableOpacity onPress={onStart} style={styles.startBtn} activeOpacity={0.8}>
@@ -144,6 +149,9 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
       </View>
 
       </ScrollView>
+
+      {/* Ad Banner */}
+      <AdBanner />
     </View>
   );
 }

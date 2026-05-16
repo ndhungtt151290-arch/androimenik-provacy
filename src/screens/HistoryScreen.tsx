@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft } from "../components/Icons";
 import { PILL } from "../theme/buttonTokens";
 import { BackHomeButton } from "../components/BackHomeButton";
+import { showInterstitialChapter } from "../utils/AdManager";
 import type { ExamHistoryEntry, Lang } from "../types";
 
 interface HistoryScreenProps {
@@ -36,7 +37,7 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
 
   return (
     <View style={styles.container}>
-      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
+      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} lang={lang} variant="home" />
       <Text style={styles.title}>{L.title}</Text>
 
       {history.length === 0 ? (

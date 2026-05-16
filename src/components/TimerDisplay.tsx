@@ -28,16 +28,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 6,
-    backgroundColor: "rgba(236, 224, 224, 0.3)",
+    backgroundColor: "rgba(228, 232, 240, 0.21)",
   },
   warning: {
     backgroundColor: "rgba(220,38,38,0.3)",
   },
   text: {
     fontFamily: "monospace",
-    fontSize: 13,
+    fontSize: 16,
     fontWeight: "bold",
-    color: "rgba(34, 34, 33, 0.8)",
+    color: "rgba(5, 17, 83, 0.77)",
   },
   textWarning: {
     color: "#fca5a5",

@@ -1,15 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-interface AdBannerProps {
-  style?: object;
-}
+export function AdBanner() {
+  const insets = useSafeAreaInsets();
 
-export function AdBanner({ style }: AdBannerProps) {
   return (
-    <View style={[styles.container, style as object]}>
+    <View style={[styles.container, { paddingBottom: insets.bottom }]}>
       <Text style={styles.label}>Quảng cáo</Text>
-      <View style={styles.box}>
+      <View style={styles.adBox}>
         <Text style={styles.placeholder}>Ad Banner Placeholder</Text>
       </View>
     </View>
@@ -29,7 +28,7 @@ const styles = StyleSheet.create({
     letterSpacing: 2,
     marginBottom: 6,
   },
-  box: {
+  adBox: {
     backgroundColor: "rgba(0,0,0,0.2)",
     borderRadius: 8,
     padding: 12,

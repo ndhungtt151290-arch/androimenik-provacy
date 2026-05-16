@@ -1,7 +1,9 @@
 import React from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Check, X, RotateCcw,} from "../components/Icons";
+import { Check, X, RotateCcw } from "../components/Icons";
+import { AdBanner } from "../components/AdBanner";
+import { showInterstitialRetry } from "../utils/AdManager";
 import { CHAPTER_VI } from "../lib/chapters";
 import { BackHomeButton } from "../components/BackHomeButton";
 import type { ExamItem, Lang, PersonalStats } from "../types";
@@ -68,7 +70,7 @@ export function ResultsScreen({
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={onHome} lang={lang} variant="home" />
+      <BackHomeButton onPress={() => showInterstitialRetry(onHome)} lang={lang} variant="home" />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
@@ -159,12 +161,13 @@ export function ResultsScreen({
       )}
 
       {/* Action buttons */}
-      <TouchableOpacity onPress={onRetry} style={styles.retryBtn} activeOpacity={0.8}>
+      <TouchableOpacity onPress={() => showInterstitialRetry(onRetry)} style={styles.retryBtn} activeOpacity={0.8}>
         <RotateCcw size={16} />
         <Text style={styles.retryBtnText}>{L.retry}</Text>
       </TouchableOpacity>
 
       </ScrollView>
+      <AdBanner />
     </View>
   );
 }

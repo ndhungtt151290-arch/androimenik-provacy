@@ -49,8 +49,8 @@
       [
         "react-native-google-mobile-ads",
         {
-          "android_app_id": "ca-app-pub-8320439928464026~8320439928464026",
-          "ios_app_id": "ca-app-pub-8320439928464026~8320439928464026"
+          "android_app_id": "ca-app-pub-8320439928464026",
+          "ios_app_id": "ca-app-pub-8320439928464026",
         }
       ],
       "expo-tracking-transparency"

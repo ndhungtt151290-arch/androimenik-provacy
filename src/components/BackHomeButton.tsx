@@ -1,13 +1,10 @@
 import React from "react";
 import { TouchableOpacity, Image, StyleSheet } from "react-native";
-import type { Lang } from "../types";
 
 const backIcon = require("../assets/home/back-icon.png");
 
 interface BackHomeButtonProps {
   onPress: () => void;
-  lang: Lang;
-  variant?: "back" | "home";
 }
 
 export function BackHomeButton({ onPress }: BackHomeButtonProps) {

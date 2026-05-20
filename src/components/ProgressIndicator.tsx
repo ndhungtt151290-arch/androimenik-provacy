@@ -13,13 +13,17 @@ const PROG_ICON = require("../assets/home/prog.png");
 interface ProgressIndicatorProps {
   total: number;
   current: number;
+  displayTotal: number;
+  displayCurrent: number;
   onToggleExpand: () => void;
   lang: Lang;
 }
 
 export function ProgressIndicator({
-  total,
-  current,
+  total: _total,
+  current: _current,
+  displayTotal,
+  displayCurrent,
   onToggleExpand,
   lang: _lang,
 }: ProgressIndicatorProps) {
@@ -27,7 +31,7 @@ export function ProgressIndicator({
     <View style={styles.container}>
       <TouchableOpacity onPress={onToggleExpand} style={styles.header}>
         <Image source={PROG_ICON} style={styles.progIcon} />
-        <Text style={styles.headerText}>{current + 1}/{total}</Text>
+        <Text style={styles.headerText}>{displayCurrent}/{displayTotal}</Text>
       </TouchableOpacity>
     </View>
   );

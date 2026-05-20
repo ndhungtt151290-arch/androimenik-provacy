@@ -41,7 +41,14 @@ export type QuestionBank = {
   dangerScenarioGroups: ScenarioGroup[];
 };
 
-export type ExamSimpleItem = { type: "simple"; question: SimpleQuestion };
+export type ExamSimpleItem = {
+  type: "simple";
+  question: SimpleQuestion;
+  scenarioGroupId?: string;
+  stem?: string;
+  stemVi?: string | null;
+  subIndex?: number;
+};
 export type ExamScenarioItem = { type: "scenario"; group: ScenarioGroup };
 export type ExamItem = ExamSimpleItem | ExamScenarioItem;
 
@@ -55,7 +62,8 @@ export type AppScreen =
   | { mode: "exam" }
   | { mode: "results"; paper: ExamItem[] }
   | { mode: "review"; paper: ExamItem[]; reviewAll?: boolean }
-  | { mode: "history" };
+  | { mode: "history" }
+  | { mode: "privacy" };
 
 export interface ExamHistoryEntry {
   date: string;
@@ -72,4 +80,10 @@ export interface PersonalStats {
   highestScore: number;
   lowestScore: number;
   chaptersStats: Record<string, { correct: number; total: number }>;
+}
+
+export interface WrongAnswerStats {
+  questionId: string;
+  wrongCount: number;
+  updatedAt: number; // Unix timestamp (milliseconds)
 }

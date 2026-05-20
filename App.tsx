@@ -7,6 +7,7 @@ import {
   StatusBar,
   ActivityIndicator,
   Text,
+  Platform,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { LangSwitch } from "./src/components/LangSwitch";
@@ -21,8 +22,9 @@ import { ReviewScreen } from "./src/screens/ReviewScreen";
 import { HistoryScreen } from "./src/screens/HistoryScreen";
 import { PracticeHomeScreen } from "./src/screens/PracticeHomeScreen";
 import { buildMockExam, scoreExam } from "./src/lib/exam";
-import { loadHistory, saveHistory, loadStats, saveStats } from "./src/lib/storage";
+import { loadHistory, saveHistory, loadStats, saveStats, addWrongAnswers } from "./src/lib/storage";
 import { showInterstitialExam } from "./src/utils/AdManager";
+import { initAds } from "./src/lib/adService";
 import type { ExamItem, Lang, MaruBatsu, PersonalStats, ExamHistoryEntry, AppScreen } from "./src/types";
 
 const EXAM_SECONDS = 30 * 60;
@@ -53,11 +55,24 @@ function AppContent() {
 
   // Load data on mount
   useEffect(() => {
+    initAds();
     Promise.all([loadStats(), loadHistory()]).then(([stats, history]) => {
       setPersonalStats(stats);
       setExamHistory(history);
       setLoading(false);
     });
+  }, []);
+
+  // Request ATT permission (iOS only)
+  useEffect(() => {
+    if (Platform.OS === "web") return;
+    (async () => {
+      const { requestTrackingPermissionsAsync } = await import("expo-tracking-transparency");
+      const { status } = await requestTrackingPermissionsAsync();
+      if (status === "granted") {
+        // Tracking permission granted
+      }
+    })();
   }, []);
 
   const toggleLang = useCallback(() => {
@@ -107,7 +122,7 @@ function AppContent() {
 
       // Update chapter breakdown
       for (const d of result.details) {
-        const chapterId = d.item.type === "simple" ? d.item.question.chapter : d.item.group.chapter;
+        const chapterId = d.item.question.chapter;
         if (!newStats.chaptersStats[chapterId]) {
           newStats.chaptersStats[chapterId] = { correct: 0, total: 0 };
         }
@@ -121,7 +136,7 @@ function AppContent() {
       // Save to history
       const chapterBreakdown: Record<string, { correct: number; total: number }> = {};
       for (const d of result.details) {
-        const chapterId = d.item.type === "simple" ? d.item.question.chapter : d.item.group.chapter;
+        const chapterId = d.item.question.chapter;
         if (!chapterBreakdown[chapterId]) chapterBreakdown[chapterId] = { correct: 0, total: 0 };
         chapterBreakdown[chapterId].total += 1;
         if (d.points >= 1) chapterBreakdown[chapterId].correct += 1;
@@ -138,6 +153,18 @@ function AppContent() {
       saveHistory(entry).then(() => {
         loadHistory().then(setExamHistory);
       });
+
+      // Record wrong answers
+      const wrongQuestionIds: string[] = [];
+      for (const d of result.details) {
+        if (d.points === 0) {
+          const item = d.item;
+          wrongQuestionIds.push(item.question.id);
+        }
+      }
+      if (wrongQuestionIds.length > 0) {
+        addWrongAnswers(wrongQuestionIds);
+      }
 
       setIsSubmitting(false);
       setSubmitted(true);
@@ -165,8 +192,7 @@ function AppContent() {
 
   const currentItem = view.mode === "exam" ? examPaper[examIndex] : undefined;
 
-  const getItemFlagId = (item: ExamItem): string =>
-    item.type === "simple" ? `s-${item.question.id}` : `g-${item.group.groupId}`;
+  const getItemFlagId = (item: ExamItem): string => `s-${item.question.id}`;
 
   const toggleFlag = useCallback(() => {
     if (!currentItem) return;
@@ -208,7 +234,6 @@ function AppContent() {
       : null;
 
   const isHome = view.mode === "home";
-  const isExam = view.mode === "exam";
 
   if (loading) {
     return (
@@ -306,7 +331,6 @@ function AppContent() {
               lang={lang}
               onStartExam={goToExamPrep}
               onStartPractice={goToPracticeHome}
-              onShowHistory={() => setView({ mode: "history" })}
             />
           )}
 
@@ -323,6 +347,7 @@ function AppContent() {
               lang={lang}
               onStart={startExam}
               onBack={() => setView({ mode: "home" })}
+              onHistory={() => setView({ mode: "history" })}
             />
           )}
 
@@ -386,6 +411,7 @@ function AppContent() {
               reviewAll={view.reviewAll}
             />
           )}
+
         </View>
 
         <AdModal />

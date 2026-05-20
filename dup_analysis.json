@@ -1,0 +1,2227 @@
+[
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_1_1",
+      "menkyogentsuki_gentsuki_9_27_4"
+    ],
+    "text": "たとえ少量でも、お酒を飲んだら車を運転してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "飲酒運転は人命に関わるほどの危険を伴うため、絶対にしてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_1_2",
+      "menkyogentsuki_gentsuki_10_12_2"
+    ],
+    "text": "強制保険の証明書は、安全のため、自宅に保管しておくべきである。",
+    "answer": "×",
+    "image": "",
+    "explanation": "届け出済証や強制保険の証明書は、原動機付自転車に備え付けねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_1_3",
+      "menkyogentsuki_gentsuki_7_30_3"
+    ],
+    "text": "道路は公共の場であるので、車を運転するときは自分の利便だけでなく、周囲の人への配慮が必要である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "沿道で生活する人々や、歩行者、他の車のことに配慮する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_1_4",
+      "menkyogentsuki_gentsuki_7_28_2"
+    ],
+    "text": "たとえ電子メールの送信であっても、運転中に携帯電話を操作してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "周囲の危険を察知しにくくなるので、運転中に携帯電話を操作するのはとても危険な行為である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_1_5",
+      "menkyogentsuki_gentsuki_7_8_4"
+    ],
+    "text": "疲れて眠気を感じたので、すみやかに車を止め、休息を取った。",
+    "answer": "○",
+    "image": "",
+    "explanation": "疲れて眠気を感じた場合は、すみやかに車を止め、休息を取るべきである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_2_1",
+      "menkyogentsuki_gentsuki_10_4_1"
+    ],
+    "text": "道路で自動車や原動機付自転車を運転するときは、その車種に応じた免許を取得せねばならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "車種に応じた免許を受けないで運転することは、無免許運転である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_2_2",
+      "menkyogentsuki_gentsuki_6_30_5"
+    ],
+    "text": "免許は、第一種免許と第二種免許、仮免許の三つの区分が存在する。",
+    "answer": "○",
+    "image": "",
+    "explanation": "仮免許も一つの区分である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_2_3",
+      "menkyogentsuki_gentsuki_6_3_4"
+    ],
+    "text": "眼鏡等使用の条件付き免許を受けた人は、車を運転する際にコンタクトレンズを使用してもよい。",
+    "answer": "○",
+    "image": "",
+    "explanation": "なお、レ―シック手術を受けた場合は、眼鏡等使用の条件を解除せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_2_4",
+      "menkyogentsuki_gentsuki_10_26_4"
+    ],
+    "text": "三輪の原動機付自転車も存在する。",
+    "answer": "○",
+    "image": "",
+    "explanation": "三輪の原動機付自転車としては、スリータータイプなどがある。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_2_5",
+      "menkyogentsuki_gentsuki_6_5_3"
+    ],
+    "text": "免許証を携帯することを忘れて原付を運転すると、免許不携帯になる。",
+    "answer": "○",
+    "image": "",
+    "explanation": "原付を運転する際は、免許証を携帯せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_3_1",
+      "menkyogentsuki_gentsuki_9_16_1"
+    ],
+    "text": "原付免許を取得すれば、小型特殊自動車も運転できる。",
+    "answer": "×",
+    "image": "",
+    "explanation": "原付免許では、原動機付自転車しか運転できない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_3_2",
+      "menkyogentsuki_gentsuki_9_24_2"
+    ],
+    "text": "仮免許をとったので、一人で車を運転し、買い物に出かけた。",
+    "answer": "×",
+    "image": "",
+    "explanation": "誤りである。仮免許での路上練習では、資格ある指導者（練習する車両を運転することができる第一種免許の取得期間が通算して(免"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_3_3",
+      "menkyogentsuki_gentsuki_9_19_4"
+    ],
+    "text": "大型特殊免許を取得すると、原動機付自転車も運転できる。",
+    "answer": "○",
+    "image": "",
+    "explanation": "大型特殊免許を取得すると、大型特殊自動車と小型特殊自動車、原動機付自転車を運転することができる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_3_4",
+      "menkyogentsuki_gentsuki_7_14_3"
+    ],
+    "text": "タクシーを運転する際は、常に第二種免許が必要である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "「常に～必要である」の部分が誤り。客を乗せずにタクシーを運転する場合、第二種免許は必要ない。第二種免許は、旅客の運送を目"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_3_5",
+      "menkyogentsuki_gentsuki_9_19_1"
+    ],
+    "text": "効力を失った免許証を携帯して自動車を運転すると、無免許運転になる。",
+    "answer": "○",
+    "image": "",
+    "explanation": "効力を失った免許証を携帯して運転したとしても、無免許運転である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_4_1",
+      "menkyogentsuki_gentsuki_9_20_5"
+    ],
+    "text": "原動機付自転車を選ぶときは、乗ったときに両足のつま先が地面につき、8の字に押して動かせるものにする。",
+    "answer": "○",
+    "image": "",
+    "explanation": "平地でセンタースタンドが立てられるものであることも重要である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_4_2",
+      "menkyogentsuki_gentsuki_9_3_1"
+    ],
+    "text": "げたやハイヒールを履いて二輪車を運転するのは危険である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "厚底のブーツも危険である。運動靴が適している。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_4_3",
+      "menkyogentsuki_gentsuki_8_24_2"
+    ],
+    "text": "原動機付自転車に乗るときは、土ふまずをステップにのせるようにする。",
+    "answer": "○",
+    "image": "",
+    "explanation": "なお、スクーター型は足をそろえる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_4_4",
+      "menkyogentsuki_gentsuki_8_12_4"
+    ],
+    "text": "二輪車に乗車する時は、両膝でタンクを軽く挟むようにするとよい。",
+    "answer": "○",
+    "image": "",
+    "explanation": "足を開いて乗ると危険である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_4_5",
+      "menkyogentsuki_gentsuki_8_2_4"
+    ],
+    "text": "二輪車に乗車する時は、周囲に溶け込むため、なるべく暗い服で運転する。",
+    "answer": "×",
+    "image": "",
+    "explanation": "二輪車は、四輪車の運転手に、見落とされやすいので、なるべく明るい服で運転する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_5_1",
+      "menkyogentsuki_gentsuki_7_12_5"
+    ],
+    "text": "原動機付自転車のブレーキは、あそびがあってはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "15～20ミリメートル程度のあそびがあることが望ましい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_5_2",
+      "menkyogentsuki_gentsuki_9_28_5"
+    ],
+    "text": "バッテリーの液量は減らないため、点検の必要はない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "バッテリー液は蒸発によって減るため、点検せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_5_3",
+      "menkyogentsuki_gentsuki_7_22_4"
+    ],
+    "text": "エンジンオイルの量はエンジンを切った状態で点検する。",
+    "answer": "○",
+    "image": "",
+    "explanation": "エンジンをかけたまま点検をするのではない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_5_4",
+      "menkyogentsuki_gentsuki_6_4_3"
+    ],
+    "text": "ハンドルに故障を見つけたが、短い距離であったのでそのまま運転した。",
+    "answer": "×",
+    "image": "",
+    "explanation": "ハンドルやエンジンが故障した場合、決してそのまま運転してはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_5_5",
+      "menkyogentsuki_gentsuki_10_10_3"
+    ],
+    "text": "前照灯が点灯しない原動機付自転車は、昼間であっても運転してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "トンネルの中やうす暗いときに点灯させることがあるためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_6_1",
+      "menkyogentsuki_gentsuki_7_9_3"
+    ],
+    "text": "原動機付自転車でカーブを曲がる際は、車体をカーブの外側に傾けるようにする。",
+    "answer": "×",
+    "image": "",
+    "explanation": "車体をカーブの内側に傾けるようにする。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_6_2",
+      "menkyogentsuki_gentsuki_6_4_4"
+    ],
+    "text": "原動機付自転車は、バランスを崩しやすく、転倒するおそれがあるため十分に気を付ける。",
+    "answer": "○",
+    "image": "",
+    "explanation": "四輪車と違い、容易に転倒するので注意が必要である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_6_3",
+      "menkyogentsuki_gentsuki_6_10_4"
+    ],
+    "text": "正しい乗車姿勢で原動機付自転車に乗ることは、疲労を軽減する効果もある。",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい乗車姿勢で乗ると、疲れにくい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_6_4",
+      "menkyogentsuki_gentsuki_7_15_2"
+    ],
+    "text": "原動機付自転車を運転する際は、ハンドルをあまり強く握りすぎないようにする。",
+    "answer": "○",
+    "image": "",
+    "explanation": "円滑にハンドル等を操作するためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_6_5",
+      "menkyogentsuki_gentsuki_10_5_3"
+    ],
+    "text": "四輪車の運転と二輪車の運転に必要な技術は全く同じである。",
+    "answer": "×",
+    "image": "",
+    "explanation": "身体でバランスを保つ二輪車は、四輪車とは異なる運転技術が求められる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_7_1",
+      "menkyogentsuki_gentsuki_7_12_2"
+    ],
+    "text": "二輪車でブレーキをかけるとき、ハンドルを切っておらず、車輪が傾いていない場合は、前後輪のブレーキを同時にかけるのがよい。",
+    "answer": "○",
+    "image": "",
+    "explanation": "二輪車は、同時に前後輪のブレーキをかけるのがよい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_7_2",
+      "menkyogentsuki_gentsuki_8_15_3"
+    ],
+    "text": "原動機付自転車でカーブ中にブレーキを使用すると、タイヤがスリップし、転倒するおそれがあるため注意が必要である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "原動機付自転車はバランスを崩し、転倒しやすいので注意が必要である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_7_3",
+      "menkyogentsuki_gentsuki_7_17_5"
+    ],
+    "text": "原動機付自転車の最高速度は、時速30キロメートルである。",
+    "answer": "○",
+    "image": "",
+    "explanation": "時速30キロメートルを超える速度で運転してはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_7_4",
+      "menkyogentsuki_gentsuki_6_4_1"
+    ],
+    "text": "原動機付自転車でカーブを曲がるときは、あらかじめ加速し、カーブの後半で徐々に減速して抜けるようにする。",
+    "answer": "×",
+    "image": "",
+    "explanation": "あらかじめ減速し、カーブの後半で徐々に加速するようにする。これをスローイン・ファーストアウト走法と呼ぶ。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_7_5",
+      "menkyogentsuki_gentsuki_6_17_2"
+    ],
+    "text": "原動機付自転車で走行するときは、ブレーキのみで速度を調整する。",
+    "answer": "×",
+    "image": "",
+    "explanation": "ブレーキに加え、アクセルの操作によって速度を調節する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_8_1",
+      "menkyogentsuki_gentsuki_6_1_1"
+    ],
+    "text": "車にはたらく遠心力は、カーブの半径が大きいほど大きい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "遠心力は、カーブの半径が大きいほど小さい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_8_2",
+      "menkyogentsuki_gentsuki_10_6_2"
+    ],
+    "text": "下り坂では、重力が働くため、車に勢いがつく。",
+    "answer": "○",
+    "image": "",
+    "explanation": "上り坂では、車が上りにくくなる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_8_3",
+      "menkyogentsuki_gentsuki_8_29_1"
+    ],
+    "text": "砂利道は、舗装道路に比べて摩擦力が小さい。",
+    "answer": "○",
+    "image": "",
+    "explanation": "砂利道では、車が止まるために必要な距離が延びるため、注意が必要である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_8_4",
+      "menkyogentsuki_gentsuki_6_28_2"
+    ],
+    "text": "走っている車を停止させようとする力を、慣性力と呼ぶ。",
+    "answer": "×",
+    "image": "",
+    "explanation": "問題文で説明されている力は、摩擦力である。慣性力とは、車が止まろうとする時に走り続けようとする力である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_1_8_5",
+      "menkyogentsuki_gentsuki_10_9_3"
+    ],
+    "text": "時速60キロメートルでコンクリートの壁に激突したときは、約140メートルの高さから落ちたときと同じ程度の力を受ける。",
+    "answer": "×",
+    "image": "",
+    "explanation": "時速60キロメートルでコンクリートの壁に激突したときは、約14メートルの高さから落ちたときと同じ程度の力を受ける。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_2_1",
+      "menkyogentsuki_gentsuki_6_25_3"
+    ],
+    "text": "本標識とは、規制標識・指示標識・警戒標識・補助標識の4つを指す。",
+    "answer": "×",
+    "image": "",
+    "explanation": "標識は、本標識と補助標識に分けられる。そして、本標識は、規制標識・指示標識・警戒標識・案内標識の4つを指す。よって、補助"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_4_1",
+      "menkyogentsuki_gentsuki_10_16_2"
+    ],
+    "text": "左右の信号が赤色や黄色でも、対面する信号が青色とは限らない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "交差点では全赤と呼ばれる、全ての信号が赤の状態がある。よって、左右の信号が赤や黄色でも、対面する信号が青色とは限らない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_4_2",
+      "menkyogentsuki_gentsuki_10_19_5"
+    ],
+    "text": "対面する信号が青色になったので、直ちに発進した。",
+    "answer": "×",
+    "image": "",
+    "explanation": "渡りきれなかった歩行者が道路上にいる可能性もあるので、対面する信号が青色だったとしても、安全を確かめてから発進する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_4_3",
+      "menkyogentsuki_gentsuki_10_27_1"
+    ],
+    "text": "対面する黄色の矢印信号が点灯していたとしても、原動機付自転車は発進してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "黄色の矢印信号は、路面電車に対する信号である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_4_4",
+      "menkyogentsuki_gentsuki_9_2_5"
+    ],
+    "text": "黄色の点滅信号のときは、徐行して進行しなくてはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "黄色の点滅信号のときは、安全を確認して進行すればよく、徐行の義務はない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_4_5",
+      "menkyogentsuki_gentsuki_8_25_3"
+    ],
+    "text": "青色の矢印信号が右折の矢印であっても、転回は禁止されている。",
+    "answer": "×",
+    "image": "",
+    "explanation": "転回禁止の交差点を除き、右折の矢印信号のときは、転回できる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_5_1",
+      "menkyogentsuki_gentsuki_8_16_1"
+    ],
+    "text": "信号機の信号と手信号が異なる場合は、手信号に従う。",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい。ちなみに、手信号での交通整理は警察官と交通巡視員が行うことができる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_5_2",
+      "menkyogentsuki_gentsuki_8_2_2"
+    ],
+    "text": "対面している警察官が灯火を横に振っている灯火信号は、信号機の青色信号と同じ意味である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "警察官に対面する交通にとっては、問題文の灯火信号は赤信号と同じである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_5_3",
+      "menkyogentsuki_gentsuki_8_12_3"
+    ],
+    "text": "警察官が、灯火を頭上に上げているとき、警察官の身体の正面に平行する交通については、信号機の赤色信号と同じ意味である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "誤り。黄色の灯火信号と同じ意味である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_5_4",
+      "menkyogentsuki_gentsuki_8_3_2"
+    ],
+    "text": "交差点以外で、横断歩道も自転車横断帯も踏切もない場所で手信号をしているときの停止位置は、その警察官の1メートル手前である",
+    "answer": "○",
+    "image": "",
+    "explanation": "1メートル手前に停止する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_2_5_5",
+      "menkyogentsuki_gentsuki_8_29_3"
+    ],
+    "text": "警察官が南北の方向に灯火を振っているとき、東西の方向に走る車は停止せねばならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "東西の方向に走る車にとっては、赤信号と同じである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_1_1",
+      "menkyogentsuki_gentsuki_7_6_3"
+    ],
+    "text": "疲れているときは、制動距離が長くなるので、運転には注意が必要である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "誤り。疲れているときに長くなるのは、制動距離ではなく空走距離である。空走距離は、危険を感じ、ブレーキが効き始めるまでに走"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_1_2",
+      "menkyogentsuki_gentsuki_10_3_3"
+    ],
+    "text": "一般道路で原動機付自転車が追い越しをするときの一時的な最高速度は、時速40キロメートルである。",
+    "answer": "×",
+    "image": "",
+    "explanation": "追い越しをするときであっても、法定速度を超えてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_1_3",
+      "menkyogentsuki_gentsuki_8_30_2"
+    ],
+    "text": "安全な車間距離は、停止距離とほぼ同じ距離である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "停止距離と同じ距離の車間距離をとるように心掛ける。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_1_4",
+      "menkyogentsuki_gentsuki_6_24_3"
+    ],
+    "text": "原動機付自転車は、道路の流れを考え、常に最高速度ぎりぎりで走るのが、結果的には安全である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "道路の状況や天候を考え、安全な速度で運転する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_1_5",
+      "menkyogentsuki_gentsuki_6_26_5"
+    ],
+    "text": "乾いた舗装道路で、時速30キロメートルで走行中の原動機付自転車は、5メートル以上の車間距離をとることが必要である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "時速30キロメートル以下で走行する際は、速度の半分の数値で車間距離を取ることが必要。この場合は15メートル。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_2_1",
+      "menkyogentsuki_gentsuki_6_8_2"
+    ],
+    "text": "一方通行の道路では、道路の右側を通行できる。",
+    "answer": "○",
+    "image": "",
+    "explanation": "一方通行の道路では、例外的に道路の右側の通行ができる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_2_2",
+      "menkyogentsuki_gentsuki_6_12_2"
+    ],
+    "text": "原動機付自転車で走行する際、同一方向に車両通行帯が3つ以上ある場合は、原則として交通量の少ない車両通行帯を走行する。",
+    "answer": "×",
+    "image": "",
+    "explanation": "やむを得ない場合を除き、原動機付自転車は一番左側の車線を走行する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_2_3",
+      "menkyogentsuki_gentsuki_7_11_4"
+    ],
+    "text": "車両通行帯のない道路では、原動機付自転車は、道路の左に寄って通行する。",
+    "answer": "○",
+    "image": "",
+    "explanation": "ただし、歩道のない道路では、原動機付自転車は路肩を通行してはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_2_4",
+      "menkyogentsuki_gentsuki_6_27_3"
+    ],
+    "text": "原動機付自転車は、小回りがきくとはいえ、道路が混雑していても、車と車の間をすり抜けてはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "すりぬけの他に、ジグザグ運転も危険なのでしてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_2_5",
+      "menkyogentsuki_gentsuki_7_30_5"
+    ],
+    "text": "左側部分の道幅が6メートル未満の見通しのよい道路で追い越しをするときは、中央線が黄線であっても、中央線から右側にはみ出し",
+    "answer": "×",
+    "image": "",
+    "explanation": "中央線が黄線の道路では、追い越しのためのはみ出しは禁止である。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_3_1",
+      "menkyogentsuki_gentsuki_6_12_5",
+      "menkyogentsuki_gentsuki_7_6_1"
+    ],
+    "text": "車は、歩行者がいないときに限り安全地帯を通行できる。",
+    "answer": "×",
+    "image": "",
+    "explanation": "歩行者の有無に関わらず、通行できない。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_3_2",
+      "menkyogentsuki_gentsuki_7_4_1",
+      "menkyogentsuki_gentsuki_10_15_5"
+    ],
+    "text": "エンジンを止めて原動機付自転車を押して歩くときは、歩道や路側帯を通行できる。",
+    "answer": "○",
+    "image": "",
+    "explanation": "エンジンを止めた原動機付自転車を押して歩く場合は、歩行者と扱われる。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_3_3",
+      "menkyogentsuki_gentsuki_6_11_3",
+      "menkyogentsuki_gentsuki_8_7_2"
+    ],
+    "text": "歩行者専用道路は、許可を受けており、かつ法定速度を守れば車も通行可能である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "歩行者専用道路は、許可を受けている車は通行できるが、徐行せねばならない。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_3_4",
+      "menkyogentsuki_gentsuki_7_10_1",
+      "menkyogentsuki_gentsuki_10_5_1"
+    ],
+    "text": "歩道は軽車両以外の車は通行してはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "軽車両を含む車両は、原則として歩道を通行してはならない。よって軽車両であっても歩道を通行できないのが原則である。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_3_5",
+      "menkyogentsuki_gentsuki_7_14_1",
+      "menkyogentsuki_gentsuki_10_26_3"
+    ],
+    "text": "車は、いかなる場合でも、軌道敷内を通行したり、横切ったりしてはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "横断や転回、右左折をする際に横切ることができる。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_5_1",
+      "menkyogentsuki_gentsuki_6_14_5",
+      "menkyogentsuki_gentsuki_8_18_4"
+    ],
+    "text": "歩行者のそばを通るときは、必ず徐行をせねばならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "安全な間隔をとることができれば、徐行をする必要はない。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_5_2",
+      "menkyogentsuki_gentsuki_6_14_3",
+      "menkyogentsuki_gentsuki_7_7_3"
+    ],
+    "text": "横断歩道のない場所に限り、車が優先であるので、横断する歩行者に道を譲る必要はない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "横断歩道のない交差点であっても、車は歩行者の横断を妨げてはならない。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_5_3",
+      "menkyogentsuki_gentsuki_9_14_2",
+      "menkyogentsuki_gentsuki_9_17_1"
+    ],
+    "text": "安全地帯のない停留所で、停止している路面電車に乗り降りする人がいるときは、後方で停止して待たねばならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "問題文の記述が正しい。安全地帯のない停留所では、後方で停止して待たねばならない。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_5_4",
+      "menkyogentsuki_gentsuki_7_27_4",
+      "menkyogentsuki_gentsuki_9_7_4"
+    ],
+    "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい。問題文の通り、安全地帯に歩行者がいなければ、徐行しなくてもよい。ちなみに、歩行者がいる場合には、徐行せねばならな"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_5_5",
+      "menkyogentsuki_gentsuki_8_16_3",
+      "menkyogentsuki_gentsuki_8_26_4"
+    ],
+    "text": "安全地帯がなく、乗降者がいないとき、路面電車との間に1.5メートル以上の間隔があったので、徐行して進行した。",
+    "answer": "○",
+    "image": "",
+    "explanation": "この場合でも、必ず徐行せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_7_1",
+      "menkyogentsuki_gentsuki_6_29_4"
+    ],
+    "text": "横断中の歩行者が自車に気付いていなかったので、警音器を鳴らして注意した。",
+    "answer": "×",
+    "image": "",
+    "explanation": "警音器を鳴らすのではなく、歩行者の通行を妨げないようにする。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_7_2",
+      "menkyogentsuki_gentsuki_10_21_5"
+    ],
+    "text": "横断歩道を横断しようとしている人がいたので、減速した。",
+    "answer": "×",
+    "image": "",
+    "explanation": "減速するのではなく、一時停止せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_7_3",
+      "menkyogentsuki_gentsuki_8_9_1"
+    ],
+    "text": "横断歩道に近付いたときは、横断する歩行者のあるなしに関わらず、徐行せねばならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "明らかに歩行者がいない場合は、徐行の必要はない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_7_4",
+      "menkyogentsuki_gentsuki_10_21_4"
+    ],
+    "text": "交通整理の行われていない横断歩道の手前にトラックが停止していたので、安全のため徐行してトラックの側方を通過した。",
+    "answer": "×",
+    "image": "",
+    "explanation": "この場合、トラックの前に出る前に一時停止して、横断者の安全を確かめねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_7_5",
+      "menkyogentsuki_gentsuki_7_4_5"
+    ],
+    "text": "横断歩道に近付いたとき、横断している人が自車の存在に気付き止まったが、一時停止して歩行者に通行させた。",
+    "answer": "○",
+    "image": "",
+    "explanation": "歩行者が横断歩道を横断しているときは、一時停止して、歩行者の通行を妨げないようにする。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_8_2",
+      "menkyogentsuki_gentsuki_8_14_4"
+    ],
+    "text": "盲導犬を連れた人のそばを通るときに、一時停止をして、安全を確認して通行した。",
+    "answer": "○",
+    "image": "",
+    "explanation": "目の不自由な人のそばを通行するときは、一時停止か徐行をする。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_8_3",
+      "menkyogentsuki_gentsuki_8_8_2"
+    ],
+    "text": "児童・幼児が乗り降りするために停車している通学・通園バスの側方を通行するときは、乗降者がいなくても、必ず徐行して通過する",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい。児童や幼児の急な飛び出しを防ぐためである。ただし、一般の路線バスの側方を通行するときは、徐行でなくてよい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_9_1",
+      "menkyogentsuki_gentsuki_9_22_1"
+    ],
+    "text": "原動機付自転車が交差点を左折するときは、あらかじめできるだけ道路の左端に寄り、交差点の側端に沿って徐行しなければならない",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい。道路交通法34条1項の通りである。なお、そのように定められている理由は、左折する際に、二輪車等の巻きこみを避ける"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_9_2",
+      "menkyogentsuki_gentsuki_6_19_3"
+    ],
+    "text": "見通しのきかない交差点では、信号の有無にかかわらず徐行せねばならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "「信号の有無にかかわらず」の部分が誤り。見通しのきかない交差点は、原則として徐行運転が必要である。しかし例外として、信号"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_9_3",
+      "menkyogentsuki_gentsuki_8_27_5"
+    ],
+    "text": "内輪差とは、車が曲がるとき、前輪が後輪より内側を通ることによる軌跡の差を呼ぶ。",
+    "answer": "×",
+    "image": "",
+    "explanation": "車が曲がるときには、後輪が前輪より内側を通る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_9_4",
+      "menkyogentsuki_gentsuki_8_3_4"
+    ],
+    "text": "右左折をしない場合、交差点を通行するときに徐行する必要はない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "交通整理の行われていない交差点で、見通しの効かない場合・交差する道路が優先道路の場合・交差する道路の方が道幅が広い場合は"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_9_5",
+      "menkyogentsuki_gentsuki_10_7_3"
+    ],
+    "text": "交通整理が行われている片側3車線の交差点では、原動機付自転車は二段階右折をする。",
+    "answer": "○",
+    "image": "",
+    "explanation": "この場合、原動機付自転車は、二段階右折をする。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_10_1",
+      "menkyogentsuki_gentsuki_10_3_4"
+    ],
+    "text": "交差点を右折するときは、あらかじめ道路の中央によって右折する。",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい。交差点を右折するときは、あらかじめ道路の中央によって右折する。直進車が通過しやすくするためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_10_2",
+      "menkyogentsuki_gentsuki_8_19_3"
+    ],
+    "text": "右折や左折をするときは、必ず徐行せねばならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "徐行とは、すぐに停止できる速度のことである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_10_4",
+      "menkyogentsuki_gentsuki_9_9_1"
+    ],
+    "text": "交差点で右折するとき、先に交差点内に入っていたとしても、直進車より先に右折してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "右折車は、直進車の進行を妨害してはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_10_5",
+      "menkyogentsuki_gentsuki_8_12_2"
+    ],
+    "text": "軽車両は、片側二車線の道路の交差点では、青信号であれば直進や左折、右折ができる。",
+    "answer": "×",
+    "image": "",
+    "explanation": "「軽車両は～右折ができる」の部分が誤り。軽車両は、問題文にある片側二車線の道路の交差点に限らず、全ての交差点で二段階右折"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_11_2",
+      "menkyogentsuki_gentsuki_10_1_5"
+    ],
+    "text": "同じ道幅の交差点で、左方から進行してくる車を、妨げてはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "たとえ左方から進行してくる車が原動機付自転車であっても、妨げてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_11_3",
+      "menkyogentsuki_gentsuki_7_16_4"
+    ],
+    "text": "同じ道幅の交差点で路面電車が進行しているときは、右方・左方にかかわらず、路面電車の進行を妨げない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "同じ道幅の交差点では、右方・左方に関わらず路面電車の進行を妨げてはならないので、本問は正しい。ちなみに、自車の道路の道幅"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_11_5",
+      "menkyogentsuki_gentsuki_6_11_2"
+    ],
+    "text": "通行している道路が優先道路のときは、左右の見通しがきかない交差点であれば、徐行せねばならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "誤りである。優先道路を通行している場合は、徐行する必要がない（道路交通法第42条）。なお通行している道が優先道路でない場"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_12_1",
+      "menkyogentsuki_gentsuki_6_4_5"
+    ],
+    "text": "二輪車も内輪差があるので、特に左折の際は歩行者や自転車を巻きこまないように注意が必要である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "内輪差とは、右左折の際、後輪が前輪よりも内側を通るその差のことをいう。二輪車であっても内輪差はあるので注意が必要である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_12_2",
+      "menkyogentsuki_gentsuki_6_9_1"
+    ],
+    "text": "原動機付自転車で右折する際は、対向車のかげから直進車が出てくることがあるので注意が必要である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "右折する際は、死角に気を付ける。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_12_5",
+      "menkyogentsuki_gentsuki_6_7_2"
+    ],
+    "text": "原動機付自転車は、一番左の車両通行帯を進行せねばならないので、通行区分が指定された車両通行帯であっても、常に一番左の車両",
+    "answer": "×",
+    "image": "",
+    "explanation": "進行方向別に通行区分が指定されている場合は、その通行区分に従う。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_13_3",
+      "menkyogentsuki_gentsuki_10_18_3"
+    ],
+    "text": "前車が進路を変更しようとしていたので、その車の進行を妨げないようにした。",
+    "answer": "○",
+    "image": "",
+    "explanation": "前車の進路変更を妨げてはならない。ただし、急ブレーキや急カーブで避けるような場合は例外である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_13_5",
+      "menkyogentsuki_gentsuki_7_8_3"
+    ],
+    "text": "進行方向別に通行区分が指定された車両通行帯を進行中、後方から緊急自動車が接近してきたが、車両通行帯を変えずに進行した。",
+    "answer": "×",
+    "image": "",
+    "explanation": "緊急自動車が接近してきたときは、車両通行帯の区分に関わらず、進路を譲る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_14_1",
+      "menkyogentsuki_gentsuki_8_26_1"
+    ],
+    "text": "交差点付近で緊急自動車が接近してきたので、交差点の中央で停止した。",
+    "answer": "×",
+    "image": "",
+    "explanation": "交差点をさけて、左側に寄って停止せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_14_2",
+      "menkyogentsuki_gentsuki_8_29_2"
+    ],
+    "text": "交差点付近以外の所で緊急自動車が接近してきたときは、道路の左側によって一時停止をしなければならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "交差点内や交差点付近の場合とは異なり、それ以外の場所では、道路の左側に寄り、進路を譲れば、一時停止しなくてもよい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_14_3",
+      "menkyogentsuki_gentsuki_10_9_1"
+    ],
+    "text": "交差点付近で緊急自動車が接近してきたので、道路の左側に寄って徐行した。",
+    "answer": "×",
+    "image": "",
+    "explanation": "徐行ではなく、一時停止せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_14_4",
+      "menkyogentsuki_gentsuki_10_7_5"
+    ],
+    "text": "交差点付近でパトカーが接近してきたが、サイレンを鳴らしていなかったので、進路を譲らなかった。",
+    "answer": "○",
+    "image": "",
+    "explanation": "緊急用務でない自動車は、進路を譲る必要はない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_14_5",
+      "menkyogentsuki_gentsuki_7_22_2"
+    ],
+    "text": "交差点やその付近以外の道路を通行中、後方から緊急自動車が接近してきたときは、一方通行の道路では、左側もしくは右側に寄って",
+    "answer": "○",
+    "image": "",
+    "explanation": "一方通行の道路で、左側に寄るとかえって緊急自動車の妨げになるときは、右側に寄って進路を譲る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_15_1",
+      "menkyogentsuki_gentsuki_9_10_5"
+    ],
+    "text": "バス優先通行帯では、普通自動車は路線バスに進路を譲らなければならないが、通学・通園バスは例外的に譲らなくてよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "普通自動車は、通園・通学バスであっても、進路を譲らねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_15_2",
+      "menkyogentsuki_gentsuki_7_29_4"
+    ],
+    "text": "バス専用通行帯は、原動機付自転車は通行してはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "原動機付自転車や小型特殊自動車、軽車両はバス専用通行帯を通行できる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_15_4",
+      "menkyogentsuki_gentsuki_10_27_5"
+    ],
+    "text": "停留所で停止していた路線バスが発進の合図をしたので、進路を譲った。",
+    "answer": "○",
+    "image": "",
+    "explanation": "路線バスが発進の合図をしたときは、進路を譲る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_15_5",
+      "menkyogentsuki_gentsuki_9_11_2"
+    ],
+    "text": "路線バスの専用通行帯は、原動機付自転車や、小型特殊自動車も通行してはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "他に軽車両・許可された車も通行が可能である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_16_1",
+      "menkyogentsuki_gentsuki_10_22_3"
+    ],
+    "text": "進路を変更するときは、合図をしてから安全を確認する。",
+    "answer": "×",
+    "image": "",
+    "explanation": "安全を確認してから合図をしなくてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_16_2",
+      "menkyogentsuki_gentsuki_6_26_4"
+    ],
+    "text": "車両通行帯が黄色の線で区画されている道路では、線を越えて進路を変えてはならないが、右左折のためであれば、線を越えて進路を",
+    "answer": "×",
+    "image": "",
+    "explanation": "黄色の車両通行帯は、進路変更禁止を意味し、たとえ右左折のためであっても、線を越えて進路を変更してはならない。ちなみに、黄"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_16_5",
+      "menkyogentsuki_gentsuki_8_19_5"
+    ],
+    "text": "標識や標示によって横断や転回が禁止されているところでは、後退も禁止されている。",
+    "answer": "×",
+    "image": "",
+    "explanation": "後退は特に禁止されていない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_17_1",
+      "menkyogentsuki_gentsuki_9_9_2"
+    ],
+    "text": "合図は、その行為が終わったら、すぐにやめなければならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "合図を出し続けると混乱を招き、危険である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_17_2",
+      "menkyogentsuki_gentsuki_6_24_2"
+    ],
+    "text": "左折や左に進路を変更する際に、右腕を使って合図をすることはできない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "右腕で合図をすることもできる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_17_3",
+      "menkyogentsuki_gentsuki_7_24_3"
+    ],
+    "text": "左腕を水平に伸ばす合図は、左折か左に進路変更するときの合図である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "問題文の記述は正しい。なお、「左折」と「左に進路変更」は、左腕を水平に伸ばすという同じ動作ではあるが、合図を出すべき場所"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_17_4",
+      "menkyogentsuki_gentsuki_6_2_2"
+    ],
+    "text": "右腕を垂直に上に曲げる合図は、左折か左に進路変更するときの合図である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "問題文の記述は正しい。なお、「左折」と「左に進路変更」は、右腕を車の右側の外に出してひじを垂直に曲げるという同じ動作では"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_17_5",
+      "menkyogentsuki_gentsuki_7_26_1"
+    ],
+    "text": "転回の合図を行う時期は、転回の約30メートル手前である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "転回の合図は、30メートル手前で行う。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_18_1",
+      "menkyogentsuki_gentsuki_9_8_2"
+    ],
+    "text": "右左折の合図を行う時期は、右左折の約3秒前である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "右左折の30メートル手前で合図を行う。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_18_2",
+      "menkyogentsuki_gentsuki_7_29_2"
+    ],
+    "text": "転回を意味する合図の方法は、右折や右に進路変更するときの合図の方法と同じである。",
+    "answer": "○",
+    "image": "",
+    "explanation": "問題文の通り、転回を意味する合図の方法は、右折や右に進路変更するときの合図の方法と同じである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_18_3",
+      "menkyogentsuki_gentsuki_8_15_2"
+    ],
+    "text": "徐行や停止をするときと、後退するときの手信号による合図は同じである。",
+    "answer": "×",
+    "image": "",
+    "explanation": "徐行や停止をするときは、腕を斜め下に伸ばし、後退するときは、腕を斜め下に伸ばし、手のひらを後ろに向けて腕を前後に動かす。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_18_4",
+      "menkyogentsuki_gentsuki_10_24_3"
+    ],
+    "text": "徐行や停止、後退をするときはそのときに合図をすればよい。",
+    "answer": "○",
+    "image": "",
+    "explanation": "あらかじめ合図をしなくても危険性が少ないためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_3_18_5",
+      "menkyogentsuki_gentsuki_10_20_3"
+    ],
+    "text": "右折や左折などの合図は、その行為の途中でやめてよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "終わるまで続けねばならない。終了次第、速やかに合図をやめる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_1_1",
+      "menkyogentsuki_gentsuki_6_20_1"
+    ],
+    "text": "進路を変えず進行中の前の車の前方に出ることを、追い越しという。",
+    "answer": "×",
+    "image": "",
+    "explanation": "進路を変えずに進行中の車の前方に出るのは追い抜き、進路を変えて進行中の車の前方に出るのは追い越しである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_1_2",
+      "menkyogentsuki_gentsuki_7_5_2"
+    ],
+    "text": "追い越しをするときは、進行中の前の車にできるだけ接近した後、すばやく進路を変えるべきである。",
+    "answer": "×",
+    "image": "",
+    "explanation": "進行中の車に対し安全で十分な間隔をとり、ゆるやかに進路を変更せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_1_3",
+      "menkyogentsuki_gentsuki_9_18_5"
+    ],
+    "text": "追い越しをするときは、加速しなければならないので、一時的に定められた最高速度を超えてもよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "追い越しをするときであっても、最高速度を超えてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_1_4",
+      "menkyogentsuki_gentsuki_10_27_3"
+    ],
+    "text": "追い越しをするときは、必ず進行中の前の車の右側を通行する。",
+    "answer": "×",
+    "image": "",
+    "explanation": "前の車が右折するために道路の中央に寄っているときは、その左側を通行する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_1_5",
+      "menkyogentsuki_gentsuki_6_2_1"
+    ],
+    "text": "路面電車を追い越す場合は、常にその左側を通行する。",
+    "answer": "×",
+    "image": "",
+    "explanation": "原則としてその左側を通行するが、路面電車の軌道敷が道路の左端にある場合は、その右側を通行する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_2_1",
+      "menkyogentsuki_gentsuki_7_5_3"
+    ],
+    "text": "たとえ安全であっても、前の車が自動車を追い越そうとしているときは、それを追い越してはいけない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "二重追い越しは禁止されている。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_2_2",
+      "menkyogentsuki_gentsuki_7_18_4"
+    ],
+    "text": "追い越し禁止の場所では、原動機付自転車の追い越しも禁じられている。",
+    "answer": "○",
+    "image": "",
+    "explanation": "たとえ原動機付自転車であっても、追い越しは禁止である。追い抜きは禁止されていない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_2_3",
+      "menkyogentsuki_gentsuki_8_5_4"
+    ],
+    "text": "前の車が右側に進路を変えようとしている場合であっても、安全であれば追い越してよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "前の車が右折等のために右側に進路を変えようとしている場合は、追い越しをしてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_2_4",
+      "menkyogentsuki_gentsuki_8_4_4"
+    ],
+    "text": "前の車が、原動機付自転車を追い越そうとしているときには、その車を追い越してはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "前の車が原動機付自転車を追い越そうとしている場合は、二重追い越しにならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_2_5",
+      "menkyogentsuki_gentsuki_10_10_1"
+    ],
+    "text": "一方通行の道路では、追い越しをしてはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "一方通行の道路での追い越しを禁じる規則は存在しない。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_3_2",
+      "menkyogentsuki_gentsuki_9_26_1",
+      "menkyogentsuki_gentsuki_10_9_4"
+    ],
+    "text": "坂の頂上付近で追い越しをする場合、上りは追い越しを禁止されているが、下りは追い越しを禁止されていない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい。坂の頂上付近では、下りの場合、特に追い越しは禁止されていない。なお、問題文の通り、坂の頂上付近の上りは、追い越し"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_3_3",
+      "menkyogentsuki_gentsuki_7_28_4",
+      "menkyogentsuki_gentsuki_8_20_3"
+    ],
+    "text": "こう配の急な上り坂では、追い越しを禁止されていない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "問題文の記述が正しい。こう配の急な上り坂では、追い越しは禁止されていない。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_3_4",
+      "menkyogentsuki_gentsuki_6_8_3",
+      "menkyogentsuki_gentsuki_10_10_5"
+    ],
+    "text": "トンネル内では、車両通行帯の有無に関わらず、前の車を追い越してはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "車両通行帯があるトンネルでは、追い越しをしてもよい。"
+  },
+  {
+    "count": 3,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_3_5",
+      "menkyogentsuki_gentsuki_8_7_1",
+      "menkyogentsuki_gentsuki_10_24_2"
+    ],
+    "text": "自車が優先道路を走行していない場合、交差点とその手前30メートル以内の場所では、安全を確認すれば前の車を追い越してよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "自車が優先道路を走行していない場合、交差点とその手前30メートル以内の場所では、追い越しは禁止である。よって、問題文は誤"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_5_1",
+      "menkyogentsuki_gentsuki_10_4_5"
+    ],
+    "text": "駐車とは、停車にあたらない短時間の車の停止のことである。",
+    "answer": "×",
+    "image": "",
+    "explanation": "停車とは、駐車にあたらない短期間の車の停止のことであり、それを超えると駐車である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_5_2",
+      "menkyogentsuki_gentsuki_6_9_3"
+    ],
+    "text": "運転者が運転席にいる場合には、長時間車を止めていても駐車にならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "たとえ運転者が運転席にいたとしても、駐車である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_5_3",
+      "menkyogentsuki_gentsuki_10_7_1"
+    ],
+    "text": "荷物の積み下ろしのために、3分停止したのは、停車である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "荷物の積み下ろしのための、5分以内の停止は、停車に当たる。よって、問題文の荷物の積み下ろしのための3分の停止は、停車であ"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_5_4",
+      "menkyogentsuki_gentsuki_7_4_4"
+    ],
+    "text": "5分を超える人の乗り降りのための停止は、停車である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "たとえ5分を超えたとしても、人の乗り降りのための停止は、停車である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_5_5",
+      "menkyogentsuki_gentsuki_7_23_5"
+    ],
+    "text": "すぐに運転できる状態であれば、運転者が短時間車から離れていても停車である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "運転者がすぐに運転できる状態での短時間の停止は「停車」である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_6_2",
+      "menkyogentsuki_gentsuki_10_12_3"
+    ],
+    "text": "火災報知機から1メートル以内の場所では、駐車してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "火災報知器から1メートル以内での駐車は禁止されている。なお、停車については禁止されていない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_6_3",
+      "menkyogentsuki_gentsuki_7_26_3"
+    ],
+    "text": "道路工事の区域から5メートル以内の場所では、駐車は禁止されている。",
+    "answer": "○",
+    "image": "",
+    "explanation": "たとえ工事車両であっても、駐車は禁止である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_6_4",
+      "menkyogentsuki_gentsuki_6_2_5"
+    ],
+    "text": "消火栓の標識・指定消防水利の標識から5メートル以内の場所では、人の乗り降りのため停止してはならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "人の乗り降りのための停止は、停車であり、禁止されていない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_6_5",
+      "menkyogentsuki_gentsuki_7_10_3"
+    ],
+    "text": "駐車場や車庫などの出入り口から3メートル以内の場所では駐車が禁止されている。",
+    "answer": "○",
+    "image": "",
+    "explanation": "たとえ駐車場や車庫の所有者や関係者であっても、駐車は禁じられている。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_7_2",
+      "menkyogentsuki_gentsuki_8_30_4"
+    ],
+    "text": "交差点付近で駐停車禁止となるのは、交差点とその端から3メートル以内の場所である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "「3メートル以内」の部分が誤り。正しくは、5メートル以内である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_7_3",
+      "menkyogentsuki_gentsuki_9_19_3"
+    ],
+    "text": "トンネルでは、車両通行帯がある場合を除き、駐停車禁止である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "トンネルでは、車両通行帯の有無に関わらず、駐停車禁止である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_7_4",
+      "menkyogentsuki_gentsuki_8_22_3"
+    ],
+    "text": "バスや路面電車の停留所から10メートル以内の場所は、原則として駐停車禁止である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "ただし、運行時間中に限る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_7_5",
+      "menkyogentsuki_gentsuki_9_23_1"
+    ],
+    "text": "路面電車の運行時間外であっても、軌道敷内での駐停車は禁止である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "運行時間に関わらず、路面電車の軌道敷内の駐停車は禁止である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_8_1",
+      "menkyogentsuki_gentsuki_10_3_1"
+    ],
+    "text": "白線が1本で幅が1メートルの路側帯のある道路で駐停車するときは、路側帯の中に入り、0.75メートル以上の余地をあける。",
+    "answer": "○",
+    "image": "",
+    "explanation": "路側帯が0.75メートルを超える道路であれば、路側帯に入り駐停車してよいが、歩行者の通行のため、0.75メートル以上の余"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_8_2",
+      "menkyogentsuki_gentsuki_10_28_2"
+    ],
+    "text": "原付を駐車するとき、少しの時間だけであったので、鍵をさしたままにした。",
+    "answer": "×",
+    "image": "",
+    "explanation": "少しの時間駐車するときであっても、必ず鍵をかけ、抜いておく。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_8_3",
+      "menkyogentsuki_gentsuki_10_26_2"
+    ],
+    "text": "原動機付自転車は、車庫証明がない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "原動機付自転車は車庫証明がない。ただし、公道に原動機付自転車を放置することは当然に違法である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_8_4",
+      "menkyogentsuki_gentsuki_8_19_4"
+    ],
+    "text": "原則として、車の右側に3.5メートル以上の余地のない場所で駐車してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "他の車が安全に通行できないためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_8_5",
+      "menkyogentsuki_gentsuki_6_14_2"
+    ],
+    "text": "道路上では、原則として、同じ場所に昼間引き続いて12時間以上駐車してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "昼間同じ場所に引き続いて12時間駐車してはならない。夜間は8時間。また、道路を車庫代わりに使用してはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_9_2",
+      "menkyogentsuki_gentsuki_10_15_3"
+    ],
+    "text": "上り坂の頂上付近や、こう配の急な下り坂では、徐行しなければならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "問題文が正しい。ちなみに、問題文にあるこう配の急なく下り坂ではなく、こう配の急な上り坂の場合は、徐行の必要はない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_9_3",
+      "menkyogentsuki_gentsuki_10_7_4"
+    ],
+    "text": "道路の曲がり角付近では、見通しのよい場合を除き、徐行しなければならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "道路の曲がり角付近では、見通しのよしあしに関わらず、徐行しなければならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_9_4",
+      "menkyogentsuki_gentsuki_10_8_3"
+    ],
+    "text": "左右の見通しのきかない交差点を通行する際は、必ず徐行しなければならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "優先道路を通行する場合や、信号機等の交通整理が行われている場合は、徐行の必要はない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_9_5",
+      "menkyogentsuki_gentsuki_9_15_5"
+    ],
+    "text": "歩行者のそばを通るときは、必ず徐行せねばならない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "安全な間隔をとることができれば、徐行をする必要はない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_10_1",
+      "menkyogentsuki_gentsuki_6_1_2"
+    ],
+    "text": "原動機付自転車の定員には、運転者を含む。",
+    "answer": "○",
+    "image": "",
+    "explanation": "原動機付自転車の定員は、運転者1名である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_10_2",
+      "menkyogentsuki_gentsuki_6_10_2"
+    ],
+    "text": "原動機付自転車の定員は、運転者用以外の座席のあるものは、2人である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "原動機付自転車の定員は1名である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_10_3",
+      "menkyogentsuki_gentsuki_10_29_5"
+    ],
+    "text": "原動機付自転車には、荷台から左右に0.15メートルまではみ出して荷物を積むことができる。",
+    "answer": "○",
+    "image": "",
+    "explanation": "二輪車・原動機付自転車は、荷台0.15メートルまで左右にはみ出して荷物を積んでよい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_10_4",
+      "menkyogentsuki_gentsuki_6_10_5"
+    ],
+    "text": "原動機付自転車は、リヤカーを2台までけん引することができる。",
+    "answer": "×",
+    "image": "",
+    "explanation": "原動機付自転車がけん引することのできるリヤカーは1台までである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_4_10_5",
+      "menkyogentsuki_gentsuki_6_28_1"
+    ],
+    "text": "原動機付自転車に積むことのできる荷物の量は、30キログラム以下である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい。ちなみに、原動機付自転車に積むことのできる荷物の長さは、荷台よりも0.3メートルまで、高さは地上から2メートル以"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_1_1",
+      "menkyogentsuki_gentsuki_7_29_3"
+    ],
+    "text": "前車に続いて見通しの良い踏切を通行する場合であっても、一時停止をし、安全を確認する必要がある。",
+    "answer": "○",
+    "image": "",
+    "explanation": "前車に続く場合、見通しの良い踏切を通行する場合であっても、必ず一時停止をし、安全を確認せねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_1_2",
+      "menkyogentsuki_gentsuki_6_20_3"
+    ],
+    "text": "踏切を通行するときは、左端に寄って一気に通行する。",
+    "answer": "×",
+    "image": "",
+    "explanation": "脱輪防止のため、踏切ではやや中央寄りを進む。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_1_3",
+      "menkyogentsuki_gentsuki_8_24_5"
+    ],
+    "text": "踏切警手のいる踏切では、安全を確認すれば、一時停止しなくてもよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "「一時停止しなくてもよい」の部分が誤り。踏切警手のいる踏切であっても、安全確認のために、一時停止をせねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_1_4",
+      "menkyogentsuki_gentsuki_7_30_4"
+    ],
+    "text": "踏切用の信号が青色のとき、安全を確認すれば、一時停止しなくてもよい。",
+    "answer": "○",
+    "image": "",
+    "explanation": "問題文の記述が正しい。踏切用の信号が青色の場合、一時停止は不要である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_1_5",
+      "menkyogentsuki_gentsuki_6_15_3"
+    ],
+    "text": "踏切の向こう側が混雑しているときは、立ち往生を避けるため、進入してはならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "踏切内で立ち往生する可能性があるため、進入してはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_2_1",
+      "menkyogentsuki_gentsuki_8_23_2"
+    ],
+    "text": "坂道での行き違いは、上りの車が下りの車に道を譲る。",
+    "answer": "×",
+    "image": "",
+    "explanation": "上り坂での発進の方が難しいため、下りの車が道を譲る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_2_2",
+      "menkyogentsuki_gentsuki_8_23_1"
+    ],
+    "text": "坂道で行き違う場合、片側ががけになっているときは、がけ側の車が安全な場所に停止して、対向車に道を譲る。",
+    "answer": "○",
+    "image": "",
+    "explanation": "転落のおそれがあるためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_2_3",
+      "menkyogentsuki_gentsuki_6_28_3"
+    ],
+    "text": "待避所のある坂道で行き違う場合は、下りの車が待避所に入り、対向車に道を譲る。",
+    "answer": "×",
+    "image": "",
+    "explanation": "待避所のある坂道では、上り下りに関係なく、待避所のある側の車が待避所に入り、対向車に道を譲る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_2_4",
+      "menkyogentsuki_gentsuki_10_29_2"
+    ],
+    "text": "道路の片側に障害物がある場合、行き違うときは、障害物のある側と反対側の車が減速や一時停止をして、対向車に道を譲る。",
+    "answer": "×",
+    "image": "",
+    "explanation": "障害物のある側の車が、減速や一時停止をして、道を譲る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_2_5",
+      "menkyogentsuki_gentsuki_6_29_5"
+    ],
+    "text": "道路の前方に障害物があり、対向車が来ている場合は、距離が十分あり対向車の速度が遅くとも、対向車を待ってから障害物を避ける",
+    "answer": "×",
+    "image": "",
+    "explanation": "対向車との距離が十分あるときは、追い越しと同じ手順で、障害物を避けてよい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_3_1",
+      "menkyogentsuki_gentsuki_8_22_4"
+    ],
+    "text": "前車の発進が遅かったため、警音器を鳴らした。",
+    "answer": "×",
+    "image": "",
+    "explanation": "警音器は、みだりに鳴らしてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_3_2",
+      "menkyogentsuki_gentsuki_6_25_2"
+    ],
+    "text": "前車がこちらへ突っ込んできたため、やむをえず警音器を鳴らした。",
+    "answer": "○",
+    "image": "",
+    "explanation": "警音器の危険防止のためのやむをえない使用は認められている。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_3_5",
+      "menkyogentsuki_gentsuki_10_21_1"
+    ],
+    "text": "たとえ危険を避けるためであっても、街中での警音器の使用は禁じられている。",
+    "answer": "×",
+    "image": "",
+    "explanation": "警音器の危険防止のためのやむをえない使用は認められている。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_4_1",
+      "menkyogentsuki_gentsuki_8_6_5"
+    ],
+    "text": "夜間の運転時には、大型車や二輪車が実際より近く見えるので、注意が必要である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "夜間の運転時には、大型車や二輪車は実際より遠く見える。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_4_2",
+      "menkyogentsuki_gentsuki_7_19_3"
+    ],
+    "text": "夜間の運転時に、街灯等で十分明るいときは、前照灯のみつけなくてもよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "前照灯は自分が見るためであると同時に、他人から見られるためでもあるので、夜間は必ずつけなくてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_4_3",
+      "menkyogentsuki_gentsuki_9_13_5"
+    ],
+    "text": "夜間、他車の直後を進行するときは、前照灯を下向きにしなければならない。",
+    "answer": "○",
+    "image": "",
+    "explanation": "前車の運転者のげん惑を防ぐためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_4_4",
+      "menkyogentsuki_gentsuki_8_30_1"
+    ],
+    "text": "夜間の運転時には、視界が悪く危険なので、前車の合図が見やすいよう、できるだけ前車に近付いて運転すべきである。",
+    "answer": "×",
+    "image": "",
+    "explanation": "しっかりと車間距離をとることが大事である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_4_5",
+      "menkyogentsuki_gentsuki_6_7_5"
+    ],
+    "text": "夜間の運転時には、できるだけ暗い色の服を避けて運転するのがよい。",
+    "answer": "○",
+    "image": "",
+    "explanation": "他車からの見落としを避けるためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_5_1",
+      "menkyogentsuki_gentsuki_9_1_4"
+    ],
+    "text": "夜間は道路の交通量が少ないので、昼間より速度を上げて運転する方がよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "夜間は周囲が暗く、視界が悪いため、速度を落として運転しなくてはならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_5_2",
+      "menkyogentsuki_gentsuki_9_22_3"
+    ],
+    "text": "夜間に対向車と行き違うときは、お互いのライトで道路中央の歩行者が見にくくなることがあり、注意が必要である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "これを蒸発現象と呼ぶ。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_5_3",
+      "menkyogentsuki_gentsuki_8_29_5"
+    ],
+    "text": "道路の状況に関わらず、昼間に運転するときは、ライトをつける必要はない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "昼間でも、道路状況によっては、ライトをつける必要がある。具体的には、トンネルの中や濃い霧がかかっている場所などで、視界が"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_5_4",
+      "menkyogentsuki_gentsuki_7_28_3"
+    ],
+    "text": "夜間、見通しの悪い交差点を通行するときは、ライトを上向きに切り替えるなどして、自車の接近を知らせるとよい。",
+    "answer": "○",
+    "image": "",
+    "explanation": "ライトを上向きに切り替えたり、点滅させたりする。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_5_5",
+      "menkyogentsuki_gentsuki_9_13_3"
+    ],
+    "text": "夜間に運転していて前方から対向車がきたので、灯火を上向きにし、こちらの存在を知らせた。",
+    "answer": "×",
+    "image": "",
+    "explanation": "対向車の運転手がまぶしくなるため、下向きにするか、減光する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_6_1",
+      "menkyogentsuki_gentsuki_8_10_4"
+    ],
+    "text": "夜間の運転時には、視界が悪いので、前車との車間距離は昼間より長くする。",
+    "answer": "○",
+    "image": "",
+    "explanation": "仮に交通量が少なくても、車間距離を長くとらねばならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_6_2",
+      "menkyogentsuki_gentsuki_10_13_1"
+    ],
+    "text": "舗装された道路では、雨の降り始めより、降っている最中の方がスリップしやすいので注意が必要である。",
+    "answer": "×",
+    "image": "",
+    "explanation": "舗装された道路では、雨の降り始めの方がスリップしやすい。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_6_3",
+      "menkyogentsuki_gentsuki_10_13_5"
+    ],
+    "text": "ハイドロプレーニング現象とは、高速走行中の車が、固まった雪の上を滑る現象のことである。",
+    "answer": "×",
+    "image": "",
+    "explanation": "高速走行中の車が、水の上を滑る現象である。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_6_4",
+      "menkyogentsuki_gentsuki_7_17_4"
+    ],
+    "text": "雪道を走行するときは、できるだけほかの車の通った跡を走行する。",
+    "answer": "○",
+    "image": "",
+    "explanation": "他車のわだちを走行する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_6_5",
+      "menkyogentsuki_gentsuki_9_1_1"
+    ],
+    "text": "二輪車でぬかるみを走行するときは、速度を落とし、一定の速度を保って通過するべきである。",
+    "answer": "○",
+    "image": "",
+    "explanation": "ぬかるみの手前で速度を落とし、一定の速度を保って通過するべきである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_7_1",
+      "menkyogentsuki_gentsuki_6_20_2"
+    ],
+    "text": "雨天で路面の状態が悪く制動距離が長くなるので、車間距離を通常よりも多めにとった。",
+    "answer": "○",
+    "image": "",
+    "explanation": "制動距離とはブレーキが効き始めてから停止するまでの距離である。路面がぬれている場合、制動距離が長くなるので、問題文の記述"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_7_2",
+      "menkyogentsuki_gentsuki_7_29_5"
+    ],
+    "text": "霧の中を運転するときは、見通しをよくするため、前照灯を上向きにする。",
+    "answer": "×",
+    "image": "",
+    "explanation": "光が乱反射し、見にくくなるため、前照灯は下向きにする。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_7_3",
+      "menkyogentsuki_gentsuki_9_9_4"
+    ],
+    "text": "雨天のときは地盤がゆるむため、山道では路肩に寄りすぎないようにする。",
+    "answer": "○",
+    "image": "",
+    "explanation": "路肩が崩れるおそれがあるためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_7_4",
+      "menkyogentsuki_gentsuki_6_4_2"
+    ],
+    "text": "雨天のときはスリップしやすいため、停止するにはブレーキを強くかけるようにする。",
+    "answer": "×",
+    "image": "",
+    "explanation": "スリップを防ぐため、ブレーキを強く踏むことは避け、車間距離を長くとって数回に分けて踏むべきである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_7_5",
+      "menkyogentsuki_gentsuki_7_22_5"
+    ],
+    "text": "深い水たまりを走行すると、ブレーキドラムに水が入り、ブレーキの効きが悪くなることがある。",
+    "answer": "○",
+    "image": "",
+    "explanation": "深い水たまりはできるだけ避けて運転する。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_8_1",
+      "menkyogentsuki_gentsuki_6_26_3"
+    ],
+    "text": "原動機付自転車は普通自動車と異なり、エンストすることがない。",
+    "answer": "×",
+    "image": "",
+    "explanation": "原動機付自転車もエンストすることがある。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_8_2",
+      "menkyogentsuki_gentsuki_7_29_1"
+    ],
+    "text": "走行中に急ブレーキをかけて後輪が右へ横すべりを始めたときは、ハンドルを左に切るようにする。",
+    "answer": "×",
+    "image": "",
+    "explanation": "横すべりした方へ、ハンドルを切る。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_8_3",
+      "menkyogentsuki_gentsuki_8_17_2"
+    ],
+    "text": "雨や雪の日の急ブレーキは、車輪が横すべりを起こしやすいので、特に危険である。",
+    "answer": "○",
+    "image": "",
+    "explanation": "エンジンブレーキを使用し、ブレーキペダルを数回に分けて踏むようにする。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_8_4",
+      "menkyogentsuki_gentsuki_8_25_2"
+    ],
+    "text": "走行中にタイヤがパンクしたときは、危険なのでブレーキを強くかけ、できるだけ早く停止させる。",
+    "answer": "×",
+    "image": "",
+    "explanation": "ハンドルを強く握り車体を真っ直ぐ保ち、ブレーキを何度かに分けてかけて車を止める。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_8_5",
+      "menkyogentsuki_gentsuki_6_1_3"
+    ],
+    "text": "下り坂を走行中に、ブレーキがきかなくなったときは、減速チェンジをしてエンジンブレーキを使い、車を停止させる努力をする。",
+    "answer": "○",
+    "image": "",
+    "explanation": "ブレーキを数回かけ、減速チェンジしてエンジンブレーキを効かせる。それでも止まらない場合に土砂に突っ込む等して車を止める。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_9_1",
+      "menkyogentsuki_gentsuki_10_18_2"
+    ],
+    "text": "交通事故の際は、相手のケガが軽く、話し合いで解決しそうな場合であっても、必ず警察を呼ぶ。",
+    "answer": "○",
+    "image": "",
+    "explanation": "正しい。交通事故を起こしたら、必ず警察を呼ぶべきである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_9_2",
+      "menkyogentsuki_gentsuki_10_25_4"
+    ],
+    "text": "交通事故の際は、捜査を邪魔しないよう、できるだけ事故現場を保全する必要がある。",
+    "answer": "×",
+    "image": "",
+    "explanation": "交通の妨げになるので、車を移動させなければならない。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_9_3",
+      "menkyogentsuki_gentsuki_7_20_3"
+    ],
+    "text": "大地震が発生し、やむを得ず原動機付自転車を道路上に置いて避難する際は、道路外の場所に移動し、エンジンを切り、鍵をつけてお",
+    "answer": "○",
+    "image": "",
+    "explanation": "だれでも移動できるようにするためである。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_9_4",
+      "menkyogentsuki_gentsuki_6_23_1"
+    ],
+    "text": "交通事故の際は、直ちに負傷者を救護する。",
+    "answer": "×",
+    "image": "",
+    "explanation": "二次的な事故を防ぐため、まず車を安全な場所に停止させる。"
+  },
+  {
+    "count": 2,
+    "ids": [
+      "menkyogentsuki_gentsuki_5_9_5",
+      "menkyogentsuki_gentsuki_8_5_3"
+    ],
+    "text": "頭部に傷を受けた負傷者を救護する際は、意識を失わないよう、体をゆするのがよい。",
+    "answer": "×",
+    "image": "",
+    "explanation": "むやみに動かしてはならない。"
+  }
+]

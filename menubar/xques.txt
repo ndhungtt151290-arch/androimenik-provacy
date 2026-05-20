@@ -1,0 +1,33 @@
+Hãy tập trung hoàn toàn vào việc xây dựng LOGIC LƯU TRỮ VÀ SẮP XẾP cho mục "Câu hỏi hay sai" trong Menu của ứng dụng Gentsuki (React Native/TypeScript). Bỏ qua hoàn toàn việc thiết kế hay sửa đổi giao diện (UI đã tốt sẵn). 
+
+Yêu cầu thiết lập chính xác các quy tắc dữ liệu sau trong mã nguồn:
+
+1. Định nghĩa Cấu trúc phần tử (Item Schema) trong AsyncStorage:
+Mảng lưu trữ câu hỏi sai bắt buộc phải có cấu trúc tối giản sau:
+interface WrongQuestionItem {
+  id: string;        // ID của câu hỏi để map với file json gốc
+  wrongCount: number; // Số lần trả lời sai câu này
+  updatedAt: number;  // Dấu thời gian (Timestamp) lúc trả lời sai gần nhất
+}
+
+2. Logic ghi nhận ngầm khi Người dùng trả lời:
+Khi người dùng chọn một đáp án, nếu ĐÁP ÁN ĐÓ KHÔNG TRÙNG với đáp án chính xác của câu hỏi (Tức là Trả lời SAI), hãy kích hoạt hàm xử lý mảng như sau:
+- Bước 2.1: Kiểm tra xem ID câu hỏi này đã có trong mảng lưu ở AsyncStorage chưa.
+  + Nếu ĐÃ CÓ: Tăng `wrongCount` lên 1 đơn vị. Cập nhật `updatedAt = Date.now()`.
+  + Nếu CHƯA CÓ: Thêm mới một phần tử vào mảng với `wrongCount = 1` và `updatedAt = Date.now()`.
+- Bước 2.2: Cơ chế cuốn chiếu (Giới hạn tối đa 20 câu):
+  Dồn bao giờ đầy đủ 20 câu thì thôi. Khi độ dài mảng VƯỢT QUÁ 20 câu, hệ thống phải tự động tìm câu CŨ NHẤT (câu có giá trị `updatedAt` nhỏ nhất / thời gian xa nhất) để XOÁ KHỎI mảng, nhường chỗ cho câu hỏi sai mới nhất vừa được thêm vào.
+
+3. Thuật toán Sắp xếp (Sorting Logic) khi Hiển thị:
+Trước khi đưa mảng câu hỏi này ra màn hình hiển thị, bắt buộc phải chạy qua hàm `.sort()` theo thứ tự ưu tiên sau:
+- Ưu tiên 1: Câu nào có số lần trả lời sai HƠN 1 LẦN (`wrongCount > 1`) bắt buộc phải được đẩy lên TRÊN ĐẦU danh sách.
+- Ưu tiên 2: Đối với các câu có cùng nhóm mức độ ưu tiên, câu nào có `updatedAt` lớn hơn (vừa mới trả lời sai gần đây) sẽ được xếp lên trước.
+
+4. Dữ liệu Render ra Thẻ câu hỏi (Card Item):
+Trên mỗi thành phần hiển thị của câu hỏi sai, CHỈ ĐƯỢC PHÉP ĐỌC VÀ HIỂN THỊ 3 thông tin tĩnh (KHÔNG hiển thị nút chọn đáp án, KHÔNG hiển thị đúng/sai, KHÔNG hiển thị chấm điểm):
+- Nội dung câu hỏi (Văn bản câu hỏi).
+- Đáp án chính xác của câu hỏi đó (Correct Answer).
+- Phần giải thích chi tiết (Explanation) của câu hỏi đó.
+- Trạng thái trống (Empty State): Nếu ứng dụng vừa cài đặt hoặc mảng trống (người dùng chưa trả lời sai câu nào), hiển thị nội dung khích lệ: "Tuyệt vời! Bạn chưa có câu hỏi sai nào. Hãy tiếp tục ôn tập nhé!".
+Không làm ảnh hưởng đến cấu truc hay logic của các phân thi thử và luyện tập .
+Hãy rà soát kỹ hàm kiểm tra đáp án ở màn hình Luyện tập & Thi thử để tích hợp luồng ghi nhận dữ liệu này. Viết code sạch, định kiểu dữ liệu nghiêm ngặt và giải thích bằng comment tiếng Việt.

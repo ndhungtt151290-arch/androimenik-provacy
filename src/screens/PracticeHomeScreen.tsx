@@ -59,7 +59,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
 
   return (
     <View style={styles.container}>
-      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} lang={lang} variant="home" />
+      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
       <View style={styles.header}>
         <Text style={styles.title}>{L.title}</Text>
       </View>

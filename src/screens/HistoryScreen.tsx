@@ -1,10 +1,9 @@
 import React from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft } from "../components/Icons";
-import { PILL } from "../theme/buttonTokens";
 import { BackHomeButton } from "../components/BackHomeButton";
 import { showInterstitialChapter } from "../utils/AdManager";
+import { CHAPTER_VI } from "../lib/chapters";
 import type { ExamHistoryEntry, Lang } from "../types";
 
 interface HistoryScreenProps {
@@ -37,7 +36,7 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
 
   return (
     <View style={styles.container}>
-      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} lang={lang} variant="home" />
+      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
       <Text style={styles.title}>{L.title}</Text>
 
       {history.length === 0 ? (
@@ -67,12 +66,13 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
               <View style={styles.chapterRow}>
                 {Object.entries(entry.details.chapterBreakdown).slice(0, 6).map(([ch, stats]) => {
                   const pct = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+                  const label = lang === "vi" ? (CHAPTER_VI[ch] ?? ch) : ch.split("・")[0];
                   return (
                     <View key={ch} style={styles.miniBar}>
                       <View style={styles.miniBarFill}>
                         <View style={[styles.miniFill, { height: `${pct}%`, backgroundColor: pct >= 70 ? "#4ade80" : pct >= 50 ? "#fbbf24" : "#f87171" }]} />
                       </View>
-                      <Text style={styles.miniLabel}>{ch.slice(0, 5)}</Text>
+                      <Text style={styles.miniLabel} numberOfLines={1}>{label}</Text>
                     </View>
                   );
                 })}
@@ -87,7 +87,7 @@ export function HistoryScreen({ lang, history, onBack }: HistoryScreenProps) {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  title: { fontSize: 20, fontWeight: "bold", color: "#fde68a" },
+  title: { fontSize: 20, fontWeight: "bold", color: "rgba(10, 29, 122, 0.81)" },
   empty: { flex: 1, alignItems: "center", justifyContent: "center" },
   emptyText: { fontSize: 14, color: "rgba(253,230,138,0.5)" },
   list: { flex: 1 },
@@ -95,9 +95,9 @@ const styles = StyleSheet.create({
   cardHeader: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 8 },
   date: { fontSize: 12, color: "#737373" },
   resultBadge: { paddingHorizontal: 10, paddingVertical: 3, borderRadius: 999 },
-  passBadge: { backgroundColor: "#d1fae5" },
-  failBadge: { backgroundColor: "#fee2e2" },
-  resultText: { fontSize: 11, fontWeight: "bold", color: "#166534" },
+  passBadge: { backgroundColor: "rgba(80, 150, 23, 0.58)" },
+  failBadge: { backgroundColor: "rgba(173, 24, 31, 0.67)" },
+  resultText: { fontSize: 11, fontWeight: "bold", color: "rgba(241, 241, 241, 0.81)" },
   scoreRow: { flexDirection: "row", alignItems: "baseline", gap: 4, marginBottom: 8 },
   scoreNum: { fontSize: 28, fontWeight: "900", color: "#111" },
   scoreMax: { fontSize: 16, color: "#737373" },

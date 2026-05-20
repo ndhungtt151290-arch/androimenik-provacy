@@ -3,20 +3,18 @@ import {
   View,
   Text,
   ScrollView,
-  TouchableOpacity,
   StyleSheet,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
 import { AdBanner } from "../components/AdBanner";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
-import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
 import { BackHomeButton } from "../components/BackHomeButton";
 import { showInterstitialChapter } from "../utils/AdManager";
 import { questionsForChapter } from "../lib/exam";
 import { CHAPTER_VI } from "../lib/chapters";
-import { savePracticeProgress, loadPracticeProgress } from "../lib/storage";
-import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup } from "../types";
+import { savePracticeProgress, loadPracticeProgress, addWrongAnswers } from "../lib/storage";
+import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup, ScenarioSub } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
 
@@ -32,6 +30,10 @@ function tx<T extends string | null | undefined>(jp: T, vi: T, lang: Lang): stri
   return "";
 }
 
+// Types for flattened items
+type SimpleItem = { kind: "simple"; q: { id: string; text: string; textVi?: string | null; answer: MaruBatsu; explanation: string; explanationVi?: string | null; image?: string }; idx: number };
+type ScenarioSubItem = { kind: "scenario"; sub: ScenarioSub; group: ScenarioGroup; idx: number; subIndex: number };
+
 export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   const insets = useSafeAreaInsets();
   const { simple, scenarios } = useMemo(
@@ -39,21 +41,27 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
     [chapterId]
   );
 
-  type FlatItem =
-    | { kind: "s"; q: (typeof simple)[0]; i: number }
-    | { kind: "g"; g: ScenarioGroup; i: number };
+  // Flatten: simple questions + scenario sub-questions
+  const flat: (SimpleItem | ScenarioSubItem)[] = [];
 
-  const flat: FlatItem[] = [];
-  let i = 0;
-  for (const q of simple) flat.push({ kind: "s", q, i: i++ });
-  for (const g of scenarios) flat.push({ kind: "g", g, i: i++ });
+  // Add simple questions
+  simple.forEach((q, i) => {
+    flat.push({ kind: "simple", q, idx: flat.length });
+  });
 
-  const [idx, setIdx] = useState(0);
+  // Add scenario sub-questions (flattened)
+  scenarios.forEach((g) => {
+    g.subs.forEach((sub, subIndex) => {
+      flat.push({ kind: "scenario", sub, group: g, idx: flat.length, subIndex });
+    });
+  });
+
+  const [currentIdx, setCurrentIdx] = useState(0);
   const [ans, setAns] = useState<Record<string, MaruBatsu | undefined>>({});
   const [show, setShow] = useState<Record<string, boolean>>({});
 
   const total = flat.length;
-  const cur = flat[idx];
+  const currentItem = flat[currentIdx];
 
   // Load saved practice progress on mount
   useEffect(() => {
@@ -68,29 +76,27 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   }, [chapterId]);
 
   // Auto-show answer when user answers
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (!cur) return;
-    const key = cur.kind === "s" ? cur.q.id : cur.g.groupId;
+    if (!currentItem) return;
+    const key = currentItem.kind === "simple"
+      ? currentItem.q.id
+      : `${currentItem.group.groupId}_${currentItem.subIndex}`;
     if (ans[key] === undefined) return;
-
     setShow((s) => ({ ...s, [key]: true }));
-  }, [ans, cur]);
+  }, [ans, currentIdx]);
 
   // Save progress whenever ans changes
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    const simpleIds = simple
-      .filter((q) => ans[q.id] !== undefined)
-      .map((q) => q.id);
-    const scenarioIds = scenarios
-      .filter((g) => ans[g.groupId] !== undefined)
-      .map((g) => g.groupId);
-    savePracticeProgress(chapterId, [...simpleIds, ...scenarioIds]);
+    const answeredIds = Object.keys(ans).filter((id) => ans[id] !== undefined);
+    savePracticeProgress(chapterId, answeredIds);
   }, [ans, chapterId]);
 
   if (total === 0) {
     return (
       <View style={styles.container}>
-        <BackHomeButton onPress={() => showInterstitialChapter(onBack)} lang={lang} variant="home" />
+        <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
         <Text style={styles.emptyText}>
           {lang === "vi"
             ? "Chưa có dữ liệu cho chương này."
@@ -106,11 +112,57 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
     correct: lang === "vi" ? "Đáp án:" : "正解：",
     right: lang === "vi" ? "Bạn đã đúng" : "正解",
     wrong: lang === "vi" ? "Bạn đã sai" : "不正解",
+    scenarioHint: lang === "vi" ? "Câu hỏi tình huống" : "イラスト問題",
   };
+
+  // Get answer for current question
+  const getCurrentAnswer = (): MaruBatsu | undefined => {
+    if (currentItem.kind === "simple") {
+      return ans[currentItem.q.id];
+    }
+    return ans[`${currentItem.group.groupId}_${currentItem.subIndex}`];
+  };
+
+  // Handle answer
+  const handleAnswer = async (v: MaruBatsu) => {
+    let key: string;
+    let isWrong = false;
+
+    if (currentItem.kind === "simple") {
+      key = currentItem.q.id;
+      isWrong = v !== currentItem.q.answer;
+      setAns((a) => ({ ...a, [key]: v }));
+    } else {
+      key = `${currentItem.group.groupId}_${currentItem.subIndex}`;
+      isWrong = v !== currentItem.sub.answer;
+      setAns((a) => ({ ...a, [key]: v }));
+    }
+
+    // Record wrong answer after state update
+    if (isWrong) {
+      await new Promise<void>((resolve) => {
+        setAns((prev) => {
+          const qId = currentItem.kind === "simple"
+            ? currentItem.q.id
+            : `${currentItem.group.groupId}_${currentItem.subIndex}`;
+          addWrongAnswers([qId]).then(resolve).catch(resolve);
+          return prev;
+        });
+      });
+    }
+  };
+
+  // Navigate to prev/next
+  const goPrev = () => setCurrentIdx(Math.max(0, currentIdx - 1));
+  const goNext = () => setCurrentIdx(Math.min(total - 1, currentIdx + 1));
+
+  const isScenario = currentItem.kind === "scenario";
+  const currentAnswer = getCurrentAnswer();
+  const isCorrect = currentAnswer === (currentItem.kind === "simple" ? currentItem.q.answer : currentItem.sub.answer);
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} lang={lang} variant="home" />
+      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[
@@ -122,8 +174,8 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
         <View style={styles.progressRow}>
           <Text style={styles.progressBadge}>
             {lang === "vi"
-              ? `Câu ${idx + 1}/${total}`
-              : `${idx + 1}/${total}問`}
+              ? `Câu ${currentIdx + 1}/${total}`
+              : `${currentIdx + 1}/${total}問`}
           </Text>
           <Text style={styles.chapterName}>
             {tx(
@@ -135,151 +187,82 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
         </View>
 
         <View style={styles.questionCard}>
-          {cur.kind === "s" && (
-            <View style={styles.questionInner}>
-              {cur.q.image && (
-                <IllustrationImage
-                  file={cur.q.image}
-                  style={styles.questionImage}
-                  imageStyle={styles.questionImageInner}
-                />
-              )}
-              <Text style={styles.questionText}>
-                {tx(cur.q.text, cur.q.textVi, lang)}
-              </Text>
-
-              {/* Dap an + giai thich hien tu dong ngay ben duoi cau hoi */}
-              {ans[cur.q.id] && (
-                <View style={styles.ansCard}>
-                  <Text style={styles.ansLabel}>
-                    {ans[cur.q.id] === cur.q.answer ? L.right : L.wrong}
-                    {" — "}{L.correct} {cur.q.answer === "○" ? "O" : cur.q.answer === "×" ? "X" : cur.q.answer}
-                  </Text>
-                  <Text style={styles.ansExplanation}>
-                    {tx(cur.q.explanation, cur.q.explanationVi, lang)}
-                  </Text>
-                </View>
-              )}
+          {isScenario && (
+            <View style={styles.scenarioHintBadge}>
+              <Text style={styles.scenarioHintText}>{L.scenarioHint}</Text>
             </View>
           )}
 
-          {cur.kind === "g" && (
-            <ScenarioBlock
-              lang={lang}
-              group={cur.g}
-              values={ans}
-              show={show}
-              onPick={(partId, v) =>
-                setAns((a) => ({ ...a, [partId]: v }))
-              }
-              onToggleExplain={(key) =>
-                setShow((s) => ({ ...s, [key]: !s[key] }))
-              }
+          {/* Stem for scenario questions */}
+          {isScenario && (
+            <Text style={styles.stemText}>
+              {tx(currentItem.group.stem, currentItem.group.stemVi, lang)}
+            </Text>
+          )}
+
+          {/* Image */}
+          {currentItem.kind === "simple" && currentItem.q.image && (
+            <IllustrationImage
+              file={currentItem.q.image}
+              style={styles.questionImage}
+              imageStyle={styles.questionImageInner}
             />
+          )}
+          {isScenario && currentItem.sub.image && (
+            <IllustrationImage
+              file={currentItem.sub.image}
+              style={styles.questionImage}
+              imageStyle={styles.questionImageInner}
+            />
+          )}
+
+          {/* Question text */}
+          <Text style={currentItem.kind === "scenario" ? styles.scenarioQuestionText : styles.questionText}>
+            {currentItem.kind === "scenario" ? `(${currentItem.subIndex + 1}) ` : ''}
+            {currentItem.kind === "simple"
+              ? tx(currentItem.q.text, currentItem.q.textVi, lang)
+              : tx(currentItem.sub.text, currentItem.sub.textVi, lang)}
+          </Text>
+
+          {/* Answer + Explanation */}
+          {currentAnswer && (
+            <View style={styles.ansCard}>
+              <Text style={styles.ansLabel}>
+                {isCorrect ? L.right : L.wrong}
+                {" — "}{L.correct}{" "}
+                {(currentItem.kind === "simple"
+                  ? currentItem.q.answer
+                  : currentItem.sub.answer) === "○"
+                    ? "O"
+                    : "X"}
+              </Text>
+              <Text style={styles.ansExplanation}>
+                {currentItem.kind === "simple"
+                  ? tx(currentItem.q.explanation, currentItem.q.explanationVi, lang)
+                  : tx(currentItem.sub.explanation, currentItem.sub.explanationVi, lang)}
+              </Text>
+            </View>
           )}
         </View>
 
+        {/* Answer buttons + Navigation */}
         <View style={styles.subBtnsWrap}>
-          {cur.kind === "s" && (
-            <AnswerNavButtons
-              answerValue={ans[cur.q.id]}
-              onPick={(v) => setAns((a) => ({ ...a, [cur.q.id]: v }))}
-              size="large"
-              disabledPrev={idx === 0}
-              disabledNext={idx >= total - 1}
-              onPrev={() => setIdx(Math.max(0, idx - 1))}
-              onNext={() => setIdx(Math.min(total - 1, idx + 1))}
-              prevLabel={L.prev}
-              nextLabel={L.next}
-            />
-          )}
+          <AnswerNavButtons
+            answerValue={currentAnswer}
+            onPick={handleAnswer}
+            size="large"
+            disabledPrev={currentIdx === 0}
+            disabledNext={currentIdx >= total - 1}
+            onPrev={goPrev}
+            onNext={goNext}
+            prevLabel={L.prev}
+            nextLabel={L.next}
+          />
         </View>
       </ScrollView>
 
       {/* Ad Banner */}
       <AdBanner />
-    </View>
-  );
-}
-
-interface ScenarioBlockProps {
-  lang: Lang;
-  group: ScenarioGroup;
-  values: Record<string, MaruBatsu | undefined>;
-  show: Record<string, boolean>;
-  onPick: (partId: string, v: MaruBatsu) => void;
-  onToggleExplain: (key: string) => void;
-}
-
-function ScenarioBlock({
-  lang,
-  group,
-  values,
-  show,
-  onPick,
-  onToggleExplain,
-}: ScenarioBlockProps) {
-  const L = {
-    answer: lang === "vi" ? "Đáp án:" : "答え：",
-    hide: lang === "vi" ? "Ẩn" : "隠す",
-    show: lang === "vi" ? "Đáp án" : "答え",
-    right: lang === "vi" ? "Bạn đã đúng" : "正解",
-    wrong: lang === "vi" ? "Bạn đã sai" : "不正解",
-  };
-
-  return (
-    <View style={styles.scenarioContainer}>
-      <Text style={styles.warningText}>
-        ⚠{" "}
-        {lang === "vi"
-          ? "Phải trả lời đúng TẤT CẢ 3 ý nhỏ."
-          : "3題すべて正解で2点獲得。"}
-      </Text>
-      <Text style={styles.stemText}>
-        {tx(group.stem, group.stemVi, lang)}
-      </Text>
-
-      <View style={styles.subsList}>
-        {group.subs.map((sub) => (
-          <View key={sub.partId} style={styles.subItem}>
-            <View style={styles.subRow}>
-              <IllustrationImage
-                file={sub.image}
-                style={styles.subImage}
-                imageStyle={styles.subImageInner}
-              />
-              <Text style={styles.subText}>
-                【{sub.subKey}】
-                {tx(sub.text, sub.textVi, lang)}
-              </Text>
-            </View>
-            <MaruBatsuButtons
-              value={values[sub.partId]}
-              onPick={(v) => onPick(sub.partId, v)}
-            />
-            {values[sub.partId] && (
-              <TouchableOpacity
-                onPress={() => onToggleExplain(sub.partId)}
-              >
-                <Text style={styles.ansToggle}>
-                  {show[sub.partId] ? L.hide : L.show}
-                </Text>
-              </TouchableOpacity>
-            )}
-            {show[sub.partId] && (
-              <View style={styles.ansCard}>
-                <Text style={styles.ansLabel}>
-                  {values[sub.partId] === sub.answer ? L.right : L.wrong}
-                  {" — "}{L.correct} {sub.answer === "○" ? "O" : sub.answer === "×" ? "X" : sub.answer}
-                </Text>
-                <Text style={styles.ansExplanation}>
-                  {tx(sub.explanation, sub.explanationVi, lang)}
-                </Text>
-              </View>
-            )}
-          </View>
-        ))}
-      </View>
     </View>
   );
 }
@@ -314,6 +297,29 @@ const styles = StyleSheet.create({
     minHeight: 280,
   },
   questionInner: { flex: 1 },
+  scenarioHintBadge: {
+    backgroundColor: "rgba(129, 124, 124, 0.13)",
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 6,
+    marginBottom: 8,
+    alignSelf: "flex-start",
+  },
+  scenarioHintText: {
+    fontSize: 10,
+    fontWeight: "600",
+    color: "rgba(16, 56, 6, 0.9)",
+  },
+  stemText: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#111",
+    marginBottom: 12,
+    textAlign: "center",
+    numberOfLines: 3,
+    minimumFontScale: 0.8,
+    includeFontPadding: false,
+  },
   questionImage: {
     width: "100%",
     height: 120,
@@ -322,12 +328,24 @@ const styles = StyleSheet.create({
   },
   questionImageInner: { width: "100%", height: 120, borderRadius: 8 },
   questionText: {
+    fontSize: 16,
+    lineHeight: 22,
+    fontWeight: "500",
+    color: "#111",
+    textAlign: "center",
+    marginTop: 8,
+  },
+  scenarioQuestionText: {
     fontSize: 14,
     lineHeight: 22,
     fontWeight: "500",
     color: "#111",
     textAlign: "center",
     marginTop: 8,
+    adjustsFontSizeToFit: true,
+    numberOfLines: 4,
+    minimumFontScale: 0.75,
+    includeFontPadding: false,
   },
   ansCard: {
     backgroundColor: "rgba(255,255,255,0.8)",
@@ -350,34 +368,5 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     textAlign: "center",
   },
-  scenarioContainer: { flex: 1 },
-  warningText: {
-    fontSize: 12,
-    color: "#be123c",
-    fontWeight: "500",
-    marginBottom: 6,
-  },
-  stemText: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#111",
-    marginBottom: 12,
-  },
-  subsList: { gap: 12 },
-  subItem: {
-    borderTopWidth: 2,
-    borderTopColor: "rgba(120,53,15,0.3)",
-    paddingTop: 10,
-    marginBottom: 12,
-  },
-  subRow: {
-    flexDirection: "row",
-    gap: 8,
-    alignItems: "flex-start",
-    marginBottom: 8,
-  },
   subBtnsWrap: { marginTop: 10 },
-  subImage: { width: 80, height: 64, borderRadius: 6 },
-  subImageInner: { width: 80, height: 64, borderRadius: 6 },
-  subText: { flex: 1, fontSize: 12, color: "#111", lineHeight: 18 },
 });

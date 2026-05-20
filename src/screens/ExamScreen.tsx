@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import {
   View,
   Text,
@@ -12,13 +12,10 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
 import { AdBanner } from "../components/AdBanner";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
-import { MaruBatsuButtons } from "../components/MaruBatsuButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
 import { TimerDisplay } from "../components/TimerDisplay";
 import { BackHomeButton } from "../components/BackHomeButton";
-import { ArrowLeft, QuestionMark } from "../components/Icons";
-import { PILL } from "../theme/buttonTokens";
-import type { ExamItem, Lang, MaruBatsu, QuestionBank } from "../types";
+import type { ExamItem, ExamSimpleItem, Lang, MaruBatsu, QuestionBank } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
 
@@ -42,6 +39,14 @@ function tx<T extends string | null | undefined>(jp: T, vi: T, lang: Lang): stri
   if (lang === "vi" && vi) return vi;
   if (jp) return jp;
   return "";
+}
+
+function isSimpleItem(item: ExamItem): item is ExamSimpleItem {
+  return item.type === "simple";
+}
+
+function isScenarioSubItem(item: ExamItem): item is ExamSimpleItem & { scenarioGroupId: string } {
+  return item.type === "simple" && !!(item as any).scenarioGroupId;
 }
 
 export function ExamScreen({
@@ -75,18 +80,107 @@ export function ExamScreen({
   const currentItem = paper[examIndex];
   const total = paper.length;
 
+  // Count answered questions - only count simple items that have .question
   const answeredCount = paper.filter((item) => {
-    if (item.type === "simple") return simpleAns[item.question.id] !== undefined;
-    const gAns = scenarioAns[item.group.groupId];
-    if (!gAns) return false;
-    return item.group.subs.every((s) => gAns[s.partId] !== undefined);
+    if (isSimpleItem(item)) {
+      return simpleAns[item.question.id] !== undefined;
+    }
+    return false;
   }).length;
 
-  const getItemFlagId = (item: ExamItem): string =>
-    item.type === "simple" ? `s-${item.question.id}` : `g-${item.group.groupId}`;
+  // Count unique scenario groups in paper
+  const scenarioGroupIds = new Set<string>();
+  for (const item of paper) {
+    if (isScenarioSubItem(item)) {
+      scenarioGroupIds.add(item.scenarioGroupId);
+    }
+  }
+  const scenarioGroupCount = scenarioGroupIds.size;
+  const simpleQuestionCount = paper.length - scenarioGroupCount * 3;
+  const displayTotal = simpleQuestionCount + scenarioGroupCount;
 
-  const currentFlagId = getItemFlagId(currentItem);
+  // Calculate display current number (scenario-based, not item-based)
+  const getDisplayCurrent = (item: ExamItem, index: number): number => {
+    if (isScenarioSubItem(item)) {
+      // Count simple questions before this item
+      let simpleCount = 0;
+      for (let j = 0; j < index; j++) {
+        if (!isScenarioSubItem(paper[j])) {
+          simpleCount++;
+        }
+      }
+      // Count scenario groups before this one
+      const seenGroups = new Set<string>();
+      let scenarioCount = 0;
+      for (let j = 0; j < index; j++) {
+        if (isScenarioSubItem(paper[j])) {
+          const gid = (paper[j] as any).scenarioGroupId;
+          if (!seenGroups.has(gid)) {
+            seenGroups.add(gid);
+            scenarioCount++;
+          }
+        }
+      }
+      // Scenario base number = simpleCount + scenarioCount + 1
+      return simpleCount + scenarioCount + 1;
+    }
+    // Regular simple question
+    let simpleCount = 0;
+    for (let j = 0; j <= index; j++) {
+      if (!isScenarioSubItem(paper[j])) {
+        simpleCount++;
+      }
+    }
+    return simpleCount;
+  };
+  const displayCurrent = getDisplayCurrent(currentItem, examIndex);
+
+  // Calculate display numbers for drawer grid
+  const getDisplayNumber = (item: ExamItem, index: number): string => {
+    if (isScenarioSubItem(item)) {
+      // Count simple questions before this item
+      let simpleCount = 0;
+      for (let j = 0; j < index; j++) {
+        if (!isScenarioSubItem(paper[j])) {
+          simpleCount++;
+        }
+      }
+      // Count scenario groups before this one
+      const seenGroups = new Set<string>();
+      let scenarioCount = 0;
+      for (let j = 0; j < index; j++) {
+        if (isScenarioSubItem(paper[j])) {
+          const gid = (paper[j] as any).scenarioGroupId;
+          if (!seenGroups.has(gid)) {
+            seenGroups.add(gid);
+            scenarioCount++;
+          }
+        }
+      }
+      // Scenario base number = simpleCount + scenarioCount + 1
+      const scenarioBaseNum = simpleCount + scenarioCount + 1;
+      const subNum = (item.subIndex ?? 0) + 1;
+      return `${scenarioBaseNum}-${subNum}`;
+    }
+    // Regular item: display as index + 1
+    return String(index + 1);
+  };
+
+  const getItemFlagId = (item: ExamItem, index: number): string => {
+    if (isScenarioSubItem(item)) {
+      return `ss-${item.scenarioGroupId}`;
+    }
+    if (isSimpleItem(item)) {
+      return `s-${item.question.id}`;
+    }
+    return `scenario-${index}`;
+  };
+
+  const currentFlagId = getItemFlagId(currentItem, examIndex);
   const isCurrentFlagged = flags.has(currentFlagId);
+
+  const isScenarioSub = isScenarioSubItem(currentItem);
+  const scenarioGroupId = isScenarioSub ? currentItem.scenarioGroupId : undefined;
 
   const L = {
     submit: lang === "vi" ? "Nộp bài" : "答案を提出",
@@ -95,11 +189,29 @@ export function ExamScreen({
     flag: lang === "vi" ? "Phân vân" : "迷い",
     unflag: lang === "vi" ? "Bỏ phân vân" : "迷いを解除",
     progress: lang === "vi" ? "Tiến trình" : "進捗",
+    scenarioHint: lang === "vi" ? "Câu hỏi tình huống" : "イラスト問題",
   };
+
+  // Get answer value - for scenario sub, check scenarioAns by subIndex
+  const getAnswerValue = (): MaruBatsu | undefined => {
+    if (!isSimpleItem(currentItem)) return undefined;
+    return simpleAns[currentItem.question.id];
+  };
+
+  // Handle answer
+  const handleAnswer = useCallback((v: MaruBatsu) => {
+    if (!isSimpleItem(currentItem)) return;
+    if (isScenarioSub && scenarioGroupId) {
+      // For scenario sub, also store in scenarioAns format for backward compatibility
+      const subIndex = currentItem.subIndex ?? 0;
+      onAnswerScenario(scenarioGroupId, `${subIndex}`, v);
+    }
+    onAnswer("simple", currentItem.question.id, v);
+  }, [currentItem, isScenarioSub, scenarioGroupId, onAnswer, onAnswerScenario]);
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={onBack} lang={lang} variant="home" />
+      <BackHomeButton onPress={onBack} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[
@@ -108,98 +220,93 @@ export function ExamScreen({
         ]}
         showsVerticalScrollIndicator={false}
       >
-      {/* Header */}
-      <View style={styles.header}>
-        {/* Left - Progress Indicator */}
-        <View style={styles.headerLeft}>
-          <ProgressIndicator
-            total={total}
-            current={examIndex}
-            onToggleExpand={() => setDrawerOpen(!drawerOpen)}
-            lang={lang}
-          />
-        </View>
-
-        {/* Center - Timer (absolute positioned) */}
-        <View style={styles.headerCenter}>
-          <TimerDisplay timeLeft={timeLeft} />
-        </View>
-
-        {/* Right - Submit Button */}
-        <View style={styles.headerRight}>
-          <TouchableOpacity onPress={onSubmit} style={styles.submitBtn} activeOpacity={0.8}>
-            <Text style={styles.submitText}>{L.submit}</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-
-      {/* Question card */}
-      <View style={styles.questionCard}>
-        {/* Card header */}
-        <View style={styles.cardHeader}>
-          <View style={styles.partInfo}>
-            {currentItem.type !== "simple" && (
-              <></>
-            )}
+        {/* Header */}
+        <View style={styles.header}>
+          {/* Left - Progress Indicator */}
+          <View style={styles.headerLeft}>
+            <ProgressIndicator
+              total={total}
+              current={examIndex}
+              displayTotal={displayTotal}
+              displayCurrent={displayCurrent}
+              onToggleExpand={() => setDrawerOpen(!drawerOpen)}
+              lang={lang}
+            />
           </View>
 
-          <TouchableOpacity onPress={onToggleFlag} style={[styles.flagBtn, isCurrentFlagged && styles.flagBtnActive]}>
-            <Text style={[styles.flagBtnText, isCurrentFlagged && styles.flagBtnTextActive]}>{isCurrentFlagged ? L.unflag : L.flag}</Text>
-          </TouchableOpacity>
+          {/* Center - Timer (absolute positioned) */}
+          <View style={styles.headerCenter}>
+            <TimerDisplay timeLeft={timeLeft} />
+          </View>
+
+          {/* Right - Submit Button */}
+          <View style={styles.headerRight}>
+            <TouchableOpacity onPress={onSubmit} style={styles.submitBtn} activeOpacity={0.8}>
+              <Text style={styles.submitText}>{L.submit}</Text>
+            </TouchableOpacity>
+          </View>
         </View>
 
-        {/* Question content */}
-        <ScrollView style={styles.questionContent} nestedScrollEnabled>
-          {currentItem.type === "simple" && (
+        {/* Question card */}
+        <View style={styles.questionCard}>
+          {/* Card header */}
+          <View style={styles.cardHeader}>
+            <View style={styles.partInfo}>
+              {isScenarioSub && (
+                <View style={styles.scenarioHintBadge}>
+                  <Text style={styles.scenarioHintText}>{L.scenarioHint}</Text>
+                </View>
+              )}
+            </View>
+
+            <TouchableOpacity onPress={onToggleFlag} style={[styles.flagBtn, isCurrentFlagged && styles.flagBtnActive]}>
+              <Text style={[styles.flagBtnText, isCurrentFlagged && styles.flagBtnTextActive]}>{isCurrentFlagged ? L.unflag : L.flag}</Text>
+            </TouchableOpacity>
+          </View>
+
+          {/* Question content */}
+          <ScrollView style={styles.questionContent} nestedScrollEnabled>
             <View>
-              {currentItem.question.image && (
+              {/* Show stem for scenario sub questions (ExamSimpleItem with scenarioGroupId) */}
+              {isScenarioSub && isSimpleItem(currentItem) && currentItem.stem && (
+                <Text style={styles.stemText}>
+                  {tx(currentItem.stem, currentItem.stemVi, lang)}
+                </Text>
+              )}
+
+              {/* Show image for scenario sub questions (using the question's image) */}
+              {isScenarioSub && isSimpleItem(currentItem) && currentItem.question.image && (
                 <IllustrationImage
                   file={currentItem.question.image}
                   style={styles.examImage}
                   imageStyle={styles.examImageInner}
                 />
               )}
-              <Text style={styles.questionText}>
-                {tx(currentItem.question.text, currentItem.question.textVi, lang)}
-              </Text>
-            </View>
-          )}
 
-          {currentItem.type === "scenario" && (
-            <View>
-              <Text style={styles.stemText}>
-                {tx(currentItem.group.stem, currentItem.group.stemVi, lang)}
-              </Text>
-              {currentItem.group.subs.map((sub) => (
-                <View key={sub.partId} style={styles.subItem}>
-                  <View style={styles.subRow}>
-                    <IllustrationImage
-                      file={sub.image}
-                      style={styles.subImage}
-                      imageStyle={styles.subImageInner}
-                    />
-                    <Text style={styles.subText}>
-                      【{sub.subKey}】{tx(sub.text, sub.textVi, lang)}
-                    </Text>
-                  </View>
-                  <View style={styles.subBtnsWrap}>
-                    <MaruBatsuButtons
-                      value={scenarioAns[currentItem.group.groupId]?.[sub.partId]}
-                      onPick={(v) => onAnswerScenario(currentItem.group.groupId, sub.partId, v)}
-                    />
-                  </View>
-                </View>
-              ))}
-            </View>
-          )}
-        </ScrollView>
-      </View>
+              {/* Show regular question image */}
+              {!isScenarioSub && isSimpleItem(currentItem) && currentItem.question.image && (
+                <IllustrationImage
+                  file={currentItem.question.image}
+                  style={styles.examImage}
+                  imageStyle={styles.examImageInner}
+                />
+              )}
 
-      {/* Answer + Navigation */}
-      {currentItem.type === "simple" && (
+              {/* Question text - only for simple items */}
+              {isSimpleItem(currentItem) && (
+                <Text style={isScenarioSub ? styles.scenarioQuestionText : styles.questionText}>
+                  {isScenarioSub ? `(${currentItem.subIndex! + 1}) ` : ''}
+                  {tx(currentItem.question.text, currentItem.question.textVi, lang)}
+                </Text>
+              )}
+            </View>
+          </ScrollView>
+        </View>
+
+        {/* Answer + Navigation - Show for ALL questions */}
         <AnswerNavButtons
-          answerValue={simpleAns[currentItem.question.id]}
-          onPick={(v) => onAnswer("simple", currentItem.question.id, v)}
+          answerValue={getAnswerValue()}
+          onPick={handleAnswer}
           size="large"
           disabledPrev={examIndex === 0}
           disabledNext={examIndex >= total - 1}
@@ -208,7 +315,6 @@ export function ExamScreen({
           prevLabel={L.prev}
           nextLabel={L.next}
         />
-      )}
 
       </ScrollView>
 
@@ -226,7 +332,7 @@ export function ExamScreen({
           <Animated.View style={[styles.drawerContainer, { transform: [{ translateX: drawerAnim }] }]}>
             <View style={styles.drawerContent}>
               <View style={styles.drawerHeader}>
-                <Text style={styles.drawerTitle}>{L.progress || "Tiến trình"}</Text>
+                <Text style={styles.drawerTitle}>{L.progress}</Text>
                 <TouchableOpacity onPress={() => setDrawerOpen(false)}>
                   <Text style={styles.drawerClose}>✕</Text>
                 </TouchableOpacity>
@@ -237,18 +343,16 @@ export function ExamScreen({
               <ScrollView showsVerticalScrollIndicator>
                 <View style={styles.drawerGrid}>
                   {paper.map((item, i) => {
-                    const id = item.type === "simple"
-                      ? `s-${item.question.id}`
-                      : `g-${item.group.groupId}`;
-                    const answered = item.type === "simple"
-                      ? simpleAns[item.question.id] !== undefined
-                      : (scenarioAns[item.group.groupId] != null &&
-                         item.group.subs.every(s => scenarioAns[item.group.groupId]?.[s.partId] !== undefined));
+                    const id = getItemFlagId(item, i);
+                    const isSimple = isSimpleItem(item);
+                    const answered = isSimple ? simpleAns[item.question.id] !== undefined : false;
                     const isFlagged = flags.has(id);
                     const isCurrent = i === examIndex;
+                    const isSubQuestion = isScenarioSubItem(item);
+                    const displayNumber = getDisplayNumber(item, i);
                     return (
                       <TouchableOpacity
-                        key={id}
+                        key={id + "-" + i}
                         onPress={() => { onJump(i); setDrawerOpen(false); }}
                         style={[
                           styles.drawerGridBtn,
@@ -258,7 +362,7 @@ export function ExamScreen({
                           isFlagged && styles.drawerGridBtnFlagged,
                         ]}
                       >
-                        <Text style={styles.drawerGridBtnText}>{i + 1}</Text>
+                        <Text style={styles.drawerGridBtnText}>{displayNumber}</Text>
                         {isFlagged && <Text style={styles.flagDot}>●</Text>}
                       </TouchableOpacity>
                     );
@@ -285,7 +389,6 @@ const styles = StyleSheet.create({
   },
   headerLeft: {
     marginLeft: 9
-    // Progress stays on the left
   },
   headerCenter: {
     position: "absolute",
@@ -298,12 +401,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "flex-end",
     marginRight:7,
-    // Pushes submit button to the right
   },
   progressContainer: { flex: 1, minWidth: 80 },
-  progressBar: { height: 8, backgroundColor: "rgba(0,0,0,0.3)", borderRadius: 4, overflow: "hidden" },
-  progressFill: { height: "100%", backgroundColor: "rgba(39, 34, 34, 0.9)", borderRadius: 4 },
-  progressText: { fontSize: 11, color: "rgba(27, 27, 27, 0.9)", textAlign: "right", marginTop: 2 },
   submitBtn: {
     backgroundColor: "rgba(10, 41, 128, 0.86)",
     paddingHorizontal: 10,
@@ -334,6 +433,17 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   partInfo: { flexDirection: "row", alignItems: "center", gap: 6, flexWrap: "wrap", flex: 1 },
+  scenarioHintBadge: {
+    backgroundColor: "rgba(153, 153, 153, 0.15)",
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 6,
+  },
+  scenarioHintText: {
+    fontSize: 10,
+    fontWeight: "600",
+    color: "rgb(15, 10, 78)",
+  },
   flagBtn: {
     flexDirection: "row",
     alignItems: "center",
@@ -353,16 +463,11 @@ const styles = StyleSheet.create({
   flagBtnText: { fontSize: 10, fontWeight: "600", color: "rgba(15, 15, 15, 0.89)" },
   flagBtnTextActive: { color: "rgba(37, 28, 25, 0.89)" },
   questionContent: { maxHeight: 220 },
-  questionText: { fontSize: 14, lineHeight: 22, fontWeight: "500", color: "#111", textAlign: "center" },
-  stemText: { fontSize: 14, fontWeight: "600", color: "#111", marginBottom: 12 },
-  subItem: { borderTopWidth: 2, borderTopColor: "rgba(120,53,15,0.3)", paddingTop: 10, marginBottom: 12 },
-  subRow: { flexDirection: "row", gap: 8, alignItems: "flex-start", marginBottom: 8 },
-  subText: { flex: 1, fontSize: 12, color: "#111", lineHeight: 18 },
-  subBtnsWrap: { marginTop: 8 },
+  questionText: { fontSize: 16, lineHeight: 18, fontWeight: "500", color: "#111", textAlign: "center" } as any,
+  scenarioQuestionText: { fontSize: 14, lineHeight: 18, fontWeight: "500", color: "#111", textAlign: "center", adjustsFontSizeToFit: true, numberOfLines: 4, minimumFontScale: 0.75 } as any,
+  stemText: { fontSize: 12, fontWeight: "600", color: "#111", marginBottom: 12, adjustsFontSizeToFit: true, numberOfLines: 3, minimumFontScale: 0.8 ,textAlign: "center"} as any,
   examImage: { width: "100%", height: 120, borderRadius: 8, marginBottom: 12 },
   examImageInner: { width: "100%", height: 120, borderRadius: 8 },
-  subImage: { width: 80, height: 64, borderRadius: 6 },
-  subImageInner: { width: 80, height: 64, borderRadius: 6 },
   // Drawer overlay
   drawerBackdrop: {
     position: "absolute",
@@ -373,9 +478,10 @@ const styles = StyleSheet.create({
   drawerContainer: {
     position: "absolute",
     top: 0,
-    left: 0,
-    height: 480, 
-    width: "52%",
+    left:-15,
+    height: 420,
+    width: "80%",
+    marginTop: 95,
     zIndex: 999,
     backgroundColor: "rgb(255, 255, 255)",
     elevation: 8,
@@ -385,37 +491,39 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     borderTopRightRadius: 20,
     borderBottomRightRadius: 20,
-    borderTopLeftRadius: 20,
+    borderTopLeftRadius: 0,
     borderBottomLeftRadius: 0,
   },
   drawerContent: {
     flex: 1,
-    paddingTop: 15,
+    paddingTop: 14,
     paddingHorizontal: 14,
-    paddingBottom: 20,
+    paddingBottom: 25,
+    paddingLeft: 25,
   },
   drawerHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 12,
+    marginBottom: 35,
   },
   drawerTitle: {
     fontSize: 14,
     fontWeight: "bold",
-    color: "#1a1a2e",
+    color: "rgba(10, 23, 61, 0.86)",
   },
   drawerClose: {
-    fontSize: 18,
+    fontSize: 14,
     color: "#666",
     padding: 4,
   },
   drawerProgressBar: {
-    height: 8,
+    height: 5,
     backgroundColor: "#e5e5e5",
     borderRadius: 3,
     overflow: "hidden",
-    marginBottom: 15,
+    marginBottom: 30,
+    marginTop: -25,
   },
   drawerProgressFill: {
     height: "100%",
@@ -426,26 +534,29 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     gap: 4,
-    marginBottom: 10 ,
+    marginBottom: 26 ,
+    justifyContent: "flex-start",
   },
   drawerGridBtn: {
-    width: 25,
-    height: 25,
+    width: "12%",
+    height: 30,
     borderRadius: 8,
+    marginLeft : 1.5,
+    marginTop : 1.5,
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
   },
   drawerGridBtnCurrent: {
-    borderWidth: 2.5,
-    borderColor: "#fbbf24",
+    borderWidth: 1.9,
+    borderColor: "rgba(18, 52, 146, 0.69)",
     transform: [{ scale: 1.12 }],
   },
-  drawerGridBtnAnswered: { backgroundColor: "#059669" },
-  drawerGridBtnUnanswered: { backgroundColor: "#c4c4c4" },
-  drawerGridBtnFlagged: { borderWidth: 2, borderColor: "#d97706" },
+  drawerGridBtnAnswered: { backgroundColor: "rgb(17, 54, 156)"},
+  drawerGridBtnUnanswered: { backgroundColor: "rgb(192, 195, 212)"},
+  drawerGridBtnFlagged: { borderWidth: 2, borderColor:"rgb(255, 255, 255)"},
   drawerGridBtnText: {
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: "bold",
     color: "#fff",
   },
@@ -453,7 +564,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: -3,
     right: -3,
-    fontSize: 6,
-    color: "#000",
+    fontSize: 10,
+    color: "rgb(230, 118, 13)",
   },
 });

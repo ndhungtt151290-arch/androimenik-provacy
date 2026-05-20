@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "Gentsuki - Luyện Thi Bằng Lái",
+    "name": "Menki 1000+",
+    "displayName": "Menki 1000+",
     "slug": "GentsukiApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,7 +15,13 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.gentsuki.app"
+      "bundleIdentifier": "com.gentsuki.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Ứng dụng cần truy cập camera để người dùng có thể chụp ảnh làm đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi.",
+        "NSPhotoLibraryAddUsageDescription": "Ứng dụng cần lưu ảnh xuống thiết bị để người dùng có thể lưu lại hình ảnh từ ứng dụng.",
+        "NSPhotoLibraryUsageDescription": "Ứng dụng cần truy cập thư viện ảnh để người dùng có thể chọn ảnh đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -28,8 +35,21 @@
     },
     "extra": {
       "eas": {
-        "projectId": ""
+        "projectId": "1108b0e9-ef6f-4e53-aac5-384029a16d24"
       }
-    }
+    },
+    "plugins": [
+      "expo-image-picker",
+      "expo-web-browser",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "android_app_id": "ca-app-pub-8320439928464026~8320439928464026",
+          "ios_app_id": "ca-app-pub-8320439928464026~8320439928464026"
+        }
+      ],
+      "expo-tracking-transparency"
+    ],
+    "owner": "duyhung90"
   }
 }

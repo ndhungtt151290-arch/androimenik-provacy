@@ -40,7 +40,7 @@ export function AdModal() {
       <View style={styles.overlay}>
         <TouchableOpacity style={styles.closeBtn} onPress={onClosePress} activeOpacity={0.7}>
           <Text style={styles.closeText}>Đóng</Text>
-          <X size={18} color="#525252" />
+          <X size={18} />
         </TouchableOpacity>
         <View style={styles.content}>
           <Text style={styles.adLabel}>QUẢNG CÁO</Text>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
   closeBtn: {
     position: "absolute",
-    top: 12,
+    top: 35,
     right: 16,
     flexDirection: "row",
     alignItems: "center",

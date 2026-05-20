@@ -1,25 +1,26 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
+import { BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
 import { BTN } from "../theme/buttonTokens";
 import { AdBanner } from "../components/AdBanner";
 import { BackHomeButton } from "../components/BackHomeButton";
 import { showInterstitialChapter } from "../utils/AdManager";
 import type { Lang } from "../types";
-import { ColorSpace } from "react-native-reanimated";
 
 interface ExamPrepScreenProps {
   lang: Lang;
   onStart: () => void;
   onBack: () => void;
+  onHistory: () => void;
 }
 
-export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
+export function ExamPrepScreen({ lang, onStart, onBack, onHistory }: ExamPrepScreenProps) {
   const insets = useSafeAreaInsets();
 
   const L = {
     title: lang === "vi" ? "Cấu trúc đề thi" : "試験構成",
+    history: lang === "vi" ? "Lịch sử thi" : "試験履歴",
     start: lang === "vi" ? "Bắt đầu thi →" : "試験を始める →",
     back: lang === "vi" ? "← Trang chủ" : "← ホーム",
     part1Title: lang === "vi" ? "Phần 1 · Câu hỏi ○×" : "第1部 · ○×問題",
@@ -59,7 +60,7 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} lang={lang} variant="home" />
+      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[
@@ -68,9 +69,15 @@ export function ExamPrepScreen({ lang, onStart, onBack }: ExamPrepScreenProps) {
         ]}
         showsVerticalScrollIndicator={false}
       >
-      <TouchableOpacity onPress={onStart} style={styles.startBtn} activeOpacity={0.8}>
-        <Text style={styles.startBtnText}>{L.start}</Text>
-      </TouchableOpacity>
+        <View style={styles.buttonRow}>
+          <TouchableOpacity onPress={onHistory} style={styles.historyBtn} activeOpacity={0.8}>
+            <Text style={styles.historyBtnText}>{L.history}</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={onStart} style={styles.startBtn} activeOpacity={0.8}>
+            <Text style={styles.startBtnText}>{L.start}</Text>
+          </TouchableOpacity>
+        </View>
 
       {/* Stats row */}
       <View style={styles.statsRow}>
@@ -160,16 +167,44 @@ const styles = StyleSheet.create({
   screenContainer: { flex: 1, position: "relative" },
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
-  startBtn: {
+  buttonRow: {
+    flexDirection: "row",
+    gap: 8,
+    marginBottom: 12,
+  },
+  historyBtn: {
+    flex: 1,
     backgroundColor: "#ffffff",
-    borderColor: "#f5f5f5",
+    borderColor: "rgba(255, 255, 255, 0)",  
     borderWidth: 3,
     borderRadius: BTN.borderRadius,
     paddingVertical: 16,
     alignItems: "center",
-    marginBottom: 12,
-    shadowColor: "#000",
-    shadowOffset: { width: BTN.shadowOffsetW, height: BTN.shadowOffsetH },
+    shadowColor: "rgba(31, 27, 27, 0.22)",
+    shadowOffset: { width: 0, height: 0.1 },
+    shadowOpacity: BTN.shadowOpacity,  
+    shadowRadius: BTN.shadowRadius,
+    elevation: BTN.elevation,
+    opacity: 0.9,
+  },
+  historyBtnText: {
+    fontWeight: "900",
+    fontSize: 16,
+    color: "rgba(9, 65, 129, 0.8)",
+    textShadowColor: "rgba(145, 126, 126, 0.8)",
+    textShadowOffset: { width: 0, height: 0.5 },
+    textShadowRadius: 2,
+  },
+  startBtn: {
+    flex: 2,
+    backgroundColor: "#ffffff",
+    borderColor: "rgba(255, 255, 255, 0)",  
+    borderWidth: 3,
+    borderRadius: BTN.borderRadius,
+    paddingVertical: 16,
+    alignItems: "center",
+    shadowColor: "rgba(36, 34, 34, 0.29)",  
+    shadowOffset: { width: 0.1, height: 0.1 },
     shadowOpacity: BTN.shadowOpacity,
     shadowRadius: BTN.shadowRadius,
     elevation: BTN.elevation,
@@ -180,13 +215,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "rgba(165, 26, 38, 0.8)",
     textShadowColor : "rgba(145, 126, 126, 0.8)",
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 1,
+    textShadowOffset: { width: 0, height: 0.5 },
+    textShadowRadius: 3,
   },
   statsRow: { flexDirection: "row", gap: 8, marginBottom: 12 },
   statBox: {
     flex: 1,
-    backgroundColor: "rgb(255, 255, 255)",
+    backgroundColor: "rgba(255, 255, 255, 0.58)",
     borderRadius: 8,
     padding: 8,
     alignItems: "center",

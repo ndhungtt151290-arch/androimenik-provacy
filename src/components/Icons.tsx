@@ -3,7 +3,6 @@ import { Text } from "react-native";
 
 interface IconProps {
   size?: number;
-  className?: string;
 }
 
 export const FlagIcon: React.FC<IconProps> = ({ size = 14 }) => (

@@ -1,5 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import type { ExamHistoryEntry, PersonalStats } from "../types";
+import type { ExamHistoryEntry, PersonalStats, WrongAnswerStats } from "../types";
 
 const HISTORY_KEY = "gentsuki_exam_history";
 const STATS_KEY = "gentsuki_personal_stats";
@@ -56,5 +56,101 @@ export async function savePracticeProgress(
     const all = await loadPracticeProgress();
     all[chapterId] = answeredIds;
     await AsyncStorage.setItem(PRACTICE_KEY, JSON.stringify(all));
+  } catch {}
+}
+
+const WRONG_ANSWERS_KEY = "gentsuki_wrong_answers";
+const MAX_WRONG_ANSWERS = 20;
+
+export async function loadWrongAnswers(): Promise<WrongAnswerStats[]> {
+  try {
+    const raw = await AsyncStorage.getItem(WRONG_ANSWERS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+export async function saveWrongAnswers(stats: WrongAnswerStats[]): Promise<void> {
+  try {
+    await AsyncStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(stats));
+  } catch {}
+}
+
+export async function addWrongAnswer(questionId: string): Promise<void> {
+  try {
+    const stats = await loadWrongAnswers();
+    const now = Date.now();
+    const existingIndex = stats.findIndex((s) => s.questionId === questionId);
+
+    if (existingIndex !== -1) {
+      stats[existingIndex].wrongCount += 1;
+      stats[existingIndex].updatedAt = now;
+    } else {
+      stats.push({
+        questionId,
+        wrongCount: 1,
+        updatedAt: now,
+      });
+
+      if (stats.length > MAX_WRONG_ANSWERS) {
+        let minWrongCount = stats[0].wrongCount;
+        let oldestIndex = 0;
+        for (let i = 1; i < stats.length - 1; i++) {
+          if (
+            stats[i].wrongCount < minWrongCount ||
+            (stats[i].wrongCount === minWrongCount && stats[i].updatedAt < stats[oldestIndex].updatedAt)
+          ) {
+            minWrongCount = stats[i].wrongCount;
+            oldestIndex = i;
+          }
+        }
+        stats.splice(oldestIndex, 1);
+      }
+    }
+
+    await saveWrongAnswers(stats);
+  } catch {}
+}
+
+export async function addWrongAnswers(questionIds: string[]): Promise<void> {
+  try {
+    const stats = await loadWrongAnswers();
+    const now = Date.now();
+    const idsToProcess = new Set(questionIds);
+
+    for (const questionId of questionIds) {
+      const existingIndex = stats.findIndex((s) => s.questionId === questionId);
+      if (existingIndex !== -1) {
+        stats[existingIndex].wrongCount += 1;
+        stats[existingIndex].updatedAt = now;
+        idsToProcess.delete(questionId);
+      }
+    }
+
+    for (const questionId of idsToProcess) {
+      stats.push({
+        questionId,
+        wrongCount: 1,
+        updatedAt: now,
+      });
+    }
+
+    while (stats.length > MAX_WRONG_ANSWERS) {
+      let minWrongCount = stats[0].wrongCount;
+      let oldestIndex = 0;
+      for (let i = 1; i < stats.length; i++) {
+        if (
+          stats[i].wrongCount < minWrongCount ||
+          (stats[i].wrongCount === minWrongCount && stats[i].updatedAt < stats[oldestIndex].updatedAt)
+        ) {
+          minWrongCount = stats[i].wrongCount;
+          oldestIndex = i;
+        }
+      }
+      stats.splice(oldestIndex, 1);
+    }
+
+    await saveWrongAnswers(stats);
   } catch {}
 }

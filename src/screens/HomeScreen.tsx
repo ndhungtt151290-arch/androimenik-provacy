@@ -11,6 +11,9 @@ import {
   ActivityIndicator,
   Alert,
   Linking,
+  KeyboardAvoidingView,
+  Keyboard,
+  Platform,
 } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import * as WebBrowser from "expo-web-browser";
@@ -739,11 +742,18 @@ export function HomeScreen({
           <TouchableOpacity
             style={styles.bugReportOverlayTouch}
             activeOpacity={1}
-            onPress={() => setBugReportModalVisible(false)}
+            onPress={() => {
+              Keyboard.dismiss();
+              setBugReportModalVisible(false);
+            }}
           />
-          <View style={styles.bugReportSheet}>
+          <KeyboardAvoidingView
+            behavior={Platform.OS === "ios" ? "padding" : "height"}
+            style={styles.bugReportSheet}
+          >
             <View style={styles.bugReportHeaderRow}>
               <BackButton onPress={() => {
+                Keyboard.dismiss();
                 setBugReportModalVisible(false);
                 setQuestionLocation("");
                 setErrorDescription("");
@@ -757,6 +767,7 @@ export function HomeScreen({
             <ScrollView
               showsVerticalScrollIndicator={false}
               contentContainerStyle={styles.bugReportScrollContent}
+              keyboardShouldPersistTaps="handled"
             >
               <TextInput
                 style={styles.bugReportInput}
@@ -878,6 +889,13 @@ export function HomeScreen({
                         : "エラー報告は開発チームに送信されました。"
                     );
                   } catch (error: any) {
+                    console.error("EmailJS Error:", {
+                      message: error?.message,
+                      code: error?.code,
+                      status: error?.status,
+                      text: error?.text,
+                      stack: error?.stack,
+                    });
                     if (error.name === "AbortError") {
                       Alert.alert(
                         lang === "vi" ? "Hết thời gian chờ" : "タイムアウト",
@@ -905,7 +923,7 @@ export function HomeScreen({
                 )}
               </TouchableOpacity>
             </ScrollView>
-          </View>
+          </KeyboardAvoidingView>
         </View>
       </Modal>
     </View>

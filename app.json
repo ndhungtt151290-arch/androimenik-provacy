@@ -20,7 +20,8 @@
       "infoPlist": {
         "NSCameraUsageDescription": "Ứng dụng cần truy cập camera để người dùng có thể chụp ảnh làm đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi.",
         "NSPhotoLibraryAddUsageDescription": "Ứng dụng cần lưu ảnh xuống thiết bị để người dùng có thể lưu lại hình ảnh từ ứng dụng.",
-        "NSPhotoLibraryUsageDescription": "Ứng dụng cần truy cập thư viện ảnh để người dùng có thể chọn ảnh đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi."
+        "NSPhotoLibraryUsageDescription": "Ứng dụng cần truy cập thư viện ảnh để người dùng có thể chọn ảnh đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -28,7 +29,11 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#78350f"
       },
-      "package": "com.gentsuki.app"
+      "package": "com.gentsuki.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "com.google.android.gms.permission.AD_ID"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"

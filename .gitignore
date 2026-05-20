@@ -34,7 +34,7 @@ yarn-error.*
 .env*.local
 
 # Ad config (contains real AdMob IDs — do not commit)
-src/config/ads.ts
+# src/config/ads.ts
 
 # typescript
 *.tsbuildinfo

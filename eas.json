@@ -14,13 +14,7 @@
       }
     },
     "production": {
-      "ios": {
-        "simulator": false,
-        "bundleIdentifier": "com.gentsuki.app"
-      },
-      "android": {
-        "buildType": "apk"
-      }
+      "distribution": "store"
     }
   },
   "submit": {

@@ -26,7 +26,6 @@ import { procedure } from "../data/procedure";
 import { examCenters } from "../data/examCenters";
 import { uploadToImgur } from "../lib/imgur";
 import { loadWrongAnswers } from "../lib/storage";
-import emailjs from "@emailjs/browser";
 import {
   EMAILJS_SERVICE_ID,
   EMAILJS_TEMPLATE_ID,
@@ -865,18 +864,32 @@ export function HomeScreen({
                       }
                     }
 
-                    // Gửi email qua EmailJS
-                    await emailjs.send(
-                      EMAILJS_SERVICE_ID,
-                      EMAILJS_TEMPLATE_ID,
+                    // Gửi email qua EmailJS sử dụng REST API
+                    const emailResponse = await fetch(
+                      "https://api.emailjs.com/api/v1.0/email/send",
                       {
-                        question_location: questionLocation.trim(),
-                        error_description: errorDescription.trim(),
-                        image_url: selectedImage ? imageUrl : "",
-                        created_at: new Date().toLocaleString("vi-VN"),
-                      },
-                      EMAILJS_PUBLIC_KEY
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                          service_id: EMAILJS_SERVICE_ID,
+                          template_id: EMAILJS_TEMPLATE_ID,
+                          user_id: EMAILJS_PUBLIC_KEY,
+                          template_params: {
+                            question_location: questionLocation.trim(),
+                            error_description: errorDescription.trim(),
+                            image_url: selectedImage ? imageUrl : "",
+                            created_at: new Date().toLocaleString("vi-VN"),
+                          },
+                        }),
+                      }
                     );
+
+                    if (!emailResponse.ok) {
+                      const errorText = await emailResponse.text();
+                      throw new Error(`EmailJS Error: ${errorText}`);
+                    }
 
                     setQuestionLocation("");
                     setErrorDescription("");

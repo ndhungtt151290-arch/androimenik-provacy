@@ -1,0 +1,39 @@
+Hãy đóng vai trò là Senior React Native Developer. Hãy giúp tôi tích hợp âm thanh sử dụng thư viện mới nhất 'expo-audio' thay vì 'expo-av' đã cũ. 
+Yêu cầu cốt lõi: Chỉ chèn thêm logic âm thanh, tuyệt đối GIỮ NGUYÊN giao diện UI Pastel và không làm xáo trộn logic chuyển màn hình. 
+
+Ứng dụng dùng State-based navigation tại App.tsx (theo dõi biến state của view) nên tôi muốn quản lý âm thanh tập trung bằng useEffect bám theo state này.
+
+Đường dẫn các file nhạc nền và hiệu ứng nằm trong `assets/sounds/` như sau:
+- Nhạc nền Menu chính: assets/sounds/bmg-loop.mp3
+- Tiếng nút chung (Back, Luyện tập, Thi thử, Chọn chương...): assets/sounds/tap-click.mp3
+- Tiếng nút O/X (Trong phòng Thi thử): assets/sounds/confirm-tap.mp3
+- Tiếng nút O/X Luyện tập đúng: assets/sounds/correct-chapter.mp3
+- Tiếng nút O/X Luyện tập sai: assets/sounds/wrong-chapter.mp3
+- Kết quả ĐỖ (>=45 điểm): assets/sounds/exam-success.mp3
+- Kết quả TRƯỢT (<45 điểm): assets/sounds/exam-fail.mp3
+
+Hãy thực hiện theo các bước ngắn gọn sau:
+
+### BƯỚC 1: Viết file src/lib/SoundManager.ts
+Tạo trình quản lý âm thanh sử dụng `expo-audio`. Thiết kế một trạng thái lưu trữ toàn cục (hoặc biến tĩnh) để lưu trạng thái Bật/Tắt âm thanh (isMuted: boolean).
+- Thêm hàm: toggleMute() để chuyển đổi trạng thái Bật/Tắt âm thanh toàn app.
+- Viết các hàm phát âm thanh ngắn gọn, bọc trong try-catch:
+  + playBGM() (Cấu hình loop = true), pauseBGM()
+  + playTapClick(), playConfirmTap(), playCorrectChapter(), playWrongChapter(), playExamSuccess(), playExamFail()
+- Nếu trạng thái đang là Mute (Tắt tiếng), các hàm play trên sẽ lập tức bỏ qua không phát gì cả.
+
+### BƯỚC 2: Theo dõi biến State điều hướng tại App.tsx bằng useEffect
+- Tìm biến state quản lý view mode hiện tại trong App.tsx. 
+- Thêm một useEffect để theo dõi biến state này:
+  + Nếu view là 'home' hoặc tương đương -> Gọi playBGM().
+  + Nếu view chuyển sang Luyện tập hoặc Thi thử -> Gọi pauseBGM() ngay lập tức để phòng thi được yên tĩnh.
+- Kết hợp với AppState để tạm dừng BGM khi người dùng thoát app xuống Background và phát lại khi quay lại app (chỉ khi đang ở màn hình Home).
+
+### BƯỚC 3: Chèn âm thanh vào các nút bấm onPress
+- Gắn hàm `playTapClick()` vào onPress của mọi nút bấm điều hướng chung (Nút Back, nút Vào luyện tập, nút Vào thi thử, nút Nộp bài...).
+- Tại component nút đáp án `MaruBatsuButtons`:
+  + Nếu là phòng Thi thử (`isExamMode === true`): Cả nút O và X khi bấm chỉ phát duy nhất âm thanh `playConfirmTap()`.
+  + Nếu là Luyện tập (`isExamMode === false`): Check đáp án câu hỏi, đúng phát `playCorrectChapter()`, sai phát `playWrongChapter()`.
+- Tại màn hình hiện kết quả thi thử (`ResultsScreen.tsx` hoặc view tương ứng): Thêm useEffect khi vừa hiển thị, nếu ĐỖ phát `playExamSuccess()`, nếu TRƯỢT phát `playExamFail()`.
+
+Hãy cung cấp mã nguồn hoàn chỉnh cho BƯỚC 1 (`SoundManager.ts`) sử dụng chuẩn cú pháp mới của 'expo-audio' trước. Dừng lại đợi tôi duyệt rồi mới phân tích các file UI cần chèn hàm bấm nút.

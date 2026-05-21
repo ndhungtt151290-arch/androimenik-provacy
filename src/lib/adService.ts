@@ -6,6 +6,7 @@
  */
 
 import { getAdConfig, FALLBACK_ADS } from "../config/ads";
+import { logger } from "../utils/logger";
 
 export const BANNER_ID = FALLBACK_ADS.BANNER_ID;
 export const INTERSTITIAL_ID = FALLBACK_ADS.INTERSTITIAL_ID;
@@ -49,12 +50,12 @@ export async function initAds(): Promise<void> {
     const ads = await getMobileAds();
     if (ads) {
       await ads.initialize();
-      console.log("[AdMob] Initialized successfully");
+      logger.log("[AdMob] Initialized successfully");
     } else {
-      console.log("[AdMob] Native module not available (Expo Go?), skipping init");
+      logger.log("[AdMob] Native module not available (Expo Go?), skipping init");
     }
   } catch (err) {
-    console.warn("[AdMob] Init failed:", err);
+    logger.warn("[AdMob] Init failed:", err);
   }
 }
 

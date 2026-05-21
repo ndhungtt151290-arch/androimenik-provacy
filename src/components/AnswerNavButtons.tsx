@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import type { MaruBatsu } from "../types";
+import { SoundManager } from "../lib/SoundManager";
 
 interface AnswerNavButtonsProps {
   // MaruBatsu state & callbacks
@@ -15,6 +16,10 @@ interface AnswerNavButtonsProps {
   onNext: () => void;
   prevLabel: string;
   nextLabel: string;
+  // Sound mode: true = exam (confirm tap), false = practice (correct/wrong)
+  isExamMode?: boolean;
+  // Correct answer for practice mode (to determine correct/wrong sound)
+  correctAnswer?: MaruBatsu;
 }
 
 export function AnswerNavButtons({
@@ -28,9 +33,37 @@ export function AnswerNavButtons({
   onNext,
   prevLabel,
   nextLabel,
+  isExamMode = false,
+  correctAnswer,
 }: AnswerNavButtonsProps) {
   const isLarge = size === "large";
   const btnStyle = isLarge ? styles.maruBtnLarge : styles.maruBtn;
+
+  const handlePickMaru = () => {
+    if (isExamMode) {
+      SoundManager.playConfirmTap();
+    } else {
+      if (correctAnswer === "○") {
+        SoundManager.playCorrectChapter();
+      } else {
+        SoundManager.playWrongChapter();
+      }
+    }
+    onPick("○");
+  };
+
+  const handlePickBatsu = () => {
+    if (isExamMode) {
+      SoundManager.playConfirmTap();
+    } else {
+      if (correctAnswer === "×") {
+        SoundManager.playCorrectChapter();
+      } else {
+        SoundManager.playWrongChapter();
+      }
+    }
+    onPick("×");
+  };
 
   return (
     <View style={styles.wrapper}>
@@ -38,7 +71,7 @@ export function AnswerNavButtons({
       <View style={styles.maruRow}>
         <TouchableOpacity
           disabled={disabled}
-          onPress={() => onPick("○")}
+          onPress={handlePickMaru}
           style={[
             btnStyle,
             answerValue === "○"
@@ -55,7 +88,7 @@ export function AnswerNavButtons({
 
         <TouchableOpacity
           disabled={disabled}
-          onPress={() => onPick("×")}
+          onPress={handlePickBatsu}
           style={[
             btnStyle,
             answerValue === "×"

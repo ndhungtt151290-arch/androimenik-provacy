@@ -4,6 +4,7 @@
     "displayName": "Menki 1000+",
     "slug": "GentsukiApp",
     "version": "1.0.0",
+    "assetBundlePatterns": ["assets/sounds/**/*"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -31,7 +32,6 @@
       },
       "package": "com.gentsuki.app",
       "permissions": [
-        "android.permission.RECORD_AUDIO",
         "com.google.android.gms.permission.AD_ID"
       ]
     },
@@ -50,10 +50,10 @@
         "react-native-google-mobile-ads",
         {
           "android_app_id": "ca-app-pub-8320439928464026",
-          "ios_app_id": "ca-app-pub-8320439928464026",
+          "ios_app_id": "ca-app-pub-8320439928464026"
         }
       ],
-      "expo-tracking-transparency"
+      "expo-audio"
     ],
     "owner": "duyhung90"
   }

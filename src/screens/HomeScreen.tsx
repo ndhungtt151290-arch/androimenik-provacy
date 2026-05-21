@@ -26,6 +26,8 @@ import { procedure } from "../data/procedure";
 import { examCenters } from "../data/examCenters";
 import { uploadToImgur } from "../lib/imgur";
 import { loadWrongAnswers } from "../lib/storage";
+import { SoundManager } from "../lib/SoundManager";
+import { logger } from "../utils/logger";
 import {
   EMAILJS_SERVICE_ID,
   EMAILJS_TEMPLATE_ID,
@@ -146,7 +148,7 @@ export function HomeScreen({
         }
 
         if (!cancelled) {
-          console.warn("[HomeScreen] Failed to load wrong answers after retries:", lastError);
+          logger.warn("[HomeScreen] Failed to load wrong answers after retries:", lastError);
           setWrongList([]);
           setWrongListLoading(false);
         }
@@ -262,7 +264,7 @@ export function HomeScreen({
       </View>
 
       <View style={styles.actionBtnContainer}>
-        <TouchableOpacity onPress={onStartExam} style={styles.actionBtn} activeOpacity={0.8}>
+        <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onStartExam(); }} style={styles.actionBtn} activeOpacity={0.8}>
           <Image source={imgS3} style={styles.actionImage} />
           <View style={styles.actionOverlay}>
             <Text style={styles.actionText}>
@@ -271,7 +273,7 @@ export function HomeScreen({
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={onStartPractice} style={styles.actionBtn} activeOpacity={0.8}>
+        <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onStartPractice(); }} style={styles.actionBtn} activeOpacity={0.8}>
           <Image source={imgS3_1} style={styles.actionImage} />
           <View style={styles.actionOverlay}>
             <Text style={styles.actionText}>
@@ -280,7 +282,7 @@ export function HomeScreen({
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => setMenuVisible(true)} activeOpacity={0.8}>
+        <TouchableOpacity onPress={() => { SoundManager.playTapClick(); setMenuVisible(true); }} activeOpacity={0.8}>
           <Image source={imgMenu} style={styles.menuIcon} />
         </TouchableOpacity>
       </View>
@@ -902,7 +904,7 @@ export function HomeScreen({
                         : "エラー報告は開発チームに送信されました。"
                     );
                   } catch (error: any) {
-                    console.error("EmailJS Error:", {
+                    logger.error("EmailJS Error:", {
                       message: error?.message,
                       code: error?.code,
                       status: error?.status,

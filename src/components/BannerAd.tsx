@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { View, StyleSheet, Platform, ActivityIndicator } from "react-native";
 import { getBannerId } from "../lib/adService";
+import { logger } from "../utils/logger";
 
 export function BannerAd() {
   const [BannerComponent, setBannerComponent] = useState<React.ComponentType<any> | null>(null);
@@ -45,8 +46,8 @@ export function BannerAd() {
   return (
     <View style={styles.container}>
       <BannerComponent
-        onAdLoaded={() => console.log("[BannerAd] Loaded")}
-        onAdFailedToLoad={(error: any) => console.warn("[BannerAd] Failed:", error)}
+        onAdLoaded={() => logger.log("[BannerAd] Loaded")}
+        onAdFailedToLoad={(error: any) => logger.warn("[BannerAd] Failed:", error)}
       />
     </View>
   );

@@ -1,5 +1,8 @@
 import { Platform } from "react-native";
 
+// ImgBB API key for image uploads
+export const IMGUR_CLIENT_ID = "60a501c064f72d1f559def85420d0419";
+
 export const getAdConfig = () => ({
   androidAppId: "ca-app-pub-8320439928464026~xxxxxxxxxx",
   iosAppId: "ca-app-pub-8320439928464026~xxxxxxxxxx",

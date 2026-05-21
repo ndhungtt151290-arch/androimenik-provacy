@@ -5,6 +5,7 @@ import { BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
 import { BTN } from "../theme/buttonTokens";
 import { AdBanner } from "../components/AdBanner";
 import { BackHomeButton } from "../components/BackHomeButton";
+import { SoundManager } from "../lib/SoundManager";
 import { showInterstitialChapter } from "../utils/AdManager";
 import type { Lang } from "../types";
 
@@ -60,7 +61,7 @@ export function ExamPrepScreen({ lang, onStart, onBack, onHistory }: ExamPrepScr
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
+      <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialChapter(onBack); }} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[
@@ -70,11 +71,11 @@ export function ExamPrepScreen({ lang, onStart, onBack, onHistory }: ExamPrepScr
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.buttonRow}>
-          <TouchableOpacity onPress={onHistory} style={styles.historyBtn} activeOpacity={0.8}>
+          <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onHistory(); }} style={styles.historyBtn} activeOpacity={0.8}>
             <Text style={styles.historyBtnText}>{L.history}</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={onStart} style={styles.startBtn} activeOpacity={0.8}>
+          <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onStart(); }} style={styles.startBtn} activeOpacity={0.8}>
             <Text style={styles.startBtnText}>{L.start}</Text>
           </TouchableOpacity>
         </View>

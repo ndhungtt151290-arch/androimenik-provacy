@@ -15,6 +15,7 @@ import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
 import { TimerDisplay } from "../components/TimerDisplay";
 import { BackHomeButton } from "../components/BackHomeButton";
+import { SoundManager } from "../lib/SoundManager";
 import type { ExamItem, ExamSimpleItem, Lang, MaruBatsu, QuestionBank } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
@@ -109,10 +110,10 @@ export function ExamScreen({
           simpleCount++;
         }
       }
-      // Count scenario groups before this one
+      // Count scenario groups up to and including this item
       const seenGroups = new Set<string>();
       let scenarioCount = 0;
-      for (let j = 0; j < index; j++) {
+      for (let j = 0; j <= index; j++) {
         if (isScenarioSubItem(paper[j])) {
           const gid = (paper[j] as any).scenarioGroupId;
           if (!seenGroups.has(gid)) {
@@ -121,8 +122,7 @@ export function ExamScreen({
           }
         }
       }
-      // Scenario base number = simpleCount + scenarioCount + 1
-      return simpleCount + scenarioCount + 1;
+      return simpleCount + scenarioCount;
     }
     // Regular simple question
     let simpleCount = 0;
@@ -145,10 +145,10 @@ export function ExamScreen({
           simpleCount++;
         }
       }
-      // Count scenario groups before this one
+      // Count scenario groups up to and including this item
       const seenGroups = new Set<string>();
       let scenarioCount = 0;
-      for (let j = 0; j < index; j++) {
+      for (let j = 0; j <= index; j++) {
         if (isScenarioSubItem(paper[j])) {
           const gid = (paper[j] as any).scenarioGroupId;
           if (!seenGroups.has(gid)) {
@@ -157,8 +157,7 @@ export function ExamScreen({
           }
         }
       }
-      // Scenario base number = simpleCount + scenarioCount + 1
-      const scenarioBaseNum = simpleCount + scenarioCount + 1;
+      const scenarioBaseNum = simpleCount + scenarioCount;
       const subNum = (item.subIndex ?? 0) + 1;
       return `${scenarioBaseNum}-${subNum}`;
     }
@@ -211,7 +210,7 @@ export function ExamScreen({
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={onBack} />
+      <BackHomeButton onPress={() => { SoundManager.playTapClick(); onBack(); }} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[
@@ -241,7 +240,7 @@ export function ExamScreen({
 
           {/* Right - Submit Button */}
           <View style={styles.headerRight}>
-            <TouchableOpacity onPress={onSubmit} style={styles.submitBtn} activeOpacity={0.8}>
+            <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onSubmit(); }} style={styles.submitBtn} activeOpacity={0.8}>
               <Text style={styles.submitText}>{L.submit}</Text>
             </TouchableOpacity>
           </View>
@@ -314,6 +313,7 @@ export function ExamScreen({
           onNext={() => onJump(Math.min(total - 1, examIndex + 1))}
           prevLabel={L.prev}
           nextLabel={L.next}
+          isExamMode={true}
         />
 
       </ScrollView>

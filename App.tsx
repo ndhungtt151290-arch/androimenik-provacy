@@ -11,6 +11,7 @@ import {
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { LangSwitch } from "./src/components/LangSwitch";
+import { SoundToggle } from "./src/components/SoundToggle";
 import { ConfirmDialog } from "./src/components/ConfirmDialog";
 import { AdModal } from "./src/components/AdModal";
 import { HomeScreen } from "./src/screens/HomeScreen";
@@ -25,6 +26,7 @@ import { buildMockExam, scoreExam } from "./src/lib/exam";
 import { loadHistory, saveHistory, loadStats, saveStats, addWrongAnswers } from "./src/lib/storage";
 import { showInterstitialExam } from "./src/utils/AdManager";
 import { initAds } from "./src/lib/adService";
+import { SoundManager } from "./src/lib/SoundManager";
 import type { ExamItem, Lang, MaruBatsu, PersonalStats, ExamHistoryEntry, AppScreen } from "./src/types";
 
 const EXAM_SECONDS = 30 * 60;
@@ -73,6 +75,11 @@ function AppContent() {
         // Tracking permission granted
       }
     })();
+  }, []);
+
+  // Init sound manager
+  useEffect(() => {
+    SoundManager.init();
   }, []);
 
   const toggleLang = useCallback(() => {
@@ -295,8 +302,9 @@ function AppContent() {
 
 
         {/* Language switch */}
-        <View style={[styles.langSwitchContainer, { top: insets.top + 8 }]}>
+        <View style={[styles.langSwitchContainer, { top: insets.top + 8, flexDirection: "row", alignItems: "center", gap: 8 }]}>
           <LangSwitch lang={lang} onToggle={toggleLang} />
+          <SoundToggle />
         </View>
 
         {/* Submitting overlay */}

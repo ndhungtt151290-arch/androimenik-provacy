@@ -1,6 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { adEmitter } from "./AdEventEmitter";
 import { getBannerId, getInterstitialId } from "../lib/adService";
+import { logger } from "./logger";
 
 const CHAPTER_BACK_KEY = "chapter_back_count";
 const EXAM_BACK_KEY = "exam_back_count";
@@ -47,13 +48,13 @@ async function showInterstitialAd(callback: () => void): Promise<void> {
       if (hasCompleted) return;
       hasCompleted = true;
       cleanup();
-      console.warn("[InterstitialAd] Error:", error);
+      logger.warn("[InterstitialAd] Error:", error);
       callback();
     });
 
     ad.load();
   } catch (err) {
-    console.log("[AdManager] Falling back to AdModal (Expo Go environment)");
+    logger.log("[AdManager] Falling back to AdModal (Expo Go environment)");
     setTimeout(() => adEmitter.emit("show", callback), 300);
   }
 }

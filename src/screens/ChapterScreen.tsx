@@ -14,6 +14,7 @@ import { showInterstitialChapter } from "../utils/AdManager";
 import { questionsForChapter } from "../lib/exam";
 import { CHAPTER_VI } from "../lib/chapters";
 import { savePracticeProgress, loadPracticeProgress, addWrongAnswers } from "../lib/storage";
+import { SoundManager } from "../lib/SoundManager";
 import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup, ScenarioSub } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
@@ -96,7 +97,7 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   if (total === 0) {
     return (
       <View style={styles.container}>
-        <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
+        <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialChapter(onBack); }} />
         <Text style={styles.emptyText}>
           {lang === "vi"
             ? "Chưa có dữ liệu cho chương này."
@@ -162,7 +163,7 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
+      <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialChapter(onBack); }} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[
@@ -257,6 +258,8 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
             onNext={goNext}
             prevLabel={L.prev}
             nextLabel={L.next}
+            isExamMode={false}
+            correctAnswer={currentItem.kind === "simple" ? currentItem.q.answer : currentItem.sub.answer}
           />
         </View>
       </ScrollView>

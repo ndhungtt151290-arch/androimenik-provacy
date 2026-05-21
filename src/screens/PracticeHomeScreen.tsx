@@ -7,6 +7,7 @@ import { loadPracticeProgress } from "../lib/storage";
 import { BTN } from "../theme/buttonTokens";
 import { AdBanner } from "../components/AdBanner";
 import { BackHomeButton } from "../components/BackHomeButton";
+import { SoundManager } from "../lib/SoundManager";
 import { showInterstitialChapter } from "../utils/AdManager";
 import { ConfirmDialog } from "../components/ConfirmDialog";
 import { SubChapterModal } from "../components/SubChapterModal";
@@ -59,7 +60,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
 
   return (
     <View style={styles.container}>
-      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
+      <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialChapter(onBack); }} />
       <View style={styles.header}>
         <Text style={styles.title}>{L.title}</Text>
       </View>
@@ -87,6 +88,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
                       <TouchableOpacity
                         key={chapterId}
                         onPress={() => {
+                          SoundManager.playTapClick();
                           if (chapterName === "総合演習") {
                             setShowSubChapter(true);
                           } else {

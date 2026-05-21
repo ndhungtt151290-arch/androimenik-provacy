@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Check, X, RotateCcw } from "../components/Icons";
@@ -6,6 +6,7 @@ import { AdBanner } from "../components/AdBanner";
 import { showInterstitialRetry } from "../utils/AdManager";
 import { CHAPTER_VI } from "../lib/chapters";
 import { BackHomeButton } from "../components/BackHomeButton";
+import { SoundManager } from "../lib/SoundManager";
 import type { ExamItem, Lang } from "../types";
 
 interface ResultsScreenProps {
@@ -40,6 +41,15 @@ export function ResultsScreen({
   onRetry,
 }: ResultsScreenProps) {
   const insets = useSafeAreaInsets();
+
+  // Play result sound when screen mounts
+  useEffect(() => {
+    if (score.passed) {
+      SoundManager.playExamSuccess();
+    } else {
+      SoundManager.playExamFail();
+    }
+  }, []);
 
   // Đếm số câu simple thường đúng (không tính scenario sub)
   const simpleCorrect = score.details.filter((d) => {
@@ -117,7 +127,7 @@ export function ResultsScreen({
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => showInterstitialRetry(onHome)} />
+      <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialRetry(onHome); }} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
@@ -212,7 +222,7 @@ export function ResultsScreen({
         )}
 
         {/* Action buttons */}
-        <TouchableOpacity onPress={() => showInterstitialRetry(onRetry)} style={styles.retryBtn} activeOpacity={0.8}>
+        <TouchableOpacity onPress={() => { SoundManager.playTapClick(); showInterstitialRetry(onRetry); }} style={styles.retryBtn} activeOpacity={0.8}>
           <RotateCcw size={16} />
           <Text style={styles.retryBtnText}>{L.retry}</Text>
         </TouchableOpacity>

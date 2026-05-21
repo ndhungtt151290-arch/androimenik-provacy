@@ -1,9 +1,19 @@
+import { Platform } from "react-native";
+
 export const getAdConfig = () => ({
   androidAppId: "ca-app-pub-8320439928464026~xxxxxxxxxx",
   iosAppId: "ca-app-pub-8320439928464026~xxxxxxxxxx",
 });
 
 export const FALLBACK_ADS = {
-  BANNER_ID: "ca-app-pub-8320439928464026/1571115466",
-  INTERSTITIAL_ID: "ca-app-pub-8320439928464026/9906420960",
+  BANNER_ID: Platform.select({
+    android: "ca-app-pub-3940256099942544/6300978111",
+    ios: "ca-app-pub-3940256099942544/2934735716",
+    default: "ca-app-pub-3940256099942544/6300978111",
+  })!,
+  INTERSTITIAL_ID: Platform.select({
+    android: "ca-app-pub-3940256099942544/1033173712",
+    ios: "ca-app-pub-3940256099942544/4411468910",
+    default: "ca-app-pub-3940256099942544/1033173712",
+  })!,
 };

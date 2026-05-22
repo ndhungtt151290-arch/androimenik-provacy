@@ -1,4 +1,4 @@
-#1  Quy tắc dự án Gentsuki
+## 1  Quy tắc dự án Gentsuki
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
@@ -63,10 +63,10 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
 CRITICAL: Always respond, explain, and write code comments in Vietnamese.
-#2
+## 2
 ## 1. Vai trò của AI
 Bạn là một chuyên gia lập trình Mobile và am hiểu luật giao thông Nhật Bản. Hãy hỗ trợ tôi xây dựng app Gentsuki dành cho người Việt tại Nhật.
-Luôn dùng tíng Việt để trả lời lệnh của tôi.
+Luôn dùng tiếng Việt để trả lời lệnh của tôi.
 ## 2. Quy định về ngôn ngữ
 - Giao diện người dùng (UI): Ưu tiên tiếng Việt, thuật ngữ chuyên môn kèm tiếng Nhật (ví dụ: "Vào phòng thi - 本試験").
 - Comment trong code: Viết bằng tiếng Việt để tôi dễ theo dõi.
@@ -124,12 +124,32 @@ Khi tôi yêu cầu thực hiện các lệnh dưới đây, hãy tuân thủ qu
   3. Đảm bảo giao diện hiển thị tốt trên cả màn hình nhỏ (iPhone SE) và màn hình lớn.
 
 ### Skill 3: "Check Luật Giao Thông"
-- **Mục tiêu:** Đảm bảo kiến thức trong app chính xác 100%.
-- **Quy trình:**
-  1. Khi tôi viết nội dung câu hỏi, hãy đối chiếu với kiến thức chuẩn về bằng lái Gentsuki tại Nhật.
-  2. Nếu có sự thay đổi luật mới (ví dụ: luật về xe điện kickboard hoặc nồng độ cồn), hãy cảnh báo cho tôi.
-  3. Luôn sử dụng đúng các thuật ngữ Nhật Bản như: 止まれ (Tomare), 徐行 (Jokou),...
 
+1. BẢO TỒN DỮ LIỆU GỐC: 
+    1. Dịch sát nghĩa đen (Literal translation)
+    4. Không được "giúp đỡ" quá mức: Không tự động sửa logic của câu hỏi, không thay đổi các thông số (bán kính, vận tốc, khoảng cách) trong câu dịch.
+    Quy tắc Kiểm định Logic Câu hỏi Lái xe (Critical Logic Check)
+  - Khi bạn thực hiện bất kỳ thao tác nào liên quan đến câu hỏi thi lái xe (dịch thuật, giải thích, hoặc kiểm tra):
+  1. Phân tích Mệnh đề: Luôn luôn phân tích mệnh đề của câu hỏi tiếng Nhật trước khi xem xét đáp án. 
+  2. So sánh Logic: So sánh nội dung mệnh đề (Câu hỏi) với Đáp án chuẩn.
+     - Nếu câu hỏi là một phát biểu SAI về luật/vật lý, bạn phải xác nhận đây là câu SAI và dịch sát nghĩa để giữ nguyên tính chất "bẫy" của câu.
+     - KHÔNG ĐƯỢC TỰ Ý sửa mệnh đề câu hỏi để nó trở thành Đúng.
+  3. Báo cáo xung đột: Nếu bạn thấy AI trước đó hoặc bản dịch hiện tại có logic mâu thuẫn (Ví dụ: câu hỏi nói "Càng lớn càng lớn" nhưng thực tế vật lý là "Càng lớn càng nhỏ"), hãy cảnh báo ngay cho người dùng: "Cảnh báo: Câu này có logic sai về mặt [vật lý/luật], đề bài đưa ra mệnh đề sai để kiểm tra thí sinh."
+  4. Ưu tiên độ chính xác tuyệt đối: Đừng cố làm cho câu hỏi trở nên "hợp lý" nếu đề bài gốc cố tình đưa ra một khẳng định vô lý. Hãy giữ nguyên bản chất của đề bài.
+2. CHUẨN HÓA THUẬT NGỮ (NHẬT - VIỆT):
+   - "車" (Kuruma): Dịch là "xe" hoặc "phương tiện" (tránh dùng "ô tô" trừ khi ngữ cảnh là xe 4 bánh).
+   - "自動車" (Jidousha): Dịch là "ô tô".
+   - "原動機付自転車": Dịch là "xe gắn máy 50cc".
+   - "車両": Dịch là "phương tiện".
+
+3. VĂN PHONG:
+   - Dùng từ ngữ giao thông phổ thông, gãy gọn, chuyên nghiệp. Tránh dịch word-by-word.
+
+4. QUY TRÌNH RÀ SOÁT:
+   - Làm việc theo lô 10 câu.
+   - Xuất bảng so sánh: [ID] | [Câu gốc JP] | [Bản dịch cũ] | [Bản dịch mới] | [Lý do sửa].
+   - Chỉ được chỉnh sửa text trong cặp dấu ngoặc kép.
+   - Nếu dữ liệu lớn, phải chia nhỏ (batch) từng lô 10 câu để tôi xác nhận, tuyệt đối không tự ý chạy hết cả file gây quá tải bộ nhớ và sai sót.
 ### Skill 4: "Tối ưu hóa hình ảnh"
 - **Mục tiêu:** Quản lý tài nguyên nhẹ và nhanh.
 - **Quy trình:**

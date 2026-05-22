@@ -43,10 +43,10 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
       map[q.chapter] = (map[q.chapter] ?? 0) + 1;
     }
     for (const g of bank.scenarioGroups) {
-      map[g.chapter] = (map[g.chapter] ?? 0) + 1;
+      map[g.chapter] = (map[g.chapter] ?? 0) + g.subs.length;
     }
     for (const g of bank.dangerScenarioGroups) {
-      map[g.chapter] = (map[g.chapter] ?? 0) + 1;
+      map[g.chapter] = (map[g.chapter] ?? 0) + g.subs.length;
     }
     return map;
   }, []);

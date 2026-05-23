@@ -4,7 +4,6 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
 import { BTN } from "../theme/buttonTokens";
 import { AdBanner } from "../components/AdBanner";
-import { BackHomeButton } from "../components/BackHomeButton";
 import { SoundManager } from "../lib/SoundManager";
 import { showInterstitialChapter } from "../utils/AdManager";
 import type { Lang } from "../types";
@@ -61,7 +60,6 @@ export function ExamPrepScreen({ lang, onStart, onBack, onHistory }: ExamPrepScr
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialChapter(onBack); }} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[
@@ -175,13 +173,13 @@ const styles = StyleSheet.create({
   },
   historyBtn: {
     flex: 1,
-    backgroundColor: "#ffffff",
+    backgroundColor: "rgb(13, 44, 145)",
     borderColor: "rgba(255, 255, 255, 0)",  
     borderWidth: 3,
     borderRadius: BTN.borderRadius,
     paddingVertical: 16,
     alignItems: "center",
-    shadowColor: "rgba(31, 27, 27, 0.22)",
+    shadowColor: "rgba(31, 27, 27, 0.5)",
     shadowOffset: { width: 0, height: 0.1 },
     shadowOpacity: BTN.shadowOpacity,  
     shadowRadius: BTN.shadowRadius,
@@ -191,21 +189,21 @@ const styles = StyleSheet.create({
   historyBtnText: {
     fontWeight: "900",
     fontSize: 16,
-    color: "rgba(9, 65, 129, 0.8)",
+    color: "rgba(255, 255, 255, 0.94)",
     textShadowColor: "rgba(145, 126, 126, 0.8)",
     textShadowOffset: { width: 0, height: 0.5 },
     textShadowRadius: 2,
   },
   startBtn: {
     flex: 2,
-    backgroundColor: "#ffffff",
-    borderColor: "rgba(255, 255, 255, 0)",  
+    backgroundColor: "rgb(199, 21, 21)",
+    borderColor: "rgba(161, 27, 27, 0)",  
     borderWidth: 3,
     borderRadius: BTN.borderRadius,
     paddingVertical: 16,
     alignItems: "center",
-    shadowColor: "rgba(36, 34, 34, 0.29)",  
-    shadowOffset: { width: 0.1, height: 0.1 },
+    shadowColor: "rgba(5, 3, 3, 0.56)",  
+    shadowOffset: { width: 0.1, height: 0.5},
     shadowOpacity: BTN.shadowOpacity,
     shadowRadius: BTN.shadowRadius,
     elevation: BTN.elevation,
@@ -214,8 +212,8 @@ const styles = StyleSheet.create({
   startBtnText: {
     fontWeight: "900",
     fontSize: 18,
-    color: "rgba(165, 26, 38, 0.8)",
-    textShadowColor : "rgba(145, 126, 126, 0.8)",
+    color: "rgb(255, 255, 255)",
+    textShadowColor : "rgba(87, 85, 85, 0.8)",
     textShadowOffset: { width: 0, height: 0.5 },
     textShadowRadius: 3,
   },

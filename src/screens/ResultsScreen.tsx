@@ -5,7 +5,6 @@ import { Check, X, RotateCcw } from "../components/Icons";
 import { AdBanner } from "../components/AdBanner";
 import { showInterstitialRetry } from "../utils/AdManager";
 import { CHAPTER_VI } from "../lib/chapters";
-import { BackHomeButton } from "../components/BackHomeButton";
 import { SoundManager } from "../lib/SoundManager";
 import type { ExamItem, Lang } from "../types";
 
@@ -127,7 +126,6 @@ export function ResultsScreen({
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialRetry(onHome); }} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}

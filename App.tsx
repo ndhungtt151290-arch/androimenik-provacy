@@ -12,6 +12,7 @@ import {
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { LangSwitch } from "./src/components/LangSwitch";
 import { SoundToggle } from "./src/components/SoundToggle";
+import { BackHomeButton } from "./src/components/BackHomeButton";
 import { ConfirmDialog } from "./src/components/ConfirmDialog";
 import { AdModal } from "./src/components/AdModal";
 import { HomeScreen } from "./src/screens/HomeScreen";
@@ -23,11 +24,20 @@ import { ReviewScreen } from "./src/screens/ReviewScreen";
 import { HistoryScreen } from "./src/screens/HistoryScreen";
 import { PracticeHomeScreen } from "./src/screens/PracticeHomeScreen";
 import { buildMockExam, scoreExam } from "./src/lib/exam";
-import { loadHistory, saveHistory, loadStats, saveStats, addWrongAnswers } from "./src/lib/storage";
-import { showInterstitialExam } from "./src/utils/AdManager";
+import { loadHistory, saveHistory, loadStats, saveStats, addExamWrongAnswer } from "./src/lib/storage";
+import { showInterstitialExam, showInterstitialChapter } from "./src/utils/AdManager";
 import { initAds } from "./src/lib/adService";
 import { SoundManager } from "./src/lib/SoundManager";
-import type { ExamItem, Lang, MaruBatsu, PersonalStats, ExamHistoryEntry, AppScreen } from "./src/types";
+import type { ExamItem, ExamSimpleItem, Lang, MaruBatsu, PersonalStats, ExamHistoryEntry, AppScreen } from "./src/types";
+
+const SOGOU_ENSHU_ALL = [
+  { id: "総合演習1", name: "総合演習 1", viName: "Ôn tập tổng hợp 1" },
+  { id: "総合演習2", name: "総合演習 2", viName: "Ôn tập tổng hợp 2" },
+  { id: "総合演習3", name: "総合演習 3", viName: "Ôn tập tổng hợp 3" },
+  { id: "総合演習4", name: "総合演習 4", viName: "Ôn tập tổng hợp 4" },
+  { id: "総合演習5", name: "総合演習 5", viName: "Ôn tập tổng hợp 5" },
+  { id: "総合演習6", name: "総合演習 6", viName: "Ôn tập tổng hợp 6" },
+];
 
 const EXAM_SECONDS = 30 * 60;
 const PASS_SCORE = 45;
@@ -37,6 +47,7 @@ const homeBg = require("./src/assets/bgs/bgh.jpg");
 
 function AppContent() {
   const insets = useSafeAreaInsets();
+  const HEADER_BUTTON_TOP =insets.top + 8;;
   const [lang, setLang] = useState<Lang>("vi");
   const [view, setView] = useState<AppScreen>({ mode: "home" });
   const [examPaper, setExamPaper] = useState<ExamItem[]>([]);
@@ -51,6 +62,8 @@ function AppContent() {
   const [examHistory, setExamHistory] = useState<ExamHistoryEntry[]>([]);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [loading, setLoading] = useState(true);
+  // Track nguồn vào của 総合演習 để back đúng popup
+  const [sogouModalSource, setSogouModalSource] = useState<"main"|"allChapters"|null>(null);
 
   const examPaperRef = useRef(examPaper);
   examPaperRef.current = examPaper;
@@ -129,6 +142,7 @@ function AppContent() {
 
       // Update chapter breakdown
       for (const d of result.details) {
+        if (d.item.type !== "simple") continue;
         const chapterId = d.item.question.chapter;
         if (!newStats.chaptersStats[chapterId]) {
           newStats.chaptersStats[chapterId] = { correct: 0, total: 0 };
@@ -143,6 +157,7 @@ function AppContent() {
       // Save to history
       const chapterBreakdown: Record<string, { correct: number; total: number }> = {};
       for (const d of result.details) {
+        if (d.item.type !== "simple") continue;
         const chapterId = d.item.question.chapter;
         if (!chapterBreakdown[chapterId]) chapterBreakdown[chapterId] = { correct: 0, total: 0 };
         chapterBreakdown[chapterId].total += 1;
@@ -160,18 +175,6 @@ function AppContent() {
       saveHistory(entry).then(() => {
         loadHistory().then(setExamHistory);
       });
-
-      // Record wrong answers
-      const wrongQuestionIds: string[] = [];
-      for (const d of result.details) {
-        if (d.points === 0) {
-          const item = d.item;
-          wrongQuestionIds.push(item.question.id);
-        }
-      }
-      if (wrongQuestionIds.length > 0) {
-        addWrongAnswers(wrongQuestionIds);
-      }
 
       setIsSubmitting(false);
       setSubmitted(true);
@@ -199,10 +202,10 @@ function AppContent() {
 
   const currentItem = view.mode === "exam" ? examPaper[examIndex] : undefined;
 
-  const getItemFlagId = (item: ExamItem): string => `s-${item.question.id}`;
+  const getItemFlagId = (item: ExamSimpleItem): string => `s-${item.question.id}`;
 
   const toggleFlag = useCallback(() => {
-    if (!currentItem) return;
+    if (!currentItem || currentItem.type !== "simple") return;
     const id = getItemFlagId(currentItem);
     setExamFlags((prev) => {
       const next = new Set(prev);
@@ -220,8 +223,29 @@ function AppContent() {
     }
   }, [view.mode, submitted]);
 
+  // Check if current chapter is from sogou modal
+  const isSogouChapter = view.mode === "chapter" && SOGOU_ENSHU_ALL.some(s => s.id === view.chapterId);
+
+  const handleChapterBack = useCallback(() => {
+    if (isSogouChapter && sogouModalSource) {
+      // Quay về practiceHome, PracticeHomeScreen sẽ tự mở popup tương ứng
+      // sogouModalSource sẽ được reset khi user chọn chapter mới hoặc đóng modal
+      setView({ mode: "practiceHome" });
+    } else {
+      setView({ mode: "practiceHome" });
+    }
+  }, [isSogouChapter, sogouModalSource]);
+
   const handleAnswer = useCallback((type: "simple", id: string, v: MaruBatsu) => {
     setSimpleAns((prev) => ({ ...prev, [id]: v }));
+
+    // Ghi ngay vào WrongAnswers nếu trả lời sai (Exam mode only)
+    const item = examPaperRef.current.find((i) =>
+      i.type === "simple" && i.question.id === id
+    );
+    if (item && item.type === "simple" && v !== item.question.answer) {
+      addExamWrongAnswer(id);
+    }
   }, []);
 
   const handleAnswerScenario = useCallback((gid: string, partId: string, v: MaruBatsu) => {
@@ -301,11 +325,37 @@ function AppContent() {
         )}
 
 
-        {/* Language switch */}
-        <View style={[styles.langSwitchContainer, { top: insets.top + 8, flexDirection: "row", alignItems: "center", gap: 8 }]}>
+        {/* Lang/Sound - always at the same position (right side) */}
+        <View style={[styles.langSoundContainer, { top: HEADER_BUTTON_TOP }]}>
           <LangSwitch lang={lang} onToggle={toggleLang} />
           <SoundToggle />
         </View>
+
+        {/* Back button - only show when not at home */}
+        {view.mode !== "home" && (
+          <View style={[styles.backButtonContainer, { top: HEADER_BUTTON_TOP -8 }]}>
+            <BackHomeButton
+              onPress={() => {
+                SoundManager.playTapClick();
+                const backHandlers: Record<string, () => void> = {
+                  practiceHome: () => showInterstitialExam(() => setView({ mode: "home" })),
+                  examPrep: () => showInterstitialChapter(() => setView({ mode: "home" })),
+                  chapter: () => showInterstitialChapter(() => setView({ mode: "practiceHome" })),
+                  history: () => showInterstitialChapter(() => setView({ mode: "home" })),
+                  exam: () => setShowExitConfirm(true),
+                  results: () => setView({ mode: "home" }),
+                  review: () => {
+                    if (view.mode === "review" && "paper" in view) {
+                      setView({ mode: "results", paper: view.paper });
+                    }
+                  },
+                };
+                const handler = backHandlers[view.mode];
+                if (handler) handler();
+              }}
+            />
+          </View>
+        )}
 
         {/* Submitting overlay */}
         {isSubmitting && (
@@ -333,7 +383,7 @@ function AppContent() {
         />
 
         {/* Main content */}
-        <View style={[styles.content, { paddingTop: insets.top }]}>
+        <View style={[styles.content, { paddingTop: view.mode === "home" ? insets.top + 20 : HEADER_BUTTON_TOP + 50 }]}>
           {view.mode === "home" && (
             <HomeScreen
               lang={lang}
@@ -345,8 +395,16 @@ function AppContent() {
           {view.mode === "practiceHome" && (
             <PracticeHomeScreen
               lang={lang}
-              onChapter={(chapterId) => setView({ mode: "chapter", chapterId })}
+              onChapter={(chapterId, fromModal) => {
+                if (fromModal) {
+                  setSogouModalSource(fromModal);
+                } else {
+                  setSogouModalSource(null);
+                }
+                setView({ mode: "chapter", chapterId });
+              }}
               onBack={() => setView({ mode: "home" })}
+              initialSogouModal={sogouModalSource}
             />
           )}
 
@@ -363,7 +421,7 @@ function AppContent() {
             <ChapterScreen
               lang={lang}
               chapterId={view.chapterId}
-              onBack={() => setView({ mode: "practiceHome" })}
+              onBack={handleChapterBack}
             />
           )}
 
@@ -435,9 +493,17 @@ const styles = StyleSheet.create({
   containerHome: {
     backgroundColor: "transparent",
   },
-  langSwitchContainer: {
+  langSoundContainer: {
     position: "absolute",
     right: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    zIndex: 100,
+  },
+  backButtonContainer: {
+    position: "absolute",
+    left: 12,
     zIndex: 100,
   },
   content: {

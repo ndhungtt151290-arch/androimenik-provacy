@@ -7,7 +7,10 @@ import {
   StyleSheet,
   Pressable,
 } from "react-native";
-import type { Lang } from "../types";
+import type { Lang, MaruBatsu, QuestionBank } from "../types";
+import { getChapterStats } from "../lib/dataUtils";
+
+const bank: QuestionBank = require("../data/questions").default;
 
 interface SubChapter {
   id: string;
@@ -20,6 +23,7 @@ interface SubChapterModalProps {
   title: string;
   subChapters: SubChapter[];
   lang: Lang;
+  practiceProgress: Record<string, Record<string, MaruBatsu>>;
   onSelect: (chapterId: string) => void;
   onClose: () => void;
 }
@@ -29,6 +33,7 @@ export function SubChapterModal({
   title,
   subChapters,
   lang,
+  practiceProgress,
   onSelect,
   onClose,
 }: SubChapterModalProps) {
@@ -41,18 +46,30 @@ export function SubChapterModal({
           <Text style={styles.title}>{title}</Text>
 
           <View style={styles.grid}>
-            {subChapters.map((sub) => (
-              <TouchableOpacity
-                key={sub.id}
-                style={styles.chapterBtn}
-                onPress={() => onSelect(sub.id)}
-                activeOpacity={0.7}
-              >
-                <Text style={styles.chapterBtnName}>
-                  {lang === "vi" ? sub.viName : sub.name}
-                </Text>
-              </TouchableOpacity>
-            ))}
+            {subChapters.map((sub) => {
+              const { correct, total } = getChapterStats(sub.id, bank, practiceProgress);
+              const pct = total > 0 ? Math.min((correct / total) * 100, 100) : 0;
+              return (
+                <TouchableOpacity
+                  key={sub.id}
+                  style={styles.chapterBtn}
+                  onPress={() => onSelect(sub.id)}
+                  activeOpacity={0.7}
+                >
+                  <Text style={styles.chapterBtnName}>
+                    {lang === "vi" ? sub.viName : sub.name}
+                  </Text>
+                  <View style={styles.progressTrack}>
+                    <View style={[styles.progressFill, { width: `${pct}%` }]} />
+                  </View>
+                  {total > 0 && (
+                    <Text style={styles.countText}>
+                      {correct}/{total}{lang === "vi" ? " câu" : "問"}
+                    </Text>
+                  )}
+                </TouchableOpacity>
+              );
+            })}
           </View>
 
           <TouchableOpacity
@@ -120,6 +137,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "bold",
     color: "#1c1917",
+    marginBottom: 6,
   },
   closeBtn: {
     paddingVertical: 10,
@@ -133,5 +151,23 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#404040",
     fontSize: 14,
+  },
+  progressTrack: {
+    width: "100%",
+    height: 4,
+    backgroundColor: "rgba(0,0,0,0.1)",
+    borderRadius: 2,
+    overflow: "hidden",
+  },
+  progressFill: {
+    height: "100%",
+    backgroundColor: "#4ade80",
+    borderRadius: 2,
+  },
+  countText: {
+    fontSize: 11,
+    fontWeight: "bold",
+    color: "rgba(21, 128, 61, 0.85)",
+    marginTop: 4,
   },
 });

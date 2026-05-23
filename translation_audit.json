@@ -1,0 +1,42 @@
+[
+  {
+    "id": "menkyogentsuki_gentsuki_5_5_3",
+    "japanese": "道路の状況に関わらず、昼間に運転するときは、ライトをつける必要はない。",
+    "vietnamese": "Dù là ban ngày, tùy vào tình trạng đường mà vẫn cần bật đèn. Cụ thể, khi đi qua đường hầm hoặc nơi có sương mù dày đặc mà tầm nhìn dưới 50 mét thì bắt buộc phải bật đèn.",
+    "flags": [
+      "LENGTH_ISSUE"
+    ],
+    "reason": "Bản dịch quá dài (tỷ lệ: 4.83)",
+    "source": "simpleForExam"
+  },
+  {
+    "id": "menkyogentsuki_gentsuki_6_25_3",
+    "japanese": "本標識とは、規制標識・指示標識・警戒標識・補助標識の4つを指す。",
+    "vietnamese": "Biển báo được chia thành biển chính và biển phụ. Biển chính gồm 4 loại: biển cấm, biển hiệu lệnh, biển nguy hiểm và biển hướng dẫn.",
+    "flags": [
+      "LENGTH_ISSUE"
+    ],
+    "reason": "Bản dịch quá dài (tỷ lệ: 4.09)",
+    "source": "simpleForExam"
+  },
+  {
+    "id": "menkyogentsuki_gentsuki_3_14_5",
+    "japanese": "交差点やその付近以外の道路を通行中、後方から緊急ô tôが接近してきたときは、一方通行の道路では、左側もしくは右側に寄って進路を譲る。",
+    "vietnamese": "Trên đường một chiều (không phải giao lộ), khi xe ưu tiên tới gần từ phía sau, bạn có thể tấp sang bên trái hoặc bên phải để nhường đường.",
+    "flags": [
+      "MISSING_TERMS"
+    ],
+    "reason": "Thiếu thuật ngữ: \"通行\" (→ đi qua / lưu thông / đi ngang / qua / băng qua / đi vào / đi), \"急\" (→ dốc / gắt / thoai thoải / đứng)",
+    "source": "simple"
+  },
+  {
+    "id": "menkyogentsuki_gentsuki_3_14_5",
+    "japanese": "交差点やその付近以外の道路を通行中、後方から緊急ô tôが接近してきたときは、一方通行の道路では、左側もしくは右側に寄って進路を譲る。",
+    "vietnamese": "Trên đường một chiều (không phải giao lộ), khi xe ưu tiên tới gần từ phía sau, bạn có thể tấp sang bên trái hoặc bên phải để nhường đường.",
+    "flags": [
+      "MISSING_TERMS"
+    ],
+    "reason": "Thiếu thuật ngữ: \"通行\" (→ đi qua / lưu thông / đi ngang / qua / băng qua / đi vào / đi), \"急\" (→ dốc / gắt / thoai thoải / đứng)",
+    "source": "simpleForExam"
+  }
+]

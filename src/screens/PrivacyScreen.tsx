@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { BackHomeButton } from "../components/BackHomeButton";
 import { showInterstitialChapter } from "../utils/AdManager";
 import type { Lang } from "../types";
 
@@ -141,7 +140,6 @@ export function PrivacyScreen({ lang, onBack }: PrivacyScreenProps) {
 
   return (
     <View style={styles.container}>
-      <BackHomeButton onPress={() => showInterstitialChapter(onBack)} />
       <Text style={styles.title}>{T.title}</Text>
       <Text style={styles.versions}>{T.versions}</Text>
       <Text style={styles.lastUpdated}>{T.lastUpdated}</Text>

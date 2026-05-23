@@ -24,18 +24,52 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
     return true;
   });
 
-  // Deduplicate scenario groups by groupId before selecting 2
-  const seenGroupIds = new Set<string>();
-  const allScenarios = [...bank.scenarioGroups, ...bank.dangerScenarioGroups];
-  const uniqueScenarios = allScenarios.filter((g) => {
-    if (seenGroupIds.has(g.groupId)) return false;
-    seenGroupIds.add(g.groupId);
-    return true;
-  });
+  // Only use scenarioGroups (dangerScenarioGroups is 100% duplicate)
+  const uniqueScenarios = bank.scenarioGroups;
 
-  const picked = shuffle(uniqueSimple).slice(0, 46);
-  const scenarios = shuffle(uniqueScenarios).slice(0, 2);
+  // === PHASE 1: Proportional distribution of theory questions (câu 1-46) ===
+  const TARGET_SIMPLE = 46;
+  const THEORY_CHAPTERS = [
+    "運転の基礎知識",
+    "標識・標示・信号",
+    "道路の走行方法",
+    "追い越し・駐停車",
+    "危険な状況での運転",
+  ];
 
+  // Count questions per chapter
+  const chapterCounts: Record<string, number> = {};
+  let totalSimple = 0;
+  for (const ch of THEORY_CHAPTERS) {
+    chapterCounts[ch] = uniqueSimple.filter((q) => q.chapter === ch).length;
+    totalSimple += chapterCounts[ch];
+  }
+
+  // Shuffle questions within each chapter
+  const shuffledByChapter: Record<string, typeof uniqueSimple> = {};
+  for (const ch of THEORY_CHAPTERS) {
+    shuffledByChapter[ch] = shuffle(uniqueSimple.filter((q) => q.chapter === ch));
+  }
+
+  // Proportional allocation with rounding
+  const picked: typeof uniqueSimple = [];
+  let remaining = TARGET_SIMPLE;
+  for (const ch of THEORY_CHAPTERS) {
+    const ratio = chapterCounts[ch] / totalSimple;
+    const count = Math.round(ratio * TARGET_SIMPLE);
+    const actual = Math.min(count, chapterCounts[ch], remaining);
+    picked.push(...shuffledByChapter[ch].slice(0, actual));
+    remaining -= actual;
+  }
+
+  // === PHASE 2: Select 1 scenario from each chapter (câu 47, 48) ===
+  const ch11Scenarios = uniqueScenarios.filter((g) => g.chapter === "危険予測");
+  const ch12Scenarios = uniqueScenarios.filter((g) => g.chapter === "危険予測問題");
+
+  const scen1 = shuffle(ch11Scenarios)[0];
+  const scen2 = shuffle(ch12Scenarios)[0];
+
+  // === PHASE 3: Build exam items ===
   // Simple questions remain as is
   const simpleItems: ExamItem[] = picked.map((question) => ({
     type: "simple" as const,
@@ -44,7 +78,7 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
 
   // Flatten each scenario into 3 separate exam items
   const scenItems: ExamItem[] = [];
-  for (const group of scenarios) {
+  for (const group of [scen1, scen2]) {
     for (let i = 0; i < group.subs.length; i++) {
       const sub = group.subs[i];
       scenItems.push({
@@ -183,18 +217,11 @@ export function questionsForChapter(
   const scenarios: ScenarioGroup[] = [];
 
   for (const name of chapterNames) {
-    if (/^総合演習[1-5]$/.test(name)) {
-      simple.push(...bank.simple.filter(
-        (q) => q.chapter === "総合演習" && q.section?.startsWith(name + "-")
-      ));
-    } else {
-      simple.push(...bank.simple.filter((q) => q.chapter === name));
-    }
+    simple.push(...bank.simple.filter((q) => q.chapter === name));
   }
 
   scenarios.push(
     ...bank.scenarioGroups.filter((g) => chapterNames.includes(g.chapter)),
-    ...bank.dangerScenarioGroups.filter((g) => chapterNames.includes(g.chapter))
   );
 
   return { simple, scenarios };

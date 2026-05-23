@@ -1,19 +1,20 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect, useRef } from "react";
 import {
   View,
   Text,
   ScrollView,
   StyleSheet,
+  TouchableOpacity,
+  Modal,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
 import { AdBanner } from "../components/AdBanner";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
-import { BackHomeButton } from "../components/BackHomeButton";
 import { showInterstitialChapter } from "../utils/AdManager";
 import { questionsForChapter } from "../lib/exam";
 import { CHAPTER_VI } from "../lib/chapters";
-import { savePracticeProgress, loadPracticeProgress, addWrongAnswers } from "../lib/storage";
+import { savePracticeProgress, loadPracticeProgress } from "../lib/storage";
 import { SoundManager } from "../lib/SoundManager";
 import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup, ScenarioSub } from "../types";
 
@@ -60,19 +61,38 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [ans, setAns] = useState<Record<string, MaruBatsu | undefined>>({});
   const [show, setShow] = useState<Record<string, boolean>>({});
+  const [progressModalVisible, setProgressModalVisible] = useState(false);
+  const mainScrollViewRef = useRef<ScrollView>(null);
 
   const total = flat.length;
   const currentItem = flat[currentIdx];
 
+  // Helper function để lấy đáp án đúng của một câu
+  const getCorrectAnswer = (item: SimpleItem | ScenarioSubItem): MaruBatsu => {
+    return item.kind === "simple" ? item.q.answer : item.sub.answer;
+  };
+
+  // Helper function để lấy key của một câu
+  const getItemKey = (item: SimpleItem | ScenarioSubItem): string => {
+    return item.kind === "simple" ? item.q.id : `${item.group.groupId}_${item.subIndex}`;
+  };
+
+  // Tính số câu đã trả lời ĐÚNG và phần trăm tiến trình
+  const correctCount = flat.filter((item) => {
+    const key = getItemKey(item);
+    const userAnswer = ans[key];
+    if (userAnswer === undefined) return false;
+    return userAnswer === getCorrectAnswer(item);
+  }).length;
+  const progressPercent = total > 0 ? (correctCount / total) * 100 : 0;
+
   // Load saved practice progress on mount
   useEffect(() => {
     loadPracticeProgress().then((all) => {
-      setAns((prev) => ({
-        ...prev,
-        ...Object.fromEntries(
-          (all[chapterId] ?? []).map((id) => [id, prev[id]])
-        ),
-      }));
+      const savedAnswers = all[chapterId];
+      if (savedAnswers) {
+        setAns(savedAnswers);
+      }
     });
   }, [chapterId]);
 
@@ -90,14 +110,12 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   // Save progress whenever ans changes
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    const answeredIds = Object.keys(ans).filter((id) => ans[id] !== undefined);
-    savePracticeProgress(chapterId, answeredIds);
+    savePracticeProgress(chapterId, ans);
   }, [ans, chapterId]);
 
   if (total === 0) {
     return (
       <View style={styles.container}>
-        <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialChapter(onBack); }} />
         <Text style={styles.emptyText}>
           {lang === "vi"
             ? "Chưa có dữ liệu cho chương này."
@@ -114,6 +132,8 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
     right: lang === "vi" ? "Bạn đã đúng" : "正解",
     wrong: lang === "vi" ? "Bạn đã sai" : "不正解",
     scenarioHint: lang === "vi" ? "Câu hỏi tình huống" : "イラスト問題",
+    progress: lang === "vi" ? "Tiến trình" : "進捗",
+    close: lang === "vi" ? "Đóng" : "閉じる",
   };
 
   // Get answer for current question
@@ -127,29 +147,13 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   // Handle answer
   const handleAnswer = async (v: MaruBatsu) => {
     let key: string;
-    let isWrong = false;
 
     if (currentItem.kind === "simple") {
       key = currentItem.q.id;
-      isWrong = v !== currentItem.q.answer;
       setAns((a) => ({ ...a, [key]: v }));
     } else {
       key = `${currentItem.group.groupId}_${currentItem.subIndex}`;
-      isWrong = v !== currentItem.sub.answer;
       setAns((a) => ({ ...a, [key]: v }));
-    }
-
-    // Record wrong answer after state update
-    if (isWrong) {
-      await new Promise<void>((resolve) => {
-        setAns((prev) => {
-          const qId = currentItem.kind === "simple"
-            ? currentItem.q.id
-            : `${currentItem.group.groupId}_${currentItem.subIndex}`;
-          addWrongAnswers([qId]).then(resolve).catch(resolve);
-          return prev;
-        });
-      });
     }
   };
 
@@ -163,8 +167,8 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialChapter(onBack); }} />
       <ScrollView
+        ref={mainScrollViewRef}
         style={styles.container}
         contentContainerStyle={[
           styles.scrollContent,
@@ -173,18 +177,20 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.progressRow}>
-          <Text style={styles.progressBadge}>
-            {lang === "vi"
-              ? `Câu ${currentIdx + 1}/${total}`
-              : `${currentIdx + 1}/${total}問`}
-          </Text>
-          <Text style={styles.chapterName}>
-            {tx(
-              CHAPTER_VI[chapterId] ?? chapterId,
-              CHAPTER_VI[chapterId] ?? chapterId,
-              lang
-            )}
-          </Text>
+          {/* Progress Bar */}
+          <View style={styles.progressBarContainer}>
+            <View style={styles.progressBarBg}>
+              <View style={[styles.progressBarFill, { width: `${progressPercent}%` }]} />
+            </View>
+            <TouchableOpacity
+              onPress={() => setProgressModalVisible(true)}
+              style={styles.progressTextBtn}
+            >
+              <Text style={styles.progressText}>
+                {currentIdx + 1}/{total}
+              </Text>
+            </TouchableOpacity>
+          </View>
         </View>
 
         <View style={styles.questionCard}>
@@ -266,6 +272,81 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
 
       {/* Ad Banner */}
       <AdBanner />
+
+      {/* Progress Modal */}
+      <Modal
+        visible={progressModalVisible}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setProgressModalVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContent}>
+            <View style={styles.modalHeader}>
+              <Text style={styles.modalTitle}>{L.progress}</Text>
+              <TouchableOpacity
+                onPress={() => setProgressModalVisible(false)}
+                style={styles.modalCloseBtn}
+              >
+                <Text style={styles.modalCloseText}>✕</Text>
+              </TouchableOpacity>
+            </View>
+
+            {/* Modal Progress Bar */}
+            <View style={styles.modalProgressBarContainer}>
+              <View style={styles.modalProgressBarBg}>
+                <View style={[styles.modalProgressBarFill, { width: `${progressPercent}%` }]} />
+              </View>
+              <Text style={styles.modalProgressText}>
+                {correctCount}/{total}
+              </Text>
+            </View>
+
+            {/* Questions Grid */}
+            <ScrollView style={styles.modalGridContainer} showsVerticalScrollIndicator={false}>
+              <View style={styles.modalGrid}>
+                {flat.map((item, i) => {
+                  const key = item.kind === "simple"
+                    ? item.q.id
+                    : `${item.group.groupId}_${item.subIndex}`;
+                  const answered = ans[key] !== undefined;
+                  const correctAnswer = item.kind === "simple" ? item.q.answer : item.sub.answer;
+                  const isCorrect = answered && ans[key] === correctAnswer;
+                  const isWrong = answered && ans[key] !== correctAnswer;
+                  const isCurrent = i === currentIdx;
+                  return (
+                    <TouchableOpacity
+                      key={key + i}
+                      onPress={() => {
+                        setCurrentIdx(i);
+                        setProgressModalVisible(false);
+                        mainScrollViewRef.current?.scrollTo({ y: 0, animated: true });
+                      }}
+                      style={[
+                        styles.modalGridBtn,
+                        isCurrent && styles.modalGridBtnCurrent,
+                        isCorrect && styles.modalGridBtnCorrect,
+                        isWrong && styles.modalGridBtnWrong,
+                        !answered && styles.modalGridBtnUnanswered,
+                      ]}
+                    >
+                      <Text style={styles.modalGridBtnText}>{i + 1}</Text>
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+            </ScrollView>
+
+            {/* Close Button */}
+            <TouchableOpacity
+              onPress={() => setProgressModalVisible(false)}
+              style={styles.modalCloseButton}
+            >
+              <Text style={styles.modalCloseButtonText}>{L.close}</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }
@@ -276,27 +357,55 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   emptyText: { color: "#fde68a", fontSize: 14 },
   progressRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
     marginBottom: 12,
   },
-  progressBadge: {
-    fontSize: 12,
-    backgroundColor: "rgba(31, 26, 24, 0.02)",
-    color: "rgba(22, 21, 21, 0.99)",
+  progressBarContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+  },
+  progressBarBg: {
+    flex: 1,
+    height: 8,
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+    borderRadius: 4,
+    overflow: "hidden",
+  },
+  progressBarFill: {
+    height: "100%",
+    backgroundColor: "#059669",
+    borderRadius: 4,
+  },
+  progressText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "rgba(237, 239, 245, 0.86)",
+    minWidth: 40,
+    textAlign: "center",
+  },
+  progressTextBtn: {
+    minWidth: 44,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "rgb(72, 161, 12)",
     paddingHorizontal: 10,
     paddingVertical: 4,
-    borderRadius: 999,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: "rgba(224, 224, 224, 0.14)",
+    shadowColor: "rgba(10, 10, 10, 0.86)",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.9,
+    shadowRadius: 2,
+    elevation: 2,
   },
-  chapterName: { fontSize: 15, color: "rgba(26, 109, 6, 0.93)" },
   questionCard: {
     backgroundColor: "rgba(255,255,255,0.15)",
     borderRadius: 14,
     padding: 14,
     marginBottom: 12,
     borderWidth: 1,
-    borderColor: "rgba(0,0,0,0.1)",
+    borderColor: "rgba(197, 188, 188, 0.1)",
     minHeight: 280,
   },
   questionInner: { flex: 1 },
@@ -319,9 +428,6 @@ const styles = StyleSheet.create({
     color: "#111",
     marginBottom: 12,
     textAlign: "center",
-    numberOfLines: 3,
-    minimumFontScale: 0.8,
-    includeFontPadding: false,
   },
   questionImage: {
     width: "100%",
@@ -345,18 +451,11 @@ const styles = StyleSheet.create({
     color: "#111",
     textAlign: "center",
     marginTop: 8,
-    adjustsFontSizeToFit: true,
-    numberOfLines: 4,
-    minimumFontScale: 0.75,
-    includeFontPadding: false,
   },
   ansCard: {
-    backgroundColor: "rgba(255,255,255,0.8)",
-    borderRadius: 10,
-    padding: 12,
-    marginTop: 8,
-    borderWidth: 1,
-    borderColor: "rgba(120,53,15,0.3)",
+    padding: 2,
+    marginTop: 5,
+    backgroundColor: "transparent",
   },
   ansLabel: { fontSize: 14, fontWeight: "bold", color: "#111" },
   ansExplanation: {
@@ -372,4 +471,114 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   subBtnsWrap: { marginTop: 10 },
+
+  // Modal styles
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
+  },
+  modalContent: {
+    backgroundColor: "#fff",
+    borderRadius: 16,
+    padding: 20,
+    width: "90%",
+    maxHeight: "80%",
+  },
+  modalHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 16,
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#111",
+  },
+  modalCloseBtn: {
+    padding: 4,
+  },
+  modalCloseText: {
+    fontSize: 18,
+    color: "#666",
+  },
+  modalProgressBarContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    marginBottom: 20,
+  },
+  modalProgressBarBg: {
+    flex: 1,
+    height: 10,
+    backgroundColor: "#e5e5e5",
+    borderRadius: 5,
+    overflow: "hidden",
+  },
+  modalProgressBarFill: {
+    height: "100%",
+    backgroundColor: "#059669",
+    borderRadius: 5,
+  },
+  modalProgressText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#fff",
+    minWidth: 45,
+    textAlign: "right",
+  },
+  modalGridContainer: {
+    maxHeight: 300,
+    marginBottom: 16,
+    paddingHorizontal: 4,
+    paddingTop: 6,
+  },
+  modalGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 6,
+  },
+  modalGridBtn: {
+    width: 28,
+    height: 28,
+    borderRadius: 6,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  modalGridBtnCurrent: {
+    borderWidth: 2,
+    borderColor: "rgba(92, 92, 92, 0.94)",
+    transform: [{ scale: 1.1 }],
+  },
+  modalGridBtnAnswered: {
+    backgroundColor: "rgb(70, 158, 12)",
+  },
+  modalGridBtnCorrect: {
+    backgroundColor: "rgb(31, 160, 19)",
+  },
+  modalGridBtnWrong: {
+    backgroundColor: "rgb(239, 68, 68)",
+  },
+  modalGridBtnUnanswered: {
+    backgroundColor: "rgb(192, 195, 212)",
+  },
+  modalGridBtnText: {
+    fontSize: 10,
+    fontWeight: "bold",
+    color: "#fff",
+  },
+  modalCloseButton: {
+    backgroundColor: "rgba(197, 197, 197, 0.25)",
+    paddingVertical: 12,
+    borderRadius: 10,
+    alignItems: "center",
+  },
+  modalCloseButtonText: {
+    fontSize: 14,
+    fontWeight: "bold",
+    color: "rgb(9, 40, 107)",
+  },
 });

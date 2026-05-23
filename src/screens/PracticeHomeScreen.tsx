@@ -1,41 +1,72 @@
 import React, { useMemo, useState, useEffect } from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { CHAPTER_VI, CHAPTER_MAP } from "../lib/chapters";
 import { loadPracticeProgress } from "../lib/storage";
+import { getChapterStats, getChapterTotal } from "../lib/dataUtils";
 import { BTN } from "../theme/buttonTokens";
 import { AdBanner } from "../components/AdBanner";
-import { BackHomeButton } from "../components/BackHomeButton";
 import { SoundManager } from "../lib/SoundManager";
 import { showInterstitialChapter } from "../utils/AdManager";
 import { ConfirmDialog } from "../components/ConfirmDialog";
 import { SubChapterModal } from "../components/SubChapterModal";
-import type { QuestionBank, Lang } from "../types";
+import type { QuestionBank, Lang, MaruBatsu } from "../types";
 
 const bank: QuestionBank = require("../data/questions").default;
 
+const SOGOU_ENSHU_ALL = [
+  { id: "総合演習1", name: "総合演習 1", viName: "Ôn tập tổng hợp 1" },
+  { id: "総合演習2", name: "総合演習 2", viName: "Ôn tập tổng hợp 2" },
+  { id: "総合演習3", name: "総合演習 3", viName: "Ôn tập tổng hợp 3" },
+  { id: "総合演習4", name: "総合演習 4", viName: "Ôn tập tổng hợp 4" },
+  { id: "総合演習5", name: "総合演習 5", viName: "Ôn tập tổng hợp 5" },
+  { id: "総合演習6", name: "総合演習 6", viName: "Ôn tập tổng hợp 6" },
+];
+
 interface PracticeHomeScreenProps {
   lang: Lang;
-  onChapter: (chapterId: string) => void;
+  onChapter: (chapterId: string, fromModal?: "main" | "allChapters") => void;
   onBack: () => void;
+  initialSogouModal?: "main" | "allChapters" | null;
 }
 
-export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScreenProps) {
+export function PracticeHomeScreen({ lang, onChapter, onBack, initialSogouModal = null }: PracticeHomeScreenProps) {
   const insets = useSafeAreaInsets();
-  const [practiceProgress, setPracticeProgress] = useState<Record<string, string[]>>({});
+  const [practiceProgress, setPracticeProgress] = useState<Record<string, Record<string, MaruBatsu>>>({});
   const [showReset, setShowReset] = useState(false);
-  const [showSubChapter, setShowSubChapter] = useState(false);
+  const [showSubChapter, setShowSubChapter] = useState(initialSogouModal === "main");
+  const [showAllChapters, setShowAllChapters] = useState(initialSogouModal === "allChapters");
 
   useEffect(() => {
     loadPracticeProgress().then(setPracticeProgress);
   }, []);
 
+  // Sync modal state when initialSogouModal changes (back from chapter)
+  useEffect(() => {
+    if (initialSogouModal === "main") {
+      setShowSubChapter(true);
+      setShowAllChapters(false);
+    } else if (initialSogouModal === "allChapters") {
+      setShowSubChapter(false);
+      setShowAllChapters(true);
+    }
+  }, [initialSogouModal]);
+
   const handleResetProgress = async () => {
-    await AsyncStorage.removeItem("gentsuki_practice_progress");
+    await AsyncStorage.removeItem("gentsuki_practice_progress_v2");
     setPracticeProgress({});
     setShowReset(false);
   };
+
+  // Helper: đếm số câu đúng của một chapter (hỗ trợ đệ quy)
+  const countCorrectForChapter = useMemo(() => {
+    const getCorrectCount = (chapterId: string): number => {
+      const stats = getChapterStats(chapterId, bank, practiceProgress);
+      return stats.correct;
+    };
+    return getCorrectCount;
+  }, [practiceProgress]);
 
   const chapterCountMap = useMemo(() => {
     const map: Record<string, number> = {};
@@ -43,9 +74,6 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
       map[q.chapter] = (map[q.chapter] ?? 0) + 1;
     }
     for (const g of bank.scenarioGroups) {
-      map[g.chapter] = (map[g.chapter] ?? 0) + g.subs.length;
-    }
-    for (const g of bank.dangerScenarioGroups) {
       map[g.chapter] = (map[g.chapter] ?? 0) + g.subs.length;
     }
     return map;
@@ -60,13 +88,30 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
 
   return (
     <View style={styles.container}>
-      <BackHomeButton onPress={() => { SoundManager.playTapClick(); showInterstitialChapter(onBack); }} />
       <View style={styles.header}>
         <Text style={styles.title}>{L.title}</Text>
       </View>
 
-      <View style={styles.scrollWrapper}>
+      <ScrollView style={styles.scrollWrapper} showsVerticalScrollIndicator={false}>
         <View style={[styles.scrollContent, { paddingBottom: insets.bottom + 8 }]}>
+          {/* Button Tất cả 6 phần */}
+          <View style={styles.allChaptersBtnWrapper}>
+            <TouchableOpacity
+              style={styles.allChaptersBtn}
+              onPress={() => {
+                SoundManager.playTapClick();
+                setShowAllChapters(true);
+              }}
+            >
+              <Text style={styles.allChaptersBtnText}>
+                {lang === "vi" ? "Ôn tập tổng hợp" : "練習 综合問題"}
+              </Text>
+              <Text style={styles.allChaptersBtnSub}>
+                {lang === "vi" ? "Chọn 1 trong 6 phần để luyện tập" : "6章から1つを選んで練習"}
+              </Text>
+            </TouchableOpacity>
+          </View>
+
           <View style={styles.chapterGrid}>
             {(() => {
               const rows: string[][] = [];
@@ -89,7 +134,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
                         key={chapterId}
                         onPress={() => {
                           SoundManager.playTapClick();
-                          if (chapterName === "総合演習") {
+                          if (chapterName === "総合演習" || chapterId === "総合演習") {
                             setShowSubChapter(true);
                           } else {
                             onChapter(chapterId);
@@ -102,9 +147,10 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
                         activeOpacity={0.7}
                       >
                         {(() => {
-                          const answered = practiceProgress[chapterId] ?? [];
-                          if (answered.length === 0 || count === 0) return null;
-                          const pct = Math.min((answered.length / count) * 100, 100);
+                          const correctCount = countCorrectForChapter(chapterId);
+                          const totalCount = chapterCountMap[chapterId] ?? 0;
+                          if (totalCount === 0) return null;
+                          const pct = totalCount > 0 ? Math.min((correctCount / totalCount) * 100, 100) : 0;
                           return (
                             <View style={styles.progressTrack}>
                               <View style={[styles.progressFill, { width: `${pct}%` }]} />
@@ -120,7 +166,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
                             { color: isIllust ? "rgba(8, 8, 8, 0.8)" : "rgba(24, 73, 5, 0.8)" },
                           ]}
                         >
-                          {count}
+                          {countCorrectForChapter(chapterId)}/{chapterCountMap[chapterId] ?? 0}
                           {L.questions}
                         </Text>
                       </TouchableOpacity>
@@ -154,14 +200,27 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
               { id: "総合演習5", name: "総合演習 5", viName: "Ôn tập tổng hợp 5" },
             ]}
             lang={lang}
+            practiceProgress={practiceProgress}
             onSelect={(id) => {
               setShowSubChapter(false);
-              onChapter(id);
+              onChapter(id, "main");
             }}
             onClose={() => setShowSubChapter(false)}
           />
+          <SubChapterModal
+            visible={showAllChapters}
+            title={lang === "vi" ? "Ôn tập tổng hợp (6 phần)" : "総合問題 (全6章)"}
+            subChapters={SOGOU_ENSHU_ALL}
+            lang={lang}
+            practiceProgress={practiceProgress}
+            onSelect={(id) => {
+              setShowAllChapters(false);
+              onChapter(id, "allChapters");
+            }}
+            onClose={() => setShowAllChapters(false)}
+          />
         </View>
-      </View>
+      </ScrollView>
 
       {/* Ad Banner */}
       <AdBanner />
@@ -170,11 +229,38 @@ export function PracticeHomeScreen({ lang, onChapter, onBack }: PracticeHomeScre
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingTop: 50 },
+  container: { flex: 1, position: "relative" },
   header: { alignItems: "center", marginBottom: 8 },
-  title: { fontSize: 22, fontWeight: "900", color: "rgba(48, 122, 19, 0.99)" },
+  title: { fontSize: 22, fontWeight: "900",lineHeight: 28, color: "rgba(48, 122, 19, 0.99)" },
   scrollWrapper: { flex: 1, overflow: "hidden" },
   scrollContent: { paddingHorizontal: 0 },
+  allChaptersBtnWrapper: { paddingHorizontal: 8, marginBottom: 8 },
+  allChaptersBtn: {
+    backgroundColor: "rgb(40, 175, 7)",
+    borderRadius: 12,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    alignItems: "center",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.3)",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 4,
+  },
+  allChaptersBtnText: {
+    fontSize: 17,
+    fontWeight: "bold",
+    color: "#fff",
+    textAlign: "center",
+  },
+  allChaptersBtnSub: {
+    fontSize: 12,
+    color: "rgba(255,255,255,0.85)",
+    marginTop: 4,
+    textAlign: "center",
+  },
   chapterGrid: { paddingHorizontal: 8, paddingBottom: 4, marginTop: 6 },
   gridRow: { flexDirection: "row", marginBottom: 6, gap: 4 },
   gridCell: {
@@ -213,14 +299,14 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
     paddingVertical: 10,
     borderRadius: 10,
-    borderWidth: 0.5,
-    borderColor: "rgba(0,0,0,0.12)",
+    borderWidth: 2,
+    borderColor: "rgba(31, 90, 7, 0.12)",
     alignItems: "center",
-    opacity: 0.55,
+    opacity: 0.6,
   },
   resetBtnText: {
-    fontSize: 12,
-    color: "#666",
+    fontSize: 14,
+    color: "rgb(31, 104, 12)",
     fontWeight: "500",
   },
 });

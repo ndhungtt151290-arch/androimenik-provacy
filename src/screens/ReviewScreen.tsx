@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
-import { BackHomeButton } from "../components/BackHomeButton";
 import { Check, X } from "../components/Icons";
 import type { ExamItem, Lang } from "../types";
 
@@ -92,7 +91,6 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={onBackResults} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
@@ -176,7 +174,6 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
           })}
         </View>
 
-        <BackHomeButton onPress={onHome} />
       </ScrollView>
     </View>
   );

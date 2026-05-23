@@ -38,7 +38,6 @@ export type QuestionBank = {
   simple: SimpleQuestion[];
   simpleForExam: SimpleQuestion[];
   scenarioGroups: ScenarioGroup[];
-  dangerScenarioGroups: ScenarioGroup[];
 };
 
 export type ExamSimpleItem = {

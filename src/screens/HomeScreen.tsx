@@ -258,33 +258,39 @@ export function HomeScreen({
 
   return (
     <View style={styles.container}>
-      <View style={[styles.headerImages, { paddingTop: insets.top }]}>
-        <Image source={imgS1} style={styles.headerLogo} />
-        <Image source={imgS2} style={styles.headerHero} />
+      <View style={styles.headerSection}>
+        <View style={styles.headerImages}>
+          <Image source={imgS1} style={styles.headerLogo} />
+          <Image source={imgS2} style={styles.headerHero} />
+        </View>
       </View>
 
-      <View style={styles.actionBtnContainer}>
-        <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onStartExam(); }} style={styles.actionBtn} activeOpacity={0.8}>
-          <Image source={imgS3} style={styles.actionImage} />
-          <View style={styles.actionOverlay}>
-            <Text style={styles.actionText}>
-              {lang === "vi" ? "Vào phòng thi" : "模擬試験スタート"}
-            </Text>
-          </View>
-        </TouchableOpacity>
+      <View style={styles.buttonSection}>
+        <View style={styles.buttonCenterWrapper}>
+          <View style={styles.actionBtnContainer}>
+            <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onStartExam(); }} style={styles.actionBtn} activeOpacity={0.8}>
+              <Image source={imgS3} style={styles.actionImage} />
+              <View style={styles.actionOverlay}>
+                <Text style={styles.actionText}>
+                  {lang === "vi" ? "Vào phòng thi" : "模擬試験スタート"}
+                </Text>
+              </View>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onStartPractice(); }} style={styles.actionBtn} activeOpacity={0.8}>
-          <Image source={imgS3_1} style={styles.actionImage} />
-          <View style={styles.actionOverlay}>
-            <Text style={styles.actionText}>
-              {lang === "vi" ? "Luyện tập" : "練習"}
-            </Text>
-          </View>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onStartPractice(); }} style={styles.actionBtn} activeOpacity={0.8}>
+              <Image source={imgS3_1} style={styles.actionImage} />
+              <View style={styles.actionOverlay}>
+                <Text style={styles.actionText}>
+                  {lang === "vi" ? "Luyện tập" : "練習"}
+                </Text>
+              </View>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => { SoundManager.playTapClick(); setMenuVisible(true); }} activeOpacity={0.8}>
-          <Image source={imgMenu} style={styles.menuIcon} />
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => { SoundManager.playTapClick(); setMenuVisible(true); }} activeOpacity={0.8}>
+              <Image source={imgMenu} style={styles.menuIcon} />
+            </TouchableOpacity>
+          </View>
+        </View>
       </View>
 
       <View style={[styles.bottomRow, { paddingBottom: insets.bottom + 8 }]}>
@@ -946,11 +952,39 @@ export function HomeScreen({
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "space-between"  },
-  headerImages: { alignItems: "center", width: "100%", overflow: "visible", paddingHorizontal: 12, backgroundColor: "transparent" },
-  headerLogo: { position: "absolute",marginTop: 10, overflow: "visible", width: 190, height: 140 },
-  headerHero: { position: "absolute",marginTop: 170, height: 90, width:330},
-  actionBtnContainer: { alignItems: "center", paddingHorizontal: BTN.containerPaddingH, gap: BTN.gapBetweenBtns, marginTop: 95  },
+  container: { flex: 1 },
+  headerSection: {
+    height:250,
+    justifyContent: "center",
+  },
+  headerImages: {
+    alignItems: "center",
+    width: "100%",
+    paddingHorizontal: 12,
+    backgroundColor: "transparent",
+  },
+  headerLogo: { 
+    overflow: "visible", 
+    width: 190, 
+    height: 140,
+  },
+  headerHero: { 
+    marginTop: 10,
+    height: 90, 
+    width: 330,
+  },
+  buttonCenterWrapper: {
+    alignItems: "center",
+  },
+  buttonSection: {
+    marginTop: 20,
+    paddingBottom: 0,
+  },
+  actionBtnContainer: { 
+    alignItems: "center", 
+    justifyContent: "center",
+    gap: BTN.gapBetweenBtns,
+  },
   actionBtn: {
     alignSelf: "center",
     width: BTN.width,
@@ -976,7 +1010,19 @@ const styles = StyleSheet.create({
     width: 58,
     height: 58,
   },
-  bottomRow: { paddingHorizontal: 12, flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingTop: 4, zIndex: 1, elevation: 5 },
+  bottomRow: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingHorizontal: 12,
+    paddingBottom: 0,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingTop: 4,
+    zIndex: 1,
+  },
   privacyLink: { fontSize: 12, color: "rgb(1, 6, 19)", textDecorationLine: "underline" },
   credit: { fontSize: 9, color: "rgba(0, 0, 0, 0.95)", fontWeight: "600", letterSpacing: 5 },
   overlay: { flex: 1, backgroundColor: "rgba(22, 21, 21, 0.0)", justifyContent: "flex-end" },
@@ -1180,7 +1226,7 @@ const styles = StyleSheet.create({
   examCentersTitle: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "#1c1917",
+    color: "rgb(8, 9, 70)",
     textAlign: "center",
     marginBottom: 20,
     marginTop: 6,
@@ -1192,7 +1238,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
     color: "#0a2980",
-    backgroundColor: "rgba(10, 41, 128, 0.08)",
+    backgroundColor: "rgba(217, 223, 240, 0.23)",
     paddingVertical: 10,
     paddingHorizontal: 14,
     borderRadius: 10,
@@ -1245,7 +1291,7 @@ const styles = StyleSheet.create({
   centerName: {
     fontSize: 14,
     fontWeight: "700",
-    color: "#78350f",
+    color: "rgb(8, 126, 8)",
     marginBottom: 8,
   },
   detailRow: {

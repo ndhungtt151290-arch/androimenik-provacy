@@ -16,6 +16,7 @@ export const CHAPTERS: ChapterDef[] = [
   { id: "ch8", jp: "総合演習3", vi: "Ôn tập tổng hợp 3" },
   { id: "ch9", jp: "総合演習4", vi: "Ôn tập tổng hợp 4" },
   { id: "ch10", jp: "総合演習5", vi: "Ôn tập tổng hợp 5" },
+  { id: "ch13", jp: "総合演習6", vi: "Ôn tập tổng hợp 6" },
   { id: "ch11", jp: "危険予測", vi: "Dự đoán nguy hiểm" },
   { id: "ch12", jp: "危険予測問題", vi: "Tình huống minh hoạ" },
 ];
@@ -28,6 +29,7 @@ export const CHAPTER_VI: Record<string, string> = Object.fromEntries([
   ["総合演習3", "Ôn tập tổng hợp 3"],
   ["総合演習4", "Ôn tập tổng hợp 4"],
   ["総合演習5", "Ôn tập tổng hợp 5"],
+  ["総合演習6", "Ôn tập tổng hợp 6"],
 ]);
 
 export const CHAPTER_JP: Record<string, string> = Object.fromEntries(

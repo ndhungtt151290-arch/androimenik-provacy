@@ -21,8 +21,13 @@ export function BackHomeButton({ onPress }: BackHomeButtonProps) {
 
 const styles = StyleSheet.create({
   button: {
+    position: "absolute",
+    top: 6,
+    left: 0,
     padding: 4,
     alignSelf: "flex-start",
+    paddingTop: 2,
+    zIndex: 100,
   },
   icon: {
     width: 44,

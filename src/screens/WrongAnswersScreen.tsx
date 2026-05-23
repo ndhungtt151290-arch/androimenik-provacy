@@ -11,7 +11,6 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
 import { AdBanner } from "../components/AdBanner";
-import { BackHomeButton } from "../components/BackHomeButton";
 import { loadWrongAnswers } from "../lib/storage";
 import type { Lang, QuestionBank, SimpleQuestion, WrongAnswerStats } from "../types";
 
@@ -70,7 +69,6 @@ export function WrongAnswersScreen({ lang, onBack }: WrongAnswersScreenProps) {
   if (sortedList.length === 0) {
     return (
       <View style={styles.screenContainer}>
-        <BackHomeButton onPress={onBack} />
         <View style={styles.emptyContainer}>
           <Text style={styles.emptyIcon}>📝</Text>
           <Text style={styles.emptyTitle}>
@@ -103,7 +101,6 @@ export function WrongAnswersScreen({ lang, onBack }: WrongAnswersScreenProps) {
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={onBack} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[

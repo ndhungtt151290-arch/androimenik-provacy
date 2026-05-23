@@ -14,7 +14,6 @@ import { AdBanner } from "../components/AdBanner";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
 import { TimerDisplay } from "../components/TimerDisplay";
-import { BackHomeButton } from "../components/BackHomeButton";
 import { SoundManager } from "../lib/SoundManager";
 import type { ExamItem, ExamSimpleItem, Lang, MaruBatsu, QuestionBank } from "../types";
 
@@ -210,7 +209,6 @@ export function ExamScreen({
 
   return (
     <View style={styles.screenContainer}>
-      <BackHomeButton onPress={() => { SoundManager.playTapClick(); onBack(); }} />
       <ScrollView
         style={styles.container}
         contentContainerStyle={[

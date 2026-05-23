@@ -36,6 +36,10 @@ export const tips: Record<Lang, TipsContent> = {
         heading: "5. Khoảng cách an toàn với Người Đi Bộ",
         content: "Khi đi qua người đi bộ (hoặc xe đạp), nếu có khoảng cách an toàn (trên 1.5 mét) thì có thể đi bình thường. Nếu không có không gian rộng, bắt buộc phải đi chậm (Joko - 徐行).\n\n\"Gặp người đi bộ trên đường,\nRộng rãi thì lách, hẹp đường ĐI CHẬM ngay!\"",
       },
+      {
+        heading: "6. Phân biệt \"Biển Báo\" và \"Vạch Kẻ Đường\" (道路標識 vs 道路標示)",
+        content: "Biển báo giao thông (道路標識 - Dōro Hyōshiki):\n• Nhận diện: Các tấm biển được dựng trên cột, treo trên cao hoặc gắn ở mép đường.\n• Đặc điểm: Thường có hình tròn (cấm/bắt buộc), hình thoi (cảnh báo) hoặc hình vuông/chữ nhật (chỉ dẫn).\n• Hiệu lực: Có tác dụng từ vị trí đặt biển trở đi.\n\nVạch kẻ đường (道路標示 - Dōro Hyōji):\n• Nhận diện: Các hình vẽ, chữ viết, hoặc đường kẻ được sơn trực tiếp trên mặt đường.\n• Đặc điểm: Bao gồm cả chữ (ví dụ: \"バス専用\"), hình vẽ (mũi tên, hình thoi) hay các vạch kẻ phân làn.\n• Hiệu lực: Có tác dụng ngay tại vị trí vạch sơn trên mặt đường.\n\n\"Biển báo treo cột, Vạch kẻ nằm dưới đất!\"",
+      },
     ],
   },
   jp: {
@@ -61,6 +65,10 @@ export const tips: Record<Lang, TipsContent> = {
       {
         heading: "5. 歩行者との安全距離",
         content: "歩行者（または自転車）を通行する際、安全な間隔（1.5メートル以上）があれば通常通り通行できます。スペースがなければ、徐行（徐行）が義務付けられます。\n\n「歩行者に会ったら、\nスペースがあればスムーズに通過、\n狭い道は『徐行』바로 적용！」",
+      },
+      {
+        heading: "6. 「道路標識」と「道路標示」の見分け方",
+        content: "道路標識（Dōro Hyōshiki）：\n• 識別方法：柱に立っている、板が吊り下げられている、または道路の端に取り付けられている標識。\n• 特徴：通常是円形（禁止・命令）、ひし形（警告）、四角形・長方形（案内）。\n• 効力：標識の設置位置から適用される。\n\n道路標示（Dōro Hyōji）：\n• 識別方法：道路上直接に描かれたすべての絵、文字、または線。\n• 特徴：文字（例：「バス専用」）、絵（矢印、ひし形）、レーンを分ける線を含む。\n• 効力：道路上直接描かれた位置に適用される。\n\n「標識は柱に立つ、標示は地面に描く！」",
       },
     ],
   },

@@ -470,8 +470,8 @@
       "answer": "×",
       "explanation": "この標識は、幅員減少を示す。",
       "image": "menkyogentsuki_42.png",
-      "textVi": "Biển báo này cho thấy số làn đường  giảm bớt.",
-      "explanationVi": "Biển báo này cho thấy độ rộng của đường đang bị thu hẹp." 
+      "textVi": "Biển báo này cho thấy số làn đường đang giảm.",
+      "explanationVi": "Biển báo này cho thấy số làn đường đang giảm."
     },
     {
       "kind": "simple",
@@ -577,7 +577,7 @@
       "answer": "×",
       "explanation": "誤りである。この標示は、安全地帯を示し、停留所のような、車が通行、停車せず、歩行者が自由に通行するための場所であることを示す。ちなみに、立入り禁止部分の標示は、黄色の枠線内に白の斜線を引いたもの。",
       "image": "menkyogentsuki_51.png",
-      "textVi": "Vạch kẻ đường  này thể hiện phần cấm đi vào, cho thấy xe không được đi qua.",
+      "textVi": "Biển chỉ dẫn này thể hiện phần cấm đi vào, cho thấy xe không được đi qua.",
       "explanationVi": "Sai. Vạch kẻ này chỉ dẫn khu vực an toàn dành cho người đi bộ, các phương tiện không được phép đi vào hay dừng đỗ tại đây."
     },
     {
@@ -585,12 +585,12 @@
       "id": "menkyogentsuki_gentsuki_2_3_2",
       "chapter": "標識・標示・信号",
       "section": "標示の種類と意味",
-      "text": "この標示のある所では、BからAにはみ出して追い越しはできるが、AからBにはみ出して追い越しをしてはならない。",
-      "answer": "×",
+      "text": "この標示のある所では、AからBにはみ出して追い越しはできるが、BからAにはみ出して追い越しをしてはならない。",
+      "answer": "○",
       "explanation": "黄色は、はみ出し禁止と覚える。",
       "image": "menkyogentsuki_52.png",
-      "textVi": "Tại nơi có vạch kẻ đường này, có thể vượt từ B sang A, nhưng không được vượt từ A sang B.",
-      "explanationVi": "Hãy nhớ quy tắc vạch màu vàng: cấm lấn làn để vượt từ phía có vạch vàng sang phía bên kia."
+      "textVi": "Tại nơi có biển chỉ dẫn này, có thể vượt từ A sang B bằng cách lấn ra ngoài, nhưng không được vượt từ B sang A bằng cách lấn ra ngoài.",
+      "explanationVi": "Đúng. Hãy nhớ quy tắc vạch màu vàng: cấm lấn làn để vượt từ phía có vạch vàng sang phía bên kia."
     },
     {
       "kind": "simple",
@@ -601,7 +601,7 @@
       "answer": "○",
       "explanation": "黄色の実線は駐停車禁止を表す。ちなみに、黄色の破線は駐車禁止を表す。",
       "image": "menkyogentsuki_53.png",
-      "textVi": "Vạch kẻ đường này thể hiện cấm đỗ và dừng xe.",
+      "textVi": "Biển chỉ dẫn này thể hiện cấm đỗ và dừng xe.",
       "explanationVi": "Đúng. Vạch kẻ màu vàng nét liền ở mép đường biểu thị khu vực cấm cả dừng và đỗ xe."
     },
     {
@@ -613,7 +613,7 @@
       "answer": "○",
       "explanation": "ひし形の標示は横断歩道または自転車横断帯ありを示す。逆三角は前方優先道路の標示である。",
       "image": "menkyogentsuki_54.png",
-      "textVi": "Vạch kẻ đường này cho thấy phía trước có vạch qua đường cho người đi bộ hoặc làn đường cho xe đạp.",
+      "textVi": "Biển chỉ dẫn này cho thấy phía trước có vạch qua đường cho người đi bộ hoặc làn đường cho xe đạp.",
       "explanationVi": "Đúng. Hình thoi trên mặt đường là dấu hiệu báo trước sắp đến vạch qua đường cho người đi bộ hoặc làn đường cho xe đạp."
     },
     {
@@ -625,7 +625,7 @@
       "answer": "×",
       "explanation": "この標示は、転回禁止。後退は禁止されていない。",
       "image": "menkyogentsuki_55.png",
-      "textVi": "Tại nơi có Vạch kẻ đường này, cả quay đầu và lùi đều bị cấm.",
+      "textVi": "Tại nơi có biển chỉ dẫn này, cả quay đầu và lùi đều bị cấm.",
       "explanationVi": "Sai. Vạch kẻ này chỉ cấm quay đầu xe, hành động lùi xe không bị cấm."
     },
     {
@@ -989,7 +989,7 @@
       "text": "安全地帯のない停留所で、停止している路面電車に乗り降りする人がいるときは、後方で停止して待たねばならない。",
       "answer": "○",
       "explanation": "問題文の記述が正しい。安全地帯のない停留所では、後方で停止して待たねばならない。",
-      "textVi": "Tại bến xe điện không có khu vực an toàn, khi có người lên xuống xe điện đang dừng, phải dừng lại phía sau và chờ.",
+      "textVi": "Tại bến xe điện không có khu an toàn, khi có người lên xuống xe điện đang dừng, phải dừng lại phía sau và chờ.",
       "explanationVi": "Đúng. Tại các điểm dừng xe điện không có đảo an toàn, bạn phải dừng lại phía sau và chờ cho đến khi người lên xuống xe đi vào lề đường."
     },
     {
@@ -1000,7 +1000,7 @@
       "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
       "answer": "○",
       "explanation": "正しい。問題文の通り、安全地帯に歩行者がいなければ、徐行しなくてもよい。ちなみに、歩行者がいる場合には、徐行せねばならない。",
-      "textVi": "Khi xe đi qua bên cạnh khu vực an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
+      "textVi": "Khi xe đi qua bên cạnh khu an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
       "explanationVi": "Đúng. Nếu khu vực an toàn (đảo an toàn) hoàn toàn không có người đi bộ, bạn có thể đi qua mà không cần phải giảm tốc độ."
     },
     {
@@ -1011,7 +1011,7 @@
       "text": "安全地帯がなく、乗降者がいないとき、路面電車との間に1.5メートル以上の間隔があったので、徐行して進行した。",
       "answer": "○",
       "explanation": "この場合でも、必ず徐行せねばならない。",
-      "textVi": "Khi không có khu vực an toàn và không có người lên xuống, vì có khoảng cách hơn 1,5 mét với xe điện đang dừng ở bến nên đã giảm tốc độ để đi qua.",
+      "textVi": "Khi không có khu an toàn và không có người lên xuống, vì có khoảng cách hơn 1,5 mét với xe điện đang dừng ở bến nên đã giảm tốc độ để đi qua.",
       "explanationVi": "Đúng. Trong trường hợp này, việc giảm tốc độ là bắt buộc để đảm bảo an toàn dù có khoảng cách rộng với xe điện."
     },
     {
@@ -1066,7 +1066,7 @@
       "text": "歩行者がいる安全地帯のそばを通るときは、必ず一時停止せねばならない。",
       "answer": "×",
       "explanation": "必ず一時停止せねばならないのではなく、必ず徐行して進行せねばならない。",
-      "textVi": "Khi đi qua bên cạnh khu vực an toàn có người, nhất định phải dừng lại một lần.",
+      "textVi": "Khi đi qua bên cạnh khu an toàn có người, nhất định phải dừng lại một lần.",
       "explanationVi": "Sai. Khi đi qua gần khu vực an toàn có người đi bộ, bạn bắt buộc phải giảm tốc độ chứ không phải dừng lại hẳn."
     },
     {
@@ -1168,19 +1168,19 @@
       "explanation": "聴覚障害者標識のマーク。",
       "image": "menkyogentsuki_104.png",
       "textVi": "Biểu tượng này cho thấy có người bị khiếm thính đang lái xe.",
-      "explanationVi": "Đúng. Đây là nhãn dán biểu thị người lái xe có khiếm khuyết về thính giác."
+      "explanationVi": "Đúng. Đây là nhãn hiệu biểu thị người lái xe có khiếm khuyết về thính giác."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_3_8_5",
-      "chapter": "総合演習4",
-      "section": "4-2-1",
-      "text": "このステッカーを貼った車両に対し、速度を調整して割込みを行うことは、違反とはみなされません。",
-      "answer": "×",
+      "chapter": "道路の走行方法",
+      "section": "子どもや高齢者などのそばを通るとき",
+      "text": "危険を避けるためやむを得ない場合を除き、このマークを付けた車に、幅寄せしたり、前方に無理に割り込んではいけない。",
+      "answer": "○",
       "explanation": "このマークは高齢運転者標識。70歳以上の人が運転していることを示す。",
       "image": "menkyogentsuki_105.png",
-      "textVi": "Việc điều chỉnh tốc độ để tạt đầu xe có dán nhãn này không bị coi là vi phạm.",
-      "explanationVi": "Đây là nhãn dán dành cho người lái xe cao tuổi (trên 70 tuổi), cấm các hành vi chèn ép hoặc tạt đầu xe này."
+      "textVi": "Trừ khi cần thiết để tránh nguy hiểm, không được cố tình ép xe có dán nhãn này hay chen vào phía trước.",
+      "explanationVi": "Đúng. Đây là nhãn hiệu dành cho người lái xe cao tuổi (trên 70 tuổi), cấm các hành vi chèn ép hoặc tạt đầu xe này."
     },
     {
       "kind": "simple",
@@ -1297,13 +1297,13 @@
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_3_11_1",
       "chapter": "道路の走行方法",
-      "section": "1-200",
+      "section": "信号機のない交差点の優先関係",
       "text": "右図のような道幅の違う交差点では、Bの車は、Aの原動機付自転車を先に進行させねばならない。",
       "answer": "○",
       "explanation": "中央線の引かれているAの車の走っている道路が優先道路である。そのため、Aの車が優先される。",
       "image": "menkyogentsuki_116.png",
-      "textVi": "Ở giao lộ có độ rộng đường khác nhau như hình , xe B phải nhường xe gắn máy A đi trước.",
-      "explanationVi": "Con đường mà xe A đang chạy có kẻ vạch phân cách giữa là đường ưu tiên. Do đó, xe A được ưu tiên."
+      "textVi": "Ở giao lộ có độ rộng đường khác nhau như hình bên phải, xe B phải nhường xe gắn máy A đi trước.",
+      "explanationVi": "Đúng. Con đường có vạch kẻ trung tâm liên tục là đường ưu tiên, do đó phương tiện trên đường này được quyền đi trước."
     },
     {
       "kind": "simple",
@@ -1393,7 +1393,7 @@
       "answer": "○",
       "explanation": "左折ができる車両通行帯なので、直進や右折をすることはできない。",
       "image": "menkyogentsuki_124.png",
-      "textVi": "Không thể rẽ phải từ làn đường có vạch kẻ đường này.",
+      "textVi": "Không thể rẽ phải từ làn đường có biển chỉ dẫn này.",
       "explanationVi": "Đúng. Vì đây là làn đường được chỉ định dành riêng cho việc rẽ trái, bạn không được phép thực hiện rẽ phải từ làn này."
     },
     {
@@ -1416,7 +1416,7 @@
       "answer": "×",
       "explanation": "左折に指定された車両通行帯なので、直進や右折をすることはできない。",
       "image": "menkyogentsuki_126.png",
-      "textVi": "Có thể đi thẳng trên làn đường có vạch kẻ đường này.",
+      "textVi": "Có thể đi thẳng trên làn đường có biển chỉ dẫn này.",
       "explanationVi": "Sai. Đây là làn đường chỉ định rẽ trái, do đó phương tiện không được phép đi thẳng khi đang ở làn đường này."
     },
     {
@@ -1601,8 +1601,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_3_16_3",
-      "chapter": "総合演習5",
-      "section": "5-100",
+      "chapter": "標識・標示・信号",
+      "section": "標示の種類と意味",
       "text": "この標示のある場所では、AからBへ進路を変えてもよい。",
       "answer": "○",
       "explanation": "ちなみに、黄色の車両通行帯境界線が引かれている側であるBからAへの車線変更はできない。",
@@ -1856,11 +1856,12 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_4_3_1",
-      "chapter": "追い越し・駐停車",
-      "section": "7-7",
+      "chapter": "標識・標示・信号",
+      "section": "標示の種類と意味",
       "text": "この標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
       "answer": "○",
       "explanation": "問題文の記述が正しい。白の点線の標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
+      "image": "menkyogentsuki_166.png",
       "textVi": "Việc vượt xe bị cấm tại nơi giao cắt đường sắt và trong phạm vi 30 mét trước đó.",
       "explanationVi": "Đúng. Để đảm bảo an toàn, tuyệt đối không được vượt xe tại đường ray và khu vực sát gần đường ray."
     },
@@ -2084,8 +2085,8 @@
       "answer": "×",
       "explanation": "黄色の実線で塗られている場合は、駐停車禁止を表し、黄色の破線は、駐車禁止を表す。",
       "image": "menkyogentsuki_186.png",
-      "textVi": "Vạch kẻ đường này biểu thị việc cấm dừng và đỗ xe.",
-      "explanationVi": "Vạch vàng đứt đoạn biểu thị cấm đỗ xe (Chusha Kinshi). Chỉ có vạch vàng liền mới biểu thị cấm cả dừng và đỗ xe."
+      "textVi": "Biển báo này biểu thị việc cấm dừng và đỗ xe.",
+      "explanationVi": "Sai. Biển báo vạch vàng đứt đoạn biểu thị cấm đỗ xe (Chusha Kinshi). Chỉ có vạch vàng liền mới biểu thị cấm cả dừng và đỗ xe."
     },
     {
       "kind": "simple",
@@ -2096,7 +2097,7 @@
       "answer": "×",
       "explanation": "「3メートル以内」の部分が誤り。正しくは、5メートル以内である。",
       "textVi": "Khu vực cấm dừng và đỗ xe gần giao lộ là trong phạm vi 3 mét tính từ mép giao lộ.",
-      "explanationVi": "Khoảng cách đúng là 5 mét, không phải 3 mét."
+      "explanationVi": "Sai. Khoảng cách đúng là 5 mét, không phải 3 mét."
     },
     {
       "kind": "simple",
@@ -2803,8 +2804,8 @@
       "answer": "○",
       "explanation": "正しい。この標示は、駐車禁止の標示である。ちなみに停車は禁じられていない。",
       "image": "menkyogentsuki_265.png",
-      "textVi": "Vạch kẻ đường này biểu thị cấm đỗ xe.",
-      "explanationVi": "Đúng. Vạch này là vạch kẻ cấm đỗ xe (駐車禁止). Lưu ý rằng vạch kẻ đường này không cấm dừng xe (停車) để khách lên xuống hoặc chở hành lý."
+      "textVi": "Biển báo này biểu thị cấm đỗ xe.",
+      "explanationVi": "Đúng. Biển báo này là biển cấm đỗ xe (駐車禁止). Lưu ý rằng biển này không cấm dừng xe (停車) để khách lên xuống hoặc chở hành lý."
     },
     {
       "kind": "simple",
@@ -2887,8 +2888,8 @@
       "answer": "×",
       "explanation": "この標示は、普通自転車の交差点進入禁止を示す。普通自転車は、この標示の先の交差点に進入できない。なお普通自転車とは、車両をけん引しているものやタンデム自転車などを除いた、一般的な自転車のことである。",
       "image": "menkyogentsuki_331.png",
-      "textVi": "Xe đạp thường được phép đi vào giao lộ có vạch kẻ đường này.",
-      "explanationVi": "Sai. Vạch kẻ này cấm xe đạp thường đi vào giao lộ. Xe đạp thường không được phép đi vào giao lộ phía sau vạch kẻ. Lưu ý: xe đạp thường là xe đạp phổ thông, không bao gồm xe đạp đang kéo hoặc xe đạp hai người."
+      "textVi": "Xe đạp thường (普通自転車) được phép đi vào giao lộ có biển báo này.",
+      "explanationVi": "Sai. Biển báo này cấm xe đạp thường đi vào giao lộ. Xe đạp thường không được phép đi vào giao lộ phía sau biển báo. Lưu ý: xe đạp thường là xe đạp phổ thông, không bao gồm xe đạp đang kéo hoặc xe đạp hai người."
     },
     {
       "kind": "simple",
@@ -2911,8 +2912,8 @@
       "answer": "×",
       "explanation": "この標示は、停止禁止部分である。この場所で停止する恐れがあるときは、進入してはならない。",
       "image": "menkyogentsuki_342.png",
-      "textVi": "Vị trí có vạch kẻ này là khu vực cấm dừng xe, nhưng vẫn được phép đỗ xe.",
-      "explanationVi": "Vạch kẻ này là khu vực cấm dừng xe (停止禁止). Nếu có khả năng phải dừng xe thì không được phép đi vào."
+      "textVi": "Vị trí có biển báo này là khu vực cấm dừng xe, nhưng vẫn được phép đỗ xe.",
+      "explanationVi": "Sai. Biển báo này là khu vực cấm dừng xe (停止禁止). Nếu có khả năng phải dừng xe thì không được phép đi vào."
     },
     {
       "kind": "simple",
@@ -2953,8 +2954,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_22_4",
-      "chapter": "総合演習1",
-      "section": "1-203",
+      "chapter": "標識・標示・信号",
+      "section": "総合問題(図像)",
       "text": "この標識は安全地帯を示し、車の通行は禁じられている。",
       "answer": "○",
       "explanation": "正しい。この標識は安全地帯の標識である。安全地帯は歩行者や路面電車の乗降客の安全のために設けられているので、車の通行は禁じられている。",
@@ -2971,20 +2972,20 @@
       "answer": "×",
       "explanation": "この標示は、バス専用車両通行帯であることを示す。原動機付自転車や小型特殊自動車、軽車両は通行できるが普通自動車は原則通行できない。",
       "image": "menkyogentsuki_360.png",
-      "textVi": "Vạch kẻ đường này cho biết làn đường dành cho xe buýt , xe thường có thể đi vào khi đường đông.",
-      "explanationVi": "Sai. Vạch kẻ đường này biểu thị làn dành cho xe buýt tuyến. Xe gắn máy, xe đặc biệt nhỏ, xe đạp có thể đi vào, nhưng xe ô tô thường thì không được phép."
+      "textVi": "Biển báo này cho biết làn đường dành cho xe buýt , xe thường có thể đi vào khi đường đông.",
+      "explanationVi": "Sai. Biển báo này biểu thị làn dành cho xe buýt tuyến. Xe gắn máy, xe đặc biệt nhỏ, xe đạp có thể đi vào, nhưng xe ô tô thường thì không được phép."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_6_23_5",
-      "chapter":  "道路の走行方法",
+      "chapter": "標識・標示・信号",
       "section": "総合問題(図像)",
       "text": "このマークは、聴覚に障害のある人が運転していることを示している。",
       "answer": "○",
       "explanation": "聴覚障害者標識のマーク。",
       "image": "menkyogentsuki_365.png",
-      "textVi": "Nhãn dán này biểu thị người điếc đang lái xe.",
-      "explanationVi": "Đúng. Đây là nhãn dán dành cho người điếc."
+      "textVi": "Biển báo này biểu thị người điếc đang lái xe.",
+      "explanationVi": "Đúng. Đây là biển báo dành cho người điếc."
     },
     {
       "kind": "simple",
@@ -2995,13 +2996,13 @@
       "answer": "○",
       "explanation": "この標示は、右折の方法を表し、車が交差点を右折するときに通行しなければならない部分を示すものである。",
       "image": "menkyogentsuki_717.png",
-      "textVi": "Khi rẽ phải ở giao lộ có vạch kẻ đường này, phải đi qua phần có mũi tên.",
-      "explanationVi": "Kẻ đường này này thể hiện phương pháp rẽ phải, cho biết phần mà xe phải đi qua khi rẽ phải tại giao lộ."
+      "textVi": "Khi rẽ phải ở giao lộ có biển chỉ dẫn này, phải đi qua phần có mũi tên.",
+      "explanationVi": "Biển chỉ dẫn này thể hiện phương pháp rẽ phải, cho biết phần mà xe phải đi qua khi rẽ phải tại giao lộ."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_25_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-1",
       "text": "この標識のあるところでは、停車はできるが、駐車はできない。",
       "answer": "×",
@@ -3024,14 +3025,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-3",
       "text": "この標示がある道路では、黄色の線をはみ出さなければ、追い越しをしても構わない。",
       "answer": "○",
       "explanation": "この標示は、追い越しのための右側部分はみ出し通行禁止を示す。そのため黄色の線を越えない限りで追い越しをすることは可能である。",
       "image": "menkyogentsuki_805.png",
-      "textVi": "Trên đường có vạch kẻ đường này, nếu không vượt vạch vàng thì được phép vượt xe.",
-      "explanationVi": "Vạch kẻ đường này cho biết cấm vượt xe bằng cách lấn phải để vượt. Do đó, có thể vượt xe miễn là không vượt qua vạch kẻ vàng."
+      "textVi": "Trên đường có biển chỉ dẫn này, nếu không vượt vạch vàng thì được phép vượt xe.",
+      "explanationVi": "Biển báo này cho biết cấm vượt xe bằng cách lấn phải để vượt. Do đó, có thể vượt xe miễn là không vượt qua vạch kẻ vàng."
     },
     {
       "kind": "simple",
@@ -3047,7 +3048,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_17_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-5",
       "text": "この標識は、近くに学校があることを示している。",
       "answer": "×",
@@ -3092,7 +3093,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_26_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-9",
       "text": "この標識は、原動機付自転車が二段階右折せねばならないことを示している。",
       "answer": "○",
@@ -3137,7 +3138,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_26_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-13",
       "text": "この標識は、ロータリーありを示す。",
       "answer": "○",
@@ -3149,7 +3150,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_13_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-14",
       "text": "この標識は、一方通行を示す。",
       "answer": "×",
@@ -3393,7 +3394,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_17_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-36",
       "text": "これらの標識は、同じ意味をあらわす。",
       "answer": "○",
@@ -3416,7 +3417,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_25_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-38",
       "text": "この標識のある道路は、原動機付自転車は通行できない。",
       "answer": "○",
@@ -3450,7 +3451,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_26_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-41",
       "text": "この標識のある所では、二輪車は通行してはならない。",
       "answer": "×",
@@ -3640,7 +3641,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_1_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-58",
       "text": "この標識がある交差点では、たとえ自車の走行する道路が優先道路であり、見通しがよくても、必ず一時停止しなければならない。",
       "answer": "○",
@@ -3668,7 +3669,7 @@
       "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
       "answer": "○",
       "explanation": "正しい。問題文の通り、安全地帯に歩行者がいなければ、徐行しなくてもよい。ちなみに、歩行者がいる場合には、徐行せねばならない。",
-      "textVi": "Khi xe đi qua bên cạnh kkhu vực an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
+      "textVi": "Khi xe đi qua bên cạnh khu an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
       "explanationVi": "Đúng. Nếu không có người đi bộ ở vùng an toàn thì không cần giảm tốc độ. Nếu có người đi bộ thì phải giảm tốc độ."
     },
     {
@@ -3729,14 +3730,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_1_22_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-66",
       "text": "この標示があるところでは、普通自動車は、混雑している場合に限り、この車両通行帯を通行できる。",
       "answer": "×",
       "explanation": "この標示は、バス専用車両通行帯であることを示す。原動機付自転車や小型特殊自動車、軽車両は通行できるが普通自動車は原則通行できない。",
       "image": "menkyogentsuki_360.png",
-      "textVi": "Vạch kẻ đường này cho biết làn đường dành cho xe buýt, xe thường có thể đi vào khi đường đông.",
-      "explanationVi": "Sai. Vạch kẻ đường này biểu thị làn dành cho xe buýt tuyến. Xe gắn máy, xe đặc biệt nhỏ, xe đạp có thể đi vào, nhưng xe ô tô thường thì không được phép."
+      "textVi": "Biển báo này cho biết làn đường dành cho xe buýt, xe thường có thể đi vào khi đường đông.",
+      "explanationVi": "Sai. Biển báo này biểu thị làn dành cho xe buýt tuyến. Xe gắn máy, xe đặc biệt nhỏ, xe đạp có thể đi vào, nhưng xe ô tô thường thì không được phép."
     },
     {
       "kind": "simple",
@@ -3884,14 +3885,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_25_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-80",
       "text": "この標示がある路側帯では、原則として路側帯内には入れないが、路側帯の幅が広い場合に限り、中に駐停車できる。",
       "answer": "×",
       "explanation": "この標示は、歩行者用路側帯を示し、路側帯内には駐停車できない。",
       "image": "menkyogentsuki_975.png",
-      "textVi": "Tại làn bên có vạch kẻ đường này, về nguyên tắc không thể vào trong hai làn bên, nhưng chỉ khi làn bên rộng mới được phép đỗ và dừng bên trong.",
-      "explanationVi": "Vạch kẻ này cho biết làn đường bên đường dành cho người đi bộ, không thể đỗ xe, dừng xe trong làn đường bên đường."
+      "textVi": "Tại làn bên có biển chỉ dẫn này, về nguyên tắc không thể vào trong làn bên, nhưng chỉ khi làn bên rộng mới được phép đỗ và dừng bên trong.",
+      "explanationVi": "Biển báo này cho biết làn đường bên đường dành cho người đi bộ, không thể đỗ xe, dừng xe trong làn đường bên đường."
     },
     {
       "kind": "simple",
@@ -3973,7 +3974,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_1_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-88",
       "text": "この標識のある道路は、一般の自動車は通行してもよい。",
       "answer": "○",
@@ -4018,7 +4019,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_30_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-92",
       "text": "この標識は、交差する道路が通学路であることを示す。",
       "answer": "×",
@@ -4107,7 +4108,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_25_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-100",
       "text": "この標識のある場所では、11人乗り以上の自動車は通行できない。",
       "answer": "○",
@@ -4119,7 +4120,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_1_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-101",
       "text": "この標識のある場所では、区間内では、常に警音器を鳴らさなくてはならない。",
       "answer": "×",
@@ -4131,7 +4132,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_25_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-102",
       "text": "この標識は、追い越し禁止を表している。",
       "answer": "×",
@@ -4143,7 +4144,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_1_21_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-103",
       "text": "この標識のある道路での最高速度は、全ての車にとって時速40キロメートルである。",
       "answer": "×",
@@ -4265,14 +4266,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_24_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-114",
       "text": "この標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
       "answer": "○",
       "explanation": "問題文の記述が正しい。白の点線の標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
       "image": "menkyogentsuki_668.png",
-      "textVi": "Trên đường có vạch kẻ này, được phép vượt bằng cách lấn ra làn bên phải.",
-      "explanationVi": "Mô tả trong đề bài là đúng. Trên đường có vạch trắng đứt đoạn, được phép vượt bằng cách lấn sang làn bên phải."
+      "textVi": "Trên đường có biển chỉ dẫn này, được phép vượt bằng cách lấn ra làn bên phải.",
+      "explanationVi": "Mô tả trong đề bài là đúng. Trên đường có biển chỉ dẫn vạch trắng đứt đoạn, được phép vượt bằng cách lấn sang làn bên phải."
     },
     {
       "kind": "simple",
@@ -4288,7 +4289,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_7_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習1",
       "section": "1-116",
       "text": "この標識は、右折禁止を示す。",
       "answer": "×",
@@ -4388,7 +4389,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_14_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-1",
       "text": "この標識は、この先で交通規制が行われていることを示している。",
       "answer": "×",
@@ -4489,7 +4490,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_19_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-10",
       "text": "この中央線のある場合は、AからBへはみ出して追い越しをすることはできないが、BからAへはみ出して追い越しをすることはできる。",
       "answer": "○",
@@ -4506,7 +4507,7 @@
       "text": "安全地帯の側方を通過する際は、歩行者の有無に関わらず、一時停止し、徐行して通過せねばならない。",
       "answer": "×",
       "explanation": "安全地帯に歩行者がいない場合、特に徐行する必要はない。",
-      "textVi": "Khi đi qua bên cạnh khu vực an toàn, bất kể có người đi bộ hay không cũng phải dừng lại một lần và giảm tốc độ để đi qua.",
+      "textVi": "Khi đi qua bên cạnh khu an toàn, bất kể có người đi bộ hay không cũng phải dừng lại một lần và giảm tốc độ để đi qua.",
       "explanationVi": "Vì có thể gây tai nạn cho người đi xe đạp."
     },
     {
@@ -4523,13 +4524,13 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_10_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-13",
       "text": "この標示のある車両通行帯を直進することができる。",
       "answer": "×",
       "explanation": "左折に指定された車両通行帯なので、直進や右折をすることはできない。",
       "image": "menkyogentsuki_600.png",
-      "textVi": "Có thể đi thẳng trên làn đường có vạch kẻ đường này.",
+      "textVi": "Có thể đi thẳng trên làn đường có biển chỉ dẫn này.",
       "explanationVi": "Đây là làn đường chỉ dành cho rẽ trái nên không thể đi thẳng hay rẽ phải."
     },
     {
@@ -4546,7 +4547,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_8_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-15",
       "text": "この標識のある場所では、法定速度の半分から3分の1程度の速度で運転しなければならない。",
       "answer": "×",
@@ -4563,7 +4564,7 @@
       "text": "安全地帯のない停留所に路面電車が停止しており、乗り降りする人がいない場合、常に徐行して通行せねばならない。",
       "answer": "×",
       "explanation": "路面電車との間に1.5メートル以上の間隔がとれないときは、後方で停止して待たねばならない。",
-      "textVi": "Tại bến không có khu vực an toàn mà xe điện đang dừng, khi không có người lên xuống cũng luôn phải giảm tốc độ để đi qua.",
+      "textVi": "Tại bến không có khu an toàn mà xe điện đang dừng, khi không có người lên xuống cũng luôn phải giảm tốc độ để đi qua.",
       "explanationVi": "Khi không thể giữ khoảng cách trên 1,5 mét với xe điện đường phố thì phải dừng lại phía sau và chờ."
     },
     {
@@ -4657,14 +4658,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_2_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-25",
       "text": "この標示は、駐車禁止を示している。",
       "answer": "×",
       "explanation": "この標示は駐停車禁止を示すため誤り。停車も禁止されており、駐車だけが禁止されているわけではない。",
       "image": "menkyogentsuki_565.png",
-      "textVi": "Vạch kẻ đường này cho thấy cấm đỗ xe.",
-      "explanationVi": "Vạch kẻ đường này cho biết cấm đỗ và dừng xe, không chỉ riêng cấm đỗ. Đề bài sai vì nói chỉ cấm đỗ xe."
+      "textVi": "Biển chỉ dẫn này cho thấy cấm đỗ xe.",
+      "explanationVi": "Biển chỉ dẫn này cho biết cấm đỗ và dừng xe, không chỉ riêng cấm đỗ. Đề bài sai vì nói chỉ cấm đỗ xe."
     },
     {
       "kind": "simple",
@@ -4752,7 +4753,7 @@
       "answer": "×",
       "explanation": "歩行者の有無に関わらず、通行できない。",
       "textVi": "Xe chỉ được đi qua an toàn khu vực khi không có người đi bộ.",
-      "explanationVi": "Dù có người đi bộ hay không thì cũng không được phép đi qua khu vực an toàn."
+      "explanationVi": "Dù có người đi bộ hay không thì cũng không được phép đi qua khu an toàn."
     },
     {
       "kind": "simple",
@@ -4801,7 +4802,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_22_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-38",
       "text": "この標識があったので、対面する信号は赤色の灯火であったが、左折した。",
       "answer": "○",
@@ -4824,7 +4825,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_17_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-40",
       "text": "この標識のある場所では、原則として停車してはならない。",
       "answer": "×",
@@ -4836,19 +4837,19 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_11_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-41",
       "text": "この標示は、立入り禁止部分を表し、車が通行してはいけない部分であることを示す。",
       "answer": "×",
       "explanation": "誤りである。この標示は、安全地帯を示し、停留所のような、車が通行、停車せず、歩行者が自由に通行するための場所であることを示す。ちなみに、立入り禁止部分の標示は、黄色の枠線内に白の斜線を引いたもの。",
       "image": "menkyogentsuki_904.png",
-      "textVi": "Vạch kẻ đường này thể hiện phần cấm đi vào, cho thấy xe không được đi qua.",
-      "explanationVi": "Vạch kẻ đường này cho biết vạch an toàn, là nơi như bến xe, xe lưu thông, dừng xe không và người đi bộ tự do lưu thông. Ngoài ra, biển báo khu vực cấm đi vào là vạch chéo màu trắng trong khung màu vàng."
+      "textVi": "Biển chỉ dẫn này thể hiện phần cấm đi vào, cho thấy xe không được đi qua.",
+      "explanationVi": "Sai. Biển báo này cho biết vạch an toàn, là nơi như bến xe, xe lưu thông, dừng xe không và người đi bộ tự do lưu thông. Ngoài ra, biển báo khu vực cấm đi vào là vạch chéo màu trắng trong khung màu vàng."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_9_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-42",
       "text": "この標識がある交差点では、原動機付自転車は、二段階右折をせねばならない。",
       "answer": "○",
@@ -4871,7 +4872,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_2_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-44",
       "text": "この標識がある道路は、たとえ原動機付自転車であっても、通行が可能である。",
       "answer": "×",
@@ -5235,7 +5236,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_14_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-77",
       "text": "この標識は、この先が行き止まりであることを示している。",
       "answer": "×",
@@ -5280,7 +5281,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_19_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-81",
       "text": "この標識のある場所では、道路の左側に面した場所に出入りするための横断もしてはならない。",
       "answer": "×",
@@ -5292,14 +5293,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_14_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-82",
       "text": "この標示のあるところでは、転回も後退も禁止されている。",
       "answer": "×",
       "explanation": "この標示は、転回禁止。後退は禁止されていない。",
       "image": "menkyogentsuki_467.png",
-      "textVi": "Tại nơi có vạch kẻ đường này, cả quay đầu và lùi đều bị cấm.",
-      "explanationVi": "Vạch kẻ đường là cấm quay đầu. Lùi xe không bị cấm."
+      "textVi": "Tại nơi có biển chỉ dẫn này, cả quay đầu và lùi đều bị cấm.",
+      "explanationVi": "Biển chỉ dẫn này là cấm quay đầu. Lùi xe không bị cấm."
     },
     {
       "kind": "simple",
@@ -5337,7 +5338,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_27_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-86",
       "text": "この標識は、歩行者横断禁止を示す。",
       "answer": "×",
@@ -5548,14 +5549,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_2_25_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-105",
       "text": "この標識があるところでは、駐車禁止場所であっても、標章車に限り駐車できる。",
       "answer": "○",
       "explanation": "高齢運転者等駐車が認められた標章車に限り、駐車が可能である。",
       "image": "menkyogentsuki_371.png",
-      "textVi": "Tại nơi có biển báo này, kể cả ở những địa điểm cấm đỗ xe, chỉ những xe có gắn biển hiệu ưu tiên mới được phép đỗ.",
-      "explanationVi": "Đây là nơi đỗ xe dành riêng cho xe được cấp biển hiệu ưu tiên (có thể là của người khuyết tật, người già, phụ nữ mang thai, v.v., tùy theo quy định cụ thể của từng địa phương)."
+      "textVi": "Tại nơi có biển báo này, dù là nơi cấm đỗ xe, chỉ xe có biển báo dành cho người cao tuổi mới được phép đỗ.",
+      "explanationVi": "Chỉ xe có biển báo (dành cho người cao tuổi) mới được phép đỗ xe tại nơi cấm đỗ."
     },
     {
       "kind": "simple",
@@ -5582,7 +5583,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_2_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-108",
       "text": "この標識は、左折可の標識である。",
       "answer": "×",
@@ -5693,7 +5694,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_9_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-118",
       "text": "この中央線のあるところでも、追い越しのために道路の右側部分にはみ出して通行することができる。",
       "answer": "×",
@@ -5738,7 +5739,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_28_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習2",
       "section": "2-122",
       "text": "この標示のある道路では、たとえ原動機付自転車であっても、転回してはならない。",
       "answer": "○",
@@ -5788,7 +5789,7 @@
       "text": "安全地帯のある停留所に停車している路面電車の客が乗降中のときは、車はその後方で一時停止せねばならない。",
       "answer": "×",
       "explanation": "安全地帯があるときは、乗降中であっても徐行して進行することができる。",
-      "textVi": "Khi có người đang lên xuống xe điện đang dừng ở bến có khu vực an toàn, xe phải dừng phía sau một lần.",
+      "textVi": "Khi có người đang lên xuống xe điện đang dừng ở bến có khu an toàn, xe phải dừng phía sau một lần.",
       "explanationVi": "Khi có vạch an toàn, ngay cả khi đang đón/trả khách vẫn có thể chạy chậm để tiến vào."
     },
     {
@@ -5838,7 +5839,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_3_19_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-7",
       "text": "この標識のある場所では、危険を感じた場合、警音器を鳴らさなくてはならない。",
       "answer": "×",
@@ -6048,7 +6049,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_3_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-26",
       "text": "この標識は、最低速度が時速30キロメートルであることを示している。",
       "answer": "○",
@@ -6060,7 +6061,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_3_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-27",
       "text": "この標識は、原動機付自転車の2人乗りの禁止を示している。",
       "answer": "×",
@@ -6083,13 +6084,13 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_18_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-29",
       "text": "この標示のある車両通行帯から右折することはできない。",
       "answer": "○",
       "explanation": "左折ができる車両通行帯なので、直進や右折をすることはできない。",
       "image": "menkyogentsuki_487.png",
-      "textVi": "Không thể rẽ phải từ làn đường có vạch kẻ này.",
+      "textVi": "Không thể rẽ phải từ làn đường có biển chỉ dẫn này.",
       "explanationVi": "Đây là làn đường có thể rẽ trái nên không thể đi thẳng hay rẽ phải."
     },
     {
@@ -6161,7 +6162,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-36",
       "text": "この標識のある場所では、子どもの飛び出しに十分注意して進行する。",
       "answer": "○",
@@ -6250,7 +6251,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_8_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-44",
       "text": "この標識は、一方通行の始まりを示す。",
       "answer": "×",
@@ -6438,14 +6439,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_30_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-61",
       "text": "この標示は、ここから転回禁止であることを表す。",
       "answer": "×",
       "explanation": "この標示は、ここで転回禁止が終わることを示す。",
       "image": "menkyogentsuki_848.png",
-      "textVi": "Vạch kẻ đường này cho thấy từ đây cấm quay đầu.",
-      "explanationVi": "Vạch kẻ đường này cho biết lệnh cấm quay đầu kết thúc tại đây."
+      "textVi": "Biển chỉ dẫn này cho thấy từ đây cấm quay đầu.",
+      "explanationVi": "Biển báo này cho biết lệnh cấm quay đầu kết thúc tại đây."
     },
     {
       "kind": "simple",
@@ -6527,7 +6528,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_17_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-69",
       "text": "この標識のある位置では、一時停止せねばならない。",
       "answer": "×",
@@ -6561,7 +6562,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_24_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-72",
       "text": "この標識がある道路は、自転車や原動機付自転車、自動二輪車は通行できない。",
       "answer": "×",
@@ -6584,14 +6585,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-74",
       "text": "この標示は、車両の通行禁止部分を示す。",
       "answer": "×",
       "explanation": "この標示は、駐停車禁止を示す。",
       "image": "menkyogentsuki_655.png",
-      "textVi": "Vạch kẻ này cho thấy phần cấm xe đi qua.",
-      "explanationVi": "Vạch kẻ này cho biết cấm đỗ và dừng xe."
+      "textVi": "Biển chỉ dẫn này cho thấy phần cấm xe đi qua.",
+      "explanationVi": "Biển chỉ dẫn này cho biết cấm đỗ và dừng xe."
     },
     {
       "kind": "simple",
@@ -6607,14 +6608,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_17_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-76",
       "text": "この標示がある道路では、車は時速30キロメートルを超えて運転してはならない。",
       "answer": "○",
       "explanation": "この標示は、最高速度が時速30キロメートルであることを示す。",
       "image": "menkyogentsuki_783.png",
-      "textVi": "Trên đường có vạch kẻ đường này, xe không được phép chạy quá 30 km/h.",
-      "explanationVi": "Vạch kẻ này cho biết tốc độ tối đa là 30 km/h."
+      "textVi": "Trên đường có biển chỉ dẫn này, xe không được phép chạy quá 30 km/h.",
+      "explanationVi": "Biển báo này cho biết tốc độ tối đa là 30 km/h."
     },
     {
       "kind": "simple",
@@ -6690,7 +6691,7 @@
       "text": "安全地帯のない停留所で、停止している路面電車に乗り降りする人がいるときは、後方で停止して待たねばならない。",
       "answer": "○",
       "explanation": "問題文の記述が正しい。安全地帯のない停留所では、後方で停止して待たねばならない。",
-      "textVi": "Tại bến xe điện không có khu vực an toàn, khi có người lên xuống xe điện đang dừng, phải dừng lại phía sau và chờ.",
+      "textVi": "Tại bến xe điện không có khu an toàn, khi có người lên xuống xe điện đang dừng, phải dừng lại phía sau và chờ.",
       "explanationVi": "Mô tả trong đề bài là đúng. Ở bến xe không có vạch an toàn, phải dừng lại phía sau và đợi."
     },
     {
@@ -6740,14 +6741,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_22_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-88",
       "text": "この標示がある路側帯では、車の駐停車や、軽車両の通行が禁じられている。",
       "answer": "○",
       "explanation": "この標示は、歩行者用路側帯を示し、駐停車や軽車両の通行はできない。",
       "image": "menkyogentsuki_956.png",
-      "textVi": "Tại khu vực có vạch kẻ đường này, cấm xe ô tô dừng đỗ và cấm xe thô sơ (xe đạp, xe kéo tay...) lưu thông.",
-      "explanationVi": "Vạch kẻ này cho biết làn đường bên đường dành cho người đi bộ, không thể đỗ xe, dừng xe hay lưu thông xe nhẹ."
+      "textVi": "Trên làn bên có biển chỉ dẫn này, xe bị cấm đỗ và dừng, xe nhẹ cũng bị cấm đi.",
+      "explanationVi": "Biển báo này cho biết làn đường bên đường dành cho người đi bộ, không thể đỗ xe, dừng xe hay lưu thông xe nhẹ."
     },
     {
       "kind": "simple",
@@ -6774,7 +6775,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_12_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-91",
       "text": "この標識で指定された通行帯を、原動機付自転車で走行した。",
       "answer": "○",
@@ -6819,7 +6820,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_23_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-95",
       "text": "この標識は、合流交通ありを示す。",
       "answer": "○",
@@ -6875,7 +6876,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_8_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-100",
       "text": "この標識のある場所では、原動機付自転車も通行してはならない。",
       "answer": "○",
@@ -6898,7 +6899,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_11_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習3",
       "section": "3-102",
       "text": "この標識は、転回禁止を示す。",
       "answer": "○",
@@ -7252,14 +7253,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_16_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-10",
       "text": "この標示は、前方優先道路を示す。",
       "answer": "×",
       "explanation": "この標示は、安全地帯または路上障害物接近を示す。",
       "image": "menkyogentsuki_630.png",
-      "textVi": "Vạch kẻ đường này cho thấy đường ưu tiên phía trước.",
-      "explanationVi": "Vạch kẻ đường này cho biết có khu vực an toàn hoặc chướng ngại vật trên đường đang đến gần."
+      "textVi": "Biển chỉ dẫn này cho thấy đường ưu tiên phía trước.",
+      "explanationVi": "Biển chỉ dẫn này cho biết có khu an toàn hoặc chướng ngại vật trên đường đang đến gần."
     },
     {
       "kind": "simple",
@@ -7297,14 +7298,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_22_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-14",
       "text": "この標示がある路側帯では、車はその中に入って駐停車ができない。",
       "answer": "○",
       "explanation": "この標示は、駐停車禁止路側帯を示す。",
       "image": "menkyogentsuki_810.png",
-      "textVi": "Trên làn bên có vạch kẻ đường này, xe không thể vào trong để đỗ hay dừng xe.",
-      "explanationVi": "Vạch kẻ đường này cho biết làn đường bên đường cấm đỗ xe, dừng xe."
+      "textVi": "Trên làn bên có biển chỉ dẫn này, xe không thể vào trong để đỗ hay dừng xe.",
+      "explanationVi": "Biển báo này cho biết làn đường bên đường cấm đỗ xe, dừng xe."
     },
     {
       "kind": "simple",
@@ -7331,7 +7332,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_12_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-17",
       "text": "この標識があるときは、原動機付自転車は二段階右折ではなく、自動車と同じ方法で右折する。",
       "answer": "○",
@@ -7442,7 +7443,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_4_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-27",
       "text": "この標識は、前方の交差する道路が優先道路であることを示す。",
       "answer": "×",
@@ -7520,7 +7521,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_11_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-34",
       "text": "この中央線のあるところでは、AからBへははみ出して追い越しができるが、BからAへははみ出して追い越しができない。",
       "answer": "○",
@@ -7554,14 +7555,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_21_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-37",
       "text": "この標示があるときは、対向車に注意しながら、右側に沿って通行することができる。",
       "answer": "○",
       "explanation": "正しい。この標示は、右側通行の標示であり、この標示がある時、車は対向車に注意しながら道路の右側を通行することができる。",
       "image": "menkyogentsuki_505.png",
-      "textVi": "Khi có Vạch kẻ đường này, có thể đi dọc theo phía bên phải trong khi chú ý xe đối diện.",
-      "explanationVi": "Vạch kẻ đường này cho biết biển đi bên phải, khi có biển báo này, xe có thể đi bên phải của đường trong khi chú ý xe đối diện."
+      "textVi": "Khi có biển chỉ dẫn này, có thể đi dọc theo phía bên phải trong khi chú ý xe đối diện.",
+      "explanationVi": "Đúng. Biển báo này cho biết biển đi bên phải, khi có biển báo này, xe có thể đi bên phải của đường trong khi chú ý xe đối diện."
     },
     {
       "kind": "simple",
@@ -7644,8 +7645,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_8_4",
-      "chapter": "道路の走行方法",
-      "section": "7-45",
+      "chapter": "総合演習4",
+      "section": "4-45",
       "text": "このマークを付けた車に、幅寄せをしたり割り込んだりしてはならない。",
       "answer": "○",
       "explanation": "このマークは免許取得から1年以内の人が運転していることを示す初心運転者標識。危険を避けるためやむを得ない場合を除いて、このマークを付けた車に、幅寄せをしたり割り込んだりしてはならない。",
@@ -7667,13 +7668,13 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-47",
       "text": "この標示は、駐停車禁止を表している。",
       "answer": "×",
       "explanation": "黄色の実線で塗られている場合は、駐停車禁止を表し、黄色の破線は、駐車禁止を表す。",
       "image": "menkyogentsuki_653.png",
-      "textVi": "Vạch kẻ đường này thể hiện cấm đỗ và dừng xe.",
+      "textVi": "Biển chỉ dẫn này thể hiện cấm đỗ và dừng xe.",
       "explanationVi": "Nếu được sơn vạch vàng liền thì có nghĩa là cấm đỗ và dừng, vạch vàng đứt đoạn thì chỉ cấm đỗ xe."
     },
     {
@@ -7714,7 +7715,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_23_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-51",
       "text": "この標識がある道路では、横風に注意し、ハンドルをとられないようにしっかり握る。",
       "answer": "○",
@@ -7748,7 +7749,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_27_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-54",
       "text": "この標識は、横断歩道と自転車横断帯があることを示す。",
       "answer": "○",
@@ -7771,7 +7772,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_11_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-56",
       "text": "この標識の道路は、自転車に限り通行できる。",
       "answer": "○",
@@ -8126,7 +8127,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_29_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-88",
       "text": "この標識のある道路は、原動機付自転車は通行できない。",
       "answer": "○",
@@ -8292,7 +8293,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_28_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-103",
       "text": "この標識のある交差点を通行する際は、原動機付自転車は直進することができる。",
       "answer": "○",
@@ -8370,14 +8371,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_12_4",
-      "chapter": "道路の走行方法",
+      "chapter": "総合演習4",
       "section": "4-110",
       "text": "このマークは、聴覚に障害のある人が運転していることを示す。",
       "answer": "×",
       "explanation": "このマークは身体障害者標識。身体に障害のある人が運転していることを示す。",
       "image": "menkyogentsuki_909.png",
-      "textVi": "Nhãn dán này cho thấy có người bị khiếm thính đang lái xe.",
-      "explanationVi": "Đây là nhãn dán dành cho người khuyết tật. Cho biết người có khuyết tật thể chất đang lái xe."
+      "textVi": "Biểu tượng này cho thấy có người bị khiếm thính đang lái xe.",
+      "explanationVi": "Đây là biển dành cho người khuyết tật. Cho biết người có khuyết tật thể chất đang lái xe."
     },
     {
       "kind": "simple",
@@ -8404,7 +8405,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_4_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-113",
       "text": "この標識のあるところでは、車は左折のみすることができる。",
       "answer": "○",
@@ -8427,14 +8428,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_4_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-115",
       "text": "この標示のあるところでは、転回は禁止されているが、後退は禁止されていない。",
       "answer": "○",
       "explanation": "この標示は、転回禁止。後退は禁止されていない。",
       "image": "menkyogentsuki_414.png",
-      "textVi": "Tại nơi có Vạch kẻ đường này, quay đầu bị cấm nhưng lùi xe không bị cấm.",
-      "explanationVi": "Vạch kẻ đường này là cấm quay đầu. Lùi xe không bị cấm."
+      "textVi": "Tại nơi có biển chỉ dẫn này, quay đầu bị cấm nhưng lùi xe không bị cấm.",
+      "explanationVi": "Biển chỉ dẫn này là cấm quay đầu. Lùi xe không bị cấm."
     },
     {
       "kind": "simple",
@@ -8505,7 +8506,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_22_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習4",
       "section": "4-122",
       "text": "この標識は、標識に表示されている数字を超える高さの車の通行禁止を示している。",
       "answer": "×",
@@ -8561,7 +8562,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_23_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-3",
       "text": "この標識のある道路は、特に認められた車に限り、通行が可能である。",
       "answer": "○",
@@ -8573,14 +8574,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_12_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-4",
       "text": "この標示は、車の駐車場所を示す。",
       "answer": "×",
       "explanation": "この標示は、安全地帯を示す。",
       "image": "menkyogentsuki_756.png",
-      "textVi": "Vạch kẻ đường này cho thấy chỗ đỗ xe.",
-      "explanationVi": "Vạch kẻ đường này cho biết có vùng an toàn."
+      "textVi": "Biển chỉ dẫn này cho thấy chỗ đỗ xe.",
+      "explanationVi": "Biển báo này cho biết có vạch an toàn."
     },
     {
       "kind": "simple",
@@ -8601,7 +8602,7 @@
       "text": "安全地帯に人がいなければ、その側方を通過するときは、徐行する必要はない。",
       "answer": "○",
       "explanation": "安全地帯に人がいなければ、徐行する必要はない。人がいる時は徐行して通過する。",
-      "textVi": "Nếu không có người trong khu vực an toàn thì khi đi qua bên cạnh không cần giảm tốc độ.",
+      "textVi": "Nếu không có người trong khu an toàn thì khi đi qua bên cạnh không cần giảm tốc độ.",
       "explanationVi": "Nếu không có người trên vạch an toàn thì không cần chạy chậm. Nếu có người thì chạy chậm để đi qua."
     },
     {
@@ -8618,7 +8619,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_27_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-8",
       "text": "この中央線のあるところでは、追い越しのために道路の右側部分にはみ出して通行することが禁止されている。",
       "answer": "○",
@@ -8630,7 +8631,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_27_3",
-      "chapter": "道路の走行方法",
+      "chapter": "総合演習5",
       "section": "5-9",
       "text": "この図のような、道幅が同じような交差点では、普通自動車は、原動機付自転車より先に進むことができる。",
       "answer": "×",
@@ -8874,14 +8875,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_11_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-31",
       "text": "この標示は、自転車専用道路を示す。",
       "answer": "×",
       "explanation": "この標示は、自転車横断帯を示す。",
       "image": "menkyogentsuki_604.png",
-      "textVi": "Vạch kẻ đường này cho thấy đường dành cho xe đạp.",
-      "explanationVi": "Vạch kẻ đường này cho biết có làn đường cho xe đạp qua đường."
+      "textVi": "Biển chỉ dẫn này cho thấy đường dành cho xe đạp.",
+      "explanationVi": "Biển chỉ dẫn này cho biết có làn đường cho xe đạp qua đường."
     },
     {
       "kind": "simple",
@@ -8891,13 +8892,13 @@
       "text": "安全地帯に歩行者がいなかったので、そのままの速度で通過した。",
       "answer": "○",
       "explanation": "安全地帯に歩行者がいない場合、特に徐行する必要はない。",
-      "textVi": "Vì không có người đi bộ trong khu vực an toàn nên đã đi qua với tốc độ đó.",
+      "textVi": "Vì không có người đi bộ trong khu an toàn nên đã đi qua với tốc độ đó.",
       "explanationVi": "Nếu không có người đi bộ trên vạch an toàn thì không cần đặc biệt chạy chậm."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_14_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-33",
       "text": "この標識のある道路は、原動機付自転車は通行できる。",
       "answer": "×",
@@ -9003,7 +9004,7 @@
       "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
       "answer": "○",
       "explanation": "正しい。問題文の通り、安全地帯に歩行者がいなければ、徐行しなくてもよい。ちなみに、歩行者がいる場合には、徐行せねばならない。",
-      "textVi": "Khi xe đi qua bên cạnh khu vực an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
+      "textVi": "Khi xe đi qua bên cạnh khu an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
       "explanationVi": "Đúng. Như đề bài đã nêu, nếu không có người đi bộ trên vạch an toàn thì không cần phải chạy chậm. Tuy nhiên, nếu có người đi bộ thì phải chạy chậm."
     },
     {
@@ -9097,13 +9098,13 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_5_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-51",
       "text": "この標示のある所では、AからBにはみ出して追い越しはできるが、BからAにはみ出して追い越しをしてはならない。",
       "answer": "○",
       "explanation": "黄色は、はみ出し禁止と覚える。",
       "image": "menkyogentsuki_715.png",
-      "textVi": "Tại nơi có Vạch kẻ đường này, có thể vượt từ A sang B, nhưng không được vượt từ B sang A bằng cách lấn ra ngoài.",
+      "textVi": "Tại nơi có biển chỉ dẫn này, có thể vượt từ A sang B bằng cách lấn ra ngoài, nhưng không được vượt từ B sang A bằng cách lấn ra ngoài.",
       "explanationVi": "Hãy nhớ rằng màu vàng là cấm lấn làn."
     },
     {
@@ -9241,13 +9242,13 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_11_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-64",
       "text": "この標示のある車両通行帯を直進することはできない。",
       "answer": "○",
       "explanation": "左折に指定された車両通行帯なので、直進や右折をすることはできない。",
       "image": "menkyogentsuki_451.png",
-      "textVi": "Không thể đi thẳng trên làn đường có vạch kẻ đường này.",
+      "textVi": "Không thể đi thẳng trên làn đường có biển chỉ dẫn này.",
       "explanationVi": "Đây là làn đường chỉ dành cho rẽ trái nên không thể đi thẳng hay rẽ phải."
     },
     {
@@ -9346,19 +9347,19 @@
       "text": "安全地帯がなく、乗降者がいないとき、路面電車との間に1.5メートル以上の間隔があったので、徐行して進行した。",
       "answer": "○",
       "explanation": "この場合でも、必ず徐行せねばならない。",
-      "textVi": "Khi không có khu vực an toàn và không có người lên xuống, vì có khoảng cách hơn 1,5 mét với xe điện đang dừng ở bến nên đã giảm tốc độ để đi qua.",
+      "textVi": "Khi không có khu an toàn và không có người lên xuống, vì có khoảng cách hơn 1,5 mét với xe điện đang dừng ở bến nên đã giảm tốc độ để đi qua.",
       "explanationVi": "Trong trường hợp này cũng nhất thiết phải giảm tốc độ."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_26_3",
-      "chapter": "道路の走行方法",
+      "chapter": "総合演習5",
       "section": "5-74",
       "text": "右図のような道幅の違う交差点では、Bの車は、Aの原動機付自転車を先に進行させねばならない。",
       "answer": "○",
       "explanation": "中央線の引かれているAの車の走っている道路が優先道路である。そのため、Aの車が優先される。",
       "image": "menkyogentsuki_678.png",
-      "textVi": "Ở giao lộ có độ rộng đường khác nhau, xe B phải nhường xe gắn máy A đi trước.",
+      "textVi": "Ở giao lộ có độ rộng đường khác nhau như hình bên phải, xe B phải nhường xe gắn máy A đi trước.",
       "explanationVi": "Đường có vạch giữa nơi xe A đang chạy là đường ưu tiên. Do đó xe A được ưu tiên."
     },
     {
@@ -9408,31 +9409,31 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_5_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-79",
       "text": "この標示のある場所では、AからBへ進路を変えてもよい。",
       "answer": "○",
       "explanation": "ちなみに、黄色の車両通行帯境界線が引かれている側であるBからAへの車線変更はできない。",
       "image": "menkyogentsuki_412.png",
-      "textVi": "Tại nơi có vạch kẻ đường này, có thể đổi làn đường từ A sang B.",
+      "textVi": "Tại nơi có biển chỉ dẫn này, có thể đổi làn đường từ A sang B.",
       "explanationVi": "Nhân tiện, không thể đổi làn từ B (phía có vạch làn đường màu vàng) sang A."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_5_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-80",
       "text": "この標示のある車両通行帯から右折することができる。",
       "answer": "×",
       "explanation": "左折に指定された車両通行帯なので、直進や右折をすることはできない。",
       "image": "menkyogentsuki_720.png",
-      "textVi": "Có thể rẽ phải từ làn đường có vạch kẻ đường này.",
+      "textVi": "Có thể rẽ phải từ làn đường có biển chỉ dẫn này.",
       "explanationVi": "Đây là làn đường chỉ dành cho rẽ trái nên không thể đi thẳng hay rẽ phải."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_14_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-81",
       "text": "この標識から先は、原動機付自転車は時速50キロメートル以下で走行せねばならない。",
       "answer": "×",
@@ -9460,7 +9461,7 @@
       "text": "安全地帯のそばを通るときに、歩行者がいたので徐行して進行した。",
       "answer": "○",
       "explanation": "安全地帯に歩行者がいるときは徐行する。",
-      "textVi": "Khi đi qua bên cạnh khu vực an toàn mà có người đi bộ nên đã giảm tốc độ để đi qua.",
+      "textVi": "Khi đi qua bên cạnh khu an toàn mà có người đi bộ nên đã giảm tốc độ để đi qua.",
       "explanationVi": "Khi có người đi bộ trên vạch an toàn thì phải chạy chậm."
     },
     {
@@ -9521,7 +9522,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_11_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-89",
       "text": "この標識は、近くに踏切があることを示す。",
       "answer": "○",
@@ -9533,7 +9534,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_12_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-90",
       "text": "この標識は、車の通行禁止を示している。",
       "answer": "×",
@@ -9611,7 +9612,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_15_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-97",
       "text": "この標識のある道路は、二輪自動車の通行止めなので、原動機付自転車は通行できる。",
       "answer": "×",
@@ -9623,7 +9624,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_5_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-98",
       "text": "この標識のある所では、転回は禁止されているが、後退は禁止されていない。",
       "answer": "○",
@@ -9635,7 +9636,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_28_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-99",
       "text": "この標識のある所では、車両は通行できないが、歩行者は通行できる。",
       "answer": "○",
@@ -9740,7 +9741,7 @@
       "text": "安全地帯がなく、乗降者がいないとき、停留所に停止中の路面電車との間に1.5メートル以上の間隔があったので、そのまま進んだ。",
       "answer": "×",
       "explanation": "停留所に停止中の路面電車があったら、原則として乗降者の有無に関わらず後方で一時停止しなくてはいけない。例外として、1.5メートル以上の間隔がある場合は徐行して進むことが出来る。よってこの場合は、そのまま進行してはならず、徐行して進まなければならない。",
-      "textVi": "Khi không có khu vực an toàn và không có người lên xuống, vì có khoảng cách hơn 1,5 mét với xe điện đang dừng ở bến nên đã tiếp tục đi.",
+      "textVi": "Khi không có khu an toàn và không có người lên xuống, vì có khoảng cách hơn 1,5 mét với xe điện đang dừng ở bến nên đã tiếp tục đi.",
       "explanationVi": "Khi có xe điện đường phố dừng ở bến, phải dừng lại phía sau để chờ, bất kể có người lên xuống hay không. Trừ khi có khoảng cách hơn 1,5 mét thì được phép giảm tốc độ đi qua. Trong trường hợp này phải giảm tốc độ chứ không được đi thẳng."
     },
     {
@@ -9823,7 +9824,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_5_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-116",
       "text": "この標識は、追い越し自体を禁止している。",
       "answer": "×",
@@ -9857,7 +9858,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_28_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-119",
       "text": "この標識のある道路では、追い越し自体ではなく、追い越しのために道路の右側部分にはみ出して通行することが禁じられている。",
       "answer": "○",
@@ -9902,14 +9903,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_10_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習5",
       "section": "5-123",
       "text": "この標示は、前方に交差点があることを示す。",
       "answer": "×",
       "explanation": "この標示は、前方に横断歩道または自転車横断帯があることを示す。",
       "image": "menkyogentsuki_449.png",
-      "textVi": "Vạch kẻ đường này cho thấy có giao lộ phía trước.",
-      "explanationVi": "Vạch kẻ đường này cho biết có vạch qua đường cho người đi bộ hoặc làn đường cho xe đạp phía trước."
+      "textVi": "Biển chỉ dẫn này cho thấy có giao lộ phía trước.",
+      "explanationVi": "Biển chỉ dẫn này cho biết có vạch qua đường cho người đi bộ hoặc làn đường cho xe đạp phía trước."
     },
     {
       "kind": "simple",
@@ -9925,7 +9926,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_6_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-1",
       "text": "この標識は、車線数の減少を示す。",
       "answer": "×",
@@ -9959,7 +9960,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_17_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-4",
       "text": "この標識は、本標識が表す交通規制の終わりを意味している。",
       "answer": "○",
@@ -9971,14 +9972,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_6_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-5",
       "text": "この路側帯の中に入って、駐車や停車をすることは禁じられている。",
       "answer": "○",
       "explanation": "この標示は、駐停車禁止路側帯の標示である。",
       "image": "menkyogentsuki_553.png",
-      "textVi": "Cấm đi vào trong phần dải lề đường (路側帯) này để dừng hoặc đỗ xe.",
-      "explanationVi": "Vạch kẻ đường này là biển báo cấm dừng và đỗ xe tại lề đường."
+      "textVi": "Cấm đỗ và dừng xe trong làn bên này.",
+      "explanationVi": "Biển chỉ dẫn này cho biết làn bên cấm đỗ và dừng xe."
     },
     {
       "kind": "simple",
@@ -10005,7 +10006,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_28_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-8",
       "text": "この車両通行帯を走行しているときは、右折のためであっても、車線を変更してはならない。",
       "answer": "○",
@@ -10050,7 +10051,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_2",
-      "chapter": "道路の走行方法",
+      "chapter": "総合演習6",
       "section": "6-12",
       "text": "危険を避けるためやむを得ない場合を除き、このマークを付けた車に、幅寄せしたり、前方に無理に割り込んではいけない。",
       "answer": "○",
@@ -10139,7 +10140,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_23_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-20",
       "text": "この標識は、標識に表示されている数字を超える幅の車の通行禁止を示している。",
       "answer": "○",
@@ -10162,14 +10163,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_16_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-22",
       "text": "この路側帯は、原動機付自転車が通行してはならない。",
       "answer": "○",
       "explanation": "この路側帯は、駐停車禁止路側帯であり、歩行者と軽車両は通行できるが、原動機付自転車は通行できない。",
       "image": "menkyogentsuki_926.png",
-      "textVi": "Dải lề đường (路側帯) là nơi xe gắn máy không được phép đi.",
-      "explanationVi": "Dải lề đường là làn cấm đỗ/dừng xe, người đi bộ và xe thô sơ có thể lưu thông nhưng xe gắn máy thì không."
+      "textVi": "Làn bên này là nơi xe gắn máy không được phép đi.",
+      "explanationVi": "Làn đường bên đường này là làn đường bên đường cấm đỗ/dừng xe, người đi bộ và xe nhẹ có thể lưu thông nhưng xe gắn máy không thể lưu thông."
     },
     {
       "kind": "simple",
@@ -10279,7 +10280,7 @@
       "text": "安全地帯に人がいたので、徐行して側方を通過した。",
       "answer": "○",
       "explanation": "安全地帯に人がいる場合は、徐行して通過する。",
-      "textVi": "Vì có người trong khu vực an toàn nên đã giảm tốc độ để đi qua bên cạnh.",
+      "textVi": "Vì có người trong khu an toàn nên đã giảm tốc độ để đi qua bên cạnh.",
       "explanationVi": "Khi có người trên vạch an toàn thì phải chạy chậm để đi qua."
     },
     {
@@ -10430,12 +10431,12 @@
       "id": "menkyogentsuki_gentsuki_6_23_5",
       "chapter": "総合演習6",
       "section": "6-46",
-      "text": "このマークは、初心運転者であることを表示するものです。",
-      "answer": "×",
+      "text": "このマークは、聴覚に障害のある人が運転していることを示している。",
+      "answer": "○",
       "explanation": "聴覚障害者標識のマーク。",
       "image": "menkyogentsuki_365.png",
-      "textVi": "Nhãn dán này biểu thị người mới có bằng đang lái xe.",
-      "explanationVi": "Đây là nhãn dán dành cho người điếc."
+      "textVi": "Biển báo này biểu thị người điếc đang lái xe.",
+      "explanationVi": "Đúng. Đây là biển báo dành cho người điếc."
     },
     {
       "kind": "simple",
@@ -10473,7 +10474,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_25_4",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-50",
       "text": "この標識は、通学路であり、子どもが多く通行する道路なので注意が必要である。",
       "answer": "×",
@@ -10496,7 +10497,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_29_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-52",
       "text": "この標識は、自動車や原動機付自転車の最高速度が時速50キロメートルであることを示す。",
       "answer": "×",
@@ -10651,7 +10652,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_15_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-66",
       "text": "この標識は、この先工事のため立ち入り禁止を示す。",
       "answer": "×",
@@ -10718,7 +10719,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_6_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-72",
       "text": "この標識のある所でも、原動機付自転車は通行できる。",
       "answer": "○",
@@ -10807,7 +10808,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_8_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-80",
       "text": "この標識がある交差点は、直進が禁止されている。",
       "answer": "○",
@@ -11028,7 +11029,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_26_3",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-100",
       "text": "この標識のある交差点を通行する際は、原動機付自転車に限り右折することができる。",
       "answer": "×",
@@ -11073,14 +11074,14 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_6_2",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-104",
-      "text": "この標識は、安全地帯の終わりを示します。",
-      "answer": "×",
+      "text": "この標識は、安全地帯であることを示す。",
+      "answer": "○",
       "explanation": "この標識のある場所へは、立ち入ってはならない。",
       "image": "menkyogentsuki_852.png",
-      "textVi": "Biển báo này cho thấy hết khu vực an toàn.",
-      "explanationVi": "Không được phép đi vào nơi có biển báo này."
+      "textVi": "Biển báo này cho thấy có khu an toàn.",
+      "explanationVi": "Vì khi vượt xe, tầm nhìn phía trước bị hạn chế."
     },
     {
       "kind": "simple",
@@ -11096,7 +11097,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_23_5",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-106",
       "text": "この標識がある所では、危険を感じた場合直ちに警音器を鳴らさねばならない。",
       "answer": "×",
@@ -11185,7 +11186,7 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_30_1",
-      "chapter": "標識・標示・信号",
+      "chapter": "総合演習6",
       "section": "6-114",
       "text": "この標識は、がけ崩れのおそれありを示す。",
       "answer": "×",

@@ -4382,17 +4382,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_14_3",
-      "chapter": "総合演習1",
-      "section": "1-16",
-      "text": "タクシーを運転する際は、常に第二種免許が必要である。",
-      "answer": "×",
-      "explanation": "「常に～必要である」の部分が誤り。客を乗せずにタクシーを運転する場合、第二種免許は必要ない。第二種免許は、旅客の運送を目的とする場合に限り必要となる。",
-      "textVi": "Khi lái xe taxi, luôn cần bằng lái hạng hai.",
-      "explanationVi": "Phần \"luôn luôn cần thiết\" là sai. Khi lái taxi mà không chở khách thì không cần giấy phép loại hai. Giấy phép loại hai chỉ cần khi có mục đích vận chuyển hành khách."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_1_5_5",
       "chapter": "総合演習1",
       "section": "1-17",
@@ -5775,17 +5764,6 @@
       "explanation": "運転者がすぐに運転できる状態での短時間の停止は「停車」である。",
       "textVi": "Nếu có thể lái xe ngay thì dù người lái xe tạm rời xe trong thời gian ngắn cũng là dừng xe.",
       "explanationVi": "Dừng xe trong thời gian ngắn mà người lái có thể lái xe ngay là 'dừng xe'."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_19_1",
-      "chapter": "総合演習2",
-      "section": "2-19",
-      "text": "効力を失った免許証を携帯して自動車を運転すると、無免許運転になる。",
-      "answer": "○",
-      "explanation": "効力を失った免許証を携帯して運転したとしても、無免許運転である。",
-      "textVi": "Mang theo giấy phép lái xe đã hết hiệu lực để lái ô tô thì sẽ bị coi là lái xe không có giấy phép.",
-      "explanationVi": "Đúng. Dù có mang theo giấy phép lái xe đã hết hiệu lực khi lái xe thì vẫn bị coi là lái xe không có giấy phép."
     },
     {
       "kind": "simple",
@@ -7809,10 +7787,10 @@
       "id": "menkyogentsuki_gentsuki_9_19_4",
       "chapter": "総合演習3",
       "section": "3-78",
-      "text": "大型特殊免許を取得すると、原動機付自転車も運転できる。",
-      "answer": "○",
+      "text": " 大型特殊免許を取得しても、原動機付自転車を運転することはできない。",
+      "answer": "×",
       "explanation": "大型特殊免許を取得すると、大型特殊自動車と小型特殊自動車、原動機付自転車を運転することができる。",
-      "textVi": "Nếu có bằng lái đặc biệt loại lớn thì có thể lái cả xe gắn máy.",
+      "textVi": "Có bằng lái đặc biệt loại lớn không đồng nghĩa với việc có thể lái cả xe gắn máy.",
       "explanationVi": "Khi có bằng đặc biệt loại lớn, bạn có thể lái cả xe đặc biệt loại lớn, xe đặc biệt nhỏ và xe gắn máy."
     },
     {
@@ -10387,10 +10365,10 @@
       "id": "menkyogentsuki_gentsuki_9_24_2",
       "chapter": "総合演習5",
       "section": "5-63",
-      "text": "仮免許をとったので、一人で車を運転し、買い物に出かけた。",
-      "answer": "×",
+      "text": "仮免許を受けていれば、指導員を同乗させて路上で練習することができる",
+      "answer": "○",
       "explanation": "誤りである。仮免許での路上練習では、資格ある指導者（練習する車両を運転することができる第一種免許の取得期間が通算して(免許停止期間は除く)3年以上の者、または第二種免許を受けている者）を同乗させて運転する必要がある。",
-      "textVi": "Vì đã lấy được giấy phép lái tạm thời, nên một mình lái xe đi mua sắm.",
+      "textVi": "Có giấy phép lái tạm thời,nhưng cần có người hướng dẫn có trình độ ngồi cạnh để lái xe trên đường.",
       "explanationVi": "Sai. Khi thực hành lái xe trên đường với giấy phép lái tạm thời, cần có người hướng dẫn có trình độ (người đã có giấy phép lái xe loại 1 đủ điều kiện điều khiển xe tập lái với thời gian tích lũy từ 3 năm trở lên (không tính thời gian bị đình chỉ), hoặc người có giấy phép lái xe loại 2) ngồi cùng để hướng dẫn lái xe."
     },
     {

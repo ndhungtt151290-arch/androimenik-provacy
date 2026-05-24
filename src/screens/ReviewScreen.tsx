@@ -1,9 +1,8 @@
 import React from "react";
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Text, ScrollView, StyleSheet, TextStyle } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
-import { Check, X } from "../components/Icons";
-import type { ExamItem, Lang } from "../types";
+import type { ExamItem, ExamSimpleItem, Lang } from "../types";
 
 interface ReviewScreenProps {
   lang: Lang;
@@ -98,7 +97,8 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
 
         <View style={styles.list}>
           {itemsToShow.map((d) => {
-            const item = d.item;
+            const item = d.item as ExamSimpleItem;
+            if (item.type !== "simple") return null;
             const isScenarioSub = isScenarioSubItem(item);
             const stem = getStem(item);
             const stemVi = getStemVi(item);
@@ -151,7 +151,6 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
                     )}
                   </Text>
                   <View style={[styles.resultBadge, d.points >= 1 ? styles.badgeGreen : styles.badgeRed]}>
-                    {d.points >= 1 ? <Check size={10} /> : <X size={10} />}
                     <Text style={styles.resultText}>{d.points >= 1 ? L.correct : L.wrong}</Text>
                   </View>
                 </View>
@@ -216,21 +215,21 @@ const styles = StyleSheet.create({
   itemCorrect: { borderColor: "#d1fae5", borderLeftColor: "#16a34a", backgroundColor: "rgba(255,255,255,0.1)" },
   itemWrong: { borderColor: "#fee2e2", borderLeftColor: "#dc2626", backgroundColor: "rgba(255,255,255,0.1)" },
   itemHeader: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 10 },
-  questionNum: { fontSize: 12, fontWeight: "bold", color: "#7f1d1d" },
+  questionNum: { fontSize: 12, fontWeight: "bold", color: "rgba(12, 15, 121, 0.85)" },
   scenarioHintInline: { fontSize: 10, color: "#9f1239", fontWeight: "normal" },
   resultBadge: { flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 999 },
-  badgeGreen: { backgroundColor: "#d1fae5" },
-  badgeRed: { backgroundColor: "#fee2e2" },
-  resultText: { fontSize: 11, fontWeight: "bold", color: "#166534" },
-  stemText: { fontSize: 14, fontWeight: "600", color: "#111", marginBottom: 10, adjustsFontSizeToFit: true, numberOfLines: 3, minimumFontScale: 0.8 },
+  badgeGreen: { backgroundColor: "rgba(41, 169, 15, 0.98)" },
+  badgeRed: { backgroundColor: "rgba(189, 16, 16, 0.85)" },
+  resultText: { fontSize: 11, fontWeight: "bold", color: "rgba(255, 255, 255, 0.85)" },
+  stemText: { fontSize: 14, fontWeight: "600", color: "#111", marginBottom: 10, adjustsFontSizeToFit: true, numberOfLines: 3, minimumFontScale: 0.8 } as TextStyle,
   questionText: { fontSize: 14, color: "#111", marginBottom: 8 },
-  scenarioQuestionText: { fontSize: 14, color: "#111", marginBottom: 8, adjustsFontSizeToFit: true, numberOfLines: 4, minimumFontScale: 0.75 },
+  scenarioQuestionText: { fontSize: 14, color: "#111", marginBottom: 8, adjustsFontSizeToFit: true, numberOfLines: 4, minimumFontScale: 0.75 } as TextStyle,
   answerLine: { fontSize: 13, marginBottom: 6 },
   bold: { fontWeight: "bold" },
   textGreen: { color: "#15803d" },
   textRed: { color: "#dc2626" },
   explanationBox: { borderLeftWidth: 3, borderLeftColor: "#d97706", paddingLeft: 10 },
-  explanationText: { fontSize: 13, color: "#525252", lineHeight: 20, adjustsFontSizeToFit: true, numberOfLines: 5, minimumFontScale: 0.7 },
+  explanationText: { fontSize: 13, color: "#525252", lineHeight: 20, adjustsFontSizeToFit: true, numberOfLines: 5, minimumFontScale: 0.7 } as TextStyle,
   note: { fontSize: 12, color: "#9f1239", marginTop: 8 },
   reviewImage: { width: "100%", height: 150, borderRadius: 10, marginBottom: 12 },
   reviewImageInner: { width: "100%", height: 150, borderRadius: 10 },

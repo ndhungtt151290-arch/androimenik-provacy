@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Modal, View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { X } from "./Icons";
 import { adEmitter } from "../utils/AdEventEmitter";
 
 export function AdModal() {
+  const insets = useSafeAreaInsets();
   const [isVisible, setIsVisible] = useState(false);
   const [pendingCallback, setPendingCallback] = useState<(() => void) | null>(null);
 
@@ -38,7 +40,11 @@ export function AdModal() {
   return (
     <Modal visible={isVisible} transparent animationType="fade">
       <View style={styles.overlay}>
-        <TouchableOpacity style={styles.closeBtn} onPress={onClosePress} activeOpacity={0.7}>
+        <TouchableOpacity
+          style={[styles.closeBtn, { top: Math.max(insets.top + 10, 50) }]}
+          onPress={onClosePress}
+          activeOpacity={0.7}
+        >
           <Text style={styles.closeText}>Đóng</Text>
           <X size={18} />
         </TouchableOpacity>
@@ -63,7 +69,6 @@ const styles = StyleSheet.create({
   },
   closeBtn: {
     position: "absolute",
-    top: 35,
     right: 16,
     flexDirection: "row",
     alignItems: "center",

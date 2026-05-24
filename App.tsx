@@ -67,6 +67,7 @@ function AppContent() {
 
   const examPaperRef = useRef(examPaper);
   examPaperRef.current = examPaper;
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // Load data on mount
   useEffect(() => {
@@ -184,11 +185,20 @@ function AppContent() {
 
   // Timer
   useEffect(() => {
-    if (view.mode !== "exam" || submitted) return;
-    const id = setInterval(() => {
+    if (view.mode !== "exam" || submitted) {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+      return;
+    }
+    timerRef.current = setInterval(() => {
       setSecondsLeft((s) => {
         if (s <= 1) {
-          clearInterval(id);
+          if (timerRef.current) {
+            clearInterval(timerRef.current);
+            timerRef.current = null;
+          }
           const paper = examPaperRef.current;
           setSubmitted(true);
           setView({ mode: "results", paper });
@@ -197,7 +207,12 @@ function AppContent() {
         return s - 1;
       });
     }, 1000);
-    return () => clearInterval(id);
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+    };
   }, [view.mode, submitted]);
 
   const currentItem = view.mode === "exam" ? examPaper[examIndex] : undefined;
@@ -215,13 +230,19 @@ function AppContent() {
     });
   }, [currentItem]);
 
-  const handleBackHome = useCallback(() => {
+  const handleBackHome = () => {
     if (view.mode === "exam" && !submitted) {
-      setShowExitConfirm(true);
+      // Cleanup timer immediately
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+      setShowExitConfirm(true); // Show dialog first
+      setSubmitted(true); // Then pause timer
     } else {
       showInterstitialExam(() => setView({ mode: "home" }));
     }
-  }, [view.mode, submitted]);
+  };
 
   // Check if current chapter is from sogou modal
   const isSogouChapter = view.mode === "chapter" && SOGOU_ENSHU_ALL.some(s => s.id === view.chapterId);
@@ -342,7 +363,7 @@ function AppContent() {
                   examPrep: () => showInterstitialChapter(() => setView({ mode: "home" })),
                   chapter: () => showInterstitialChapter(() => setView({ mode: "practiceHome" })),
                   history: () => showInterstitialChapter(() => setView({ mode: "home" })),
-                  exam: () => setShowExitConfirm(true),
+                  exam: () => handleBackHome(), // Cleanup timer before showing dialog
                   results: () => setView({ mode: "home" }),
                   review: () => {
                     if (view.mode === "review" && "paper" in view) {
@@ -376,9 +397,19 @@ function AppContent() {
           cancelText={L.cancelBtn}
           onConfirm={() => {
             setShowExitConfirm(false);
+            // Full cleanup exam state
+            setExamPaper([]);
+            setSimpleAns({});
+            setScenarioAns({});
+            setSubmitted(false);
+            setExamFlags(new Set());
             showInterstitialExam(() => setView({ mode: "home" }));
           }}
-          onCancel={() => setShowExitConfirm(false)}
+          onCancel={() => {
+            setShowExitConfirm(false);
+            // Restore: reset submitted to resume exam with remaining time
+            setSubmitted(false);
+          }}
           variant="danger"
         />
 

@@ -63,97 +63,121 @@ export const SoundManager = {
 
   playTapClick: async () => {
     if (_isMuted) return;
-    await ensureAudioReady();
-    const player = createAudioPlayer(require("../../assets/sounds/tap-click.mp3"), {
-      keepAudioSessionActive: true,
-    });
-    _effectPlayers.push(player);
-    player.play();
-    player.addListener("playbackStatusUpdate", () => {
-      if (player.playbackState === "ended") {
-        _effectPlayers = _effectPlayers.filter((p) => p !== player);
-        player.remove();
-      }
-    });
+    try {
+      await ensureAudioReady();
+      const player = createAudioPlayer(require("../../assets/sounds/tap-click.mp3"), {
+        keepAudioSessionActive: true,
+      });
+      _effectPlayers.push(player);
+      player.play();
+      player.addListener("playbackStatusUpdate", () => {
+        if (player.playbackState === "ended") {
+          _effectPlayers = _effectPlayers.filter((p) => p !== player);
+          player.remove();
+        }
+      });
+    } catch (error) {
+      console.warn("[SoundManager] Failed to play tap sound:", error);
+    }
   },
 
   playConfirmTap: async () => {
     if (_isMuted) return;
-    await ensureAudioReady();
-    const player = createAudioPlayer(require("../../assets/sounds/confirm-tap.mp3"), {
-      keepAudioSessionActive: true,
-    });
-    _effectPlayers.push(player);
-    player.play();
-    player.addListener("playbackStatusUpdate", () => {
-      if (player.playbackState === "ended") {
-        _effectPlayers = _effectPlayers.filter((p) => p !== player);
-        player.remove();
-      }
-    });
+    try {
+      await ensureAudioReady();
+      const player = createAudioPlayer(require("../../assets/sounds/confirm-tap.mp3"), {
+        keepAudioSessionActive: true,
+      });
+      _effectPlayers.push(player);
+      player.play();
+      player.addListener("playbackStatusUpdate", () => {
+        if (player.playbackState === "ended") {
+          _effectPlayers = _effectPlayers.filter((p) => p !== player);
+          player.remove();
+        }
+      });
+    } catch (error) {
+      console.warn("[SoundManager] Failed to play confirm sound:", error);
+    }
   },
 
   playCorrectChapter: async () => {
     if (_isMuted) return;
-    await ensureAudioReady();
-    const player = createAudioPlayer(require("../../assets/sounds/correct-chapter.mp3"), {
-      keepAudioSessionActive: true,
-    });
-    _effectPlayers.push(player);
-    player.play();
-    player.addListener("playbackStatusUpdate", () => {
-      if (player.playbackState === "ended") {
-        _effectPlayers = _effectPlayers.filter((p) => p !== player);
-        player.remove();
-      }
-    });
+    try {
+      await ensureAudioReady();
+      const player = createAudioPlayer(require("../../assets/sounds/correct-chapter.mp3"), {
+        keepAudioSessionActive: true,
+      });
+      _effectPlayers.push(player);
+      player.play();
+      player.addListener("playbackStatusUpdate", () => {
+        if (player.playbackState === "ended") {
+          _effectPlayers = _effectPlayers.filter((p) => p !== player);
+          player.remove();
+        }
+      });
+    } catch (error) {
+      console.warn("[SoundManager] Failed to play correct sound:", error);
+    }
   },
 
   playWrongChapter: async () => {
     if (_isMuted) return;
-    await ensureAudioReady();
-    const player = createAudioPlayer(require("../../assets/sounds/wrong-chapter.mp3"), {
-      keepAudioSessionActive: true,
-    });
-    _effectPlayers.push(player);
-    player.play();
-    player.addListener("playbackStatusUpdate", () => {
-      if (player.playbackState === "ended") {
-        _effectPlayers = _effectPlayers.filter((p) => p !== player);
-        player.remove();
-      }
-    });
+    try {
+      await ensureAudioReady();
+      const player = createAudioPlayer(require("../../assets/sounds/wrong-chapter.mp3"), {
+        keepAudioSessionActive: true,
+      });
+      _effectPlayers.push(player);
+      player.play();
+      player.addListener("playbackStatusUpdate", () => {
+        if (player.playbackState === "ended") {
+          _effectPlayers = _effectPlayers.filter((p) => p !== player);
+          player.remove();
+        }
+      });
+    } catch (error) {
+      console.warn("[SoundManager] Failed to play wrong sound:", error);
+    }
   },
 
   playExamSuccess: async () => {
     if (_isMuted) return;
-    await ensureAudioReady();
-    const player = createAudioPlayer(require("../../assets/sounds/exam-success.mp3"), {
-      keepAudioSessionActive: true,
-    });
-    _effectPlayers.push(player);
-    player.play();
-    player.addListener("playbackStatusUpdate", () => {
-      if (player.playbackState === "ended") {
-        _effectPlayers = _effectPlayers.filter((p) => p !== player);
-        player.remove();
-      }
-    });
+    try {
+      await ensureAudioReady();
+      const player = createAudioPlayer(require("../../assets/sounds/exam-success.mp3"), {
+        keepAudioSessionActive: true,
+      });
+      _effectPlayers.push(player);
+      player.play();
+      player.addListener("playbackStatusUpdate", () => {
+        if (player.playbackState === "ended") {
+          _effectPlayers = _effectPlayers.filter((p) => p !== player);
+          player.remove();
+        }
+      });
+    } catch (error) {
+      console.warn("[SoundManager] Failed to play exam success sound:", error);
+    }
   },
 
   playExamFail: async () => {
     if (_isMuted) return;
-    await ensureAudioReady();
-    const player = createAudioPlayer(require("../../assets/sounds/exam-fail.mp3"), {
-      keepAudioSessionActive: true,
-    });
-    _effectPlayers.push(player);
-    player.play();
-    player.addListener("playbackStatusUpdate", () => {
-      if (player.playbackState === "ended") {
-        _effectPlayers = _effectPlayers.filter((p) => p !== player);
-        player.remove();
-      }
-    });
+    try {
+      await ensureAudioReady();
+      const player = createAudioPlayer(require("../../assets/sounds/exam-fail.mp3"), {
+        keepAudioSessionActive: true,
+      });
+      _effectPlayers.push(player);
+      player.play();
+      player.addListener("playbackStatusUpdate", () => {
+        if (player.playbackState === "ended") {
+          _effectPlayers = _effectPlayers.filter((p) => p !== player);
+          player.remove();
+        }
+      });
+    } catch (error) {
+      console.warn("[SoundManager] Failed to play exam fail sound:", error);
+    }
   },
 };

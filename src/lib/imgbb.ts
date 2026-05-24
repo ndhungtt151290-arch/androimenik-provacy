@@ -4,21 +4,21 @@
  * Có retry với exponential backoff khi gặp lỗi
  */
 
-import { IMGUR_CLIENT_ID } from "../config/ads";
+import { IMGBB_API_KEY } from "../config/ads";
 import { logger } from "../utils/logger";
 
 const IMGBB_API = "https://api.imgbb.com/1/upload";
 const MAX_RETRIES = 3;
 const BASE_DELAY_MS = 1000;
 
-export interface ImgurUploadResult {
+export interface ImgBBUploadResult {
   success: boolean;
   url?: string;
   error?: string;
 }
 
 // Mutex lock: chỉ cho phép 1 request upload tại một thời điểm
-let uploadInProgress: Promise<ImgurUploadResult> | null = null;
+let uploadInProgress: Promise<ImgBBUploadResult> | null = null;
 
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -46,14 +46,14 @@ async function readFileAsBase64(fileUri: string): Promise<string> {
 async function doUpload(
   base64Data: string,
   retryCount: number = 0
-): Promise<ImgurUploadResult> {
+): Promise<ImgBBUploadResult> {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 30000);
 
   try {
     // ImgBB requires FormData
     const formData = new FormData();
-    formData.append("key", IMGUR_CLIENT_ID);
+    formData.append("key", IMGBB_API_KEY);
     formData.append("image", base64Data);
 
     const result = await fetch(IMGBB_API, {
@@ -133,7 +133,7 @@ async function doUpload(
   }
 }
 
-export async function uploadToImgur(imageUri: string): Promise<ImgurUploadResult> {
+export async function uploadToImgBB(imageUri: string): Promise<ImgBBUploadResult> {
   // Nếu đang có request đang chạy, đợi nó xong rồi mới làm request mới
   if (uploadInProgress) {
     logger.log("[ImgBB] Waiting for previous upload to finish...");
@@ -151,3 +151,6 @@ export async function uploadToImgur(imageUri: string): Promise<ImgurUploadResult
 
   return uploadInProgress;
 }
+
+// Backward compatibility alias
+export const uploadToImgur = uploadToImgBB;

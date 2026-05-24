@@ -24,7 +24,7 @@ import type { Lang, SimpleQuestion, WrongAnswerStats } from "../types";
 import { tips } from "../data/tips";
 import { procedure } from "../data/procedure";
 import { examCenters } from "../data/examCenters";
-import { uploadToImgur } from "../lib/imgur";
+import { uploadToImgBB } from "../lib/imgbb";
 import { loadWrongAnswers } from "../lib/storage";
 import { SoundManager } from "../lib/SoundManager";
 import { logger } from "../utils/logger";
@@ -859,7 +859,7 @@ export function HomeScreen({
                     let imageUrl = lang === "vi" ? "Không có ảnh" : "画像なし";
 
                     if (selectedImage) {
-                      const uploadResult = await uploadToImgur(selectedImage);
+                      const uploadResult = await uploadToImgBB(selectedImage);
                       if (uploadResult.success && uploadResult.url) {
                         imageUrl = uploadResult.url;
                       } else {
@@ -1042,10 +1042,10 @@ const styles = StyleSheet.create({
   },
   sheetTitle: { fontSize: 20,color: "rgba(0, 0, 0, 0.79)", fontWeight: "bold", textAlign: "center", marginBottom: 10,marginTop: 16 },
   menuGrid: { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between" },
-  menuItem: { width: "30%", alignItems: "center", paddingVertical: 16, marginBottom: 12 },
+  menuItem: { width: "30%", alignItems: "center", paddingVertical: 16, marginBottom: 12, minHeight: 44 },
   menuIconWrapper: {
-    width: 35,
-    height: 35,
+    width: 44,
+    height: 44,
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 8,

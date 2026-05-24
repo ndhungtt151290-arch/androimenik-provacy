@@ -1,227 +1,442 @@
-## 1  Quy tắc dự án Gentsuki
-Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
-
-**Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
-
-## 1. Think Before Coding
-
-**Don't assume. Don't hide confusion. Surface tradeoffs.**
-
-Before implementing:
-- State your assumptions explicitly. If uncertain, ask.
-- If multiple interpretations exist, present them - don't pick silently.
-- If a simpler approach exists, say so. Push back when warranted.
-- If something is unclear, stop. Name what's confusing. Ask.
-
-## 2. Simplicity First
-
-**Minimum code that solves the problem. Nothing speculative.**
-
-- No features beyond what was asked.
-- No abstractions for single-use code.
-- No "flexibility" or "configurability" that wasn't requested.
-- No error handling for impossible scenarios.
-- If you write 200 lines and it could be 50, rewrite it.
-
-Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, simplify.
-
-## 3. Surgical Changes
-
-**Touch only what you must. Clean up only your own mess.**
-
-When editing existing code:
-- Don't "improve" adjacent code, comments, or formatting.
-- Don't refactor things that aren't broken.
-- Match existing style, even if you'd do it differently.
-- If you notice unrelated dead code, mention it - don't delete it.
-
-When your changes create orphans:
-- Remove imports/variables/functions that YOUR changes made unused.
-- Don't remove pre-existing dead code unless asked.
-
-The test: Every changed line should trace directly to the user's request.
-
-## 4. Goal-Driven Execution
-
-**Define success criteria. Loop until verified.**
-
-Transform tasks into verifiable goals:
-- "Add validation" → "Write tests for invalid inputs, then make them pass"
-- "Fix the bug" → "Write a test that reproduces it, then make it pass"
-- "Refactor X" → "Ensure tests pass before and after"
-
-For multi-step tasks, state a brief plan:
-```
-1. [Step] → verify: [check]
-2. [Step] → verify: [check]
-3. [Step] → verify: [check]
-```
-
-Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+# QUY CHUẨN DỰ ÁN GENTSUKI (Menki 1000+)
+## App thi lái xe máy cho người Việt tại Nhật Bản
 
 ---
 
-**These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
-CRITICAL: Always respond, explain, and write code comments in Vietnamese.
-## 2
-## 1. Vai trò của AI
-Bạn là một chuyên gia lập trình Mobile và am hiểu luật giao thông Nhật Bản. Hãy hỗ trợ tôi xây dựng app Gentsuki dành cho người Việt tại Nhật.
-Luôn dùng tiếng Việt để trả lời lệnh của tôi.
-## 2. Quy định về ngôn ngữ
-- Giao diện người dùng (UI): Ưu tiên tiếng Việt, thuật ngữ chuyên môn kèm tiếng Nhật (ví dụ: "Vào phòng thi - 本試験").
-- Comment trong code: Viết bằng tiếng Việt để tôi dễ theo dõi.
-- Tên biến/hàm: Viết bằng tiếng Anh chuẩn (ví dụ: `getQuestionList`, `isPassed`).
--Luôn giữ nguyên vị trí nút đúng sai , không được thay đổi vị trí hay kích thước bất kì thành phần nào khi chưa được tôi yêu cầucầu
-## 3. Phong cách giao diện (UI Style)
-- Sử dụng màu Pastel (Xanh lá nhạt, Hồng nhạt).
-- Nút "Vào phòng thi" luôn phải có màu đỏ nổi bật.
-- Đảm bảo các icon không bị đè lên văn bản (đặc biệt là nút Cài đặt).
-
-## 4. Logic nghiệp vụ
-- Bài thi thử luôn có 48 câu hỏi chữ và 2 câu hỏi hình ảnh.
-- Tổng điểm đạt là 45/50.
-- Nếu tôi yêu cầu thêm câu hỏi, hãy đảm bảo có phần giải thích (explanation) chi tiết tại sao đúng/sai.
--Phần Exam thi thử: khi ấn đúng hay sai thì luôn nhảy tự động sang câu tiếp theo.
--Phần Luyện tập: khi ấn đúng hay sai → hiện thông báo "Bạn đã đúng" hoặc "Bạn đã sai" + đáp án (o hoặc x), sau đó mới hiện giải thích. Người dùng phải bấm nút "Sau" mới được chuyển câu tiếp theo. Văn bản giải thích co giãn tự động (flexShrink, numberOfLines) để không làm container giãn.
-
-## 5. Quy tắc phản hồi
-- Nếu code có thay đổi lớn, hãy giải thích ngắn gọn bằng tiếng Việt trước khi viết code.
-- Luôn kiểm tra các file trong thư mục `@assets` để đảm bảo đường dẫn hình ảnh chính xác.
-## 6. Quy tắc bảo tồn Logic (Logic Guardians) - Bổ sung chi tiết
-Thuật toán bốc đề thi thử (Exam Sampling Logic):
-
-
-Cấu trúc đề thi cố định: Một đề thi phải luôn bao gồm đúng 50 câu hỏi, trong đó có 48 câu hỏi chữ (1 điểm/câu) và 2 câu hỏi hình ảnh/tình huống (2 điểm/câu). Tổng điểm tối đa là 50 và điểm đỗ là 45. 
-
-Phân bổ ngẫu nhiên theo chương (Cross-Chapter Sampling):
-
-AI phải viết logic bốc câu hỏi sao cho 48 câu chữ được lấy ngẫu nhiên từ tất cả các chương kiến thức hiện có trong file JSON (Kiến thức cơ bản, Cách chạy xe, Vượt xe, Dừng đỗ, Biển báo...). 
-
-Không được tập trung quá nhiều câu hỏi vào một chương duy nhất; phải đảm bảo tính bao quát toàn bộ kho dữ liệu. 
-
-
-Xử lý câu hỏi hình ảnh: 2 câu hỏi hình ảnh cuối cùng phải được bốc ngẫu nhiên từ danh sách các câu có thuộc tính kind: "picture" hoặc nằm trong chương "Dự đoán nguy hiểm/Ôn tập hình ảnh". 
-
-
-Cấm lặp lại: Trong cùng một đề thi, không được phép xuất hiện hai câu hỏi trùng id.
-## 7. Các Skill Đặc Biệt (Custom Skills)
-
-Khi tôi yêu cầu thực hiện các lệnh dưới đây, hãy tuân thủ quy trình đã định nghĩa:
-
-### Skill 1: "Thêm câu hỏi mới"
-- **Mục tiêu:** Tạo dữ liệu câu hỏi chuẩn cho database.
-- **Quy trình:**
-  1. Tự động đề xuất nội dung câu hỏi dựa trên chủ đề tôi đưa ra (Tiếng Việt & Tiếng Nhật).
-  2. Tạo phần `explanation` (giải thích) cực kỳ chi tiết vì người học cần hiểu rõ luật.
-  3. Định dạng đúng cấu trúc JSON/Database hiện có của dự án.
-  4. Nếu là câu hỏi hình ảnh, hãy mô tả bối cảnh để tôi tìm ảnh phù hợp.
-
-### Skill 2: "Review UI" (Kiểm tra giao diện)
-- **Mục tiêu:** Đảm bảo thẩm mỹ và không lỗi chồng lấn.
-- **Quy trình:**
-  1. Kiểm tra xem các component mới có bị đè lên nhau không (đặc biệt là nút Cài đặt và Menu).
-  2. Kiểm tra độ tương phản màu sắc (chữ trên nền màu Pastel phải dễ đọc).
-  3. Đảm bảo giao diện hiển thị tốt trên cả màn hình nhỏ (iPhone SE) và màn hình lớn.
-
-### Skill 3: "Check Luật Giao Thông"
-
-1. BẢO TỒN DỮ LIỆU GỐC: 
-    1. Dịch sát nghĩa đen (Literal translation)
-    4. Không được "giúp đỡ" quá mức: Không tự động sửa logic của câu hỏi, không thay đổi các thông số (bán kính, vận tốc, khoảng cách) trong câu dịch.
-    Quy tắc Kiểm định Logic Câu hỏi Lái xe (Critical Logic Check)
-  - Khi bạn thực hiện bất kỳ thao tác nào liên quan đến câu hỏi thi lái xe (dịch thuật, giải thích, hoặc kiểm tra):
-  1. Phân tích Mệnh đề: Luôn luôn phân tích mệnh đề của câu hỏi tiếng Nhật trước khi xem xét đáp án. 
-  2. So sánh Logic: So sánh nội dung mệnh đề (Câu hỏi) với Đáp án chuẩn.
-     - Nếu câu hỏi là một phát biểu SAI về luật/vật lý, bạn phải xác nhận đây là câu SAI và dịch sát nghĩa để giữ nguyên tính chất "bẫy" của câu.
-     - KHÔNG ĐƯỢC TỰ Ý sửa mệnh đề câu hỏi để nó trở thành Đúng.
-  3. Báo cáo xung đột: Nếu bạn thấy AI trước đó hoặc bản dịch hiện tại có logic mâu thuẫn (Ví dụ: câu hỏi nói "Càng lớn càng lớn" nhưng thực tế vật lý là "Càng lớn càng nhỏ"), hãy cảnh báo ngay cho người dùng: "Cảnh báo: Câu này có logic sai về mặt [vật lý/luật], đề bài đưa ra mệnh đề sai để kiểm tra thí sinh."
-  4. Ưu tiên độ chính xác tuyệt đối: Đừng cố làm cho câu hỏi trở nên "hợp lý" nếu đề bài gốc cố tình đưa ra một khẳng định vô lý. Hãy giữ nguyên bản chất của đề bài.
-2. CHUẨN HÓA THUẬT NGỮ (NHẬT - VIỆT):
-   - "車" (Kuruma): Dịch là "xe" hoặc "phương tiện" (tránh dùng "ô tô" trừ khi ngữ cảnh là xe 4 bánh).
-   - "自動車" (Jidousha): Dịch là "ô tô".
-   - "原動機付自転車": Dịch là "xe gắn máy 50cc".
-   - "車両": Dịch là "phương tiện".
-
-3. VĂN PHONG:
-   - Dùng từ ngữ giao thông phổ thông, gãy gọn, chuyên nghiệp. Tránh dịch word-by-word.
-
-4. QUY TRÌNH RÀ SOÁT:
-   - Làm việc theo lô 10 câu.
-   - Xuất bảng so sánh: [ID] | [Câu gốc JP] | [Bản dịch cũ] | [Bản dịch mới] | [Lý do sửa].
-   - Chỉ được chỉnh sửa text trong cặp dấu ngoặc kép.
-   - Nếu dữ liệu lớn, phải chia nhỏ (batch) từng lô 10 câu để tôi xác nhận, tuyệt đối không tự ý chạy hết cả file gây quá tải bộ nhớ và sai sót.
-### Skill 4: "Tối ưu hóa hình ảnh"
-- **Mục tiêu:** Quản lý tài nguyên nhẹ và nhanh.
-- **Quy trình:**
-  1. Khi thêm ảnh biển báo mới, hãy nhắc tôi nén ảnh hoặc chuyển sang định dạng WebP/SVG.
-  2. Tự động kiểm tra xem file ảnh có tồn tại trong thư mục `@assets` chưa trước khi viết code hiển thị.
-
-## 8. Logic Quảng Cáo (Ad System)
-
-### Cấu trúc Ad System
+## 1. SƠ ĐỒ THƯ MỤC CHÂN THỰC
 
 ```
-src/utils/AdEventEmitter.ts  →  EventEmitter tùy chỉnh (on / off / emit)
-src/utils/AdManager.ts      →  Logic đếm tần suất & gọi event hiển thị
+Menki1000App/
+│
+├── 📂 CẤU HÌNH & ROOT
+│   ├── App.tsx                    ← Entry point (quản lý navigation state)
+│   ├── app.config.ts
+│   ├── app.json
+│   ├── index.ts
+│   ├── eas.json
+│   └── tsconfig.json
+│
+├── 📂 KHO TÀI NGUYÊN (assets/)
+│   ├── adaptive-icon.png
+│   ├── favicon.png
+│   ├── icon.png
+│   ├── splash-icon.png
+│   └── 📂 sounds/
+│       ├── confirm-tap.mp3
+│       ├── correct-chapter.mp3
+│       ├── exam-fail.mp3
+│       ├── exam-success.mp3
+│       ├── logicsoud.txt
+│       ├── tap-click.mp3
+│       └── wrong-chapter.mp3
+│
+├── 📂 MÃ NGUỒN CHÍNH (src/)
+│   │
+│   ├── 📂 assets/                 ← Tài nguyên nội bộ app
+│   │   ├── 📂 bgs/                ← Background images
+│   │   │   ├── bgh.jpg
+│   │   │   └── Q9.png
+│   │   ├── 📂 home/               ← Icons cho màn hình chính
+│   │   │   ├── back-icon.png
+│   │   │   ├── bbbb.png
+│   │   │   ├── icon-bug.png
+│   │   │   ├── icon-contact.png
+│   │   │   ├── icon-location.png
+│   │   │   ├── icon-procedure.png
+│   │   │   ├── icon-question.png
+│   │   │   ├── icon-tip.png
+│   │   │   ├── menu.png
+│   │   │   ├── offsound.png
+│   │   │   ├── onsoud.png
+│   │   │   ├── prog.png
+│   │   │   ├── s1.png → s6.png    ← Step indicators
+│   │   │   └── [icon file].png
+│   │   └── 📂 images/              ← Ảnh biển báo câu hỏi
+│   │       ├── menkyogentsuki_101.png
+│   │       ├── menkyogentsuki_102.png
+│   │       └── ... (1000+ files)
+│   │
+│   ├── 📂 components/             ← UI Components dùng chung
+│   │   ├── AdBanner.tsx
+│   │   ├── AdModal.tsx
+│   │   ├── AnswerNavButtons.tsx
+│   │   ├── BackHomeButton.tsx
+│   │   ├── BannerAd.tsx
+│   │   ├── ConfirmDialog.tsx
+│   │   ├── FlagIcons.tsx
+│   │   ├── Icons.tsx
+│   │   ├── IllustrationImage.tsx
+│   │   ├── LangSwitch.tsx
+│   │   ├── MaruBatsuButtons.tsx    ← Nút Đúng/Sai
+│   │   ├── NavigationButtons.tsx
+│   │   ├── ProgressIndicator.tsx
+│   │   ├── SoundToggle.tsx
+│   │   ├── SubChapterModal.tsx
+│   │   └── TimerDisplay.tsx
+│   │
+│   ├── 📂 config/                 ← Cấu hình bên thứ 3
+│   │   ├── ads.example.ts
+│   │   ├── ads.ts
+│   │   └── emailjs.ts
+│   │
+│   ├── 📂 data/                   ← TẦNG DATA (JSON/TS)
+│   │   ├── questions.json         ← Database câu hỏi chính
+│   │   ├── questions.ts           ← Helper functions cho questions
+│   │   ├── examCenters.ts         ← Danh sách trung tâm thi
+│   │   ├── procedure.ts           ← Thủ tục thi
+│   │   └── tips.ts                ← Mẹo thi
+│   │
+│   ├── 📂 hooks/                  ← Custom React hooks
+│   │   └── useTimer.ts
+│   │
+│   ├── 📂 lib/                    ← TẦNG LOGIC nghiệp vụ
+│   │   ├── adService.ts           ← Khởi tạo quảng cáo
+│   │   ├── chapters.ts           ← Danh sách & mapping chapters
+│   │   ├── dataUtils.ts           ← Utilities xử lý data
+│   │   ├── exam.ts                ← Logic bốc đề thi, chấm điểm
+│   │   ├── imgur.ts               ← Upload ảnh lên Imgur
+│   │   ├── SoundManager.ts        ← Quản lý âm thanh
+│   │   └── storage.ts             ← Đọc/ghi AsyncStorage
+│   │
+│   ├── 📂 screens/                ← TẦNG UI (Màn hình)
+│   │   ├── ChapterScreen.tsx      ← Màn hình luyện theo chương
+│   │   ├── ExamPrepScreen.tsx     ← Chuẩn bị vào thi
+│   │   ├── ExamScreen.tsx         ← Màn hình thi (50 câu)
+│   │   ├── HistoryScreen.tsx      ← Lịch sử thi
+│   │   ├── HomeScreen.tsx         ← Màn hình chính
+│   │   ├── PracticeHomeScreen.tsx ← Menu luyện tập
+│   │   ├── PrivacyScreen.tsx      ← Chính sách bảo mật
+│   │   ├── ResultsScreen.tsx      ← Kết quả thi
+│   │   ├── ReviewScreen.tsx       ← Xem lại bài thi
+│   │   └── WrongAnswersScreen.tsx ← Câu sai đã lưu
+│   │
+│   ├── 📂 theme/                  ← Design tokens
+│   │   └── buttonTokens.ts
+│   │
+│   ├── 📂 types/                  ← TypeScript definitions
+│   │   └── index.ts
+│   │
+│   └── 📂 utils/                  ← Tiện ích hệ thống
+│       ├── AdEventEmitter.ts       ← Event emitter cho ads
+│       ├── AdManager.ts            ← Logic hiển thị quảng cáo
+│       └── logger.ts
+│
+├── 📂 MENUBAR (Dữ liệu tĩnh)
+│   ├── mapcenter.txt
+│   ├── support.txt
+│   ├── thutuc.txt
+│   ├── tip.txt
+│   └── xques.txt
+│
+├── 📂 SCRIPTS (Dev tools)
+│   ├── check_translation_accuracy.js
+│   ├── check_translation_similarity.js
+│   ├── check_translations.js
+│   └── relocate_sign_questions.js
+│
+└── 📂 NATIVE (Android build output)
+    ├── android/
+    ├── .expo/
+    └── menubar/
 ```
 
-### AdEventEmitter (EventEmitter tùy chỉnh)
+---
 
-File: `src/utils/AdEventEmitter.ts`
+## 2. LUỒNG ĐIỀU HƯỚNG CỐT LÕI
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                         App.tsx (Entry Point)                       │
+│                    Quản lý: view state + exam state                 │
+└─────────────────────────────────┬───────────────────────────────────┘
+                                  │
+                                  ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                          HomeScreen.tsx                              │
+│         [ Thi thử ] ──────► ExamPrepScreen.tsx                      │
+│         [ Luyện tập ] ────► PracticeHomeScreen.tsx                  │
+└─────────────────────────────────┬───────────────────────────────────┘
+                                  │
+                    ┌─────────────┴─────────────┐
+                    ▼                           ▼
+        ┌───────────────────┐       ┌─────────────────────────┐
+        │  PracticeHomeScreen │       │     ExamPrepScreen      │
+        │  (Menu luyện tập)   │       │  (Chuẩn bị vào thi)   │
+        │                     │       └───────────┬─────────────┘
+        │  - Các chương       │                   │
+        │  - 総合演習 (6 bài)   │                   ▼
+        │  - SOGOU popup      │       ┌─────────────────────────┐
+        └─────────┬───────────┘       │     ExamScreen.tsx      │
+                  │                   │   (50 câu, 30 phút)    │
+                  ▼                   │   - Đáp án đúng/sai   │
+        ┌───────────────────┐         │   - Đáp án hình ảnh    │
+        │  ChapterScreen.tsx│         │   - Timer đếm ngược    │
+        │  (Luyện theo chương)      │   - Đánh dấu cờ        │
+        │  - Câu hỏi chữ     │         └───────────┬─────────────┘
+        │  - Câu hỏi hình    │                     │
+        │  - Giải thích      │                     ▼
+        └───────────────────┘           ┌─────────────────────────┐
+                                        │   ResultsScreen.tsx     │
+                                        │   (Điểm số + kết quả) │
+                                        │   - Đỗ: exam-success   │
+                                        │   - Trượt: exam-fail   │
+                                        │   - Xem lại / Thi lại  │
+                                        └───────────┬─────────────┘
+                                                    │
+                                    ┌───────────────┴───────────────┐
+                                    ▼                               ▼
+                        ┌───────────────────┐           ┌───────────────────┐
+                        │  ReviewScreen.tsx │           │   HomeScreen.tsx  │
+                        │  (Xem lại bài)   │           │   (Về trang chủ)  │
+                        └───────────────────┘           └───────────────────┘
+```
+
+### Mô tả các màn hình:
+
+| Màn hình | File | Mô tả |
+|----------|------|--------|
+| **HomeScreen** | `src/screens/HomeScreen.tsx` | Trang chính - 2 lựa chọn: Thi thử / Luyện tập |
+| **PracticeHomeScreen** | `src/screens/PracticeHomeScreen.tsx` | Menu luyện tập - Danh sách chương + 総合演習 popup |
+| **ChapterScreen** | `src/screens/ChapterScreen.tsx` | Luyện tập theo từng chương, có giải thích chi tiết |
+| **ExamPrepScreen** | `src/screens/ExamPrepScreen.tsx` | Chuẩn bị thi - Xem lịch sử, vào thi |
+| **ExamScreen** | `src/screens/ExamScreen.tsx` | Màn hình thi - 50 câu, timer 30 phút |
+| **ResultsScreen** | `src/screens/ResultsScreen.tsx` | Kết quả - Điểm số, nút Thi lại / Xem lại |
+| **ReviewScreen** | `src/screens/ReviewScreen.tsx` | Xem lại đáp án đúng/sai |
+| **HistoryScreen** | `src/screens/HistoryScreen.tsx` | Lịch sử các lần thi |
+
+---
+
+## 3. QUY TẮC BẢO VỆ MÃ NGUỒN
+
+### 3.1 Cấm tuyệt đối
+
+```
+⛔ CẤM tạo thư mục mới ngoài sơ đồ trên
+⛔ CẤM di chuyển file ra khỏi thư mục đã quy định
+⛔ CẤM đổi tên file làm ảnh hưởng import path
+```
+
+### 3.2 Khi sửa màn hình (screens/)
+
+| Khi cần... | Phải dùng tài nguyên ở... |
+|------------|---------------------------|
+| Hiển thị ảnh biển báo | `src/assets/images/menkyogentsuki_*.png` |
+| Phát âm thanh | `assets/sounds/*.mp3` |
+| Thêm background | `src/assets/bgs/bgh.jpg` hoặc `Q9.png` |
+| Lấy câu hỏi | `src/data/questions.json` |
+| Đọc chapters | `src/lib/chapters.ts` |
+
+### 3.3 Luật đặt tên file
+
+```
+✅ ĐÚNG:
+   - src/screens/HomeScreen.tsx
+   - src/components/MaruBatsuButtons.tsx
+   - src/lib/exam.ts
+
+❌ SAI:
+   - src/Screens/HomeScreen.tsx    (chữ hoa)
+   - src/components/home-button.tsx ( kebab-case)
+   - Src/Lib/exam.ts               (viết tắt)
+```
+
+### 3.4 Import path chuẩn
 
 ```typescript
-class AdEventEmitter {
-  on<T>(event, callback)
-  off<T>(event, callback)
-  emit<T>(event, data?)
-}
-export const adEmitter = new AdEventEmitter();
+// ✅ Dùng relative path
+import { HomeScreen } from "./src/screens/HomeScreen";
+import { questions } from "./src/data/questions";
+
+// ❌ Không dùng alias chưa được config
+import { HomeScreen } from "@screens/HomeScreen";
 ```
 
-**Các event:**
-| Event      | Payload      | Mô tả                          |
-|------------|--------------|--------------------------------|
-| `"show"`   | `() => void` | Gọi callback sau khi ad hiện  |
-| `"close"`  | –            | Đóng ad                        |
+---
 
-### AdManager (Logic đếm tần suất)
+## 4. NGHIÊM CẤM THAY ĐỔI VỊ TRÍ
 
-File: `src/utils/AdManager.ts`
+### 4.1 Nút Đúng/Sai (MaruBatsuButtons)
 
-| Hàm                        | AsyncStorage Key           | Trigger                        |
-|----------------------------|----------------------------|--------------------------------|
-| `showInterstitialChapter`  | `chapter_back_count`       | Mỗi lần thoát khỏi Chapter    |
-| `showInterstitialExam`     | `exam_back_count`          | Mỗi lần thoát khỏi Exam       |
-| `showInterstitialRetry`    | `retry_count`              | Mỗi lần bấm "Thi lại"         |
-| `closeInterstitial`        | –                          | Gửi event `"close"` đến UI    |
+```
+⚠️ VỊ TRÍ CỐ ĐỊNH - KHÔNG ĐƯỢC THAY ĐỔI:
+   - Nút ○ (Đúng): BÊN TRÁI
+   - Nút ✕ (Sai): BÊN PHẢI
+   
+⚠️ Kích thước nút: Giữ nguyên như design ban đầu
+```
 
-**Quy tắc hiển thị:** Cứ mỗi **5 lần** trigger (count % 5 === 0) → emit `"show"`. Các lần khác → gọi callback trực tiếp. Nếu AsyncStorage lỗi → gọi callback luôn.
+### 4.2 Header controls
 
-### Cách sử dụng trong Screen
+```
+⚠️ VỊ TRÍ CỐ ĐỊNH:
+   - LangSwitch: GÓC PHẢI, dưới safe area
+   - SoundToggle: BÊN CẠNH LangSwitch
+   - BackHomeButton: GÓC TRÁI, dưới safe area
+```
+
+---
+
+## 5. LOGIC NGHIỆP VỤ (KHÔNG ĐƯỢC SỬA)
+
+### 5.1 Cấu trúc đề thi (Exam)
+
+```
+📋 Đề thi cố định:
+   - 48 câu hỏi chữ (1 điểm/câu)
+   - 2 câu hỏi hình ảnh (2 điểm/câu)
+   - Tổng điểm: 50
+   - Điểm đỗ: 45/50
+```
+
+### 5.2 Luồng thi (Exam Flow)
+
+```
+Exam thi thử:
+   [Chọn đáp án] → [Đúng/Sai] → [TỰ ĐỘNG NHẢY sang câu tiếp]
+
+Luyện tập:
+   [Chọn đáp án] → [Hiện thông báo + đáp án] → [Hiện giải thích] → [Bấm "Sau" để tiếp tục]
+```
+
+### 5.3 Logic bốc đề (exam.ts)
 
 ```typescript
-import { adEmitter, showInterstitialChapter } from "../utils/AdManager";
-
-useEffect(() => {
-  const unsubShow = adEmitter.on("show", onShowAd); // onShowAd: hiện UI quảng cáo
-  const unsubClose = adEmitter.on("close", onCloseAd);
-
-  return () => {
-    unsubShow();
-    unsubClose();
-  };
-}, []);
-
-function handleBack() {
-  showInterstitialChapter(() => {
-    onBack(); // callback: thực sự thoát màn hình
-  });
-}
+// KHÔNG ĐƯỢC SỬA:
+// - Hàm buildMockExam()
+// - Hàm scoreExam()
+// - Logic phân bổ câu hỏi theo chương
 ```
 
-### Quy tắc khi chỉnh sửa Ad System
+---
 
-- **Không thay đổi số `5`** trong `count % 5 === 0` — đây là tần suất hiển thị đã được thiết kế.
-- **Không xóa `closeInterstitial`** — màn hình ad UI gọi hàm này để thông báo cho AdManager biết ad đã đóng.
-- Nếu cần thêm trigger mới, tạo thêm hàm theo pattern `showInterstitialXxx` trong `AdManager.ts`, dùng key AsyncStorage riêng.
-- Nếu cần thay đổi event name hoặc payload, cập nhật cả `AdEventEmitter` và nơi gọi `emit`/`on` đồng thời.
+## 6. NGÔN NGỮ VÀ VĂN PHONG
+
+### 6.1 Ngôn ngữ giao diện
+
+```
+✅ UI: Tiếng Việt + Thuật ngữ Nhật kèm () 
+   Ví dụ: "Vào phòng thi - 本試験"
+
+✅ Code comments: Tiếng Việt
+
+✅ Tên biến/hàm: Tiếng Anh chuẩn
+   Ví dụ: getQuestionList, isPassed, handleSubmit
+```
+
+### 6.2 Dịch thuật câu hỏi
+
+```
+✅ Dịch sát nghĩa đen (Literal translation)
+
+✅ Thuật ngữ chuẩn:
+   - "車" → "xe" hoặc "phương tiện"
+   - "自動車" → "ô tô"
+   - "原動機付自転車" → "xe gắn máy 50cc"
+   
+✅ Giữ nguyên các thông số (bán kính, vận tốc, khoảng cách)
+```
+
+### 6.3 UI Style
+
+```
+✅ Màu Pastel (xanh lá nhạt, hồng nhạt)
+✅ Nút "Vào phòng thi" màu đỏ nổi bật
+✅ Icon không đè lên văn bản
+```
+
+---
+
+## 7. HỆ THỐNG QUẢNG CÁO (Ad System)
+
+### 7.1 Cấu trúc
+
+```
+src/utils/
+├── AdEventEmitter.ts    ← Event emitter (on/off/emit)
+└── AdManager.ts        ← Logic đếm tần suất
+
+src/components/
+├── AdBanner.tsx
+├── AdModal.tsx
+└── BannerAd.tsx
+
+src/lib/
+└── adService.ts        ← Khởi tạo ads
+```
+
+### 7.2 Tần suất hiển thị
+
+```
+⚠️ Cấu hình cố định: 5 lần trigger → hiển thị 1 lần
+⚠️ KHÔNG ĐƯỢC thay đổi số 5
+```
+
+### 7.3 Các trigger
+
+| Trigger | Storage Key | Khi nào |
+|---------|-------------|---------|
+| `showInterstitialChapter` | `chapter_back_count` | Thoát Chapter |
+| `showInterstitialExam` | `exam_back_count` | Thoát Exam |
+| `showInterstitialRetry` | `retry_count` | Bấm "Thi lại" |
+
+---
+
+## 8. CÁC SKILL ĐẶC BIỆT
+
+### Skill: "Thêm câu hỏi mới"
+
+1. Đề xuất nội dung (Tiếng Việt + Tiếng Nhật)
+2. Tạo phần `explanation` chi tiết
+3. Format đúng cấu trúc JSON trong `questions.json`
+4. Nếu là câu hỏi hình → mô tả bối cảnh để tìm ảnh
+
+### Skill: "Review UI"
+
+1. Kiểm tra overlap (đặc biệt nút Cài đặt + Menu)
+2. Kiểm tra độ tương phản màu
+3. Test trên iPhone SE và màn hình lớn
+
+### Skill: "Check Luật Giao Thông"
+
+1. Phân tích mệnh đề tiếng Nhật TRƯỚC khi xem đáp án
+2. So sánh logic với đáp án chuẩn
+3. Nếu đề bài cố tình sai → giữ nguyên, cảnh báo user
+4. Không tự ý sửa mệnh đề để thành đúng
+
+---
+
+## 9. XỬ LÝ SỰ CỐ
+
+### 9.1 Khi thêm ảnh mới
+
+```
+1. Kiểm tra ảnh đã tồn tại trong src/assets/images/ chưa
+2. Nếu chưa: Nén ảnh hoặc chuyển sang WebP
+3. Đặt tên theo pattern: menkyogentsuki_XXX.png
+```
+
+### 9.2 Khi cần thêm file mới
+
+```
+CHỈ được tạo file mới TRONG các thư mục đã có:
+   ✅ src/components/    → Component UI mới
+   ✅ src/screens/        → Screen mới
+   ✅ src/lib/            → Logic nghiệp vụ mới
+   ✅ src/data/           → Data file mới
+
+❌ KHÔNG ĐƯỢC tạo thư mục mới
+```
+
+---
+
+## 10. CHECKLIST TRƯỚC KHI COMMIT
+
+```
+□ Import path đúng (relative)
+□ File tài nguyên đã tồn tại trong sơ đồ
+□ Không thay đổi vị trí nút Đúng/Sai
+□ Không tạo thư mục mới
+□ Logic nghiệp vụ (exam.ts) không bị sửa
+□ Comment bằng tiếng Việt
+□ Tên biến bằng tiếng Anh
+```

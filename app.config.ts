@@ -11,7 +11,7 @@ const config: ExpoConfig = {
   splash: {
     image: "./assets/splash-icon.png",
     resizeMode: "contain",
-    backgroundColor: "#78350f",
+    backgroundColor: "#FFFFFF",
   },
   ios: {
     supportsTablet: true,
@@ -26,12 +26,17 @@ const config: ExpoConfig = {
       NSPhotoLibraryUsageDescription:
         "Ứng dụng cần truy cập thư viện ảnh để người dùng có thể chọn ảnh đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi.",
       ITSAppUsesNonExemptEncryption: false,
+      NSUserTrackingUsageDescription: {
+        vi: "Ứng dụng chỉ sử dụng IDFA (Bộ định danh cho quảng cáo) để hiển thị quảng cáo phù hợp và không xâm phạm quyền riêng tư. Chúng tôi tuân thủ nghiêm ngặt các yêu cầu về quyền riêng tư trên App Store.",
+        ja: "当アプリでは、控えめで関連性のある広告を表示するためにのみ IDFA（識別子 for 広告）を使用します。App Store の privacyに関する要件に準拠するため、ユーザー様が適切に同意いただけるようにお願いします。",
+      },
+      PrivacyURL: "https://ndhungtt151290-arch.github.io/menki1000-privacy/",
     },
   },
   android: {
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
-      backgroundColor: "#78350f",
+      backgroundColor: "#FFFFFF",
     },
     package: "com.gentsuki.app",
     permissions: ["com.google.android.gms.permission.AD_ID"],

@@ -1850,8 +1850,8 @@
       "text": "一方通行の道路では、追い越しをしてはならない。",
       "answer": "×",
       "explanation": "一方通行の道路での追い越しを禁じる規則は存在しない。",
-      "textVi": "Việc vượt xe bị cấm trong phạm vi 30 mét tính từ giao lộ trở về trước (trừ khi đang đi trên đường ưu tiên).",
-      "explanationVi": "Đúng. Giao lộ và khu vực trong vòng 30m trước đó là nơi cấm vượt, ngoại trừ trường hợp bạn đang lưu thông trên đường ưu tiên."
+      "textVi": "Trên đường một chiều, cấm thực hiện việc vượt xe.",
+      "explanationVi": "Sai. Không có quy định nào cấm vượt xe trên đường một chiều."
     },
     {
       "kind": "simple",
@@ -2005,8 +2005,8 @@
       "text": "5分を超える人の乗り降りのための停止は、停車である。",
       "answer": "○",
       "explanation": "たとえ5分を超えたとしても、人の乗り降りのための停止は、停車である。",
-      "textVi": "Việc dừng xe quá 5 phút để đón trả khách được coi là dừng xe (Teisha).",
-      "explanationVi": "Sai. Ngay cả khi dừng quá 5 phút, việc dừng xe để đón trả khách vẫn được coi là dừng xe (Teisha), không bị tính là đỗ xe."
+      "textVi": "Việc dừng xe quá 5 phút để đón trả khách được coi là dừng xe tạm thời (Teisha).",
+      "explanationVi": "Đúng. Ngay cả khi thời gian dừng vượt quá 5 phút, nếu mục đích là để người lên/xuống xe thì vẫn được phân loại là dừng xe tạm thời (Teisha), chứ không phải là đỗ xe (Chuusha)."
     },
     {
       "kind": "simple",
@@ -2505,8 +2505,8 @@
       "text": "夜間の運転時には、視界が悪く危険なので、前車の合図が見やすいよう、できるだけ前車に近付いて運転すべきである。",
       "answer": "×",
       "explanation": "しっかりと車間距離をとることが大事である。",
-      "textVi": "Ban đêm do tầm nhìn kém, nên giữ khoảng cách với xe phía trước xa hơn so với ban ngày.",
-      "explanationVi": "Đúng. Dù giao thông ít hay đông, bạn vẫn phải giữ khoảng cách xa hơn so với ban ngày."
+      "textVi": "Khi lái xe vào ban đêm, vì tầm nhìn kém và nguy hiểm, nên cố gắng lái xe càng gần xe phía trước càng tốt để dễ quan sát tín hiệu của họ.",
+      "explanationVi": "Sai. Dù là ban đêm hay ban ngày, việc lái xe quá gần xe phía trước đều rất nguy hiểm. Cần phải giữ khoảng cách an toàn."
     },
     {
       "kind": "simple",
@@ -4877,8 +4877,8 @@
       "answer": "×",
       "explanation": "この標識は、軌道敷内通行可を示す。自動車は軌道敷内を通行できるが、原動機付自転車は自動車でないため、軌道敷内を通行できない。",
       "image": "menkyogentsuki_851.png",
-      "textVi": "Đường có biển báo này, dù là xe gắn máy cũng có thể đi qua.",
-      "explanationVi": "Đúng. Đây là biển cấm vượt xe."
+      "textVi": "Trên con đường có biển báo này, xe gắn máy (nguyên động cơ) cũng có thể đi vào.",
+      "explanationVi": "Sai. Biển báo này cho phép đi vào khu vực đường ray (quỹ đạo đường sắt). Tuy nhiên, vì xe gắn máy không được coi là xe ô tô, nên không được phép đi vào khu vực này."
     },
     {
       "kind": "simple",
@@ -6982,7 +6982,7 @@
       "answer": "×",
       "explanation": "「3メートル以内」の部分が誤り。正しくは、5メートル以内である。",
       "textVi": "Gần giao lộ, nơi cấm đỗ và dừng xe là trong phạm vi 3 mét từ giao lộ và mép của nó.",
-      "explanationVi": "Phần \"3 mét\" là sai. Đúng ra phải là trong phạm vi 5 mét."
+      "explanationVi": "Đúng ra phải là trong phạm vi 5 mét."
     },
     {
       "kind": "simple",
@@ -8276,7 +8276,7 @@
       "answer": "×",
       "explanation": "あらかじめ安全を確認して合図をし、その後もう一度安全を確認してから進路を変更する。",
       "textVi": "Khi thay đổi hướng đi, sau khi ra tín hiệu rồi mới xác nhận an toàn rồi thay đổi hướng đi.",
-      "explanationVi": "Sai. Đúng thứ tự phải là: 1) Xác nhận an toàn trước, 2) Ra tín hiệu chuyển hướng, 3) Xác nhận an toàn lần nữa, 4) Rồi mới thay đổi hướng đi."
+      "explanationVi": "Đúng thứ tự phải là: 1) Xác nhận an toàn trước, 2) Ra tín hiệu chuyển hướng, 3) Xác nhận an toàn lần nữa, 4) Rồi mới thay đổi hướng đi."
     },
     {
       "kind": "simple",
@@ -9829,8 +9829,8 @@
       "answer": "×",
       "explanation": "この標識は、追い越しのための右側部分はみ出し禁止である。",
       "image": "menkyogentsuki_858.png",
-      "textVi": "Biển báo này cấm bản thân việc vượt xe.",
-      "explanationVi": "Đúng. Đây là biển cấm vượt xe."
+      "textVi": "Biển báo này cấm hoàn toàn việc vượt xe.",
+      "explanationVi": "Biển báo này chỉ cấm việc lấn sang làn đường bên phải để vượt xe (nếu không lấn làn thì vẫn có thể vượt). Đây không phải là biển cấm vượt xe hoàn toàn."
     },
     {
       "kind": "simple",

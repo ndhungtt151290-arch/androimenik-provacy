@@ -458,8 +458,8 @@
       "answer": "×",
       "explanation": "車には原動機付自転車が含まれ、原動機付自転車の法定最高速度は時速30キロメートルである。標識に時速40キロメートルと記載があっても、原動機付自転車の最高速度は時速30キロメートルのため、誤り。",
       "image": "menkyogentsuki_41.png",
-      "textVi": "Tốc độ tối đa trên đoạn đường có biển báo này là 40 km/h đối với tất cả các loại xe.",
-      "explanationVi": "Khái niệm 'Xe cơ giới' bao gồm cả xe gắn máy, và tốc độ tối đa theo luật định của xe gắn máy là 30 km/h. Ngay cả khi biển báo ghi tốc độ 40 km/h, thì tốc độ tối đa cho phép của xe gắn máy vẫn là 30 km/h, vì vậy nội dung câu hỏi là sai."
+      "textVi": "Tốc độ tối đa trên đoạn đường có biển báo này là 40 km/h đối với tất cả các loại xe cơ giới.",
+      "explanationVi": "Khái niệm 'Xe cơ giới' bao gồm cả xe gắn máy, và tốc độ tối đa theo luật định của xe gắn máy là 30 km/h. Ngay cả khi biển báo ghi tốc độ 40 km/h, thì tốc độ tối đa cho phép của xe gắn máy vẫn là 30 km/h."
     },
     {
       "kind": "simple",
@@ -2184,7 +2184,7 @@
       "answer": "○",
       "explanation": "昼間同じ場所に引き続いて12時間駐車してはならない。夜間は8時間。また、道路を車庫代わりに使用してはならない。",
       "textVi": "Trên đường, nguyên tắc không được đỗ xe cùng một chỗ liên tục quá 12 giờ vào ban ngày.",
-      "explanationVi": "Đúng. Bạn không được đỗ xe cùng một chỗ liên tục quá 12 giờ vào ban ngày. Về ban đêm, thời gian là 8 giờ. Ngoài ra, không được dùng đường làm nơi để xe thay vì garaging."
+      "explanationVi": "Đúng. Bạn không được đỗ xe cùng một chỗ liên tục quá 12 giờ vào ban ngày. Về ban đêm, thời gian là 8 giờ. Ngoài ra, không được dùng đường làm nơi để xe thay vì nơi để xe (garage)."
     },
     {
       "kind": "simple",
@@ -2703,7 +2703,7 @@
       "text": "走行中に急ブレーキをかけて後輪が右へ横すべりを始めたときは、ハンドルを左に切るようにする。",
       "answer": "×",
       "explanation": "横すべりした方へ、ハンドルを切る。",
-      "textVi": "Khi đang chạy mà phanh gấp khiến bánh sau bị trượt sang phải, bạn nên quay tay lái sang phải.",
+      "textVi": "Khi đang chạy mà phanh gấp khiến bánh sau bị trượt sang phải, bạn nên quay tay lái sang trái.",
       "explanationVi": "Sai. Khi bánh sau bị trượt sang một hướng, bạn phải quay tay lái sang hướng đó."
     },
     {
@@ -2755,11 +2755,11 @@
       "id": "menkyogentsuki_gentsuki_5_9_2",
       "chapter": "危険な状況での運転",
       "section": "大地震・交通事故への対応",
-      "text": "交通事故の際は、捜査を邪魔しないよう、できるだけ事故現場を保全する必要がある。",
+      "text": "交通事故の際、交通の妨げにならないように、直ちに車を移動させる必要がある。",
       "answer": "×",
-      "explanation": "交通の妨げになるので、車を移動させなければならない。",
+      "explanation": "違います。交通事故が発生した際は、警察の捜査のために現場をそのまま保全しなければならず、勝手に車を移動させてはいけません。",
       "textVi": "Khi xảy ra tai nạn giao thông, để không cản trở giao thông, bạn cần di chuyển xe ngay.",
-      "explanationVi": "Sai. Khi xảy ra tai nạn giao thông, bạn phải giữ nguyên hiện trường để cảnh sát điều tra, không được tự ý di chuyển xe."
+      "explanationVi": "Khi xảy ra tai nạn giao thông, bạn phải giữ nguyên hiện trường để cảnh sát điều tra, không được tự ý di chuyển xe."
     },
     {
       "kind": "simple",
@@ -2912,7 +2912,7 @@
       "explanation": "この標示は、停止禁止部分である。この場所で停止する恐れがあるときは、進入してはならない。",
       "image": "menkyogentsuki_342.png",
       "textVi": "Vị trí có vạch kẻ này là khu vực cấm dừng xe, nhưng vẫn được phép đỗ xe.",
-      "explanationVi": "Vạch kẻ này là khu vực cấm dừng xe (停止禁止). Nếu có khả năng phải dừng xe thì không được phép đi vào."
+      "explanationVi": "Vạch kẻ này biểu thị khu vực cấm dừng xe. Nếu dự đoán có khả năng phải dừng lại tại đây, tuyệt đối không được đi vào."
     },
     {
       "kind": "simple",
@@ -2971,7 +2971,7 @@
       "answer": "×",
       "explanation": "この標示は、バス専用車両通行帯であることを示す。原動機付自転車や小型特殊自動車、軽車両は通行できるが普通自動車は原則通行できない。",
       "image": "menkyogentsuki_360.png",
-      "textVi": "Vạch kẻ đường này cho biết làn đường dành cho xe buýt , xe thường có thể đi vào khi đường đông.",
+      "textVi": "Tại nơi có vạch kẻ đường này, xe ô tô thường chỉ được đi vào làn đường này trong trường hợp đường đông đúc.",
       "explanationVi": "Sai. Vạch kẻ đường này biểu thị làn dành cho xe buýt tuyến. Xe gắn máy, xe đặc biệt nhỏ, xe đạp có thể đi vào, nhưng xe ô tô thường thì không được phép."
     },
     {
@@ -6007,10 +6007,10 @@
       "chapter": "総合演習3",
       "section": "3-22",
       "text": "交通事故の際は、捜査を邪魔しないよう、できるだけ事故現場を保全する必要がある。",
-      "answer": "×",
+      "answer": "○",
       "explanation": "交通の妨げになるので、車を移動させなければならない。",
       "textVi": "Trong tai nạn giao thông, cần bảo toàn hiện trường tai nạn càng nhiều càng tốt để không cản trở điều tra.",
-      "explanationVi": "Vì cản trở giao thông, nên phải di chuyển xe."
+      "explanationVi": "Khi xảy ra tai nạn giao thông, để không gây cản trở công tác điều tra, cần phải giữ nguyên hiện trường vụ tai nạn càng nhiều càng tốt."
     },
     {
       "kind": "simple",
@@ -9652,7 +9652,7 @@
       "text": "原動機付自転車で走行する際、同一方向に車両通行帯が3つ以上ある場合は、原則として交通量の少ない車両通行帯を走行する。",
       "answer": "×",
       "explanation": "やむを得ない場合を除き、原動機付自転車は一番左側の車線を走行する。",
-      "textVi": "Khi lái xe gắn máy 50cc trên đường có từ 3 làn xe trở lên cùng chiều, thì nguyên tắc là đi ở làn xe có lưu lượng giao thông ít.",
+      "textVi": "Khi lái xe gắn máy, trường hợp có từ 3 làn xe trở lên cùng hướng, về nguyên tắc hãy đi vào làn đường có lưu lượng giao thông ít hơn.",
       "explanationVi": "Sai. Trừ khi thật sự cần thiết, xe gắn máy 50cc phải đi ở làn xe ngoài cùng bên trái."
     },
     {
@@ -10231,12 +10231,12 @@
       "id": "menkyogentsuki_gentsuki_6_19_2",
       "chapter": "総合演習6",
       "section": "6-28",
-      "text": "この標示のある場所は、停止禁止部分であって、駐車は可能である。",
-      "answer": "×",
+      "text": "この標識のある場所は、駐車および停車禁止区域である",
+      "answer": "○",
       "explanation": "この標示は、停止禁止部分である。この場所で停止する恐れがあるときは、進入してはならない。",
       "image": "menkyogentsuki_342.png",
-      "textVi": "Vị trí có biển báo này là khu vực cấm dừng xe, nhưng vẫn được phép đỗ xe.",
-      "explanationVi": "Sai. Biển báo này là khu vực cấm dừng xe (停止禁止). Nếu có khả năng phải dừng xe thì không được phép đi vào."
+      "textVi": "Vị trí có biển báo này là khu vực cấm dừng xe và đỗ xe.",
+      "explanationVi": "Biển báo này là khu vực cấm dừng xe (停止禁止). Nếu có khả năng phải dừng xe thì không được phép đi vào."
     },
     {
       "kind": "simple",

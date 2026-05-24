@@ -27,15 +27,162 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
   // Only use scenarioGroups (dangerScenarioGroups is 100% duplicate)
   const uniqueScenarios = bank.scenarioGroups;
 
-  // === PHASE 1: Proportional distribution of theory questions (câu 1-46) ===
+  // === PHASE 1: Phan bo ti le 46 cau thuong (Cau 1 - Cau 46) ===
   const TARGET_SIMPLE = 46;
+  // Pool A gom 11 chuong: 5 chuong ly thuyet + 6 chuong tong hop
+  // TUYET DOI LOAI TRU 2 chuong tinh huong "危険予測" va "危険予測問題"
   const THEORY_CHAPTERS = [
     "運転の基礎知識",
     "標識・標示・信号",
     "道路の走行方法",
     "追い越し・駐停車",
     "危険な状況での運転",
+    "総合演習1",
+    "総合演習2",
+    "総合演習3",
+    "総合演習4",
+    "総合演習5",
+    "総合演習6",
   ];
+
+  // === Ràng buộc tối thiểu 8 câu chứa ảnh ===
+  const MIN_IMAGE_QUESTIONS = 8;
+
+  // === Ham kiem tra ràng buộc tại vi tri i ===
+  function canPlaceAt(
+    currentArr: SimpleQuestion[],
+    question: SimpleQuestion,
+    position: number
+  ): boolean {
+    // Ràng buộc 1: Không anh liền kề
+    if (position > 0 && currentArr[position - 1].image && question.image) {
+      return false;
+    }
+
+    // Ràng buộc 2: Không 3 chương liên tiếp
+    if (
+      position >= 2 &&
+      currentArr[position - 1].chapter === question.chapter &&
+      currentArr[position - 2].chapter === question.chapter
+    ) {
+      return false;
+    }
+
+    // Ràng buộc 3: Không 4 đáp án liên tiếp cùng loại
+    if (position >= 3) {
+      const a = currentArr[position - 1].answer;
+      const b = currentArr[position - 2].answer;
+      const c = currentArr[position - 3].answer;
+      if (a === question.answer && b === question.answer && c === question.answer) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  // === Ham dem so ràng buộc bi vi phạm ===
+  function countViolations(arr: SimpleQuestion[]): number {
+    let violations = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      // Anh liền kề
+      if (i > 0 && arr[i - 1].image && arr[i].image) violations++;
+
+      // 3 chương liên tiếp
+      if (
+        i >= 2 &&
+        arr[i - 2].chapter === arr[i - 1].chapter &&
+        arr[i - 1].chapter === arr[i].chapter
+      ) {
+        violations++;
+      }
+
+      // 4 O/X liên tiếp
+      if (
+        i >= 3 &&
+        arr[i - 3].answer === arr[i - 2].answer &&
+        arr[i - 2].answer === arr[i - 1].answer &&
+        arr[i - 1].answer === arr[i].answer
+      ) {
+        violations++;
+      }
+    }
+
+    return violations;
+  }
+
+  // === Ham chính: tối ưu hóa layout đề thi ===
+  // Đảm bảo: 3 câu đầu không ảnh, không 2 ảnh liền kề,
+  // không 3 cùng chương, không 4 cùng O/X liên tiếp
+  function optimizeExamLayout(picked: SimpleQuestion[]): SimpleQuestion[] {
+    const MAX_ATTEMPTS = 100;
+
+    let bestResult: SimpleQuestion[] = [];
+    let bestViolations = Infinity;
+
+    for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+      let remaining = shuffle([...picked]);
+      const result: SimpleQuestion[] = [];
+
+      // === Warm-up: 3 câu đầu bắt buộc không có ảnh ===
+      const warmUpPool = remaining.filter((q) => !q.image);
+      const warmUp = shuffle(warmUpPool).slice(0, 3);
+      result.push(...warmUp);
+      remaining = remaining.filter((q) => !warmUp.some((w) => w.id === q.id));
+
+      // === Greedy placement: đặt từng câu thỏa ràng buộc ===
+      let success = true;
+      while (result.length < TARGET_SIMPLE && remaining.length > 0) {
+        const position = result.length;
+        const candidates = remaining.filter((q) => canPlaceAt(result, q, position));
+
+        if (candidates.length === 0) {
+          // Không có câu nào thỏa → điền bất kỳ câu còn lại vào để đủ 46
+          const fallback = remaining.slice(0, TARGET_SIMPLE - result.length);
+          result.push(...fallback);
+          remaining = [];
+          success = false;
+          break;
+        }
+
+        const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+        result.push(chosen);
+        remaining = remaining.filter((q) => q.id !== chosen.id);
+      }
+
+      // Đảm bảo luôn đủ 46 câu (phòng trường hợp edge case)
+      while (result.length < TARGET_SIMPLE) {
+        const fromPicked = picked.filter((q) => !result.some((r) => r.id === q.id));
+        if (fromPicked.length === 0) break;
+        result.push(shuffle(fromPicked)[0]);
+      }
+
+      if (success && result.length === TARGET_SIMPLE) {
+        // Tìm được nghiệm hoàn hảo
+        return result;
+      }
+
+      // Fallback: giữ lại kết quả tốt nhất
+      const violations = countViolations(result);
+      if (violations < bestViolations) {
+        bestViolations = violations;
+        bestResult = result;
+      }
+    }
+
+    // Trim thừa, đảm bảo đúng 46
+    if (bestResult.length > TARGET_SIMPLE) {
+      bestResult = bestResult.slice(0, TARGET_SIMPLE);
+    }
+    while (bestResult.length < TARGET_SIMPLE) {
+      const fromPicked = picked.filter((q) => !bestResult.some((r) => r.id === q.id));
+      if (fromPicked.length === 0) break;
+      bestResult.push(shuffle(fromPicked)[0]);
+    }
+
+    return bestResult;
+  }
 
   // Count questions per chapter
   const chapterCounts: Record<string, number> = {};
@@ -62,6 +209,9 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
     remaining -= actual;
   }
 
+  // === Tối ưu hóa layout đề thi với 4 ràng buộc ===
+  const finalPicked = optimizeExamLayout(picked);
+
   // === PHASE 2: Select 1 scenario from each chapter (câu 47, 48) ===
   const ch11Scenarios = uniqueScenarios.filter((g) => g.chapter === "危険予測");
   const ch12Scenarios = uniqueScenarios.filter((g) => g.chapter === "危険予測問題");
@@ -70,8 +220,8 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
   const scen2 = shuffle(ch12Scenarios)[0];
 
   // === PHASE 3: Build exam items ===
-  // Simple questions remain as is
-  const simpleItems: ExamItem[] = picked.map((question) => ({
+  // Su dung finalPicked da dam bao du so cau co hinh anh
+  const simpleItems: ExamItem[] = finalPicked.map((question) => ({
     type: "simple" as const,
     question,
   }));
@@ -192,13 +342,18 @@ export function scoreExam(
       if (user !== undefined) answeredCount++;
     }
 
-    // Assign 2 points to each sub in the group if all are correct, otherwise 0
+    // Each sub-question in a scenario group shows its OWN correctness (1 or 0),
+    // but the GROUP as a whole scores 2 points only if ALL 3 subs are correct.
+    // We update detail.points here to reflect individual sub correctness for display.
     for (const detail of details) {
       if (detail.item.type === "simple" && (detail.item as any).scenarioGroupId === gid) {
-        detail.points = allCorrect ? SCENARIO_PTS : 0;
+        // Show individual sub correctness (1 if correct, 0 if wrong/unanswered)
+        // Note: The actual scenario group score (2 pts) is added to total below
+        detail.points = detail.simple?.correct ? SIMPLE_PTS : 0;
       }
     }
 
+    // Add 2 points ONCE for the entire group (only if all 3 subs are correct)
     if (allCorrect) {
       total += SCENARIO_PTS;
       scenarioCorrectCount++;

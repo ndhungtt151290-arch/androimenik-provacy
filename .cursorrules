@@ -282,9 +282,13 @@ import { HomeScreen } from "@screens/HomeScreen";
 
 ```
 📋 Đề thi cố định:
-   - 48 câu hỏi chữ (1 điểm/câu)
-   - 2 câu hỏi hình ảnh (2 điểm/câu)
-   - Tổng điểm: 50
+   - 46 câu thường (1 điểm/câu): bốc từ 11 chương (5 lý thuyết + 6 tổng hợp)
+     + BẮT BUỘC tối thiểu 8 câu chứa hình ảnh (image != undefined)
+     + TUYỆT ĐỐI LOẠI TRỪ 2 chương tình huống "危険予測" và "危険予測問題"
+   - 2 câu tình huống (2 điểm/câu, mỗi câu = 1 stem + 3 sub-questions)
+     + Chỉ bốc từ 2 chương "危険予測" và "危険予測問題"
+     + 2 câu phải khác nhau (không trùng stem)
+   - Tổng: 52 items thực (46 + 6) = 50 điểm
    - Điểm đỗ: 45/50
 ```
 
@@ -301,10 +305,12 @@ Luyện tập:
 ### 5.3 Logic bốc đề (exam.ts)
 
 ```typescript
-// KHÔNG ĐƯỢC SỬA:
-// - Hàm buildMockExam()
-// - Hàm scoreExam()
-// - Logic phân bổ câu hỏi theo chương
+// Luật thi Gentsuki 2026:
+//   - Hàm buildMockExam() : Phân bổ tỉ lệ + ràng buộc ảnh
+//   - Hàm scoreExam()     : Chấm điểm (1 điểm/câu thường, 2 điểm/câu tình huống)
+//   - Pool câu thường     : 11 chương (loại trừ 2 chương tình huống)
+//   - Pool tình huống     : Chỉ 2 chương "危険予測" và "危険予測問題"
+//   - Ràng buộc ảnh       : Tối thiểu 8 câu chứa hình trong 46 câu thường
 ```
 
 ---

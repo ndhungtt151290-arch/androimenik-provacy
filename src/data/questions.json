@@ -80,11 +80,11 @@
       "id": "menkyogentsuki_gentsuki_1_2_2",
       "chapter": "運転の基礎知識",
       "section": "運転免許の区分1",
-      "text": "免許は、第一種免許と第二種免許、仮免許の三つの区分が存在する。",
-      "answer": "○",
+      "text": "免許は、第一種免許と第二種免許の二つの区分が存在する",
+      "answer": "×",
       "explanation": "仮免許も一つの区分である。",
-      "textVi": "Bằng lái xe được chia thành ba loại: bằng Loại 1, bằng Loại 2 và bằng tạm thời.",
-      "explanationVi": "Bằng tạm thời cũng là một hạng bằng lái xe hợp lệ."
+      "textVi": "Bằng lái xe được chia thành 2 loại: bằng Loại 1, bằng Loại 2.",
+      "explanationVi": "Có 3 loại bằng lái, Bằng tạm thời cũng là một hạng bằng lái."
     },
     {
       "kind": "simple",
@@ -110,17 +110,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_2_5",
-      "chapter": "運転の基礎知識",
-      "section": "運転免許の区分1",
-      "text": "免許証を携帯することを忘れて原付を運転すると、免許不携帯になる。",
-      "answer": "○",
-      "explanation": "原付を運転する際は、免許証を携帯せねばならない。",
-      "textVi": "Nếu quên mang theo bằng lái mà lái xe gắn máy thì bị coi là không mang bằng.",
-      "explanationVi": "Khi lái xe gắn máy, bạn phải luôn mang theo bằng lái."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_1_3_1",
       "chapter": "運転の基礎知識",
       "section": "運転免許の区分2",
@@ -128,7 +117,7 @@
       "answer": "×",
       "explanation": "原付免許では、原動機付自転車しか運転できない。",
       "textVi": "Nếu có bằng lái xe gắn máy thì có thể lái cả xe đặc biệt nhỏ.",
-      "explanationVi": "Với bằng xe gắn máy, bạn chỉ được phép lái xe gắn máy (dưới 50cc), không được lái xe đặc biệt nhỏ."
+      "explanationVi": "Với bằng xe gắn máy, bạn chỉ được phép lái xe gắn máy (dưới 50cc), không được lái xe đặc biệt nhỏ (máy cày, xe ủi, máy xúc loại nhỏ,...)."
     },
     {
       "kind": "simple",
@@ -4244,17 +4233,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_30_3",
-      "chapter": "総合演習1",
-      "section": "1-2",
-      "text": "道路は公共の場であるので、車を運転するときは自分の利便だけでなく、周囲の人への配慮が必要である。",
-      "answer": "○",
-      "explanation": "沿道で生活する人々や、歩行者、他の車のことに配慮する。",
-      "textVi": "Đường là nơi công cộng, vì vậy khi lái xe không chỉ cần sự tiện lợi của bản thân mà còn cần quan tâm đến những người xung quanh.",
-      "explanationVi": "Cần phải xem xét đến những người sống ven đường, người đi bộ và các phương tiện khác."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_21_5",
       "chapter": "標識・標示・信号",
       "section": "1-3",
@@ -4514,17 +4492,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_1_1",
-      "chapter": "総合演習1",
-      "section": "1-26",
-      "text": "道路で自動車や原動機付自転車を運転するときは、その車種に応じた免許を取得せねばならない。",
-      "answer": "○",
-      "explanation": "車種に応じた免許を受けないで運転することは、無免許運転である。",
-      "textVi": "Khi lái ô tô hoặc xe gắn máy trên đường, phải có bằng lái phù hợp với loại xe đó.",
-      "explanationVi": "Lái xe mà không có giấy phép phù hợp với loại xe đó là lái xe không có giấy phép."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_28_3",
       "chapter": "総合演習1",
       "section": "1-27",
@@ -4712,17 +4679,6 @@
       "explanation": "渡りきれなかった歩行者が道路上にいる可能性もあるので、対面する信号が青色だったとしても、安全を確かめてから発進する。",
       "textVi": "Vì tín hiệu đối diện đã chuyển sang xanh nên đã lập tức khởi hành.",
       "explanationVi": "Khi rẽ phải vào đường nhỏ, phải nhường đường cho xe đi thẳng và xe rẽ trái."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_12_2",
-      "chapter": "総合演習1",
-      "section": "1-44",
-      "text": "強制保険の証明書は、安全のため、自宅に保管しておくべきである。",
-      "answer": "×",
-      "explanation": "届け出済証や強制保険の証明書は、原動機付自転車に備え付けねばならない。",
-      "textVi": "Giấy chứng nhận bảo hiểm bắt buộc nên được lưu giữ tại nhà vì lý do an toàn.",
-      "explanationVi": "Giấy chứng nhận đăng ký xe và giấy chứng nhận bảo hiểm bắt buộc phải được trang bị trên xe gắn máy."
     },
     {
       "kind": "simple",
@@ -6021,17 +5977,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_28_2",
-      "chapter": "総合演習2",
-      "section": "2-37",
-      "text": "たとえ電子メールの送信であっても、運転中に携帯電話を操作してはならない。",
-      "answer": "○",
-      "explanation": "周囲の危険を察知しにくくなるので、運転中に携帯電話を操作するのはとても危険な行為である。",
-      "textVi": "Dù chỉ là gửi email, cũng không được thao tác điện thoại di động khi đang điều khiển xe.",
-      "explanationVi": "Đúng. Việc sử dụng điện thoại khi lái xe rất nguy hiểm vì khó nhận biết nguy hiểm xung quanh."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_22_5",
       "chapter": "標識・標示・信号",
       "section": "2-38",
@@ -6563,7 +6508,7 @@
       "text": "小型特殊免許があれば、原動機付自転車を運転できる。",
       "answer": "×",
       "explanation": "小型特殊免許は、原動機付自転車を運転できない。",
-      "textVi": "Nếu có giấy phép lái xe đặc biệt nhỏ thì có thể lái xe gắn máy.",
+      "textVi": "Nếu có giấy phép lái xe đặc biệt nhỏ (máy cày, xe ủi, máy xúc loại nhỏ,...) thì có thể lái xe gắn máy.",
       "explanationVi": "Giấy phép lái xe đặc biệt nhỏ không cho phép lái xe gắn máy."
     },
     {
@@ -7260,11 +7205,11 @@
       "id": "menkyogentsuki_gentsuki_10_26_4",
       "chapter": "総合演習3",
       "section": "3-24",
-      "text": "三輪の原動機付自転車も存在する。",
-      "answer": "○",
-      "explanation": "三輪の原動機付自転車としては、スリータータイプなどがある。",
-      "textVi": "Xe gắn máy ba bánh cũng tồn tại.",
-      "explanationVi": "Đối với xe gắn máy ba bánh, có các loại như xe tay ga ba bánh."
+      "text": "原動機付自転車には、二輪のものしかない。",
+      "answer": "×",
+      "explanation": "原動機付自転車には、三輪のもの（三輪スクーターなど）も存在する。",
+      "textVi": "Xe gắn máy chỉ có loại xe gắn máy 2 bánh",
+      "explanationVi": "Đối với xe gắn máy ba bánh, có cả các loại như xe tay ga ba bánh."
     },
     {
       "kind": "simple",
@@ -8688,21 +8633,21 @@
       "id": "menkyogentsuki_gentsuki_9_27_4",
       "chapter": "総合演習4",
       "section": "4-29",
-      "text": "たとえ少量でも、お酒を飲んだら車を運転してはならない。",
-      "answer": "○",
+      "text": "少ししか飲んでいないし、まだ意識ははっきりしているので、車を運転してもよい。",
+      "answer": "×",
       "explanation": "飲酒運転は人命に関わるほどの危険を伴うため、絶対にしてはならない。",
-      "textVi": "Dù chỉ một lượng nhỏ, nếu uống rượu thì không được lái xe.",
-      "explanationVi": "Đúng. Lái xe khi uống rượu mang theo nguy cơ đe dọa tính mạng con người, tuyệt đối không được làm."
+      "textVi": "Tôi đã uống một chút rượu nhưng vẫn tỉnh táo , nên tôi có thể lái xe. ",
+      "explanationVi": "Lái xe khi uống rượu mang theo nguy cơ đe dọa tính mạng con người, tuyệt đối không được làm."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_8_4",
       "chapter": "総合演習4",
       "section": "4-30",
-      "text": "疲れて眠気を感じたので、すみやかに車を止め、休息を取った。",
-      "answer": "○",
+      "text": "疲れと眠気を感じたので、早く帰ろうと急いで運転した。",
+      "answer": "×",
       "explanation": "疲れて眠気を感じた場合は、すみやかに車を止め、休息を取るべきである。",
-      "textVi": "Vì cảm thấy mệt mỏi và buồn ngủ, nên đã kịp thời dừng xe nghỉ ngơi.",
+      "textVi": "Vì cảm thấy hơi mệt mỏi và buồn ngủ, nên đã cố gắng lái xe nhanh đẻ kịp thời về nhà",
       "explanationVi": "Khi mệt mỏi và buồn ngủ thì nên dừng xe ngay và nghỉ ngơi."
     },
     {
@@ -10196,17 +10141,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_3_4",
-      "chapter": "総合演習5",
-      "section": "5-40",
-      "text": "眼鏡等使用の条件付き免許を受けた人は、車を運転する際にコンタクトレンズを使用してもよい。",
-      "answer": "○",
-      "explanation": "なお、レ―シック手術を受けた場合は、眼鏡等使用の条件を解除せねばならない。",
-      "textVi": "Người có giấy phép đeo kính khi lái xe có thể sử dụng kính áp tròng.",
-      "explanationVi": "Đúng. Người có giấy phép lái xe có ghi chú điều kiện đeo kính được phép sử dụng kính áp tròng thay cho kính gọng. Tuy nhiên, nếu đã phẫu thuật LASIK thì phải xóa điều kiện đeo kính trên giấy phép."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_18_4",
       "chapter": "総合演習5",
       "section": "5-41",
@@ -10445,7 +10379,7 @@
       "text": "徐行とは、その時の速度よりも落として運転することである。",
       "answer": "×",
       "explanation": "徐行とは、すぐに停止できる速度で運転することである。",
-      "textVi": "徐行 là chạy chậm hơn tốc độ hiện tại.",
+      "textVi": " 徐行 là chạy chậm hơn tốc độ hiện tại.",
       "explanationVi": "Sai. 徐行 là chạy với tốc độ có thể dừng xe ngay lập tức được, không phải chỉ đơn giản là giảm tốc độ."
     },
     {
@@ -10623,7 +10557,7 @@
       "text": "前車が自動車を追い越そうとしているときは、追い越しを始めてはならない。",
       "answer": "○",
       "explanation": "二重追い越しは禁止されている。",
-      "textVi": "Khi xe phía trước định vượt xe ô tô thì không được bắt đầu vượt.",
+      "textVi": "Khi xe phía trước định vượt xe ô tô thì nên từ bỏ việc mình cũng bắt đầu vượt theo.",
       "explanationVi": "Cấm vượt kép."
     },
     {
@@ -11103,10 +11037,10 @@
       "id": "menkyogentsuki_gentsuki_9_16_1",
       "chapter": "総合演習5",
       "section": "5-121",
-      "text": "原付免許を取得すれば、小型特殊自動車も運転できる。",
-      "answer": "×",
+      "text": "原付免許では、小型特殊自動車を運転することはできない。",
+      "answer": "○",
       "explanation": "原付免許では、原動機付自転車しか運転できない。",
-      "textVi": "Nếu có bằng lái xe gắn máy thì có thể lái cả xe đặc biệt nhỏ.",
+      "textVi": "Nếu có bằng lái xe gắn máy thì không thể lái xe đặc biệt cỡ nhỏ (máy cày, xe ủi, máy xúc loại nhỏ,...)",
       "explanationVi": "Với bằng xe máy (Gentsuki), bạn chỉ có thể lái xe gắn máy."
     },
     {

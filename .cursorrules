@@ -302,16 +302,130 @@ Luyện tập:
    [Chọn đáp án] → [Hiện thông báo + đáp án] → [Hiện giải thích] → [Bấm "Sau" để tiếp tục]
 ```
 
-### 5.3 Logic bốc đề (exam.ts)
+### 5.3 Logic bốc đề (Data Allocation)
+
+#### 5.3.1 11 chương cho 46 câu thường
+
+Pool câu hỏi thường được bốc từ đúng 11 chương sau (LOẠI TRỪ tuyệt đối 2 chương tình huống):
+
+| # | Tên chương (Japanese) | Loại |
+|---|----------------------|------|
+| 1 | 運転の基礎知識 | Lý thuyết |
+| 2 | 標識・標示・信号 | Lý thuyết |
+| 3 | 道路の走行方法 | Lý thuyết |
+| 4 | 追い越し・駐停車 | Lý thuyết |
+| 5 | 危険な状況での運転 | Lý thuyết |
+| 6 | 総合演習1 | Tổng hợp |
+| 7 | 総合演習2 | Tổng hợp |
+| 8 | 総合演習3 | Tổng hợp |
+| 9 | 総合演習4 | Tổng hợp |
+| 10 | 総合演習5 | Tổng hợp |
+| 11 | 総合演習6 | Tổng hợp |
+
+#### 5.3.2 2 chương cho câu tình huống (47, 48)
+
+| # | Tên chương (Japanese) |
+|---|----------------------|
+| 1 | 危険予測 |
+| 2 | 危険予測問題 |
+
+#### 5.3.3 Ràng buộc deduplication
+
+- **TUYỆT ĐỐI loại trừ** 2 chương tình huống ("危険予測", "危険予測問題") khỏi pool 46 câu thường
+- **Đảm bảo không trùng ID**: lọc duplicate bằng `seenTexts.has(q.text)` trước khi shuffle
+
+#### 5.3.4 Proportional Allocation
+
+- Đếm số câu mỗi chương trong pool → tính tỉ lệ → bốc theo tỉ lệ (làm tròn)
+- Mỗi chương xáo trộn (shuffle) nội bộ trước khi bốc
+
+### 5.4 Logic sắp xếp thông minh (optimizeExamLayout)
+
+Áp dụng cho 46 câu thường SAU KHI đã bốc xong. Thuật toán Greedy + Fallback (100 vòng):
+
+#### 5.4.1 4 Ràng buộc khắt khe
+
+| # | Tên | Quy tắc |
+|---|-----|---------|
+| 1 | Warm-up (Khởi động) | 3 câu đầu tiên (index 0, 1, 2) BẮT BUỘC không có hình ảnh |
+| 2 | Image Spacing | Không bao giờ có 2 câu hỏi hình ảnh (image != undefined) nằm liền kề nhau |
+| 3 | Chapter Spacing | Không có 3 câu hỏi cùng thuộc một chương nằm liên tiếp nhau |
+| 4 | O/X Streak | Không bao giờ có 4 câu hỏi liên tiếp cùng một đáp án (cùng là ○ hoặc cùng là ×) |
+
+#### 5.4.2 Thuật toán
+
+```
+Input:  picked[] = [46 câu đã phân bổ tỉ lệ]
+Output: rearranged[] = [46 câu thỏa 4 ràng buộc]
+
+for attempt = 1 to 100:
+  1. Shuffle toàn bộ picked
+  2. Đặt 3 câu không ảnh vào đầu (warm-up)
+  3. Greedy: từ vị trí 3→45, chọn ngẫu nhiên câu thỏa 4 ràng buộc
+  4. Nếu fail (không tìm được câu thỏa): điền fallback + retry
+  5. Nếu thành công: return ngay
+  6. Fallback: giữ kết quả ít vi phạm nhất
+return bestResult
+```
+
+#### 5.4.3 Kiểm tra ràng buộc (canPlaceAt)
 
 ```typescript
-// Luật thi Gentsuki 2026:
-//   - Hàm buildMockExam() : Phân bổ tỉ lệ + ràng buộc ảnh
-//   - Hàm scoreExam()     : Chấm điểm (1 điểm/câu thường, 2 điểm/câu tình huống)
-//   - Pool câu thường     : 11 chương (loại trừ 2 chương tình huống)
-//   - Pool tình huống     : Chỉ 2 chương "危険予測" và "危険予測問題"
-//   - Ràng buộc ảnh       : Tối thiểu 8 câu chứa hình trong 46 câu thường
+canPlaceAt(currentArr, question, position):
+  // Ràng buộc 1: Không anh liền kề
+  if position > 0 && currentArr[position-1].image && question.image: return false
+
+  // Ràng buộc 2: Không 3 chương liên tiếp
+  if position >= 2
+     && currentArr[position-1].chapter === question.chapter
+     && currentArr[position-2].chapter === question.chapter: return false
+
+  // Ràng buộc 3: Không 4 O/X liên tiếp
+  if position >= 3
+     && currentArr[position-1].answer === question.answer
+     && currentArr[position-2].answer === question.answer
+     && currentArr[position-3].answer === question.answer: return false
+
+  return true
 ```
+
+### 5.5 Logic chấm điểm (scoreExam)
+
+#### 5.5.1 46 câu thường (1 điểm/câu)
+
+| Kết quả | Điểm cộng vào tổng | Hiển thị Review |
+|---------|---------------------|-----------------|
+| Đúng | +1 | +1 |
+| Sai | +0 | +0 |
+
+#### 5.5.2 2 câu tình huống (All-or-Nothing, 2 điểm/câu)
+
+Luật: **Đúng cả 3/3 ý nhỏ → +2 điểm. Sai 1/3 hoặc bỏ trống → +0 điểm.**
+
+| Kết quả nhóm | Điểm cộng vào tổng | 47-1 | 47-2 | 47-3 |
+|-------------|---------------------|------|------|------|
+| Đúng 3/3 | +2 | +1 | +1 | +1 |
+| Sai 1/3 | +0 | +1 hoặc +0 | +1 hoặc +0 | +1 hoặc +0 |
+
+**Quy tắc hiển thị Review Screen:**
+- Từng ý nhỏ (47-1, 47-2, 47-3, 48-1, 48-2, 48-3) vẫn hiển thị trạng thái đúng/sai riêng (+1/+0)
+- Nhưng điểm thực tế cộng vào bài thi CHỈ được tính 1 lần (2 điểm) cho cả nhóm
+- **Tổng tối đa scenario = 4 điểm (2 + 2)**
+
+### 5.6 Grid UI Drawer (Progress Drawer)
+
+Trong lúc làm bài, Progress Drawer hiển thị:
+
+| Vị trí | Số lượng ô | Đánh số |
+|--------|-----------|---------|
+| 1 → 46 | 46 ô | 1, 2, 3, ..., 46 |
+| 47 → 52 | 6 ô | 47-1, 47-2, 47-3, 48-1, 48-2, 48-3 |
+
+**Logic đánh số (ExamScreen.tsx):**
+- Câu thường: hiển thị `index + 1`
+- Scenario sub: hiển thị `${scenarioBaseNum}-${subIndex + 1}`
+  - scenarioBaseNum = số thứ tự nhóm (47 hoặc 48)
+  - subIndex = 0, 1, 2 → hiển thị 47-1, 47-2, 47-3
 
 ---
 

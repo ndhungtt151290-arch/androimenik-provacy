@@ -80,23 +80,20 @@ export function ResultsScreen({
 
   // Đếm số câu sai theo đơn vị câu (không phải sub-item)
   // Câu simple thường sai = points = 0
-  // Câu scenario sai = group có points = 0
   const wrongSimpleCount = score.details.filter((d) => {
     if (d.item.type !== "simple") return false;
     if (isScenarioSubItem(d.item)) return false;
     return d.points === 0;
   }).length;
 
-  const wrongScenarioGroups = Object.values(
-    score.details.reduce<Record<string, number>>((acc, d) => {
-      if (d.item.type !== "simple" || !isScenarioSubItem(d.item)) return acc;
-      const gid = (d.item as any).scenarioGroupId;
-      acc[gid] = d.points; // Lấy points của group
-      return acc;
-    }, {})
-  ).filter(points => points === 0).length;
+  // Đếm sub-item sai (để khớp với ReviewScreen)
+  const wrongSubItems = score.details.filter((d) => {
+    if (d.item.type !== "simple") return false;
+    if (!isScenarioSubItem(d.item)) return false;
+    return d.points === 0;
+  }).length;
 
-  const totalWrongQuestions = wrongSimpleCount + wrongScenarioGroups;
+  const totalWrongQuestions = wrongSimpleCount + wrongSubItems;
 
   const chapterStats: Record<string, { correct: number; total: number }> = {};
   for (const d of score.details) {
@@ -113,7 +110,7 @@ export function ResultsScreen({
     condition: lang === "vi" ? "Điều kiện đạt: từ 45/50 điểm trở lên (≥ 90%)" : "合格条件：50点中45点以上（90%以上）",
     part1: lang === "vi" ? "Phần 1 · Lý thuyết" : "第1部 · 理論",
     part2: lang === "vi" ? "Phần 2 · Hình ảnh" : "第2部 · イラスト",
-    reviewBtn: lang === "vi" ? `Giải thích ${totalWrongQuestions} câu sai` : `解説を見る · ${totalWrongQuestions}問の間違いを復習`,
+    reviewBtn: lang === "vi" ? "Giải thích các câu sai" : "間違いを解説",
     reviewAllBtn: lang === "vi" ? "Xem lại tất cả câu" : "全問を復習",
     perfect: lang === "vi" ? "Không có câu sai — xuất sắc!" : "全問正解 — お見事！",
     retry: lang === "vi" ? "Làm đề mới" : "新しい問題に挑戦",

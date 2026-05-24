@@ -54,7 +54,7 @@ function getStemVi(item: ExamItem): string | null | undefined {
 export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: ReviewScreenProps) {
   const insets = useSafeAreaInsets();
 
-  // Lọc câu sai theo đơn vị câu (không lặp sub-item)
+  // Lọc câu sai - hiển thị tất cả sub sai riêng biệt
   const wrongByGroup = score.details.reduce<Array<typeof score.details[0]>>((acc, d) => {
     const item = d.item;
     if (item.type !== "simple") return acc;
@@ -65,9 +65,8 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
       return acc;
     }
 
-    // Scenario sub: chỉ thêm sub đầu tiên của mỗi group sai
-    const subIndex = (item as any).subIndex;
-    if (subIndex === 0 && d.points === 0) {
+    // Scenario sub: thêm TẤT CẢ sub sai (không chỉ sub đầu tiên)
+    if (d.points === 0) {
       acc.push(d);
     }
     return acc;
@@ -80,10 +79,9 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
     title: lang === "vi" ? "Câu / nhóm sai" : "間違い一覧",
     titleAll: lang === "vi" ? "Tất cả câu hỏi" : "全問題一覧",
     yourChoice: lang === "vi" ? "Bạn chọn:" : "あなたの選択：",
-    correctAns: lang === "vi" ? "Đúng:" : "正解：",
+    answerLabel: lang === "vi" ? "Đáp án là:" : "答えは：",
     scenarioNote: lang === "vi" ? "Câu hỏi tình huống: cả 3 ý đúng → được 2 điểm." : "イラスト問題：3題すべて正解で2点",
     home: lang === "vi" ? "Trang chủ" : "ホーム",
-    answer: lang === "vi" ? "Đáp án:" : "答え：",
     correct: lang === "vi" ? "Đúng" : "正解",
     wrong: lang === "vi" ? "Sai" : "不正解",
     scenarioHint: lang === "vi" ? "Câu hỏi tình huống" : "イラスト問題",
@@ -106,6 +104,35 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
             const stemVi = getStemVi(item);
             const scenarioGroupId = getScenarioGroupId(item);
 
+            // Tính số hiển thị cho scenario sub: 47-1, 47-2, 47-3, 48-1, 48-2, 48-3
+            const getDisplayNum = (detail: typeof d): string => {
+              const idx = detail.index;
+              // Đếm số câu thường trước item này
+              let simpleCount = 0;
+              for (let j = 0; j < idx; j++) {
+                if (!isScenarioSubItem(score.details[j].item)) {
+                  simpleCount++;
+                }
+              }
+              // Đếm số nhóm scenario đến item này
+              const seenGroups = new Set<string>();
+              let scenarioCount = 0;
+              for (let j = 0; j <= idx; j++) {
+                if (isScenarioSubItem(score.details[j].item)) {
+                  const gid = getScenarioGroupId(score.details[j].item);
+                  if (gid && !seenGroups.has(gid)) {
+                    seenGroups.add(gid);
+                    scenarioCount++;
+                  }
+                }
+              }
+              const scenarioBaseNum = simpleCount + scenarioCount;
+              const subIdx = (item as any).subIndex ?? 0;
+              return `${scenarioBaseNum}-${subIdx + 1}`;
+            };
+
+            const displayNum = isScenarioSub ? getDisplayNum(d) : `${d.index + 1}`;
+
             return (
               <View
                 key={d.index}
@@ -117,8 +144,8 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
                 <View style={styles.itemHeader}>
                   <Text style={styles.questionNum}>
                     {lang === "vi"
-                      ? `Câu ${d.index + 1} trong đề`
-                      : `問${d.index + 1}`}
+                      ? `Câu ${displayNum}`
+                      : `問${displayNum}`}
                     {isScenarioSub && (
                       <Text style={styles.scenarioHintInline}> ({L.scenarioHint})</Text>
                     )}
@@ -154,7 +181,7 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
                 {d.simple && (
                   <Text style={[styles.answerLine, d.simple.correct ? styles.textGreen : styles.textRed]}>
                     {L.yourChoice} <Text style={styles.bold}>{d.simple.user ?? "—"}</Text>
-                    {" · "}{L.correctAns} <Text style={styles.bold}>{item.question.answer}</Text>
+                    {" · "}{L.answerLabel} <Text style={styles.bold}>{item.question.answer}</Text>
                   </Text>
                 )}
 

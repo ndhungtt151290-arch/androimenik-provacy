@@ -1770,12 +1770,12 @@
       "id": "menkyogentsuki_gentsuki_3_10_3",
       "chapter": "標識・標示・信号",
       "section": "標識の種類と意味3",
-      "text": "この標識は、原動機付自転車が二段階右折せねばならないことを示している。",
-      "answer": "○",
-      "explanation": "この標識は、原動機付自転車の右折方法（二段階右折）である。",
+      "text": "この標識は、原動機付自転車であっても、二段階右折をせずに交差点の中央を通って右折しなければならないことを示している。",
+      "answer": "×",
+      "explanation": "誤り。この標識は「原動機付自転車の右折方法（二段階右折）」を示す指示標識であり、原動機付自転車は必ず二段階右折をしなければならない。",
       "image": "menkyogentsuki_113.png",
-      "textVi": "Biển báo này cho thấy xe gắn máy phải thực hiện rẽ phải hai giai đoạn.",
-      "explanationVi": "Đúng. Biển báo này chỉ dẫn xe gắn máy dưới 50cc bắt buộc phải thực hiện phương pháp rẽ phải hai giai đoạn."
+      "textVi": "Biển báo này cho thấy ngay cả xe gắn máy cũng phải thực hiện rẽ phải bằng cách đi qua giữa ngã tư mà không cần rẽ phải hai giai đoạn.",
+      "explanationVi": "Sai. Biển báo này là biển chỉ dẫn phương pháp rẽ phải cho xe gắn máy dưới 50cc (rẽ phải hai giai đoạn). Do đó, xe gắn máy bắt buộc phải thực hiện rẽ phải hai giai đoạn."
     },
     {
       "kind": "simple",
@@ -1793,11 +1793,11 @@
       "id": "menkyogentsuki_gentsuki_3_10_5",
       "chapter": "道路の走行方法",
       "section": "交差点の通り方2",
-      "text": "軽車両は、片側二車線の道路の交差点では、青信号であれば直進や左折、右折ができる。",
-      "answer": "×",
-      "explanation": "「軽車両は～右折ができる」の部分が誤り。軽車両は、問題文にある片側二車線の道路の交差点に限らず、全ての交差点で二段階右折をする必要がある。 ちなみに、軽車両ではなく原付の場合、二段階右折が必要なケースは、交通整理が行われていて「右折方法（二段階）」の標識がある交差点と、交通整理が行われている片側3車線以上の交差点に限られる。",
-      "textVi": "Xe đạp nhẹ có thể đi thẳng, rẽ trái hay rẽ phải ở giao lộ đường có 2 làn một bên khi có tín hiệu xanh.",
-      "explanationVi": "Sai. Xe thô sơ (xe đạp) bắt buộc phải rẽ phải hai giai đoạn tại tất cả các giao lộ, không phân biệt số lượng làn đường."
+      "text": "自転車などの軽車両は、交差点で右折するときは、あらかじめ道路の左端に寄り、交差点の側端に沿って二段階右折をしなければならない。",
+      "answer": "○",
+      "explanation": "正しい。自転車などの軽車両は、右折するときは交差点の側端に沿って直進し、向きを変えて進む「二段階右折」をしなければならない。",
+      "textVi": "Khi xe thô sơ như xe đạp rẽ phải ở giao lộ, phải áp sát vào mép đường bên trái từ trước và thực hiện rẽ phải hai giai đoạn dọc theo mép giao lộ.",
+      "explanationVi": "Đúng. Xe thô sơ (xe đạp) khi rẽ phải bắt buộc phải thực hiện 'rẽ phải hai giai đoạn', tức là đi thẳng dọc theo mép đường giao lộ rồi mới đổi hướng đi tiếp."
     },
     {
       "kind": "simple",
@@ -1850,11 +1850,11 @@
       "id": "menkyogentsuki_gentsuki_3_11_5",
       "chapter": "道路の走行方法",
       "section": "信号機のない交差点の優先関係",
-      "text": "通行している道路が優先道路のときは、左右の見通しがきかない交差点であれば、徐行せねばならない。",
-      "answer": "×",
-      "explanation": "誤りである。優先道路を通行している場合は、徐行する必要がない（道路交通法第42条）。なお通行している道が優先道路でない場合は、左右の見通しがきかない交差点では徐行しなければらない。",
-      "textVi": "Khi đường mình đang đi là đường ưu tiên, nếu giao lộ có tầm nhìn kém về hai bên thì phải giảm tốc độ.",
-      "explanationVi": "Sai. Khi lưu thông trên đường ưu tiên, bạn không bị bắt buộc phải giảm tốc độ khi đi qua giao lộ khuất tầm nhìn."
+      "text": "通行している道路が優先道路であるときは、見通しがきかない交差点であっても、徐行する必要はない。",
+      "answer": "○",
+      "explanation": "正しい。優先道路を通行している場合は、たとえ見通しがきかない交差点であっても、徐行の義務はありません（道路交通法第42条）。",
+      "textVi": "Khi đường mình đang đi là đường ưu tiên, ngay cả khi giao lộ có tầm nhìn kém thì cũng không cần thiết phải giảm tốc độ.",
+      "explanationVi": "Đúng. Khi lưu thông trên đường ưu tiên, bạn không có nghĩa vụ phải giảm tốc độ khi đi qua giao lộ khuất tầm nhìn."
     },
     {
       "kind": "simple",
@@ -1930,12 +1930,12 @@
       "id": "menkyogentsuki_gentsuki_3_13_2",
       "chapter": "標識・標示・信号",
       "section": "標識の種類と意味3",
-      "text": "この標識のあるところでは、車は左折のみすることができる。",
-      "answer": "○",
-      "explanation": "この標識は、指定方向外進行禁止を表す規制標識であり、直進と右折が禁止されている。",
+      "text": "この標識のあるところでは、左折だけでなく、必要に応じて直進や右折をして進行してもよい。",
+      "answer": "×",
+      "explanation": "誤り。この標識は「指定方向外進行禁止」を表す規制標識であり、左折以外の方向（直進や右折）に進行することは禁止されている。",
       "image": "menkyogentsuki_127.png",
-      "textVi": "Tại nơi có biển báo này, xe chỉ có thể rẽ trái.",
-      "explanationVi": "Đúng. Biển báo quy định hướng đi bắt buộc, trong trường hợp này chỉ cho phép phương tiện thực hiện rẽ trái."
+      "textVi": "Tại nơi có biển báo này, ngoài việc rẽ trái, nếu cần thiết có thể đi thẳng hoặc rẽ phải để tiếp tục di chuyển.",
+      "explanationVi": "Sai. Đây là biển báo quy định hướng đi bắt buộc, do đó việc di chuyển theo các hướng khác (đi thẳng hoặc rẽ phải) ngoài rẽ trái là bị cấm."
     },
     {
       "kind": "simple",
@@ -2053,12 +2053,12 @@
       "id": "menkyogentsuki_gentsuki_3_15_3",
       "chapter": "標識・標示・信号",
       "section": "標識の種類と意味3",
-      "text": "この標識のある道路は、一般の自動車は通行してもよい。",
-      "answer": "○",
-      "explanation": "この標識は、バス優先通行帯を示す。路線バスが近づいたら、自動車は進路を譲らねばならない。",
+      "text": "この標識のある道路は、路線バスが接近していない場合であっても、一般の自動車は通行してはならない。",
+      "answer": "×",
+      "explanation": "誤り。この標識は「バス優先通行帯」を示す。路線バスが接近している場合は進路を譲らなければならないが、それ以外の場合は一般の自動車も通行することができる。なお、「バス専用通行帯」の場合は通行してはならない。",
       "image": "menkyogentsuki_138.png",
-      "textVi": "Xe ô tô thông thường vẫn có thể lưu thông trên con đường có biển báo này.",
-      "explanationVi": "Đúng. Biển báo này chỉ làn đường ưu tiên cho xe buýt. Các xe khác vẫn được đi vào nhưng phải nhường đường khi có xe buýt đến gần."
+      "textVi": "Trên con đường có biển báo này, dù xe buýt tuyến cố định không đến gần, xe ô tô thông thường cũng tuyệt đối không được đi vào.",
+      "explanationVi": "Sai. Đây là biển báo 'Làn đường ưu tiên cho xe buýt'. Bạn chỉ phải nhường đường khi xe buýt đến gần, còn lại xe ô tô thông thường vẫn được phép lưu thông. Chỉ trường hợp 'Làn đường dành riêng cho xe buýt' (専用) mới bị cấm lưu thông."
     },
     {
       "kind": "simple",
@@ -2109,24 +2109,12 @@
       "id": "menkyogentsuki_gentsuki_3_16_3",
       "chapter": "総合演習5",
       "section": "5-100",
-      "text": "この標示のある場所では、AからBへ進路を変えてもよい。",
-      "answer": "○",
-      "explanation": "ちなみに、黄色の車両通行帯境界線が引かれている側であるBからAへの車線変更はできない。",
-      "image": "menkyogentsuki_143.png",
-      "textVi": "Tại nơi có vạch kẻ đường này, có thể thay đổi lộ trình từ phía A sang phía B.",
-      "explanationVi": "Đúng. Tuy nhiên, bạn không thể thay đổi lộ trình từ phía có vạch vàng (phía B) sang phía A."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_16_4",
-      "chapter": "標識・標示・信号",
-      "section": "標識の種類と意味3",
-      "text": "この標識のある場所では、道路の左側に面した場所に出入りするための横断もしてはならない。",
+      "text": "この標示のある場所では、黄色の実線が引かれている側（B）から白線側（A）へ進路を変えることができる。",
       "answer": "×",
-      "explanation": "道路の左側に面した場所の出入りは、特に禁じられていない。",
-      "image": "menkyogentsuki_144.png",
-      "textVi": "Tại nơi có biển báo này, không được phép băng qua đường để đi vào hoặc ra khỏi khu vực nằm phía bên trái đường.",
-      "explanationVi": "Sai. Việc đi vào hoặc ra khỏi các địa điểm ven đường phía bên trái không bị cấm bởi biển báo này."
+      "explanation": "誤り。黄色の車両通行帯境界線が引かれている側（B）からは、追い越しや進路変更のために線を越えてはならない。なお、白線側（A）からであれば線を越えて進路変更が可能である。",
+      "image": "menkyogentsuki_143.png",
+      "textVi": "Tại nơi có vạch kẻ đường này, bạn có thể thay đổi lộ trình từ phía có vạch kẻ vàng (phía B) sang phía vạch trắng (phía A).",
+      "explanationVi": "Sai. Từ phía có vạch kẻ vàng (phía B), bạn không được phép đè vạch để vượt hoặc thay đổi lộ trình. Ngược lại, từ phía vạch trắng (phía A) thì được phép đè vạch để thay đổi lộ trình."
     },
     {
       "kind": "simple",
@@ -2364,20 +2352,20 @@
       "id": "menkyogentsuki_gentsuki_4_3_1",
       "chapter": "追い越し・駐停車",
       "section": "7-7",
-      "text": "この標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
+      "text": "踏切およびその手前30メートル以内の場所では、追い越しは禁止されている。",
       "answer": "○",
-      "explanation": "問題文の記述が正しい。白の点線の標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
+      "explanation": "問題文の通り、踏切および踏切の手前30メートル以内の場所では、他の車を追い越してはならない。",
       "textVi": "Việc vượt xe bị cấm tại nơi giao cắt đường sắt và trong phạm vi 30 mét trước đó.",
-      "explanationVi": "Đúng. Để đảm bảo an toàn, tuyệt đối không được vượt xe tại đường ray và khu vực sát gần đường ray."
+      "explanationVi": "Đúng. Theo luật, cấm vượt xe tại nơi giao cắt đường sắt và trong phạm vi 30 mét tính từ nơi giao cắt đó."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_4_3_2",
       "chapter": "追い越し・駐停車",
       "section": "追い越しが禁止されている場所1",
-      "text": "坂の頂上付近で追い越しをする場合、上りは追い越しを禁止されているが、下りは追い越しを禁止されていない。",
+      "text": "横断歩道や自転車横断帯およびその手前30メートル以内の場所では、追い越し（追越し・追い抜き）をしてはならない。",
       "answer": "○",
-      "explanation": "正しい。坂の頂上付近では、下りの場合、特に追い越しは禁止されていない。なお、問題文の通り、坂の頂上付近の上りは、追い越しは禁止である。また本問には登場しないが、こう配の急な下り坂も追い越しは禁止である",
+      "explanation": "問題文の通り、横断歩道や自転車横断帯およびその手前30メートル以内の場所では、追い越しおよび追い抜きが禁止されています。",
       "textVi": "Tại vạch kẻ cho người đi bộ, vạch cho xe đạp và trong phạm vi 30 mét trước đó, cả việc vượt xe (Oikoshi) và đuổi kịp (Oinuki) đều bị cấm.",
       "explanationVi": "Đúng. Đây là quy tắc cực kỳ quan trọng để bảo vệ người đi bộ và người đi xe đạp đang qua đường."
     },
@@ -4164,12 +4152,12 @@
       "id": "menkyogentsuki_gentsuki_6_22_1",
       "chapter": "標識・標示・信号",
       "section": "総合問題(図像)",
-      "text": "この標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
-      "answer": "○",
-      "explanation": "問題文の記述が正しい。白の点線の標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
+      "text": "この標示のある道路では、たとえ追い越しをする場合であっても、右側の車線にはみ出してはならない。",
+      "answer": "×",
+      "explanation": "誤り。白の点線の中央線が引かれている道路では、対向車に注意すれば、右側の車線にはみ出して追い越しをしてもよい。",
       "image": "menkyogentsuki_356.png",
-      "textVi": "Ở đường có vạch kẻ nét đứt màu trắng, được phép vượt bằng cách nhích sang làn bên phải.",
-      "explanationVi": "Đúng. Ở đường có vạch kẻ nét đứt màu trắng, được phép vượt bằng cách nhích sang làn bên phải."
+      "textVi": "Trên đường có vạch kẻ này, ngay cả khi muốn vượt xe khác cũng tuyệt đối không được lấn sang làn đường bên phải.",
+      "explanationVi": "Sai. Trên con đường có vạch kẻ đứt quãng màu trắng ở giữa, nếu chú ý xe đi ngược chiều, bạn được phép lấn sang làn đường bên phải để vượt xe khác."
     },
     {
       "kind": "simple",
@@ -4396,11 +4384,11 @@
       "id": "menkyogentsuki_gentsuki_8_19_5",
       "chapter": "総合演習1",
       "section": "1-18",
-      "text": "標識や標示によって横断や転回が禁止されているところでは、後退も禁止されている。",
-      "answer": "×",
-      "explanation": "後退は特に禁止されていない。",
-      "textVi": "Tại nơi biển báo hay biển chỉ dẫn cấm băng qua hay quay đầu thì lùi xe cũng bị cấm.",
-      "explanationVi": "Lùi xe không bị cấm đặc biệt."
+      "text": "標識や標示によって横断や転回が禁止されている場所であっても、その場所自体で後退（バック）することまで一律に禁止されているわけではない。",
+      "answer": "○",
+      "explanation": "正しい。横断や転回が禁止されている場所であっても、後退（バック）そのものが一律に禁止されているわけではない。ただし、交差点内や横断歩道上など、そもそも後退が禁止されている場所での後退はしてはならない。",
+      "textVi": "Ngay cả tại những nơi có biển báo cấm băng qua đường hoặc cấm quay đầu, không có nghĩa là hành vi lùi xe (back) tại đó bị cấm một cách đồng loạt.",
+      "explanationVi": "Đúng. Ngay cả khi hành vi băng qua đường hay quay đầu bị cấm, bản thân hành động lùi xe không nhất thiết bị cấm theo. Tuy nhiên, bạn không được lùi xe tại những nơi vốn đã bị cấm lùi như trong phạm vi giao lộ hoặc trên vạch đi bộ."
     },
     {
       "kind": "simple",
@@ -4495,11 +4483,11 @@
       "id": "menkyogentsuki_gentsuki_8_1_4",
       "chapter": "総合演習1",
       "section": "1-28",
-      "text": "前の車が右側に進路を変えようとしている場合であっても、安全であれば追い越してよい。",
-      "answer": "×",
-      "explanation": "前の車が右折等のために右側に進路を変えようとしている場合は、追い越しをしてはならない。",
-      "textVi": "Dù xe phía trước định đổi làn sang phải, nếu an toàn thì được phép vượt.",
-      "explanationVi": "Khi xe phía trước định đổi làn sang phải để rẽ phải v.v... thì không được vượt xe."
+      "text": "前の車が右側に進路を変えようとしている場合であっても、その左側を通行して追い抜くことは禁止されていない。",
+      "answer": "○",
+      "explanation": "正しい。前の車が右折等のために右側に進路を変えようとしている場合、右側から追い越すことは禁止されているが、左側から通行して追い抜くことは禁止されていない（ただし、安全の確認は必要である）。",
+      "textVi": "Ngay cả khi xe phía trước định đổi làn sang phải, việc đi vào bên trái và vượt qua (追い抜き) xe đó không bị cấm.",
+      "explanationVi": "Đúng. Khi xe phía trước định đổi làn sang phải để rẽ, cấm vượt từ bên phải (追い越し), nhưng không cấm việc đi sang bên trái để vượt (追い抜き) (tuy nhiên, bắt buộc phải xác nhận an toàn)."
     },
     {
       "kind": "simple",
@@ -4517,11 +4505,11 @@
       "id": "menkyogentsuki_gentsuki_1_2_1_s1",
       "chapter": "総合演習1",
       "section": "1-30",
-      "text": "路面電車を追い越す場合は、常にその左側を通行する。",
-      "answer": "×",
-      "explanation": "原則としてその左側を通行するが、路面電車の軌道敷が道路の左端にある場合は、その右側を通行する。",
-      "textVi": "Khi vượt xe điện mặt đất, luôn đi bên trái của nó.",
-      "explanationVi": "Sai. Nguyên tắc là luôn đi bên trái xe điện, nhưng nếu đường ray của xe điện nằm ở mép trái của đường thì được phép đi bên phải."
+      "text": "路面電車を追い越す場合は、原則としてその左側を通行するが、路面電車の軌道敷が道路の左端にあるときは、その右側を通行する。",
+      "answer": "○",
+      "explanation": "正しい。路面電車を追い越す際は、原則左側を通行するが、軌道敷が道路の左端にある場合に限り、例外的に右側を通行することができる。",
+      "textVi": "Khi vượt xe điện, về nguyên tắc phải đi bên trái, nhưng nếu đường ray của xe điện nằm ở mép trái của đường thì phải đi bên phải.",
+      "explanationVi": "Đúng. Khi vượt xe điện, nguyên tắc là đi bên trái, nhưng trong trường hợp đường ray nằm ở mép đường bên trái thì được phép đi bên phải."
     },
     {
       "kind": "simple",
@@ -4539,11 +4527,11 @@
       "id": "menkyogentsuki_gentsuki_8_26_1",
       "chapter": "総合演習1",
       "section": "1-32",
-      "text": "交差点付近で緊急自動車が接近してきたので、交差点の中央で停止した。",
-      "answer": "×",
-      "explanation": "交差点をさけて、左側に寄って停止せねばならない。",
-      "textVi": "Gần giao lộ có xe ưu tiên đến gần nên đã dừng ở giữa giao lộ.",
-      "explanationVi": "Phải tránh giao lộ, đi sát bên trái và dừng lại."
+      "text": "交差点付近で緊急自動車が接近してきたので、交差点を避けて道路の左側に寄り、一時停止した。",
+      "answer": "○",
+      "explanation": "正しい。緊急自動車が接近してきたときは、交差点を避けて道路の左側に寄り、一時停止しなければならない。",
+      "textVi": "Gần giao lộ có xe ưu tiên đến gần, tôi đã tránh khỏi giao lộ, áp sát vào bên trái đường và dừng xe tạm thời.",
+      "explanationVi": "Đúng. Khi xe ưu tiên đến gần, bạn bắt buộc phải tránh khỏi giao lộ, áp sát vào lề đường bên trái và dừng xe tạm thời."
     },
     {
       "kind": "simple",
@@ -4561,11 +4549,11 @@
       "id": "menkyogentsuki_gentsuki_1_24_2",
       "chapter": "総合演習1",
       "section": "1-35",
-      "text": "左折や左に進路を変更する際に、右腕を使って合図をすることはできない。",
-      "answer": "×",
-      "explanation": "右腕で合図をすることもできる。",
-      "textVi": "Khi rẽ trái hay chuyển làn sang trái, không thể bật xi nhan bằng tay phải.",
-      "explanationVi": "Cũng có thể bật xi nhan bằng tay phải."
+      "text": "左折や左に進路を変更する際は、方向指示器による合図のほか、右腕を使って合図をすることもできる。",
+      "answer": "○",
+      "explanation": "正しい。右左折や進路変更の際は、方向指示器（ウインカー）を使うのが原則だが、故障時などは手信号（右腕を使った合図）で行うことも認められている。",
+      "textVi": "Khi rẽ trái hoặc chuyển làn sang trái, ngoài việc sử dụng đèn xi nhan, bạn cũng có thể sử dụng cánh tay phải để ra hiệu.",
+      "explanationVi": "Đúng. Khi rẽ hoặc chuyển làn, về nguyên tắc phải dùng đèn xi nhan, nhưng trong trường hợp đèn bị hỏng, pháp luật cho phép sử dụng tín hiệu bằng tay (cánh tay phải) để ra hiệu."
     },
     {
       "kind": "simple",
@@ -4741,11 +4729,11 @@
       "id": "menkyogentsuki_gentsuki_7_29_2",
       "chapter": "総合演習1",
       "section": "1-52",
-      "text": "転回を意味する合図の方法は、右折や右に進路変更するときの合図の方法と同じである。",
-      "answer": "○",
-      "explanation": "問題文の通り、転回を意味する合図の方法は、右折や右に進路変更するときの合図の方法と同じである。",
-      "textVi": "Phương pháp bật xi nhan quay đầu giống như phương pháp bật xi nhan rẽ phải hay chuyển làn sang phải.",
-      "explanationVi": "Đúng như mô tả, cách bật xi nhan khi quay đầu giống như khi rẽ phải hay chuyển làn sang phải."
+      "text": "転回（Uターン）の合図は、右折の合図とは異なり、左折の合図と同じ方法で行わなければならない。",
+      "answer": "×",
+      "explanation": "誤り。転回（Uターン）の合図の方法は、右折や右に進路変更するときの合図の方法と同じである（右腕を水平に伸ばす）。",
+      "textVi": "Phương pháp bật xi nhan khi quay đầu (U-turn) khác với tín hiệu rẽ phải, mà phải thực hiện giống như phương pháp bật xi nhan rẽ trái.",
+      "explanationVi": "Sai. Phương pháp bật xi nhan khi quay đầu (U-turn) hoàn toàn giống với cách bật xi nhan khi rẽ phải hoặc chuyển làn sang phải (đưa tay phải ra theo phương ngang)."
     },
     {
       "kind": "simple",
@@ -4808,12 +4796,12 @@
       "id": "menkyogentsuki_gentsuki_10_1_4",
       "chapter": "標識・標示・信号",
       "section": "1-58",
-      "text": "この標識がある交差点では、たとえ自車の走行する道路が優先道路であり、見通しがよくても、必ず一時停止しなければならない。",
-      "answer": "○",
-      "explanation": "この標識は、一時停止を示す。",
+      "text": "この標識がある交差点であっても、自車の走行する道路が優先道路である場合や、見通しが非常によい場合は、一時停止せずに徐行して通行してよい。",
+      "answer": "×",
+      "explanation": "誤り。一時停止の標識がある場所では、優先道路であるかどうかや周囲の状況に関わらず、必ず一時停止しなければならない。",
       "image": "menkyogentsuki_859.png",
-      "textVi": "Ở giao lộ có biển báo này, dù đường mình đi là đường ưu tiên và tầm nhìn tốt cũng phải dừng lại một lần.",
-      "explanationVi": "Không. Đèn tín hiệu giao thông cho xe cơ giới có màu vàng nhấp nháy nghĩa là chú ý."
+      "textVi": "Ngay cả tại giao lộ có biển báo này, nếu đường mình đang đi là đường ưu tiên hoặc tầm nhìn rất tốt, thì không cần dừng lại mà chỉ cần giảm tốc độ rồi đi qua.",
+      "explanationVi": "Sai. Tại nơi có biển báo dừng lại, bất kể đó có phải là đường ưu tiên hay không hoặc tình hình xung quanh thế nào, bạn bắt buộc phải dừng hẳn xe lại."
     },
     {
       "kind": "simple",
@@ -5030,11 +5018,11 @@
       "id": "menkyogentsuki_gentsuki_10_20_3",
       "chapter": "総合演習1",
       "section": "1-79",
-      "text": "右折や左折などの合図は、その行為の途中でやめてよい。",
-      "answer": "×",
-      "explanation": "終わるまで続けねばならない。終了次第、速やかに合図をやめる。",
-      "textVi": "Có thể bỏ giữa chừng tín hiệu xi nhan rẽ phải hay rẽ trái.",
-      "explanationVi": "Phải tiếp tục cho đến khi kết thúc. Sau khi kết thúc, tắt tín hiệu ngay."
+      "text": "右折や左折などの合図は、その行為が終わるまで続けなければならない。",
+      "answer": "○",
+      "explanation": "正しい。合図は行為が終わるまで継続する必要がある。行為が終了した後は、速やかに合図をやめる。",
+      "textVi": "Tín hiệu xi nhan rẽ phải hay rẽ trái phải được duy trì cho đến khi hoàn tất hành động đó.",
+      "explanationVi": "Đúng. Phải tiếp tục bật tín hiệu cho đến khi kết thúc hành động. Ngay sau khi kết thúc, phải tắt tín hiệu ngay."
     },
     {
       "kind": "simple",
@@ -5490,11 +5478,11 @@
       "id": "menkyogentsuki_gentsuki_7_29_4",
       "chapter": "総合演習1",
       "section": "1-120",
-      "text": "バス専用通行帯は、原動機付自転車は通行してはならない。",
-      "answer": "×",
+      "text": "バス専用通行帯は、原動機付自転車も通行することができる。",
+      "answer": "○",
       "explanation": "原動機付自転車や小型特殊自動車、軽車両はバス専用通行帯を通行できる。",
       "textVi": "Trên làn dành riêng cho xe buýt, xe gắn máy vẫn được phép đi.",
-      "explanationVi": "Sai. Xe gắn máy, xe đặc biệt nhỏ và xe đạp vẫn được phép đi trên làn dành riêng cho xe buýt."
+      "explanationVi": "Xe gắn máy, xe đặc biệt nhỏ và xe đạp vẫn được phép đi trên làn dành riêng cho xe buýt."
     },
     {
       "kind": "simple",
@@ -5568,11 +5556,11 @@
       "id": "menkyogentsuki_gentsuki_9_11_2",
       "chapter": "総合演習2",
       "section": "2-3",
-      "text": "路線バスの専用通行帯は、原動機付自転車や、小型特殊自動車も通行してはならない。",
-      "answer": "×",
-      "explanation": "他に軽車両・許可された車も通行が可能である。",
-      "textVi": "Trên làn dành riêng cho xe buýt tuyến, xe gắn máy và xe nông nghiệp đặc biệt nhỏ cũng không được phép đi.",
-      "explanationVi": "Ngoài ra, xe đạp nhẹ và xe được cấp phép cũng có thể lưu thông."
+      "text": "路線バス専用通行帯は、原動機付自転車や軽車両、許可された自動車などは通行することができる。",
+      "answer": "○",
+      "explanation": "正しい。路線バス専用通行帯であっても、原動機付自転車や軽車両、許可された自動車などは通行が認められている。",
+      "textVi": "Làn đường dành riêng cho xe buýt tuyến, xe gắn máy, xe thô sơ và xe ô tô được cấp phép có thể lưu thông trên đó.",
+      "explanationVi": "Đúng. Ngay cả đối với làn đường dành riêng cho xe buýt, xe gắn máy, xe thô sơ và các loại xe được cấp phép vẫn được phép lưu thông."
     },
     {
       "kind": "simple",
@@ -5680,12 +5668,12 @@
       "id": "menkyogentsuki_gentsuki_8_10_5",
       "chapter": "標識・標示・信号",
       "section": "2-13",
-      "text": "この標示のある車両通行帯を直進することができる。",
-      "answer": "×",
-      "explanation": "左折に指定された車両通行帯なので、直進や右折をすることはできない。",
+      "text": "この標示のある車両通行帯では、左折以外の進行をすることはできない。",
+      "answer": "○",
+      "explanation": "正しい。この標示（進行方向別通行区分）は左折専用のレーンを示しているため、直進や右折をすることはできない。",
       "image": "menkyogentsuki_600.png",
-      "textVi": "Có thể đi thẳng trên làn đường có vạch kẻ đường này.",
-      "explanationVi": "Đây là làn đường chỉ dành cho rẽ trái nên không thể đi thẳng hay rẽ phải."
+      "textVi": "Trên làn đường có vạch kẻ này, không được phép di chuyển theo hướng nào khác ngoài rẽ trái.",
+      "explanationVi": "Đúng. Vạch kẻ này (phân làn theo hướng đi) chỉ định làn đường dành riêng cho rẽ trái, vì vậy không được phép đi thẳng hay rẽ phải."
     },
     {
       "kind": "simple",
@@ -5726,11 +5714,11 @@
       "id": "menkyogentsuki_gentsuki_10_24_2",
       "chapter": "総合演習2",
       "section": "2-17",
-      "text": "自車が優先道路を走行していない場合、交差点とその手前30メートル以内の場所では、安全を確認すれば前の車を追い越してよい。",
-      "answer": "×",
-      "explanation": "自車が優先道路を走行していない場合、交差点とその手前30メートル以内の場所では、追い越しは禁止である。よって、問題文は誤り。",
-      "textVi": "Nếu xe của mình không đi trên đường ưu tiên, ở giao lộ và trong phạm vi 30 mét trước giao lộ, nếu xác nhận an toàn thì được phép vượt xe phía trước.",
-      "explanationVi": "Nếu xe mình không đi trên đường ưu tiên, thì trong phạm vi ngã tư và 30 mét trước đó cấm vượt xe. Do đó, đề bài sai."
+      "text": "自車が優先道路を走行している場合、交差点とその手前30メートル以内の場所であっても、前の車を追い越すことができる。",
+      "answer": "○",
+      "explanation": "正しい。優先道路を通行している場合は、交差点とその手前30メートル以内の場所であっても、追い越しが禁止されている場所には該当しないため、前の車を追い越すことができる。",
+      "textVi": "Nếu xe của mình đang đi trên đường ưu tiên, thì dù ở giao lộ hay trong phạm vi 30 mét trước giao lộ, vẫn được phép vượt xe phía trước.",
+      "explanationVi": "Đúng. Khi lưu thông trên đường ưu tiên, bạn được phép vượt xe phía trước ngay cả tại giao lộ hoặc trong phạm vi 30 mét trước đó, vì khu vực này không thuộc phạm vi bị cấm vượt trong trường hợp này."
     },
     {
       "kind": "simple",
@@ -5903,11 +5891,11 @@
       "id": "menkyogentsuki_gentsuki_9_9_2",
       "chapter": "総合演習2",
       "section": "2-34",
-      "text": "合図は、その行為が終わったら、すぐにやめなければならない。",
-      "answer": "○",
-      "explanation": "合図を出し続けると混乱を招き、危険である。",
-      "textVi": "Tín hiệu xi nhan phải được tắt ngay khi hành động kết thúc.",
-      "explanationVi": "Liên tục phát tín hiệu sẽ gây nhầm lẫn và nguy hiểm."
+      "text": "右左折や進路変更が終わった後であっても、後続車に自分の進路を明確に知らせるため、合図は出し続けてもよい。",
+      "answer": "×",
+      "explanation": "誤り。合図は、その行為が終わったら、速やかにやめなければならない。出し続けると、周囲の交通に混乱を招き危険である。",
+      "textVi": "Ngay cả sau khi đã rẽ phải/trái hoặc thay đổi làn đường xong, để thông báo rõ lộ trình của mình cho xe phía sau, có thể tiếp tục bật tín hiệu xi nhan.",
+      "explanationVi": "Sai. Tín hiệu phải được tắt ngay sau khi kết thúc hành động đó. Việc tiếp tục bật tín hiệu sẽ gây nhầm lẫn cho giao thông xung quanh và rất nguy hiểm."
     },
     {
       "kind": "simple",
@@ -6337,11 +6325,11 @@
       "id": "menkyogentsuki_gentsuki_2_9_1",
       "chapter": "総合演習2",
       "section": "2-75",
-      "text": "原動機付自転車で右折する際は、対向車のかげから直進車が出てくることがあるので注意が必要である。",
-      "answer": "○",
-      "explanation": "右折する際は、死角に気を付ける。",
-      "textVi": "Khi xe gắn máy 50cc rẽ phải, cần chú ý xe chạy thẳng đối diện từ phía sau xe đối diện đang vượt có thể bất ngờ xuất hiện.",
-      "explanationVi": "Đúng. Khi rẽ phải cần chú ý điểm mù vì xe chạy thẳng đối diện từ phía sau xe đối diện đang vượt có thể bất ngờ xuất hiện."
+      "text": "原動機付自転車で右折する際は、対向車の影から直進車が出てくることはないので、特に対向車の陰に注意する必要はない。",
+      "answer": "×",
+      "explanation": "誤り。右折する際は、対向車のかげから直進車が出てくる危険性が高いため、死角に十分注意して進行しなければならない。",
+      "textVi": "Khi xe gắn máy 50cc rẽ phải, vì không có trường hợp xe chạy thẳng bất ngờ xuất hiện từ phía sau xe đối diện, nên không cần đặc biệt chú ý đến điểm mù sau xe đối diện.",
+      "explanationVi": "Sai. Khi rẽ phải, nguy cơ xe chạy thẳng từ phía đối diện bất ngờ xuất hiện từ sau xe đối diện (xe đang chờ rẽ hoặc đang vượt) là rất cao, nên phải hết sức chú ý đến điểm mù trước khi rẽ."
     },
     {
       "kind": "simple",
@@ -6482,25 +6470,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_2_2_2_s1",
-      "chapter": "総合演習2",
-      "section": "2-88",
-      "text": "右腕を垂直に上に曲げる合図は、左折か左に進路変更するときの合図である。",
-      "answer": "○",
-      "explanation": "問題文の記述は正しい。なお、「左折」と「左に進路変更」は、右腕を車の右側の外に出してひじを垂直に曲げるという同じ動作ではあるが、合図を出すべき場所や時期は異なる。「左折」は曲がる手前約30mで、「左に進路変更」はその3秒前である。",
-      "textVi": "Tín hiệu gập tay phải thẳng đứng lên trên là tín hiệu rẽ trái hoặc chuyển hướng trái.",
-      "explanationVi": "Đúng. Đây là tín hiệu bằng tay khi rẽ trái hoặc chuyển hướng sang trái. Lưu ý rằng cả rẽ trái và chuyển hướng trái đều dùng cùng một động tác nhưng vị trí và thời điểm ra tín hiệu khác nhau: rẽ trái thì ra tín hiệu cách chỗ rẽ khoảng 30m, còn chuyển hướng trái thì ra tín hiệu sớm hơn 3 giây."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_29_2",
       "chapter": "総合演習2",
       "section": "2-89",
-      "text": "交差点付近以外の所で緊急自動車が接近してきたときは、道路の左側によって一時停止をしなければならない。",
-      "answer": "×",
-      "explanation": "交差点内や交差点付近の場合とは異なり、それ以外の場所では、道路の左側に寄り、進路を譲れば、一時停止しなくてもよい。",
-      "textVi": "Khi xe ưu tiên đến gần ở nơi khác ngoài gần giao lộ, phải đi sát bên trái của đường và dừng lại một lần.",
-      "explanationVi": "Khác với trong giao lộ và gần giao lộ, ở những nơi khác, chỉ cần đi sát phía bên trái của đường và nhường đường, không cần dừng lại một lần."
+      "text": "交差点付近以外の場所で緊急自動車が接近してきたときは、道路の左側に寄って進路を譲ればよく、必ずしも一時停止をする必要はない。",
+      "answer": "○",
+      "explanation": "正しい。交差点内や交差点付近では一時停止の義務があるが、それ以外の場所では、道路の左側に寄って進路を譲れば一時停止しなくてもよい。",
+      "textVi": "Khi xe ưu tiên đến gần ở nơi khác ngoài gần giao lộ, chỉ cần đi sát bên trái đường để nhường đường là đủ, không nhất thiết phải dừng lại hẳn.",
+      "explanationVi": "Đúng. Trong khi tại ngã tư hoặc gần ngã tư có quy định bắt buộc phải dừng xe, thì ở những nơi khác, bạn chỉ cần đi sát vào mép đường bên trái và nhường đường, không bắt buộc phải dừng xe."
     },
     {
       "kind": "simple",
@@ -6578,17 +6555,6 @@
       "explanation": "ナンバープレートは、見えやすいように表示せねばならない。",
       "textVi": "Biển số xe gắn máy nhất định phải được gắn.",
       "explanationVi": "Biển số xe phải được lắp sao cho dễ nhìn thấy."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_9_4",
-      "chapter": "総合演習2",
-      "section": "2-97",
-      "text": "坂の頂上付近で追い越しをする場合、上りは追い越しを禁止されているが、下りは追い越しを禁止されていない。",
-      "answer": "○",
-      "explanation": "正しい。坂の頂上付近では、下りの場合、特に追い越しは禁止されていない。なお、問題文の通り、坂の頂上付近の上りは、追い越しは禁止である。また本問には登場しないが、こう配の急な下り坂も追い越しは禁止である",
-      "textVi": "Khi vượt xe gần đỉnh dốc, xe lên dốc bị cấm vượt, nhưng xe xuống dốc thì không bị cấm vượt.",
-      "explanationVi": "Đúng. Gần đỉnh dốc, trong trường hợp xe xuống dốc thì không có quy định cấm vượt đặc biệt. Tuy nhiên, như trong đề bài, xe lên dốc gần đỉnh dốc thì bị cấm vượt. Mặc dù không xuất hiện trong câu hỏi này, nhưng dốc xuống có độ dốc lớn cũng bị cấm vượt."
     },
     {
       "kind": "simple",
@@ -6829,11 +6795,11 @@
       "id": "menkyogentsuki_gentsuki_9_8_2",
       "chapter": "総合演習2",
       "section": "2-120",
-      "text": "右左折の合図を行う時期は、右左折の約3秒前である。",
-      "answer": "×",
-      "explanation": "右左折の30メートル手前で合図を行う。",
-      "textVi": "Thời điểm bật xi nhan rẽ phải hay rẽ trái là khoảng 3 giây trước khi rẽ.",
-      "explanationVi": "Ra tín hiệu rẽ phải/trái trước 30 mét."
+      "text": "右折や左折をするときは、その行為をしようとする地点の30メートル手前で合図を行わなければならない。",
+      "answer": "○",
+      "explanation": "正しい。右折や左折をする際の合図は、交差点の手前30メートルの地点で行う必要がある。なお、進路変更の合図は3秒前である。",
+      "textVi": "Khi rẽ phải hoặc rẽ trái, phải ra tín hiệu trước 30 mét tính từ điểm định thực hiện hành động đó.",
+      "explanationVi": "Đúng. Tín hiệu khi rẽ phải hoặc rẽ trái cần được thực hiện tại điểm cách ngã tư 30 mét. Lưu ý, tín hiệu chuyển làn đường là 3 giây trước khi chuyển."
     },
     {
       "kind": "simple",
@@ -6863,11 +6829,11 @@
       "id": "menkyogentsuki_gentsuki_10_24_3",
       "chapter": "総合演習2",
       "section": "2-123",
-      "text": "徐行や停止、後退をするときはそのときに合図をすればよい。",
-      "answer": "○",
-      "explanation": "あらかじめ合図をしなくても危険性が少ないためである。",
-      "textVi": "Khi giảm tốc, dừng xe hay lùi xe thì bật tín hiệu vào thời điểm đó là được.",
-      "explanationVi": "Vì không cần phát tín hiệu từ trước mà vẫn ít nguy hiểm."
+      "text": "徐行や停止、後退をするときは、動作を終えた直後に合図を行えばよい。",
+      "answer": "×",
+      "explanation": "誤り。徐行、停止、後退をするときは、その動作をしようとする地点に達したときに合図を行わなければならない。動作を終えた後では周囲の車に意図が伝わらず危険である。",
+      "textVi": "Khi giảm tốc độ, dừng xe hoặc lùi xe, chỉ cần phát tín hiệu ngay sau khi kết thúc hành động đó là được.",
+      "explanationVi": "Sai. Khi giảm tốc, dừng xe hoặc lùi xe, bạn phải phát tín hiệu tại thời điểm bắt đầu thực hiện hành động đó. Nếu phát tín hiệu sau khi đã kết thúc hành động thì các xe xung quanh sẽ không biết ý định của bạn, gây nguy hiểm."
     },
     {
       "kind": "simple",
@@ -6985,11 +6951,11 @@
       "id": "menkyogentsuki_gentsuki_10_27_5",
       "chapter": "総合演習3",
       "section": "3-10",
-      "text": "停留所で停止していた路線バスが発進の合図をしたので、進路を譲った。",
-      "answer": "○",
-      "explanation": "路線バスが発進の合図をしたときは、進路を譲る。",
-      "textVi": "Xe buýt tuyến đang dừng ở bến có tín hiệu khởi hành nên đã nhường đường.",
-      "explanationVi": "Khi xe buýt phát tín hiệu khởi hành thì nhường đường."
+      "text": "停留所で停止していた路線バスが発進の合図をした場合であっても、自分の車が優先であるので、そのままの速度で進路を譲らずに通過した。",
+      "answer": "×",
+      "explanation": "停留所から発進しようとする路線バスが合図をしたときは、後続車はその発進を妨げてはならない（進路を譲らなければならない）。",
+      "textVi": "Trong trường hợp xe buýt tuyến đang dừng ở bến phát tín hiệu khởi hành, vì xe của mình được ưu tiên hơn nên đã không nhường đường mà cứ giữ nguyên tốc độ để đi qua.",
+      "explanationVi": " Khi xe buýt phát tín hiệu khởi hành từ bến, xe phía sau bắt buộc không được gây cản trở và phải nhường đường cho xe buýt."
     },
     {
       "kind": "simple",
@@ -7034,17 +7000,6 @@
       "explanation": "走行中はアクセルによる加速とブレーキによる減速を適切に使い分ける必要がある。",
       "textVi": "Khi lái xe gắn máy, nên dùng cả ga và phanh để điều chỉnh tốc độ.",
       "explanationVi": "Đúng. Khi lái xe, cần kết hợp sử dụng ga để tăng tốc và phanh để giảm tốc một cách hợp lý."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_7_1",
-      "chapter": "総合演習3",
-      "section": "3-15",
-      "text": "自車が優先道路を走行していない場合、交差点とその手前30メートル以内の場所では、安全を確認すれば前の車を追い越してよい。",
-      "answer": "×",
-      "explanation": "自車が優先道路を走行していない場合、交差点とその手前30メートル以内の場所では、追い越しは禁止である。よって、問題文は誤り。",
-      "textVi": "Trường hợp xe mình không đang chạy trên đường ưu tiên, tại giao lộ và vị trí trong phạm vi 30 mét trước giao lộ, nếu đã xác nhận an toàn thì được phép vượt xe phía trước.",
-      "explanationVi": "Trường hợp xe mình không đang chạy trên đường ưu tiên, tại giao lộ và vị trí trong phạm vi 30 mét trước giao lộ thì cấm vượt. Do đó, đề bài sai."
     },
     {
       "kind": "simple",
@@ -7196,12 +7151,12 @@
       "id": "menkyogentsuki_gentsuki_7_18_2",
       "chapter": "標識・標示・信号",
       "section": "3-29",
-      "text": "この標示のある車両通行帯から右折することはできない。",
-      "answer": "○",
-      "explanation": "左折ができる車両通行帯なので、直進や右折をすることはできない。",
+      "text": "この標示のある車両通行帯から、必要であれば直進や右折をして進行してもよい。",
+      "answer": "×",
+      "explanation": "誤り。この標示（進行方向別通行区分）がある車両通行帯では、矢印の方向（この場合は左折）にしか進行できないため、直進や右折をしてはならない。",
       "image": "menkyogentsuki_487.png",
-      "textVi": "Không thể rẽ phải từ làn đường có vạch kẻ này.",
-      "explanationVi": "Đây là làn đường có thể rẽ trái nên không thể đi thẳng hay rẽ phải."
+      "textVi": "Từ làn đường có vạch kẻ này, nếu cần thiết thì có thể đi thẳng hoặc rẽ phải để tiếp tục di chuyển.",
+      "explanationVi": "Sai. Làn đường có vạch kẻ này (phân làn theo hướng đi) chỉ cho phép di chuyển theo hướng mũi tên (trong trường hợp này là rẽ trái), vì vậy không được đi thẳng hay rẽ phải."
     },
     {
       "kind": "simple",
@@ -7263,11 +7218,11 @@
       "id": "menkyogentsuki_gentsuki_9_9_1",
       "chapter": "総合演習3",
       "section": "3-35",
-      "text": "交差点で右折するとき、先に交差点内に入っていたとしても、直進車より先に右折してはならない。",
-      "answer": "○",
-      "explanation": "右折車は、直進車の進行を妨害してはならない。",
-      "textVi": "Khi rẽ phải ở giao lộ, dù đã vào giao lộ trước cũng không được rẽ phải trước xe đi thẳng.",
-      "explanationVi": "Xe rẽ phải không được cản trở xe đi thẳng."
+      "text": "交差点で右折するときは、先に交差点内に入っていれば、直進車よりも優先されるため、先に右折して通過してよい。",
+      "answer": "×",
+      "explanation": "誤り。交差点内で右折車と直進車が対向している場合、先に交差点に入っていたとしても、右折車は直進車の進行を妨害してはならない。直進車を優先しなければならない。",
+      "textVi": "Khi rẽ phải ở ngã tư, nếu bạn đã tiến vào ngã tư trước, bạn được ưu tiên hơn xe đi thẳng, vì vậy có thể rẽ phải đi qua trước.",
+      "explanationVi": "Sai. Khi xe rẽ phải và xe đi thẳng đối diện nhau trong ngã tư, ngay cả khi bạn đã vào ngã tư trước, bạn cũng không được cản trở xe đi thẳng. Bạn phải nhường quyền ưu tiên cho xe đi thẳng."
     },
     {
       "kind": "simple",
@@ -7341,11 +7296,11 @@
       "id": "menkyogentsuki_gentsuki_7_16_4",
       "chapter": "総合演習3",
       "section": "3-42",
-      "text": "同じ道幅の交差点で路面電車が進行しているときは、右方・左方にかかわらず、路面電車の進行を妨げない。",
-      "answer": "○",
-      "explanation": "同じ道幅の交差点では、右方・左方に関わらず路面電車の進行を妨げてはならないので、本問は正しい。ちなみに、自車の道路の道幅の方が路面電車の軌道敷幅より広い場合（＝自車の道路が優先道路の場合）は、自車が優先である。",
-      "textVi": "Ở giao lộ cùng độ rộng, khi xe điện đang đi thì không được cản trở xe điện bất kể từ bên phải hay trái.",
-      "explanationVi": "Tại giao lộ cùng độ rộng, không được cản trở xe điện bất kể từ bên phải hay trái. Nhân tiện, nếu đường của mình rộng hơn đường ray thì mình được ưu tiên."
+      "text": "同じ道幅の交差点で路面電車が進行しているときは、自分の車が路面電車の右側から接近している場合に限り、優先して進行してよい。",
+      "answer": "×",
+      "explanation": "誤り。同じ道幅の交差点では、右方・左方に関わらず、路面電車が進行しているときはその進行を妨げてはならない。",
+      "textVi": "Ở giao lộ cùng độ rộng, khi xe điện đang đi, nếu xe của mình tiếp cận từ phía bên phải xe điện thì được ưu tiên đi trước.",
+      "explanationVi": "Sai. Tại giao lộ cùng độ rộng, bất kể từ bên phải hay bên trái, khi xe điện đang đi thì tuyệt đối không được cản trở xe điện."
     },
     {
       "kind": "simple",
@@ -7641,11 +7596,11 @@
       "id": "menkyogentsuki_gentsuki_10_27_3",
       "chapter": "総合演習3",
       "section": "3-70",
-      "text": "追い越しをするときは、必ず進行中の前の車の右側を通行する。",
-      "answer": "×",
-      "explanation": "前の車が右折するために道路の中央に寄っているときは、その左側を通行する。",
-      "textVi": "Khi vượt xe, nhất định phải đi ở phía bên phải của xe phía trước.",
-      "explanationVi": "Khi xe phía trước rẽ phải và đi gần giữa đường, thì đi qua bên trái của xe đó."
+      "text": "追い越しをするときは、原則として前の車の右側を通行するが、前の車が右折するために道路の中央に寄っているときは、その左側を通行する。",
+      "answer": "○",
+      "explanation": "正しい。追い越しの原則は右側通行であるが、前の車が右折のために中央に寄っている場合は、左側を通行しなければならない。",
+      "textVi": "Khi vượt xe, về nguyên tắc phải đi ở phía bên phải của xe phía trước, nhưng khi xe phía trước đang lấn vào giữa đường để rẽ phải thì phải đi ở phía bên trái của xe đó.",
+      "explanationVi": "Đúng. Nguyên tắc khi vượt xe là đi bên phải, nhưng trường hợp xe phía trước đang rẽ phải và đi gần giữa đường thì bắt buộc phải vượt bên trái."
     },
     {
       "kind": "simple",
@@ -7933,11 +7888,11 @@
       "id": "menkyogentsuki_gentsuki_8_19_3",
       "chapter": "総合演習3",
       "section": "3-97",
-      "text": "右折や左折をするときは、必ず徐行せねばならない。",
-      "answer": "○",
-      "explanation": "徐行とは、すぐに停止できる速度のことである。",
-      "textVi": "Khi rẽ phải hay rẽ trái, nhất định phải giảm tốc độ.",
-      "explanationVi": "Giảm tốc độ nghĩa là chạy với tốc độ có thể dừng xe ngay."
+      "text": "右折や左折をするときは、周囲に歩行者や他の車がいないことが確認できれば、徐行せずにそのままの速度で曲がってよい。",
+      "answer": "×",
+      "explanation": "誤り。右折や左折をするときは、周囲の状況に関わらず、必ず徐行しなければならない。",
+      "textVi": "Khi rẽ phải hay rẽ trái, nếu xác nhận được không có người đi bộ hay xe cộ xung quanh thì không cần giảm tốc độ, cứ giữ nguyên tốc độ mà rẽ.",
+      "explanationVi": "Sai. Khi rẽ phải hoặc rẽ trái, bất kể tình hình xung quanh thế nào, bạn bắt buộc phải giảm tốc độ (徐行)."
     },
     {
       "kind": "simple",
@@ -8034,11 +7989,11 @@
       "id": "menkyogentsuki_gentsuki_7_22_2",
       "chapter": "総合演習3",
       "section": "3-106",
-      "text": "交差点やその付近以外の道路を通行中、後方から緊急自動車が接近してきたときは、一方通行の道路では、左側もしくは右側に寄って進路を譲る。",
-      "answer": "○",
-      "explanation": "一方通行の道路で、左側に寄るとかえって緊急自動車の妨げになるときは、右側に寄って進路を譲る。",
-      "textVi": "Khi đang đi trên đường ngoài giao lộ và các khu vực lân cận, xe ưu tiên đến từ phía sau, trên đường một chiều thì đi sát bên trái hoặc phải để nhường đường.",
-      "explanationVi": "Trên đường một chiều, khi đi sát bên trái sẽ cản trở xe ưu tiên thì đi sát bên phải để nhường đường."
+      "text": "交差点以外の道路を通行中、後方から緊急自動車が接近してきたときは、一方通行の道路であっても、必ず道路の左側に寄って進路を譲らなければならない。",
+      "answer": "×",
+      "explanation": "誤り。一方通行の道路で、左側に寄るとかえって緊急自動車の妨げになるような場合は、右側に寄って進路を譲ってもよい。",
+      "textVi": "Khi đang đi trên đường không phải giao lộ, xe ưu tiên đến gần từ phía sau, thì dù là đường một chiều cũng bắt buộc phải đi sát bên trái đường để nhường đường.",
+      "explanationVi": "Sai. Trên đường một chiều, nếu đi sát bên trái gây cản trở xe ưu tiên thì có thể đi sát bên phải để nhường đường."
     },
     {
       "kind": "simple",
@@ -8310,11 +8265,11 @@
       "id": "menkyogentsuki_gentsuki_7_4_3",
       "chapter": "総合演習4",
       "section": "4-9",
-      "text": "たとえ安全であっても、前の車が自動車を追い越そうとしているときは、それを追い越してはいけない。",
-      "answer": "○",
-      "explanation": "二重追い越しは禁止されている。",
-      "textVi": "Dù có an toàn, khi xe phía trước đang vượt xe ô tô thì không được vượt xe đó.",
-      "explanationVi": "Cấm vượt kép."
+      "text": "前の車が自動車を追い越そうとしているときであっても、自車の加速性能が十分に高く安全に追い越せるのであれば、追い越してもよい。",
+      "answer": "×",
+      "explanation": "誤り。前の車が追い越しをしようとしているとき（追い越し中）に、さらにその車を追い越す行為は「二重追い越し」となり、危険であるため禁止されている。",
+      "textVi": "Ngay cả khi xe phía trước đang định vượt xe khác, nếu xe của mình có khả năng tăng tốc đủ tốt và có thể vượt an toàn thì vẫn được phép vượt.",
+      "explanationVi": "Sai. Khi xe phía trước đang thực hiện hành vi vượt xe (đang trong quá trình vượt), hành vi vượt lên trên xe đó được gọi là 'vượt kép' (二重追い越し), đây là hành vi bị cấm vì rất nguy hiểm."
     },
     {
       "kind": "simple",
@@ -8344,11 +8299,11 @@
       "id": "menkyogentsuki_gentsuki_10_22_3",
       "chapter": "総合演習4",
       "section": "4-12",
-      "text": "進路を変更するときは、合図をしてから安全を確認する。",
-      "answer": "×",
-      "explanation": "安全を確認してから合図をしなくてはならない。",
-      "textVi": "Khi đổi làn đường, xác nhận an toàn sau khi bật xi nhan.",
-      "explanationVi": "Phải xác nhận an toàn rồi mới phát tín hiệu."
+      "text": "進路を変更するときは、あらかじめ安全を確認してから合図をし、さらに再度安全を確認してから進路を変更する。",
+      "answer": "○",
+      "explanation": "正しい。進路変更の手順は、「安全確認」→「合図」→「（再度）安全確認」→「進路変更」である。合図を出しただけで安全確認をせずに進路変更することは大変危険である。",
+      "textVi": "Khi thay đổi làn đường, trước tiên phải xác nhận an toàn, sau đó mới phát tín hiệu, và tiếp tục xác nhận an toàn một lần nữa trước khi thực hiện thay đổi làn đường.",
+      "explanationVi": "Đúng. Trình tự thay đổi làn đường là: Xác nhận an toàn -> Phát tín hiệu -> (Xác nhận lại) an toàn -> Thay đổi làn đường. Chỉ phát tín hiệu mà không xác nhận an toàn là rất nguy hiểm."
     },
     {
       "kind": "simple",
@@ -8749,12 +8704,12 @@
       "id": "menkyogentsuki_gentsuki_9_4_2_s1",
       "chapter": "総合演習4",
       "section": "4-49",
-      "text": "この標識のある交差点を通行する際は、原動機付自転車は右折することができない。",
-      "answer": "○",
-      "explanation": "この標識は、指定方向外進行禁止を表す規制標識であり、右折が禁止されている。",
+      "text": "この標識のある交差点を通行する際は、原動機付自転車は自由に右折して進行することができる。",
+      "answer": "×",
+      "explanation": "誤り。この標識は「指定方向外進行禁止」を表す規制標識であり、矢印で示された方向以外への進行（右折など）が禁止されている。",
       "image": "menkyogentsuki_722.png",
-      "textVi": "Biển báo này cho thấy xe gắn máy không thể rẽ phải khi đi qua giao lộ.",
-      "explanationVi": "Biển báo này là biển cấm đi theo hướng không được chỉ định, rẽ phải bị cấm."
+      "textVi": "Khi đi qua giao lộ có biển báo này, xe gắn máy có thể thoải mái rẽ phải để đi tiếp.",
+      "explanationVi": "Sai. Đây là biển báo cấm đi theo hướng không được chỉ định, vì vậy các hướng không có mũi tên (như rẽ phải) đều bị cấm."
     },
     {
       "kind": "simple",
@@ -9284,11 +9239,11 @@
       "id": "menkyogentsuki_gentsuki_10_4_5",
       "chapter": "総合演習4",
       "section": "4-98",
-      "text": "駐車とは、停車にあたらない短時間の車の停止のことである。",
-      "answer": "×",
-      "explanation": "停車とは、駐車にあたらない短期間の車の停止のことであり、それを超えると駐車である。",
-      "textVi": "Đỗ xe là việc dừng xe trong thời gian ngắn không được coi là dừng xe.",
-      "explanationVi": "Dừng xe là việc dừng xe trong thời gian ngắn không được coi là đỗ xe, nếu vượt quá thì là đỗ xe."
+      "text": "停車とは、人の乗り降りのための停止や、5分を超えない時間までの荷物の積み下ろしのための停止、または短期間の車の停止のことをいう。",
+      "answer": "○",
+      "explanation": "正しい。停車とは、駐車（客待ち・荷待ち・5分を超える荷物の積み下ろし・故障などで引き続いて行う停止）にあたらない短時間の停止のことを指す。",
+      "textVi": "Dừng xe (停車 - Teisha) là việc dừng xe để người lên xuống, hoặc dừng xe để bốc dỡ hàng hóa trong thời gian không quá 5 phút, hoặc việc dừng xe trong thời gian ngắn.",
+      "explanationVi": "Đúng. Dừng xe là việc dừng trong thời gian ngắn, không thuộc các trường hợp đỗ xe (như chờ khách, chờ hàng, bốc dỡ hàng quá 5 phút, hoặc dừng kéo dài do hỏng hóc). Nếu vượt quá các điều kiện này thì được coi là đỗ xe (駐車 - Chuusha)."
     },
     {
       "kind": "simple",
@@ -9395,11 +9350,11 @@
       "id": "menkyogentsuki_gentsuki_9_18_5",
       "chapter": "総合演習4",
       "section": "4-108",
-      "text": "追い越しをするときは、加速しなければならないので、一時的に定められた最高速度を超えてもよい。",
-      "answer": "×",
-      "explanation": "追い越しをするときであっても、最高速度を超えてはならない。",
-      "textVi": "Khi vượt xe, vì phải tăng tốc nên có thể tạm thời vượt quá tốc độ tối đa quy định.",
-      "explanationVi": "Ngay cả khi vượt xe, cũng không được vượt quá tốc độ tối đa."
+      "text": "追い越しをするときであっても、法定速度や指定速度などの最高速度を超えて走行してはならない。",
+      "answer": "○",
+      "explanation": "正しい。いかなる場合（追い越し中であっても）であっても、道路の最高速度を超えて運転することは法令違反である。",
+      "textVi": "Ngay cả khi đang vượt xe, cũng không được phép chạy quá tốc độ tối đa theo quy định (tốc độ luật định hoặc tốc độ được chỉ định).",
+      "explanationVi": "Đúng. Trong bất kỳ trường hợp nào (kể cả khi đang vượt), việc lái xe vượt quá tốc độ tối đa cho phép trên đường đều là vi phạm pháp luật."
     },
     {
       "kind": "simple",
@@ -9530,11 +9485,11 @@
       "id": "menkyogentsuki_gentsuki_7_24_3",
       "chapter": "総合演習4",
       "section": "4-120",
-      "text": "左腕を水平に伸ばす合図は、左折か左に進路変更するときの合図である。",
-      "answer": "○",
-      "explanation": "問題文の記述は正しい。なお、「左折」と「左に進路変更」は、左腕を水平に伸ばすという同じ動作ではあるが、合図を出すべき場所や時期は異なる。「左折」は曲がる手前約30mで、「左に進路変更」はその3秒前である。",
-      "textVi": "Tín hiệu giơ tay trái ngang ra là tín hiệu rẽ trái hay chuyển làn sang trái.",
-      "explanationVi": "Tín hiệu rẽ trái và chuyển làn trái đều giơ tay trái ngang, nhưng vị trí và thời điểm bật xi nhan khác nhau. Rẽ trái bật xi nhan cách khoảng 30m, còn chuyển làn trái bật xi nhan trước 3 giây."
+      "text": "左腕を水平に伸ばす合図は左折か左への進路変更の合図であるが、いずれの場合も交差点の手前約30メートルで行わなければならない。",
+      "answer": "×",
+      "explanation": "誤り。左折の合図は「曲がる手前約30メートル」で行う必要があるが、左に進路変更するときの合図は「進路変更の約3秒前」に行う必要がある。タイミングが異なるため誤りである。",
+      "textVi": "Tín hiệu giơ tay trái ngang là tín hiệu rẽ trái hoặc chuyển làn sang trái, nhưng trong cả hai trường hợp đều phải thực hiện cách giao lộ khoảng 30 mét.",
+      "explanationVi": "Sai. Tín hiệu rẽ trái cần thực hiện cách khoảng 30m, trong khi tín hiệu chuyển làn trái cần thực hiện trước 3 giây. Vì thời điểm thực hiện khác nhau nên câu này là sai."
     },
     {
       "kind": "simple",
@@ -9788,11 +9743,11 @@
       "id": "menkyogentsuki_gentsuki_7_26_1",
       "chapter": "総合演習5",
       "section": "5-20",
-      "text": "転回の合図を行う時期は、転回の約30メートル手前である。",
-      "answer": "○",
-      "explanation": "転回の合図は、30メートル手前で行う。",
-      "textVi": "Thời điểm bật xi nhan quay đầu là cách khoảng 30 mét trước khi quay đầu.",
-      "explanationVi": "Tín hiệu rẽ khi quay đầu phải bật cách 30m trước khi thực hiện."
+      "text": "転回の合図を行う時期は、転回を開始する直前に行えばよい。",
+      "answer": "×",
+      "explanation": "誤り。転回の合図は、転回をしようとする地点の30メートル手前で行う必要がある。",
+      "textVi": "Thời điểm bật xi nhan quay đầu là thực hiện ngay trước khi bắt đầu quay đầu là được.",
+      "explanationVi": "Sai. Tín hiệu rẽ khi quay đầu phải được thực hiện trước 30 mét tại điểm định quay đầu."
     },
     {
       "kind": "simple",
@@ -9942,18 +9897,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_22_1",
-      "chapter": "総合演習5",
-      "section": "5-35",
-      "text": "この標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
-      "answer": "○",
-      "explanation": "問題文の記述が正しい。白の点線の標示のある道路では、右側の車線にはみ出して追い越しをしてもよい。",
-      "image": "menkyogentsuki_356.png",
-      "textVi": "Ở đường có vạch kẻ nét đứt màu trắng, được phép vượt bằng cách nhích sang làn bên phải.",
-      "explanationVi": "Đúng. Ở đường có vạch kẻ nét đứt màu trắng, được phép vượt bằng cách nhích sang làn bên phải."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_26_3",
       "chapter": "総合演習5",
       "section": "5-36",
@@ -9990,22 +9933,22 @@
       "id": "menkyogentsuki_gentsuki_7_28_4",
       "chapter": "総合演習5",
       "section": "5-39",
-      "text": "こう配の急な上り坂では、追い越しを禁止されていない。",
+      "text": "上り坂の勾配（こうばい）が緩やかな場所であれば、追い越しをしてもよい。",
       "answer": "○",
-      "explanation": "問題文の記述が正しい。こう配の急な上り坂では、追い越しは禁止されていない。",
-      "textVi": "Ở đoạn dốc lên dốc thoải, không bị cấm vượt xe.",
-      "explanationVi": "Đúng. Ở đoạn dốc lên dốc thoải, không bị cấm vượt."
+      "explanation": "正しい。追い越しが禁止されているのは、上り坂の「頂上付近（頂上付近）」や「勾配の急な下り坂」である。勾配が緩やかな場所であれば、追い越しは禁止されていない。",
+      "textVi": "Ở đoạn đường dốc lên có độ dốc thoải, có thể thực hiện việc vượt xe.",
+      "explanationVi": "Đúng. Khu vực bị cấm vượt xe là khu vực 'đỉnh dốc' hoặc 'đoạn xuống dốc có độ dốc lớn'. Đối với các đoạn dốc thoải thì pháp luật không cấm vượt xe."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_18_4",
       "chapter": "総合演習5",
       "section": "5-41",
-      "text": "追い越し禁止の場所では、原動機付自転車の追い越しも禁じられている。",
-      "answer": "○",
-      "explanation": "たとえ原動機付自転車であっても、追い越しは禁止である。追い抜きは禁止されていない。",
-      "textVi": "Ở nơi cấm vượt xe, việc vượt xe gắn máy cũng bị cấm.",
-      "explanationVi": "Dù là xe gắn máy thì vẫn bị cấm vượt. Nhưng vượt khi đi cùng chiều thì không bị cấm."
+      "text": "追い越し禁止の場所であっても、原動機付自転車であれば、前の車を追い越してもよい。",
+      "answer": "×",
+      "explanation": "誤り。追い越し禁止の場所では、原動機付自転車であっても他の車を追い越すことは禁止されている。",
+      "textVi": "Ngay cả ở nơi cấm vượt, nếu là xe gắn máy thì vẫn được phép vượt xe phía trước.",
+      "explanationVi": "Sai. Tại những nơi cấm vượt, dù là xe gắn máy cũng bị cấm thực hiện hành vi vượt xe khác."
     },
     {
       "kind": "simple",
@@ -10355,23 +10298,23 @@
       "id": "menkyogentsuki_gentsuki_8_26_3",
       "chapter": "道路の走行方法",
       "section": "5-74",
-      "text": "右図のような道幅の違う交差点では、Bの車は、Aの原動機付自転車を先に進行させねばならない。",
-      "answer": "○",
-      "explanation": "中央線の引かれているAの車の走っている道路が優先道路である。そのため、Aの車が優先される。",
+      "text": "右図のような道幅の違う交差点では、Aの原動機付自転車とBの車が同時に交差点に接近した場合、原動機付自転車であるAの車は、車であるBの車に道を譲らなければならない。",
+      "answer": "×",
+      "explanation": "誤り。交差点では、道幅が広い道路を通行している車が優先である。Aの道路には中央線が引かれており優先道路であるため、Bの車がAの車（原動機付自転車）に道を譲らなければならない。",
       "image": "menkyogentsuki_678.png",
-      "textVi": "Ở giao lộ có độ rộng đường khác nhau, xe B phải nhường xe gắn máy A đi trước.",
-      "explanationVi": "Đường có vạch giữa nơi xe A đang chạy là đường ưu tiên. Do đó xe A được ưu tiên."
+      "textVi": "Ở giao lộ có độ rộng đường khác nhau như hình bên, nếu xe gắn máy A và ô tô B cùng đến giao lộ, xe A phải nhường đường cho ô tô B.",
+      "explanationVi": "Sai. Tại giao lộ, đường có độ rộng lớn hơn là đường ưu tiên. Con đường xe A đang đi có vạch kẻ giữa nên là đường ưu tiên, do đó ô tô B phải nhường đường cho xe A."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_18_3",
       "chapter": "総合演習5",
       "section": "5-75",
-      "text": "前車が進路を変更しようとしていたので、その車の進行を妨げないようにした。",
-      "answer": "○",
-      "explanation": "前車の進路変更を妨げてはならない。ただし、急ブレーキや急カーブで避けるような場合は例外である。",
-      "textVi": "Vì xe phía trước định đổi làn đường nên đã không cản trở xe đó.",
-      "explanationVi": "Không được cản trở xe phía trước thay đổi hướng đi. Tuy nhiên, có ngoại lệ trong trường hợp tránh bằng phanh gấp hoặc cua gấp."
+      "text": "前車が進路を変更しようとしていたが、自分が先に進むべきであると考え、そのままの速度で進行して進路を譲らなかった。",
+      "answer": "×",
+      "explanation": "誤り。前車が進路を変更しようとしているときは、その進行を妨げてはならない。後続車は減速や停止をするなどして、前車の進路変更に協力する義務がある。",
+      "textVi": "Xe phía trước định đổi làn đường, nhưng vì nghĩ rằng mình nên đi trước nên đã giữ nguyên tốc độ mà đi tiếp, không nhường đường cho xe đó.",
+      "explanationVi": "Sai. Khi xe phía trước có ý định chuyển làn, bạn không được cản trở việc đó. Xe đi sau có nghĩa vụ hỗ trợ việc chuyển làn của xe phía trước bằng cách giảm tốc độ hoặc dừng lại."
     },
     {
       "kind": "simple",
@@ -10384,18 +10327,7 @@
       "textVi": "Khi đi qua chỗ có người đi bộ mà không thể giữ khoảng cách an toàn nên đã giảm tốc độ để đi qua.",
       "explanationVi": "Khi không thể giữ khoảng cách an toàn với người đi bộ, phải chạy chậm để di chuyển."
     },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_8_3_s1",
-      "chapter": "総合演習5",
-      "section": "5-77",
-      "text": "トンネル内では、車両通行帯の有無に関わらず、前の車を追い越してはならない。",
-      "answer": "×",
-      "explanation": "車両通行帯があるトンネルでは、追い越しをしてもよい。",
-      "textVi": "Trong hầm đường bộ, bất kể có làn xe hay không, đều không được vượt xe phía trước.",
-      "explanationVi": "Sai. Trong hầm có làn xe thì được phép vượt xe. Chỉ hầm không có làn xe mới cấm vượt."
-    },
-    {
+     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_13_4",
       "chapter": "総合演習5",
@@ -10469,11 +10401,11 @@
       "id": "menkyogentsuki_gentsuki_8_5_4",
       "chapter": "総合演習5",
       "section": "5-84",
-      "text": "前の車が、原動機付自転車を追い越そうとしているときには、その車を追い越してはならない。",
-      "answer": "×",
-      "explanation": "前の車が原動機付自転車を追い越そうとしている場合は、二重追い越しにならない。",
-      "textVi": "Khi xe phía trước định vượt xe gắn máy thì không được vượt xe đó.",
-      "explanationVi": "Khi xe phía trước định vượt xe gắn máy thì không bị coi là vượt kép."
+      "text": "前の車が、他の車を追い越そうとしているときは、その前の車を追い越してはならない（二重追い越しをしてはならない）。",
+      "answer": "○",
+      "explanation": "前の車が追い越しをしようとしている場合、さらにその後ろから追い越しをかけることは「二重追い越し」となり、大変危険なため禁止されている。",
+      "textVi": "Khi xe phía trước đang định vượt xe khác, bạn không được vượt chiếc xe đó (không được vượt kép).",
+      "explanationVi": "Khi xe phía trước đang thực hiện việc vượt xe khác, việc bạn từ phía sau vượt lên (vượt kép) là hành vi bị cấm vì rất nguy hiểm."
     },
     {
       "kind": "simple",
@@ -10581,11 +10513,11 @@
       "id": "menkyogentsuki_gentsuki_5_26_4",
       "chapter": "総合演習5",
       "section": "5-95",
-      "text": "車両通行帯が黄色の線で区画されている道路では、線を越えて進路を変えてはならないが、右左折のためであれば、線を越えて進路を変えてよい。",
-      "answer": "×",
-      "explanation": "黄色の車両通行帯は、進路変更禁止を意味し、たとえ右左折のためであっても、線を越えて進路を変更してはならない。ちなみに、黄色の「車両通行帯」ではなく、黄色の「中央線」の場合は、進路変更禁止ではなく、追い越しのためのはみ出し禁止を意味する。車両通行帯と中央線の意味の違いは混同しやすいので、注意が必要である。",
-      "textVi": "Trên đường có làn đường được phân cách bằng vạch vàng, không được vượt vạch để đổi làn đường, nhưng nếu để rẽ phải hay rẽ trái thì được phép vượt vạch để đổi làn đường.",
-      "explanationVi": "Vạch làn đường màu vàng có nghĩa là cấm đổi làn đường, dù là để rẽ trái hay rẽ phải cũng không được vượt vạch đổi làn. Nhân tiện, vạch giữa đường màu vàng thì khác — đó là cấm vượt sang phải để vượt xe chứ không phải cấm đổi làn. Cần phân biệt rõ hai loại vạch này."
+      "text": "車両通行帯が黄色の線で区画されている道路では、右左折や障害物を避ける等のやむを得ない場合であっても、その線を越えて進路を変えてはならない。",
+      "answer": "○",
+      "explanation": "正しい。黄色の実線で区画された車両通行帯は、原則として進路変更が禁止されている。右左折や障害物を避ける目的であっても、その線を越えて進路を変更してはならない。",
+      "textVi": "Trên đường có làn đường được phân cách bằng vạch vàng, ngay cả khi có lý do bất khả kháng như rẽ phải, rẽ trái hoặc tránh chướng ngại vật, cũng không được phép vượt vạch để đổi làn.",
+      "explanationVi": "Đúng. Vạch vàng phân cách làn đường về nguyên tắc là cấm đổi làn. Ngay cả khi rẽ trái, rẽ phải hoặc tránh chướng ngại vật, bạn cũng không được phép đè vạch để chuyển làn."
     },
     {
       "kind": "simple",
@@ -10705,11 +10637,11 @@
       "id": "menkyogentsuki_gentsuki_9_10_5",
       "chapter": "総合演習5",
       "section": "5-106",
-      "text": "バス優先通行帯では、普通自動車は路線バスに進路を譲らなければならないが、通学・通園バスは例外的に譲らなくてよい。",
-      "answer": "×",
-      "explanation": "普通自動車は、通園・通学バスであっても、進路を譲らねばならない。",
-      "textVi": "Trên làn ưu tiên xe buýt, xe thường phải nhường đường cho xe buýt tuyến, nhưng xe buýt đưa đón học sinh/tre em được miễn trừ nhường đường.",
-      "explanationVi": "Xe ô tô thông thường, dù là xe buýt đưa đón trẻ em/học sinh, vẫn phải nhường đường."
+      "text": "バス優先通行帯では、普通自動車は路線バスだけでなく、通学・通園バスに対しても進路を譲らなければならない。",
+      "answer": "○",
+      "explanation": "正しい。バス優先通行帯では、普通自動車は路線バスのみならず、児童・幼児の送迎を行う通学・通園バスに対しても進路を譲らなければならない。",
+      "textVi": "Trên làn ưu tiên xe buýt, xe thường phải nhường đường không chỉ cho xe buýt tuyến mà cả xe buýt đưa đón học sinh/trẻ em.",
+      "explanationVi": "Đúng. Trên làn đường ưu tiên xe buýt, ô tô thông thường bắt buộc phải nhường đường cho cả xe buýt tuyến cố định và các loại xe buýt đưa đón học sinh/trẻ em."
     },
     {
       "kind": "simple",
@@ -10766,18 +10698,7 @@
       "textVi": "Trên đường tuyết, nên tránh đi theo vết bánh xe.",
       "explanationVi": "Sai. Trên đường tuyết, nên đi theo vết bánh xe sẽ an toàn hơn."
     },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_20_3",
-      "chapter": "総合演習5",
-      "section": "5-112",
-      "text": "こう配の急な上り坂では、追い越しを禁止されていない。",
-      "answer": "○",
-      "explanation": "問題文の記述が正しい。こう配の急な上り坂では、追い越しは禁止されていない。",
-      "textVi": "Ở đoạn dốc lên có độ dốc lớn, không bị cấm vượt xe.",
-      "explanationVi": "Mô tả trong đề bài là đúng. Dốc có độ dốc lớn phía trên không bị cấm vượt xe."
-    },
-    {
+     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_15_2",
       "chapter": "総合演習5",
@@ -11230,11 +11151,11 @@
       "id": "menkyogentsuki_gentsuki_10_10_1",
       "chapter": "総合演習6",
       "section": "6-17",
-      "text": "一方通行の道路では、追い越しをしてはならない。",
-      "answer": "×",
-      "explanation": "一方通行の道路での追い越しを禁じる規則は存在しない。",
-      "textVi": "Trên đường một chiều không được vượt xe.",
-      "explanationVi": "Không có quy tắc cấm vượt xe trên đường một chiều."
+      "text": "一方通行の道路であっても、追い越し禁止の標識や標示がない限り、追い越しをすることができる。",
+      "answer": "○",
+      "explanation": "正しい。一方通行の道路であっても、追い越しが禁止されている場所（標識や標示がある場所など）でなければ、追い越しをすることは認められている。",
+      "textVi": "Ngay cả trên đường một chiều, miễn là không có biển báo hoặc vạch kẻ cấm vượt, bạn vẫn được phép vượt xe.",
+      "explanationVi": "Đúng. Ngay cả trên đường một chiều, nếu không có biển báo hay vạch kẻ cấm vượt, việc vượt xe vẫn được cho phép."
     },
     {
       "kind": "simple",
@@ -11420,22 +11341,11 @@
       "id": "menkyogentsuki_gentsuki_7_6_2",
       "chapter": "総合演習6",
       "section": "6-34",
-      "text": "追い越しをするときは、進行中の前の車にできるだけ接近した後、すばやく進路を変えるべきである。",
-      "answer": "×",
-      "explanation": "進行中の車に対し安全で十分な間隔をとり、ゆるやかに進路を変更せねばならない。",
-      "textVi": "Khi vượt xe, nên tiếp cận xe phía trước càng gần càng tốt rồi nhanh chóng đổi hướng.",
-      "explanationVi": "Phải giữ khoảng cách an toàn đủ lớn với xe đang chạy và đổi hướng một cách từ từ."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_6_5",
-      "chapter": "総合演習6",
-      "section": "6-35",
-      "text": "同じ道幅の交差点で、左方から進行してくる車を、妨げてはならない。",
+      "text": "追い越しをするときは、前の車との間に安全で十分な間隔をとり、あらかじめ合図をしてから、ゆるやかに進路を変更すべきである。",
       "answer": "○",
-      "explanation": "たとえ左方から進行してくる車が原動機付自転車であっても、妨げてはならない。",
-      "textVi": "Ở giao lộ cùng độ rộng, không được cản trở xe đang đi từ phía bên trái.",
-      "explanationVi": "Không được vượt xe khi đang ở trong đường hầm."
+      "explanation": "正しい。追い越しは、前の車に対して安全で十分な間隔を保ち、あらかじめ合図を出して、緩やかに進路を変更して行うのが安全である。",
+      "textVi": "Khi vượt xe, phải giữ khoảng cách an toàn và đầy đủ với xe phía trước, ra tín hiệu từ trước rồi mới đổi hướng một cách từ từ.",
+      "explanationVi": "Đúng. Việc vượt xe an toàn là phải giữ khoảng cách đủ rộng với xe phía trước, bật tín hiệu trước và chuyển làn một cách nhẹ nhàng."
     },
     {
       "kind": "simple",
@@ -11609,11 +11519,11 @@
       "id": "menkyogentsuki_gentsuki_10_10_5",
       "chapter": "総合演習6",
       "section": "6-51",
-      "text": "トンネル内では、車両通行帯の有無に関わらず、前の車を追い越してはならない。",
-      "answer": "×",
-      "explanation": "車両通行帯があるトンネルでは、追い越しをしてもよい。",
-      "textVi": "Trong hầm, bất kể có làn đường hay không, không được vượt xe phía trước.",
-      "explanationVi": "Trong hầm đường bộ có làn đường thì có thể vượt xe."
+      "text": "車両通行帯のないトンネル内では、前の車を追い越してはならない。",
+      "answer": "○",
+      "explanation": "正しい。トンネル内であっても、車両通行帯（レーン）がある場合は追い越しが可能だが、車両通行帯がないトンネル内では、前の車を追い越すことは禁止されている。",
+      "textVi": "Trong đường hầm không có làn đường, không được vượt xe phía trước.",
+      "explanationVi": "Đúng. Ngay cả trong đường hầm, nếu có làn đường thì có thể vượt xe, nhưng trong đường hầm không có làn đường thì việc vượt xe phía trước là bị cấm."
     },
     {
       "kind": "simple",
@@ -12232,11 +12142,11 @@
       "id": "menkyogentsuki_gentsuki_7_8_3",
       "chapter": "総合演習6",
       "section": "6-107",
-      "text": "進行方向別に通行区分が指定された車両通行帯を進行中、後方から緊急自動車が接近してきたが、車両通行帯を変えずに進行した。",
-      "answer": "×",
-      "explanation": "緊急自動車が接近してきたときは、車両通行帯の区分に関わらず、進路を譲る。",
-      "textVi": "Đang đi trên làn đường được phân luồng theo hướng đi, xe ưu tiên đến gần phía sau nhưng đã tiếp tục đi mà không đổi làn đường.",
-      "explanationVi": "Khi xe ưu tiên đến gần thì phải nhường đường, bất kể có phân làn đường hay không."
+      "text": "進行方向別に通行区分が指定された車両通行帯を進行中に後方から緊急自動車が接近してきたときは、通行区分の指定に関わらず、速やかに進路を譲らなければならない。",
+      "answer": "○",
+      "explanation": "正しい。緊急自動車が接近してきたときは、進行方向別の通行区分が指定されている車両通行帯であっても、それを優先して進路を譲る義務がある。",
+      "textVi": "Khi đang đi trên làn đường được phân luồng theo hướng đi mà có xe ưu tiên đến gần từ phía sau, bất kể quy định phân làn như thế nào, bạn bắt buộc phải nhường đường ngay lập tức.",
+      "explanationVi": "Đúng. Khi xe ưu tiên (xe cấp cứu, xe cứu hỏa...) đến gần, bạn có nghĩa vụ phải nhường đường cho xe đó, ngay cả khi bạn đang ở trong làn đường được chỉ định hướng đi."
     },
     {
       "kind": "simple",
@@ -12354,11 +12264,11 @@
       "id": "menkyogentsuki_gentsuki_8_15_2",
       "chapter": "総合演習6",
       "section": "6-118",
-      "text": "徐行や停止をするときと、後退するときの手信号による合図は同じである。",
-      "answer": "×",
-      "explanation": "徐行や停止をするときは、腕を斜め下に伸ばし、後退するときは、腕を斜め下に伸ばし、手のひらを後ろに向けて腕を前後に動かす。",
-      "textVi": "Tín hiệu bằng tay khi giảm tốc, dừng xe và lùi xe là giống nhau.",
-      "explanationVi": "Khi giảm tốc độ hay dừng xe thì duỗi tay xuống chéo, khi lùi xe thì duỗi tay xuống chéo rồi quay lòng bàn tay về phía sau và đưa tay qua lại."
+      "text": "徐行や停止をするときと、後退するときの手信号による合図は、それぞれ異なる動作で行う。",
+      "answer": "○",
+      "explanation": "正しい。徐行や停止の合図は腕を斜め下に伸ばす動作であり、後退の合図は腕を斜め下に伸ばしたまま手のひらを後ろに向けて前後に動かす動作であるため、両者は異なる。",
+      "textVi": "Tín hiệu bằng tay khi giảm tốc độ, dừng xe và tín hiệu khi lùi xe là các động tác khác nhau.",
+      "explanationVi": "Đúng. Tín hiệu khi giảm tốc độ/dừng xe là động tác duỗi tay chéo xuống dưới, trong khi tín hiệu lùi xe là động tác duỗi tay chéo xuống dưới kết hợp với việc hướng lòng bàn tay ra sau và đưa tay qua lại."
     },
     {
       "kind": "simple",

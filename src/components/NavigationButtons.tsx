@@ -44,7 +44,7 @@ export function NavigationButtons({
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: "row", gap: 8, width: 98 },
+  row: { flexDirection: "row", gap: 8 },
   btn: {
     flexDirection: "row",
     alignItems: "center",
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "rgba(120,53,15,0.6)",
   },
-  btnDisabled: { opacity: 0.8 },
+  btnDisabled: { opacity: 0.35 },
   label: {
     fontSize: 13,
     fontWeight: "bold",

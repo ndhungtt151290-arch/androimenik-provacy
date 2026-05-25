@@ -2574,12 +2574,12 @@
       "id": "menkyogentsuki_gentsuki_4_7_1",
       "chapter": "標識・標示・信号",
       "section": "標示の種類と意味",
-      "text": "この標示は、駐停車禁止を表している。",
-      "answer": "×",
-      "explanation": "黄色の実線で塗られている場合は、駐停車禁止を表し、黄色の破線は、駐車禁止を表す。",
+      "text": "この標示は、駐車禁止を表している。",
+      "answer": "○",
+      "explanation": "正しい。黄色の破線は、駐車禁止を表す。なお、黄色の実線は、駐停車禁止を表す。",
       "image": "menkyogentsuki_186.png",
-      "textVi": "Vạch kẻ đường này biểu thị việc cấm dừng và đỗ xe.",
-      "explanationVi": "Vạch vàng đứt đoạn biểu thị cấm đỗ xe (Chusha Kinshi). Chỉ có vạch vàng liền mới biểu thị cấm cả dừng và đỗ xe."
+      "textVi": "Vạch kẻ đường này biểu thị việc cấm đỗ xe.",
+      "explanationVi": "Đúng. Vạch vàng đứt đoạn biểu thị cấm đỗ xe (Chusha Kinshi). Ngược lại, vạch vàng liền biểu thị cấm cả dừng và đỗ xe (Chuteisha Kinshi)."
     },
     {
       "kind": "simple",
@@ -2679,18 +2679,6 @@
       "explanation": "昼間同じ場所に引き続いて12時間駐車してはならない。夜間は8時間。また、道路を車庫代わりに使用してはならない。",
       "textVi": "Trên đường, nguyên tắc không được đỗ xe cùng một chỗ liên tục quá 12 giờ vào ban ngày.",
       "explanationVi": "Đúng. Bạn không được đỗ xe cùng một chỗ liên tục quá 12 giờ vào ban ngày. Về ban đêm, thời gian là 8 giờ. Ngoài ra, không được dùng đường làm nơi để xe thay vì nơi để xe (garage)."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_9_1",
-      "chapter": "標識・標示・信号",
-      "section": "標識の種類と意味3",
-      "text": "この標識のある場所では、法定速度の半分から3分の1程度の速度で運転しなければならない。",
-      "answer": "×",
-      "explanation": "徐行とは、すぐに止まれる速度であり、おおよそ時速10キロメートル以下。ただ速度を落とすだけでは不十分である。",
-      "image": "menkyogentsuki_196.png",
-      "textVi": "Tại nơi có biển báo này, bạn phải lái xe với tốc độ bằng khoảng một nửa đến một phần ba tốc độ pháp định.",
-      "explanationVi": "Sai. Biển báo giảm tốc yêu cầu giảm tốc độ xuống mức có thể dừng ngay được, tức khoảng dưới 10 km/h, không phải một nửa hay một phần ba tốc độ pháp định."
     },
     {
       "kind": "simple",
@@ -3399,18 +3387,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_3_4",
-      "chapter": "標識・標示・信号",
-      "section": "標識の種類と意味3",
-      "text": "この標識のある場所では、区間内では、常に警音器を鳴らさなくてはならない。",
-      "answer": "×",
-      "explanation": "警笛区間の標識は、区間内で「特定の場合にのみ」警笛を鳴らさなければならないことを意味する。区間内で「常に」警笛を鳴らさなければならないわけではないので、問題文は誤りである。なお特定の場所とは、区間内で、見通しのきかない交差点・見通しのきかない道路の曲がり角・見通しのきかない上り坂の頂上付近を通り過ぎる時である。",
-      "image": "menkyogentsuki_219.png",
-      "textVi": "Tại nơi có biển báo này, trong toàn bộ khu vực, bạn phải luôn luôn bấm còi.",
-      "explanationVi": "Sai. Biển báo khu vực còi chỉ yêu cầu bấm còi ở những nơi cụ thể trong khu vực đó, không phải luôn luôn. Những nơi cụ thể bao gồm: giao lộ có tầm nhìn hạn chế, khúc quanh có tầm nhìn hạn chế, và gần đỉnh dốc lên có tầm nhìn hạn chế."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_5_3_5",
       "chapter": "危険な状況での運転",
       "section": "警音器を鳴らす場所",
@@ -3458,11 +3434,11 @@
       "id": "menkyogentsuki_gentsuki_5_4_4",
       "chapter": "危険な状況での運転",
       "section": "夜間の通行1",
-      "text": "夜間の運転時には、視界が悪く危険なので、前車の合図が見やすいよう、できるだけ前車に近付いて運転すべきである。",
-      "answer": "×",
-      "explanation": "しっかりと車間距離をとることが大事である。",
-      "textVi": "Khi lái xe vào ban đêm, vì tầm nhìn kém và nguy hiểm, nên cố gắng lái xe càng gần xe phía trước càng tốt để dễ quan sát tín hiệu của họ.",
-      "explanationVi": "Sai. Dù là ban đêm hay ban ngày, việc lái xe quá gần xe phía trước đều rất nguy hiểm. Cần phải giữ khoảng cách an toàn."
+      "text": "夜間の運転時には、視界が悪く危険であるため、前車との間に十分な車間距離を保って運転すべきである。",
+      "answer": "○",
+      "explanation": "正しい。夜間は昼間よりも周囲の状況が分かりにくいため、追突事故を防ぐために昼間よりも長めの車間距離をとることが重要である。",
+      "textVi": "Khi lái xe vào ban đêm, vì tầm nhìn kém và nguy hiểm, nên giữ khoảng cách an toàn với xe phía trước khi lái xe.",
+      "explanationVi": "Đúng. Vào ban đêm, tình hình xung quanh khó quan sát hơn ban ngày, vì vậy việc giữ khoảng cách an toàn lớn hơn so với ban ngày là rất quan trọng để phòng tránh tai nạn đâm đuôi xe."
     },
     {
       "kind": "simple",
@@ -3495,24 +3471,24 @@
       "answer": "○",
       "explanation": "これを蒸発現象と呼ぶ。",
       "textVi": "Ban đêm khi tránh xe đối diện, đèn của hai xe có thể khiến người đi bộ ở giữa đường khó nhìn thấy hơn, nên cần chú ý.",
-      "explanationVi": "Đúng. Hiện tượng này được gọi là hiện tượng bay hơi, khiến người đi bộ trở nên khó nhìn thấy hơn."
+      "explanationVi": "Đúng. Hiện tượng này được gọi là hiện tượng ảo ảnh thị giác, khiến người đi bộ trở nên khó nhìn thấy hơn."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_5_5_3",
       "chapter": "危険な状況での運転",
       "section": "夜間の通行2",
-      "text": "道路の状況に関わらず、昼間に運転するときは、ライトをつける必要はない。",
-      "answer": "×",
-      "explanation": "昼間でも、道路状況によっては、ライトをつける必要がある。具体的には、トンネルの中や濃い霧がかかっている場所などで、視界が50m以下の場合には昼間であってもライトをつける必要がある。",
-      "textVi": "Dù là ban ngày, tùy vào tình trạng đường mà vẫn cần bật đèn. Cụ thể, khi đi qua đường hầm hoặc nơi có sương mù dày đặc mà tầm nhìn dưới 50 mét thì bắt buộc phải bật đèn.",
-      "explanationVi": "Sai. Tùy tình trạng đường, ban ngày vẫn có thể cần bật đèn, ví dụ như trong đường hầm hoặc nơi có sương mù dày đặc với tầm nhìn dưới 50 mét."
+      "text": "昼間であっても、道路の状況によってはライトを点灯する必要があります。",
+      "answer": "○",
+      "explanation": "具体的には、トンネルの中や濃い霧がかかっている場所などで、視界が50m以下の場合には昼間であってもライトをつける必要がある。",
+      "textVi": "Dù là ban ngày, tùy vào tình trạng đường mà vẫn cần bật đèn.",
+      "explanationVi": "Cụ thể, trong các trường hợp như khi đi trong đường hầm hoặc những nơi có sương mù dày đặc mà tầm nhìn từ 50 mét trở xuống, thì dù là ban ngày cũng cần phải bật đèn."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_5_5_4",
       "chapter": "危険な状況での運転",
-      "section": "夜間の通行2",
+      "section": "232-2",
       "text": "夜間、見通しの悪い交差点を通行するときは、ライトを上向きに切り替えるなどして、自車の接近を知らせるとよい。",
       "answer": "○",
       "explanation": "ライトを上向きに切り替えたり、点滅させたりする。",
@@ -4326,11 +4302,11 @@
       "id": "menkyogentsuki_gentsuki_10_28_2",
       "chapter": "総合演習1",
       "section": "1-12",
-      "text": "原付を駐車するとき、少しの時間だけであったので、鍵をさしたままにした。",
-      "answer": "×",
-      "explanation": "少しの時間駐車するときであっても、必ず鍵をかけ、抜いておく。",
-      "textVi": "Khi đỗ xe máy, vì chỉ trong chốc lát nên đã để chìa khóa cắm sẵn.",
-      "explanationVi": "Dù chỉ đỗ xe trong thời gian ngắn, cũng phải khóa xe và mang theo chìa khóa."
+      "text": "原付を駐車するときは、少しの時間であっても、必ずエンジンを切り、鍵を抜いてハンドルロックをするなど、盗難防止措置をとらなければならない。",
+      "answer": "○",
+      "explanation": "正しい。短い時間の駐車であっても、盗難を防ぐためにエンジンを切り、鍵を抜いてハンドルロックをかける等の措置をとる義務がある。",
+      "textVi": "Khi đỗ xe gắn máy, dù chỉ trong chốc lát, cũng bắt buộc phải tắt máy, rút chìa khóa, khóa cổ xe... để thực hiện các biện pháp phòng chống trộm cắp.",
+      "explanationVi": "Đúng. Dù chỉ đỗ xe trong thời gian ngắn, bạn vẫn có nghĩa vụ thực hiện các biện pháp phòng chống trộm cắp như tắt máy, rút chìa khóa và khóa cổ xe."
     },
     {
       "kind": "simple",
@@ -4428,11 +4404,11 @@
       "id": "menkyogentsuki_gentsuki_7_10_3",
       "chapter": "総合演習1",
       "section": "1-22",
-      "text": "駐車場や車庫などの出入り口から3メートル以内の場所では駐車が禁止されている。",
-      "answer": "○",
-      "explanation": "たとえ駐車場や車庫の所有者や関係者であっても、駐車は禁じられている。",
-      "textVi": "Trong phạm vi 3 mét từ lối ra vào bãi đỗ xe hay nhà để xe, đỗ xe bị cấm.",
-      "explanationVi": "Dù là chủ sở hữu hay người liên quan của bãi đỗ xe hay nhà để xe thì cũng không được phép đỗ xe."
+      "text": "駐車場や車庫などの出入り口から3メートル以内の場所であっても、その施設の所有者や関係者が駐車する場合は、駐車が認められる。",
+      "answer": "×",
+      "explanation": "誤り。駐車場や車庫などの出入り口から3メートル以内の場所は、いかなる理由があっても駐車は禁止されている。所有者であっても例外ではない。",
+      "textVi": "Ngay cả trong phạm vi 3 mét từ lối ra vào bãi đỗ xe hoặc nhà để xe, nếu là chủ sở hữu hoặc người liên quan đến cơ sở đó đỗ xe thì vẫn được phép.",
+      "explanationVi": "Sai. Trong phạm vi 3 mét từ lối ra vào bãi đỗ xe hoặc nhà để xe, việc đỗ xe bị cấm dưới mọi hình thức. Kể cả chủ sở hữu cũng không có ngoại lệ."
     },
     {
       "kind": "simple",
@@ -4461,11 +4437,11 @@
       "id": "menkyogentsuki_gentsuki_10_7_1",
       "chapter": "総合演習1",
       "section": "1-25",
-      "text": "荷物の積み下ろしのために、3分停止したのは、停車である。",
-      "answer": "○",
-      "explanation": "荷物の積み下ろしのための、5分以内の停止は、停車に当たる。よって、問題文の荷物の積み下ろしのための3分の停止は、停車である。ちなみに、荷物の積み下ろしのために5分を超えて車を停止させると、駐車である。",
-      "textVi": "Dừng xe 3 phút để bốc dỡ hàng hóa là dừng xe.",
-      "explanationVi": "Dừng xe dưới 5 phút để xếp/dỡ hàng là dừng xe. Do đó, dừng xe 3 phút để xếp/dỡ hàng như trong đề bài là dừng xe. Ngoài ra, dừng xe trên 5 phút để xếp/dỡ hàng là đỗ xe."
+      "text": "荷物の積み下ろしのために、8分間停止したのは、停車である。",
+      "answer": "×",
+      "explanation": "誤り。荷物の積み下ろしであっても、5分を超えて車を停止させると「駐車」に当たる。したがって、8分間の停止は停車ではなく駐車である。",
+      "textVi": "Việc dừng xe 8 phút để bốc dỡ hàng hóa được coi là dừng xe (Teisha).",
+      "explanationVi": "Sai. Dù là bốc dỡ hàng hóa, nhưng nếu dừng xe quá 5 phút thì được coi là đỗ xe (Chuusha). Do đó, dừng xe 8 phút không phải là dừng xe mà là đỗ xe."
     },
     {
       "kind": "simple",
@@ -4651,11 +4627,11 @@
       "id": "menkyogentsuki_gentsuki_8_25_2",
       "chapter": "総合演習1",
       "section": "1-45",
-      "text": "走行中にタイヤがパンクしたときは、危険なのでブレーキを強くかけ、できるだけ早く停止させる。",
-      "answer": "×",
-      "explanation": "ハンドルを強く握り車体を真っ直ぐ保ち、ブレーキを何度かに分けてかけて車を止める。",
-      "textVi": "Khi lốp xe bị nổ khi đang chạy, vì nguy hiểm nên đạp phanh mạnh và cố gắng dừng xe càng nhanh càng tốt.",
-      "explanationVi": "Nắm chắc vô lăng, giữ thân xe thẳng, đạp phanh nhiều lần chia nhỏ để dừng xe."
+      "text": "走行中にタイヤがパンクしたときは、ハンドルをしっかりと握って車体を安定させ、ブレーキを数回に分けてかけるなどして安全に停止させる。",
+      "answer": "○",
+      "explanation": "正しい。パンク時に急ブレーキをかけると車体が大きく振れて危険である。ハンドルをしっかり握り、車体をまっすぐに保ちながら、ブレーキを数回に分けてかける（ポンピングブレーキを行う）ことが正しい操作である。",
+      "textVi": "Khi lốp xe bị nổ trong khi đang lái, hãy nắm chắc tay lái để giữ ổn định thân xe, và đạp phanh chia làm nhiều lần để dừng xe một cách an toàn.",
+      "explanationVi": "Đúng. Đạp phanh gấp khi nổ lốp sẽ khiến thân xe bị chao đảo rất nguy hiểm. Thao tác đúng là nắm chắc tay lái, giữ thân xe đi thẳng và đạp phanh rà nhiều lần (phanh nhấp nhả) để dừng xe."
     },
     {
       "kind": "simple",
@@ -4785,11 +4761,11 @@
       "id": "menkyogentsuki_gentsuki_7_29_1",
       "chapter": "総合演習1",
       "section": "1-57",
-      "text": "走行中に急ブレーキをかけて後輪が右へ横すべりを始めたときは、ハンドルを左に切るようにする。",
-      "answer": "×",
-      "explanation": "横すべりした方へ、ハンドルを切る。",
-      "textVi": "Khi đang chạy mà phanh gấp khiến bánh sau trượt sang phải, nên quay cần lái sang phải.",
-      "explanationVi": "Sai. Hãy quay vô lăng về phía xe bị trượt (sang phải)."
+      "text": "走行中に急ブレーキをかけて後輪が右へ横すべりを始めたときは、ハンドルを右に切るようにする。",
+      "answer": "○",
+      "explanation": "正しい。後輪が横滑りしたときは、滑った方向と同じ方向へハンドルを切る（カウンターを当てる）ことで、スピンを抑え車両を立て直すことができる。",
+      "textVi": "Khi đang chạy mà phanh gấp khiến bánh sau trượt sang phải, hãy quay vô lăng sang phải.",
+      "explanationVi": "Đúng. Khi bánh sau bị trượt ngang, hãy quay vô lăng theo hướng bị trượt (sang phải) để lấy lại cân bằng và kiểm soát xe."
     },
     {
       "kind": "simple",
@@ -4863,11 +4839,11 @@
       "id": "menkyogentsuki_gentsuki_10_29_2",
       "chapter": "総合演習1",
       "section": "1-64",
-      "text": "道路の片側に障害物がある場合、行き違うときは、障害物のある側と反対側の車が減速や一時停止をして、対向車に道を譲る。",
-      "answer": "×",
-      "explanation": "障害物のある側の車が、減速や一時停止をして、道を譲る。",
-      "textVi": "Khi có vật cản ở một bên đường, khi tránh nhau thì xe ở phía đối diện với vật cản giảm tốc độ hoặc dừng lại để nhường đường cho xe đối diện.",
-      "explanationVi": "Xe ở phía có vật cản phải giảm tốc hoặc dừng lại để nhường đường."
+      "text": "道路の片側に障害物がある場合、行き違うときは、障害物のある側の車が減速や一時停止をして、対向車に道を譲る。",
+      "answer": "○",
+      "explanation": "正しい。障害物がある側の車が、対向車の進行を妨げないように、減速や一時停止をして道を譲らなければならない。",
+      "textVi": "Khi có vật cản ở một bên đường, khi tránh nhau, xe ở phía có vật cản phải giảm tốc độ hoặc dừng lại để nhường đường cho xe đối diện.",
+      "explanationVi": "Đúng. Xe ở phía có vật cản phải giảm tốc độ hoặc dừng lại để nhường đường cho xe đi ngược chiều, không làm cản trở lưu thông của họ."
     },
     {
       "kind": "simple",
@@ -4974,22 +4950,22 @@
       "id": "menkyogentsuki_gentsuki_10_15_3",
       "chapter": "総合演習1",
       "section": "1-75",
-      "text": "上り坂の頂上付近や、こう配の急な下り坂では、徐行しなければならない。",
-      "answer": "○",
-      "explanation": "問題文が正しい。ちなみに、問題文にあるこう配の急なく下り坂ではなく、こう配の急な上り坂の場合は、徐行の必要はない。",
-      "textVi": "Gần đỉnh dốc lên dốc thoải và đoạn dốc xuống dốc đứng phải giảm tốc độ.",
-      "explanationVi": "Đề bài đúng. Ngoài ra, trong trường hợp không phải dốc xuống có độ dốc lớn mà là dốc lên có độ dốc lớn thì không cần chạy chậm."
+      "text": "上り坂の頂上付近や、勾配の急な下り坂では、周囲に車がいない場合は徐行する必要はない。",
+      "answer": "×",
+      "explanation": "誤り。上り坂の頂上付近や勾配の急な下り坂では、周囲の状況に関わらず、必ず徐行しなければならない。",
+      "textVi": "Ở gần đỉnh dốc hoặc đoạn xuống dốc đứng, nếu xung quanh không có xe thì không cần phải giảm tốc độ.",
+      "explanationVi": "Sai. Ở gần đỉnh dốc hoặc đoạn xuống dốc đứng, bất kể tình hình xung quanh thế nào, bạn bắt buộc phải giảm tốc độ (徐行)."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_26_2",
       "chapter": "総合演習1",
       "section": "1-76",
-      "text": "原動機付自転車は、車庫証明がない。",
-      "answer": "○",
-      "explanation": "原動機付自転車は車庫証明がない。ただし、公道に原動機付自転車を放置することは当然に違法である。",
-      "textVi": "Xe gắn máy không có giấy chứng nhận giữ xe.",
-      "explanationVi": "Xe gắn máy không có giấy chứng nhận giữ xe. Tuy nhiên, để xe gắn máy ở đường công cộng là đương nhiên bất hợp pháp."
+      "text": "原動機付自転車であっても、自動車と同様に車庫証明を取得しなければならない。",
+      "answer": "×",
+      "explanation": "誤り。原動機付自転車には車庫証明（自動車の保管場所の確保等に関する法律に基づく証明）は必要ない。ただし、公道に車両を放置することは違法である。",
+      "textVi": "Xe gắn máy cũng giống như xe ô tô, phải có giấy chứng nhận giữ xe.",
+      "explanationVi": "Sai. Xe gắn máy không cần giấy chứng nhận giữ xe (giấy chứng nhận đảm bảo nơi đỗ xe theo luật). Tuy nhiên, việc để xe trên đường công cộng vẫn là bất hợp pháp."
     },
     {
       "kind": "simple",
@@ -5085,22 +5061,22 @@
       "id": "menkyogentsuki_gentsuki_9_23_1",
       "chapter": "総合演習1",
       "section": "1-85",
-      "text": "路面電車の運行時間外であっても、軌道敷内での駐停車は禁止である。",
-      "answer": "○",
-      "explanation": "運行時間に関わらず、路面電車の軌道敷内の駐停車は禁止である。",
-      "textVi": "Dù ngoài giờ xe điện chạy, đỗ và dừng xe trên đường ray vẫn bị cấm.",
-      "explanationVi": "Bất kể thời gian hoạt động, cấm đỗ xe, dừng xe trong khu vực đường ray xe điện đường phố."
+      "text": "路面電車の運行時間外であれば、他の車の通行を妨げない場合に限り、軌道敷内に駐車することができる。",
+      "answer": "×",
+      "explanation": "誤り。路面電車の軌道敷内は、運行時間に関わらず駐車も停車も禁止されている。",
+      "textVi": "Nếu ngoài giờ xe điện hoạt động, có thể đỗ xe trong khu vực đường ray miễn là không cản trở các xe khác.",
+      "explanationVi": "Sai. Khu vực đường ray xe điện đường phố cấm dừng và đỗ xe bất kể thời gian hoạt động."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_1_2_5",
       "chapter": "総合演習1",
       "section": "1-86",
-      "text": "消火栓の標識・指定消防水利の標識から5メートル以内の場所では、人の乗り降りのため停止してはならない。",
-      "answer": "×",
-      "explanation": "人の乗り降りのための停止は、停車であり、禁止されていない。",
-      "textVi": "Không được dừng xe để khách lên xuống tại vị trí trong phạm vi 5m tính từ vòi cứu hỏa hoặc biển báo nguồn nước cứu hỏa.",
-      "explanationVi": "Sai. Việc dừng xe (停車) để khách lên xuống tại vị trí trong phạm vi 5m từ vòi cứu hỏa hoặc biển báo nguồn nước cứu hỏa không bị cấm."
+      "text": "消火栓の標識・指定消防水利の標識から5メートル以内の場所では、駐車は禁止されているが、停車は禁止されていない。",
+      "answer": "○",
+      "explanation": "正しい。消火栓や指定消防水利の標識から5メートル以内の場所は、駐車は禁止されているが、人の乗り降りのための停止（停車）は認められている。",
+      "textVi": "Tại vị trí trong phạm vi 5 mét tính từ biển báo vòi cứu hỏa hoặc biển báo nguồn nước cứu hỏa, việc đỗ xe (駐車) bị cấm nhưng dừng xe (停車) để lên xuống thì không bị cấm.",
+      "explanationVi": "Đúng. Tại các khu vực gần vòi cứu hỏa hoặc biển báo nguồn nước cứu hỏa, luật cấm đỗ xe (để xe lâu hoặc rời xe), nhưng việc dừng xe trong thời gian ngắn để đón trả khách (dừng xe) là được phép."
     },
     {
       "kind": "simple",
@@ -5152,11 +5128,11 @@
       "id": "menkyogentsuki_gentsuki_1_4_2_s1",
       "chapter": "総合演習1",
       "section": "1-91",
-      "text": "雨天のときはスリップしやすいため、停止するにはブレーキを強くかけるようにする。",
-      "answer": "×",
-      "explanation": "スリップを防ぐため、ブレーキを強く踏むことは避け、車間距離を長くとって数回に分けて踏むべきである。",
-      "textVi": "Trời mưa dễ trơn trượt nên khi dừng xe cần đạp phanh thật mạnh.",
-      "explanationVi": "Sai. Để tránh trượt, không nên đạp phanh quá mạnh mà nên giữ khoảng cách an toàn với xe phía trước và đạp phanh nhiều lần chia nhỏ."
+      "text": "雨天のときはスリップしやすいため、ブレーキは数回に分けて踏み、急ブレーキを避けるようにする。",
+      "answer": "○",
+      "explanation": "正しい。雨天時の路面は滑りやすく、急ブレーキはスリップの原因となるため、数回に分けて踏むのが安全である。",
+      "textVi": "Khi trời mưa mặt đường dễ trơn trượt, nên đạp phanh chia làm nhiều lần và tránh đạp phanh gấp.",
+      "explanationVi": "Đúng. Mặt đường khi trời mưa rất dễ trơn trượt, việc đạp phanh gấp sẽ gây ra tình trạng trượt bánh, vì vậy nên chia nhỏ lần đạp phanh để đảm bảo an toàn."
     },
     {
       "kind": "simple",
@@ -5230,11 +5206,11 @@
       "id": "menkyogentsuki_gentsuki_1_14_2",
       "chapter": "総合演習1",
       "section": "1-98",
-      "text": "道路上では、原則として、同じ場所に昼間引き続いて12時間以上駐車してはならない。",
-      "answer": "○",
-      "explanation": "昼間同じ場所に引き続いて12時間駐車してはならない。夜間は8時間。また、道路を車庫代わりに使用してはならない。",
-      "textVi": "Trên đường bộ, nguyên tắc là không được đỗ xe ở cùng một chỗ liên tục quá 12 giờ vào ban ngày.",
-      "explanationVi": "Đúng. Ban ngày không được đỗ xe cùng chỗ liên tục quá 12 giờ. Ban đêm là 8 giờ. Cũng không được dùng đường bộ làm chỗ để xe thay cho nhà để xe."
+      "text": "道路上であれば、何時間であっても同じ場所に自由に駐車してよい。",
+      "answer": "×",
+      "explanation": "誤り。昼間は12時間、夜間は8時間を超えて同じ場所に駐車してはならない。また、道路を車庫代わりに使用することも禁止されている。",
+      "textVi": "Nếu là trên đường bộ, bạn có thể đỗ xe tự do ở cùng một chỗ trong bao nhiêu giờ cũng được.",
+      "explanationVi": "Sai. Không được phép đỗ xe cùng một chỗ liên tục quá 12 giờ vào ban ngày và quá 8 giờ vào ban đêm. Ngoài ra, việc sử dụng đường bộ làm chỗ để xe thay cho gara cũng bị cấm."
     },
     {
       "kind": "simple",
@@ -5333,22 +5309,22 @@
       "id": "menkyogentsuki_gentsuki_1_20_2",
       "chapter": "総合演習1",
       "section": "1-107",
-      "text": "雨天で路面の状態が悪く制動距離が長くなるので、車間距離を通常よりも多めにとった。",
-      "answer": "○",
-      "explanation": "制動距離とはブレーキが効き始めてから停止するまでの距離である。路面がぬれている場合、制動距離が長くなるので、問題文の記述は正しい。雨天時は、晴天時の1.5倍を目安に長めに車間距離をとる。",
-      "textVi": "Khi mặt đường ướt, quãng đường phanh dài hơn nên đã giữ khoảng cách với xe phía trước xa hơn bình thường.",
-      "explanationVi": "Đúng. Quãng đường phanh dài hơn khi trời mưa. Trời mưa nên giữ khoảng cách gấp 1.5 lần so với trời nắng."
+      "text": "雨天で路面の状態が悪く制動距離が長くなる場合でも、交通の流れを優先し、晴天時と同じ車間距離を保って走行した。",
+      "answer": "×",
+      "explanation": "誤り。雨天時は路面が滑りやすく制動距離が長くなるため、晴天時よりも車間距離を長め（目安として1.5倍以上）にとらなければならない。同じ車間距離で走行することは非常に危険である。",
+      "textVi": "Ngay cả khi trời mưa mặt đường trơn trượt và quãng đường phanh dài hơn, để ưu tiên dòng giao thông nên tôi vẫn giữ khoảng cách với xe trước như khi trời nắng.",
+      "explanationVi": "Sai. Khi trời mưa, mặt đường dễ trơn trượt làm quãng đường phanh dài hơn, vì vậy phải giữ khoảng cách với xe trước xa hơn so với trời nắng (tiêu chuẩn là khoảng gấp 1.5 lần trở lên). Việc giữ nguyên khoảng cách như khi trời nắng là rất nguy hiểm."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_21_1",
       "chapter": "総合演習1",
       "section": "1-108",
-      "text": "たとえ危険を避けるためであっても、街中での警音器の使用は禁じられている。",
-      "answer": "×",
-      "explanation": "警音器の危険防止のためのやむをえない使用は認められている。",
-      "textVi": "Dù là để tránh nguy hiểm, việc sử dụng còi ở khu đô thị vẫn bị cấm.",
-      "explanationVi": "Việc sử dụng còi bất đắc dĩ để phòng ngừa nguy hiểm được chấp nhận."
+      "text": "危険を避けるためにやむを得ない場合は、警音器を鳴らして危険を知らせてもよい。",
+      "answer": "○",
+      "explanation": "正しい。警音器（クラクション）は原則として使用が禁止されているが、危険を防止するためやむを得ないときは使用が認められている。",
+      "textVi": "Trong trường hợp bất khả kháng để tránh nguy hiểm, bạn có thể bấm còi để báo hiệu.",
+      "explanationVi": "Đúng. Về nguyên tắc, việc sử dụng còi (kèn xe) bị cấm, tuy nhiên khi cần thiết để phòng ngừa nguy hiểm thì việc sử dụng là được cho phép."
     },
     {
       "kind": "simple",
@@ -5545,11 +5521,11 @@
       "id": "menkyogentsuki_gentsuki_8_24_5",
       "chapter": "総合演習2",
       "section": "2-2",
-      "text": "踏切警手のいる踏切では、安全を確認すれば、一時停止しなくてもよい。",
-      "answer": "×",
-      "explanation": "「一時停止しなくてもよい」の部分が誤り。踏切警手のいる踏切であっても、安全確認のために、一時停止をせねばならない。",
-      "textVi": "Ở đường sắt có gác chắn, nếu xác nhận an toàn thì không cần dừng lại một lần.",
-      "explanationVi": "Phần \"không cần dừng lại một lần\" là sai. Dù có gác chắn đường sắt cũng phải dừng lại một lần để xác nhận an toàn."
+      "text": "踏切警手のいる踏切や信号機のある踏切であっても、一時停止をして安全を確認しなければならない。",
+      "answer": "○",
+      "explanation": "正しい。踏切警手がいる場合や信号機がある場合であっても、道路交通法により踏切では一時停止をして安全を確認する義務がある。",
+      "textVi": "Ngay cả tại nơi có nhân viên gác chắn hoặc có đèn tín hiệu giao thông, bắt buộc vẫn phải dừng xe tạm thời để xác nhận an toàn.",
+      "explanationVi": "Đúng. Theo Luật Giao thông đường bộ, ngay cả khi có nhân viên gác chắn hoặc đèn tín hiệu, bạn vẫn có nghĩa vụ phải dừng xe tạm thời tại đường sắt để xác nhận an toàn."
     },
     {
       "kind": "simple",
@@ -5725,11 +5701,11 @@
       "id": "menkyogentsuki_gentsuki_7_23_5",
       "chapter": "総合演習2",
       "section": "2-18",
-      "text": "すぐに運転できる状態であれば、運転者が短時間車から離れていても停車である。",
-      "answer": "○",
-      "explanation": "運転者がすぐに運転できる状態での短時間の停止は「停車」である。",
-      "textVi": "Nếu có thể lái xe ngay thì dù người lái xe tạm rời xe trong thời gian ngắn cũng là dừng xe.",
-      "explanationVi": "Dừng xe trong thời gian ngắn mà người lái có thể lái xe ngay là 'dừng xe'."
+      "text": "運転者が車から離れて荷物を運んでいる間は、すぐに運転できる状態であれば停車にあたる。",
+      "answer": "×",
+      "explanation": "誤り。運転者が車から離れて荷物を運んでいる場合は、すぐに運転できる状態であっても「駐車」となる。停車とは、運転者が車から離れずに、ただちに運転できる状態の短時間の停止を指す。",
+      "textVi": "Trong khi người lái xe rời khỏi xe để vận chuyển hành lý, nếu có thể lái xe ngay lập tức thì đó được coi là 'dừng xe' (停車).",
+      "explanationVi": "Sai. Khi người lái rời khỏi xe để vận chuyển hành lý, dù có thể lái xe ngay lập tức thì đó vẫn được coi là 'đỗ xe' (駐車). 'Dừng xe' (停車) chỉ áp dụng khi người lái không rời khỏi xe và ở trong trạng thái có thể lái ngay lập tức."
     },
     {
       "kind": "simple",
@@ -5936,12 +5912,12 @@
       "id": "menkyogentsuki_gentsuki_7_17_3",
       "chapter": "標識・標示・信号",
       "section": "2-40",
-      "text": "この標識のある場所では、原則として停車してはならない。",
-      "answer": "×",
-      "explanation": "図は駐車禁止の標識。停車禁止の意味合いは含まれていない。",
+      "text": "この標識のある場所では、原則として駐車してはならない。",
+      "answer": "○",
+      "explanation": "正しい。図は「駐車禁止」の標識であるため、この標識のある場所では原則として駐車をしてはならない。なお、停車は禁止されていないため可能である。",
       "image": "menkyogentsuki_483.png",
-      "textVi": "Tại nơi có biển báo này, về nguyên tắc không được dừng xe.",
-      "explanationVi": "Hình là biển cấm đỗ xe. Không bao gồm ý nghĩa cấm dừng xe."
+      "textVi": "Tại nơi có biển báo này, về nguyên tắc không được đỗ xe.",
+      "explanationVi": "Đúng. Hình này là biển báo 'Cấm đỗ xe', vì vậy tại nơi có biển báo này về nguyên tắc không được đỗ xe. Tuy nhiên, việc dừng xe (dừng để đón/trả người...) không bị cấm nên vẫn có thể thực hiện được."
     },
     {
       "kind": "simple",
@@ -6014,17 +5990,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_22_3",
-      "chapter": "総合演習2",
-      "section": "2-47",
-      "text": "夜間に対向車と行き違うときは、お互いのライトで道路中央の歩行者が見にくくなることがあり、注意が必要である。",
-      "answer": "○",
-      "explanation": "これを蒸発現象と呼ぶ。",
-      "textVi": "Khi tránh nhau ban đêm với xe đối diện, đèn của hai xe có thể khiến người đi bộ ở giữa đường khó nhìn thấy, cần chú ý.",
-      "explanationVi": "Được gọi là hiện tượng bay hơi."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_28_5",
       "chapter": "総合演習2",
       "section": "2-48",
@@ -6050,22 +6015,22 @@
       "id": "menkyogentsuki_gentsuki_7_28_3",
       "chapter": "総合演習2",
       "section": "2-50",
-      "text": "夜間、見通しの悪い交差点を通行するときは、ライトを上向きに切り替えるなどして、自車の接近を知らせるとよい。",
-      "answer": "○",
-      "explanation": "ライトを上向きに切り替えたり、点滅させたりする。",
-      "textVi": "Khi lái xe ban đêm đi qua giao lộ có tầm nhìn kém, nên chuyển đèn lên chế độ cao để báo hiệu xe mình đến gần.",
-      "explanationVi": "Đúng. Chuyển đèn sang chế độ cao hoặc nhấp nháy."
+      "text": "夜間、見通しの悪い交差点を通行するときは、ライトを上向きに切り替えるなどして自車の存在を知らせれば、徐行せずにそのままの速度で通過してよい。",
+      "answer": "×",
+      "explanation": "誤り。ライトを上向きに切り替えることは他車に自車の存在を知らせる有効な手段だが、それによって徐行の義務がなくなるわけではない。見通しの悪い交差点では、必ず徐行しなければならない。",
+      "textVi": "Khi lái xe ban đêm đi qua giao lộ có tầm nhìn kém, nếu đã chuyển đèn sang chế độ cao để báo hiệu sự hiện diện của xe mình thì có thể đi qua mà không cần giảm tốc độ.",
+      "explanationVi": "Sai. Dù việc chuyển đèn pha giúp cảnh báo các phương tiện khác, nhưng điều đó không làm thay đổi nghĩa vụ phải giảm tốc độ. Tại giao lộ khuất tầm nhìn, bắt buộc phải chạy chậm (徐行)."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_10_4",
       "chapter": "総合演習2",
       "section": "2-51",
-      "text": "夜間の運転時には、視界が悪いので、前車との車間距離は昼間より長くする。",
-      "answer": "○",
-      "explanation": "仮に交通量が少なくても、車間距離を長くとらねばならない。",
-      "textVi": "Khi lái xe ban đêm, vì tầm nhìn kém nên khoảng cách với xe phía trước nên giữ xa hơn ban ngày.",
-      "explanationVi": "Dù lưu lượng giao thông ít thì cũng phải giữ khoảng cách với xe phía trước xa hơn."
+      "text": "夜間は昼間よりも交通量が少なく道路が空いているため、前車との車間距離は昼間よりも短くしてよい。",
+      "answer": "×",
+      "explanation": "誤り。夜間は視界が悪く、歩行者や障害物の発見が遅れるため、昼間よりもむしろ車間距離を長くとり、慎重に運転しなければならない。",
+      "textVi": "Vì ban đêm giao thông ít hơn và đường thoáng hơn so với ban ngày, nên có thể giữ khoảng cách với xe phía trước ngắn hơn ban ngày.",
+      "explanationVi": "Sai. Ban đêm tầm nhìn kém, việc phát hiện người đi bộ và chướng ngại vật bị chậm lại, nên phải giữ khoảng cách với xe phía trước xa hơn so với ban ngày và lái xe thận trọng."
     },
     {
       "kind": "simple",
@@ -6094,10 +6059,10 @@
       "id": "menkyogentsuki_gentsuki_10_12_3",
       "chapter": "総合演習2",
       "section": "2-54",
-      "text": "火災報知機から1メートル以内の場所では、駐車してはならない。",
-      "answer": "○",
+      "text": "火災報知機から5メートル以内の場所では、駐車してはならない。",
+      "answer": "×",
       "explanation": "火災報知器から1メートル以内での駐車は禁止されている。なお、停車については禁止されていない。",
-      "textVi": "Trong phạm vi 1 mét từ báo cháy, không được đỗ xe.",
+      "textVi": "Trong phạm vi 5 mét từ báo cháy, không được đỗ xe.",
       "explanationVi": "Cấm đỗ xe trong phạm vi 1 mét từ báo cháy. Ngoài ra, không cấm dừng xe."
     },
     {
@@ -6204,11 +6169,11 @@
       "id": "menkyogentsuki_gentsuki_2_1_2_s1",
       "chapter": "総合演習2",
       "section": "2-64",
-      "text": "原動機付自転車の定員には、運転者を含む。",
-      "answer": "○",
-      "explanation": "原動機付自転車の定員は、運転者1名である。",
-      "textVi": "Số người tối đa trên xe gắn máy đã bao gồm người lái xe.",
-      "explanationVi": "Đúng. Số người tối đa trên xe gắn máy là 1 người (người lái)."
+      "text": "原動機付自転車には、運転者のほかに1名まで同乗させることができる。",
+      "answer": "×",
+      "explanation": "誤り。原動機付自転車の定員は運転者を含めて1名であり、同乗者を乗せることはできない。",
+      "textVi": "Trên xe gắn máy, ngoài người lái xe thì có thể chở thêm tối đa 1 người.",
+      "explanationVi": "Sai. Xe gắn máy chỉ được phép chở tối đa 1 người (bao gồm cả người lái), không được phép chở thêm người khác."
     },
     {
       "kind": "simple",
@@ -6259,22 +6224,22 @@
       "id": "menkyogentsuki_gentsuki_2_9_3",
       "chapter": "総合演習2",
       "section": "2-69",
-      "text": "運転者が運転席にいる場合には、長時間車を止めていても駐車にならない。",
-      "answer": "×",
-      "explanation": "たとえ運転者が運転席にいたとしても、駐車である。",
-      "textVi": "Nếu người lái xe ngồi ở ghế lái, dù dừng xe lâu thì cũng không bị coi là đỗ xe (駐車).",
-      "explanationVi": "Sai. Dù người lái xe có ngồi ở ghế lái, nếu dừng xe lâu thì vẫn bị coi là đỗ xe."
+      "text": "運転者が運転席にいてすぐに運転できる状態であっても、長時間停止している場合は駐車となる。",
+      "answer": "○",
+      "explanation": "正しい。たとえ運転者が運転席にいたとしても、長時間停止している場合は駐車とみなされる。",
+      "textVi": "Ngay cả khi người lái xe đang ngồi ở ghế lái và có thể điều khiển xe ngay lập tức, nếu dừng xe trong thời gian dài thì vẫn được coi là đỗ xe (駐車).",
+      "explanationVi": "Đúng. Ngay cả khi người lái xe đang ngồi ở vị trí ghế lái, việc dừng xe trong thời gian dài vẫn được phân loại là đỗ xe."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_2_7_5",
       "chapter": "総合演習2",
       "section": "2-70",
-      "text": "夜間の運転時には、できるだけ暗い色の服を避けて運転するのがよい。",
-      "answer": "○",
-      "explanation": "他車からの見落としを避けるためである。",
-      "textVi": "Khi lái xe ban đêm, nên tránh mặc quần áo màu tối để các phương tiện khác dễ nhận biết.",
-      "explanationVi": "Đúng. Việc tránh mặc quần áo màu tối khi lái xe ban đêm giúp các phương tiện khác dễ nhận biết, tránh bị bỏ sót."
+      "text": "夜間の運転時には、他車から見えやすくならないように、あえて暗い色の服を着て運転するのがよい。",
+      "answer": "×",
+      "explanation": "誤り。夜間の運転時には、他車からの見落としを防ぐため、明るい色の服を着たり、反射材を使用したりするのがよい。",
+      "textVi": "Khi lái xe ban đêm, để không bị quá nổi bật, nên cố tình mặc quần áo màu tối khi lái xe.",
+      "explanationVi": "Sai. Khi lái xe vào ban đêm, để tránh việc các xe khác không nhìn thấy mình, nên mặc quần áo sáng màu hoặc sử dụng vật liệu phản quang."
     },
     {
       "kind": "simple",
@@ -6840,22 +6805,22 @@
       "id": "menkyogentsuki_gentsuki_8_17_2",
       "chapter": "総合演習2",
       "section": "2-124",
-      "text": "雨や雪の日の急ブレーキは、車輪が横すべりを起こしやすいので、特に危険である。",
-      "answer": "○",
-      "explanation": "エンジンブレーキを使用し、ブレーキペダルを数回に分けて踏むようにする。",
-      "textVi": "Phanh gấp khi trời mưa hay có tuyết dễ khiến bánh xe trượt ngang nên đặc biệt nguy hiểm.",
-      "explanationVi": "Hãy sử dụng phanh động cơ và đạp phanh nhiều lần chia nhỏ."
+      "text": "雨や雪の日に車輪が横すべりを起こしたときは、ブレーキペダルを強く一気に踏み込んで、車輪の回転を完全に停止させることが最も安全である。",
+      "answer": "×",
+      "explanation": "誤り。雨や雪の日にブレーキを強く一気に踏み込むと、タイヤがロックして横すべりが激しくなり非常に危険である。すべりやすい路面では、エンジンブレーキを活用し、ブレーキペダルを数回に分けて踏む（ポンピングブレーキ）のが正しい。",
+      "textVi": "Khi bánh xe bị trượt ngang vào ngày mưa hoặc tuyết, cách an toàn nhất là đạp phanh thật mạnh và dứt khoát để bánh xe dừng quay hoàn toàn.",
+      "explanationVi": "Sai. Đạp phanh mạnh và dứt khoát vào ngày mưa hoặc tuyết sẽ khiến lốp xe bị khóa, làm tình trạng trượt ngang nghiêm trọng hơn và rất nguy hiểm. Trên mặt đường trơn trượt, hãy tận dụng phanh động cơ và đạp phanh chia nhỏ nhiều lần (phanh nhấp nhả) mới là đúng."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_9_4",
       "chapter": "総合演習3",
       "section": "3-1",
-      "text": "雨天のときは地盤がゆるむため、山道では路肩に寄りすぎないようにする。",
-      "answer": "○",
-      "explanation": "路肩が崩れるおそれがあるためである。",
-      "textVi": "Vì trời mưa đất mềm nên trên đường núi không nên đi quá sát lề đường.",
-      "explanationVi": "Vì mép đường có thể bị sụp đổ."
+      "text": "雨天のときは視界が悪く対向車が見えにくくなるため、山道ではできるだけ路肩に寄って走行する方がよい。",
+      "answer": "×",
+      "explanation": "誤り。雨天時は地盤が緩んでおり、路肩が崩れる危険があるため、山道では路肩に寄りすぎないように走行しなければならない。",
+      "textVi": "Khi trời mưa vì tầm nhìn kém và khó thấy xe ngược chiều, nên lái xe sát vào lề đường trên đường núi càng nhiều càng tốt.",
+      "explanationVi": "Sai. Khi trời mưa, nền đất bị yếu và có nguy cơ mép đường bị sụp đổ, nên khi lái xe trên đường núi phải cẩn thận không đi quá sát vào lề đường."
     },
     {
       "kind": "simple",
@@ -6917,12 +6882,12 @@
       "id": "menkyogentsuki_gentsuki_3_19_5",
       "chapter": "標識・標示・信号",
       "section": "3-7",
-      "text": "この標識のある場所では、危険を感じた場合、警音器を鳴らさなくてはならない。",
-      "answer": "×",
-      "explanation": "警笛鳴らせの標識のある場所では、警音器を必ず鳴らさなくてはならない。",
+      "text": "この標識のある場所では、危険を感じるかどうかにかかわらず、必ず警音器を鳴らさなければならない。",
+      "answer": "○",
+      "explanation": "正しい。「警笛鳴らせ」の標識がある場所では、見通しのきかない交差点や曲がり角などにおいて、危険の有無にかかわらず必ず警音器（クラクション）を鳴らして合図をしなければならない。",
       "image": "menkyogentsuki_345.png",
-      "textVi": "Ở nơi có biển báo bắt buộc còi, bạn bắt buộc phải bấm còi.",
-      "explanationVi": "Sai. Ở nơi có biển báo bắt buộc còi, bạn bắt buộc phải bấm còi, không phải chỉ khi cảm thấy nguy hiểm mới bấm."
+      "textVi": "Ở nơi có biển báo \"Còi bắt buộc\", bạn phải bấm còi mà không cần quan tâm là có cảm thấy nguy hiểm hay không.",
+      "explanationVi": "Đúng. Tại nơi có biển báo \"Còi bắt buộc\" (警笛鳴らせ), bạn bắt buộc phải bấm còi để báo hiệu khi đi qua các giao lộ hoặc khúc cua khuất tầm nhìn, bất kể có cảm thấy nguy hiểm hay không."
     },
     {
       "kind": "simple",
@@ -7185,11 +7150,11 @@
       "id": "menkyogentsuki_gentsuki_8_22_3",
       "chapter": "総合演習3",
       "section": "3-32",
-      "text": "バスや路面電車の停留所から10メートル以内の場所は、原則として駐停車禁止である。",
-      "answer": "○",
-      "explanation": "ただし、運行時間中に限る。",
-      "textVi": "Trong phạm vi 10 mét từ bến xe buýt hay xe điện, về nguyên tắc cấm đỗ và dừng xe.",
-      "explanationVi": "Tuy nhiên, chỉ trong thời gian hoạt động."
+      "text": "バスや路面電車の停留所から10メートル以内の場所は、運行時間外であっても、常に駐停車禁止である。",
+      "answer": "×",
+      "explanation": "誤り。バスや路面電車の停留所から10メートル以内の場所が駐停車禁止となるのは、あくまで「運行時間中」に限られる。運行時間外であれば駐停車禁止ではない。",
+      "textVi": "Trong phạm vi 10 mét từ bến xe buýt hoặc xe điện, dù là ngoài thời gian hoạt động vẫn luôn cấm dừng và đỗ xe.",
+      "explanationVi": "Sai. Quy định cấm dừng đỗ trong phạm vi 10 mét từ bến xe chỉ áp dụng trong 'thời gian xe hoạt động'. Ngoài khung giờ đó thì không áp dụng quy định cấm này."
     },
     {
       "kind": "simple",
@@ -7269,18 +7234,7 @@
       "textVi": "Trên đường, về nguyên tắc, không được đỗ xe cùng một chỗ liên tục hơn 8 giờ vào ban ngày.",
       "explanationVi": "Ban ngày không được đỗ xe liên tục quá 12 giờ tại cùng một nơi. Ban đêm là 8 giờ. Ngoài ra, không được dùng đường làm chỗ để xe."
     },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_3_1",
-      "chapter": "総合演習3",
-      "section": "3-40",
-      "text": "白線が1本で幅が1メートルの路側帯のある道路で駐停車するときは、路側帯の中に入り、0.75メートル以上の余地をあける。",
-      "answer": "○",
-      "explanation": "路側帯が0.75メートルを超える道路であれば、路側帯に入り駐停車してよいが、歩行者の通行のため、0.75メートル以上の余地が必要である。",
-      "textVi": "Trên đường có làn bên rộng 1 mét với vạch trắng một đường, khi đỗ hay dừng xe phải vào trong làn bên và giữ khoảng trống hơn 0,75 mét.",
-      "explanationVi": "Nếu làn đường bên đường rộng hơn 0,75 mét thì có thể đi vào làn đường bên đường để đỗ xe, nhưng vì người đi bộ lưu thông nên cần chừa ít nhất 0,75 mét."
-    },
-    {
+      {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_7_5",
       "chapter": "総合演習3",
@@ -7385,22 +7339,22 @@
       "id": "menkyogentsuki_gentsuki_7_19_3",
       "chapter": "総合演習3",
       "section": "3-50",
-      "text": "夜間の運転時に、街灯等で十分明るいときは、前照灯のみつけなくてもよい。",
-      "answer": "×",
-      "explanation": "前照灯は自分が見るためであると同時に、他人から見られるためでもあるので、夜間は必ずつけなくてはならない。",
-      "textVi": "Khi lái xe ban đêm, nếu đường đủ sáng do đèn đường v.v. thì không cần bật đèn pha.",
-      "explanationVi": "Đèn chiếu sáng phía trước không chỉ để mình nhìn mà còn để người khác nhìn thấy mình, vì vậy ban đêm bắt buộc phải bật."
+      "text": "夜間、道路に街灯等がなく暗いときはもちろん、街灯等で十分明るい場所であっても、前照灯をつけなければならない。",
+      "answer": "○",
+      "explanation": "正しい。前照灯は夜間の走行中、自分が見るためだけでなく、他人に自分の車の存在を知らせるためにも不可欠であるため、周囲の明るさに関わらず夜間は必ず点灯しなければならない。",
+      "textVi": "Khi lái xe ban đêm, không chỉ ở những nơi tối không có đèn đường, mà ngay cả ở những nơi có đèn đường chiếu sáng đủ sáng, bạn cũng bắt buộc phải bật đèn pha.",
+      "explanationVi": "Đúng. Đèn chiếu sáng phía trước không chỉ giúp bạn nhìn rõ đường mà còn để người khác nhận biết sự hiện diện của xe bạn, vì vậy ban đêm bắt buộc phải bật đèn bất kể môi trường xung quanh sáng hay tối."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_22_4",
       "chapter": "総合演習3",
       "section": "3-51",
-      "text": "前車の発進が遅かったため、警音器を鳴らした。",
-      "answer": "×",
-      "explanation": "警音器は、みだりに鳴らしてはならない。",
-      "textVi": "Vì xe phía trước khởi hành chậm nên đã bấm còi.",
-      "explanationVi": "Không được tùy ý bấm còi."
+      "text": "前車の発進が遅いからといって、警音器を鳴らして急かすことは禁じられている。",
+      "answer": "○",
+      "explanation": "正しい。警音器は、法令で定められた場所や、危険を避けるためにやむを得ない場合を除き、みだりに鳴らしてはならない。発進の催促などで鳴らすことは違反である。",
+      "textVi": "Việc bấm còi để hối thúc xe phía trước vì họ khởi hành chậm là hành vi bị cấm.",
+      "explanationVi": "Đúng. Ngoại trừ những nơi được pháp luật quy định hoặc những trường hợp bắt buộc để tránh nguy hiểm, bạn không được tùy ý bấm còi. Việc bấm còi để hối thúc xe phía trước khởi hành là vi phạm pháp luật."
     },
     {
       "kind": "simple",
@@ -7709,22 +7663,22 @@
       "id": "menkyogentsuki_gentsuki_3_29_5",
       "chapter": "総合演習3",
       "section": "3-80",
-      "text": "道路の前方に障害物があり、対向車が来ている場合は、距離が十分あり対向車の速度が遅くとも、対向車を待ってから障害物を避けるべきである。",
-      "answer": "×",
-      "explanation": "対向車との距離が十分あるときは、追い越しと同じ手順で、障害物を避けてよい。",
-      "textVi": "Khi có chướng ngại vật phía trước và có xe đối diện, dù khoảng cách đủ và tốc độ xe đối diện chậm, vẫn nên chờ xe đối diện rồi mới tránh vật cản.",
-      "explanationVi": "Sai. Khi khoảng cách với xe đối diện đủ xa thì được phép tránh vật cản theo cùng quy trình như khi vượt xe."
+      "text": "道路の前方に障害物があり、対向車が来ている場合であっても、対向車との距離が十分あり、安全に通過できると判断したときは、障害物を避けて進行してよい。",
+      "answer": "○",
+      "explanation": "正しい。障害物を避ける際は、対向車の有無や距離、速度を判断し、安全に通過できるのであれば、対向車を待つ必要はなく、そのまま進行してよい。",
+      "textVi": "Khi có chướng ngại vật phía trước và có xe đối diện đang đi tới, nếu khoảng cách với xe đối diện đủ xa và bạn đánh giá có thể vượt qua an toàn, thì không cần chờ xe đối diện mà có thể tránh vật cản để đi tiếp.",
+      "explanationVi": "Đúng. Khi tránh chướng ngại vật, bạn cần phán đoán sự hiện diện, khoảng cách và tốc độ của xe đối diện. Nếu đủ an toàn để vượt qua thì không cần thiết phải đợi xe đối diện, có thể tiếp tục di chuyển."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_29_3",
       "chapter": "総合演習3",
       "section": "3-81",
-      "text": "前車に続いて見通しの良い踏切を通行する場合であっても、一時停止をし、安全を確認する必要がある。",
-      "answer": "○",
-      "explanation": "前車に続く場合、見通しの良い踏切を通行する場合であっても、必ず一時停止をし、安全を確認せねばならない。",
-      "textVi": "Khi đi qua đường sắt có tầm nhìn tốt theo sau xe phía trước, cũng cần dừng lại một lần và xác nhận an toàn.",
-      "explanationVi": "Kể cả khi đi theo sau xe khác hay đi qua đường sắt có tầm nhìn tốt, vẫn phải dừng lại một lần và xác nhận an toàn."
+      "text": "前車に続いて踏切を通行する場合や、見通しの良い踏切を通行する場合は、一時停止をせずにそのままの速度で通過してよい。",
+      "answer": "×",
+      "explanation": "誤り。前車に続く場合や、見通しの良い踏切であっても、必ず一時停止をして安全を確認しなければならない。踏切での一時停止義務は例外なく適用される。",
+      "textVi": "Khi đi qua đường sắt theo sau xe phía trước hoặc khi đi qua đường sắt có tầm nhìn tốt, có thể không cần dừng lại một lần mà cứ giữ nguyên tốc độ để đi qua.",
+      "explanationVi": "Sai. Dù là đi theo sau xe khác hay đi qua đường sắt có tầm nhìn tốt, vẫn bắt buộc phải dừng lại một lần và xác nhận an toàn. Nghĩa vụ dừng lại tạm thời tại đường sắt là áp dụng bắt buộc không có ngoại lệ."
     },
     {
       "kind": "simple",
@@ -8022,11 +7976,11 @@
       "id": "menkyogentsuki_gentsuki_8_30_4",
       "chapter": "総合演習3",
       "section": "3-109",
-      "text": "交差点付近で駐停車禁止となるのは、交差点とその端から3メートル以内の場所である。",
-      "answer": "×",
-      "explanation": "「3メートル以内」の部分が誤り。正しくは、5メートル以内である。",
-      "textVi": "Gần giao lộ, nơi cấm đỗ và dừng xe là trong phạm vi 3 mét từ giao lộ và mép của nó.",
-      "explanationVi": "Đúng ra phải là trong phạm vi 5 mét."
+      "text": "交差点付近で駐停車禁止となるのは、交差点とその側端から5メートル以内の場所である。",
+      "answer": "○",
+      "explanation": "正しい。交差点とその端から5メートル以内の場所は、駐停車禁止場所と定められている。",
+      "textVi": "Gần giao lộ, nơi cấm đỗ và dừng xe là trong phạm vi 5 mét tính từ giao lộ và mép của nó.",
+      "explanationVi": "Đúng. Theo quy định, khu vực trong phạm vi 5 mét tính từ giao lộ và mép đường của giao lộ là nơi cấm dừng và đỗ xe."
     },
     {
       "kind": "simple",
@@ -8055,11 +8009,11 @@
       "id": "menkyogentsuki_gentsuki_10_29_5",
       "chapter": "総合演習3",
       "section": "3-112",
-      "text": "原動機付自転車には、荷台から左右に0.15メートルまではみ出して荷物を積むことができる。",
-      "answer": "○",
-      "explanation": "二輪車・原動機付自転車は、荷台0.15メートルまで左右にはみ出して荷物を積んでよい。",
-      "textVi": "Xe gắn máy có thể chở hàng nhô ra hai bên từ thùng xe tối đa 0,15 mét mỗi bên.",
-      "explanationVi": "Xe hai bánh và xe gắn máy có thể chất hàng nhô ra hai bên tới 0,15 mét từ thùng xe."
+      "text": "原動機付自転車には、荷台から左右に0.3メートルまではみ出して荷物を積むことができる。",
+      "answer": "×",
+      "explanation": "誤り。原動機付自転車の積載制限は、荷台から左右にそれぞれ0.15メートルまでである。0.3メートルは制限を超えているため違反となる。",
+      "textVi": "Xe gắn máy có thể chở hàng nhô ra hai bên từ thùng xe tối đa 0,3 mét mỗi bên.",
+      "explanationVi": "Sai. Giới hạn tải trọng của xe gắn máy là nhô ra tối đa 0,15 mét mỗi bên tính từ thùng xe. 0,3 mét là vượt quá giới hạn cho phép nên vi phạm luật."
     },
     {
       "kind": "simple",
@@ -8165,11 +8119,11 @@
       "id": "menkyogentsuki_gentsuki_3_26_3",
       "chapter": "総合演習3",
       "section": "3-124",
-      "text": "原動機付自転車は普通自動車と異なり、エンストすることがない。",
-      "answer": "×",
-      "explanation": "原動機付自転車もエンストすることがある。",
-      "textVi": "Khác với xe thường, xe gắn máy 50cc không bị chết máy.",
-      "explanationVi": "Sai. Xe gắn máy 50cc cũng có thể bị chết máy."
+      "text": "原動機付自転車（原付）であっても、操作を誤れば普通自動車と同様にエンストを起こすことがある。",
+      "answer": "○",
+      "explanation": "正しい。原動機付自転車（特にマニュアル車）であっても、発進時や変速時の操作を誤れば、エンジンが停止（エンスト）することがある。",
+      "textVi": "Ngay cả đối với xe gắn máy 50cc, nếu thao tác sai thì cũng có thể bị chết máy giống như ô tô thường.",
+      "explanationVi": "Đúng. Ngay cả với xe gắn máy 50cc, nếu thực hiện thao tác sai khi khởi động hoặc chuyển số thì động cơ vẫn có thể bị dừng đột ngột (chết máy)."
     },
     {
       "kind": "simple",
@@ -8209,11 +8163,11 @@
       "id": "menkyogentsuki_gentsuki_8_4_5",
       "chapter": "総合演習4",
       "section": "4-4",
-      "text": "夜間の運転時には、大型車や二輪車が実際より近く見えるので、注意が必要である。",
-      "answer": "×",
-      "explanation": "夜間の運転時には、大型車や二輪車は実際より遠く見える。",
-      "textVi": "Khi lái xe ban đêm, xe lớn và xe hai bánh trông gần hơn thực tế nên cần chú ý.",
-      "explanationVi": "Khi lái xe ban đêm, xe lớn và xe hai bánh trông xa hơn thực tế."
+      "text": "夜間の運転時には、対向車のライトの明るさなどにより、実際の距離よりも遠くに車両がいるように錯覚しやすいため注意が必要である。",
+      "answer": "○",
+      "explanation": "正しい。夜間は周囲が暗いため、実際の距離よりも車両が遠くにいるように見えたり（距離感の錯覚）、速度が実際より遅く感じたりすることがあるため注意が必要である。",
+      "textVi": "Khi lái xe ban đêm, do ánh sáng đèn của xe đối diện, dễ bị nhầm tưởng là xe đối diện đang ở xa hơn thực tế, vì vậy cần phải chú ý.",
+      "explanationVi": "Đúng. Vào ban đêm do môi trường xung quanh tối, xe cộ thường trông xa hơn thực tế (ảo giác về khoảng cách) hoặc tốc độ có vẻ chậm hơn thực tế, nên cần phải hết sức chú ý."
     },
     {
       "kind": "simple",
@@ -8367,11 +8321,11 @@
       "id": "menkyogentsuki_gentsuki_4_1_3_s1",
       "chapter": "総合演習4",
       "section": "4-18",
-      "text": "下り坂を走行中に、ブレーキがきかなくなったときは、減速チェンジをしてエンジンブレーキを使い、車を停止させる努力をする。",
-      "answer": "○",
-      "explanation": "ブレーキを数回かけ、減速チェンジしてエンジンブレーキを効かせる。それでも止まらない場合に土砂に突っ込む等して車を止める。",
-      "textVi": "Khi đang xuống dốc mà phanh không ăn, hãy chuyển số thấp hơn để dùng phanh động cơ và cố gắng dừng xe.",
-      "explanationVi": "Đúng. Hãy đạp phanh nhiều lần, chuyển số thấp để phanh động cơ có tác dụng. Nếu vẫn không dừng được, hãy đâm vào cát, đất... để dừng xe."
+      "text": "下り坂を走行中にブレーキがきかなくなったときは、エンジンの回転を止めるために、ただちにイグニッションスイッチ（エンジンキー）を切って車を停止させる。",
+      "answer": "×",
+      "explanation": "誤り。走行中にエンジンを切ると、ハンドル操作が重くなったり、ブレーキの補助機能（倍力装置）が効かなくなったりして非常に危険である。正しくはエンジンブレーキを併用し、段階的に速度を落とす。",
+      "textVi": "Khi đang xuống dốc mà phanh không ăn, để dừng động cơ, hãy tắt công tắc đánh lửa (khóa điện) ngay lập tức để dừng xe.",
+      "explanationVi": "Sai. Việc tắt động cơ khi xe đang chạy cực kỳ nguy hiểm vì tay lái sẽ bị nặng và trợ lực phanh sẽ mất tác dụng. Bạn phải sử dụng phanh động cơ để giảm tốc độ từng bước một."
     },
     {
       "kind": "simple",
@@ -8455,11 +8409,11 @@
       "id": "menkyogentsuki_gentsuki_4_20_3",
       "chapter": "総合演習4",
       "section": "4-26",
-      "text": "踏切を通行するときは、左端に寄って一気に通行する。",
-      "answer": "×",
-      "explanation": "脱輪防止のため、踏切ではやや中央寄りを進む。",
-      "textVi": "Khi qua đường sắt, đi sát mép trái và lao nhanh qua.",
-      "explanationVi": "Sai. Khi qua đường sắt, đi hơi giữa đường để tránh bánh xe lọt vào đường ray."
+      "text": "踏切を通行するときは、脱輪を防ぐため、踏切のやや中央寄りを進み、変速せずに一気に通行する。",
+      "answer": "○",
+      "explanation": "正しい。踏切では脱輪を防ぐためにやや中央寄りを進む必要があり、通行中にエンストすることを防ぐため、変速せずに一定の速度で一気に通過しなければならない。",
+      "textVi": "Khi qua đường ray, để tránh bị trượt bánh, hãy đi hơi lệch về phía giữa đường và đi thẳng một mạch mà không cần sang số.",
+      "explanationVi": "Đúng. Khi qua đường ray, bạn cần đi hơi lệch về phía giữa để tránh bánh xe bị lọt vào khe, đồng thời phải đi một mạch không chuyển số để tránh chết máy giữa chừng."
     },
     {
       "kind": "simple",
@@ -8601,11 +8555,11 @@
       "id": "menkyogentsuki_gentsuki_7_22_5",
       "chapter": "総合演習4",
       "section": "4-40",
-      "text": "深い水たまりを走行すると、ブレーキドラムに水が入り、ブレーキの効きが悪くなることがある。",
-      "answer": "○",
-      "explanation": "深い水たまりはできるだけ避けて運転する。",
-      "textVi": "Khi chạy qua vũng nước sâu, nước có thể vào tang phanh khiến phanh kém hiệu quả.",
-      "explanationVi": "Tránh đi qua vũng nước sâu nhất có thể."
+      "text": "深い水たまりを走行しても、ブレーキドラムは密閉されているため、ブレーキの効きが悪くなることはない。",
+      "answer": "×",
+      "explanation": "誤り。深い水たまりを走行すると、ブレーキドラム内に水が浸入し、ブレーキの性能が著しく低下する「フェード現象」や「ベーパーロック現象」に近い状態を招く恐れがある。水たまりは可能な限り避けて走行すべきである。",
+      "textVi": "Khi chạy qua vũng nước sâu, do tang phanh đã được bịt kín nên hiệu quả phanh sẽ không bị ảnh hưởng.",
+      "explanationVi": "Sai. Khi chạy qua vũng nước sâu, nước có thể lọt vào bên trong tang phanh, làm giảm hiệu suất phanh đáng kể. Bạn nên tránh đi qua vũng nước sâu nhất có thể."
     },
     {
       "kind": "simple",
@@ -8984,11 +8938,11 @@
       "id": "menkyogentsuki_gentsuki_10_18_2",
       "chapter": "総合演習4",
       "section": "4-75",
-      "text": "交通事故の際は、相手のケガが軽く、話し合いで解決しそうな場合であっても、必ず警察を呼ぶ。",
-      "answer": "○",
-      "explanation": "正しい。交通事故を起こしたら、必ず警察を呼ぶべきである。",
-      "textVi": "Trong tai nạn giao thông, dù người bị thương nhẹ và có vẻ có thể giải quyết bằng thương lượng cũng phải gọi cảnh sát.",
-      "explanationVi": "Đúng. Nếu gây tai nạn giao thông thì nên gọi cảnh sát."
+      "text": "交通事故の際は、相手のケガが軽傷であり、当事者同士で話し合って示談が成立した場合は、警察を呼ばずにそのまま立ち去ってもよい。",
+      "answer": "×",
+      "explanation": "誤り。交通事故が発生したときは、ケガの程度や話し合いの有無にかかわらず、必ず警察へ報告しなければならない。警察を呼ばずに立ち去ることは「報告義務違反」となる。",
+      "textVi": "Trong tai nạn giao thông, nếu người bị thương nhẹ và hai bên đã thương lượng thỏa thuận xong thì không cần gọi cảnh sát mà có thể rời khỏi hiện trường.",
+      "explanationVi": "Sai. Khi xảy ra tai nạn giao thông, bất kể mức độ thương tích hay việc đã thương lượng xong hay chưa, bắt buộc phải báo cáo với cảnh sát. Rời khỏi hiện trường mà không gọi cảnh sát là vi phạm nghĩa vụ báo cáo."
     },
     {
       "kind": "simple",
@@ -9028,11 +8982,11 @@
       "id": "menkyogentsuki_gentsuki_4_28_3",
       "chapter": "総合演習4",
       "section": "4-79",
-      "text": "待避所のある坂道で行き違う場合は、下りの車が待避所に入り、対向車に道を譲る。",
-      "answer": "×",
-      "explanation": "待避所のある坂道では、上り下りに関係なく、待避所のある側の車が待避所に入り、対向車に道を譲る。",
-      "textVi": "Khi tránh nhau ở dốc có chỗ tránh xe, xe xuống dốc vào chỗ tránh xe và nhường đường cho xe đối diện.",
-      "explanationVi": "Ở dốc có chỗ tránh xe, bất kể lên dốc hay xuống dốc, xe bên có chỗ tránh xe sẽ vào đó và nhường đường cho xe đối diện."
+      "text": "待避所のある坂道で行き違う場合は、上り下りに関係なく、待避所のある側の車が待避所に入って対向車に道を譲らなければならない。",
+      "answer": "○",
+      "explanation": "正しい。坂道で待避所が設けられている場合は、上り坂・下り坂の優先関係に関わらず、待避所がある側の車が待避所に入って対向車に道を譲るのがルールである。",
+      "textVi": "Khi tránh nhau ở dốc có chỗ tránh xe, bất kể là xe lên hay xuống dốc, xe ở phía có chỗ tránh phải đi vào đó để nhường đường cho xe đối diện.",
+      "explanationVi": "Đúng. Ở những đoạn dốc có xây dựng chỗ tránh xe, không phân biệt là xe đang lên dốc hay xuống dốc, xe nào ở phía có chỗ tránh bắt buộc phải đi vào đó để nhường đường cho xe đi ngược chiều."
     },
     {
       "kind": "simple",
@@ -9140,11 +9094,11 @@
       "id": "menkyogentsuki_gentsuki_4_23_9",
       "chapter": "総合演習4",
       "section": "4-89",
-      "text": "踏切の向こう側が混雑しているときは、立ち往生を避けるため、進入してはならない。",
-      "answer": "○",
-      "explanation": "踏切内で立ち往生する可能性があるため、進入してはならない。",
-      "textVi": "Khi phía bên kia đường sắt đang đông đúc, để tránh bị mắc kẹt thì không được phép đi vào.",
-      "explanationVi": "Đúng. Vì có nguy cơ bị mắc kẹt trong đường sắt nên không được phép đi vào."
+      "text": "踏切の向こう側が混雑している場合であっても、踏切内に一時停止の義務はないので、そのまま進入してよい。",
+      "answer": "×",
+      "explanation": "誤り。踏切の向こう側が混雑しているときは、踏切内で立ち往生（閉じ込められる）する危険性が極めて高いため、状況が改善されるまで進入してはならない。",
+      "textVi": "Ngay cả khi phía bên kia đường sắt đang đông đúc, vì trong đường sắt không có quy định bắt buộc phải dừng lại nên cứ tiếp tục đi vào cũng không sao.",
+      "explanationVi": "Sai. Khi phía bên kia đường sắt đang đông đúc, nguy cơ bị mắc kẹt lại trong đường ray là rất cao, do đó tuyệt đối không được phép đi vào cho đến khi tình trạng giao thông được cải thiện."
     },
     {
       "kind": "simple",
@@ -9173,11 +9127,11 @@
       "id": "menkyogentsuki_gentsuki_10_7_4",
       "chapter": "総合演習4",
       "section": "4-92",
-      "text": "道路の曲がり角付近では、見通しのよい場合を除き、徐行しなければならない。",
-      "answer": "×",
-      "explanation": "道路の曲がり角付近では、見通しのよしあしに関わらず、徐行しなければならない。",
-      "textVi": "Gần góc đường, ngoại trừ khi tầm nhìn tốt, phải giảm tốc độ.",
-      "explanationVi": "Gần khúc cua của đường, bất kể tầm nhìn tốt hay xấu, phải chạy chậm."
+      "text": "道路の曲がり角付近を通行するときは、見通しのきかない交差点だけでなく、曲がり角自体においても徐行しなければならない。",
+      "answer": "○",
+      "explanation": "正しい。道路の曲がり角付近は、見通しの良し悪しに関わらず、車両は徐行して通行しなければならないという交通ルールである。",
+      "textVi": "Khi đi qua gần các khúc cua, không chỉ ở giao lộ khuất tầm nhìn mà ngay cả ở chính khúc cua cũng bắt buộc phải giảm tốc độ.",
+      "explanationVi": "Đúng. Theo luật giao thông, tại các khúc cua, bất kể tầm nhìn tốt hay xấu, người điều khiển phương tiện đều bắt buộc phải chạy chậm (徐行) để đảm bảo an toàn."
     },
     {
       "kind": "simple",
@@ -9217,11 +9171,11 @@
       "id": "menkyogentsuki_gentsuki_9_4_4_s1",
       "chapter": "総合演習4",
       "section": "4-96",
-      "text": "夜間は道路の交通量が少ないので、昼間より速度を上げて運転する方がよい。",
-      "answer": "×",
-      "explanation": "夜間は周囲が暗く、視界が悪いため、速度を落として運転しなくてはならない。",
-      "textVi": "Ban đêm lượng xe trên đường ít hơn nên tăng tốc độ lái xe so với ban ngày sẽ tốt hơn.",
-      "explanationVi": "Ban đêm xung quanh tối, tầm nhìn kém, nên phải giảm tốc độ khi lái xe."
+      "text": "夜間は周囲が暗く視界が悪いため、昼間よりも速度を落として運転しなければならない。",
+      "answer": "○",
+      "explanation": "正しい。夜間は視界が制限され、歩行者や障害物の発見が遅れる可能性があるため、昼間よりも速度を控え、安全を確認できる速度で運転する必要がある。",
+      "textVi": "Ban đêm xung quanh tối và tầm nhìn kém, nên phải giảm tốc độ so với ban ngày khi lái xe.",
+      "explanationVi": "Đúng. Ban đêm tầm nhìn bị hạn chế, khả năng phát hiện người đi bộ hoặc chướng ngại vật bị chậm đi, vì vậy cần giảm tốc độ so với ban ngày và lái xe với tốc độ có thể xác nhận an toàn."
     },
     {
       "kind": "simple",
@@ -9452,11 +9406,11 @@
       "id": "menkyogentsuki_gentsuki_9_13_5",
       "chapter": "総合演習4",
       "section": "4-117",
-      "text": "夜間、他車の直後を進行するときは、前照灯を下向きにしなければならない。",
-      "answer": "○",
-      "explanation": "前車の運転者のげん惑を防ぐためである。",
-      "textVi": "Khi đi ban đêm ngay phía sau xe khác, phải chuyển đèn pha xuống chế độ thấp.",
-      "explanationVi": "Vì để tránh làm phân tâm người lái xe phía trước."
+      "text": "夜間、他車の直後を進行するときは、視界を確保するため、前照灯を上向きのまま走行しなければならない。",
+      "answer": "×",
+      "explanation": "誤り。夜間、他車の直後を進行するときや、対向車と行き違うときは、前車の運転者や対向車の運転者の眩惑（げんわく）を防ぐため、前照灯を必ず下向きにしなければならない。",
+      "textVi": "Khi lái xe vào ban đêm ngay phía sau xe khác, để đảm bảo tầm nhìn, phải giữ nguyên chế độ đèn pha (chiếu xa) để chạy.",
+      "explanationVi": "Sai. Khi lái xe vào ban đêm, dù là ngay phía sau xe khác hay khi chạy đối diện với xe ngược chiều, bắt buộc phải chuyển đèn sang chế độ chiếu gần (đèn cốt) để tránh làm chói mắt người lái xe phía trước hoặc xe đi ngược chiều."
     },
     {
       "kind": "simple",
@@ -9677,22 +9631,22 @@
       "id": "menkyogentsuki_gentsuki_8_23_1",
       "chapter": "総合演習5",
       "section": "5-13",
-      "text": "坂道で行き違う場合、片側ががけになっているときは、がけ側の車が安全な場所に停止して、対向車に道を譲る。",
-      "answer": "○",
-      "explanation": "転落のおそれがあるためである。",
-      "textVi": "Khi tránh nhau trên dốc, nếu một bên là vách núi thì xe ở phía vách núi dừng ở nơi an toàn và nhường đường cho xe đối diện.",
-      "explanationVi": "Vì có nguy cơ bị rơi xuống."
+      "text": "坂道で行き違う場合、片側ががけになっているときは、がけ側の車は停止せずに、そのまま対向車の横を通過しなければならない。",
+      "answer": "×",
+      "explanation": "誤り。がけ側は転落の危険があるため、がけ側の車が安全な場所に停止して、対向車に道を譲らなければならない。",
+      "textVi": "Khi tránh nhau trên đường dốc, nếu một bên là vách núi thì xe phía vách núi không cần dừng lại mà phải giữ nguyên tốc độ và đi qua bên cạnh xe đối diện.",
+      "explanationVi": "Sai. Vì phía vách núi có nguy cơ bị rơi xuống vực, nên xe ở phía vách núi bắt buộc phải dừng lại ở nơi an toàn để nhường đường cho xe đi ngược chiều."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_5_25_2",
       "chapter": "総合演習5",
       "section": "5-14",
-      "text": "前車がこちらへ突っ込んできたため、やむをえず警音器を鳴らした。",
-      "answer": "○",
-      "explanation": "警音器の危険防止のためのやむをえない使用は認められている。",
-      "textVi": "Vì xe phía trước lao về phía mình nên bất đắc dĩ đã bấm còi.",
-      "explanationVi": "Việc bấm còi bất đắc dĩ để tránh nguy hiểm được chấp nhận."
+      "text": "前車がこちらへ突っ込んできた場合であっても、警音器を鳴らすことは禁止されているので、鳴らしてはならない。",
+      "answer": "×",
+      "explanation": "誤り。警音器（クラクション）は原則として使用が禁止されているが、危険を防止するためやむをえないときは使用が認められている。",
+      "textVi": "Ngay cả trong trường hợp xe phía trước lao về phía mình, việc bấm còi vẫn bị cấm nên tuyệt đối không được bấm.",
+      "explanationVi": "Sai. Mặc dù việc bấm còi về nguyên tắc bị cấm, nhưng khi cần thiết để tránh nguy hiểm thì việc sử dụng còi được cho phép."
     },
     {
       "kind": "simple",
@@ -9794,16 +9748,16 @@
       "textVi": "Ở giao lộ này, xe A không được phép cản trở xe B đang đi.",
       "explanationVi": "Làn đường của xe B là đường ưu tiên."
     },
-      {
+    {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_19_4",
       "chapter": "総合演習5",
       "section": "5-26",
-      "text": "原則として、車の右側に3.5メートル以上の余地のない場所で駐車してはならない。",
-      "answer": "○",
-      "explanation": "他の車が安全に通行できないためである。",
-      "textVi": "Về nguyên tắc, không được đỗ xe ở nơi có khoảng trống dưới 3,5 mét bên phải xe.",
-      "explanationVi": "Vì xe khác không thể đi qua một cách an toàn."
+      "text": "車の右側に3.5メートル以上の余地がなくても、歩行者だけが通行できる場所であれば駐車してもよい。",
+      "answer": "×",
+      "explanation": "誤り。駐車するときは、道路の左側に沿って駐車しなければならず、かつ、車の右側に3.5メートル以上の余地がない場所では駐車してはならない。これは、歩行者の有無にかかわらず、他の車が安全に通行できるようにするためのルールである。",
+      "textVi": "Ngay cả khi không có đủ 3,5 mét khoảng trống bên phải xe, nếu đó là nơi chỉ người đi bộ có thể qua lại thì vẫn được phép đỗ xe.",
+      "explanationVi": "Sai. Khi đỗ xe, phải đỗ dọc theo lề đường bên trái và tuyệt đối không được đỗ xe ở nơi không chừa lại đủ 3,5 mét khoảng trống bên phải xe. Đây là quy định nhằm đảm bảo an toàn cho các phương tiện khác đi qua, bất kể ở đó có người đi bộ hay không."
     },
     {
       "kind": "simple",
@@ -9843,11 +9797,11 @@
       "id": "menkyogentsuki_gentsuki_5_28_1",
       "chapter": "総合演習5",
       "section": "5-30",
-      "text": "原動機付自転車に積むことのできる荷物の量は、30キログラム以下である。",
-      "answer": "○",
-      "explanation": "正しい。ちなみに、原動機付自転車に積むことのできる荷物の長さは、荷台よりも0.3メートルまで、高さは地上から2メートル以下までである。",
-      "textVi": "Lượng hàng có thể chở trên xe gắn máy là dưới 30 kg.",
-      "explanationVi": "Đúng. Nhân tiện, chiều dài hàng hóa có thể chở trên xe gắn máy là tối đa 0,3 mét vượt quá cốp, và chiều cao tối đa là 2 mét tính từ mặt đất."
+      "text": "原動機付自転車に積むことのできる荷物の量は、60キログラムまでである。",
+      "answer": "×",
+      "explanation": "誤り。原動機付自転車に積むことのできる荷物の重量は、30キログラムまでである。",
+      "textVi": "Lượng hàng có thể chở trên xe gắn máy là tối đa 60 kg.",
+      "explanationVi": "Sai. Trọng lượng hàng hóa được phép chở trên xe gắn máy chỉ tối đa là 30 kg."
     },
     {
       "kind": "simple",
@@ -9894,17 +9848,6 @@
       "explanation": "騒音が発生するためである。",
       "textVi": "Khi ống xả bị hỏng, phải thay thế hoặc sửa chữa ngay.",
       "explanationVi": "Vì gây ra tiếng ồn."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_26_3",
-      "chapter": "総合演習5",
-      "section": "5-36",
-      "text": "道路工事の区域から5メートル以内の場所では、駐車は禁止されている。",
-      "answer": "○",
-      "explanation": "たとえ工事車両であっても、駐車は禁止である。",
-      "textVi": "Trong phạm vi 5 mét từ khu vực công trình đường bộ, đỗ xe bị cấm.",
-      "explanationVi": "Dù là xe công trình cũng không được phép đỗ."
     },
     {
       "kind": "simple",
@@ -9955,11 +9898,11 @@
       "id": "menkyogentsuki_gentsuki_7_17_4",
       "chapter": "総合演習5",
       "section": "5-43",
-      "text": "雪道を走行するときは、できるだけほかの車の通った跡を走行する。",
-      "answer": "○",
-      "explanation": "他車のわだちを走行する。",
-      "textVi": "Khi chạy xe trên đường tuyết, nên đi theo vết xe của người khác.",
-      "explanationVi": "Hãy đi theo vết bánh xe của xe khác."
+      "text": "雪道を走行するときは、ほかの車の通った跡（わだち）を走行すると危険なので、できるだけ避けて新雪の上を走行する。",
+      "answer": "×",
+      "explanation": "誤り。雪道では、新雪の上を走るとスタック（動けなくなること）したり、スリップしたりする危険があるため、他車の通った跡（わだち）を通行するのが基本である。",
+      "textVi": "Khi lái xe trên đường tuyết, đi theo vết xe của người khác rất nguy hiểm nên hãy cố gắng tránh nó và chạy trên phần tuyết mới.",
+      "explanationVi": "Sai. Khi đi trên đường tuyết, chạy trên phần tuyết mới có thể khiến xe bị kẹt hoặc trơn trượt. Vì vậy, nguyên tắc cơ bản là nên đi theo vết bánh xe của xe khác đã đi trước đó."
     },
     {
       "kind": "simple",
@@ -10121,11 +10064,11 @@
       "id": "menkyogentsuki_gentsuki_7_5_4",
       "chapter": "総合演習5",
       "section": "5-58",
-      "text": "5分を超える人の乗り降りのための停止は、停車である。",
-      "answer": "○",
-      "explanation": "たとえ5分を超えたとしても、人の乗り降りのための停止は、停車である。",
-      "textVi": "Dừng xe để người lên xuống quá 5 phút là dừng xe.",
-      "explanationVi": "Dù quá 5 phút thì việc dừng xe để người lên xuống vẫn là dừng xe."
+      "text": "人の乗り降りのための停止であれば、どのような場合でも長時間停止しても停車である。",
+      "answer": "×",
+      "explanation": "誤り。人の乗り降りのための停止であっても、運転者が車から離れたり、長時間にわたって停止している場合は「駐車」となる。駐車か停車かの判断は目的だけでなく状況も考慮される。",
+      "textVi": "Nếu là dừng xe để người lên xuống, thì trong bất kỳ trường hợp nào, dù dừng lâu cũng là dừng xe (停車).",
+      "explanationVi": "Sai. Ngay cả khi dừng để người lên xuống, nếu người lái xe rời khỏi phương tiện hoặc dừng trong thời gian dài thì vẫn bị coi là đỗ xe (駐車). Việc phân biệt giữa đỗ xe và dừng xe cần xét cả mục đích và tình trạng thực tế."
     },
     {
       "kind": "simple",
@@ -10210,11 +10153,11 @@
       "id": "menkyogentsuki_gentsuki_7_20_3",
       "chapter": "総合演習5",
       "section": "5-66",
-      "text": "大地震が発生し、やむを得ず原動機付自転車を道路上に置いて避難する際は、道路外の場所に移動し、エンジンを切り、鍵をつけておく。",
-      "answer": "○",
-      "explanation": "だれでも移動できるようにするためである。",
-      "textVi": "Khi động đất lớn xảy ra và bất đắc dĩ phải để xe gắn máy trên đường để trú ẩn, nên di chuyển đến nơi ngoài đường, tắt máy và khóa xe.",
-      "explanationVi": "Vì để mọi người có thể di chuyển được."
+      "text": "大地震が発生し、やむを得ず原動機付自転車を道路上に置いて避難する際は、盗難を防止するため、必ずエンジンを切り、ハンドルロックをかけて鍵を抜いて持ち去らなければならない。",
+      "answer": "×",
+      "explanation": "誤り。災害時などやむを得ず車を道路上に置いて避難する場合は、緊急車両の通行の邪魔になった際、警察官などが移動させられるように、エンジンを切り、鍵をつけたまま（または鍵を車内に置く）にして避難しなければならない。",
+      "textVi": "Khi xảy ra động đất lớn và bất đắc dĩ phải để xe máy trên đường để đi lánh nạn, để phòng chống trộm cắp, bắt buộc phải tắt máy, khóa cổ xe và rút chìa khóa mang theo bên mình.",
+      "explanationVi": "Sai. Trong trường hợp khẩn cấp như thiên tai, khi phải để xe trên đường, bạn bắt buộc phải tắt máy và để lại chìa khóa (trên xe hoặc trong xe) để cảnh sát hoặc người có thẩm quyền có thể di chuyển xe nếu nó gây cản trở cho xe cứu hộ."
     },
     {
       "kind": "simple",
@@ -10265,11 +10208,11 @@
       "id": "menkyogentsuki_gentsuki_9_13_3",
       "chapter": "総合演習5",
       "section": "5-71",
-      "text": "夜間に運転していて前方から対向車がきたので、灯火を上向きにし、こちらの存在を知らせた。",
-      "answer": "×",
-      "explanation": "対向車の運転手がまぶしくなるため、下向きにするか、減光する。",
-      "textVi": "Khi lái xe ban đêm và có xe đối diện đến, đã bật đèn lên chế độ cao để báo hiệu sự hiện diện của mình.",
-      "explanationVi": "Vì làm chói mắt người lái xe đối diện, nên hạ đèn xuống hoặc giảm độ sáng."
+      "text": "夜間に運転していて前方から対向車がきたので、すれ違いの際、対向車の運転手がまぶしくならないように前照灯を早めに下向きに切り替えた。",
+      "answer": "○",
+      "explanation": "正しい。夜間、対向車とすれ違うときは、相手の運転手がまぶしくならないように、前照灯（ライト）を下向きに切り替えるか、減光しなければならない。",
+      "textVi": "Khi đang lái xe vào ban đêm và có xe đối diện đi tới, khi tránh nhau, tôi đã sớm hạ đèn pha xuống để không làm chói mắt người lái xe đối diện.",
+      "explanationVi": "Đúng. Vào ban đêm, khi tránh xe ngược chiều, bạn bắt buộc phải hạ đèn pha xuống hoặc giảm độ sáng để tránh làm chói mắt người lái xe đối diện."
     },
     {
       "kind": "simple",
@@ -11597,11 +11540,11 @@
       "id": "menkyogentsuki_gentsuki_6_10_5",
       "chapter": "総合演習6",
       "section": "6-58",
-      "text": "原動機付自転車は、リヤカーを2台までけん引することができる。",
-      "answer": "×",
-      "explanation": "原動機付自転車がけん引することのできるリヤカーは1台までである。",
-      "textVi": "Xe gắn máy 50cc có thể kéo tối đa 2 cái xe kéo (リヤカー).",
-      "explanationVi": "Sai. Xe gắn máy 50cc chỉ có thể kéo tối đa 1 cái xe kéo (リヤカー) thôi."
+      "text": "原動機付自転車がけん引することのできるリヤカーは、1台までである。",
+      "answer": "○",
+      "explanation": "正しい。原動機付自転車がけん引できるリヤカーは、法令により1台までと定められている。2台以上を同時にけん引することは禁止されている。",
+      "textVi": "Xe gắn máy 50cc chỉ có thể kéo tối đa 1 cái xe kéo (リヤカー).",
+      "explanationVi": "Đúng. Theo pháp luật, xe gắn máy 50cc chỉ được phép kéo tối đa 1 xe kéo. Nghiêm cấm việc kéo từ 2 xe trở lên cùng lúc."
     },
     {
       "kind": "simple",
@@ -11775,11 +11718,11 @@
       "id": "menkyogentsuki_gentsuki_9_6_1_s1",
       "chapter": "総合演習6",
       "section": "6-74",
-      "text": "二輪車でぬかるみを走行するときは、速度を落とし、一定の速度を保って通過するべきである。",
-      "answer": "○",
-      "explanation": "ぬかるみの手前で速度を落とし、一定の速度を保って通過するべきである。",
-      "textVi": "Khi xe hai bánh đi qua đường bùn, nên giảm tốc độ và giữ tốc độ ổn định để đi qua.",
-      "explanationVi": "Nên giảm tốc độ trước đoạn bùn và giữ tốc độ ổn định để đi qua."
+      "text": "二輪車でぬかるみを走行するときは、スリップを防ぐために、通過しながらアクセルやブレーキを細かく操作して速度を調整するべきである。",
+      "answer": "×",
+      "explanation": "誤り。ぬかるみの中でアクセルやブレーキを操作すると、タイヤがスリップしやすく非常に危険である。手前で速度を落とし、一定の速度を保って通過しなければならない。",
+      "textVi": "Khi lái xe hai bánh qua đoạn đường bùn lầy, để tránh bị trượt, nên thao tác ga và phanh liên tục khi đang đi qua để điều chỉnh tốc độ.",
+      "explanationVi": "Sai. Nếu bạn thao tác ga hoặc phanh khi đang đi trong bùn, lốp xe rất dễ bị trượt và cực kỳ nguy hiểm. Bạn phải giảm tốc độ từ trước và giữ nguyên tốc độ đó để đi qua."
     },
     {
       "kind": "simple",
@@ -11872,17 +11815,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_6_10_2",
-      "chapter": "総合演習6",
-      "section": "6-83",
-      "text": "原動機付自転車の定員は、運転者用以外の座席のあるものは、2人である。",
-      "answer": "×",
-      "explanation": "原動機付自転車の定員は1名である。",
-      "textVi": "Xe gắn máy 50cc có chỗ ngồi cho người khác ngoài người lái thì số người tối đa là 2 người.",
-      "explanationVi": "Sai. Số người tối đa trên xe gắn máy 50cc là 1 người (chỉ người lái), không có chỗ chở thêm người."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_6_2",
       "chapter": "総合演習6",
       "section": "6-84",
@@ -11952,11 +11884,11 @@
       "id": "menkyogentsuki_gentsuki_10_8_3",
       "chapter": "総合演習6",
       "section": "6-90",
-      "text": "左右の見通しのきかない交差点を通行する際は、必ず徐行しなければならない。",
-      "answer": "×",
-      "explanation": "優先道路を通行する場合や、信号機等の交通整理が行われている場合は、徐行の必要はない。",
-      "textVi": "Khi đi qua giao lộ có tầm nhìn kém về hai bên, nhất định phải giảm tốc độ.",
-      "explanationVi": "Khi đi trên đường ưu tiên hoặc khi có tín hiệu giao thông v.v. thì không cần chạy chậm."
+      "text": "信号機がなく、優先道路でもない見通しのきかない交差点を通行する際は、必ず徐行しなければならない。",
+      "answer": "○",
+      "explanation": "正しい。見通しのきかない交差点であっても、優先道路を通行している場合や信号機等による交通整理が行われている場合は徐行の必要はありませんが、それ以外の場合は事故防止のために徐行が必要です。",
+      "textVi": "Khi đi qua giao lộ có tầm nhìn kém không có đèn tín hiệu và không phải là đường ưu tiên, bắt buộc phải giảm tốc độ.",
+      "explanationVi": "Đúng. Ngay cả khi giao lộ khuất tầm nhìn, nếu bạn đang đi trên đường ưu tiên hoặc có đèn tín hiệu thì không cần chạy chậm, nhưng trong các trường hợp khác thì bắt buộc phải giảm tốc độ để phòng tránh tai nạn."
     },
     {
       "kind": "simple",
@@ -11996,11 +11928,11 @@
       "id": "menkyogentsuki_gentsuki_7_30_4",
       "chapter": "総合演習6",
       "section": "6-94",
-      "text": "踏切用の信号が青色のとき、安全を確認すれば、一時停止しなくてもよい。",
-      "answer": "○",
-      "explanation": "問題文の記述が正しい。踏切用の信号が青色の場合、一時停止は不要である。",
-      "textVi": "Khi tín hiệu đèn tại đường sắt là màu xanh, nếu xác nhận an toàn thì không cần dừng lại một lần.",
-      "explanationVi": "Mô tả trong đề bài là đúng. Khi đèn tín hiệu đường sắt là màu xanh thì không cần dừng lại một lần."
+      "text": "踏切用の信号が青色であっても、安全のために必ず一時停止してから通行しなければならない。",
+      "answer": "×",
+      "explanation": "誤り。踏切用の信号が青色の場合、一時停止をする必要はない。ただし、踏切を通過する際は安全確認を十分に行うこと。",
+      "textVi": "Ngay cả khi tín hiệu đèn tại đường sắt là màu xanh, vì lý do an toàn bắt buộc phải dừng lại một lần rồi mới được đi qua.",
+      "explanationVi": "Sai. Khi đèn tín hiệu đường sắt là màu xanh, bạn không cần thiết phải dừng lại một lần. Tuy nhiên, khi đi qua đường sắt vẫn phải chú ý xác nhận an toàn đầy đủ."
     },
     {
       "kind": "simple",
@@ -12253,11 +12185,11 @@
       "id": "menkyogentsuki_gentsuki_8_23_2",
       "chapter": "総合演習6",
       "section": "6-117",
-      "text": "坂道での行き違いは、上りの車が下りの車に道を譲る。",
-      "answer": "×",
-      "explanation": "上り坂での発進の方が難しいため、下りの車が道を譲る。",
-      "textVi": "Khi tránh nhau trên dốc, xe lên dốc nhường đường cho xe xuống dốc.",
-      "explanationVi": "Vì khởi động trên dốc lên khó hơn nên xe xuống dốc nhường đường."
+      "text": "坂道での行き違いは、下りの車が上りの車に道を譲る。",
+      "answer": "○",
+      "explanation": "正しい。上り坂での発進の方が難しいため、下りの車が道を譲らなければならない（ただし、上り坂の途中に待避所がある場合は、上りの車が待避所に入って道を譲る）。",
+      "textVi": "Khi tránh nhau trên dốc, xe xuống dốc phải nhường đường cho xe lên dốc.",
+      "explanationVi": "Đúng. Vì khởi động trên dốc lên khó hơn nên xe xuống dốc phải nhường đường (Tuy nhiên, nếu trên dốc có chỗ tránh xe, xe lên dốc phải vào chỗ tránh để nhường đường)."
     },
     {
       "kind": "simple",

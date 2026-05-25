@@ -1500,14 +1500,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_5_4",
-      "chapter": "道路の走行方法",
-      "section": "歩行者のそばを通るとき1",
-      "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
-      "answer": "○",
-      "explanation": "正しい。問題文の通り、安全地帯に歩行者がいなければ、徐行しなくてもよい。ちなみに、歩行者がいる場合には、徐行せねばならない。",
-      "textVi": "Khi xe đi qua bên cạnh khu vực an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
-      "explanationVi": "Đúng. Nếu khu vực an toàn (đảo an toàn) hoàn toàn không có người đi bộ, bạn có thể đi qua mà không cần phải giảm tốc độ."
+      "id": "menkyogentsuki_gentsuki_anzenchitai_01",
+      "chapter": "安全地帯の通行",
+      "section": "安全地帯の側方の通過方法",
+      "text": "車で安全地帯のそばを通るときは、歩行者がいない場合であっても、必ず徐行して通過しなければならない。",
+      "answer": "×",
+      "explanation": "誤り。車で安全地帯のそばを通るとき、歩行者がいる場合は徐行しなければなりませんが、歩行者がいない場合は徐行する必要はありません。",
+      "textVi": "Khi điều khiển xe đi qua bên cạnh khu vực an toàn, ngay cả khi không có người đi bộ ở đó, vẫn bắt buộc phải giảm tốc độ chạy chậm (徐行) để đi qua.",
+      "explanationVi": "Sai. Khi đi qua bên cạnh khu vực an toàn, nếu có người đi bộ thì bắt buộc phải chạy chậm (徐行), nhưng nếu xác nhận không có người đi bộ thì không cần thiết phải chạy chậm."
     },
     {
       "kind": "simple",
@@ -1591,11 +1591,11 @@
       "id": "menkyogentsuki_gentsuki_3_7_2",
       "chapter": "道路の走行方法",
       "section": "横断歩道などを通過するとき",
-      "text": "横断歩道を横断しようとしている人がいたので、減速した。",
-      "answer": "×",
-      "explanation": "減速するのではなく、一時停止せねばならない。",
-      "textVi": "Vì có người đang chuẩn bị qua vạch qua đường nên đã giảm tốc độ.",
-      "explanationVi": "Sai. Nếu có người đang chuẩn bị băng qua vạch đi bộ, bạn bắt buộc phải dừng lại hẳn chứ không chỉ giảm tốc độ."
+      "text": "横断歩道を横断しようとしている人がいたので、一時停止して歩行者に道を譲った。",
+      "answer": "○",
+      "explanation": "横断歩道を横断しようとしている歩行者がいる場合は、一時停止をしてその通行を妨げてはならない。",
+      "textVi": "Vì có người đang chuẩn bị qua vạch qua đường nên tôi đã dừng hẳn để nhường đường cho người đi bộ.",
+      "explanationVi": "Khi có người đi bộ đang chuẩn bị băng qua vạch đi bộ, bắt buộc phải dừng xe tạm thời để không cản trở họ qua đường."
     },
     {
       "kind": "simple",
@@ -1647,11 +1647,11 @@
       "id": "menkyogentsuki_gentsuki_3_8_2",
       "chapter": "道路の走行方法",
       "section": "子どもや高齢者などのそばを通るとき",
-      "text": "盲導犬を連れた人のそばを通るときに、一時停止をして、安全を確認して通行した。",
-      "answer": "○",
-      "explanation": "目の不自由な人のそばを通行するときは、一時停止か徐行をする。",
-      "textVi": "Khi đi qua chỗ có người dắt chó dẫn đường, đã dừng lại một lần, xác nhận an toàn rồi mới đi qua.",
-      "explanationVi": "Đúng. Khi đi qua gần người khiếm thị hoặc người dắt chó dẫn đường, bạn phải dừng lại một lần hoặc giảm tốc độ để đảm bảo an toàn."
+      "text": "盲導犬を連れた人のそばを通るとき、進行の妨げになるので一時停止や徐行はせずに、そのままの速度で通行した。",
+      "answer": "×",
+      "explanation": "誤り。盲導犬を連れた人や目の不自由な人のそばを通行するときは、必ず一時停止か徐行をして、安全を確かめなければならない。",
+      "textVi": "Khi đi qua chỗ có người dắt chó dẫn đường, vì sợ gây cản trở giao thông nên đã không dừng lại hay giảm tốc độ mà cứ giữ nguyên tốc độ để đi qua.",
+      "explanationVi": "Sai. Khi đi qua gần người khiếm thị hoặc người dắt chó dẫn đường, bạn bắt buộc phải dừng lại hoặc giảm tốc độ để đảm bảo an toàn cho họ."
     },
     {
       "kind": "simple",
@@ -1669,12 +1669,12 @@
       "id": "menkyogentsuki_gentsuki_3_8_4",
       "chapter": "道路の走行方法",
       "section": "子どもや高齢者などのそばを通るとき",
-      "text": "このマークは、聴覚に障害のある人が運転していることを示している。",
-      "answer": "○",
-      "explanation": "聴覚障害者標識のマーク。",
+      "text": "このマークは、身体に障害のある人が運転していることを示すものであり、聴覚に障害があるかどうかまでは判断できない。",
+      "answer": "×",
+      "explanation": "誤り。このマークは「聴覚障害者標識」であり、聴覚に障害のある人が運転していることを明確に示している。",
       "image": "menkyogentsuki_104.png",
-      "textVi": "Biểu tượng này cho thấy có người bị khiếm thính đang lái xe.",
-      "explanationVi": "Đúng. Đây là nhãn dán biểu thị người lái xe có khiếm khuyết về thính giác."
+      "textVi": "Biểu tượng này chỉ ra rằng người lái xe có khuyết tật về cơ thể nói chung, không thể xác định cụ thể là người lái có bị khiếm thính hay không.",
+      "explanationVi": "Sai. Đây là nhãn dán dành cho người khiếm thính, biểu thị rõ ràng người lái xe là người có khiếm khuyết về thính giác."
     },
     {
       "kind": "simple",
@@ -1704,11 +1704,11 @@
       "id": "menkyogentsuki_gentsuki_3_9_2",
       "chapter": "道路の走行方法",
       "section": "交差点の通り方1",
-      "text": "見通しのきかない交差点では、信号の有無にかかわらず徐行せねばならない。",
-      "answer": "×",
-      "explanation": "「信号の有無にかかわらず」の部分が誤り。見通しのきかない交差点は、原則として徐行運転が必要である。しかし例外として、信号がある場合や、優先道路を走っている時は必要ない。",
-      "textVi": "Ở giao lộ có tầm nhìn kém, bất kể có tín hiệu đèn hay không đều phải giảm tốc độ.",
-      "explanationVi": "Sai. Tại các giao lộ khuất tầm nhìn, bạn không cần giảm tốc độ nếu có đèn tín hiệu hoặc đang đi trên đường ưu tiên."
+      "text": "信号機がなく、優先道路を通行していない見通しのきかない交差点では、徐行して通行しなければならない。",
+      "answer": "○",
+      "explanation": "正しい。見通しのきかない交差点で、信号機がない場合や、自車が優先道路を通行していない場合は、事故防止のため徐行しなければならない。",
+      "textVi": "Tại các giao lộ khuất tầm nhìn không có tín hiệu đèn và không phải là đường ưu tiên, bắt buộc phải giảm tốc độ để lưu thông.",
+      "explanationVi": "Đúng. Tại các giao lộ khuất tầm nhìn, nếu không có đèn tín hiệu và bạn không đi trên đường ưu tiên, bạn bắt buộc phải giảm tốc độ để đảm bảo an toàn, phòng tránh tai nạn."
     },
     {
       "kind": "simple",
@@ -4268,14 +4268,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_7_2",
+      "id": "menkyogentsuki_gentsuki_1_7_2_s1",
       "chapter": "総合演習1",
       "section": "1-6",
-      "text": "原動機付自転車は、一番左の車両通行帯を進行せねばならないので、通行区分が指定された車両通行帯であっても、常に一番左の車両通行帯を進行する。",
-      "answer": "×",
-      "explanation": "進行方向別に通行区分が指定されている場合は、その通行区分に従う。",
-      "textVi": "Xe gắn máy 50cc phải đi ở làn xe ngoài cùng bên trái, nên dù là làn xe có phân chia hướng đi vẫn luôn đi làn trái ngoài cùng.",
-      "explanationVi": "Sai. Khi có phân chia làn xe theo hướng đi, thì phải tuân theo sự phân chia đó, không nhất thiết phải luôn đi làn trái ngoài cùng."
+      "text": "原動機付自転車は原則として一番左の車両通行帯を進行しなければならないが、進行方向別に通行区分が指定されている交差点では、その指定された車両通行帯を進行しなければならない。",
+      "answer": "○",
+      "explanation": "正しい。原動機付自転車は原則として最も左側の車線を通行しますが、交差点の手前などで進行方向別の通行区分が指定されている場合は、その指定（交通規制）に従って走行する必要があります。",
+      "textVi": "Xe gắn máy 50cc về nguyên tắc phải đi ở làn đường ngoài cùng bên trái, nhưng tại các giao lộ có phân chia làn đường theo hướng đi thì bắt buộc phải tuân theo làn đường đã được chỉ định đó.",
+      "explanationVi": "Đúng. Xe gắn máy 50cc thông thường phải đi ở làn ngoài cùng bên trái, nhưng khi đi vào khu vực ngã tư có vạch hoặc biển báo phân làn theo hướng di chuyển thì phải tuân thủ theo quy định phân làn đó."
     },
     {
       "kind": "simple",
@@ -4382,7 +4382,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_5_5",
+      "id": "menkyogentsuki_gentsuki_1_5_5_s1",
       "chapter": "総合演習1",
       "section": "1-17",
       "text": "普通免許を受けて1年未満の人は、初心運転者標識をつける義務がある。",
@@ -4514,7 +4514,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_2_1",
+      "id": "menkyogentsuki_gentsuki_1_2_1_s1",
       "chapter": "総合演習1",
       "section": "1-30",
       "text": "路面電車を追い越す場合は、常にその左側を通行する。",
@@ -4693,7 +4693,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_1_3",
+      "id": "menkyogentsuki_gentsuki_7_1_3_s1",
       "chapter": "総合演習1",
       "section": "1-48",
       "text": "横断歩道に近付いたところ、横断歩道の直前に停止する車がいたが、横断する人が見えなかったので、徐行して進行した。",
@@ -4760,7 +4760,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_1_1",
+      "id": "menkyogentsuki_gentsuki_8_1_1_s1",
       "chapter": "総合演習1",
       "section": "1-54",
       "text": "前車が進路を変更しようとしていたので、急ブレーキをかけ、その車の進行を妨げないようにした。",
@@ -4883,7 +4883,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_5_2",
+      "id": "menkyogentsuki_gentsuki_1_5_2_s1",
       "chapter": "総合演習1",
       "section": "1-65",
       "text": "原動機付自転車を運転する際にかぶるヘルメットは、工事用のものでもかまわない。",
@@ -5005,14 +5005,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_1_4",
+      "id": "menkyogentsuki_gentsuki_8_1_4_s1",
       "chapter": "総合演習1",
       "section": "1-77",
-      "text": "右左折をしない場合、交差点を通行するときに徐行する必要はない。",
-      "answer": "×",
-      "explanation": "交通整理の行われていない交差点で、見通しの効かない場合・交差する道路が優先道路の場合・交差する道路の方が道幅が広い場合は、徐行する必要がある。",
-      "textVi": "Nếu không rẽ phải hay rẽ trái, khi đi qua giao lộ không cần giảm tốc độ.",
-      "explanationVi": "Tại giao lộ không có người điều khiển giao thông, khi tầm nhìn kém, khi đường giao nhau là đường ưu tiên, hay khi đường giao nhau có bề rộng lớn hơn thì cần phải giảm tốc độ."
+      "text": "交通整理の行われていない交差点では、たとえ直進する場合であっても、見通しが効かない場所や優先道路ではない場合などは徐行しなければならない。",
+      "answer": "○",
+      "explanation": "正しい。交通整理の行われていない交差点において、見通しが効かない場合や、交差する道路が優先道路の場合、または交差する道路の方が道幅が広い場合には、事故防止のため徐行しなければならない。",
+      "textVi": "Tại giao lộ không có người điều khiển giao thông, ngay cả khi đi thẳng, nếu tầm nhìn bị khuất hoặc không phải là đường ưu tiên thì bắt buộc phải giảm tốc độ.",
+      "explanationVi": "Đúng. Tại các giao lộ không có người điều khiển giao thông, trong trường hợp tầm nhìn kém, đường giao nhau là đường ưu tiên, hoặc đường giao nhau có bề rộng lớn hơn, bắt buộc phải giảm tốc độ để đảm bảo an toàn."
     },
     {
       "kind": "simple",
@@ -5083,7 +5083,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_11_4",
+      "id": "menkyogentsuki_gentsuki_1_11_4_s1",
       "chapter": "総合演習1",
       "section": "1-84",
       "text": "原動機付自転車の荷台に、子どもを1人乗せて運転した。",
@@ -5127,7 +5127,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_1_1",
+      "id": "menkyogentsuki_gentsuki_8_1_1_s2",
       "chapter": "標識・標示・信号",
       "section": "1-88",
       "text": "この標識のある道路は、一般の自動車は通行してもよい。",
@@ -5150,7 +5150,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_1_1",
+      "id": "menkyogentsuki_gentsuki_8_1_1_s3",
       "chapter": "総合演習1",
       "section": "1-90",
       "text": "駐車場や車庫などの出入り口から3メートル以内の場所では駐車が禁止されているが、その場所の利用者や関係者であれば、駐車をしてもよい。",
@@ -5161,7 +5161,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_4_2",
+      "id": "menkyogentsuki_gentsuki_1_4_2_s1",
       "chapter": "総合演習1",
       "section": "1-91",
       "text": "雨天のときはスリップしやすいため、停止するにはブレーキを強くかけるようにする。",
@@ -5408,7 +5408,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_6_2",
+      "id": "menkyogentsuki_gentsuki_1_6_2_s1",
       "chapter": "総合演習1",
       "section": "1-113",
       "text": "踏切を通行する際の安全確認は、目で見てすればよく、耳で聴く必要はない。",
@@ -6015,7 +6015,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_2_3",
+      "id": "menkyogentsuki_gentsuki_9_2_3_s1",
       "chapter": "総合演習2",
       "section": "2-46",
       "text": "消火栓や、指定消防水利の標識が設けられている位置から5メートル以内の場所では、駐車のみが禁じられている。",
@@ -6081,7 +6081,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_2_5_3",
+      "id": "menkyogentsuki_gentsuki_2_5_3_s1",
       "chapter": "総合演習2",
       "section": "2-52",
       "text": "免許証を携帯することを忘れて原付を運転すると、免許不携帯になる。",
@@ -6114,7 +6114,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_2_5",
+      "id": "menkyogentsuki_gentsuki_10_2_5_s1",
       "chapter": "総合演習2",
       "section": "2-55",
       "text": "二輪車に乗車する時は、四輪車の運転者が見落とさないよう、なるべく明るい服で運転する。",
@@ -6158,7 +6158,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_2_1",
+      "id": "menkyogentsuki_gentsuki_7_2_1_s1",
       "chapter": "総合演習2",
       "section": "2-59",
       "text": "交通事故の現場に偶然居合わせたときは、事故車両の移動や、負傷者の救護に進んで協力する。",
@@ -6169,7 +6169,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_2_5_4",
+      "id": "menkyogentsuki_gentsuki_2_5_4_s1",
       "chapter": "総合演習2",
       "section": "2-60",
       "text": "原動機付自転車で走行中に、エンジンの回転数が上がったままになっていたので、エンジンの点火スイッチを切り、エンジンの回転を止めた。",
@@ -6213,7 +6213,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_2_1_2",
+      "id": "menkyogentsuki_gentsuki_2_1_2_s1",
       "chapter": "総合演習2",
       "section": "2-64",
       "text": "原動機付自転車の定員には、運転者を含む。",
@@ -6482,7 +6482,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_2_2_2",
+      "id": "menkyogentsuki_gentsuki_2_2_2_s1",
       "chapter": "総合演習2",
       "section": "2-88",
       "text": "右腕を垂直に上に曲げる合図は、左折か左に進路変更するときの合図である。",
@@ -6559,7 +6559,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_2_4",
+      "id": "menkyogentsuki_gentsuki_7_2_4_s1",
       "chapter": "総合演習2",
       "section": "2-95",
       "text": "停止中の通学バスのそばを通るときは、バスのかげから人が飛び出してくるおそれがあるため、徐行して進行する。",
@@ -6681,7 +6681,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_2_4_1",
+      "id": "menkyogentsuki_gentsuki_2_4_1_s1",
       "chapter": "総合演習2",
       "section": "2-106",
       "text": "原動機付自転車でカーブを曲がるときは、あらかじめ減速し、カーブの後半で徐々に加速するようにする。",
@@ -6703,7 +6703,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_2_5",
+      "id": "menkyogentsuki_gentsuki_8_2_5_s1",
       "chapter": "標識・標示・信号",
       "section": "2-108",
       "text": "この標識は、左折可の標識である。",
@@ -6767,17 +6767,6 @@
       "explanation": "できるだけ道路外に、それができない場合は道路の左側に寄せて駐車する。",
       "textVi": "Khi động đất xảy ra và phải để xe lại để trú ẩn, nên dừng xe ở ngoài đường càng xa càng tốt.",
       "explanationVi": "Nên đặt ở ngoài đường càng xa càng tốt. Nếu không thể thì đỗ xe sát mép trái."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_26_4",
-      "chapter": "総合演習2",
-      "section": "2-114",
-      "text": "安全地帯がなく、乗降者がいないとき、路面電車との間に1.5メートル以上の間隔があったので、徐行して進行した。",
-      "answer": "○",
-      "explanation": "この場合でも、必ず徐行せねばならない。",
-      "textVi": "Khi không có điểm dừng đỗ an toàn và không có người lên xuống, khoảng cách với xe điện đường phố từ 1,5 mét trở lên nên đã giảm tốc độ và tiến hành.",
-      "explanationVi": "Đúng. Trong trường hợp này, bắt buộc phải giảm tốc độ."
     },
     {
       "kind": "simple",
@@ -6948,7 +6937,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_9_4",
+      "id": "menkyogentsuki_gentsuki_3_9_4_s1",
       "chapter": "総合演習3",
       "section": "3-6",
       "text": "信号機において、黄色の矢印の灯火信号は、路面電車のみに対するものである。",
@@ -6982,7 +6971,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_16_1",
+      "id": "menkyogentsuki_gentsuki_3_16_1_s1",
       "chapter": "総合演習3",
       "section": "3-9",
       "text": "運転免許を紛失した場合は、警察に届けを出した場合に限り、車を運転してもよい。",
@@ -7029,15 +7018,15 @@
       "id": "menkyogentsuki_gentsuki_8_9_1",
       "chapter": "総合演習3",
       "section": "3-13",
-      "text": "横断歩道に近付いたときは、横断する歩行者のあるなしに関わらず、徐行せねばならない。",
-      "answer": "×",
-      "explanation": "明らかに歩行者がいない場合は、徐行の必要はない。",
-      "textVi": "Khi đến gần vạch qua đường, dù có hay không có người qua đường, đều phải giảm tốc độ.",
-      "explanationVi": "Khi rõ ràng không có người đi bộ thì không cần phải giảm tốc độ."
+      "text": "横断歩道に近付いたときは、歩行者がいるかどうかが明らかでないときは、横断歩道の手前で停止できるように徐行しなければならない。",
+      "answer": "○",
+      "explanation": "正しい。横断歩道に近づいた際、歩行者がいるかどうかが明らかでないときは、横断歩道の手前で停止できるように徐行しなければなりません。",
+      "textVi": "Khi đến gần vạch qua đường, nếu không rõ có người đi bộ hay không, bắt buộc phải giảm tốc độ để có thể dừng lại ngay trước vạch qua đường.",
+      "explanationVi": "Đúng. Khi đến gần vạch qua đường, nếu không chắc chắn có người đi bộ hay không, bạn có nghĩa vụ phải giảm tốc độ để có thể dừng lại kịp thời trước vạch."
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_17_2",
+      "id": "menkyogentsuki_gentsuki_3_17_2_s1",
       "chapter": "総合演習3",
       "section": "3-14",
       "text": "原動機付自転車で走行するときは、アクセルとブレーキの両方を使って速度を調整する。",
@@ -7092,7 +7081,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_5_1",
+      "id": "menkyogentsuki_gentsuki_3_5_1_s1",
       "chapter": "総合演習3",
       "section": "3-19",
       "text": "夜間、駐車禁止でない場所に6時間駐車した。",
@@ -7252,22 +7241,22 @@
       "id": "menkyogentsuki_gentsuki_8_27_5",
       "chapter": "総合演習3",
       "section": "3-33",
-      "text": "内輪差とは、車が曲がるとき、前輪が後輪より内側を通ることによる軌跡の差を呼ぶ。",
-      "answer": "×",
-      "explanation": "車が曲がるときには、後輪が前輪より内側を通る。",
-      "textVi": "Nội tuyến là hiệu số quỹ đạo do bánh trước đi vào bên trong so với bánh sau khi xe quẹo.",
-      "explanationVi": "Khi xe cua, bánh sau đi vào phía trong so với bánh trước."
+      "text": "内輪差とは、車が曲がるとき、後輪が前輪より内側を通ることによる軌跡の差を呼ぶ。",
+      "answer": "○",
+      "explanation": "内輪差とは、車が右左折する際、後輪が前輪の通った跡よりも内側を通るために生じる軌跡の差のことである。",
+      "textVi": "Nội luân sai hay còn gọi là nội tuyến (Uchirin-sa) là hiệu số quỹ đạo do bánh sau đi vào bên trong so với bánh trước khi xe quẹo.",
+      "explanationVi": " Nội luân sai là sự chênh lệch về quỹ đạo phát sinh khi bánh sau đi vào phía trong hơn so với dấu vết của bánh trước khi xe thực hiện rẽ phải hoặc rẽ trái."
     },
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_21_4",
       "chapter": "総合演習3",
       "section": "3-34",
-      "text": "交通整理の行われていない横断歩道の手前にトラックが停止していたので、安全のため徐行してトラックの側方を通過した。",
-      "answer": "×",
-      "explanation": "この場合、トラックの前に出る前に一時停止して、横断者の安全を確かめねばならない。",
-      "textVi": "Vì có xe tải dừng trước vạch qua đường không có người điều khiển giao thông nên để đảm bảo an toàn đã giảm tốc độ và đi qua bên cạnh xe tải.",
-      "explanationVi": "Trong trường hợp này, trước khi vượt lên trước xe tải phải dừng lại một lần và xác nhận an toàn cho người qua đường."
+      "text": "交通整理の行われていない横断歩道の手前にトラックが停止していたので、一時停止して歩行者の安全を確かめてから側方を通過した。",
+      "answer": "○",
+      "explanation": "正しい。横断歩道の手前に自動車などが停止しているときは、その横を通過する前に必ず一時停止をして、横断歩道を渡っている歩行者がいないか安全を確認しなければならない。",
+      "textVi": "Vì có xe tải dừng trước vạch qua đường không có người điều khiển giao thông, nên tôi đã dừng lại hẳn để xác nhận an toàn cho người đi bộ rồi mới đi qua bên cạnh xe tải.",
+      "explanationVi": "Đúng. Khi có xe cộ dừng trước vạch đi bộ, trước khi vượt lên phía trước, bạn bắt buộc phải dừng xe tạm thời để xác nhận xem có người đi bộ nào đang băng qua đường hay không."
     },
     {
       "kind": "simple",
@@ -7308,11 +7297,11 @@
       "id": "menkyogentsuki_gentsuki_8_8_2",
       "chapter": "総合演習3",
       "section": "3-38",
-      "text": "児童・幼児が乗り降りするために停車している通学・通園バスの側方を通行するときは、乗降者がいなくても、必ず徐行して通過する。",
-      "answer": "○",
-      "explanation": "正しい。児童や幼児の急な飛び出しを防ぐためである。ただし、一般の路線バスの側方を通行するときは、徐行でなくてよい。",
-      "textVi": "Khi đi qua bên cạnh xe buýt đưa đón học sinh/tre em đang dừng để lên xuống, dù không có người lên xuống cũng phải giảm tốc độ để đi qua.",
-      "explanationVi": "Đúng. Vì để phòng tránh trẻ nhỏ đột ngột chạy ra. Tuy nhiên, khi đi qua cạnh xe buýt thông thường thì không bắt buộc phải giảm tốc độ."
+      "text": "児童・幼児が乗り降りするために停車している通学・通園バスの側方を通行するときは、乗降者がいなければ徐行せずにそのままの速度で通過してよい。",
+      "answer": "×",
+      "explanation": "誤り。通学・通園バスが停車している場合、乗降者の有無にかかわらず、側方を通過する際は必ず徐行しなければならない。",
+      "textVi": "Khi đi qua bên cạnh xe buýt đưa đón học sinh/trẻ em đang dừng để lên xuống, nếu không có người lên xuống thì không cần giảm tốc độ và cứ giữ nguyên tốc độ để đi qua.",
+      "explanationVi": "Sai. Khi xe buýt đưa đón học sinh/trẻ em đang dừng, bất kể có người lên xuống hay không, khi đi qua bên cạnh bắt buộc phải giảm tốc độ (徐行)."
     },
     {
       "kind": "simple",
@@ -7341,11 +7330,11 @@
       "id": "menkyogentsuki_gentsuki_10_7_5",
       "chapter": "総合演習3",
       "section": "3-41",
-      "text": "交差点付近でパトカーが接近してきたが、サイレンを鳴らしていなかったので、進路を譲らなかった。",
-      "answer": "○",
-      "explanation": "緊急用務でない自動車は、進路を譲る必要はない。",
-      "textVi": "Gần giao lộ có xe tuần tra đến gần nhưng không bật còi nên đã không nhường đường.",
-      "explanationVi": "Xe không phải xe ưu tiên không cần nhường đường."
+      "text": "交差点付近でパトカーが接近してきたときは、サイレンを鳴らしていない場合であっても、必ず交差点を避けて進路を譲らなければならない。",
+      "answer": "×",
+      "explanation": "誤り。パトカーなどの緊急自動車に進路を譲らなければならないのは、サイレンを鳴らし、赤色の灯火を点灯させて「緊急走行（緊急用務）」を行っているときだけである。サイレンを鳴らしていない場合は一般の自動車と同じ扱いとなるため、進路を譲る必要はない。",
+      "textVi": "Khi có xe tuần tra (xe cảnh sát) đến gần khu vực ngã tư, ngay cả khi xe không bật còi hú, vẫn bắt buộc phải tránh khỏi ngã tư và nhường đường cho xe đó.",
+      "explanationVi": "Sai. Chỉ phải nhường đường cho các xe ưu tiên như xe cảnh sát khi các xe này đang làm nhiệm vụ khẩn cấp (có bật còi hú và nhấp nháy đèn màu đỏ). Trường hợp xe không bật còi hú thì được tính như xe ô tô thông thường, không nhất thiết phải nhường đường."
     },
     {
       "kind": "simple",
@@ -7504,7 +7493,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_4_4",
+      "id": "menkyogentsuki_gentsuki_3_4_4_s1",
       "chapter": "総合演習3",
       "section": "3-56",
       "text": "原動機付自転車は転倒するおそれがないので、気を付けなくてよい",
@@ -7593,7 +7582,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_3_2",
+      "id": "menkyogentsuki_gentsuki_8_3_2_s1",
       "chapter": "総合演習3",
       "section": "3-65",
       "text": "警察官が灯火を横に振っているとき、その振られている方向と平行に走る交通にとっては、青色信号と同じ意味である。",
@@ -7795,25 +7784,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_14_2",
-      "chapter": "総合演習3",
-      "section": "3-83",
-      "text": "安全地帯のない停留所で、停止している路面電車に乗り降りする人がいるときは、後方で停止して待たねばならない。",
-      "answer": "○",
-      "explanation": "問題文の記述が正しい。安全地帯のない停留所では、後方で停止して待たねばならない。",
-      "textVi": "Tại bến xe điện không có khu vực an toàn, khi có người lên xuống xe điện đang dừng, phải dừng lại phía sau và chờ.",
-      "explanationVi": "Mô tả trong đề bài là đúng. Ở bến xe không có vạch an toàn, phải dừng lại phía sau và đợi."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_2",
       "chapter": "総合演習3",
       "section": "3-84",
-      "text": "右折の合図は、その行為をしようとする地点の30メートル手前で行う。",
-      "answer": "○",
-      "explanation": "正しい。ちなみに、左折の合図もその地点の30メートル手前で行う。",
-      "textVi": "Tín hiệu xi nhan rẽ phải thực hiện 30 mét trước điểm muốn thực hiện hành động đó.",
-      "explanationVi": "Đúng. Nhân tiện, tín hiệu rẽ trái cũng phải được bật trước 30 mét tại điểm đó."
+      "text": "右折や左折の合図は、交差点の手前であれば、地点に関係なく直前に行えばよい。",
+      "answer": "×",
+      "explanation": "誤り。右折や左折の合図は、その地点の30メートル手前で行う必要がある。",
+      "textVi": "Tín hiệu rẽ phải hoặc rẽ trái có thể thực hiện ngay trước điểm rẽ, miễn là trước ngã tư thì không quan trọng khoảng cách.",
+      "explanationVi": "Sai. Tín hiệu rẽ phải hoặc rẽ trái bắt buộc phải thực hiện trước điểm rẽ 30 mét."
     },
     {
       "kind": "simple",
@@ -7873,7 +7851,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_3_4",
+      "id": "menkyogentsuki_gentsuki_7_3_4_s1",
       "chapter": "総合演習3",
       "section": "3-90",
       "text": "初心者マークをつけた車の追い抜きは、特に禁止されていない。",
@@ -7907,7 +7885,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_9_2",
+      "id": "menkyogentsuki_gentsuki_3_9_2_s1",
       "chapter": "総合演習3",
       "section": "3-93",
       "text": "路面電車の運行時間外は、軌道敷内での駐停車は禁止ではない。",
@@ -8097,18 +8075,18 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_3_5",
+      "id": "menkyogentsuki_gentsuki_7_3_5_s1",
       "chapter": "総合演習3",
       "section": "3-110",
-      "text": "横断歩道に近付いたとき、横断している人が自車の存在に気付き止まったが、一時停止して歩行者に通行させた。",
-      "answer": "○",
-      "explanation": "歩行者が横断歩道を横断しているときは、一時停止して、歩行者の通行を妨げないようにする。",
-      "textVi": "Khi đến gần vạch qua đường, người qua đường nhận ra xe và dừng lại, đã dừng lại một lần và nhường đường cho người đi qua.",
-      "explanationVi": "Khi có người đang qua vạch qua đường thì phải dừng lại một lần và không được cản trở người đi bộ."
+      "text": "横断歩道に近付いたとき、横断中の歩行者が自車の存在に気付き止まったので、歩行者の通行を妨げないよう徐行して通過した。",
+      "answer": "×",
+      "explanation": "誤り。横断歩道に歩行者がいる（横断しようとしている、または横断している）ときは、必ず一時停止をして歩行者の通行を妨げないようにしなければならない。徐行のみで通過してはならない。",
+      "textVi": "Khi đến gần vạch qua đường, người đi bộ đang qua đường đã nhận ra xe của tôi và dừng lại, vì vậy tôi đã giảm tốc độ để đi qua mà không cản trở họ.",
+      "explanationVi": "Sai. Khi có người đi bộ đang trên vạch qua đường (hoặc đang định qua), bắt buộc phải dừng xe tạm thời để nhường đường. Không được phép chỉ giảm tốc độ rồi đi qua."
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_8_2",
+      "id": "menkyogentsuki_gentsuki_3_8_2_s1",
       "chapter": "総合演習3",
       "section": "3-111",
       "text": "一方通行の道路では、いかなる場合でも道路の右側を通行してはならない。",
@@ -8130,7 +8108,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_3_3_3",
+      "id": "menkyogentsuki_gentsuki_3_3_3_s1",
       "chapter": "総合演習3",
       "section": "3-113",
       "text": "車両横断禁止の標識がある場所でも、右折することはできる。",
@@ -8163,7 +8141,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_3_2",
+      "id": "menkyogentsuki_gentsuki_8_3_2_s2",
       "chapter": "総合演習3",
       "section": "3-117",
       "text": "初心運転者標識は、普通免許を受けて1年未満の、運転に自信のない人がつける標識である。",
@@ -8174,7 +8152,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_3_5",
+      "id": "menkyogentsuki_gentsuki_7_3_5_s2",
       "chapter": "総合演習3",
       "section": "3-118",
       "text": "免許証の再交付を受けたのち、紛失した免許証が見つかったが、そのまま自分で保管した。",
@@ -8251,7 +8229,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_4_4",
+      "id": "menkyogentsuki_gentsuki_10_4_4_s1",
       "chapter": "総合演習4",
       "section": "4-2",
       "text": "同一方向に3つの車両通行帯がある道路において、原動機付自転車で進行するときは、最も左よりの通行帯を軽車両のために空け、できるだけ右側の通行帯を通行する。",
@@ -8431,7 +8409,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_1_3",
+      "id": "menkyogentsuki_gentsuki_4_1_3_s1",
       "chapter": "総合演習4",
       "section": "4-18",
       "text": "下り坂を走行中に、ブレーキがきかなくなったときは、減速チェンジをしてエンジンブレーキを使い、車を停止させる努力をする。",
@@ -8464,7 +8442,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_10_3",
+      "id": "menkyogentsuki_gentsuki_4_10_3_s1",
       "chapter": "総合演習4",
       "section": "4-21",
       "text": "原動機付自転車の運転の妨げとなるような荷物の積み方をしてはならない。",
@@ -8530,7 +8508,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_4_2",
+      "id": "menkyogentsuki_gentsuki_7_4_2_s1",
       "chapter": "標識・標示・信号",
       "section": "4-27",
       "text": "この標識は、前方の交差する道路が優先道路であることを示す。",
@@ -8542,7 +8520,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_10_4",
+      "id": "menkyogentsuki_gentsuki_4_10_4_s1",
       "chapter": "総合演習4",
       "section": "4-28",
       "text": "正しい乗車姿勢で原動機付自転車に乗ることは、疲労を軽減する効果はない。",
@@ -8583,17 +8561,6 @@
       "explanation": "徐行して進行してもよいし、状況によっては一時停止する。",
       "textVi": "Đã giảm tốc độ để đi qua bên cạnh xe buýt đưa đón học sinh đang dừng để lên xuống.",
       "explanationVi": "Có thể chạy chậm để tiến vào, hoặc trong một số trường hợp thì dừng lại."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_7_3",
-      "chapter": "総合演習4",
-      "section": "4-32",
-      "text": "横断歩道のない場所に限り、車が優先であるので、横断する歩行者に道を譲る必要はない。",
-      "answer": "×",
-      "explanation": "横断歩道のない交差点であっても、車は歩行者の横断を妨げてはならない。",
-      "textVi": "Vì trên đường xe cơ giới có quyền ưu tiên, nên không cần nhường đường cho người đi bộ đang qua đường ở nơi không có vạch qua đường.",
-      "explanationVi": "Dù là giao lộ không có vạch qua đường thì xe cơ giới cũng không được cản trở người đi bộ qua đường."
     },
     {
       "kind": "simple",
@@ -8721,7 +8688,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_23_2",
+      "id": "menkyogentsuki_gentsuki_4_23_2_s1",
       "chapter": "総合演習4",
       "section": "4-44",
       "text": "走行中に積み荷を落としてしまったので、その場で停止し、素早く積み荷を回収した。",
@@ -8775,11 +8742,11 @@
       "explanation": "ひし形の標示は横断歩道または自転車横断帯の予告である。",
       "image": "menkyogentsuki_350.png",
       "textVi": "Vạch kẻ này biểu thị phía trước có đèn tín hiệu.",
-      "explanationVi":"Sai. Vạch hình thoi là biển báo hiệu phía trước có vạch qua đường cho người đi bộ hoặc xe đạp."
+      "explanationVi": "Sai. Vạch hình thoi là biển báo hiệu phía trước có vạch qua đường cho người đi bộ hoặc xe đạp."
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_4_2",
+      "id": "menkyogentsuki_gentsuki_9_4_2_s1",
       "chapter": "総合演習4",
       "section": "4-49",
       "text": "この標識のある交差点を通行する際は、原動機付自転車は右折することができない。",
@@ -8907,11 +8874,11 @@
       "id": "menkyogentsuki_gentsuki_4_23_12",
       "chapter": "総合演習4",
       "section": "4-60",
-      "text": "横断歩道のない場所に限り、車が優先であるので、横断する歩行者に道を譲る必要はない。",
-      "answer": "×",
-      "explanation": "横断歩道のない交差点であっても、車は歩行者の横断を妨げてはならない。",
-      "textVi": "Chỉ khi không có vạch qua đường thì xe mới được ưu tiên, nên không cần nhường đường cho người đi bộ qua đường.",
-      "explanationVi": "Sai. Dù là giao lộ không có vạch qua đường, xe cơ giới cũng không được cản trở người đi bộ qua đường."
+      "text": "横断歩道のない交差点であっても、車は横断しようとしている歩行者の通行を妨げてはならない。",
+      "answer": "○",
+      "explanation": "横断歩道がない交差点であっても、歩行者が道路を横断している（または横断しようとしている）ときは、その通行を妨げてはなりません。",
+      "textVi": "Ngay cả tại giao lộ không có vạch qua đường, xe cơ giới cũng không được cản trở việc đi qua của người đi bộ đang muốn qua đường.",
+      "explanationVi": "Dù là giao lộ không có vạch qua đường, nếu người đi bộ đang qua đường (hoặc đang muốn qua đường) thì xe cơ giới tuyệt đối không được cản trở sự lưu thông của họ."
     },
     {
       "kind": "simple",
@@ -8993,14 +8960,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_4_5",
+      "id": "menkyogentsuki_gentsuki_4_4_5_s1",
       "chapter": "総合演習4",
       "section": "4-69",
-      "text": "二輪車も内輪差があるので、特に左折の際は歩行者や自転車を巻きこまないように注意が必要である。",
-      "answer": "○",
-      "explanation": "内輪差とは、右左折の際、後輪が前輪よりも内側を通るその差のことをいう。二輪車であっても内輪差はあるので注意が必要である。",
-      "textVi": "Xe 2 bánh cũng có hiện tượng góc quay trong, đặc biệt khi rẽ trái cần chú ý không cuốn người đi bộ và xe đạp.",
-      "explanationVi": "Đúng. Góc quay trong là hiện tượng bánh sau đi vào bên trong so với bánh trước khi rẽ. Dù là xe 2 bánh vẫn có góc quay trong nên cần đặc biệt chú ý."
+      "text": "二輪車は四輪車と違って構造上内輪差が生じないため、左折の際に歩行者や自転車を巻き込む心配はない。",
+      "answer": "×",
+      "explanation": "誤り。二輪車であっても、右左折の際には後輪が前輪よりも内側を通る「内輪差」が生じる。そのため、特に左折時は歩行者や自転車を巻き込まないように十分な注意が必要である。",
+      "textVi": "Xe hai bánh khác với xe bốn bánh là về mặt cấu tạo sẽ không phát sinh hiện tượng góc quay trong (nội luân sai), do đó khi rẽ trái không cần lo lắng về việc cuốn người đi bộ hay xe đạp vào gầm.",
+      "explanationVi": "Sai. Dù là xe hai bánh thì khi rẽ trái hoặc rẽ phải vẫn phát sinh hiện tượng 'góc quay trong' (bánh sau đi vào phía bên trong so với quỹ đạo của bánh trước). Do đó, đặc biệt là khi rẽ trái, cần phải hết sức chú ý để không cuốn người đi bộ hoặc xe đạp vào."
     },
     {
       "kind": "simple",
@@ -9070,7 +9037,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_3_1",
+      "id": "menkyogentsuki_gentsuki_4_3_1_s1",
       "chapter": "総合演習4",
       "section": "4-76",
       "text": "横断歩道に近付いたとき、横断している人が自車の存在に気付き止まったが、一時停止して横断させた。",
@@ -9081,7 +9048,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_4_1",
+      "id": "menkyogentsuki_gentsuki_9_4_1_s1",
       "chapter": "総合演習4",
       "section": "4-77",
       "text": "同一方向に3つの車両通行帯がある道路において、原動機付自転車で進行するときは、交通量の少ない車両通行帯を選んで通行する。",
@@ -9092,7 +9059,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_2_4",
+      "id": "menkyogentsuki_gentsuki_4_2_4_s1",
       "chapter": "総合演習4",
       "section": "4-78",
       "text": "横断歩道や自転車横断帯の前後30メートルは、追い越し禁止である。",
@@ -9126,7 +9093,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_6_5",
+      "id": "menkyogentsuki_gentsuki_4_6_5_s1",
       "chapter": "総合演習4",
       "section": "4-81",
       "text": "人を待つために継続的に停止していれば、それは駐車である。",
@@ -9159,14 +9126,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_22_1",
-      "chapter": "総合演習4",
-      "section": "4-84",
-      "text": "原動機付自転車が交差点を左折するときは、あらかじめできるだけ道路の左端に寄り、交差点の側端に沿って徐行しなければならない。",
-      "answer": "○",
-      "explanation": "正しい。道路交通法34条1項の通りである。なお、そのように定められている理由は、左折する際に、二輪車等の巻きこみを避けるためである。",
-      "textVi": "Khi xe gắn máy rẽ trái ở giao lộ, phải đi sát phía bên trái của đường càng xa càng tốt từ trước, và giảm tốc độ dọc theo mép giao lộ.",
-      "explanationVi": "Đúng. Theo Điều 34 Khoản 1 Luật Giao thông đường bộ. Lý do được quy định như vậy là để tránh cuốn xe hai bánh vào khi rẽ trái."
+      "id": "menkyogentsuki_gentsuki_sasetsu_01",
+      "chapter": "交差点の通行",
+      "section": "左折の方法",
+      "text": "原動機付自転車が交差点を左折するときは、あらかじめ道路の中央に寄り、交差点の内側を大回りして急いで通過しなければならない。",
+      "answer": "×",
+      "explanation": "誤り。原動機付自転車が左折するときは、あらかじめできるだけ道路の左端に寄り、交差点の側端（そくたん）に沿って徐行しなければならない。",
+      "textVi": "Khi xe gắn máy rẽ trái tại ngã tư, phải lấn sẵn vào giữa đường, sau đó rẽ một vòng rộng ở phía trong ngã tư và khẩn trương đi qua.",
+      "explanationVi": "Sai. Khi xe gắn máy rẽ trái, về nguyên tắc phải áp sát vào mép đường bên trái từ trước, sau đó di chuyển chậm (徐行) dọc theo mép góc của ngã tư."
     },
     {
       "kind": "simple",
@@ -9292,7 +9259,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_4_4",
+      "id": "menkyogentsuki_gentsuki_9_4_4_s1",
       "chapter": "総合演習4",
       "section": "4-96",
       "text": "夜間は道路の交通量が少ないので、昼間より速度を上げて運転する方がよい。",
@@ -9303,7 +9270,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_4_5",
+      "id": "menkyogentsuki_gentsuki_8_4_5_s1",
       "chapter": "総合演習4",
       "section": "4-97",
       "text": "人を待つために継続的に停止していれば、それは停車である。",
@@ -9347,7 +9314,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_4_7_3",
+      "id": "menkyogentsuki_gentsuki_4_7_3_s1",
       "chapter": "総合演習4",
       "section": "4-101",
       "text": "進路変更するときは、合図をした後に安全を確認し、進路を変更する。",
@@ -9417,11 +9384,11 @@
       "id": "menkyogentsuki_gentsuki_4_29_4",
       "chapter": "総合演習4",
       "section": "4-107",
-      "text": "横断中の歩行者が自車に気付いていなかったので、警音器を鳴らして注意した。",
-      "answer": "×",
-      "explanation": "警音器を鳴らすのではなく、歩行者の通行を妨げないようにする。",
-      "textVi": "Vì người đang qua đường không nhận ra xe của mình nên đã bấm còi để cảnh báo.",
-      "explanationVi": "Sai. Không được bấm còi khi người đi bộ đang qua đường, mà phải đảm bảo không cản trở họ."
+      "text": "横断中の歩行者が自車に気付いていない場合でも、警音器を鳴らして合図するのではなく、歩行者の通行を妨げないように一時停止して道を譲らなければならない。",
+      "answer": "○",
+      "explanation": "正しい。歩行者が自車に気付いていない場合であっても、警音器（クラクション）を鳴らすことは禁じられており、歩行者の通行を妨げないように一時停止して道を譲る義務がある。",
+      "textVi": "Ngay cả khi người đi bộ qua đường không nhận ra xe của mình, cũng không được bấm còi để báo hiệu, mà phải dừng lại nhường đường để không cản trở họ qua đường.",
+      "explanationVi": "Đúng. Ngay cả khi người đi bộ không chú ý đến xe, việc bấm còi là bị cấm. Thay vào đó, bạn có nghĩa vụ phải dừng xe tạm thời để nhường đường và đảm bảo không gây cản trở cho người đi bộ."
     },
     {
       "kind": "simple",
@@ -9549,7 +9516,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_4_3",
+      "id": "menkyogentsuki_gentsuki_10_4_3_s1",
       "chapter": "総合演習4",
       "section": "4-119",
       "text": "夜間の運転時に、前照灯をつけずに運転した。",
@@ -9594,7 +9561,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_4_2",
+      "id": "menkyogentsuki_gentsuki_9_4_2_s2",
       "chapter": "総合演習4",
       "section": "4-123",
       "text": "進路を変えて前車の側方を通過し、前方に出る行為は、追い抜きではなく、追い越しである。",
@@ -9627,7 +9594,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_1_4",
+      "id": "menkyogentsuki_gentsuki_5_1_4_s1",
       "chapter": "総合演習5",
       "section": "5-2",
       "text": "車両通行帯のない道路では、原則として原動機付自転車は中央寄りの部分を通行する。",
@@ -9774,7 +9741,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_7_1",
+      "id": "menkyogentsuki_gentsuki_5_7_1_s1",
       "chapter": "総合演習5",
       "section": "5-15",
       "text": "車が他の車を追い越すとき、前車の左側に十分な間隔があれば、左側から追い越しても構わない。",
@@ -9840,7 +9807,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_5_2",
+      "id": "menkyogentsuki_gentsuki_9_5_2_s1",
       "chapter": "総合演習5",
       "section": "5-22",
       "text": "警察官が腕を水平に上げている場合、平行する交通は、青色の灯火信号と同じ意味である。",
@@ -9872,18 +9839,7 @@
       "textVi": "Ở giao lộ này, xe A không được phép cản trở xe B đang đi.",
       "explanationVi": "Làn đường của xe B là đường ưu tiên."
     },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_7_3",
-      "chapter": "総合演習5",
-      "section": "5-25",
-      "text": "交通整理が行われている片側3車線の交差点では、原動機付自転車は二段階右折をする。",
-      "answer": "○",
-      "explanation": "この場合、原動機付自転車は、二段階右折をする。",
-      "textVi": "Ở giao lộ có 3 làn một bên có người điều khiển giao thông, xe gắn máy thực hiện rẽ phải hai giai đoạn.",
-      "explanationVi": "Trong trường hợp này, xe gắn máy phải rẽ phải hai giai đoạn."
-    },
-    {
+      {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_19_4",
       "chapter": "総合演習5",
@@ -9896,7 +9852,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_5_3",
+      "id": "menkyogentsuki_gentsuki_9_5_3_s1",
       "chapter": "総合演習5",
       "section": "5-27",
       "text": "横断歩道に近付いたとき、横断している人が自車の存在に気付き止まったので、徐行して進行した。",
@@ -10053,17 +10009,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_7_4",
-      "chapter": "総合演習5",
-      "section": "5-42",
-      "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
-      "answer": "○",
-      "explanation": "正しい。問題文の通り、安全地帯に歩行者がいなければ、徐行しなくてもよい。ちなみに、歩行者がいる場合には、徐行せねばならない。",
-      "textVi": "Khi xe đi qua bên cạnh khu vực an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
-      "explanationVi": "Đúng. Như đề bài đã nêu, nếu không có người đi bộ trên vạch an toàn thì không cần phải chạy chậm. Tuy nhiên, nếu có người đi bộ thì phải chạy chậm."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_17_4",
       "chapter": "総合演習5",
       "section": "5-43",
@@ -10086,7 +10031,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_5_3",
+      "id": "menkyogentsuki_gentsuki_9_5_3_s2",
       "chapter": "総合演習5",
       "section": "5-45",
       "text": "前車を追い越す際に、危険を感じたので、警音器を使用した。",
@@ -10164,7 +10109,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_5_5",
+      "id": "menkyogentsuki_gentsuki_10_5_5_s1",
       "chapter": "総合演習5",
       "section": "5-52",
       "text": "初心運転者標識や、高齢運転者標識を付けている車を追い越したり、追い抜いたりすることは禁止されている。",
@@ -10263,7 +10208,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_10_1",
+      "id": "menkyogentsuki_gentsuki_5_10_1_s1",
       "chapter": "総合演習5",
       "section": "5-61",
       "text": "赤色の点滅信号のときは、車は必ず一時停止しなければならない。",
@@ -10274,7 +10219,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_9_5",
+      "id": "menkyogentsuki_gentsuki_5_9_5_s1",
       "chapter": "総合演習5",
       "section": "5-62",
       "text": "徐行とは、その時の速度よりも落として運転することである。",
@@ -10363,7 +10308,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_5_2",
+      "id": "menkyogentsuki_gentsuki_9_5_2_s2",
       "chapter": "総合演習5",
       "section": "5-70",
       "text": "交通事故を起こしてしまったら、民事上の話しあいを円滑にするため、まずは保険会社に連絡する。",
@@ -10399,11 +10344,11 @@
       "id": "menkyogentsuki_gentsuki_8_16_3",
       "chapter": "総合演習5",
       "section": "5-73",
-      "text": "安全地帯がなく、乗降者がいないとき、路面電車との間に1.5メートル以上の間隔があったので、徐行して進行した。",
-      "answer": "○",
-      "explanation": "この場合でも、必ず徐行せねばならない。",
-      "textVi": "Khi không có khu vực an toàn và không có người lên xuống, vì có khoảng cách hơn 1,5 mét với xe điện đang dừng ở bến nên đã giảm tốc độ để đi qua.",
-      "explanationVi": "Trong trường hợp này cũng nhất thiết phải giảm tốc độ."
+      "text": "安全地帯がなく、乗降者がいないとき、路面電車との間に1.5メートル以上の間隔があったので、徐行せずにそのまま通過した。",
+      "answer": "×",
+      "explanation": "誤り。安全地帯がない場合、路面電車との間に1.5メートル以上の間隔があっても、路面電車の乗降者がいるかどうかにかかわらず、必ず徐行して進行しなければならない。",
+      "textVi": "Khi không có khu vực an toàn và không có người lên xuống, vì đã có khoảng cách hơn 1,5 mét với xe điện, nên tôi đã không chạy chậm mà cứ thế đi qua.",
+      "explanationVi": "Sai. Trong trường hợp không có khu vực an toàn, dù có khoảng cách trên 1,5 mét với xe điện, thì bất kể có người lên xuống hay không, bắt buộc vẫn phải chạy chậm (徐行) để đi qua."
     },
     {
       "kind": "simple",
@@ -10441,7 +10386,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_8_3",
+      "id": "menkyogentsuki_gentsuki_5_8_3_s1",
       "chapter": "総合演習5",
       "section": "5-77",
       "text": "トンネル内では、車両通行帯の有無に関わらず、前の車を追い越してはならない。",
@@ -10475,7 +10420,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_5_5",
+      "id": "menkyogentsuki_gentsuki_9_5_5_s1",
       "chapter": "標識・標示・信号",
       "section": "5-80",
       "text": "この標示のある車両通行帯から右折することができる。",
@@ -10532,7 +10477,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_7_4",
+      "id": "menkyogentsuki_gentsuki_5_7_4_s1",
       "chapter": "総合演習5",
       "section": "5-85",
       "text": "交通整理が行われている片側3車線の交差点では、原動機付自転車は右折をすることができない。",
@@ -10554,7 +10499,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_1_5",
+      "id": "menkyogentsuki_gentsuki_5_1_5_s1",
       "chapter": "総合演習5",
       "section": "5-87",
       "text": "酒を少量飲んだが、車の運転はしなかった。",
@@ -10600,7 +10545,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_3_2",
+      "id": "menkyogentsuki_gentsuki_5_3_2_s1",
       "chapter": "総合演習5",
       "section": "5-91",
       "text": "事故を起こした際の刑事責任は運転者が負うが、民事責任は保険会社が負う。",
@@ -10724,7 +10669,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_5_1_1",
+      "id": "menkyogentsuki_gentsuki_5_1_1_s1",
       "chapter": "総合演習5",
       "section": "5-103",
       "text": "車にはたらく遠心力は、カーブの半径が小さいほど大きくなる。",
@@ -10746,7 +10691,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_5_3",
+      "id": "menkyogentsuki_gentsuki_7_5_3_s1",
       "chapter": "総合演習5",
       "section": "5-105",
       "text": "優先道路を通行する車のみ、交差点とその手前30メートル以内であっても追い越しをしてもよい。",
@@ -10790,7 +10735,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_5_2",
+      "id": "menkyogentsuki_gentsuki_8_5_2_s1",
       "chapter": "総合演習5",
       "section": "5-109",
       "text": "交差点以外で横断歩道などがない場所で警察官が手信号をしている場合、停止位置の決まりはないため警察官の目の前で停止してよい。",
@@ -11405,7 +11350,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_6_19_2",
+      "id": "menkyogentsuki_gentsuki_6_19_2_s1",
       "chapter": "総合演習6",
       "section": "6-28",
       "text": "この標識のある場所は、駐車および停車禁止区域である",
@@ -11494,7 +11439,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_6_4",
+      "id": "menkyogentsuki_gentsuki_8_6_4_s1",
       "chapter": "総合演習6",
       "section": "6-36",
       "text": "二輪車に乗車する時は、周囲に溶け込むため、なるべく暗い服で運転する。",
@@ -11505,7 +11450,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_6_4",
+      "id": "menkyogentsuki_gentsuki_9_6_4_s1",
       "chapter": "総合演習6",
       "section": "6-37",
       "text": "左側部分の道幅が6メートル未満の見通しのよい道路で追い越しをするときは、中央線が黄線でなければ、中央線から右側にはみ出してもよい。",
@@ -11604,7 +11549,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_6_23_5",
+      "id": "menkyogentsuki_gentsuki_6_23_5_s1",
       "chapter": "総合演習6",
       "section": "6-46",
       "text": "このマークは、初心運転者であることを表示するものです。",
@@ -11850,7 +11795,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_6_3",
+      "id": "menkyogentsuki_gentsuki_8_6_3_s1",
       "chapter": "総合演習6",
       "section": "6-68",
       "text": "正面衝突のおそれがあるときは、道路外が安全ならば、道路外に出ても構わない。",
@@ -11894,7 +11839,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_6_3",
+      "id": "menkyogentsuki_gentsuki_8_6_3_s2",
       "chapter": "標識・標示・信号",
       "section": "6-72",
       "text": "この標識のある所でも、原動機付自転車は通行できる。",
@@ -11917,7 +11862,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_6_1",
+      "id": "menkyogentsuki_gentsuki_9_6_1_s1",
       "chapter": "総合演習6",
       "section": "6-74",
       "text": "二輪車でぬかるみを走行するときは、速度を落とし、一定の速度を保って通過するべきである。",
@@ -11950,7 +11895,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_6_5",
+      "id": "menkyogentsuki_gentsuki_7_6_5_s1",
       "chapter": "総合演習6",
       "section": "6-77",
       "text": "夜間の通行は、遠くまで見通すことができないため、車の直前に視線を向けて運転すべきである。",
@@ -12160,7 +12105,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_6_3",
+      "id": "menkyogentsuki_gentsuki_8_6_3_s3",
       "chapter": "総合演習6",
       "section": "6-96",
       "text": "車は、原則として軌道敷内を通行できないが、軌道敷を横切ることは可能である。",
@@ -12249,7 +12194,7 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_6_2",
+      "id": "menkyogentsuki_gentsuki_10_6_2_s1",
       "chapter": "標識・標示・信号",
       "section": "6-104",
       "text": "この標識は、安全地帯の終わりを示します。",
@@ -12439,14 +12384,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_6_4",
+      "id": "menkyogentsuki_gentsuki_10_6_4_s1",
       "chapter": "総合演習6",
       "section": "6-121",
-      "text": "交差点を右折するときは、あらかじめ道路の中央によって右折する。",
-      "answer": "○",
-      "explanation": "正しい。交差点を右折するときは、あらかじめ道路の中央によって右折する。直進車が通過しやすくするためである。",
-      "textVi": "Khi rẽ phải ở giao lộ, phải đi gần lên phía giữa đường từ trước rồi rẽ phải.",
-      "explanationVi": "Đúng. Khi rẽ phải tại ngã tư, phải rẽ phải ở gần giữa đường từ trước. Đó là để xe đi thẳng dễ đi qua hơn."
+      "text": "交差点を右折するときは、あらかじめできるだけ道路の左端に寄ってから右折しなければならない。",
+      "answer": "×",
+      "explanation": "誤り。自動車や自動二輪車が交差点を右折するときは（原動機付自転車の二段階右折を除く）、あらかじめ道路の中央に寄って右折しなければならない。左端に寄ると後続の直進車の妨げになり危険である。",
+      "textVi": "Khi rẽ phải ở giao lộ, phải áp sát vào mép ngoài cùng bên trái đường từ trước rồi mới được rẽ phải.",
+      "explanationVi": "Sai. Khi xe ô tô hoặc xe máy rẽ phải tại ngã tư (ngoại trừ trường hợp rẽ phải 2 giai đoạn của xe gắn máy 50cc), phải di chuyển sát vào giữa đường từ trước rồi mới rẽ phải. Nếu lấn sang sát mép trái sẽ gây cản trở và nguy hiểm cho các xe đi thẳng phía sau."
     },
     {
       "kind": "simple",

@@ -190,11 +190,11 @@
       "id": "menkyogentsuki_gentsuki_1_4_3",
       "chapter": "運転の基礎知識",
       "section": "正しい乗車姿勢と服装",
-      "text": "原動機付自転車に乗るときは、土ふまずをステップにのせるようにする。",
-      "answer": "○",
+      "text": "原動機付自転車に乗るときは、両足を広げて置くようにし、足を閉じないようにする。",
+      "answer": "×",
       "explanation": "なお、スクーター型は足をそろえる。",
-      "textVi": "Khi ngồi trên xe gắn máy, nên đặt bàn chân lên bệ để chân.",
-      "explanationVi": "Lưu ý rằng, với loại xe tay ga (scooter) thì nên khép hai chân lại."
+      "textVi": "Khi ngồi trên xe gắn máy, nên đặt hai bàn chân mở ra và không nên khép chân lại.",
+      "explanationVi": "Không được làm như vậy, với loại xe tay ga (scooter) thì nên khép hai chân lại."
     },
     {
       "kind": "simple",
@@ -212,11 +212,11 @@
       "id": "menkyogentsuki_gentsuki_1_4_5",
       "chapter": "運転の基礎知識",
       "section": "正しい乗車姿勢と服装",
-      "text": "二輪車に乗車する時は、周囲に溶け込むため、なるべく暗い服で運転する。",
-      "answer": "×",
+      "text": "二輪車は、四輪車の運転手に、見落とされやすいので、なるべく明るい服で運転する。",
+      "answer": "○",
       "explanation": "二輪車は、四輪車の運転手に、見落とされやすいので、なるべく明るい服で運転する。",
-      "textVi": "Khi ngồi trên xe hai bánh, nên lái xe với trang phục tối màu để hòa mình vào môi trường xung quanh.",
-      "explanationVi": "Xe hai bánh rất dễ bị người lái xe bốn bánh bỏ sót, vì vậy nên mặc quần áo sáng màu khi lái xe."
+      "textVi": "Xe hai bánh rất dễ bị người lái xe bốn bánh bỏ sót, vì vậy nên mặc quần áo sáng màu khi lái xe.",
+      "explanationVi": "Đúng với nội dung câu hỏi, nên mặc quần áo sáng màu khi lái xe."
     },
     {
       "kind": "simple",
@@ -270,7 +270,7 @@
       "text": "前照灯が点灯しない原動機付自転車は、昼間であっても運転してはならない。",
       "answer": "○",
       "explanation": "トンネルの中やうす暗いときに点灯させることがあるためである。",
-      "textVi": "Xe gắn máy không bật đèn pha thì không được lái dù là ban ngày.",
+      "textVi": "Xe gắn máy nếu đèn pha không trong trạng thái có thể bật thì không được lái dù là ban ngày.",
       "explanationVi": "Đúng. Vì đèn pha cần được sử dụng khi đi qua hầm hoặc những lúc trời tối mờ đột ngột."
     },
     {
@@ -358,8 +358,8 @@
       "text": "原動機付自転車の最高速度は、時速30キロメートルである。",
       "answer": "○",
       "explanation": "時速30キロメートルを超える速度で運転してはならない。",
-      "textVi": "Tốc độ tối đa của xe gắn máy là 30 km/h.",
-      "explanationVi": "Tốc độ tối đa của xe gắn máy được quy định là 30 km/h, tuyệt đối không được chạy quá tốc độ này."
+      "textVi": "Tốc độ tối đa của xe gắn máy 50cc là 30 km/h.",
+      "explanationVi": "Tốc độ tối đa của xe gắn 50cc máy được quy định là 30 km/h, tuyệt đối không được chạy quá tốc độ này."
     },
     {
       "kind": "simple",
@@ -1864,7 +1864,7 @@
       "text": "二輪車も内輪差があるので、特に左折の際は歩行者や自転車を巻きこまないように注意が必要である。",
       "answer": "○",
       "explanation": "内輪差とは、右左折の際、後輪が前輪よりも内側を通るその差のことをいう。二輪車であっても内輪差はあるので注意が必要である。",
-      "textVi": "Xe hai bánh cũng có nội tuyến nên đặc biệt khi rẽ trái cần chú ý không cuốn người đi bộ hay xe đạp.",
+      "textVi": "Xe hai bánh cũng có nội tuyến(sự chênh lệch quỹ đạo bánh xe) nên đặc biệt khi rẽ trái cần chú ý không cuốn người đi bộ hay xe đạp.",
       "explanationVi": "Đúng. Do hiện tượng nội tuyến, bánh sau xe hai bánh sẽ đi sát vào phía trong hơn bánh trước khi rẽ, dễ gây va chạm với người đi bộ."
     },
     {
@@ -4462,11 +4462,11 @@
       "id": "menkyogentsuki_gentsuki_9_28_5",
       "chapter": "総合演習1",
       "section": "1-24",
-      "text": "バッテリーの液量は減らないため、点検の必要はない。",
-      "answer": "×",
+      "text": "バッテリーの液量は減ることがあるため、点検が必要である",
+      "answer": "○",
       "explanation": "バッテリー液は蒸発によって減るため、点検せねばならない。",
-      "textVi": "Dung lượng acquy không bị giảm nên không cần kiểm tra.",
-      "explanationVi": "Dung dịch pin bay hơi nên giảm, vì vậy phải kiểm tra."
+      "textVi": "Ắc quy vẫn có thể bị hao hụt dung dịch, nên vẫn cần phải kiểm tra định kỳ.",
+      "explanationVi": "Dung dịch pin bay hơi nên sẽ giảm, vì vậy phải kiểm tra."
     },
     {
       "kind": "simple",
@@ -4544,17 +4544,6 @@
       "explanation": "交差点をさけて、左側に寄って停止せねばならない。",
       "textVi": "Gần giao lộ có xe ưu tiên đến gần nên đã dừng ở giữa giao lộ.",
       "explanationVi": "Phải tránh giao lộ, đi sát bên trái và dừng lại."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_26_3",
-      "chapter": "総合演習1",
-      "section": "1-33",
-      "text": "車は、いかなる場合でも、軌道敷内を通行したり、横切ったりしてはならない。",
-      "answer": "×",
-      "explanation": "横断や転回、右左折をする際に横切ることができる。",
-      "textVi": "Trong mọi trường hợp, xe không được đi trong hay băng qua đường ray.",
-      "explanationVi": "Có thể đi qua khi qua đường, quay đầu, rẽ phải/trái."
     },
     {
       "kind": "simple",
@@ -4663,11 +4652,11 @@
       "id": "menkyogentsuki_gentsuki_10_19_5",
       "chapter": "総合演習1",
       "section": "1-43",
-      "text": "対面する信号が青色になったので、直ちに発進した。",
-      "answer": "×",
-      "explanation": "渡りきれなかった歩行者が道路上にいる可能性もあるので、対面する信号が青色だったとしても、安全を確かめてから発進する。",
-      "textVi": "Vì tín hiệu đối diện đã chuyển sang xanh nên đã lập tức khởi hành.",
-      "explanationVi": "Khi rẽ phải vào đường nhỏ, phải nhường đường cho xe đi thẳng và xe rẽ trái."
+      "text": "対面する信号が青色になったが、交差点内に歩行者がいないか安全を確認してから発進した。",
+      "answer": "○",
+      "explanation": "信号が青になっても、渡り残した歩行者などがいる可能性があるため、安全確認をしてから発進する必要がある。",
+      "textVi": "Khi tín hiệu đối diện chuyển sang xanh, tôi đã kiểm tra an toàn xem có người đi bộ trong ngã tư hay không rồi mới khởi hành.",
+      "explanationVi": "Đúng. Dù tín hiệu đã chuyển xanh, vẫn có khả năng còn người đi bộ chưa qua hết đường, nên bắt buộc phải xác nhận an toàn trước khi đi."
     },
     {
       "kind": "simple",
@@ -4727,14 +4716,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_1_11_3",
+      "id": "menkyogentsuki_gentsuki_1_11_3999",
       "chapter": "総合演習1",
       "section": "1-50",
-      "text": "歩行者専用道路は、許可を受けており、かつ法定速度を守れば車も通行可能である。",
-      "answer": "×",
-      "explanation": "歩行者専用道路は、許可を受けている車は通行できるが、徐行せねばならない。",
-      "textVi": "Đường dành cho người đi bộ, nếu có giấy phép và tuân thủ tốc độ pháp định thì xe cơ giới cũng có thể đi được.",
-      "explanationVi": "Sai. Đường dành cho người đi bộ thì xe có giấy phép được phép đi, nhưng phải chạy chậm (徐行)."
+      "text": "歩行者専用道路は、許可を受けた車であれば通行できるが、その際は必ず徐行しなければならない。",
+      "answer": "○",
+      "explanation": "許可を受けた車両が歩行者専用道路を通行する場合、歩行者に注意し、直ちに停止できる速度（徐行）で走る義務がある。",
+      "textVi": "Trên đường dành riêng cho người đi bộ, xe có giấy phép được phép đi vào nhưng bắt buộc phải chạy thật chậm (徐行).",
+      "explanationVi": "Đúng. Khi xe được cấp phép đi vào đường dành cho người đi bộ, bắt buộc phải chạy với tốc độ có thể dừng lại ngay lập tức (chạy chậm)."
     },
     {
       "kind": "simple",
@@ -4797,11 +4786,11 @@
       "id": "menkyogentsuki_gentsuki_8_12_3",
       "chapter": "総合演習1",
       "section": "1-56",
-      "text": "警察官が、灯火を頭上に上げているとき、警察官の身体の正面に平行する交通については、信号機の赤色信号と同じ意味である。",
-      "answer": "×",
-      "explanation": "誤り。黄色の灯火信号と同じ意味である。",
-      "textVi": "Khi cảnh sát giơ đèn lên cao, đối với giao thông song song với mặt trước của cơ thể cảnh sát, có ý nghĩa tương đương với tín hiệu đỏ của đèn giao thông.",
-      "explanationVi": "Sai. Có ý nghĩa tương đương tín hiệu đèn màu vàng."
+      "text": "警察官が灯火を頭上に上げているとき、身体の正面に平行する交通については、信号機の黄色信号と同じ意味である。",
+      "answer": "○",
+      "explanation": "警察官が灯火を頭上に上げている状態は、平行する交通にとっては黄色信号と同じ意味になる。",
+      "textVi": "Khi cảnh sát giơ đèn lên trên đầu, đối với giao thông chạy song song với mặt trước của cảnh sát, tín hiệu này có ý nghĩa tương đương với đèn vàng.",
+      "explanationVi": "Đúng. Trạng thái giơ đèn lên cao tương đương với tín hiệu đèn vàng đối với dòng xe chạy song song."
     },
     {
       "kind": "simple",
@@ -4914,17 +4903,6 @@
       "image": "menkyogentsuki_360.png",
       "textVi": "Vạch kẻ đường này cho biết làn đường dành cho xe buýt, xe thường có thể đi vào khi đường đông.",
       "explanationVi": "Sai. Vạch kẻ đường này biểu thị làn dành cho xe buýt tuyến. Xe gắn máy, xe đặc biệt nhỏ, xe đạp có thể đi vào, nhưng xe ô tô thường thì không được phép."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_12_4",
-      "chapter": "総合演習1",
-      "section": "1-67",
-      "text": "二輪車に乗車する時は、両膝でタンクを軽く挟むようにするとよい。",
-      "answer": "○",
-      "explanation": "足を開いて乗ると危険である。",
-      "textVi": "Khi ngồi lên xe hai bánh, nên kẹp nhẹ bình xăng bằng hai đầu gối.",
-      "explanationVi": "Đúng. Nếu hai chân mở rộng ra thì rất nguy hiểm."
     },
     {
       "kind": "simple",
@@ -5275,11 +5253,11 @@
       "id": "menkyogentsuki_gentsuki_8_29_1",
       "chapter": "総合演習1",
       "section": "1-99",
-      "text": "砂利道は、舗装道路に比べて摩擦力が小さい。",
-      "answer": "○",
-      "explanation": "砂利道では、車が止まるために必要な距離が延びるため、注意が必要である。",
-      "textVi": "Đường sỏi có lực ma sát nhỏ hơn so với đường nhựa.",
-      "explanationVi": "Trên đường sỏi, quãng đường để xe dừng lại cần thiết sẽ dài hơn, nên cần chú ý."
+      "text": "砂利道は、舗装道路に比べて摩擦力が大きいので、停止距離は短くなる。",
+      "answer": "×",
+      "explanation": "砂利道は舗装道路より摩擦力が小さく、タイヤが滑りやすいため停止距離が長くなる。",
+      "textVi": "Đường sỏi có lực ma sát lớn hơn đường nhựa nên quãng đường dừng sẽ ngắn hơn.",
+      "explanationVi": "Sai. Đường sỏi có lực ma sát nhỏ hơn đường nhựa, lốp dễ trượt nên quãng đường dừng sẽ dài hơn."
     },
     {
       "kind": "simple",
@@ -5490,11 +5468,11 @@
       "id": "menkyogentsuki_gentsuki_10_1_1",
       "chapter": "総合演習1",
       "section": "1-118",
-      "text": "歩道は軽車両以外の車は通行してはならない。",
-      "answer": "×",
-      "explanation": "軽車両を含む車両は、原則として歩道を通行してはならない。よって軽車両であっても歩道を通行できないのが原則である。",
-      "textVi": "Các xe không phải xe đạp nhẹ không được đi trên vỉa hè.",
-      "explanationVi": "Các phương tiện bao gồm xe đạp nhẹ, theo nguyên tắc không được lưu thông trên vỉa hè. Do đó, ngay cả xe đạp nhẹ cũng không thể đi trên vỉa hè theo nguyên tắc."
+      "text": "原則として、自動車や原動機付自転車だけでなく、自転車などの軽車両も歩道を通行してはならない。",
+      "answer": "○",
+      "explanation": "歩道は歩行者のための場所であり、軽車両を含むすべての車両は原則として車道を通行しなければならない。",
+      "textVi": "Về nguyên tắc, không chỉ ô tô hay xe gắn máy, mà cả các loại xe thô sơ (như xe đạp) cũng không được phép lưu thông trên vỉa hè.",
+      "explanationVi": "Đúng. Vỉa hè là khu vực dành cho người đi bộ, tất cả các loại xe (bao gồm cả xe thô sơ) về nguyên tắc phải đi dưới lòng đường."
     },
     {
       "kind": "simple",
@@ -5556,11 +5534,11 @@
       "id": "menkyogentsuki_gentsuki_1_12_5",
       "chapter": "総合演習1",
       "section": "1-124",
-      "text": "車は、歩行者がいないときに限り安全地帯を通行できる。",
-      "answer": "×",
-      "explanation": "歩行者の有無に関わらず、通行できない。",
-      "textVi": "Xe chỉ có thể đi qua vùng an toàn khi không có người đi bộ.",
-      "explanationVi": "Không được đi qua vùng an toàn dù có hay không có người đi bộ."
+      "text": "車は、歩行者の有無にかかわらず、安全地帯には立ち入ってはならない。",
+      "answer": "○",
+      "explanation": "安全地帯は歩行者を保護するための場所であり、車はいかなる理由があっても進入することができない。",
+      "textVi": "Xe cơ giới tuyệt đối không được đi vào khu vực an toàn, bất kể có người đi bộ ở đó hay không.",
+      "explanationVi": "Đúng. Khu vực an toàn là nơi dùng để bảo vệ người đi bộ, cấm xe cộ đi vào dưới mọi lý do."
     },
     {
       "kind": "simple",
@@ -5646,11 +5624,11 @@
       "id": "menkyogentsuki_gentsuki_8_15_3",
       "chapter": "総合演習2",
       "section": "2-8",
-      "text": "原動機付自転車でカーブ中にブレーキを使用すると、タイヤがスリップし、転倒するおそれがあるため注意が必要である。",
-      "answer": "○",
-      "explanation": "原動機付自転車はバランスを崩し、転倒しやすいので注意が必要である。",
-      "textVi": "Cần chú ý rằng khi sử dụng phanh trong khi đang quay cua trên xe gắn máy, lốp có thể trượt và có nguy cơ ngã.",
-      "explanationVi": "Xe gắn máy rất dễ mất thăng bằng và đổ ngã, vì vậy cần hết sức chú ý."
+      "text": "原動機付自転車でカーブ中にブレーキを使用しても、転倒する恐れはないので注意は不要である。",
+      "answer": "×",
+      "explanation": "カーブ中のブレーキはバランスを崩しやすく、転倒のリスクが高まるため非常に危険である。",
+      "textVi": "Khi đang quay cua trên xe gắn máy, nếu sử dụng phanh thì không có nguy cơ ngã nên không cần chú ý.",
+      "explanationVi": "Sai. Phanh khi đang vào cua rất dễ mất thăng bằng và làm tăng nguy cơ ngã, cực kỳ nguy hiểm."
     },
     {
       "kind": "simple",
@@ -5914,11 +5892,11 @@
       "id": "menkyogentsuki_gentsuki_7_2_1",
       "chapter": "総合演習2",
       "section": "2-33",
-      "text": "車は、歩行者がいないときに限り安全地帯を通行できる。",
-      "answer": "×",
-      "explanation": "歩行者の有無に関わらず、通行できない。",
-      "textVi": "Xe chỉ được đi qua an toàn khu vực khi không có người đi bộ.",
-      "explanationVi": "Dù có người đi bộ hay không thì cũng không được phép đi qua khu vực an toàn."
+      "text": "車は、歩行者の有無にかかわらず、いかなる場合でも安全地帯を通行してはならない。",
+      "answer": "○",
+      "explanation": "安全地帯は歩行者を保護するための場所であり、車は進入禁止である。",
+      "textVi": "Xe không được đi vào khu vực an toàn trong bất kỳ trường hợp nào, bất kể có người đi bộ hay không.",
+      "explanationVi": "Đúng. Khu vực an toàn là nơi dùng để bảo vệ người đi bộ, cấm xe cộ đi vào."
     },
     {
       "kind": "simple",
@@ -5941,17 +5919,6 @@
       "explanation": "歩道や路側帯を横切る際は、必ず一時停止しなければならない。",
       "textVi": "Khi qua đường trên vỉa hè, không có người đi bộ và đã xác nhận an toàn nhưng đã dừng lại một lần rồi mới qua vỉa hè.",
       "explanationVi": "Khi qua vỉa hè hay làn bên, nhất thiết phải dừng lại một lần."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_10_1",
-      "chapter": "総合演習2",
-      "section": "2-36",
-      "text": "歩道は軽車両以外の車は通行してはならない。",
-      "answer": "×",
-      "explanation": "軽車両を含む車両は、原則として歩道を通行してはならない。よって軽車両であっても歩道を通行できないのが原則である。",
-      "textVi": "Các xe không phải xe đạp nhẹ không được đi trên vỉa hè.",
-      "explanationVi": "Nguyên tắc là kể cả xe đạp nhẹ cũng không được đi trên vỉa hè."
     },
     {
       "kind": "simple",
@@ -6227,11 +6194,11 @@
       "id": "menkyogentsuki_gentsuki_2_14_5",
       "chapter": "総合演習2",
       "section": "2-62",
-      "text": "歩行者のそばを通るときは、必ず徐行をせねばならない。",
-      "answer": "×",
-      "explanation": "安全な間隔をとることができれば、徐行をする必要はない。",
-      "textVi": "Khi đi qua chỗ có người đi bộ, nhất định phải chạy chậm (徐行).",
-      "explanationVi": "Sai. Nếu giữ được khoảng cách an toàn thì không cần phải chạy chậm."
+      "text": "歩行者のそばを通るときは、安全な間隔をあけるか、間隔がとれない場合は徐行しなければならない。",
+      "answer": "○",
+      "explanation": "歩行者の側方を通過する際は安全な間隔を保つことが求められ、十分な間隔が取れない場合に徐行する義務がある。",
+      "textVi": "Khi đi qua sát người đi bộ, phải giữ khoảng cách an toàn, hoặc nếu không thể giữ đủ khoảng cách thì phải chạy chậm (徐行).",
+      "explanationVi": "Đúng. Khi đi qua bên cạnh người đi bộ, bắt buộc phải giữ khoảng cách an toàn, nếu không thể giữ khoảng cách thì phải giảm tốc độ."
     },
     {
       "kind": "simple",
@@ -6717,11 +6684,11 @@
       "id": "menkyogentsuki_gentsuki_2_4_1",
       "chapter": "総合演習2",
       "section": "2-106",
-      "text": "原動機付自転車でカーブを曲がるときは、あらかじめ加速し、カーブの後半で徐々に減速して抜けるようにする。",
-      "answer": "×",
-      "explanation": "あらかじめ減速し、カーブの後半で徐々に加速するようにする。これをスローイン・ファーストアウト走法と呼ぶ。",
-      "textVi": "Khi lái xe gắn máy 50cc qua đường cong, nên tăng tốc trước rồi giảm dần ở nửa sau đường cong.",
-      "explanationVi": "Sai. Phải giảm tốc trước khi vào đường cong và tăng dần ở nửa sau đường cong. Đây gọi là phương pháp lái xe slow-in, fast-out (vào chậm, ra nhanh)."
+      "text": "原動機付自転車でカーブを曲がるときは、あらかじめ減速し、カーブの後半で徐々に加速するようにする。",
+      "answer": "○",
+      "explanation": "これをスローイン・ファーストアウト走法と呼ぶ。",
+      "textVi": "Khi lái xe gắn máy qua đường cong, nên giảm vận tốc trước rồi tăng dần ở nửa sau đường cong.",
+      "explanationVi": "Đây gọi là phương pháp lái xe slow-in, fast-out (vào chậm, ra nhanh)."
     },
     {
       "kind": "simple",
@@ -6751,11 +6718,11 @@
       "id": "menkyogentsuki_gentsuki_2_28_2",
       "chapter": "総合演習2",
       "section": "2-109",
-      "text": "走っている車を停止させようとする力を、慣性力と呼ぶ。",
-      "answer": "×",
-      "explanation": "問題文で説明されている力は、摩擦力である。慣性力とは、車が止まろうとする時に走り続けようとする力である。",
-      "textVi": "Lực dùng để cố gắng dừng xe đang chạy được gọi là lực quán tính.",
-      "explanationVi": "Lực được mô tả trong đề bài là lực ma sát. Lực quán tính là lực muốn tiếp tục chạy khi xe muốn dừng."
+      "text": "走っている車を停止させようとするときに働く力は、摩擦力である。",
+      "answer": "○",
+      "explanation": "車が停止しようとする時に働く主な力は摩擦力である。慣性力とは走り続けようとする力である。",
+      "textVi": "Lực tác động để cố gắng dừng một chiếc xe đang chạy được gọi là lực ma sát.",
+      "explanationVi": "Đúng. Lực chính tác động khi cố dừng xe là lực ma sát. Lực quán tính là lực khiến xe muốn tiếp tục chạy."
     },
     {
       "kind": "simple",
@@ -7051,11 +7018,11 @@
       "id": "menkyogentsuki_gentsuki_8_29_3",
       "chapter": "総合演習3",
       "section": "3-12",
-      "text": "警察官が南北の方向に灯火を振っているとき、東西の方向に走る車は停止せねばならない。",
-      "answer": "○",
-      "explanation": "東西の方向に走る車にとっては、赤信号と同じである。",
-      "textVi": "Khi cảnh sát vẫy đèn theo hướng bắc-nam, xe chạy theo hướng đông-tây phải dừng lại.",
-      "explanationVi": "Đối với xe đi theo hướng đông-tây thì có ý nghĩa tương đương tín hiệu đỏ."
+      "text": "警察官が南北の方向に灯火を振っているとき、東西の方向に走る車もそのまま進行してよい。",
+      "answer": "×",
+      "explanation": "南北に振られている場合、東西に走る車にとっては赤信号と同じ意味になるため停止せねばならない。",
+      "textVi": "Khi cảnh sát vẫy đèn theo hướng Bắc - Nam, xe chạy theo hướng Đông - Tây cũng được phép tiếp tục di chuyển.",
+      "explanationVi": "Sai. Đối với xe đi theo hướng Đông - Tây, tín hiệu này có ý nghĩa tương đương với đèn đỏ nên bắt buộc phải dừng lại."
     },
     {
       "kind": "simple",
@@ -7073,11 +7040,11 @@
       "id": "menkyogentsuki_gentsuki_3_17_2",
       "chapter": "総合演習3",
       "section": "3-14",
-      "text": "原動機付自転車で走行するときは、ブレーキのみで速度を調整する。",
-      "answer": "×",
-      "explanation": "ブレーキに加え、アクセルの操作によって速度を調節する。",
-      "textVi": "Khi lái xe gắn máy 50cc, chỉ dùng phanh để điều chỉnh tốc độ.",
-      "explanationVi": "Sai. Ngoài phanh, còn phải điều chỉnh tốc độ bằng cần ga."
+      "text": "原動機付自転車で走行するときは、アクセルとブレーキの両方を使って速度を調整する。",
+      "answer": "○",
+      "explanation": "走行中はアクセルによる加速とブレーキによる減速を適切に使い分ける必要がある。",
+      "textVi": "Khi lái xe gắn máy, nên dùng cả ga và phanh để điều chỉnh tốc độ.",
+      "explanationVi": "Đúng. Khi lái xe, cần kết hợp sử dụng ga để tăng tốc và phanh để giảm tốc một cách hợp lý."
     },
     {
       "kind": "simple",
@@ -7252,11 +7219,11 @@
       "id": "menkyogentsuki_gentsuki_3_25_3",
       "chapter": "総合演習3",
       "section": "3-30",
-      "text": "本標識とは、規制標識・指示標識・警戒標識・補助標識の4つを指す。",
-      "answer": "×",
-      "explanation": "標識は、本標識と補助標識に分けられる。そして、本標識は、規制標識・指示標識・警戒標識・案内標識の4つを指す。よって、補助標識が本標識のうちの1つと分類されている問題文は誤りである。",
-      "textVi": "Biển báo được chia thành biển chính và biển phụ. Biển chính gồm 4 loại: biển cấm, biển hiệu lệnh, biển nguy hiểm và biển hướng dẫn.",
-      "explanationVi": "Biển báo được chia thành biển chính và biển phụ. Biển chính gồm 4 loại: biển cấm, biển hiệu lệnh, biển nguy hiểm và biển hướng dẫn. Do đó, việc biển phụ được xếp vào biển chính trong đề bài là sai."
+      "text": "本標識とは、規制標識・指示標識・警戒標識・案内標識の4つを指す。",
+      "answer": "○",
+      "explanation": "標識は本標識と補助標識に分かれ、本標識にはこの4種類が含まれる。",
+      "textVi": "Biển chính gồm 4 loại: biển cấm, biển hiệu lệnh, biển nguy hiểm và biển hướng dẫn.",
+      "explanationVi": "Đúng. Biển báo gồm biển chính và biển phụ, biển chính bao gồm 4 loại này."
     },
     {
       "kind": "simple",
@@ -7441,11 +7408,11 @@
       "id": "menkyogentsuki_gentsuki_10_3_3",
       "chapter": "総合演習3",
       "section": "3-47",
-      "text": "一般道路で原動機付自転車が追い越しをするときの一時的な最高速度は、時速40キロメートルである。",
-      "answer": "×",
-      "explanation": "追い越しをするときであっても、法定速度を超えてはならない。",
-      "textVi": "Trên đường thường, tốc độ tối đa tạm thời khi vượt xe của xe gắn máy là 40 km/h.",
-      "explanationVi": "Ngay cả khi vượt xe, cũng không được vượt quá tốc độ pháp định."
+      "text": "一般道路で原動機付自転車が追い越しをするときであっても、法定速度の時速30キロメートルを超えてはならない。",
+      "answer": "○",
+      "explanation": "追い越しをする場合であっても、法定速度を超えることは法令違反となる。",
+      "textVi": "Trên đường thông thường, ngay cả khi đang vượt xe khác, xe gắn máy cũng không được phép vượt quá tốc độ luật định là 30 km/h.",
+      "explanationVi": "Đúng. Ngay cả khi vượt xe, việc vượt quá tốc độ luật định là vi phạm pháp luật."
     },
     {
       "kind": "simple",
@@ -7540,11 +7507,11 @@
       "id": "menkyogentsuki_gentsuki_3_4_4",
       "chapter": "総合演習3",
       "section": "3-56",
-      "text": "原動機付自転車は、バランスを崩しやすく、転倒するおそれがあるため十分に気を付ける。",
-      "answer": "○",
+      "text": "原動機付自転車は転倒するおそれがないので、気を付けなくてよい",
+      "answer": "×",
       "explanation": "四輪車と違い、容易に転倒するので注意が必要である。",
-      "textVi": "Xe gắn máy 50cc dễ mất thăng bằng và có nguy cơ đổ xe nên cần đặc biệt chú ý.",
-      "explanationVi": "Đúng. Khác với xe 4 bánh, xe gắn máy dễ bị đổ, người lái cần hết sức cẩn thận khi vận hành."
+      "textVi": "Xe gắn máy không có nguy cơ ngã cao nên không cần chú ý.",
+      "explanationVi": "Khác với xe 4 bánh, xe gắn máy dễ bị đổ, người lái cần hết sức cẩn thận khi vận hành."
     },
     {
       "kind": "simple",
@@ -7626,25 +7593,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_23_3",
-      "chapter": "総合演習3",
-      "section": "3-64",
-      "text": "前車が左折する際、内輪差によって原動機付自転車は巻き込まれてしまうことも多いので注意が必要である。",
-      "answer": "○",
-      "explanation": "前車が大型車である場合はより注意する。",
-      "textVi": "Khi xe phía trước rẽ trái, do nội tuyến nên xe gắn máy thường bị cuốn theo nên cần chú ý.",
-      "explanationVi": "Cần đặc biệt thận trọng khi xe phía trước là xe lớn."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_3_2",
       "chapter": "総合演習3",
       "section": "3-65",
-      "text": "対面している警察官が灯火を横に振っている灯火信号は、信号機の青色信号と同じ意味である。",
-      "answer": "×",
-      "explanation": "警察官に対面する交通にとっては、問題文の灯火信号は赤信号と同じである。",
-      "textVi": "Tín hiệu đèn được vẫy ngang của cảnh sát đối diện có ý nghĩa tương đương với tín hiệu xanh của đèn giao thông.",
-      "explanationVi": "Đối với giao thông đối diện với cảnh sát thì tín hiệu đèn trong đề bài có ý nghĩa tương đương tín hiệu đỏ."
+      "text": "警察官が灯火を横に振っているとき、その振られている方向と平行に走る交通にとっては、青色信号と同じ意味である。",
+      "answer": "○",
+      "explanation": "警察官が灯火を左右に振る動作は、平行な方向に対する進行許可（青信号と同じ）を意味する。",
+      "textVi": "Khi cảnh sát vẫy đèn giao thông theo chiều ngang, đối với các phương tiện chạy song song với hướng vẫy đèn, tín hiệu này có ý nghĩa tương đương với đèn xanh.",
+      "explanationVi": "Đúng. Động tác vẫy đèn sang hai bên của cảnh sát mang ý nghĩa cho phép lưu thông (giống đèn xanh) đối với hướng chạy song song."
     },
     {
       "kind": "simple",
@@ -8155,11 +8111,11 @@
       "id": "menkyogentsuki_gentsuki_3_8_2",
       "chapter": "総合演習3",
       "section": "3-111",
-      "text": "一方通行の道路では、道路の右側を通行できる。",
-      "answer": "○",
-      "explanation": "一方通行の道路では、例外的に道路の右側の通行ができる。",
-      "textVi": "Trên đường một chiều, có thể đi ở phía bên phải của đường.",
-      "explanationVi": "Đúng. Trên đường một chiều, ngoại lệ được phép đi ở phía bên phải của đường."
+      "text": "一方通行の道路では、いかなる場合でも道路の右側を通行してはならない。",
+      "answer": "×",
+      "explanation": "原則は左側通行だが、一方通行の道路では例外的に道路の中央から右側を通行することが認められているため誤り。",
+      "textVi": "Trên đường một chiều, trong bất kỳ trường hợp nào cũng không được phép đi sang phần đường bên phải.",
+      "explanationVi": "Sai. Dù nguyên tắc là đi bên trái, nhưng trên đường một chiều luật có ngoại lệ cho phép xe đi sang phần đường bên phải."
     },
     {
       "kind": "simple",
@@ -8213,8 +8169,8 @@
       "text": "初心運転者標識は、普通免許を受けて1年未満の、運転に自信のない人がつける標識である。",
       "answer": "×",
       "explanation": "運転に自信があるないに関わらず、普通免許を受けて１年未満の人は必ず標識を付けねばならない。",
-      "textVi": "Biển báo người mới lái là biển báo mà người có giấy phép thường chưa đủ 1 năm và không tự tin khi lái xe đeo vào.",
-      "explanationVi": "Bất kể có tự tin hay không khi lái xe, người có giấy phép thường chưa đủ 1 năm đều bắt buộc phải đeo biển báo."
+      "textVi": "Nhãn dãn dấu hiệu người mới lái là nhãn mà người có giấy phép thường chưa đủ 1 năm và không tự tin khi lái xe đeo vào.",
+      "explanationVi": "Bất kể có tự tin hay không khi lái xe, người có giấy phép thường chưa đủ 1 năm đều bắt buộc phải dán nhãn dấu hiệu này."
     },
     {
       "kind": "simple",
@@ -8268,19 +8224,8 @@
       "text": "消防用防火水そうの取り入れ口から5メートル以内の場所は、駐車をしてはならないが、停車は構わない。",
       "answer": "○",
       "explanation": "駐車のみが禁止である。",
-      "textVi": "Trong phạm vi 5 mét từ lối lấy nước của bể chứa nước cứu hỏa, không được đỗ xe nhưng được phép dừng xe.",
+      "textVi": "Trong phạm vi 5 mét từd lối lấy nước của bể chứa nước cứu hỏa, không được đỗ xe nhưng được phép dừng xe.",
       "explanationVi": "Chỉ cấm đỗ xe thôi."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_20_5",
-      "chapter": "総合演習3",
-      "section": "3-123",
-      "text": "原動機付自転車を選ぶときは、乗ったときに両足のつま先が地面につき、8の字に押して動かせるものにする。",
-      "answer": "○",
-      "explanation": "平地でセンタースタンドが立てられるものであることも重要である。",
-      "textVi": "Khi chọn xe gắn máy có động cơ, nên chọn loại mà khi ngồi lên, mũi chân hai chân chạm đất và có thể đẩy di chuyển bằng cách bấm hình số 8.",
-      "explanationVi": "Đúng. Việc có thể dựng chân chống trung tâm trên đường bằng cũng rất quan trọng."
     },
     {
       "kind": "simple",
@@ -8320,11 +8265,11 @@
       "id": "menkyogentsuki_gentsuki_8_18_4",
       "chapter": "総合演習4",
       "section": "4-3",
-      "text": "歩行者のそばを通るときは、必ず徐行をせねばならない。",
-      "answer": "×",
-      "explanation": "安全な間隔をとることができれば、徐行をする必要はない。",
-      "textVi": "Khi đi qua chỗ có người đi bộ, nhất định phải giảm tốc độ.",
-      "explanationVi": "Nếu có thể giữ khoảng cách an toàn thì không cần phải giảm tốc độ."
+      "text": "歩行者のそばを通るときでも、安全な間隔をとることができれば徐行しなくてもよい。",
+      "answer": "○",
+      "explanation": "歩行者との間に安全な間隔が確保できる場合は徐行の義務はなく、そのまま進行できる。",
+      "textVi": "Khi đi qua bên cạnh người đi bộ, nếu giữ được khoảng cách an toàn thì không cần phải chạy chậm.",
+      "explanationVi": "Đúng. Nếu đảm bảo được khoảng cách an toàn thì không có nghĩa vụ phải chạy chậm."
     },
     {
       "kind": "simple",
@@ -8410,11 +8355,11 @@
       "id": "menkyogentsuki_gentsuki_4_24_3",
       "chapter": "総合演習4",
       "section": "4-11",
-      "text": "原動機付自転車は、道路の流れを考え、常に最高速度ぎりぎりで走るのが、結果的には安全である。",
-      "answer": "×",
-      "explanation": "道路の状況や天候を考え、安全な速度で運転する。",
-      "textVi": "Xe gắn máy 50cc cần suy nghĩ về luồng giao thông trên đường và luôn chạy với tốc độ sát giới hạn tối đa để an toàn hơn về lâu dài.",
-      "explanationVi": "Sai. Hãy lái xe với tốc độ an toàn phù hợp với tình trạng đường và thời tiết."
+      "text": "原動機付自転車は、道路の流れに乗ることも大切だが、天候や路面状況に応じた安全な速度で走行するべきである。",
+      "answer": "○",
+      "explanation": "道路状況や天候を考慮し、いかなる場合も安全に停止できる速度で運転することが最も重要である。",
+      "textVi": "Xe gắn máy dù cần quan tâm đến việc đi theo luồng giao thông trên đường, nhưng vẫn phải chạy với tốc độ an toàn phù hợp với thời tiết và tình trạng mặt đường.",
+      "explanationVi": "Đúng. Việc quan trọng nhất là phải xem xét tình trạng đường sá và thời tiết để lái xe với tốc độ an toàn."
     },
     {
       "kind": "simple",
@@ -8544,11 +8489,11 @@
       "id": "menkyogentsuki_gentsuki_10_16_2",
       "chapter": "総合演習4",
       "section": "4-23",
-      "text": "左右の信号が赤色や黄色でも、対面する信号が青色とは限らない。",
-      "answer": "○",
-      "explanation": "交差点では全赤と呼ばれる、全ての信号が赤の状態がある。よって、左右の信号が赤や黄色でも、対面する信号が青色とは限らない。",
-      "textVi": "Ngay cả khi tín hiệu bên trái và bên phải là đỏ hoặc vàng, tín hiệu đối diện không nhất thiết là xanh.",
-      "explanationVi": "Tại ngã tư có trạng thái gọi là 'toàn đỏ', tất cả tín hiệu đều màu đỏ. Do đó, dù tín hiệu trái phải có màu đỏ hoặc vàng, nhưng tín hiệu đối diện không nhất thiết là màu xanh."
+      "text": "左右の信号が赤色や黄色である場合、対面する信号は必ず青色である。",
+      "answer": "×",
+      "explanation": "交差点には全赤の状態があるため、必ずしも青色とは限らない。",
+      "textVi": "Nếu tín hiệu trái phải là đỏ hoặc vàng, thì tín hiệu đối diện chắc chắn là màu xanh.",
+      "explanationVi": "Sai. Có trạng thái 'toàn đỏ' tại ngã tư, nên không nhất thiết đối diện phải là màu xanh."
     },
     {
       "kind": "simple",
@@ -8600,11 +8545,11 @@
       "id": "menkyogentsuki_gentsuki_4_10_4",
       "chapter": "総合演習4",
       "section": "4-28",
-      "text": "正しい乗車姿勢で原動機付自転車に乗ることは、疲労を軽減する効果もある。",
-      "answer": "○",
+      "text": "正しい乗車姿勢で原動機付自転車に乗ることは、疲労を軽減する効果はない。",
+      "answer": "×",
       "explanation": "正しい乗車姿勢で乗ると、疲れにくい。",
-      "textVi": "Ngồi đúng tư thế khi lái xe gắn máy 50cc còn có tác dụng giảm mệt mỏi.",
-      "explanationVi": "Đúng. Khi ngồi đúng tư thế, người lái sẽ ít bị mệt hơn."
+      "textVi": "Ngồi đúng tư thế khi lái xe gắn máy không có tác dụng giảm mệt mỏi.",
+      "explanationVi": "Khi ngồi đúng tư thế, người lái sẽ ít bị mệt hơn."
     },
     {
       "kind": "simple",
@@ -8712,10 +8657,10 @@
       "id": "menkyogentsuki_gentsuki_7_9_3",
       "chapter": "総合演習4",
       "section": "4-38",
-      "text": "原動機付自転車でカーブを曲がる際は、車体をカーブの外側に傾けるようにする。",
-      "answer": "×",
+      "text": "原動機付自転車でカーブを曲がる際は、車体をカーブの外側に傾けてはならない。",
+      "answer": "○",
       "explanation": "車体をカーブの内側に傾けるようにする。",
-      "textVi": "Khi quay cua trên xe gắn máy, nên nghiêng xe về phía ngoài của đường cua.",
+      "textVi": "Khi vào cua, tuyệt đối không được nghiêng xe về phía ngoài đường cua (phải nghiêng vào trong).",
       "explanationVi": "Nên nghiêng xe về phía trong của đường cua."
     },
     {
@@ -8757,11 +8702,11 @@
       "id": "menkyogentsuki_gentsuki_10_4_3",
       "chapter": "総合演習4",
       "section": "4-42",
-      "text": "四輪車の運転と二輪車の運転に必要な技術は全く同じである。",
-      "answer": "×",
-      "explanation": "身体でバランスを保つ二輪車は、四輪車とは異なる運転技術が求められる。",
-      "textVi": "Kỹ thuật cần thiết để lái xe bốn bánh và xe hai bánh là hoàn toàn giống nhau.",
-      "explanationVi": "Xe hai bánh giữ thăng bằng bằng cơ thể đòi hỏi kỹ thuật lái khác với xe bốn bánh."
+      "text": "四輪車と二輪車では、それぞれ異なる運転技術が求められる。",
+      "answer": "○",
+      "explanation": "身体でバランスを保つ二輪車は、四輪車とは異なる運転技術が必要であるため正しい。",
+      "textVi": "Kỹ thuật lái xe cần thiết cho xe bốn bánh và xe hai bánh là khác nhau.",
+      "explanationVi": "Đúng. Xe hai bánh giữ thăng bằng bằng cơ thể nên đòi hỏi kỹ thuật lái khác biệt so với xe bốn bánh."
     },
     {
       "kind": "simple",
@@ -8825,12 +8770,12 @@
       "id": "menkyogentsuki_gentsuki_4_20_5",
       "chapter": "総合演習4",
       "section": "4-48",
-      "text": "この標示は、この先に横断歩道や自転車横断帯があることを示す。",
-      "answer": "○",
-      "explanation": "ひし形の標示は横断歩道または自転車横断帯ありを示す。逆三角は前方優先道路の標示である。",
+      "text": "この標示は、前方に信号機があることを示す。",
+      "answer": "×",
+      "explanation": "ひし形の標示は横断歩道または自転車横断帯の予告である。",
       "image": "menkyogentsuki_350.png",
-      "textVi": "Vạch kẻ hình thoi biểu thị phía trước có vạch qua đường cho người đi bộ hoặc xe đạp.",
-      "explanationVi": "Đúng. Vạch kẻ hình thoi biểu thị có vạch qua đường cho người đi bộ hoặc xe đạp. Vạch hình tam giác ngược là biểu báo đường ưu tiên phía trước."
+      "textVi": "Vạch kẻ này biểu thị phía trước có đèn tín hiệu.",
+      "explanationVi":"Sai. Vạch hình thoi là biển báo hiệu phía trước có vạch qua đường cho người đi bộ hoặc xe đạp."
     },
     {
       "kind": "simple",
@@ -9015,17 +8960,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_10_10_3",
-      "chapter": "総合演習4",
-      "section": "4-65",
-      "text": "前照灯が点灯しない原動機付自転車は、昼間であっても運転してはならない。",
-      "answer": "○",
-      "explanation": "トンネルの中やうす暗いときに点灯させることがあるためである。",
-      "textVi": "Xe gắn máy không bật đèn pha thì không được lái dù là ban ngày.",
-      "explanationVi": "Vì có thể bật đèn khi trong hầm đường bộ hoặc khi trời tối."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_13_4",
       "chapter": "総合演習4",
       "section": "4-66",
@@ -9084,11 +9018,11 @@
       "id": "menkyogentsuki_gentsuki_7_14_1",
       "chapter": "総合演習4",
       "section": "4-71",
-      "text": "車は、いかなる場合でも、軌道敷内を通行したり、横切ったりしてはならない。",
-      "answer": "×",
-      "explanation": "横断や転回、右左折をする際に横切ることができる。",
-      "textVi": "Trong mọi trường hợp, xe không được đi trong hay băng qua đường ray.",
-      "explanationVi": "Xe có thể băng qua đường ray khi thực hiện băng qua, quay đầu, rẽ trái hay rẽ phải."
+      "text": "車は原則として軌道敷内を通行してはならないが、右左折や横断のために横切ることはできる。",
+      "answer": "○",
+      "explanation": "軌道敷内は通行禁止だが、右左折、転回、道路の横断などで横切ることは認められている。",
+      "textVi": "Về nguyên tắc xe không được chạy trong đường ray, nhưng có thể đi cắt ngang khi rẽ phải/trái hoặc qua đường.",
+      "explanationVi": "Đúng. Dù cấm đi trong đường ray, nhưng luật cho phép cắt ngang để rẽ, quay đầu hoặc qua đường."
     },
     {
       "kind": "simple",
@@ -9206,11 +9140,11 @@
       "id": "menkyogentsuki_gentsuki_7_11_4",
       "chapter": "総合演習4",
       "section": "4-82",
-      "text": "車両通行帯のない道路では、原動機付自転車は、道路の左に寄って通行する。",
-      "answer": "○",
-      "explanation": "ただし、歩道のない道路では、原動機付自転車は路肩を通行してはならない。",
-      "textVi": "Trên đường không có làn đường, xe gắn máy đi sát bên trái của đường.",
-      "explanationVi": "Tuy nhiên, trên đường không có vỉa hè thì xe gắn máy không được phép đi trên lề đường."
+      "text": "車両通行帯のない道路では、原動機付自転車は安全のため道路の中央付近を通行する。",
+      "answer": "×",
+      "explanation": "車両通行帯のない道路では、自動車や原動機付自転車は道路の左側に寄って通行しなければならない。",
+      "textVi": "Trên đường không phân làn, xe gắn máy nên đi ở gần giữa đường để đảm bảo an toàn.",
+      "explanationVi": "Sai. Trên đường không phân làn, các loại xe bắt buộc phải đi sát vào phần đường bên trái."
     },
     {
       "kind": "simple",
@@ -9295,11 +9229,11 @@
       "id": "menkyogentsuki_gentsuki_7_30_5",
       "chapter": "総合演習4",
       "section": "4-90",
-      "text": "左側部分の道幅が6メートル未満の見通しのよい道路で追い越しをするときは、中央線が黄線であっても、中央線から右側にはみ出してもよい。",
-      "answer": "×",
-      "explanation": "中央線が黄線の道路では、追い越しのためのはみ出しは禁止である。",
-      "textVi": "Khi vượt xe trên đường có tầm nhìn tốt với bề rộng phần bên trái dưới 6 mét, dù là đường có vạch trung tâm màu vàng, cũng được phép lấn ra bên phải của vạch trung tâm.",
-      "explanationVi": "Trên đường có vạch giữa đường màu vàng, cấm vượt sang phải để vượt xe."
+      "text": "左側部分の道幅が6メートル未満の見通しのよい道路であっても、中央線が黄色の実線である場合は、右側にはみ出して追い越しをしてはならない。",
+      "answer": "○",
+      "explanation": "黄色の中央線は「追い越しのための右側部分はみ出し通行禁止」を意味するため、いかなる場合もはみ出してはならない。",
+      "textVi": "Ngay cả trên đường có tầm nhìn tốt với bề rộng phần đường bên trái dưới 6 mét, nếu vạch giữa đường là vạch liền màu vàng thì tuyệt đối không được lấn sang phải để vượt xe.",
+      "explanationVi": "Đúng. Vạch giữa màu vàng có nghĩa là \"Cấm lấn sang phần đường bên phải để vượt\", do đó không được lấn tuyến trong bất kỳ trường hợp nào."
     },
     {
       "kind": "simple",
@@ -9350,11 +9284,11 @@
       "id": "menkyogentsuki_gentsuki_4_27_3",
       "chapter": "総合演習4",
       "section": "4-95",
-      "text": "原動機付自転車は、小回りがきくとはいえ、道路が混雑していても、車と車の間をすり抜けてはならない。",
-      "answer": "○",
-      "explanation": "すりぬけの他に、ジグザグ運転も危険なのでしてはならない。",
-      "textVi": "Mặc dù xe gắn máy có thể quay đầu nhỏ nhưng kể cả khi đường đông đúc, không được phép luồn lách giữa các xe.",
-      "explanationVi": "Ngoài việc luồn lách, lái xe zic zac cũng nguy hiểm nên không được làm."
+      "text": "原動機付自転車は小回りがきくため、道路が混雑している場合は車と車の間をすり抜けて進行してもよい。",
+      "answer": "×",
+      "explanation": "渋滞等であっても、車の間を縫って走るすり抜け運転やジグザグ運転は極めて危険であり禁止されている。",
+      "textVi": "Vì xe gắn máy nhỏ gọn và linh hoạt, nên khi đường đông đúc có thể lách qua giữa các xe ô tô để đi tiếp.",
+      "explanationVi": "Sai. Cho dù đang kẹt xe, hành vi lách qua các khoảng trống giữa các xe là cực kỳ nguy hiểm và bị nghiêm cấm."
     },
     {
       "kind": "simple",
@@ -9427,11 +9361,11 @@
       "id": "menkyogentsuki_gentsuki_7_12_5",
       "chapter": "総合演習4",
       "section": "4-102",
-      "text": "原動機付自転車のブレーキは、あそびがあってはならない。",
-      "answer": "×",
+      "text": "原動機付自転車のブレーキのあそびは、15ミリメートルから20ミリメートルの範囲が適切である。",
+      "answer": "○",
       "explanation": "15～20ミリメートル程度のあそびがあることが望ましい。",
-      "textVi": "Phanh của xe gắn máy không được có độ rơ.",
-      "explanationVi": "Nên có độ rơ khoảng 15 đến 20 milimét."
+      "textVi": "Độ rơ của phanh xe máy từ 15 cho đến 20 milimet là mức đạt chuẩn. ",
+      "explanationVi": "Nên có độ rơ khoảng 15 đến 20 milimeet."
     },
     {
       "kind": "simple",
@@ -9666,8 +9600,8 @@
       "text": "進路を変えて前車の側方を通過し、前方に出る行為は、追い抜きではなく、追い越しである。",
       "answer": "○",
       "explanation": "進路を変えた場合、追い越しである。",
-      "textVi": "Hành vi đổi làn, đi qua bên cạnh xe phía trước rồi đi ra phía trước là vượt xe chứ không phải đuổi kịp.",
-      "explanationVi": "Nếu đổi làn đường thì đó là vượt xe."
+      "textVi": "Hành vi đổi làn, đi qua bên cạnh xe phía trước rồi đi ra phía trước là vượt xe chứ không phải \"đuổi kịp\".",
+      "explanationVi": "Nếu đổi làn đường thì đó là vượt xe. Đuổi kịp / Vượt mặt (hành động vượt nhưng không thay đổi lộ trình/làn đường)."
     },
     {
       "kind": "simple",
@@ -9851,25 +9785,14 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_9_28_2",
-      "chapter": "総合演習5",
-      "section": "5-16",
-      "text": "制動距離と停止距離を足したものが、空走距離である。",
-      "answer": "×",
-      "explanation": "ブレーキが効き始めるまでに進行する距離が空走距離であり、車が停止するまでに進行する距離が制動距離である。それらを足して停止距離と呼ぶ。",
-      "textVi": "Tổng của quãng đường phanh và quãng đường dừng là quãng đường phản ứng.",
-      "explanationVi": "Khoảng cách từ khi phanh đến khi bánh xe bắt đầu quay là khoảng cách không tải, khoảng cách từ khi phanh đến khi xe dừng là khoảng cách phanh. Tổng của hai khoảng cách đó gọi là khoảng cách dừng."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_5_26_5",
       "chapter": "総合演習5",
       "section": "5-17",
-      "text": "乾いた舗装道路で、時速30キロメートルで走行中の原動機付自転車は、5メートル以上の車間距離をとることが必要である。",
-      "answer": "×",
-      "explanation": "時速30キロメートル以下で走行する際は、速度の半分の数値で車間距離を取ることが必要。この場合は15メートル。",
-      "textVi": "Trên đường nhựa khô ráo, xe gắn máy đang chạy 30 km/h cần giữ khoảng cách hơn 5 mét giữa các xe.",
-      "explanationVi": "Khi chạy dưới 30 km/h thì cần giữ khoảng cách bằng nửa giá trị tốc độ. Trong trường hợp này là 15 mét."
+      "text": "乾いた舗装道路で、時速30キロメートルで走行中の原動機付自転車は、約15メートル以上の車間距離をとることが望ましい。",
+      "answer": "○",
+      "explanation": "時速30キロメートル以下で走行する場合、速度の半分の数値（約15メートル）の車間距離を取るのが目安である。",
+      "textVi": "Trên mặt đường nhựa khô ráo, xe gắn máy đang chạy với tốc độ 30 km/h nên giữ khoảng cách với xe phía trước khoảng 15 mét trở lên.",
+      "explanationVi": "Đúng. Khi chạy dưới 30 km/h, tiêu chuẩn giữ khoảng cách an toàn là một nửa con số tốc độ (tức là 15 mét)."
     },
     {
       "kind": "simple",
@@ -9987,11 +9910,11 @@
       "id": "menkyogentsuki_gentsuki_10_27_1",
       "chapter": "総合演習5",
       "section": "5-28",
-      "text": "対面する黄色の矢印信号が点灯していたとしても、原動機付自転車は発進してはならない。",
-      "answer": "○",
-      "explanation": "黄色の矢印信号は、路面電車に対する信号である。",
-      "textVi": "Ngay cả khi tín hiệu mũi tên vàng đối diện sáng lên, xe gắn máy không được phép khởi hành.",
-      "explanationVi": "Tín hiệu mũi tên màu vàng là tín hiệu dành cho xe điện đường phố."
+      "text": "対面する黄色の矢印信号が点灯しているときは、原動機付自転車も発進してよい。",
+      "answer": "×",
+      "explanation": "黄色の矢印は路面電車用の信号であり、原付は発進してはならない。",
+      "textVi": "Khi tín hiệu mũi tên vàng đối diện sáng lên, xe gắn máy cũng được phép khởi hành.",
+      "explanationVi": "Mũi tên vàng dành cho xe điện, xe gắn máy không được khởi hành."
     },
     {
       "kind": "simple",
@@ -10221,11 +10144,11 @@
       "id": "menkyogentsuki_gentsuki_8_30_2",
       "chapter": "総合演習5",
       "section": "5-50",
-      "text": "安全な車間距離は、停止距離とほぼ同じ距離である。",
-      "answer": "○",
-      "explanation": "停止距離と同じ距離の車間距離をとるように心掛ける。",
-      "textVi": "Khoảng cách an toàn giữa các xe gần như bằng quãng đường dừng.",
-      "explanationVi": "Hãy cố gắng giữ khoảng cách giữa các xe bằng quãng đường dừng."
+      "text": "安全な車間距離は、空走距離のみを考慮して確保すれば十分である。",
+      "answer": "×",
+      "explanation": "車間距離は空走距離だけでなく、車が完全に止まるまでの停止距離とほぼ同じ距離を確保する必要がある。",
+      "textVi": "Khoảng cách an toàn giữa các xe chỉ cần đảm bảo dựa trên quãng đường phản ứng là đủ.",
+      "explanationVi": "Sai. Khoảng cách an toàn cần phải được đảm bảo xấp xỉ bằng với quãng đường dừng (quãng đường xe chạy cho đến khi dừng hẳn)."
     },
     {
       "kind": "simple",
@@ -10688,17 +10611,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_7_12_2",
-      "chapter": "総合演習5",
-      "section": "5-92",
-      "text": "二輪車でブレーキをかけるとき、ハンドルを切っておらず、車輪が傾いていない場合は、前後輪のブレーキを同時にかけるのがよい。",
-      "answer": "○",
-      "explanation": "二輪車は、同時に前後輪のブレーキをかけるのがよい。",
-      "textVi": "Khi phanh trên xe hai bánh, nếu cần lái không quay và bánh xe không nghiêng thì nên phanh cả phanh trước và phanh sau cùng lúc.",
-      "explanationVi": "Xe hai bánh nên phanh cả phanh trước và phanh sau cùng lúc."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_14_4",
       "chapter": "総合演習5",
       "section": "5-93",
@@ -10782,11 +10694,11 @@
       "id": "menkyogentsuki_gentsuki_5_12_2",
       "chapter": "総合演習5",
       "section": "5-100",
-      "text": "原動機付自転車で走行する際、同一方向に車両通行帯が3つ以上ある場合は、原則として交通量の少ない車両通行帯を走行する。",
-      "answer": "×",
-      "explanation": "やむを得ない場合を除き、原動機付自転車は一番左側の車線を走行する。",
-      "textVi": "Khi lái xe gắn máy, trường hợp có từ 3 làn xe trở lên cùng hướng, về nguyên tắc hãy đi vào làn đường có lưu lượng giao thông ít hơn.",
-      "explanationVi": "Sai. Trừ khi thật sự cần thiết, xe gắn máy 50cc phải đi ở làn xe ngoài cùng bên trái."
+      "text": "原動機付自転車で走行する際、同一方向に車両通行帯が3つ以上ある場合でも、原則として一番左側の車線を走行しなければならない。",
+      "answer": "○",
+      "explanation": "原動機付自転車は、右折や障害物を避ける等のやむを得ない場合を除き、最も左側の車線を通行する義務がある。",
+      "textVi": "Khi lái xe gắn máy, dù đường có từ 3 làn xe trở lên cùng chiều, về nguyên tắc vẫn phải chạy ở làn xe ngoài cùng bên trái.",
+      "explanationVi": "Đúng. Trừ những trường hợp bất khả kháng, xe gắn máy bắt buộc phải đi ở làn đường ngoài cùng bên trái."
     },
     {
       "kind": "simple",
@@ -10815,11 +10727,11 @@
       "id": "menkyogentsuki_gentsuki_5_1_1",
       "chapter": "総合演習5",
       "section": "5-103",
-      "text": "車にはたらく遠心力は、カーブの半径が大きいほど大きい。",
-      "answer": "×",
-      "explanation": "遠心力は、カーブの半径が大きいほど小さい。",
-      "textVi": "Lực ly tâm tác dụng lên xe sẽ lớn hơn khi bán kính đường cong càng lớn.",
-      "explanationVi": "Sai. Lực ly tâm tác dụng lên xe sẽ nhỏ hơn khi bán kính đường cong càng lớn."
+      "text": "車にはたらく遠心力は、カーブの半径が小さいほど大きくなる。",
+      "answer": "○",
+      "explanation": "遠心力は、カーブの半径が小さいほど強く働く。",
+      "textVi": "Lực ly tâm tác dụng lên xe càng lớn khi bán kính đường cong càng nhỏ.",
+      "explanationVi": "Đúng. Bán kính đường cong càng nhỏ thì lực ly tâm tác động càng mạnh."
     },
     {
       "kind": "simple",
@@ -10881,11 +10793,11 @@
       "id": "menkyogentsuki_gentsuki_8_5_2",
       "chapter": "総合演習5",
       "section": "5-109",
-      "text": "交差点以外で、横断歩道も自転車横断帯も踏切もない場所で手信号をしているときの停止位置は、その警察官の1メートル手前である。",
-      "answer": "○",
-      "explanation": "1メートル手前に停止する。",
-      "textVi": "Tại nơi không phải giao lộ, không có vạch qua đường, làn đường xe đạp hay đường sắt, khi có tín hiệu bằng tay, vị trí dừng là cách cảnh sát 1 mét.",
-      "explanationVi": "Phải dừng ở vị trí cách 1 mét phía trước."
+      "text": "交差点以外で横断歩道などがない場所で警察官が手信号をしている場合、停止位置の決まりはないため警察官の目の前で停止してよい。",
+      "answer": "×",
+      "explanation": "横断歩道などがない場所での停止位置は、手信号をしている警察官の1メートル手前と定められている。",
+      "textVi": "Tại nơi không phải là giao lộ và không có vạch qua đường, khi cảnh sát ra tín hiệu bằng tay, vì không có quy định về vị trí dừng nên có thể dừng ngay trước mặt cảnh sát.",
+      "explanationVi": "Sai. Tại nơi không có vạch qua đường, vị trí dừng xe theo tín hiệu bằng tay được quy định là cách cảnh sát 1 mét về phía trước."
     },
     {
       "kind": "simple",
@@ -10925,11 +10837,11 @@
       "id": "menkyogentsuki_gentsuki_7_15_2",
       "chapter": "総合演習5",
       "section": "5-113",
-      "text": "原動機付自転車を運転する際は、ハンドルをあまり強く握りすぎないようにする。",
-      "answer": "○",
-      "explanation": "円滑にハンドル等を操作するためである。",
-      "textVi": "Khi lái xe gắn máy, không nên nắm cần lái quá chặt.",
-      "explanationVi": "Để thao tác cần lái một cách trơn tru."
+      "text": "原動機付自転車を運転する際は、ハンドルを強く握りしめるようにする。",
+      "answer": "×",
+      "explanation": "強く握りすぎると、円滑なハンドル操作ができなくなるため誤り。",
+      "textVi": "Khi lái xe gắn máy, nên nắm thật chặt tay lái.",
+      "explanationVi": "Nắm quá chặt sẽ khiến việc thao tác tay lái không trơn tru."
     },
     {
       "kind": "simple",
@@ -11083,10 +10995,10 @@
       "id": "menkyogentsuki_gentsuki_7_22_4",
       "chapter": "総合演習6",
       "section": "6-3",
-      "text": "エンジンオイルの量はエンジンを切った状態で点検する。",
+      "text": "エンジンオイルの量はエンジンをかけた状態で点検してはならない。",
       "answer": "○",
       "explanation": "エンジンをかけたまま点検をするのではない。",
-      "textVi": "Kiểm tra lượng dầu động cơ khi động cơ đã tắt.",
+      "textVi": "Không nên kiểm tra lượng dầu động cơ khi động cơ vẫn còn đang hoạt động.",
       "explanationVi": "Không phải kiểm tra trong khi để máy chạy."
     },
     {
@@ -11121,8 +11033,8 @@
       "text": "標識や標示によって指定されていない一般道路では、原動機付自転車の最高速度は、時速30キロメートルである。",
       "answer": "○",
       "explanation": "原動機付自転車の最高速度は時速30キロメートルである。標識等により制限速度が時速30キロメートルを超える一般道路であっても、時速30キロメートル以上で走行してはならない。",
-      "textVi": "Trên đường thường không có biển báo hay biển chỉ dẫn quy định, tốc độ tối đa của xe gắn máy là 30 km/h.",
-      "explanationVi": "Tốc độ tối đa của xe gắn máy là 30 km/h. Dù là đường thường có biển giới hạn tốc độ trên 30 km/h thì cũng không được chạy quá 30 km/h."
+      "textVi": "Trên đường thường không có biển báo hay biển chỉ dẫn quy định, tốc độ tối đa của xe gắn máy 50cc là 30 km/h.",
+      "explanationVi": "Tốc độ tối đa của xe gắn máy 50cc là 30 km/h. Dù là đường thường có biển giới hạn tốc độ trên 30 km/h thì cũng không được chạy quá 30 km/h."
     },
     {
       "kind": "simple",
@@ -11329,11 +11241,11 @@
       "id": "menkyogentsuki_gentsuki_8_7_2",
       "chapter": "総合演習6",
       "section": "6-13",
-      "text": "歩行者専用道路は、許可を受けており、かつ法定速度を守れば車も通行可能である。",
-      "answer": "×",
-      "explanation": "歩行者専用道路は、許可を受けている車は通行できるが、徐行せねばならない。",
-      "textVi": "Đường dành cho người đi bộ, nếu có giấy phép và tuân thủ tốc độ pháp định thì xe cũng có thể đi qua.",
-      "explanationVi": "Đường dành cho người đi bộ, xe có giấy phép có thể đi qua nhưng phải giảm tốc độ."
+      "text": "歩行者専用道路は、許可を受けた車が徐行する場合に限り、通行することができる。",
+      "answer": "○",
+      "explanation": "許可車両であっても、歩行者専用道路では必ず徐行する義務がある。",
+      "textVi": "Đường dành cho người đi bộ, xe có giấy phép chỉ được đi qua khi chạy thật chậm (徐行).",
+      "explanationVi": "Đúng. Dù là xe có giấy phép thì khi đi qua đường dành cho người đi bộ vẫn bắt buộc phải chạy thật chậm."
     },
     {
       "kind": "simple",
@@ -11387,7 +11299,7 @@
       "text": "二輪車は、内輪差がないため、右左折の際に歩行者や自転車を巻きこむ心配がない。",
       "answer": "×",
       "explanation": "二輪車であっても内輪差があるので、特に左折の際は歩行者や自転車を巻きこまないよう注意が必要である。",
-      "textVi": "Xe hai bánh không có nội tuyến nên khi rẽ phải hay rẽ trái không có nguy cơ cuốn người đi bộ hay xe đạp.",
+      "textVi": "Xe hai bánh không có nội tuyến(sự chênh lệch quỹ đạo bánh xe) nên khi rẽ phải hay rẽ trái không có nguy cơ cuốn người đi bộ hay xe đạp.",
       "explanationVi": "Xe hai bánh cũng có bán kính quay vòng trong khác nhau, nên đặc biệt khi rẽ trái cần chú ý không cuốn người đi bộ và xe đạp."
     },
     {
@@ -11662,10 +11574,10 @@
       "id": "menkyogentsuki_gentsuki_7_17_5",
       "chapter": "総合演習6",
       "section": "6-43",
-      "text": "原動機付自転車の最高速度は、時速30キロメートルである。",
-      "answer": "○",
+      "text": "原動機付自転車の最高速度は、時速50キロメートルである。",
+      "answer": "×",
       "explanation": "時速30キロメートルを超える速度で運転してはならない。",
-      "textVi": "Tốc độ tối đa của xe gắn máy là 30 km/h.",
+      "textVi": "Tốc độ tối đa của xe gắn máy 50cc là 50 km/h.",
       "explanationVi": "Không được phép lái xe với tốc độ vượt quá 30 km/h."
     },
     {
@@ -11896,11 +11808,11 @@
       "id": "menkyogentsuki_gentsuki_6_4_3",
       "chapter": "総合演習6",
       "section": "6-64",
-      "text": "ハンドルに故障を見つけたが、短い距離であったのでそのまま運転した。",
-      "answer": "×",
+      "text": "ハンドルに故障を見つけた場合は、短い距離であっても運転してはならない。",
+      "answer": "○",
       "explanation": "ハンドルやエンジンが故障した場合、決してそのまま運転してはならない。",
-      "textVi": "Phát hiện tay lái bị hỏng nhưng vì quãng đường ngắn nên vẫn tiếp tục lái xe.",
-      "explanationVi": "Sai. Khi phát hiện tay lái hoặc động cơ bị hỏng, tuyệt đối không được tiếp tục lái xe dù quãng đường có ngắn đến đâu."
+      "textVi": "Dù chỉ là quãng đường ngắn, vẫn không được phép lái xe nếu phát hiện cần lái có hư hỏng.",
+      "explanationVi": "Khi phát hiện tay lái hoặc động cơ bị hỏng, tuyệt đối không được tiếp tục lái xe dù quãng đường có ngắn đến đâu."
     },
     {
       "kind": "simple",
@@ -12119,11 +12031,11 @@
       "id": "menkyogentsuki_gentsuki_10_6_2",
       "chapter": "総合演習6",
       "section": "6-84",
-      "text": "下り坂では、重力が働くため、車に勢いがつく。",
-      "answer": "○",
-      "explanation": "上り坂では、車が上りにくくなる。",
-      "textVi": "Khi xuống dốc, do có trọng lực tác dụng nên xe có xu hướng tăng tốc.",
-      "explanationVi": "Khi lên dốc, xe khó đi lên hơn."
+      "text": "下り坂では、重力が働くため、自然と車にブレーキがかかり勢いが弱まる。",
+      "answer": "×",
+      "explanation": "下り坂では重力により車が加速するため、勢いがつきやすく制動距離も長くなる。",
+      "textVi": "Khi xuống dốc, do có trọng lực tác dụng nên xe tự động bị hãm phanh và mất đà.",
+      "explanationVi": "Sai. Khi xuống dốc, trọng lực làm xe tăng tốc nên dễ bị lao nhanh hơn và quãng đường phanh cũng sẽ dài hơn."
     },
     {
       "kind": "simple",
@@ -12441,10 +12353,10 @@
       "id": "menkyogentsuki_gentsuki_8_25_3",
       "chapter": "総合演習6",
       "section": "6-113",
-      "text": "青色の矢印信号が右折の矢印であっても、転回は禁止されている。",
-      "answer": "×",
+      "text": "右折の矢印信号が出ているとき、転回は禁止されていない。",
+      "answer": "○",
       "explanation": "転回禁止の交差点を除き、右折の矢印信号のときは、転回できる。",
-      "textVi": "Ngay cả khi tín hiệu mũi tên xanh cho rẽ phải, quay đầu xe vẫn bị cấm.",
+      "textVi": "Ngay cả khi tín hiệu mũi tên xanh cho rẽ phải, quay đầu xe không bị cấm.",
       "explanationVi": "Trừ giao lộ cấm quay đầu, khi có tín hiệu mũi tên rẽ phải thì được phép quay đầu."
     },
     {
@@ -12464,11 +12376,11 @@
       "id": "menkyogentsuki_gentsuki_8_16_1",
       "chapter": "総合演習6",
       "section": "6-115",
-      "text": "信号機の信号と手信号が異なる場合は、手信号に従う。",
-      "answer": "○",
-      "explanation": "正しい。ちなみに、手信号での交通整理は警察官と交通巡視員が行うことができる。",
-      "textVi": "Khi tín hiệu đèn giao thông và tín hiệu bằng tay khác nhau, phải tuân theo tín hiệu bằng tay.",
-      "explanationVi": "Đúng. Nhân tiện, người điều khiển giao thông bằng tín hiệu tay có thể là cảnh sát hoặc nhân viên tuần tra giao thông."
+      "text": "信号機の信号と警察官の手信号が異なる場合は、信号機の信号を優先して従う。",
+      "answer": "×",
+      "explanation": "交通整理においては、信号機の信号よりも警察官などの手信号が優先される。",
+      "textVi": "Khi tín hiệu của đèn giao thông và tín hiệu bằng tay của cảnh sát khác nhau, phải ưu tiên tuân theo tín hiệu của đèn giao thông.",
+      "explanationVi": "Sai. Trong điều tiết giao thông, tín hiệu bằng tay của cảnh sát được ưu tiên hơn tín hiệu đèn giao thông."
     },
     {
       "kind": "simple",

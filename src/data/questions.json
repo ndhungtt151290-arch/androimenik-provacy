@@ -1679,8 +1679,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_3_8_5",
-      "chapter": "総合演習4",
-      "section": "4-2-1",
+      "chapter": "総合演習1",
+      "section": "1-2-100",
       "text": "このステッカーを貼った車両に対し、速度を調整して割込みを行うことは、違反とはみなされません。",
       "answer": "×",
       "explanation": "このマークは高齢運転者標識。70歳以上の人が運転していることを示す。",
@@ -3709,11 +3709,11 @@
       "id": "menkyogentsuki_gentsuki_5_9_4",
       "chapter": "危険な状況での運転",
       "section": "大地震・交通事故への対応",
-      "text": "交通事故の際は、直ちに負傷者を救護する。",
+      "text": "交通事故が起きたとき、当事者同士で話し合って示談が成立すれば、警察に報告せずにその場を立ち去ってもよい。",
       "answer": "×",
-      "explanation": "二次的な事故を防ぐため、まず車を安全な場所に停止させる。",
-      "textVi": "Khi xảy ra tai nạn giao thông, trước tiên bạn phải di chuyển xe đến nơi an toàn để tránh tai nạn thứ cấp.",
-      "explanationVi": "Sai. Khi xảy ra tai nạn giao thông, bạn phải gọi cảnh sát và giữ nguyên hiện trường trước."
+      "explanation": "誤り。交通事故が発生したときは、たとえ軽微な事故であっても、必ず警察に報告し、指示を受けなければならない。示談を優先して警察への報告を怠ることは法令違反である。",
+      "textVi": "Khi xảy ra tai nạn giao thông, nếu các bên tự thỏa thuận và đạt được sự hòa giải (thỏa thuận bồi thường), thì có thể rời khỏi hiện trường mà không cần báo cảnh sát.",
+      "explanationVi": "Sai. Khi xảy ra tai nạn giao thông, dù là tai nạn nhỏ, bạn bắt buộc phải báo cáo cho cảnh sát và nhận chỉ dẫn. Việc ưu tiên thỏa thuận riêng mà không báo cảnh sát là vi phạm pháp luật."
     },
     {
       "kind": "simple",
@@ -4032,12 +4032,12 @@
       "id": "menkyogentsuki_gentsuki_6_16_2",
       "chapter": "標識・標示・信号",
       "section": "総合問題(図像)",
-      "text": "この標識があったので、時速30キロメートルで走行していたが、時速25キロメートルに落として走行した。",
-      "answer": "×",
-      "explanation": "この標識は、徐行を示す。徐行とは、すぐに停止できる速度のことであり、時速10キロメートル以下である。",
+      "text": "この標識があったので、すぐに停止できる速度（時速10キロメートル以下）に落として走行した。",
+      "answer": "○",
+      "explanation": "正しい。この標識は「徐行」を示す。徐行とは、ブレーキをかけてすぐに停止できる速度（時速10キロメートル以下）のことである。",
       "image": "menkyogentsuki_327.png",
-      "textVi": "Vì có biển báo này nên đã chạy 30km/h, sau đó giảm còn 25km/h.",
-      "explanationVi": "Sai. Biển báo này biểu thị chạy chậm (徐行). 徐行 là chạy với tốc độ có thể dừng xe ngay được, tức dưới 10km/h."
+      "textVi": "Vì có biển báo này nên tôi đã giảm tốc độ xuống mức có thể dừng xe ngay lập tức (dưới 10km/h) để lưu thông.",
+      "explanationVi": "Đúng. Biển báo này biểu thị 'chạy chậm' (徐行). 徐行 là chạy với tốc độ có thể dừng xe ngay lập tức (dưới 10km/h)."
     },
     {
       "kind": "simple",
@@ -4134,18 +4134,6 @@
       "image": "menkyogentsuki_356.png",
       "textVi": "Trên đường có vạch kẻ này, ngay cả khi muốn vượt xe khác cũng tuyệt đối không được lấn sang làn đường bên phải.",
       "explanationVi": "Sai. Trên con đường có vạch kẻ đứt quãng màu trắng ở giữa, nếu chú ý xe đi ngược chiều, bạn được phép lấn sang làn đường bên phải để vượt xe khác."
-    },
-    {
-      "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_6_22_4",
-      "chapter": "総合演習1",
-      "section": "1-203",
-      "text": "この標識は安全地帯を示し、車の通行は禁じられている。",
-      "answer": "○",
-      "explanation": "正しい。この標識は安全地帯の標識である。安全地帯は歩行者や路面電車の乗降客の安全のために設けられているので、車の通行は禁じられている。",
-      "image": "menkyogentsuki_359.png",
-      "textVi": "Biển báo này biểu thị vùng an toàn, xe cơ giới không được phép đi qua.",
-      "explanationVi": "Đúng. Biển báo này biểu thị vùng an toàn. Vùng an toàn được đặt ra để bảo vệ sự an toàn của người đi bộ và hành khách lên xuống xe điện mặt đất, xe cơ giới không được phép đi qua."
     },
     {
       "kind": "simple",
@@ -4337,12 +4325,12 @@
       "id": "menkyogentsuki_gentsuki_1_18_2",
       "chapter": "総合演習1",
       "section": "1-15",
-      "text": "この標識は、自転車専用道もしくは自転車道を示す。",
-      "answer": "○",
-      "explanation": "自転車横断帯と間違えやすいので、注意が必要である。",
+      "text": "この標識は、自転車が道路を横断するための「自転車横断帯」であることを示す。",
+      "answer": "×",
+      "explanation": "誤り。この標識は「自転車専用道路」や「自転車道」を示すものであり、自転車が横断するための「自転車横断帯」ではない。自転車横断帯は道路上に表示される標示である。",
       "image": "menkyogentsuki_337.png",
-      "textVi": "Biển báo này biểu thị làn đường dành cho xe đạp hoặc đường xe đạp.",
-      "explanationVi": "Đúng. Cần chú ý tránh nhầm lẫn với vạch qua đường cho xe đạp."
+      "textVi": "Biển báo này biểu thị khu vực vạch kẻ đường để xe đạp băng qua đường (自転車横断帯).",
+      "explanationVi": "Sai. Biển báo này biểu thị 'đường dành riêng cho xe đạp' hoặc 'đường xe đạp', chứ không phải vạch qua đường cho xe đạp. Vạch qua đường cho xe đạp là một loại ký hiệu vạch kẻ trên mặt đường."
     },
     {
       "kind": "simple",
@@ -4671,12 +4659,12 @@
       "id": "menkyogentsuki_gentsuki_1_16_4",
       "chapter": "総合演習1",
       "section": "1-49",
-      "text": "この標識は、学校、幼稚園、保育所などありを示す。",
-      "answer": "○",
-      "explanation": "この標識は、学校、幼稚園、保育所などありを示す警戒標識である。",
+      "text": "この標識は、学校、幼稚園、保育所のほか、老人ホームなどの高齢者施設があることを示す。",
+      "answer": "×",
+      "explanation": "誤り。この警戒標識は「学校、幼稚園、保育所等あり」を示すものであり、高齢者施設を示すものではない。高齢者施設等は別の標識で表示される。",
       "image": "menkyogentsuki_329.png",
-      "textVi": "Biển báo này biểu thị nơi có trường học, nhà trẻ, v.v.",
-      "explanationVi": "Đúng. Biển báo này là biển báo cảnh báo biểu thị nơi có trường học, nhà trẻ, v.v."
+      "textVi": "Biển báo này biểu thị rằng ngoài trường học, nhà trẻ, thì còn có các cơ sở dành cho người cao tuổi như viện dưỡng lão.",
+      "explanationVi": "Sai. Biển báo cảnh báo này chỉ biểu thị 'nơi có trường học, nhà trẻ, v.v.', không bao gồm các cơ sở dành cho người cao tuổi. Các cơ sở người cao tuổi sẽ có biển báo riêng biệt."
     },
     {
       "kind": "simple",
@@ -4861,12 +4849,12 @@
       "id": "menkyogentsuki_gentsuki_1_22_5",
       "chapter": "標識・標示・信号",
       "section": "1-66",
-      "text": "この標示があるところでは、普通自動車は、混雑している場合に限り、この車両通行帯を通行できる。",
-      "answer": "×",
-      "explanation": "この標示は、バス専用車両通行帯であることを示す。原動機付自転車や小型特殊自動車、軽車両は通行できるが普通自動車は原則通行できない。",
+      "text": "この標示がある車両通行帯はバス専用であることを示しており、普通自動車は混雑の有無にかかわらず通行してはならない。",
+      "answer": "○",
+      "explanation": "正しい。この標示はバス専用通行帯を示しており、原動機付自転車や軽車両などは通行できるが、普通自動車は原則として通行してはならない（例外として、左折のためやむを得ない場合や工事などでやむを得ない場合を除く）。",
       "image": "menkyogentsuki_360.png",
-      "textVi": "Vạch kẻ đường này cho biết làn đường dành cho xe buýt, xe thường có thể đi vào khi đường đông.",
-      "explanationVi": "Sai. Vạch kẻ đường này biểu thị làn dành cho xe buýt tuyến. Xe gắn máy, xe đặc biệt nhỏ, xe đạp có thể đi vào, nhưng xe ô tô thường thì không được phép."
+      "textVi": "Vạch kẻ đường này biểu thị làn đường dành riêng cho xe buýt, xe ô tô thường không được phép đi vào bất kể đường có đông hay không.",
+      "explanationVi": "Đúng. Vạch kẻ này biểu thị làn dành riêng cho xe buýt. Các loại xe như xe gắn máy, xe đạp được phép đi vào, nhưng xe ô tô thường về nguyên tắc bị cấm đi vào làn đường này (trừ các trường hợp ngoại lệ như khi cần rẽ trái hoặc tránh công trình đang thi công)."
     },
     {
       "kind": "simple",
@@ -6426,12 +6414,12 @@
       "id": "menkyogentsuki_gentsuki_2_17_1",
       "chapter": "総合演習2",
       "section": "2-87",
-      "text": "この標示がある交差点へは、普通自転車は進入することができる。",
-      "answer": "×",
-      "explanation": "この標示は、普通自転車の交差点進入禁止を示す。普通自転車は、この標示の先の交差点に進入できない。なお普通自転車とは、車両をけん引しているものやタンデム自転車などを除いた、一般的な自転車のことである。",
+      "text": "この標示がある交差点は、普通自転車の進入が禁止されているため、自転車で通行してはならない。",
+      "answer": "○",
+      "explanation": "正しい。この標示は「普通自転車の交差点進入禁止」を示すものであり、自転車（普通自転車）はこの標識の先の交差点に進入してはならない。",
       "image": "menkyogentsuki_331.png",
-      "textVi": "Xe đạp thường (普通自転車) được phép đi vào giao lộ có biển báo này.",
-      "explanationVi": "Sai. Biển báo này cấm xe đạp thường đi vào giao lộ. Xe đạp thường không được phép đi vào giao lộ phía sau biển báo. Lưu ý: xe đạp thường là xe đạp phổ thông, không bao gồm xe đạp đang kéo hoặc xe đạp hai người."
+      "textVi": "Giao lộ có biển báo này cấm xe đạp thường (普通自転車) đi vào, nên không được phép đi xe đạp qua đây.",
+      "explanationVi": "Đúng. Biển báo này biểu thị 'Cấm xe đạp thường đi vào giao lộ'. Xe đạp thường không được phép đi vào giao lộ nằm phía sau biển báo này."
     },
     {
       "kind": "simple",
@@ -6814,8 +6802,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_9_9_4",
-      "chapter": "総合演習3",
-      "section": "3-1",
+      "chapter": "総合演習5",
+      "section": "5-55-1",
       "text": "雨天のときは視界が悪く対向車が見えにくくなるため、山道ではできるだけ路肩に寄って走行する方がよい。",
       "answer": "×",
       "explanation": "誤り。雨天時は地盤が緩んでおり、路肩が崩れる危険があるため、山道では路肩に寄りすぎないように走行しなければならない。",
@@ -7682,17 +7670,6 @@
     },
     {
       "kind": "simple",
-      "id": "menkyogentsuki_gentsuki_8_3_3",
-      "chapter": "総合演習3",
-      "section": "3-82",
-      "text": "頭部に傷を受けた負傷者を救護する際は、意識を失わないよう、体をゆするのがよい。",
-      "answer": "×",
-      "explanation": "むやみに動かしてはならない。",
-      "textVi": "Khi cứu người bị thương ở đầu, để tránh mất ý thức, nên lắc người họ.",
-      "explanationVi": "Không được di chuyển tùy tiện."
-    },
-    {
-      "kind": "simple",
       "id": "menkyogentsuki_gentsuki_8_21_2",
       "chapter": "総合演習3",
       "section": "3-84",
@@ -8128,8 +8105,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_4_4",
-      "chapter": "総合演習4",
-      "section": "4-1",
+      "chapter": "総合演習1",
+      "section": "1-1-2222",
       "text": "道路の前方の交通状況から、横断歩道の中で停止するおそれがあるときは、横断歩道に入ってはならない。",
       "answer": "○",
       "explanation": "横断歩道に入らず、停止する。",
@@ -8139,8 +8116,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_4_4_s1",
-      "chapter": "総合演習4",
-      "section": "4-2",
+      "chapter": "総合演習2",
+      "section": "2-2-5631",
       "text": "同一方向に3つの車両通行帯がある道路において、原動機付自転車で進行するときは、最も左よりの通行帯を軽車両のために空け、できるだけ右側の通行帯を通行する。",
       "answer": "×",
       "explanation": "誤り。原動機付自転車は、複数の車両通行帯がある場合でも、原則として最も左側の通行帯を通行しなければならない。",
@@ -10791,8 +10768,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_25_2",
-      "chapter": "総合演習6",
-      "section": "6-2",
+      "chapter": "総合演習5",
+      "section": "5-6-2",
       "text": "正面の信号が黄色の点滅を表示しているときは、一時停止したのち、進行しなければならない。",
       "answer": "×",
       "explanation": "一時停止する必要はなく、他の交通に注意して進行する。",
@@ -11593,8 +11570,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_30_5",
-      "chapter": "総合演習6",
-      "section": "6-63",
+      "chapter": "総合演習5",
+      "section": "5-6-63",
       "text": "徐行とは、すぐに停止できる速度で運転することである。",
       "answer": "○",
       "explanation": "時速10キロメートル以下が一つの目安となる。",
@@ -11615,8 +11592,8 @@
     {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_6_1",
-      "chapter": "総合演習6",
-      "section": "6-65",
+      "chapter": "総合演習5",
+      "section": "5-6-65",
       "text": "ブレーキの故障は、エンジンの故障と比べて危険であるので、早急に修理する必要がある。",
       "answer": "○",
       "explanation": "停止することができなくなるためである。",

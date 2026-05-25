@@ -90,7 +90,10 @@ export function ReviewScreen({ lang, score, reviewAll, onBackResults, onHome }: 
     <View style={styles.screenContainer}>
       <ScrollView
         style={styles.container}
-        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 16 }]}
+        contentContainerStyle={[
+          styles.scrollContent,
+          { paddingTop: Math.max(insets.top, 16), paddingBottom: insets.bottom + 16 },
+        ]}
         showsVerticalScrollIndicator={false}
       >
         <Text style={styles.heading}>{reviewAll ? L.titleAll : L.title}</Text>
@@ -209,11 +212,11 @@ const styles = StyleSheet.create({
   screenContainer: { flex: 1, position: "relative" },
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
-  heading: { fontSize: 16, fontWeight: "bold", color: "#fde68a", marginBottom: 16 },
+  heading: { fontSize: 16, fontWeight: "bold", color: "rgba(17, 39, 138, 0.85)", marginBottom: 16 },
   list: { gap: 12 },
-  itemCard: { borderRadius: 12, padding: 14, borderWidth: 1, borderLeftWidth: 4 },
-  itemCorrect: { borderColor: "#d1fae5", borderLeftColor: "#16a34a", backgroundColor: "rgba(255,255,255,0.1)" },
-  itemWrong: { borderColor: "#fee2e2", borderLeftColor: "#dc2626", backgroundColor: "rgba(255,255,255,0.1)" },
+  itemCard: { borderRadius: 12, padding: 14, overflow: "hidden" },
+  itemCorrect: { borderWidth: 1, borderColor: "#d1fae5", borderLeftWidth: 4, borderLeftColor: "#16a34a", backgroundColor: "rgba(255,255,255,0.1)" },
+  itemWrong: { borderWidth: 1, borderColor: "#fee2e2", borderLeftWidth: 4, borderLeftColor: "#dc2626", backgroundColor: "rgba(255,255,255,0.1)" },
   itemHeader: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 10 },
   questionNum: { fontSize: 12, fontWeight: "bold", color: "rgba(12, 15, 121, 0.85)" },
   scenarioHintInline: { fontSize: 10, color: "#9f1239", fontWeight: "normal" },

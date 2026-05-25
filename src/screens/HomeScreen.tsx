@@ -14,6 +14,7 @@ import {
   KeyboardAvoidingView,
   Keyboard,
   Platform,
+  useWindowDimensions,
 } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -35,8 +36,7 @@ import {
 
 const bank = require("../data/questions").default;
 
-const imgS1 = require("../assets/home/s1.png");
-const imgS2 = require("../assets/home/s2.png");
+const imgHeaderCombined = require("../assets/home/s1-2.png");
 const imgS3 = require("../assets/home/s3.png");
 const imgS3_1 = require("../assets/home/s3_1.png");
 const imgMenu = require("../assets/home/menu.png");
@@ -89,6 +89,7 @@ export function HomeScreen({
   onPrivacy,
 }: HomeScreenProps) {
   const insets = useSafeAreaInsets();
+  const { height: screenHeight, width: screenWidth } = useWindowDimensions();
   const [menuVisible, setMenuVisible] = useState(false);
   const [tipModalVisible, setTipModalVisible] = useState(false);
   const [procedureModalVisible, setProcedureModalVisible] = useState(false);
@@ -257,10 +258,9 @@ export function HomeScreen({
 
   return (
     <View style={styles.container}>
-      <View style={styles.headerSection}>
+      <View style={[styles.headerSection, { height: screenHeight * 0.35, paddingTop: insets.top }]}>
         <View style={styles.headerImages}>
-          <Image source={imgS1} style={styles.headerLogo} />
-          <Image source={imgS2} style={styles.headerHero} />
+          <Image source={imgHeaderCombined} style={styles.headerCombined} />
         </View>
       </View>
 
@@ -953,7 +953,6 @@ export function HomeScreen({
 const styles = StyleSheet.create({
   container: { flex: 1 },
   headerSection: {
-    height:250,
     justifyContent: "center",
   },
   headerImages: {
@@ -962,15 +961,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     backgroundColor: "transparent",
   },
-  headerLogo: { 
-    overflow: "visible", 
-    width: 190, 
-    height: 140,
-  },
-  headerHero: { 
-    marginTop: 10,
-    height: 90, 
-    width: 330,
+  headerCombined: {
+    width: 300,
+    height: 300,
+    resizeMode: "contain",
   },
   buttonCenterWrapper: {
     alignItems: "center",

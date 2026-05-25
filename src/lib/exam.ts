@@ -45,8 +45,8 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
     "総合演習6",
   ];
 
-  // === Ràng buộc tối thiểu 8 câu chứa ảnh ===
-  const MIN_IMAGE_QUESTIONS = 8;
+  // === Ràng buộc tối thiểu 6 câu chứa ảnh (>= 6, "trên 5") ===
+  const MIN_IMAGE_QUESTIONS = 6;
 
   // === Ham kiem tra ràng buộc tại vi tri i ===
   function canPlaceAt(
@@ -167,7 +167,7 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
       const violations = countViolations(result);
       if (violations < bestViolations) {
         bestViolations = violations;
-        bestResult = result;
+        bestResult = [...result]; // Clone để tránh reference
       }
     }
 
@@ -176,9 +176,15 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
       bestResult = bestResult.slice(0, TARGET_SIMPLE);
     }
     while (bestResult.length < TARGET_SIMPLE) {
-      const fromPicked = picked.filter((q) => !bestResult.some((r) => r.id === q.id));
-      if (fromPicked.length === 0) break;
-      bestResult.push(shuffle(fromPicked)[0]);
+      // Tìm câu chưa được thêm từ picked gốc
+      const pickedIds = new Set(picked.map((q) => q.id));
+      const usedIds = new Set(bestResult.map((q) => q.id));
+      const candidates = picked.filter((q) => !usedIds.has(q.id));
+      if (candidates.length === 0) {
+        // Edge case: dùng lại câu từ bestResult nhưng khác vị trí cuối
+        candidates.push(...bestResult.slice(-1));
+      }
+      bestResult.push(shuffle(candidates)[0]);
     }
 
     return bestResult;
@@ -209,8 +215,48 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
     remaining -= actual;
   }
 
+  // === Bảo đảm luôn đủ 46 câu simple ===
+  // Nếu picked thiếu (do làm tròn), bổ sung từ các chương còn dư
+  if (picked.length < TARGET_SIMPLE) {
+    const pickedIds = new Set(picked.map((q) => q.id));
+    const allRemaining = uniqueSimple.filter((q) => !pickedIds.has(q.id));
+    const shuffledRemaining = shuffle(allRemaining);
+    const needed = TARGET_SIMPLE - picked.length;
+    picked.push(...shuffledRemaining.slice(0, needed));
+  }
+
+  // === Bảo đảm tối thiểu 6 câu hình ===
+  const imageCount = picked.filter((q) => q.image).length;
+  if (imageCount < MIN_IMAGE_QUESTIONS) {
+    console.warn(`Chỉ có ${imageCount} câu hình trong picked, cần bổ sung thêm...`);
+    const pickedIds = new Set(picked.map((q) => q.id));
+    const imageCandidates = uniqueSimple.filter(
+      (q) => q.image && !pickedIds.has(q.id)
+    );
+    const needed = MIN_IMAGE_QUESTIONS - imageCount;
+    if (needed > 0 && imageCandidates.length >= needed) {
+      picked.push(...shuffle(imageCandidates).slice(0, needed));
+    } else if (needed > 0) {
+      console.error(`Không đủ câu hình để bổ sung! Cần ${needed}, có ${imageCandidates.length}`);
+    }
+  }
+
   // === Tối ưu hóa layout đề thi với 4 ràng buộc ===
   const finalPicked = optimizeExamLayout(picked);
+
+  // === Bảo đảm finalPicked luôn đúng 46 câu ===
+  if (finalPicked.length !== TARGET_SIMPLE) {
+    console.warn(`optimizeExamLayout trả về ${finalPicked.length} thay vì ${TARGET_SIMPLE}, điều chỉnh...`);
+    if (finalPicked.length > TARGET_SIMPLE) {
+      finalPicked.length = TARGET_SIMPLE;
+    } else {
+      // Bổ sung từ picked gốc
+      const finalIds = new Set(finalPicked.map((q) => q.id));
+      const needed = TARGET_SIMPLE - finalPicked.length;
+      const extra = picked.filter((q) => !finalIds.has(q.id));
+      finalPicked.push(...shuffle(extra).slice(0, needed));
+    }
+  }
 
   // === PHASE 2: Select 1 scenario from each chapter (câu 47, 48) ===
   const ch11Scenarios = uniqueScenarios.filter((g) => g.chapter === "危険予測");
@@ -254,7 +300,22 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
   }
 
   // Simple questions first, then scenario questions at the end (in order)
-  return [...simpleItems, ...scenItems];
+  const paper = [...simpleItems, ...scenItems];
+
+  // === Validation: Đảm bảo đúng 52 items ===
+  const TARGET_TOTAL_ITEMS = 52;
+  if (paper.length !== TARGET_TOTAL_ITEMS) {
+    console.error(`LỖI: paper.length = ${paper.length}, mong đợi ${TARGET_TOTAL_ITEMS}!`);
+    console.error(`simpleItems: ${simpleItems.length}, scenItems: ${scenItems.length}`);
+  }
+
+  // Đảm bảo có đúng 2 scenario groups với đủ 6 subs
+  const scenarioGroupCount = scenItems.length / 3;
+  if (scenarioGroupCount !== 2 || scenItems.length !== 6) {
+    console.error(`LỖI: Có ${scenarioGroupCount} scenario groups (${scenItems.length} items), mong đợi 2 groups (6 items)!`);
+  }
+
+  return paper;
 }
 
 export type SimpleAttempt = { correct: boolean; user?: MaruBatsu };
@@ -333,6 +394,7 @@ export function scoreExam(
     let answeredCount = 0;
 
     for (const item of group.items) {
+      if (item.type !== "simple") continue;
       const user = simpleAns[item.question.id];
       if (user === undefined) {
         allCorrect = false;

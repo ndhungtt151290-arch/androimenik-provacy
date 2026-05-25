@@ -335,10 +335,7 @@ export function ExamScreen({
                   <Text style={styles.drawerClose}>✕</Text>
                 </TouchableOpacity>
               </View>
-              <View style={styles.drawerProgressBar}>
-                <View style={[styles.drawerProgressFill, { width: `${(answeredCount / total) * 100}%` }]} />
-              </View>
-              <ScrollView showsVerticalScrollIndicator>
+              <ScrollView>
                 <View style={styles.drawerGrid}>
                   {paper.map((item, i) => {
                     const id = getItemFlagId(item, i);
@@ -477,9 +474,9 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 0,
     left:-15,
-    height: 420,
+    height: 440,
     width: "80%",
-    marginTop: 95,
+    marginTop: 45,
     zIndex: 999,
     backgroundColor: "rgb(255, 255, 255)",
     elevation: 8,
@@ -494,7 +491,7 @@ const styles = StyleSheet.create({
   },
   drawerContent: {
     flex: 1,
-    paddingTop: 14,
+    paddingTop: 10,
     paddingHorizontal: 14,
     paddingBottom: 25,
     paddingLeft: 25,
@@ -503,7 +500,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 35,
+    marginBottom: 12,
   },
   drawerTitle: {
     fontSize: 14,
@@ -532,7 +529,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     gap: 4,
-    marginBottom: 26 ,
+    marginBottom: 26,
+    marginLeft : 5,
+    marginTop: 5,
+    marginRight : 1,
     justifyContent: "flex-start",
   },
   drawerGridBtn: {

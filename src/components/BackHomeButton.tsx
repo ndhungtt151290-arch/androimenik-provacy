@@ -24,9 +24,11 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 6,
     left: 0,
-    padding: 4,
+    padding: 6,
     alignSelf: "flex-start",
-    paddingTop: 2,
+    paddingTop: 4,
+    minWidth: 44,
+    minHeight: 44,
     zIndex: 100,
   },
   icon: {

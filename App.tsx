@@ -12,6 +12,7 @@ import {
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { LangSwitch } from "./src/components/LangSwitch";
 import { SoundToggle } from "./src/components/SoundToggle";
+import { PrivacyScreen } from "./src/screens/PrivacyScreen";
 import { BackHomeButton } from "./src/components/BackHomeButton";
 import { ConfirmDialog } from "./src/components/ConfirmDialog";
 import { AdModal } from "./src/components/AdModal";
@@ -106,6 +107,10 @@ function AppContent() {
 
   const goToPracticeHome = useCallback(() => {
     setView({ mode: "practiceHome" });
+  }, []);
+
+  const goToPrivacy = useCallback(() => {
+    setView({ mode: "privacy" });
   }, []);
 
   const startExam = useCallback(() => {
@@ -370,6 +375,7 @@ function AppContent() {
                       setView({ mode: "results", paper: view.paper });
                     }
                   },
+                  privacy: () => setView({ mode: "home" }),
                 };
                 const handler = backHandlers[view.mode];
                 if (handler) handler();
@@ -420,6 +426,7 @@ function AppContent() {
               lang={lang}
               onStartExam={goToExamPrep}
               onStartPractice={goToPracticeHome}
+              onPrivacy={goToPrivacy}
             />
           )}
 
@@ -507,6 +514,10 @@ function AppContent() {
               onHome={() => setView({ mode: "home" })}
               reviewAll={view.reviewAll}
             />
+          )}
+
+          {view.mode === "privacy" && (
+            <PrivacyScreen lang={lang} onBack={() => setView({ mode: "home" })} />
           )}
 
         </View>

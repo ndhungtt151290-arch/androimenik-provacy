@@ -542,8 +542,8 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   modalGridBtn: {
-    width: 28,
-    height: 28,
+    minWidth: 44,
+    minHeight: 44,
     borderRadius: 6,
     alignItems: "center",
     justifyContent: "center",

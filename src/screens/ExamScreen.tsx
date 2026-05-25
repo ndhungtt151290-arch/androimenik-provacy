@@ -537,7 +537,8 @@ const styles = StyleSheet.create({
   },
   drawerGridBtn: {
     width: "12%",
-    height: 30,
+    minWidth: 44,
+    minHeight: 44,
     borderRadius: 8,
     marginLeft : 1.5,
     marginTop : 1.5,

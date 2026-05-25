@@ -1,7 +1,6 @@
 import React from "react";
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { showInterstitialChapter } from "../utils/AdManager";
 import type { Lang } from "../types";
 
 interface PrivacyScreenProps {
@@ -62,6 +61,7 @@ const VI = {
     "当道は、機能のアップグレードに合わせて、本プライバシーポリシーを随時更新することがあります。変更は、このリンクに最新版が公開された時点で即座に有効となります。",
   section6P2Ja:
     "本プライバシーポリシーに関するご質問、苦情、またはご意見がございましたら、App Store に記載されているデベロッパーサポート情報、またはアプリ内の「お問い合わせ」項目よりご連絡ください。",
+  websiteBtn: "Xem bản đầy đủ trên Website",
 };
 
 const JA = {
@@ -115,6 +115,7 @@ const JA = {
     "当道は、機能のアップグレードに合わせて、本プライバシーポリシーを随時更新ることがあります。変更は、このリンクに最新版が公開された時点で即座に有効となります。",
   section6P2Ja:
     "本プライバシーポリシーに関するご質問、苦情、またはご意見がございましたら、App Store に記載されているデベロッパーサポート情報、またはアプリ内の「お問い合わせ」項目よりご連絡ください。",
+  websiteBtn: "ウェブサイトで全文を見る",
 };
 
 function SectionTitle({ children }: { children: string }) {
@@ -146,7 +147,7 @@ export function PrivacyScreen({ lang, onBack }: PrivacyScreenProps) {
 
       <ScrollView
         style={styles.scrollContent}
-        contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 24 }}
       >
         <BilingualText vi={T.intro} ja={T.introJa} />
 
@@ -171,6 +172,16 @@ export function PrivacyScreen({ lang, onBack }: PrivacyScreenProps) {
         <SectionTitle>{T.section6Title}</SectionTitle>
         <BilingualText vi={T.section6P1} ja={T.section6P1Ja} />
         <BilingualText vi={T.section6P2} ja={T.section6P2Ja} />
+
+        <TouchableOpacity
+          style={styles.websiteBtn}
+          activeOpacity={0.75}
+          onPress={() =>
+            Linking.openURL("https://ndhungtt151290-arch.github.io/menki1000-privacy/")
+          }
+        >
+          <Text style={styles.websiteBtnText}>{T.websiteBtn}</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
@@ -183,7 +194,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#78350f",
+    color: "#rgba(11, 53, 117, 0.81)",
     textAlign: "center",
     marginTop: 8,
     marginBottom: 4,
@@ -207,7 +218,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 15,
     fontWeight: "bold",
-    color: "#78350f",
+    color: "rgba(15, 47, 95, 0.81)",
     paddingHorizontal: 16,
     marginTop: 14,
     marginBottom: 8,
@@ -222,7 +233,7 @@ const styles = StyleSheet.create({
   jaBlock: {
     marginHorizontal: 16,
     marginBottom: 10,
-    backgroundColor: "#eff6ff",
+    backgroundColor: "rgba(238, 236, 235, 0.06)",
     borderRadius: 8,
     padding: 10,
     borderLeftWidth: 3,
@@ -233,5 +244,21 @@ const styles = StyleSheet.create({
     color: "#1e40af",
     lineHeight: 20,
     fontStyle: "italic",
+  },
+  websiteBtn: {
+    marginHorizontal: 16,
+    marginTop: 24,
+    marginBottom: 8,
+    backgroundColor: "rgba(238, 236, 235, 0.12)",
+    borderRadius: 12,
+    paddingVertical: 14,
+    alignItems: "center",
+    borderWidth: 1.5,
+    borderColor: "rgba(202, 198, 196, 0.3)",
+  },
+  websiteBtnText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "rgba(11, 53, 117, 0.81)",
   },
 });

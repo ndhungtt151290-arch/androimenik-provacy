@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   label: {
-    fontSize: 10,
-    color: "rgba(251,191,36,0.4)",
+    fontSize: 11,
+    color: "#6B7280",
     textTransform: "uppercase",
     letterSpacing: 2,
     marginBottom: 6,

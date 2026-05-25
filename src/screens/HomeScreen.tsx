@@ -16,7 +16,6 @@ import {
   Platform,
 } from "react-native";
 import * as ImagePicker from "expo-image-picker";
-import * as WebBrowser from "expo-web-browser";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { BTN } from "../theme/buttonTokens";
 import { IllustrationImage } from "../components/IllustrationImage";
@@ -80,12 +79,14 @@ interface HomeScreenProps {
   lang: Lang;
   onStartExam: () => void;
   onStartPractice: () => void;
+  onPrivacy: () => void;
 }
 
 export function HomeScreen({
   lang,
   onStartExam,
   onStartPractice,
+  onPrivacy,
 }: HomeScreenProps) {
   const insets = useSafeAreaInsets();
   const [menuVisible, setMenuVisible] = useState(false);
@@ -107,10 +108,8 @@ export function HomeScreen({
     chinhSachBaoMat: lang === "vi" ? "Chính sách bảo mật" : "プライバシーポリシー",
   };
 
-  const onShowChinhSachBaoMat = async () => {
-    await WebBrowser.openBrowserAsync(
-      "https://ndhungtt151290-arch.github.io/menki1000-privacy/"
-    );
+  const onShowChinhSachBaoMat = () => {
+    onPrivacy();
   };
 
   // Load wrong answers when modal opens

@@ -43,3 +43,17 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Cursor IDE
+.cursor/
+
+# Sub-repos
+menki1000/
+
+# Dev scripts & temp data
+fix_osaka.js
+checkAnswers.js
+find_by_text.js
+ques.txt
+questions_51_100.txt
+sogo_duplicate_ids.txt

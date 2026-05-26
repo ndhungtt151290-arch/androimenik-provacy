@@ -10671,7 +10671,7 @@
       "text": "やむをえない場合を除き、2つの車両通行帯にまたがって運転してはならない。",
       "answer": "○",
       "explanation": "障害物を避けるときや、危険を回避する等の場合は、2つの車両通行帯にまたがって運転してもよい。",
-      "textVi": "Ngoại trừ khi bất đắc dĩ, không được phép đi straddle hai làn đường.",
+      "textVi": "Ngoại trừ trường hợp không thể tránh khỏi, không được phép lái xe vắt ngang qua 2 làn đường xe chạy.",
       "explanationVi": "Khi tránh vật cản hoặc để tránh nguy hiểm, có thể đi trên hai làn đường."
     },
     {
@@ -11186,7 +11186,7 @@
       "text": "進行方向別に通行区分が規制された車両通行帯に接近したので、あらかじめ自分の進行する方向の車両通行帯に移動した。",
       "answer": "○",
       "explanation": "直前に急ハンドルで車両通行帯を移動することは危険なので、あらかじめ車両通行帯を変更する。",
-      "textVi": "Khi đến gần làn đường được phân luồng theo hướng đi, đã chuyển sang làn mình sẽ đi từ trước.",
+      "textVi": "Khi đến gần làn đường có quy định phân làn theo hướng di chuyển, tôi đã chủ động chuyển sang làn đường theo hướng đi của mình từ sớm.",
       "explanationVi": "Việc chuyển làn đường đột ngột bằng tay lái gấp ngay trước mặt rất nguy hiểm, nên chuyển làn đường từ trước."
     },
     {
@@ -11220,8 +11220,8 @@
       "text": "横断歩道や自転車横断帯で一時停止するとき、その手前に停止線があったとしても、横断歩道や自転車横断帯の手前で停止する。",
       "answer": "×",
       "explanation": "停止線があるときは、その直前で停止すべきである。",
-      "textVi": "Khi dừng ở vạch qua đường cho người đi bộ hay làn đường xe đạp, dù có vạch dừng phía trước cũng phải dừng tại vạch dừng.",
-      "explanationVi": "Khi có vạch dừng thì phải dừng ngay tại vạch dừng."
+      "textVi": "Khi dừng lại tạm thời tại vạch đi bộ qua đường hoặc lối băng qua của xe đạp, dù có vạch dừng (停止線) ở phía trước thì vẫn dừng lại ở ngay trước vạch đi bộ qua đường hoặc lối băng qua của xe đạp.",
+      "explanationVi": "Khi có vạch dừng (停止線) thì bắt buộc phải dừng lại ở ngay trước vạch dừng đó."
     },
     {
       "kind": "simple",

@@ -624,10 +624,10 @@ export function HomeScreen({
                               style={styles.mapLinkBtn}
                               activeOpacity={0.7}
                               onPress={() => {
-                                const { Linking } = require("react-native");
-                                const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                                  province.center.mapQuery
-                                )}`;
+                                const searchQuery = encodeURIComponent(`${province.center.name} ${province.center.address}`);
+                                const url = province.center.latitude && province.center.longitude
+                                  ? `https://www.google.com/maps/search/?api=1&query=${searchQuery}&center=${province.center.latitude},${province.center.longitude}`
+                                  : `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
                                 Linking.openURL(url);
                               }}
                             >
@@ -655,10 +655,10 @@ export function HomeScreen({
                                 style={styles.mapLinkBtn}
                                 activeOpacity={0.7}
                                 onPress={() => {
-                                  const { Linking } = require("react-native");
-                                  const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                                    addCenter.mapQuery
-                                  )}`;
+                                  const searchQuery = encodeURIComponent(`${addCenter.name} ${addCenter.address}`);
+                                  const url = addCenter.latitude && addCenter.longitude
+                                    ? `https://www.google.com/maps/search/?api=1&query=${searchQuery}&center=${addCenter.latitude},${addCenter.longitude}`
+                                    : `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
                                   Linking.openURL(url);
                                 }}
                               >

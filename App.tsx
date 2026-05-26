@@ -63,6 +63,8 @@ function AppContent() {
   const [examHistory, setExamHistory] = useState<ExamHistoryEntry[]>([]);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [loading, setLoading] = useState(true);
+  // isExamMode: true only when actively taking the exam (timer running)
+  const isExamMode = view.mode === "exam";
   // Track nguồn vào của 総合演習 để back đúng popup
   const [sogouModalSource, setSogouModalSource] = useState<"main"|"allChapters"|null>(null);
 
@@ -318,6 +320,7 @@ function AppContent() {
           barStyle={isHome ? "dark-content" : "light-content"}
           backgroundColor="transparent"
           translucent
+          hidden={isExamMode}
         />
         {/* Background */}
         {isHome ? (
@@ -351,14 +354,16 @@ function AppContent() {
         )}
 
 
-        {/* Lang/Sound - always at the same position (right side) */}
-        <View style={[styles.langSoundContainer, { top: HEADER_BUTTON_TOP }]}>
-          <LangSwitch lang={lang} onToggle={toggleLang} />
-          <SoundToggle />
-        </View>
+        {/* Lang/Sound - hidden during exam mode */}
+        {!isExamMode && (
+          <View style={[styles.langSoundContainer, { top: HEADER_BUTTON_TOP }]}>
+            <LangSwitch lang={lang} onToggle={toggleLang} />
+            <SoundToggle />
+          </View>
+        )}
 
-        {/* Back button - only show when not at home */}
-        {view.mode !== "home" && (
+        {/* Back button - only show when not at home and not in exam mode */}
+        {view.mode !== "home" && !isExamMode && (
           <View style={[styles.backButtonContainer, { top: HEADER_BUTTON_TOP -8 }]}>
             <BackHomeButton
               onPress={() => {
@@ -484,7 +489,6 @@ function AppContent() {
               flags={examFlags}
               onToggleFlag={toggleFlag}
               onSubmit={submitExam}
-              onBack={handleBackHome}
               examIndex={examIndex}
             />
           )}

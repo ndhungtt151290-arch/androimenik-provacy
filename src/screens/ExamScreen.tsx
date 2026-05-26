@@ -31,7 +31,6 @@ interface ExamScreenProps {
   flags: Set<string>;
   onToggleFlag: () => void;
   onSubmit: () => void;
-  onBack: () => void;
   examIndex: number;
 }
 
@@ -61,7 +60,6 @@ export function ExamScreen({
   flags,
   onToggleFlag,
   onSubmit,
-  onBack,
   examIndex,
 }: ExamScreenProps) {
   const insets = useSafeAreaInsets();

@@ -7222,7 +7222,7 @@
       "textVi": "Trên đường, về nguyên tắc, không được đỗ xe cùng một chỗ liên tục hơn 8 giờ vào ban ngày.",
       "explanationVi": "Ban ngày không được đỗ xe liên tục quá 12 giờ tại cùng một nơi. Ban đêm là 8 giờ. Ngoài ra, không được dùng đường làm chỗ để xe."
     },
-      {
+    {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_10_7_5",
       "chapter": "総合演習3",
@@ -10247,7 +10247,7 @@
       "textVi": "Khi đi qua chỗ có người đi bộ mà không thể giữ khoảng cách an toàn nên đã giảm tốc độ để đi qua.",
       "explanationVi": "Khi không thể giữ khoảng cách an toàn với người đi bộ, phải chạy chậm để di chuyển."
     },
-     {
+    {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_13_4",
       "chapter": "総合演習5",
@@ -10618,7 +10618,7 @@
       "textVi": "Trên đường tuyết, nên tránh đi theo vết bánh xe.",
       "explanationVi": "Sai. Trên đường tuyết, nên đi theo vết bánh xe sẽ an toàn hơn."
     },
-     {
+    {
       "kind": "simple",
       "id": "menkyogentsuki_gentsuki_7_15_2",
       "chapter": "総合演習5",
@@ -12257,7 +12257,7 @@
           "text": "渋滞から早く抜け出すため、車列の間をぬって進行する。",
           "answer": "×",
           "explanation": "渋滞時に車列の間をぬって走行すると、他の交通の迷惑となり、危険である。",
-          "image": "menkyogentsuki_1002.png",
+          "image": "menkyogentsuki_1001.png",
           "partId": "menkyogentsuki_gentsuki_11_1_2",
           "textVi": "Để nhanh chóng thoát khỏi kẹt xe, di chuyển giữa các hàng xe.",
           "explanationVi": "Khi kẹt xe, đi lọt giữa các hàng xe sẽ cản trở người tham gia giao thông khác và rất nguy hiểm."
@@ -12267,7 +12267,7 @@
           "text": "渋滞時は、速度を落とし、周囲の安全を確認しながら進行する。",
           "answer": "○",
           "explanation": "渋滞時は車の間から歩行者が飛び出す、右折する対向車が見えにくい、追突事故が起こりやすいといった危険がある。",
-          "image": "menkyogentsuki_1003.png",
+          "image": "menkyogentsuki_1001.png",
           "partId": "menkyogentsuki_gentsuki_11_1_3",
           "textVi": "Khi kẹt xe, giảm tốc độ, quan sát an toàn xung quanh rồi di chuyển.",
           "explanationVi": "Khi kẹt xe có nguy cơ người đi bộ bất ngờ đi ra từ khoảng giữa các xe, xe đối diện rẽ phải khó nhìn thấy, và dễ xảy ra va chạm từ phía sau."
@@ -12296,7 +12296,7 @@
           "text": "二輪車の速度が遅く、対向車も見えなかったので、安全に追い越しをした。",
           "answer": "×",
           "explanation": "カーブは追い越し禁止である。",
-          "image": "menkyogentsuki_1005.png",
+          "image": "menkyogentsuki_1004.png",
           "partId": "menkyogentsuki_gentsuki_11_2_2",
           "textVi": "Xe hai bánh chạy chậm và không thấy xe đối diện nên đã vượt an toàn.",
           "explanationVi": "Khúc cua là nơi cấm vượt."
@@ -12306,7 +12306,7 @@
           "text": "左に寄り、速度を落としてカーブを通過した。",
           "answer": "○",
           "explanation": "カーブでは速度を上げるのは危険である。",
-          "image": "menkyogentsuki_1006.png",
+          "image": "menkyogentsuki_1004.png",
           "partId": "menkyogentsuki_gentsuki_11_2_3",
           "textVi": "Đi sát về phía trái, giảm tốc độ rồi đi qua đường cua.",
           "explanationVi": "Vào cua mà tăng tốc rất nguy hiểm."
@@ -12335,7 +12335,7 @@
           "text": "踏切の手前で停車して、安全を目と耳で判断する。",
           "answer": "○",
           "explanation": "踏切の安全確認は、自分の目と耳で必ず行う。",
-          "image": "menkyogentsuki_1008.png",
+          "image": "menkyogentsuki_1007.png",
           "partId": "menkyogentsuki_gentsuki_11_3_2",
           "textVi": "Dừng trước đường sắt, quan sát bằng mắt và tai để xác định an toàn.",
           "explanationVi": "Khi qua đường sắt, phải luôn tự mình quan sát bằng mắt và lắng nghe bằng tai để xác nhận an toàn."
@@ -12345,7 +12345,7 @@
           "text": "踏切を通過するときは、対向車と衝突しないように、踏切の端に近い部分を走行する。",
           "answer": "×",
           "explanation": "踏切の端に近い部分を走行すると、脱輪のおそれがある。",
-          "image": "menkyogentsuki_1009.png",
+          "image": "menkyogentsuki_1007.png",
           "partId": "menkyogentsuki_gentsuki_11_3_3",
           "textVi": "Khi qua đường sắt, để tránh va chạm với xe đối diện, đi phần gần mép đường sắt.",
           "explanationVi": "Đi gần mép đường sắt có nguy cơ bánh xe trượt khỏi đường ray (脱輪 - dattō)."
@@ -12374,7 +12374,7 @@
           "text": "歩行者が雨音のせいで自車に気付かないおそれがあるため、注意して運転する。",
           "answer": "○",
           "explanation": "雨の日は、雨音のせいで歩行者が車の接近に気付かないことがある。",
-          "image": "menkyogentsuki_1011.png",
+          "image": "menkyogentsuki_1010.png",
           "partId": "menkyogentsuki_gentsuki_11_4_2",
           "textVi": "Có nguy cơ người đi bộ không nghe thấy xe vì tiếng mưa, nên cẩn thận lái xe.",
           "explanationVi": "Vào ngày mưa, tiếng mưa có thể khiến người đi bộ không nghe thấy xe đang đến gần."
@@ -12384,7 +12384,7 @@
           "text": "歩行者が視線を下に落としていて、自車に気付かないおそれがあるため、注意して運転する。",
           "answer": "○",
           "explanation": "雨の日の歩行者は、視線を下に落とすことが多いため、車の接近に気付きにくい。",
-          "image": "menkyogentsuki_1012.png",
+          "image": "menkyogentsuki_1010.png",
           "partId": "menkyogentsuki_gentsuki_11_4_3",
           "textVi": "Có nguy cơ người đi bộ cúi mặt xuống không nhận ra xe, nên cẩn thận lái xe.",
           "explanationVi": "Người đi bộ trong ngày mưa thường cúi mặt nhìn xuống, nên khó nhận biết xe đang đến gần."
@@ -12413,7 +12413,7 @@
           "text": "トラックとともに左折すると巻き込まれるおそれがあるため、この位置でブレーキをかけ、トラックが左折するのを待つ。",
           "answer": "○",
           "explanation": "トラックの内輪差のために、巻き込まれるおそれがある。",
-          "image": "menkyogentsuki_1014.png",
+          "image": "menkyogentsuki_1013.png",
           "partId": "menkyogentsuki_gentsuki_11_5_2",
           "textVi": "Có nguy cơ bị cuốn vào khi rẽ cùng xe tải, nên ở vị trí này phanh lại, chờ xe tải rẽ trái.",
           "explanationVi": "Do vòng cua trong của xe tải lớn hơn bánh xe (内輪差), có nguy cơ bị cuốn vào gầm."
@@ -12423,7 +12423,7 @@
           "text": "トラックが急停止し、進路を確保できたので、急いで左折した。",
           "answer": "×",
           "explanation": "トラックは歩行者に気づいて停止したかもしれない。たとえトラックが停止し、進路が確保されたとしても、しっかりと安全を確認して左折する。",
-          "image": "menkyogentsuki_1015.png",
+          "image": "menkyogentsuki_1013.png",
           "partId": "menkyogentsuki_gentsuki_11_5_3",
           "textVi": "Xe tải dừng đột ngột, đã đảm bảo lộ trình nên nhanh chóng rẽ trái.",
           "explanationVi": "Xe tải có thể đã dừng lại vì phát hiện người đi bộ. Dù xe tải đã dừng và làn đường đã thông thoáng, vẫn phải xác nhận an toàn kỹ lưỡng trước khi rẽ trái."
@@ -12452,7 +12452,7 @@
           "text": "バスの陰から二輪車が直進してくるおそれがあるため、注意する。",
           "answer": "○",
           "explanation": "死角となって見えない二輪車が直進してくることがありえる。",
-          "image": "menkyogentsuki_1017.png",
+          "image": "menkyogentsuki_1016.png",
           "partId": "menkyogentsuki_gentsuki_11_6_2",
           "textVi": "Có nguy cơ xe hai bánh đi thẳng từ phía sau xe buýt, nên chú ý.",
           "explanationVi": "Xe hai bánh có thể đi thẳng từ vùng khuất tầm nhìn (死角) mà không thể nhìn thấy."
@@ -12462,7 +12462,7 @@
           "text": "バスが右折したので、交差点は安全と考え、急いで右折した。",
           "answer": "×",
           "explanation": "交差点を進行するときは、安全を確認し、徐行して進行する。",
-          "image": "menkyogentsuki_1018.png",
+          "image": "menkyogentsuki_1016.png",
           "partId": "menkyogentsuki_gentsuki_11_6_3",
           "textVi": "Xe buýt rẽ phải nên cho rằng ngã tư đã an toàn, nhanh chóng rẽ phải.",
           "explanationVi": "Khi đi qua giao lộ, phải xác nhận an toàn và giảm tốc độ để đi tiếp."
@@ -12491,7 +12491,7 @@
           "text": "歩行者が横断した後は、危険がないため、急いで右折する。",
           "answer": "×",
           "explanation": "対向車の陰から二輪車が進行してくる可能性などがある。",
-          "image": "menkyogentsuki_1020.png",
+          "image": "menkyogentsuki_1019.png",
           "partId": "menkyogentsuki_gentsuki_11_7_2",
           "textVi": "Sau khi người đi bộ qua đường thì không còn nguy hiểm, nên nhanh chóng rẽ phải.",
           "explanationVi": "Xe hai bánh có thể đi thẳng từ vùng khuất tầm nhìn của xe đối diện, v.v."
@@ -12501,7 +12501,7 @@
           "text": "横断歩行者の横断がまず優先される。",
           "answer": "○",
           "explanation": "横断歩行者が優先である。",
-          "image": "menkyogentsuki_1021.png",
+          "image": "menkyogentsuki_1019.png",
           "partId": "menkyogentsuki_gentsuki_11_7_3",
           "textVi": "Người đi bộ qua đường có ưu tiên trước tiên.",
           "explanationVi": "Người đi bộ qua đường được ưu tiên."
@@ -12530,7 +12530,7 @@
           "text": "後続車がいるので、減速するときは何度かに分けてブレーキをかける。",
           "answer": "○",
           "explanation": "急ブレーキは危険である。",
-          "image": "menkyogentsuki_1023.png",
+          "image": "menkyogentsuki_1022.png",
           "partId": "menkyogentsuki_gentsuki_11_8_2",
           "textVi": "Có xe phía sau nên khi giảm tốc thì phanh nhiều lần.",
           "explanationVi": "Phanh gấp rất nguy hiểm."
@@ -12540,7 +12540,7 @@
           "text": "車線を変更するときは、ミラーを見るだけでなく、直接目視して安全を確認してから行う。",
           "answer": "○",
           "explanation": "車線を変更する際は、目視での確認も必要である。",
-          "image": "menkyogentsuki_1024.png",
+          "image": "menkyogentsuki_1022.png",
           "partId": "menkyogentsuki_gentsuki_11_8_3",
           "textVi": "Khi chuyển làn, không chỉ nhìn gương mà còn quan sát trực tiếp để xác nhận an toàn.",
           "explanationVi": "Khi chuyển làn đường, cần xác nhận bằng mắt thường ngoài gương chiếu hậu."
@@ -12569,7 +12569,7 @@
           "text": "工事現場の作業員が飛び出すかもしれないので注意する。",
           "answer": "○",
           "explanation": "工事現場付近では、作業員の飛び出しに注意する。",
-          "image": "menkyogentsuki_1026.png",
+          "image": "menkyogentsuki_1025.png",
           "partId": "menkyogentsuki_gentsuki_11_9_2",
           "textVi": "Có thể công nhân bước ra từ công trường nên chú ý.",
           "explanationVi": "Gần khu vực thi công, cần chú ý công nhân có thể bất ngờ đi ra."
@@ -12579,7 +12579,7 @@
           "text": "工事現場横を通過するときは、安全のため、速度を落として通行する。",
           "answer": "○",
           "explanation": "人の飛び出しや機材との接触など、危険があるためである。",
-          "image": "menkyogentsuki_1027.png",
+          "image": "menkyogentsuki_1025.png",
           "partId": "menkyogentsuki_gentsuki_11_9_3",
           "textVi": "Khi đi qua công trường, giảm tốc độ và đi qua để đảm bảo an toàn.",
           "explanationVi": "Vì có nguy cơ người bất ngờ đi ra hoặc va chạm với thiết bị thi công."
@@ -12608,7 +12608,7 @@
           "text": "通学路の標識があるが、小さな子どもは見当たらないので、特に注意する必要はない。",
           "answer": "×",
           "explanation": "不意にどこかから小さな子どもが飛び出すこともあり、注意が必要である。",
-          "image": "menkyogentsuki_1029.png",
+          "image": "menkyogentsuki_1028.png",
           "partId": "menkyogentsuki_gentsuki_11_10_2",
           "textVi": "Có biển báo khu vực đưa đón học sinh nhưng không thấy trẻ em nên không cần chú ý đặc biệt.",
           "explanationVi": "Trẻ nhỏ có thể bất ngờ đi ra từ đâu đó, nên cần đặc biệt chú ý."
@@ -12618,7 +12618,7 @@
           "text": "前方の自転車は、十分に離れているため特に注意する必要はない。",
           "answer": "×",
           "explanation": "不意に道路を横断する、歩行者を避けて自車の前方に飛び出すといったこともある。",
-          "image": "menkyogentsuki_1030.png",
+          "image": "menkyogentsuki_1028.png",
           "partId": "menkyogentsuki_gentsuki_11_10_3",
           "textVi": "Xe đạp phía trước ở khoảng cách đủ xa nên không cần chú ý đặc biệt.",
           "explanationVi": "Xe đạp có thể đột ngột qua đường, hoặc tránh người đi bộ rồi lao ra trước mũi xe, v.v."
@@ -12647,7 +12647,7 @@
           "text": "対向車が見えないため、中央寄りを走行した。",
           "answer": "×",
           "explanation": "急な上り坂の頂上付近では、坂の先が見えないため、注意が必要である。",
-          "image": "menkyogentsuki_1032.png",
+          "image": "menkyogentsuki_1031.png",
           "partId": "menkyogentsuki_gentsuki_11_11_2",
           "textVi": "Không thấy xe đối diện nên đi về phía giữa đường.",
           "explanationVi": "Gần đỉnh dốc đang leo, vì không nhìn thấy phía trước dốc nên cần đặc biệt chú ý."
@@ -12657,7 +12657,7 @@
           "text": "後続車がいるが、坂の上り坂の頂上付近のため、速度を落とし、徐行して進行した。",
           "answer": "○",
           "explanation": "後続車がいたとしても、急な上り坂の頂上付近は徐行せねばならない。",
-          "image": "menkyogentsuki_1033.png",
+          "image": "menkyogentsuki_1031.png",
           "partId": "menkyogentsuki_gentsuki_11_11_3",
           "textVi": "Có xe phía sau nhưng ở gần đỉnh dốc nên giảm tốc độ, đi chậm.",
           "explanationVi": "Dù có xe phía sau, nhưng gần đỉnh dốc đang leo đột ngột vẫn bắt buộc phải giảm tốc."
@@ -12686,7 +12686,7 @@
           "text": "横断歩行者が優先されるので、歩行者の横断を待つ。",
           "answer": "○",
           "explanation": "横断歩行者が優先である。",
-          "image": "menkyogentsuki_1035.png",
+          "image": "menkyogentsuki_1034.png",
           "partId": "menkyogentsuki_gentsuki_11_12_2",
           "textVi": "Người đi bộ qua đường được ưu tiên, nên hãy đợi người đi bộ qua xong.",
           "explanationVi": "Người đi bộ qua đường được ưu tiên."
@@ -12696,7 +12696,7 @@
           "text": "トラックのかげから歩行者が飛び出すことがあるので、速度を落として進行する。",
           "answer": "○",
           "explanation": "トラックの陰にいる人が見えなくなっているため、注意が必要である。",
-          "image": "menkyogentsuki_1036.png",
+          "image": "menkyogentsuki_1034.png",
           "partId": "menkyogentsuki_gentsuki_11_12_3",
           "textVi": "Có thể có người đi bộ bất ngờ lao ra từ phía sau xe tải, nên hãy giảm tốc độ và đi tiếp.",
           "explanationVi": "Vì người đang ở vùng khuất sau xe tải không thể nhìn thấy, nên cần chú ý."
@@ -12725,7 +12725,7 @@
           "text": "子どもに注意をうながすため、警音器を使用した。",
           "answer": "×",
           "explanation": "みだりに警音器を使用してはならない。",
-          "image": "menkyogentsuki_1038.png",
+          "image": "menkyogentsuki_1037.png",
           "partId": "menkyogentsuki_gentsuki_11_13_2",
           "textVi": "Tôi đã sử dụng còi để cảnh báo trẻ em.",
           "explanationVi": "Không được tùy tiện sử dụng còi."
@@ -12735,7 +12735,7 @@
           "text": "子どもがボールを追って飛び出すことにも注意しながら進行する。",
           "answer": "○",
           "explanation": "遊んでいる最中の子どもは、特に不意に行動することがある。",
-          "image": "menkyogentsuki_1039.png",
+          "image": "menkyogentsuki_1037.png",
           "partId": "menkyogentsuki_gentsuki_11_13_3",
           "textVi": "Tôi vừa tiếp tục di chuyển, vừa chú ý việc trẻ em có thể bất ngờ lao ra khi đuổi theo quả bóng.",
           "explanationVi": "Trẻ em đang chơi đùa có thể đặc biệt hành động bất ngờ."
@@ -12764,7 +12764,7 @@
           "text": "子どもは車に気付いていると考えられるため、注意する必要はない。",
           "answer": "×",
           "explanation": "雨の日の子どもは、視線を下に落とすことが多く、車の接近に気付きにくい。",
-          "image": "menkyogentsuki_1041.png",
+          "image": "menkyogentsuki_1040.png",
           "partId": "menkyogentsuki_gentsuki_11_14_2",
           "textVi": "Có nguy cơ xe đối diện đi ra từ con hẻm bên phải, nên chú ý.",
           "explanationVi": "Trẻ em trong ngày mưa thường cúi mặt nhìn xuống, nên khó nhận biết xe đang đến gần."
@@ -12774,7 +12774,7 @@
           "text": "後続車に追突されるおそれがあるので、速度を少し上げて運転する。",
           "answer": "×",
           "explanation": "雨の日はブレーキが利きづらい。住宅街で速度を上げて運転することは危険である。",
-          "image": "menkyogentsuki_1042.png",
+          "image": "menkyogentsuki_1040.png",
           "partId": "menkyogentsuki_gentsuki_11_14_3",
           "textVi": "Có nguy cơ xe đối diện đi ra từ con hẻm bên trái, nên chú ý.",
           "explanationVi": "Vào ngày mưa, phanh kém hiệu quả hơn. Tăng tốc trong khu dân cư rất nguy hiểm."
@@ -12803,7 +12803,7 @@
           "text": "対向車が来る可能性があるため、減速した。",
           "answer": "○",
           "explanation": "工事現場に隠れて対向車が見えなくなっている可能性もあるため、注意する。",
-          "image": "menkyogentsuki_1044.png",
+          "image": "menkyogentsuki_1043.png",
           "partId": "menkyogentsuki_gentsuki_11_15_2",
           "textVi": "Vì có khả năng xe đối diện đi tới nên tôi đã giảm tốc độ.",
           "explanationVi": "Xe đối diện có thể bị khuất sau công trình thi công và không nhìn thấy được, nên cần chú ý."
@@ -12813,7 +12813,7 @@
           "text": "工事現場の作業員が飛び出す可能性があるため、注意して進行する。",
           "answer": "○",
           "explanation": "工事現場付近では、作業員の飛び出しに注意する。",
-          "image": "menkyogentsuki_1045.png",
+          "image": "menkyogentsuki_1043.png",
           "partId": "menkyogentsuki_gentsuki_11_15_3",
           "textVi": "Vì có khả năng công nhân tại công trường thi công bất ngờ đi ra, nên tôi chú ý và đi tiếp.",
           "explanationVi": "Gần khu vực thi công, cần chú ý công nhân có thể bất ngờ đi ra."
@@ -12842,7 +12842,7 @@
           "text": "後続車が直進しようとしていても、停止して、横断歩行者を優先する。",
           "answer": "○",
           "explanation": "交差点では、横断歩行者が優先である。",
-          "image": "menkyogentsuki_1047.png",
+          "image": "menkyogentsuki_1046.png",
           "partId": "menkyogentsuki_gentsuki_11_16_2",
           "textVi": "Có nguy cơ xe đối diện đi thẳng qua ngã tư, nên chú ý.",
           "explanationVi": "Tại giao lộ, người đi bộ qua đường được ưu tiên."
@@ -12852,7 +12852,7 @@
           "text": "自転車が急に飛び出してこないように、警音器を鳴らして注意した。",
           "answer": "×",
           "explanation": "みだりに警音器を鳴らしてはいけない。",
-          "image": "menkyogentsuki_1048.png",
+          "image": "menkyogentsuki_1046.png",
           "partId": "menkyogentsuki_gentsuki_11_16_3",
           "textVi": "Có nguy cơ người đi bộ băng qua từ phía bên trái, nên chú ý.",
           "explanationVi": "Không được tùy tiện sử dụng còi."
@@ -12881,7 +12881,7 @@
           "text": "工事現場から作業員が飛び出すかもしれないので、注意して通過する。",
           "answer": "○",
           "explanation": "工事現場付近では、作業員の飛び出しに注意する。",
-          "image": "menkyogentsuki_1050.png",
+          "image": "menkyogentsuki_1049.png",
           "partId": "menkyogentsuki_gentsuki_11_17_2",
           "textVi": "Vì có khả năng công nhân lao ra từ công trường thi công, nên tôi chú ý khi đi qua.",
           "explanationVi": "Gần khu vực thi công, cần chú ý công nhân có thể bất ngờ đi ra."
@@ -12891,7 +12891,7 @@
           "text": "対向車を先に通過させる。",
           "answer": "○",
           "explanation": "この場合、原則として対向車が優先される。",
-          "image": "menkyogentsuki_1051.png",
+          "image": "menkyogentsuki_1049.png",
           "partId": "menkyogentsuki_gentsuki_11_17_3",
           "textVi": "Hãy để xe đối diện đi qua trước.",
           "explanationVi": "Trong trường hợp này, theo nguyên tắc thì xe đối diện được ưu tiên."
@@ -12920,7 +12920,7 @@
           "text": "カーブのため、速度を落として通過する。",
           "answer": "○",
           "explanation": "カーブで速度を上げるのは危険である。",
-          "image": "menkyogentsuki_1053.png",
+          "image": "menkyogentsuki_1052.png",
           "partId": "menkyogentsuki_gentsuki_11_18_2",
           "textVi": "Vì là khúc cua, hãy giảm tốc độ khi đi qua.",
           "explanationVi": "Vào cua mà tăng tốc rất nguy hiểm."
@@ -12930,7 +12930,7 @@
           "text": "交通のさまたげにならないよう、速度を上げて一気に駐車車両を追い越した。",
           "answer": "×",
           "explanation": "駐車車両から人が降りてきたり、駐車車両の陰から人が飛び出したりするおそれがある。",
-          "image": "menkyogentsuki_1054.png",
+          "image": "menkyogentsuki_1052.png",
           "partId": "menkyogentsuki_gentsuki_11_18_3",
           "textVi": "Xe tải có vẻ đã dừng nên đi qua.",
           "explanationVi": "Có nguy cơ người từ trên xe đang đỗ bước xuống, hoặc người bất ngờ đi ra từ vùng khuất của xe đỗ."
@@ -12959,7 +12959,7 @@
           "text": "交差点内で停止してしまうことを避けるため、無理して交差点に進入せず、その場で停止した。",
           "answer": "○",
           "explanation": "先の状況が分からないときは、交差点へ進入しない。",
-          "image": "menkyogentsuki_1056.png",
+          "image": "menkyogentsuki_1055.png",
           "partId": "menkyogentsuki_gentsuki_11_19_2",
           "textVi": "Để tránh bị kẹt trong ngã tư, không cố đi vào ngã tư mà dừng lại tại chỗ.",
           "explanationVi": "Khi không biết tình hình phía trước, không được đi vào giao lộ."
@@ -12969,7 +12969,7 @@
           "text": "対向車が来る様子がなかったため、追い越しをして進行した。",
           "answer": "×",
           "explanation": "渋滞中の道路で追い越しをするのは危険である。",
-          "image": "menkyogentsuki_1057.png",
+          "image": "menkyogentsuki_1055.png",
           "partId": "menkyogentsuki_gentsuki_11_19_3",
           "textVi": "Không thấy xe đối diện nên vượt qua và tiến lên.",
           "explanationVi": "Vượt xe trên đường kẹt xe rất nguy hiểm."
@@ -12998,7 +12998,7 @@
           "text": "急な上り坂のカーブは危険が多いため、はやく通り抜けようと速度を上げた。",
           "answer": "×",
           "explanation": "カーブでは、速度を落として進行する。",
-          "image": "menkyogentsuki_1059.png",
+          "image": "menkyogentsuki_1058.png",
           "partId": "menkyogentsuki_gentsuki_11_20_2",
           "textVi": "Đường cua dốc lên có nhiều nguy hiểm nên tăng tốc để qua nhanh.",
           "explanationVi": "Vào cua phải phải giảm tốc độ, không được tăng tốc."
@@ -13008,7 +13008,7 @@
           "text": "カーブを曲がりきれないことを避けるため、センターラインに寄って進行した。",
           "answer": "×",
           "explanation": "カーブでは、対向車と衝突するおそれがあるので、センターラインに寄って進行してはならない。",
-          "image": "menkyogentsuki_1060.png",
+          "image": "menkyogentsuki_1058.png",
           "partId": "menkyogentsuki_gentsuki_11_20_3",
           "textVi": "Để tránh không thể quay cua, đi về phía vạch giữa đường.",
           "explanationVi": "Vì cua có nguy cơ va chạm với xe đối diện, nên không được đi sát vạch chia làn đường."
@@ -13037,7 +13037,7 @@
           "text": "対向車の直進が優先されるため、停止して待つ。",
           "answer": "○",
           "explanation": "対向車が通りすぎるのを待つ必要がある。",
-          "image": "menkyogentsuki_1062.png",
+          "image": "menkyogentsuki_1061.png",
           "partId": "menkyogentsuki_gentsuki_11_21_2",
           "textVi": "Xe đối diện đi thẳng có ưu tiên nên dừng lại đợi.",
           "explanationVi": "Cần chờ xe đối diện đi qua."
@@ -13047,7 +13047,7 @@
           "text": "後続車もスムーズに進行できるよう、交差点を急いで右折した。",
           "answer": "×",
           "explanation": "後続車がいるからといって、急いで右折する必要はない。",
-          "image": "menkyogentsuki_1063.png",
+          "image": "menkyogentsuki_1061.png",
           "partId": "menkyogentsuki_gentsuki_11_21_3",
           "textVi": "Để xe phía sau cũng đi qua thuận tiện, nhanh chóng rẽ phải qua ngã tư.",
           "explanationVi": "Dù có xe phía sau cũng không cần phải vội vàng rẽ phải."
@@ -13076,7 +13076,7 @@
           "text": "対向車が通過するのを待ってから停車したタクシーを追い越す。",
           "answer": "○",
           "explanation": "安全のために、対向車の通過を待つことは望ましい。",
-          "image": "menkyogentsuki_1065.png",
+          "image": "menkyogentsuki_1064.png",
           "partId": "menkyogentsuki_gentsuki_11_22_2",
           "textVi": "Chờ xe đối diện đi qua rồi mới vượt xe taxi đang dừng.",
           "explanationVi": "Vì lý do an toàn, nên chờ xe đối diện đi qua."
@@ -13086,7 +13086,7 @@
           "text": "停車したタクシーを追い越すときは、タクシーがいきなり走りだすことにも注意する。",
           "answer": "○",
           "explanation": "タクシーの方向指示器にも注目しておく必要がある。",
-          "image": "menkyogentsuki_1066.png",
+          "image": "menkyogentsuki_1064.png",
           "partId": "menkyogentsuki_gentsuki_11_22_3",
           "textVi": "Khi vượt xe taxi đang dừng, cũng cần chú ý xe taxi có thể đột ngột chạy.",
           "explanationVi": "Cần chú ý cả đến xi nhan của taxi."
@@ -13115,7 +13115,7 @@
           "text": "踏切を通過するときは、対向車と衝突しないように、踏切の端に近い部分を走行する。",
           "answer": "×",
           "explanation": "踏切の端に近い部分を走行すると、脱輪のおそれがある。",
-          "image": "menkyogentsuki_1068.png",
+          "image": "menkyogentsuki_1067.png",
           "partId": "menkyogentsuki_gentsuki_11_23_2",
           "textVi": "Khi qua đường sắt, để tránh va chạm với xe đối diện, đi phần gần mép đường sắt.",
           "explanationVi": "Đi gần mép đường sắt có nguy cơ bánh xe trượt khỏi đường ray (脱輪)."
@@ -13125,7 +13125,7 @@
           "text": "踏切を通過するときは、脱輪を防ぐために、踏切の中央寄りを走行する。",
           "answer": "○",
           "explanation": "できるだけ踏切の中央寄りを走行する。",
-          "image": "menkyogentsuki_1069.png",
+          "image": "menkyogentsuki_1067.png",
           "partId": "menkyogentsuki_gentsuki_11_23_3",
           "textVi": "Khi qua đường sắt, để tránh trượt bánh, đi phần gần giữa đường sắt.",
           "explanationVi": "Nên đi càng gần giữa đường sắt càng tốt."
@@ -13154,7 +13154,7 @@
           "text": "前方の歩行者は横断するそぶりを見せないので、横断しないと考え、速度を上げた。",
           "answer": "×",
           "explanation": "横断するかどうかは分からず、また仮に横断する場合、歩行者優先である。",
-          "image": "menkyogentsuki_1071.png",
+          "image": "menkyogentsuki_1070.png",
           "partId": "menkyogentsuki_gentsuki_11_24_2",
           "textVi": "Người đi bộ phía trước không có vẻ sẽ băng qua đường nên tăng tốc độ.",
           "explanationVi": "Không biết có qua đường hay không, và nếu có thì người đi bộ được ưu tiên."
@@ -13164,7 +13164,7 @@
           "text": "前方の子どもが飛び出すことに注意して進行する。",
           "answer": "○",
           "explanation": "子どもは予測できない動きをすることがある。",
-          "image": "menkyogentsuki_1072.png",
+          "image": "menkyogentsuki_1070.png",
           "partId": "menkyogentsuki_gentsuki_11_24_3",
           "textVi": "Chú ý trẻ em có thể bước ra bất ngờ rồi tiến lên.",
           "explanationVi": "Trẻ em có thể có hành vi không thể đoán trước được."
@@ -13193,7 +13193,7 @@
           "text": "危険なので、タクシーを追い越すために急に車線変更してはならない。",
           "answer": "○",
           "explanation": "急な車線の変更は危険である。",
-          "image": "menkyogentsuki_1074.png",
+          "image": "menkyogentsuki_1073.png",
           "partId": "menkyogentsuki_gentsuki_11_25_2",
           "textVi": "Rất nguy hiểm, không được đột ngột chuyển làn để vượt taxi.",
           "explanationVi": "Thay đổi làn đường đột ngột rất nguy hiểm."
@@ -13203,7 +13203,7 @@
           "text": "対向車が通過するのを待ってからタクシーを追い越すのがよい。",
           "answer": "○",
           "explanation": "安全のために、対向車の通過を待つことは望ましい。",
-          "image": "menkyogentsuki_1075.png",
+          "image": "menkyogentsuki_1073.png",
           "partId": "menkyogentsuki_gentsuki_11_25_3",
           "textVi": "Nên chờ xe đối diện đi qua rồi mới vượt taxi.",
           "explanationVi": "Vì lý do an toàn, nên chờ xe đối diện đi qua."
@@ -13232,7 +13232,7 @@
           "text": "横断歩行者が自車に気付いていないため、警音器を鳴らして注意をうながした。",
           "answer": "×",
           "explanation": "みだりに警音器を鳴らしてはならない。",
-          "image": "menkyogentsuki_1077.png",
+          "image": "menkyogentsuki_1076.png",
           "partId": "menkyogentsuki_gentsuki_11_26_2",
           "textVi": "Người đi bộ không nhận ra xe nên bấm còi để cảnh báo.",
           "explanationVi": "Không được tùy tiện sử dụng còi."
@@ -13242,7 +13242,7 @@
           "text": "停止する際は、後続車に追突されないように何回かに分けてブレーキをかける。",
           "answer": "○",
           "explanation": "急ブレーキは避ける。",
-          "image": "menkyogentsuki_1078.png",
+          "image": "menkyogentsuki_1076.png",
           "partId": "menkyogentsuki_gentsuki_11_26_3",
           "textVi": "Khi dừng lại thì phanh nhiều lần để xe phía sau không bị đâm.",
           "explanationVi": "Tránh phanh gấp."
@@ -13271,7 +13271,7 @@
           "text": "バイクは、実際よりも近くにあるように見えるため、注意が必要である。",
           "answer": "×",
           "explanation": "バイクは実際よりも遠くにあるように見えるため、注意が必要である。",
-          "image": "menkyogentsuki_1080.png",
+          "image": "menkyogentsuki_1079.png",
           "partId": "menkyogentsuki_gentsuki_11_27_2",
           "textVi": "Xe máy có vẻ ở gần hơn thực tế nên cần chú ý.",
           "explanationVi": "Xe máy trông thực tế ở xa hơn so với vị trí trong gương, nên cần chú ý."
@@ -13281,7 +13281,7 @@
           "text": "バイクが行ったあとも、後続車がいるため注意が必要である。",
           "answer": "○",
           "explanation": "後続車が直進や左折する場合、それを待ってから右折する。",
-          "image": "menkyogentsuki_1081.png",
+          "image": "menkyogentsuki_1079.png",
           "partId": "menkyogentsuki_gentsuki_11_27_3",
           "textVi": "Sau khi xe máy đi qua, vẫn cần chú ý vì có xe phía sau.",
           "explanationVi": "Nếu xe phía sau đi thẳng hoặc rẽ trái, thì phải chờ rồi mới rẽ phải."
@@ -13310,7 +13310,7 @@
           "text": "歩行者や対向車に注意し、安全を確認して左折した。",
           "answer": "○",
           "explanation": "交差点を進行するときは、安全確認を怠ってはならない。",
-          "image": "menkyogentsuki_1083.png",
+          "image": "menkyogentsuki_1082.png",
           "partId": "menkyogentsuki_gentsuki_11_28_2",
           "textVi": "Chú ý người đi bộ và xe đối diện, xác nhận an toàn rồi rẽ trái.",
           "explanationVi": "Khi đi qua giao lộ, không được bỏ qua việc xác nhận an toàn."
@@ -13320,7 +13320,7 @@
           "text": "大きく膨らんで曲がらないように気を付ける。",
           "answer": "○",
           "explanation": "交差点は小回りを心がける。",
-          "image": "menkyogentsuki_1084.png",
+          "image": "menkyogentsuki_1082.png",
           "partId": "menkyogentsuki_gentsuki_11_28_3",
           "textVi": "Chú ý không vượt quá rộng khi quẹo.",
           "explanationVi": "Tại giao lộ nên quẹo gọn (小回り)."
@@ -13349,7 +13349,7 @@
           "text": "タクシーに追突しないよう、早めに急ハンドルで車線を変更すべきである。",
           "answer": "×",
           "explanation": "急ハンドルは危険である。",
-          "image": "menkyogentsuki_1086.png",
+          "image": "menkyogentsuki_1085.png",
           "partId": "menkyogentsuki_gentsuki_11_29_2",
           "textVi": "Để tránh đâm vào taxi, nên chuyển làn đột ngột bằng tay lái nhanh.",
           "explanationVi": "Đánh lái gấp rất nguy hiểm."
@@ -13359,7 +13359,7 @@
           "text": "後続車がタクシーを追い越そうとしているので、減速した。",
           "answer": "○",
           "explanation": "後続車が方向指示器を点滅させているため、追い越しさせる。",
-          "image": "menkyogentsuki_1087.png",
+          "image": "menkyogentsuki_1085.png",
           "partId": "menkyogentsuki_gentsuki_11_29_3",
           "textVi": "Xe phía sau đang cố vượt taxi nên giảm tốc độ.",
           "explanationVi": "Vì xe phía sau đang bật xi nhan, nên nhường xe đó vượt qua."
@@ -13388,7 +13388,7 @@
           "text": "夜間は交通が少ないため、昼間よりも速度を上げて進行する。",
           "answer": "×",
           "explanation": "夜間は、視界が悪くなるため、速度を昼間より落とすことが求められる。",
-          "image": "menkyogentsuki_1089.png",
+          "image": "menkyogentsuki_1088.png",
           "partId": "menkyogentsuki_gentsuki_11_30_2",
           "textVi": "Ban đêm giao thông ít nên tăng tốc độ để đi qua hơn ban ngày.",
           "explanationVi": "Vì tầm nhìn bị hạn chế vào ban đêm, nên cần giảm tốc độ so với ban ngày."
@@ -13398,7 +13398,7 @@
           "text": "中央寄りを走らず、左よりを進行する。",
           "answer": "○",
           "explanation": "いわゆるキープレフトである。",
-          "image": "menkyogentsuki_1090.png",
+          "image": "menkyogentsuki_1088.png",
           "partId": "menkyogentsuki_gentsuki_11_30_3",
           "textVi": "Không đi giữa đường mà đi về phía trái.",
           "explanationVi": "Đây là quy tắc giữ bên trái (左側通行) - đi bên trái theo luật giao thông Nhật Bản."
@@ -13427,7 +13427,7 @@
           "text": "バスの陰から二輪車が直進してくるおそれがあるため、注意する。",
           "answer": "○",
           "explanation": "死角となって見えない二輪車が直進してくることがありえる。",
-          "image": "menkyogentsuki_1092.png",
+          "image": "menkyogentsuki_1091.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_1_2",
           "textVi": "Hãy cẩn thận vì có nguy cơ xe máy lao thẳng từ phía sau xe buýt.",
           "explanationVi": "Xe hai bánh có thể đi thẳng từ vùng khuất."
@@ -13437,7 +13437,7 @@
           "text": "バスが右折したので、交差点は安全と考え、急いで右折した。",
           "answer": "×",
           "explanation": "交差点を進行するときは、安全を確認し、徐行して進行する。",
-          "image": "menkyogentsuki_1093.png",
+          "image": "menkyogentsuki_1091.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_1_3",
           "textVi": "Xe buýt rẽ phải nên tôi nhanh chóng rẽ phải, tưởng ngã tư an toàn.",
           "explanationVi": "Khi đi qua ngã tư, xác nhận an toàn và chạy chậm để tiến vào."
@@ -13466,7 +13466,7 @@
           "text": "渋滞から早く抜け出すため、車列の間をぬって進行する。",
           "answer": "×",
           "explanation": "渋滞時に車列の間をぬって走行すると、他の交通の迷惑となり、危険である。",
-          "image": "menkyogentsuki_1095.png",
+          "image": "menkyogentsuki_1094.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_2_2",
           "textVi": "Để nhanh chóng thoát khỏi kẹt xe, đi lọt giữa các hàng xe.",
           "explanationVi": "Khi kẹt xe, đi lọt giữa các hàng xe sẽ gây cản trở người tham gia giao thông khác và rất nguy hiểm."
@@ -13476,7 +13476,7 @@
           "text": "渋滞時は、速度を落とし、周囲の安全を確認しながら進行する。",
           "answer": "○",
           "explanation": "渋滞時は車の間から歩行者が飛び出す、右折する対向車が見えにくい、追突事故が起こりやすいといった危険がある。",
-          "image": "menkyogentsuki_1096.png",
+          "image": "menkyogentsuki_1094.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_2_3",
           "textVi": "Khi kẹt xe, giảm tốc độ và quan sát an toàn xung quanh rồi mới tiếp tục di chuyển.",
           "explanationVi": "Khi kẹt xe có nguy cơ người đi bộ bất ngờ đi ra từ khoảng giữa các xe, xe đối diện rẽ phải khó quan sát, dễ xảy ra tai nạn đâm từ phía sau."
@@ -13505,7 +13505,7 @@
           "text": "交差点内で停止してしまうことを避けるため、無理して交差点に進入せず、その場で停止した。",
           "answer": "○",
           "explanation": "先の状況が分からないときは、交差点へ進入しない。",
-          "image": "menkyogentsuki_1098.png",
+          "image": "menkyogentsuki_1097.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_3_2",
           "textVi": "Để tránh dừng lại bên trong ngã tư, phương tiện không cố lao vào ngã tư mà dừng xe tại chỗ.",
           "explanationVi": "Khi không biết tình hình phía trước, không đi vào ngã tư."
@@ -13515,7 +13515,7 @@
           "text": "対向車が来る様子がなかったため、追い越しをして進行した。",
           "answer": "×",
           "explanation": "渋滞中の道路で追い越しをするのは危険である。",
-          "image": "menkyogentsuki_1099.png",
+          "image": "menkyogentsuki_1097.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_3_3",
           "textVi": "Vì không có dấu hiệu của xe đang tới nên tôi đã vượt qua xe đó và đi tiếp.",
           "explanationVi": "Vượt xe trên đường kẹt là nguy hiểm."
@@ -13544,7 +13544,7 @@
           "text": "通学路の標識があるが、小さな子どもは見当たらないので、特に注意する必要はない。",
           "answer": "×",
           "explanation": "不意にどこかから小さな子どもが飛び出すこともあり、注意が必要である。",
-          "image": "menkyogentsuki_1101.png",
+          "image": "menkyogentsuki_1100.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_4_2",
           "textVi": "Có biển chỉ dẫn đường đi học nhưng lại không thấy trẻ nhỏ nên không cần phải đặc biệt cẩn thận.",
           "explanationVi": "Trẻ nhỏ có thể bất ngờ chạy ra từ đâu đó, cần chú ý."
@@ -13554,7 +13554,7 @@
           "text": "前方の自転車は、十分に離れているため特に注意する必要はない。",
           "answer": "×",
           "explanation": "不意に道路を横断する、歩行者を避けて自車の前方に飛び出すといったこともある。",
-          "image": "menkyogentsuki_1102.png",
+          "image": "menkyogentsuki_1100.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_4_3",
           "textVi": "Xe đạp phía trước đủ xa nên bạn không cần phải đặc biệt cẩn thận.",
           "explanationVi": "Có thể có người bất ngờ qua đường hoặc nhảy ra phía trước xe để tránh người đi bộ."
@@ -13583,7 +13583,7 @@
           "text": "カーブのため、速度を落として通過する。",
           "answer": "○",
           "explanation": "カーブで速度を上げるのは危険である。",
-          "image": "menkyogentsuki_1104.png",
+          "image": "menkyogentsuki_1103.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_5_2",
           "textVi": "Do có khúc cua nên giảm tốc độ để vượt qua.",
           "explanationVi": "Tăng tốc ở đường cong là nguy hiểm."
@@ -13593,7 +13593,7 @@
           "text": "交通のさまたげにならないよう、速度を上げて一気に駐車車両を追い越した。",
           "answer": "×",
           "explanation": "駐車車両から人が降りてきたり、駐車車両の陰から人が飛び出したりするおそれがある。",
-          "image": "menkyogentsuki_1105.png",
+          "image": "menkyogentsuki_1103.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_5_3",
           "textVi": "Để tránh tắc nghẽn giao thông, tôi tăng tốc và vượt qua tất cả những chiếc xe đang đỗ cùng một lúc.",
           "explanationVi": "Người có thể xuống xe đỗ hoặc chạy ra từ bóng xe đỗ."
@@ -13622,7 +13622,7 @@
           "text": "バイクは、実際よりも近くにあるように見えるため、注意が必要である。",
           "answer": "×",
           "explanation": "バイクは実際よりも遠くにあるように見えるため、注意が必要である。",
-          "image": "menkyogentsuki_1107.png",
+          "image": "menkyogentsuki_1106.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_6_2",
           "textVi": "Xe máy có vẻ ở gần hơn thực tế nên hãy cẩn thận.",
           "explanationVi": "Hãy cẩn thận vì chiếc xe đạp có vẻ ở xa hơn thực tế."
@@ -13632,7 +13632,7 @@
           "text": "バイクが行ったあとも、後続車がいるため注意が必要である。",
           "answer": "○",
           "explanation": "後続車が直進や左折する場合、それを待ってから右折する。",
-          "image": "menkyogentsuki_1108.png",
+          "image": "menkyogentsuki_1106.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_6_3",
           "textVi": "Sau khi xe máy rời đi vẫn có các phương tiện khác bám theo nên bạn cần phải cẩn thận.",
           "explanationVi": "Nếu xe phía sau bạn đang đi thẳng hoặc rẽ trái, hãy đợi cho đến khi xe rẽ phải trước khi rẽ phải."
@@ -13661,7 +13661,7 @@
           "text": "歩行者や対向車に注意し、安全を確認して左折した。",
           "answer": "○",
           "explanation": "交差点を進行するときは、安全確認を怠ってはならない。",
-          "image": "menkyogentsuki_1110.png",
+          "image": "menkyogentsuki_1109.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_7_2",
           "textVi": "Tôi quan sát người đi bộ và xe đang chạy tới, đảm bảo an toàn rồi rẽ trái.",
           "explanationVi": "Khi đi qua ngã tư không được lơ là kiểm tra an toàn."
@@ -13671,7 +13671,7 @@
           "text": "大きく膨らんで曲がらないように気を付ける。",
           "answer": "○",
           "explanation": "交差点は小回りを心がける。",
-          "image": "menkyogentsuki_1111.png",
+          "image": "menkyogentsuki_1109.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_7_3",
           "textVi": "Hãy cẩn thận để không rẽ rộng (rẽ vòng lớn).",
           "explanationVi": "Khi qua ngã tư, hãy cố gắng rẽ vòng nhỏ (rẽ sát vào trong)."
@@ -13700,7 +13700,7 @@
           "text": "歩行者が横断した後は、危険がないため、急いで右折する。",
           "answer": "×",
           "explanation": "対向車の陰から二輪車が進行してくる可能性などがある。",
-          "image": "menkyogentsuki_1113.png",
+          "image": "menkyogentsuki_1112.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_8_2",
           "textVi": "Sau khi người đi bộ băng qua đường, hãy nhanh chóng rẽ phải vì không có nguy hiểm.",
           "explanationVi": "Xe hai bánh có thể đi từ bóng của xe đối diện."
@@ -13710,7 +13710,7 @@
           "text": "横断歩行者の横断がまず優先される。",
           "answer": "○",
           "explanation": "横断歩行者が優先である。",
-          "image": "menkyogentsuki_1114.png",
+          "image": "menkyogentsuki_1112.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_8_3",
           "textVi": "Người đi bộ qua đường được ưu tiên.",
           "explanationVi": "Người đi bộ qua đường có quyền ưu tiên."
@@ -13739,7 +13739,7 @@
           "text": "夜間は交通が少ないため、昼間よりも速度を上げて進行する。",
           "answer": "×",
           "explanation": "夜間は、視界が悪くなるため、速度を昼間より落とすことが求められる。",
-          "image": "menkyogentsuki_1116.png",
+          "image": "menkyogentsuki_1115.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_9_2",
           "textVi": "Vì ban đêm ít xe cộ nên tàu di chuyển với tốc độ nhanh hơn ban ngày.",
           "explanationVi": "Tầm nhìn ban đêm kém nên cần lái xe với tốc độ chậm hơn ban ngày."
@@ -13749,7 +13749,7 @@
           "text": "中央寄りを走らず、左よりを進行する。",
           "answer": "○",
           "explanation": "いわゆるキープレフトである。",
-          "image": "menkyogentsuki_1117.png",
+          "image": "menkyogentsuki_1115.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_9_3",
           "textVi": "Đừng lái xe về phía trung tâm; tiến sang bên trái.",
           "explanationVi": "Còn gọi là giữ trái."
@@ -13778,7 +13778,7 @@
           "text": "後続車がいるので、減速するときは何度かに分けてブレーキをかける。",
           "answer": "○",
           "explanation": "急ブレーキは危険である。",
-          "image": "menkyogentsuki_1119.png",
+          "image": "menkyogentsuki_1118.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_10_2",
           "textVi": "Có xe đi sau nên khi giảm tốc độ phải đạp phanh nhiều lần.",
           "explanationVi": "Phanh gấp là nguy hiểm."
@@ -13788,7 +13788,7 @@
           "text": "車線を変更するときは、ミラーを見るだけでなく、直接目視して安全を確認してから行う。",
           "answer": "○",
           "explanation": "車線を変更する際は、目視での確認も必要である。",
-          "image": "menkyogentsuki_1120.png",
+          "image": "menkyogentsuki_1118.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_10_3",
           "textVi": "Khi chuyển làn, đừng chỉ nhìn vào gương mà hãy nhìn thẳng bằng mắt để đảm bảo an toàn.",
           "explanationVi": "Khi thay đổi làn đường, cũng cần xác nhận bằng mắt."
@@ -13817,7 +13817,7 @@
           "text": "踏切を通過するときは、対向車と衝突しないように、踏切の端に近い部分を走行する。",
           "answer": "×",
           "explanation": "踏切の端に近い部分を走行すると、脱輪のおそれがある。",
-          "image": "menkyogentsuki_1122.png",
+          "image": "menkyogentsuki_1121.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_11_2",
           "textVi": "Khi đi qua nơi đường sắt giao nhau phải lái xe sát mép đường ngang để tránh va chạm với các phương tiện đi ngược chiều.",
           "explanationVi": "Đi gần mép đường bộ nhỏ có thể bị lệch bánh."
@@ -13827,7 +13827,7 @@
           "text": "踏切を通過するときは、脱輪を防ぐために、踏切の中央寄りを走行する。",
           "answer": "○",
           "explanation": "できるだけ踏切の中央寄りを走行する。",
-          "image": "menkyogentsuki_1123.png",
+          "image": "menkyogentsuki_1121.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_11_3",
           "textVi": "Khi đi qua nơi giao nhau với đường sắt, hãy lái xe sát vào giữa đường giao nhau để tránh bánh xe bị rơi ra.",
           "explanationVi": "Đi gần giữa đường bộ nhỏ nhất có thể."
@@ -13856,7 +13856,7 @@
           "text": "見えなくとも、カーブの先に対向車がいる可能性があるため、注意する。",
           "answer": "○",
           "explanation": "カーブの先が見えないが、対向車がいることも想定して運転する。",
-          "image": "menkyogentsuki_1125.png",
+          "image": "menkyogentsuki_1124.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_12_2",
           "textVi": "Ngay cả khi bạn không thể nhìn thấy thì có thể có xe đang chạy tới ở cuối khúc cua, vì vậy hãy cẩn thận.",
           "explanationVi": "Mặc dù bạn không thể nhìn xa hơn khúc cua nhưng bạn nên lái xe với giả định rằng có một chiếc xe đang chạy tới."
@@ -13866,7 +13866,7 @@
           "text": "カーブでは、速度を上げず、進行する。",
           "answer": "○",
           "explanation": "速度を上げると、曲がりきれなくなるおそれがある。",
-          "image": "menkyogentsuki_1126.png",
+          "image": "menkyogentsuki_1124.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_12_3",
           "textVi": "Trên những đoạn đường cong, hãy tiếp tục mà không tăng tốc độ.",
           "explanationVi": "Nếu bạn tăng tốc độ, bạn có thể không hoàn thành được lượt đi."
@@ -13895,7 +13895,7 @@
           "text": "子どもは車に気付いていると考えられるため、注意する必要はない。",
           "answer": "×",
           "explanation": "雨の日の子どもは、視線を下に落とすことが多く、車の接近に気付きにくい。",
-          "image": "menkyogentsuki_1128.png",
+          "image": "menkyogentsuki_1127.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_13_2",
           "textVi": "Trẻ em có khả năng nhận thức được xe nên không cần phải cẩn thận.",
           "explanationVi": "Trẻ em ngày mưa thường nhìn xuống nên khó nhận ra xe đến gần."
@@ -13905,7 +13905,7 @@
           "text": "後続車に追突されるおそれがあるので、速度を少し上げて運転する。",
           "answer": "×",
           "explanation": "雨の日はブレーキが利きづらい。住宅街で速度を上げて運転することは危険である。",
-          "image": "menkyogentsuki_1129.png",
+          "image": "menkyogentsuki_1127.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_13_3",
           "textVi": "Lái xe với tốc độ cao hơn một chút để tránh bị xe phía sau tông vào.",
           "explanationVi": "Ngày mưa phanh kém hiệu quả. Tăng tốc trong khu dân cư là nguy hiểm."
@@ -13934,7 +13934,7 @@
           "text": "対向車が見えないため、中央寄りを走行した。",
           "answer": "×",
           "explanation": "急な上り坂の頂上付近では、坂の先が見えないため、注意が必要である。",
-          "image": "menkyogentsuki_1131.png",
+          "image": "menkyogentsuki_1130.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_14_2",
           "textVi": "Vì không nhìn thấy xe đang tới nên tôi lái xe đến gần trung tâm hơn.",
           "explanationVi": "Gần đỉnh dốc lên dốc không nhìn thấy phía trước dốc, nên cần chú ý."
@@ -13944,7 +13944,7 @@
           "text": "後続車がいるが、坂の上り坂の頂上付近のため、速度を落とし、徐行して進行した。",
           "answer": "○",
           "explanation": "後続車がいたとしても、急な上り坂の頂上付近は徐行せねばならない。",
-          "image": "menkyogentsuki_1132.png",
+          "image": "menkyogentsuki_1130.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_14_3",
           "textVi": "Có một chiếc xe đuổi theo nhưng vì đã đến gần đỉnh dốc nên tôi giảm tốc độ và đi tiếp.",
           "explanationVi": "Dù có xe phía sau, gần đỉnh dốc lên dốc vẫn phải chạy chậm."
@@ -13973,7 +13973,7 @@
           "text": "歩行者横断後、前車が左折したので、急いで左折した。",
           "answer": "×",
           "explanation": "たとえ前車が安全に左折したとしても、必ず安全を確認し、徐行して左折する。",
-          "image": "menkyogentsuki_1134.png",
+          "image": "menkyogentsuki_1133.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_15_2",
           "textVi": "Sau khi băng qua vạch dành cho người đi bộ, xe phía trước rẽ trái nên tôi nhanh chóng rẽ trái.",
           "explanationVi": "Ngay cả khi xe phía trước rẽ trái an toàn, hãy nhớ kiểm tra an toàn, lái xe chậm và rẽ trái."
@@ -13983,7 +13983,7 @@
           "text": "前車がトラックで、前方が完全には見えていないので注意する。",
           "answer": "○",
           "explanation": "道路の先で、歩行者が横断してきているかもしれない。",
-          "image": "menkyogentsuki_1135.png",
+          "image": "menkyogentsuki_1133.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_15_3",
           "textVi": "Hãy cẩn thận vì phương tiện phía trước bạn là xe tải và bạn không thể nhìn thấy mọi thứ phía trước.",
           "explanationVi": "Người đi bộ có thể băng qua đường."
@@ -14012,7 +14012,7 @@
           "text": "危険なので、タクシーを追い越すために急に車線変更してはならない。",
           "answer": "○",
           "explanation": "急な車線の変更は危険である。",
-          "image": "menkyogentsuki_1137.png",
+          "image": "menkyogentsuki_1136.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_16_2",
           "textVi": "Không đột ngột chuyển làn để vượt xe taxi vì điều này rất nguy hiểm.",
           "explanationVi": "Thay đổi làn đường đột ngột là nguy hiểm."
@@ -14022,7 +14022,7 @@
           "text": "対向車が通過するのを待ってからタクシーを追い越すのがよい。",
           "answer": "○",
           "explanation": "安全のために、対向車の通過を待つことは望ましい。",
-          "image": "menkyogentsuki_1138.png",
+          "image": "menkyogentsuki_1136.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_16_3",
           "textVi": "Tốt nhất là đợi cho đến khi xe cộ đi qua trước khi vượt xe taxi.",
           "explanationVi": "Vì an toàn, nên đợi xe đối diện đi qua."
@@ -14051,7 +14051,7 @@
           "text": "横断歩行者が優先されるので、歩行者の横断を待つ。",
           "answer": "○",
           "explanation": "横断歩行者が優先である。",
-          "image": "menkyogentsuki_1140.png",
+          "image": "menkyogentsuki_1139.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_17_2",
           "textVi": "Người đi bộ qua đường được ưu tiên nên đợi họ qua đường.",
           "explanationVi": "Người đi bộ qua đường có quyền ưu tiên."
@@ -14061,7 +14061,7 @@
           "text": "トラックのかげから歩行者が飛び出すことがあるので、速度を落として進行する。",
           "answer": "○",
           "explanation": "トラックの陰にいる人が見えなくなっているため、注意が必要である。",
-          "image": "menkyogentsuki_1141.png",
+          "image": "menkyogentsuki_1139.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_17_3",
           "textVi": "Người đi bộ có thể nhảy ra từ phía sau xe tải nên hãy giảm tốc độ và tiếp tục đi.",
           "explanationVi": "Người đứng trong bóng xe tải có thể không nhìn thấy, cần chú ý."
@@ -14090,7 +14090,7 @@
           "text": "歩行者が雨音のせいで自車に気付かないおそれがあるため、注意して運転する。",
           "answer": "○",
           "explanation": "雨の日は、雨音のせいで歩行者が車の接近に気付かないことがある。",
-          "image": "menkyogentsuki_1143.png",
+          "image": "menkyogentsuki_1142.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_18_2",
           "textVi": "Lái xe cẩn thận vì người đi bộ có thể không chú ý đến xe của bạn do tiếng mưa.",
           "explanationVi": "Ngày mưa, có thể người đi bộ không nhận ra xe đến gần vì tiếng mưa."
@@ -14100,7 +14100,7 @@
           "text": "歩行者が視線を下に落としていて、自車に気付かないおそれがあるため、注意して運転する。",
           "answer": "○",
           "explanation": "雨の日の歩行者は、視線を下に落とすことが多いため、車の接近に気付きにくい。",
-          "image": "menkyogentsuki_1144.png",
+          "image": "menkyogentsuki_1142.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_18_3",
           "textVi": "Lái xe cẩn thận vì người đi bộ có thể nhìn xuống và không chú ý đến xe của bạn.",
           "explanationVi": "Người đi bộ ngày mưa thường nhìn xuống nên khó nhận ra xe đến gần."
@@ -14129,7 +14129,7 @@
           "text": "対向車が来たとしても、注意をうながす目的で警音器を鳴らしてはならない。",
           "answer": "○",
           "explanation": "みだりに警音器を鳴らしてはいけない。",
-          "image": "menkyogentsuki_1146.png",
+          "image": "menkyogentsuki_1145.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_19_2",
           "textVi": "Dù có xe đang chạy tới cũng không bấm còi để cảnh báo cho người lái xe.",
           "explanationVi": "Không được tùy tiện bấm còi."
@@ -14139,7 +14139,7 @@
           "text": "遠心力を働かせるよう、カーブでは速度を上げて進行する。",
           "answer": "×",
           "explanation": "カーブでは、速度を上げると、遠心力が働き曲がりきれないおそれがあるため、速度を落とす必要がある。",
-          "image": "menkyogentsuki_1147.png",
+          "image": "menkyogentsuki_1145.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_19_3",
           "textVi": "Cần di chuyển nhanh hơn quanh các đường cong để tạo ra lực ly tâm.",
           "explanationVi": "Khi vào cua, nếu tăng tốc độ, lực ly tâm sẽ tác dụng và bạn có thể không thể hoàn thành vòng cua nên cần giảm tốc độ."
@@ -14168,7 +14168,7 @@
           "text": "対向車が来る可能性があるため、減速した。",
           "answer": "○",
           "explanation": "工事現場に隠れて対向車が見えなくなっている可能性もあるため、注意する。",
-          "image": "menkyogentsuki_1149.png",
+          "image": "menkyogentsuki_1148.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_20_2",
           "textVi": "Tôi giảm tốc độ vì có khả năng có một chiếc xe đang tới.",
           "explanationVi": "Xe đối diện có thể bị khuất sau công trường, cần chú ý."
@@ -14178,7 +14178,7 @@
           "text": "工事現場の作業員が飛び出す可能性があるため、注意して進行する。",
           "answer": "○",
           "explanation": "工事現場付近では、作業員の飛び出しに注意する。",
-          "image": "menkyogentsuki_1150.png",
+          "image": "menkyogentsuki_1148.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_20_3",
           "textVi": "Hãy thận trọng vì công nhân ở công trường có thể nhảy ra ngoài.",
           "explanationVi": "Gần công trường xây dựng, chú ý công nhân bất ngờ chạy ra."
@@ -14207,7 +14207,7 @@
           "text": "上り坂の頂上付近では、速度を落とすべきだが、徐行して進行する必要はない。",
           "answer": "×",
           "explanation": "上り坂の頂上付近は徐行せねばならない。徐行とは、すぐに止まれる速度のことを言う。単に速度を落とすだけでは不適当である。",
-          "image": "menkyogentsuki_1152.png",
+          "image": "menkyogentsuki_1151.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_21_2",
           "textVi": "Gần đến đỉnh dốc lên, bạn nên giảm tốc độ nhưng không cần phải đi chậm.",
           "explanationVi": "Bạn phải lái xe chậm ở gần đỉnh dốc. Tốc độ chậm đề cập đến tốc độ mà bạn có thể dừng lại nhanh chóng. Chỉ giảm tốc độ là không đủ."
@@ -14217,7 +14217,7 @@
           "text": "対向車に注意をうながすため、警音器を鳴らして通行した。",
           "answer": "×",
           "explanation": "みだりに警音器を鳴らしてはいけない。",
-          "image": "menkyogentsuki_1153.png",
+          "image": "menkyogentsuki_1151.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_21_3",
           "textVi": "Tôi đi ngang qua và bấm còi để cảnh báo các phương tiện đang tới.",
           "explanationVi": "Không được tùy tiện bấm còi."
@@ -14246,7 +14246,7 @@
           "text": "後続車が直進しようとしていても、停止して、横断歩行者を優先する。",
           "answer": "○",
           "explanation": "交差点では、横断歩行者が優先である。",
-          "image": "menkyogentsuki_1155.png",
+          "image": "menkyogentsuki_1154.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_22_2",
           "textVi": "Ngay cả khi xe phía sau đang đi thẳng về phía trước thì hãy dừng lại và nhường quyền ưu tiên cho người đi bộ qua đường.",
           "explanationVi": "Tại ngã tư, người đi bộ qua đường có quyền ưu tiên."
@@ -14256,7 +14256,7 @@
           "text": "自転車が急に飛び出してこないように、警音器を鳴らして注意した。",
           "answer": "×",
           "explanation": "みだりに警音器を鳴らしてはいけない。",
-          "image": "menkyogentsuki_1156.png",
+          "image": "menkyogentsuki_1154.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_22_3",
           "textVi": "Tôi bấm còi để cảnh báo người đi xe đạp không để họ bất ngờ nhảy ra ngoài.",
           "explanationVi": "Không được tùy tiện bấm còi."
@@ -14285,7 +14285,7 @@
           "text": "トラックとともに左折すると巻き込まれるおそれがあるため、この位置でブレーキをかけ、トラックが左折するのを待つ。",
           "answer": "○",
           "explanation": "トラックの内輪差のために、巻き込まれるおそれがある。",
-          "image": "menkyogentsuki_1158.png",
+          "image": "menkyogentsuki_1157.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_23_2",
           "textVi": "Nếu bạn rẽ trái cùng xe tải, bạn có thể bị bắt nên lúc này hãy phanh gấp và đợi xe tải rẽ trái.",
           "explanationVi": "Vì bán kính quay vòng trong của xe tải, có thể bị cuốn vào."
@@ -14295,7 +14295,7 @@
           "text": "トラックが急停止し、進路を確保できたので、急いで左折した。",
           "answer": "×",
           "explanation": "トラックは歩行者に気づいて停止したかもしれない。たとえトラックが停止し、進路が確保されたとしても、しっかりと安全を確認して左折する。",
-          "image": "menkyogentsuki_1159.png",
+          "image": "menkyogentsuki_1157.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_23_3",
           "textVi": "Chiếc xe tải đột ngột dừng lại, tôi kịp dọn đường nên nhanh chóng rẽ trái.",
           "explanationVi": "Chiếc xe tải có thể đã nhận thấy người đi bộ và dừng lại. Ngay cả khi xe tải đã dừng và đường đã được thông thoáng, hãy đảm bảo an toàn trước khi rẽ trái."
@@ -14324,7 +14324,7 @@
           "text": "安全に停止できるよう、ブレーキを一度にかけて停止した。",
           "answer": "×",
           "explanation": "急ブレーキは避け、数回に分けてブレーキをかける。",
-          "image": "menkyogentsuki_1161.png",
+          "image": "menkyogentsuki_1160.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_24_2",
           "textVi": "Tôi đã đạp phanh một lần để dừng xe an toàn.",
           "explanationVi": "Tránh phanh đột ngột và phanh theo đợt."
@@ -14334,7 +14334,7 @@
           "text": "前車が左折した後に、続いて対向車が右折するかもしれないので、十分に注意する。",
           "answer": "○",
           "explanation": "対向車が自車を優先するに違いないという思い込みをしない。",
-          "image": "menkyogentsuki_1162.png",
+          "image": "menkyogentsuki_1160.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_24_3",
           "textVi": "Sau khi xe phía trước rẽ trái, xe phía sau có thể rẽ phải nên hãy cẩn thận.",
           "explanationVi": "Không nghĩ rằng xe đối diện chắc chắn sẽ nhường mình."
@@ -14363,7 +14363,7 @@
           "text": "歩行者が見当たらないように感じたため、注意することなく進行した。",
           "answer": "×",
           "explanation": "対向車の陰にいて、見えない可能性もある。",
-          "image": "menkyogentsuki_1164.png",
+          "image": "menkyogentsuki_1163.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_25_2",
           "textVi": "Tôi cảm thấy như không nhìn thấy người đi bộ nào nên tôi cứ tiếp tục mà không chú ý.",
           "explanationVi": "Có thể bạn đang ở phía sau một chiếc xe đang tới và không thể nhìn thấy nó."
@@ -14373,7 +14373,7 @@
           "text": "対向車が自車に気付かず右折することがあるため、注意する。",
           "answer": "○",
           "explanation": "渋滞のため、自車が見えていない可能性がある。",
-          "image": "menkyogentsuki_1165.png",
+          "image": "menkyogentsuki_1163.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_25_3",
           "textVi": "Hãy cẩn thận vì các phương tiện đang tới có thể rẽ phải mà không nhận thấy xe của bạn.",
           "explanationVi": "Do tắc nghẽn giao thông, bạn có thể không nhìn thấy xe của mình."
@@ -14402,7 +14402,7 @@
           "text": "対向車がいたが、踏切の中央寄りを通行した。",
           "answer": "○",
           "explanation": "対向車がいたとしても、できるだけ線路の中心部分を走行する。",
-          "image": "menkyogentsuki_1167.png",
+          "image": "menkyogentsuki_1166.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_26_2",
           "textVi": "Có một chiếc xe đang chạy tới nhưng tôi đã vượt qua gần giữa đường sắt giao nhau.",
           "explanationVi": "Ngay cả khi có xe đang chạy tới, hãy lái xe càng gần tâm đường càng tốt."
@@ -14412,7 +14412,7 @@
           "text": "人や対向車が多く、踏切を渡りづらく感じたので、停止線でとまった。",
           "answer": "○",
           "explanation": "踏切の中に取り残されそうなときは踏切内に進入しない。",
-          "image": "menkyogentsuki_1168.png",
+          "image": "menkyogentsuki_1166.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_26_3",
           "textVi": "Tôi cảm thấy khó khăn khi băng qua đường sắt vì có quá nhiều người và ô tô đang chạy tới nên tôi dừng lại ở vạch dừng.",
           "explanationVi": "Khi có vẻ như sẽ bị mắc kẹt trong đường bộ nhỏ, không đi vào trong đường bộ nhỏ."
@@ -14441,7 +14441,7 @@
           "text": "踏切の手前で停車して、安全を目と耳で判断する。",
           "answer": "○",
           "explanation": "踏切の安全確認は、自分の目と耳で必ず行う。",
-          "image": "menkyogentsuki_1170.png",
+          "image": "menkyogentsuki_1169.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_27_2",
           "textVi": "Dừng lại trước nơi giao nhau với đường sắt và đánh giá sự an toàn bằng mắt và tai của bạn.",
           "explanationVi": "Xác nhận an toàn đường bộ nhỏ phải bằng mắt và tai mình."
@@ -14451,7 +14451,7 @@
           "text": "踏切を通過するときは、対向車と衝突しないように、踏切の端に近い部分を走行する。",
           "answer": "×",
           "explanation": "踏切の端に近い部分を走行すると、脱輪のおそれがある。",
-          "image": "menkyogentsuki_1171.png",
+          "image": "menkyogentsuki_1169.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_27_3",
           "textVi": "Khi đi qua nơi đường sắt giao nhau phải lái xe sát mép đường ngang để tránh va chạm với các phương tiện đi ngược chiều.",
           "explanationVi": "Đi gần mép đường bộ nhỏ có thể bị lệch bánh."
@@ -14480,7 +14480,7 @@
           "text": "トラックが右折したため、続いて右折した。",
           "answer": "×",
           "explanation": "トラックに続いて右折すると、対向車が自車に気づかない可能性がある。",
-          "image": "menkyogentsuki_1173.png",
+          "image": "menkyogentsuki_1172.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_28_2",
           "textVi": "Chiếc xe tải rẽ phải, rồi rẽ phải.",
           "explanationVi": "Nếu bạn rẽ phải sau một chiếc xe tải, xe cộ đang chạy tới có thể không chú ý đến bạn."
@@ -14490,7 +14490,7 @@
           "text": "前方のトラックが右折したあと、交差点の安全を確認して右折する。",
           "answer": "○",
           "explanation": "大型車に続いて右折する場合は、すぐに後に続かず、いったん止まって安全を確認してから右折する。",
-          "image": "menkyogentsuki_1174.png",
+          "image": "menkyogentsuki_1172.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_28_3",
           "textVi": "Sau khi xe tải phía trước rẽ phải, kiểm tra xem giao lộ có an toàn không rồi rẽ phải.",
           "explanationVi": "Khi rẽ phải theo sau xe lớn, không được đuổi theo ngay; dừng lại và đảm bảo an toàn trước khi rẽ phải."
@@ -14519,7 +14519,7 @@
           "text": "前方のトラックが左折するかもしれないので、無理に大型車の左側に出ない。",
           "answer": "○",
           "explanation": "前方のトラックが自車に気づかず左折した場合、巻き込まれて危険である。",
-          "image": "menkyogentsuki_1176.png",
+          "image": "menkyogentsuki_1175.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_29_2",
           "textVi": "Xe tải phía trước bạn có thể rẽ trái, vì vậy đừng ép mình di chuyển sang bên trái xe lớn.",
           "explanationVi": "Nếu xe tải phía trước rẽ trái mà không để ý đến xe của bạn thì rất nguy hiểm nếu bị bắt."
@@ -14529,7 +14529,7 @@
           "text": "前方のトラックが交差点を直進したので、自車も続いて直進した。",
           "answer": "×",
           "explanation": "自車も必ず安全を確認する必要がある。",
-          "image": "menkyogentsuki_1177.png",
+          "image": "menkyogentsuki_1175.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_29_3",
           "textVi": "Xe tải phía trước đi thẳng qua ngã tư nên xe tôi cũng bám theo.",
           "explanationVi": "Bạn cũng cần đảm bảo rằng chiếc xe của bạn được an toàn."
@@ -14558,7 +14558,7 @@
           "text": "横断歩行者が自車に気付いていないため、警音器を鳴らして注意をうながした。",
           "answer": "×",
           "explanation": "みだりに警音器を鳴らしてはならない。",
-          "image": "menkyogentsuki_1179.png",
+          "image": "menkyogentsuki_1178.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_30_2",
           "textVi": "Do người đi bộ băng qua đường không để ý đến xe nên tài xế đã bấm còi cảnh báo cho tài xế.",
           "explanationVi": "Không được tùy tiện bấm còi."
@@ -14568,7 +14568,7 @@
           "text": "停止する際は、後続車に追突されないように何回かに分けてブレーキをかける。",
           "answer": "○",
           "explanation": "急ブレーキは避ける。",
-          "image": "menkyogentsuki_1180.png",
+          "image": "menkyogentsuki_1178.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_30_3",
           "textVi": "Khi dừng xe hãy đạp phanh nhiều lần để tránh bị xe phía sau tông vào.",
           "explanationVi": "Tránh phanh gấp."
@@ -14597,7 +14597,7 @@
           "text": "二輪車の速度が遅く、対向車も見えなかったので、安全に追い越しをした。",
           "answer": "×",
           "explanation": "カーブは追い越し禁止である。",
-          "image": "menkyogentsuki_1182.png",
+          "image": "menkyogentsuki_1181.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_31_2",
           "textVi": "Xe máy chạy chậm, tôi không nhìn thấy xe đang chạy tới nên đã vượt qua an toàn.",
           "explanationVi": "Đường cong là nơi cấm vượt xe."
@@ -14607,7 +14607,7 @@
           "text": "左に寄り、速度を落としてカーブを通過した。",
           "answer": "○",
           "explanation": "カーブでは速度を上げるのは危険である。",
-          "image": "menkyogentsuki_1183.png",
+          "image": "menkyogentsuki_1181.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_31_3",
           "textVi": "Tôi rẽ sang trái và giảm tốc độ để đi vòng qua khúc cua.",
           "explanationVi": "Tăng tốc ở đường cong là nguy hiểm."
@@ -14636,7 +14636,7 @@
           "text": "前車がスピードを落とし、追突するおそれがあるため、車間距離に注意する。",
           "answer": "○",
           "explanation": "前車との間に十分な車間距離をとる。",
-          "image": "menkyogentsuki_1185.png",
+          "image": "menkyogentsuki_1184.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_32_2",
           "textVi": "Hãy cẩn thận với khoảng cách sau, vì xe phía trước có thể giảm tốc độ và gây ra va chạm từ phía sau.",
           "explanationVi": "Giữ khoảng cách an toàn đủ với xe phía trước."
@@ -14646,7 +14646,7 @@
           "text": "工事現場の作業員の姿が見えないため、特に注意せず進行する。",
           "answer": "×",
           "explanation": "工事現場付近では、作業員の飛び出しに注意する。",
-          "image": "menkyogentsuki_1186.png",
+          "image": "menkyogentsuki_1184.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_32_3",
           "textVi": "Vì không thể nhìn thấy công nhân tại công trường nên việc xây dựng tiến triển mà không được chú ý đặc biệt.",
           "explanationVi": "Gần công trường xây dựng, chú ý công nhân bất ngờ chạy ra."
@@ -14675,7 +14675,7 @@
           "text": "工事現場から作業員が飛び出すかもしれないので、注意して通過する。",
           "answer": "○",
           "explanation": "工事現場付近では、作業員の飛び出しに注意する。",
-          "image": "menkyogentsuki_1188.png",
+          "image": "menkyogentsuki_1187.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_33_2",
           "textVi": "Đi qua cẩn thận vì công nhân có thể nhảy ra khỏi công trường.",
           "explanationVi": "Gần công trường xây dựng, chú ý công nhân bất ngờ chạy ra."
@@ -14685,7 +14685,7 @@
           "text": "対向車を先に通過させる。",
           "answer": "○",
           "explanation": "この場合、原則として対向車が優先される。",
-          "image": "menkyogentsuki_1189.png",
+          "image": "menkyogentsuki_1187.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_33_3",
           "textVi": "Hãy để xe đang tới vượt qua trước.",
           "explanationVi": "Trong trường hợp này, nguyên tắc là xe đối diện có quyền ưu tiên."
@@ -14714,7 +14714,7 @@
           "text": "対向車が通過するのを待ってから停車したタクシーを追い越す。",
           "answer": "○",
           "explanation": "安全のために、対向車の通過を待つことは望ましい。",
-          "image": "menkyogentsuki_1191.png",
+          "image": "menkyogentsuki_1190.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_34_2",
           "textVi": "Đợi xe đi tới vượt qua trước khi vượt qua xe taxi đang dừng.",
           "explanationVi": "Vì an toàn, nên đợi xe đối diện đi qua."
@@ -14724,7 +14724,7 @@
           "text": "停車したタクシーを追い越すときは、タクシーがいきなり走りだすことにも注意する。",
           "answer": "○",
           "explanation": "タクシーの方向指示器にも注目しておく必要がある。",
-          "image": "menkyogentsuki_1192.png",
+          "image": "menkyogentsuki_1190.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_34_3",
           "textVi": "Khi vượt qua một chiếc taxi đang dừng, hãy cẩn thận nếu chiếc taxi đột ngột chạy.",
           "explanationVi": "Cũng cần chú ý đèn báo rẽ của taxi."
@@ -14753,7 +14753,7 @@
           "text": "子どもに注意をうながすため、警音器を使用した。",
           "answer": "×",
           "explanation": "みだりに警音器を使用してはならない。",
-          "image": "menkyogentsuki_1194.png",
+          "image": "menkyogentsuki_1193.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_35_2",
           "textVi": "Một chiếc còi được dùng để cảnh báo bọn trẻ.",
           "explanationVi": "Không được tùy tiện sử dụng còi."
@@ -14763,7 +14763,7 @@
           "text": "子どもがボールを追って飛び出すことにも注意しながら進行する。",
           "answer": "○",
           "explanation": "遊んでいる最中の子どもは、特に不意に行動することがある。",
-          "image": "menkyogentsuki_1195.png",
+          "image": "menkyogentsuki_1193.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_35_3",
           "textVi": "Tiến hành đồng thời cẩn thận không để trẻ nhảy ra đuổi theo quả bóng.",
           "explanationVi": "Trẻ đang chơi có thể hành động bất ngờ."
@@ -14792,7 +14792,7 @@
           "text": "前方の歩行者は横断するそぶりを見せないので、横断しないと考え、速度を上げた。",
           "answer": "×",
           "explanation": "横断するかどうかは分からず、また仮に横断する場合、歩行者優先である。",
-          "image": "menkyogentsuki_1197.png",
+          "image": "menkyogentsuki_1196.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_36_2",
           "textVi": "Người đi bộ phía trước không có dấu hiệu muốn sang đường nên tôi tưởng người đó sẽ không băng qua đường nên tăng tốc.",
           "explanationVi": "Không biết có qua đường hay không, và nếu có qua đường thì người đi bộ có quyền ưu tiên."
@@ -14802,7 +14802,7 @@
           "text": "前方の子どもが飛び出すことに注意して進行する。",
           "answer": "○",
           "explanation": "子どもは予測できない動きをすることがある。",
-          "image": "menkyogentsuki_1198.png",
+          "image": "menkyogentsuki_1196.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_36_3",
           "textVi": "Hãy tiếp tục trong khi cẩn thận không để đứa trẻ phía trước bạn nhảy ra ngoài.",
           "explanationVi": "Trẻ em có thể có hành động không thể đoán trước."
@@ -14831,7 +14831,7 @@
           "text": "工事現場の作業員が飛び出すかもしれないので注意する。",
           "answer": "○",
           "explanation": "工事現場付近では、作業員の飛び出しに注意する。",
-          "image": "menkyogentsuki_1200.png",
+          "image": "menkyogentsuki_1199.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_37_2",
           "textVi": "Hãy cẩn thận vì công nhân ở công trường có thể nhảy ra ngoài.",
           "explanationVi": "Gần công trường xây dựng, chú ý công nhân bất ngờ chạy ra."
@@ -14841,7 +14841,7 @@
           "text": "工事現場横を通過するときは、安全のため、速度を落として通行する。",
           "answer": "○",
           "explanation": "人の飛び出しや機材との接触など、危険があるためである。",
-          "image": "menkyogentsuki_1201.png",
+          "image": "menkyogentsuki_1199.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_37_3",
           "textVi": "Vì sự an toàn của bạn, hãy giảm tốc độ khi đi ngang qua công trường.",
           "explanationVi": "Vì có nguy hiểm như người bất ngờ chạy ra hoặc va chạm với thiết bị."
@@ -14870,7 +14870,7 @@
           "text": "タクシーに追突しないよう、早めに急ハンドルで車線を変更すべきである。",
           "answer": "×",
           "explanation": "急ハンドルは危険である。",
-          "image": "menkyogentsuki_1203.png",
+          "image": "menkyogentsuki_1202.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_38_2",
           "textVi": "Để tránh xe taxi tông vào phía sau, bạn nên chuyển làn đường nhanh chóng và đột ngột.",
           "explanationVi": "Đánh lái gấp là nguy hiểm."
@@ -14880,7 +14880,7 @@
           "text": "後続車がタクシーを追い越そうとしているので、減速した。",
           "answer": "○",
           "explanation": "後続車が方向指示器を点滅させているため、追い越しさせる。",
-          "image": "menkyogentsuki_1204.png",
+          "image": "menkyogentsuki_1202.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_38_3",
           "textVi": "Xe phía sau cố vượt xe taxi nên tôi giảm tốc độ.",
           "explanationVi": "Xe phía sau đang nháy đèn xi nhan nên hãy để nó vượt qua."
@@ -14909,7 +14909,7 @@
           "text": "対向車の直進が優先されるため、停止して待つ。",
           "answer": "○",
           "explanation": "対向車が通りすぎるのを待つ必要がある。",
-          "image": "menkyogentsuki_1206.png",
+          "image": "menkyogentsuki_1205.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_39_2",
           "textVi": "Dừng lại chờ vì xe đi tới được ưu tiên đi thẳng.",
           "explanationVi": "Cần đợi xe đối diện đi qua."
@@ -14919,7 +14919,7 @@
           "text": "後続車もスムーズに進行できるよう、交差点を急いで右折した。",
           "answer": "×",
           "explanation": "後続車がいるからといって、急いで右折する必要はない。",
-          "image": "menkyogentsuki_1207.png",
+          "image": "menkyogentsuki_1205.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_39_3",
           "textVi": "Tôi nhanh chóng rẽ phải ở ngã tư để các xe phía sau có thể di chuyển thuận lợi.",
           "explanationVi": "Không cần phải vội rẽ phải chỉ vì có xe đi theo."
@@ -14948,7 +14948,7 @@
           "text": "前車が左折した後、正面の信号は青であるため、急いで直進した。",
           "answer": "×",
           "explanation": "たとえ信号が青でも、安全を確認し、進行する。急いで直進してはならない。",
-          "image": "menkyogentsuki_1209.png",
+          "image": "menkyogentsuki_1208.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_40_2",
           "textVi": "Sau khi xe phía trước rẽ trái, tôi vội vàng đi thẳng vì đèn giao thông phía trước đang xanh.",
           "explanationVi": "Ngay cả khi đèn xanh, hãy đảm bảo an toàn và tiếp tục. Đừng lao thẳng về phía trước."
@@ -14958,7 +14958,7 @@
           "text": "中央に寄らず、中央左寄りを進行した。",
           "answer": "○",
           "explanation": "いわゆるキープレフトである。",
-          "image": "menkyogentsuki_1210.png",
+          "image": "menkyogentsuki_1208.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_40_3",
           "textVi": "Tôi không đi vào trung tâm mà đi về phía bên trái của trung tâm.",
           "explanationVi": "Còn gọi là giữ trái."

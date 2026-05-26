@@ -317,10 +317,9 @@ function AppContent() {
   return (
       <SafeAreaView style={[styles.container, isHome && styles.containerHome]} edges={["top", "bottom"]}>
         <StatusBar
-          barStyle={isHome ? "dark-content" : "light-content"}
+          barStyle="dark-content"
           backgroundColor="transparent"
           translucent
-          hidden={isExamMode}
         />
         {/* Background */}
         {isHome ? (
@@ -354,16 +353,14 @@ function AppContent() {
         )}
 
 
-        {/* Lang/Sound - hidden during exam mode */}
-        {!isExamMode && (
-          <View style={[styles.langSoundContainer, { top: HEADER_BUTTON_TOP }]}>
-            <LangSwitch lang={lang} onToggle={toggleLang} />
-            <SoundToggle />
-          </View>
-        )}
+        {/* Lang/Sound - always visible */}
+        <View style={[styles.langSoundContainer, { top: HEADER_BUTTON_TOP }]}>
+          <LangSwitch lang={lang} onToggle={toggleLang} />
+          <SoundToggle />
+        </View>
 
-        {/* Back button - only show when not at home and not in exam mode */}
-        {view.mode !== "home" && !isExamMode && (
+        {/* Back button - show when not at home */}
+        {view.mode !== "home" && (
           <View style={[styles.backButtonContainer, { top: HEADER_BUTTON_TOP -8 }]}>
             <BackHomeButton
               onPress={() => {

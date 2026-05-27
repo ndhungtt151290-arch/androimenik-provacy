@@ -13556,11 +13556,11 @@
           "explanation": "みだりに警音器を鳴らしてはいけない。",
           "image": "menkyogentsuki_1151.png",
           "partId": "menkyogentsuki_gentsuki_kiken_1_21_3",
-          "textVi": "Tôi đi ngang qua và bấm còi để cảnh báo các phương tiện đang tới.",
+          "textVi": "Tôi đã bấm còi để cảnh báo các phương tiện đang tới.",
           "explanationVi": "Không được tùy tiện bấm còi."
         }
       ],
-      "stemVi": "Xe đang di chuyển gần đỉnh một con dốc dốc với vận tốc 30 km/h. Bạn nên cẩn thận về điều gì?"
+      "stemVi": "Xe đang di chuyển gần đỉnh một con dốc với vận tốc 30 km/h. Bạn nên cẩn thận về điều gì?"
     },
     {
       "groupId": "危険予測問題::12_24",

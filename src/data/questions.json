@@ -2644,7 +2644,7 @@
       "text": "原付を駐車するとき、少しの時間だけであったので、鍵をさしたままにした。",
       "answer": "×",
       "explanation": "少しの時間駐車するときであっても、必ず鍵をかけ、抜いておく。",
-      "textVi": "Khi đỗ xe gắn máy, dù chỉ đỗ trong thời gian rất ngắn, bạn vẫn phải khóa cửa và rút chìa khóa.",
+      "textVi": "Khi đỗ xe gắn máy, vì chỉ trong chốc lát nên tôi đã để nguyên chìa khóa trên xe.",
       "explanationVi": "Sai. Khi đỗ xe, dù chỉ đỗ trong thời gian ngắn, bạn vẫn phải khóa xe và rút chìa khóa ra."
     },
     {
@@ -3701,7 +3701,7 @@
       "text": "大地震が発生し、やむを得ず原動機付自転車を道路上に置いて避難する際は、道路外の場所に移動し、エンジンを切り、鍵をつけておく。",
       "answer": "○",
       "explanation": "だれでも移動できるようにするためである。",
-      "textVi": "Khi động đất lớn xảy ra và bạn buộc phải đặt xe gắn máy trên đường để sơ tán, hãy di chuyển xe ra ngoài đường, tắt máy và khóa cửa.",
+      "textVi": "Khi động đất lớn xảy ra và bạn buộc phải đặt xe gắn máy trên đường để sơ tán, hãy di chuyển xe ra ngoài đường, tắt máy và khóa cổ xe.",
       "explanationVi": "Đúng. Việc làm như vậy giúp người khác có thể di chuyển xe dễ dàng nếu cần."
     },
     {
@@ -4752,8 +4752,8 @@
       "text": "走行中に急ブレーキをかけて後輪が右へ横すべりを始めたときは、ハンドルを右に切るようにする。",
       "answer": "○",
       "explanation": "正しい。後輪が横滑りしたときは、滑った方向と同じ方向へハンドルを切る（カウンターを当てる）ことで、スピンを抑え車両を立て直すことができる。",
-      "textVi": "Khi đang chạy mà phanh gấp khiến bánh sau trượt sang phải, hãy quay vô lăng sang phải.",
-      "explanationVi": "Đúng. Khi bánh sau bị trượt ngang, hãy quay vô lăng theo hướng bị trượt (sang phải) để lấy lại cân bằng và kiểm soát xe."
+      "textVi": "Khi đang chạy mà phanh gấp khiến bánh sau trượt sang phải, hãy quay cân lái sang phải.",
+      "explanationVi": "Đúng. Khi bánh sau bị trượt ngang, hãy quay cần lái theo hướng bị trượt (sang phải) để lấy lại cân bằng và kiểm soát xe."
     },
     {
       "kind": "simple",
@@ -4786,7 +4786,7 @@
       "text": "車で安全地帯のそばを通るときは、歩行者がいなければ徐行する必要はない。",
       "answer": "○",
       "explanation": "正しい。問題文の通り、安全地帯に歩行者がいなければ、徐行しなくてもよい。ちなみに、歩行者がいる場合には、徐行せねばならない。",
-      "textVi": "Khi xe đi qua bên cạnh kkhu vực an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
+      "textVi": "Khi xe đi qua bên cạnh khu vực an toàn, nếu không có người đi bộ thì không cần giảm tốc độ.",
       "explanationVi": "Đúng. Nếu không có người đi bộ ở vùng an toàn thì không cần giảm tốc độ. Nếu có người đi bộ thì phải giảm tốc độ."
     },
     {
@@ -6028,7 +6028,7 @@
       "text": "免許証を携帯することを忘れて原付を運転すると、免許不携帯になる。",
       "answer": "○",
       "explanation": "原付を運転する際は、免許証を携帯せねばならない。",
-      "textVi": "Quên mang theo giấy phép lái xe khi lái xe gắn máy 50cc sẽ bị coi là không mang giấy phép.",
+      "textVi": "Việc lái xe gắn máy khi quên mang theo bằng lái xe sẽ bị coi là hành vi 'không mang theo bằng lái' (tội không xuất trình được bằng lái).",
       "explanationVi": "Đúng. Khi lái xe gắn máy 50cc, bắt buộc phải mang theo giấy phép lái xe. Quên mang sẽ bị coi là vi phạm không mang giấy phép."
     },
     {
@@ -8312,8 +8312,8 @@
       "text": "標識は、本標識と補助標識に分けられるが、本標識は更に規制・指示・警戒・案内標識に分けられる。",
       "answer": "○",
       "explanation": "規制・指示・警戒・案内の4種類の標識がある。",
-      "textVi": "Biển báo được chia thành biển chính và biển phụ, biển chính được chia thành biển cấm, biển hiệu lệnh, biển nguy hiểm và biển hướng dẫn.",
-      "explanationVi": "Có 4 loại biển báo: biển cấm, biển hiệu lệnh, biển nguy hiểm và biển hướng dẫn."
+      "textVi":"Biển báo giao thông được chia thành biển báo chính và biển báo phụ; trong đó, biển báo chính lại được chia nhỏ thành các loại: biển báo cấm (quy định), biển báo chỉ dẫn, biển báo cảnh báo và biển báo hướng dẫn.",
+      "explanationVi": "Biển báo chính được chia thành các loại: biển báo cấm (quy định), biển báo chỉ dẫn, biển báo cảnh báo và biển báo hướng dẫn."
     },
     {
       "kind": "simple",

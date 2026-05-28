@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
   screenContainer: { flex: 1, position: "relative" },
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },
-  emptyText: { color: "#fde68a", fontSize: 14 },
+  emptyText: { color:" #dc2626", fontSize: 14 },
   progressRow: {
     marginBottom: 12,
   },
@@ -366,7 +366,7 @@ const styles = StyleSheet.create({
   },
   progressBarBg: {
     flex: 1,
-    height: 8,
+    height: 10,
     backgroundColor: "rgba(0, 0, 0, 0.1)",
     borderRadius: 4,
     overflow: "hidden",
@@ -566,7 +566,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(192, 195, 212)",
   },
   modalGridBtnText: {
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: "bold",
     color: "#fff",
   },

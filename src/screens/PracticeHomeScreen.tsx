@@ -142,7 +142,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack, initialSogouModal 
                         }}
                         style={[
                           styles.gridCell,
-                          { backgroundColor: isIllust ? "rgba(206, 221, 203, 0.84)" : "rgba(255, 255, 255, 0.7)" },
+                          { backgroundColor: isIllust ? "rgba(206, 221, 203, 0.84)" : "rgba(245, 248, 245, 0.95)" },
                         ]}
                         activeOpacity={0.7}
                       >
@@ -163,7 +163,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack, initialSogouModal 
                         <Text
                           style={[
                             styles.countText,
-                            { color: isIllust ? "rgba(8, 8, 8, 0.8)" : "rgba(24, 73, 5, 0.8)" },
+                            { color: isIllust ? "rgba(8, 8, 8, 0.8)" : "rgba(13, 87, 35, 0.9)" },
                           ]}
                         >
                           {countCorrectForChapter(chapterId)}/{chapterCountMap[chapterId] ?? 0}

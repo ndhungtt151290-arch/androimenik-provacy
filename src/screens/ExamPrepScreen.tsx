@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
     borderColor: "rgba(255, 254, 254, 0.4)",
   },
   statLabel: {
-    fontSize: 10,
+    fontSize: 11,
     color: "rgb(105, 102, 102)",
     textTransform: "uppercase",
     letterSpacing: 1,

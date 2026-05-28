@@ -61,7 +61,7 @@ export function WrongAnswersScreen({ lang, onBack }: WrongAnswersScreenProps) {
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color="#78350f" />
+        <ActivityIndicator size="large" color="#059669" />
       </View>
     );
   }

@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Expo Server",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "C:\\Menki1000App"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpened"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": false,
+        "close": false
+      },
+      "dependsOn": []
+    }
+  ]
+}

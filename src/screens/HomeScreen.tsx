@@ -53,8 +53,8 @@ const backButtonStyles = StyleSheet.create({
     position: "absolute",
     left: 0,
     top: 6,
-    width: 40,
-    height: 48,
+    width: 44,
+    height: 44,
     alignItems: "center",
     justifyContent: "center",
     zIndex: 1,
@@ -70,6 +70,7 @@ const BackButton = ({ onPress }: { onPress: () => void }) => (
     style={backButtonStyles.container}
     onPress={onPress}
     activeOpacity={0.7}
+    hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
   >
     <Image source={backIcon} style={backButtonStyles.icon} />
   </TouchableOpacity>
@@ -454,7 +455,7 @@ export function HomeScreen({
             >
               {wrongListLoading ? (
                 <View style={styles.wrongAnswersLoading}>
-                  <ActivityIndicator size="small" color="#78350f" />
+                  <ActivityIndicator size="small" color="#059669" />
                 </View>
               ) : sortedWrongList.length === 0 ? (
                 <View style={styles.wrongAnswersEmpty}>
@@ -1017,7 +1018,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   privacyLink: { fontSize: 12, color: "rgb(1, 6, 19)", textDecorationLine: "underline" },
-  credit: { fontSize: 9, color: "rgba(0, 0, 0, 0.95)", fontWeight: "600", letterSpacing: 5 },
+  credit: { fontSize: 11, color: "rgba(0, 0, 0, 0.95)", fontWeight: "600", letterSpacing: 5 },
   overlay: { flex: 1, backgroundColor: "rgba(22, 21, 21, 0.0)", justifyContent: "flex-end" },
   overlayTouch: { flex: 1 },
   bottomSheet: {
@@ -1052,7 +1053,7 @@ const styles = StyleSheet.create({
     paddingBottom: 34,
     marginTop: 10,
   },
-  closeBtnText: { fontSize:23, color: "rgba(49, 47, 47, 0.95)" },
+  closeBtnText: { fontSize:16, color: "rgba(49, 47, 47, 0.95)" },
 
   // Tips Modal Styles
   tipOverlay: {

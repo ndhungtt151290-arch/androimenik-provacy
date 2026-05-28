@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
   resultBadge: { flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 999 },
   badgeGreen: { backgroundColor: "rgba(41, 169, 15, 0.98)" },
   badgeRed: { backgroundColor: "rgba(189, 16, 16, 0.85)" },
-  resultText: { fontSize: 11, fontWeight: "bold", color: "rgba(255, 255, 255, 0.85)" },
+  resultText: { fontSize: 11, fontWeight: "bold", color: "#FFFFFF",},
   stemText: { fontSize: 14, fontWeight: "600", color: "#111", marginBottom: 10, adjustsFontSizeToFit: true, numberOfLines: 3, minimumFontScale: 0.8 } as TextStyle,
   questionText: { fontSize: 14, color: "#111", marginBottom: 8 },
   scenarioQuestionText: { fontSize: 14, color: "#111", marginBottom: 8, adjustsFontSizeToFit: true, numberOfLines: 4, minimumFontScale: 0.75 } as TextStyle,

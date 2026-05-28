@@ -264,7 +264,7 @@ const styles = StyleSheet.create({
   partSub: { fontSize: 11, color: "rgba(44, 35, 35, 0.8)" },
   partScore: { alignItems: "flex-end" },
   partScoreText: { fontSize: 14, fontWeight: "900", color: "#7f1d1d" },
-  partScoreMax: { fontSize: 10, color: "rgba(31, 27, 27, 0.8)" },
+  partScoreMax: { fontSize: 11, color: "rgba(31, 27, 27, 0.8)" },
   reviewBtns: { flexDirection: "row", gap: 8, marginBottom: 8 },
   reviewBtn: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingVertical: 10, borderRadius: 12, backgroundColor: "rgba(255, 253, 253, 0.71)", borderWidth: 2, borderColor: "rgba(255, 255, 255, 0.34)" },
   reviewBtnFull: { flex: undefined, width: "100%" },

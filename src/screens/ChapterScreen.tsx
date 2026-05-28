@@ -418,7 +418,7 @@ const styles = StyleSheet.create({
     alignSelf: "flex-start",
   },
   scenarioHintText: {
-    fontSize: 10,
+    fontSize: 11,
     fontWeight: "600",
     color: "rgba(16, 56, 6, 0.9)",
   },
@@ -441,7 +441,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     fontWeight: "500",
     color: "#111",
-    textAlign: "center",
+    textAlign: "left",
     marginTop: 8,
   },
   scenarioQuestionText: {

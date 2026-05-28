@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 11,
-    color: "#6B7280",
+    color: "rgba(9, 11, 92, 0.45)",
     textTransform: "uppercase",
     letterSpacing: 2,
     marginBottom: 6,
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   placeholder: {
-    color: "#fde68a",
+    color: "rgba(29, 27, 27, 0.57)",
     fontSize: 12,
   },
 });

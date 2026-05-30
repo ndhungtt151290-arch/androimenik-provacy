@@ -10,120 +10,94 @@ interface PrivacyScreenProps {
 
 const VI = {
   title: "Chính sách bảo mật",
-  versions:
-    "Áp dụng cho: Menki 1000+, Menki 1000+ Ôn Thi Xe Máy Nhật, Menki 1000+ 原付免許問題集",
-  lastUpdated: "Cập nhật lần cuối: Tháng 5, 2026",
+  versions: "Áp dụng: Menki 1000+, Menki 1000+ Ôn Thi Xe Máy Nhật, Menki 1000+ 原付免許問題集",
+  lastUpdated: "Cập nhật: Tháng 5, 2026",
   intro:
-    "Chào mừng bạn đến với Menki 1000+ (sau đây gọi tắt là \"Ứng dụng\"). Chúng tôi cam kết bảo vệ tuyệt đối quyền riêng tư và dữ liệu cá nhân của bạn. Bản Chính sách bảo mật này được thiết kế nhằm tuyên bố minh bạch cách ứng dụng xử lý dữ liệu, tuân thủ nghiêm ngặt các tiêu chuẩn an toàn pháp lý và quy định tại Mục 5.1 (Privacy) của Điều khoản Apple App Store Review Guidelines.",
+    "Chào mừng bạn đến với Menki 1000+. Chúng tôi cam kết bảo vệ quyền riêng tư của bạn. Chính sách tuân thủ Apple App Store Review Guidelines (Mục 5.1 - Privacy).",
   introJa:
-    "Menki 1000+ アプリ（以下「当アプリ」）をご利用いただきありがとうございます。当アプリは、ユーザーのプライバシーおよび個人情報の保護を最優先に考えています。本プライバシーポリシーは、Apple App Store のレビュELINE（セクション5.1 - プライバシー）に厳格に準拠し、当アプリにおけるデータの取り扱いについて透明性をもって説明するものです。",
-  section1Title: "1. THU THẬP THÔNG TIN CÁ NHÂN",
+    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはApple App Store Review Guidelinesに準拠しております。",
+  section1Title: "1. THU THẬP THÔNG TIN",
   section1P1:
-    "Ứng dụng Menki 1000+ được xây dựng và hoạt động theo mô hình ứng dụng ngoại tuyến (Offline App).",
-  section1P2:
-    "Chúng tôi KHÔNG yêu cầu đăng ký tài khoản, KHÔNG thu thập, KHÔNG lưu trữ, KHÔNG theo dõi và KHÔNG chia sẻ bất kỳ thông tin nhận dạng cá nhân nào của người dùng dưới mọi hình thức (bao gồm nhưng không giới hạn: Họ tên, số điện thoại, email, địa chỉ, vị trí địa lý, số định danh thiết bị IMEI/IDFA).",
-  section1P1Ja: "当アプリは、完全なオフラインアプリとして設計・運営されています。",
-  section1P2Ja:
-    "当アプリは、ユーザーのアカウント登録を一切要求せず、個人を特定できる情報（氏名、電話番号、メールアドレス、住所、位置情報、デバイス識別子 IMEI/IDFA などを含むがこれらに限定されない）を収集、保存、追跡、または共有することは一切ありません。",
-  section2Title: "2. PHƯƠNG THỨC LƯU TRỮ DỮ LIỆU CỤC BỘ",
+    "Menki 1000+ là ứng dụng ngoại tuyến (Offline). Chúng tôi KHÔNG thu thập thông tin cá nhân (họ tên, email, số điện thoại, vị trí GPS, IMEI/IDFA).",
+  section1P1Ja:
+    "Menki 1000+はオフラインアプリです。私たちは個人情報（氏名、メールアドレス、電話番号、位置情報、IMEI/IDFA）を一切収集致しません。",
+  section2Title: "2. LƯU TRỮ DỮ LIỆU",
   section2P1:
-    "Để phục vụ các tính năng học tập, mọi dữ liệu phát sinh trong quá trình sử dụng bao gồm: Lịch sử làm đề thi thử, tiến độ tiến trình ôn tập từng chương và danh sách \"Câu hỏi hay sai\" (Wrong Questions History) đều được lưu trữ hoàn toàn cục bộ (Local Storage) trên chính thiết bị của bạn thông qua bộ nhớ AsyncStorage.",
-  section2P2:
-    "Chúng tôi không sở hữu hệ thống máy chủ lưu trữ (Server) và không có bất kỳ quyền truy cập từ xa nào đối với dữ liệu học tập cá nhân này trên thiết bị của bạn.",
+    "Dữ liệu học tập (lịch sử thi, tiến độ ôn tập, câu hỏi hay sai) được lưu cục bộ trên thiết bị. Chúng tôi KHÔNG có server và KHÔNG truy cập từ xa.",
   section2P1Ja:
-    "ユーザーの学習をサポートするため、当アプリの利用によって発生するすべてのデータ（模擬試験の履歴、章ごとの学習進捗、および「間違えた問題」のリストなど）は、デバイス上の AsyncStorage を通じて、ローカルストレージ（Local Storage）にのみ保存されます。",
-  section2P2Ja:
-    "当社は外部サーバーを保有しておらず、ユーザーのデバイス内にあるこれらの個人学習データにリモートでアクセスする権限や手段はありません。",
-  section3Title: "3. QUYỀN SỞ HỮU VÀ XÓA DỮ LIỆU CỦA NGƯỜI DÙNG",
+    "学習データ（試験履歴、進捗、間違えた問題など）はデバイスにローカル保存されます。私たちはサーバーを持たずリモートアクセス致しません。",
+  section3Title: "3. QUẢNG CÁO ADMOB",
   section3P1:
-    "Bạn có toàn quyền kiểm soát tối cao đối với dữ liệu của mình vì chúng nằm hoàn toàn trên thiết bị của bạn.",
-  section3P2:
-    "Khi bạn thực hiện hành động gỡ bỏ (Uninstall/Delete) ứng dụng Menki 1000+ khỏi thiết bị điện thoại, hệ điều hành (iOS/Android) sẽ tự động kích hoạt cơ chế xóa sạch 100% dữ liệu cục bộ liên quan đến ứng dụng. Không có bất kỳ bản sao lưu nào được giữ lại trên môi trường internet hoặc hệ thống mạng bên ngoài.",
-  section3P1Ja: "すべてのデータはユーザーのデバイスに保存されているため、ユーザー自身が完全な管理権限を持ちます。",
-  section3P2Ja:
-    "ユーザーがデバイスから当アプリをアンインストール（削除）した場合、デバイスのOS（iOS/Android）の標準機能により、アプリに関連するローカルデータは100%自動的に完全消去されます。インターネット上や外部システムにバックアップやコピーが残ることは一切ありません。",
-  section4Title: "4. DỊCH VỤ VÀ LIÊN KẾT CỦA BÊN THỨ BA",
+    "Ứng dụng sử dụng Google AdMob để hiển thị quảng cáo. AdMob có thể thu thập: loại thiết bị, OS, dữ liệu sử dụng, vị trí ước tính.",
+  section3P2: "iOS: Settings → Privacy → Tracking | Android: Settings → Google → Ads",
+  section3P1Ja:
+    "当어는Google AdMobを使用して広告を表示しています。AdMobはデバイスの種類、OS、使用データ、推定位置情報などを収集場合があります。",
+  section3P2Ja: "iOS：設定 → プライバシー → トラッキング | Android：設定 → Google → 広告",
+  section4Title: "4. XÓA DỮ LIỆU",
   section4P1:
-    "Ứng dụng Menki 1000+ cam kết không tích hợp bất kỳ mã theo dõi quảng cáo (Ad Tracking SDKs), không chứa các biểu ngữ quảng cáo thu thập hành vi người dùng (Targeted Ads) và không sử dụng các công cụ phân tích bên thứ ba gây ảnh hưởng đến quyền riêng tư của học viên.",
+    "Dữ liệu nằm hoàn toàn trên thiết bị bạn. Gỡ ứng dụng sẽ xóa 100% dữ liệu. Chúng tôi KHÔNG lưu bản sao trên server.",
   section4P1Ja:
-    "当アプリには、ユーザーのプライバシーに影響を与えるようなサードパーティの広告追跡コード（SDK）、行動収集目的のターゲティング広告、またはサードパーティのユーザー行動分析ツールは一切組み込まれていません。",
-  section5Title: "5. CHÍNH SÁCH BẢO VỆ TRẺ EM",
+    "データはユーザーのデバイスにのみ保存されます。アプリをアンインストールするとOSが自動Deletesします。サーバーにコピーは残りません。",
+  section5Title: "5. TRẺ EM & GDPR",
   section5P1:
-    "Ứng dụng hoàn toàn tuân thủ các quy định quốc tế về bảo vệ quyền riêng tư trực tuyến của trẻ em (COPPA). Do tính chất không thu thập bất kỳ dữ liệu nào, Ứng dụng Menki 1000+ an toàn tuyệt đối cho người dùng ở mọi lứa tuổi, bao gồm cả trẻ em dưới 13 tuổi.",
+    "Tuân thủ COPPA (Hoa Kỳ) và GDPR (Châu Âu). An toàn cho mọi lứa tuổi, bao gồm trẻ em dưới 13 tuổi.",
   section5P1Ja:
-    "当道は、子どものオンラインプライバシー保護に関する国際的な規則（COPPAなど）を遵守しています。いかなる情報も収集しない特性上、当道は13歳未満のお子様を含むすべての年齢層のユーザーにとって完全に安全です。",
-  section6Title: "6. ĐIỀU KHOẢN THAY ĐỔI VÀ THÔNG TIN LIÊN HỆ",
-  section6P1:
-    "Chúng tôi có thể cập nhật Chính sách bảo mật này theo thời gian để phù hợp với các nâng cấp tính năng của ứng dụng. Mọi thay đổi sẽ có hiệu lực ngay khi bản cập nhật mới nhất được đăng tải trên đường link này.",
-  section6P2:
-    "Nếu có bất kỳ câu hỏi, khiếu nại hoặc đóng góp ý kiến nào liên quan đến quyền riêng tư, vui lòng liên hệ với chúng tôi thông qua thông tin hỗ trợ nhà phát triển trên App Store hoặc thông qua tính năng \"Liên hệ\" trực tiếp được tích hợp bên trong Ứng dụng.",
-  section6P1Ja:
-    "当道は、機能のアップグレードに合わせて、本プライバシーポリシーを随時更新することがあります。変更は、このリンクに最新版が公開された時点で即座に有効となります。",
-  section6P2Ja:
-    "本プライバシーポリシーに関するご質問、苦情、またはご意見がございましたら、App Store に記載されているデベロッパーサポート情報、またはアプリ内の「お問い合わせ」項目よりご連絡ください。",
-  websiteBtn: "Xem bản đầy đủ trên Website",
+    "COPPA（米国）およびGDPR（EU）を遵守しています。13歳未満のお子様を含むすべての年齢層のユーザーに安全です。",
+  section6Title: "6. LIÊN HỆ",
+  section6P1: "Hỗ trợ qua Zalo: https://zalo.me/07091033238",
+  section6P1Ja: "Zaloでサポート：https://zalo.me/07091033238",
+  websiteBtn: "Xem đầy đủ trên Website",
 };
 
 const JA = {
   title: "プライバシーポリシー",
-  versions:
-    "対象アプリ: Menki 1000+, Menki 1000+ Ôn Thi Xe Máy Nhật, Menki 1000+ 原付免許問題集",
+  versions: "対象: Menki 1000+, Menki 1000+ Ôn Thi Xe Máy Nhật, Menki 1000+ 原付免許問題集",
   lastUpdated: "最終更新日：2026年5月",
   intro:
-    "Menki 1000+ アプリ（以下「当アプリ」）をご利用いただきありがとうございます。当家は、ユーザーのプライバシーおよび個人情報の保護を最優先に考えています。本プライバシーポリシーは、Apple App Store のレビュELINE（セクション5.1 - プライバシー）に厳格に準拠し、当アプリにおけるデータの取り扱いについて透明性をもって説明するものです。",
+    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはApple App Store Review Guidelinesに準拠しております。",
   introJa:
-    "Menki 1000+ アプリ（以下「当アプリ」）をご利用いただきありがとうございます。当家は、ユーザーのプライバシーおよび個人情報の保護を最優先に考えています。本プライバシーポリシーは、Apple App Store のレビュELINE（セクション5.1 - プライバシー）に厳格に準拠し、当アプリにおけるデータの取り扱いについて透明性をもって説明するものです。",
-  section1Title: "1. 個人情報の収集について",
-  section1P1: "当アプリは、完全なオフラインアプリとして設計・運営されています。",
-  section1P2:
-    "当アプリは、ユーザーのアカウント登録を一切要求せず、個人を特定できる情報（氏名、電話番号、メールアドレス、住所、位置情報、デバイス識別子 IMEI/IDFA などを含むがこれらに限定されない）を収集、保存、追跡、または共有することは一切ありません。",
-  section1P1Ja: "当道は、完全なオフラインアプリとして設計・運営されています。",
-  section1P2Ja:
-    "当道は、ユーザーのアカウント登録を一切要求せず、個人を特定できる情報（氏名、電話番号、メールアドレス、住所、位置情報、デバイス識別子 IMEI/IDFA などを含むがこれらに限定されない）を収集、保存、追跡、または共有することは一切ありません。",
-  section2Title: "2. ローカルデータの保存について",
+    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはApple App Store Review Guidelinesに準拠しております。",
+  section1Title: "1. 個人情報の収集",
+  section1P1:
+    "Menki 1000+はオフラインアプリです。私たちは個人情報（氏名、メールアドレス、電話番号、位置情報、IMEI/IDFA）を一切収集致しません。",
+  section1P1Ja:
+    "Menki 1000+はオフラインアプリです。私たちは個人情報（氏名、メールアドレス、電話番号、位置情報、IMEI/IDFA）を一切収集致しません。",
+  section2Title: "2. データの保存",
   section2P1:
-    "ユーザーの学習をサポートするため、当アプリの利用によって発生するすべてのデータ（模擬試験の履歴、章ごとの学習進捗、および「間違えた問題」のリストなど）は、デバイス上の AsyncStorage を通じて、ローカルストレージ（Local Storage）にのみ保存されます。",
-  section2P2:
-    "当社は外部サーバーを保有しておらず、ユーザーのデバイス内にあるこれらの個人学習データにリモートでアクセスする権限や手段はありません。",
+    "学習データ（試験履歴、進捗、間違えた問題など）はデバイスにローカル保存されます。私たちはサーバーを持たずリモートアクセス致しません。",
   section2P1Ja:
-    "ユーザーの学習をサポートするため、当アプリの利用によって発生するすべてのデータ（模擬試験の履歴、章ごとの学習進捗、および「間違えた問題」のリストなど）は、デバイス上の AsyncStorage を通じて、ローカルストレージ（Local Storage）にのみ保存されます。",
-  section2P2Ja:
-    "当社は外部サーバーを保有しておらず、ユーザーのデバイス内にあるこれらの個人学習データにリモートでアクセスする権限や手段はありません。",
-  section3Title: "3. ユーザーのデータ管理および完全削除の権利",
-  section3P1: "すべてのデータはユーザーのデバイスに保存されているため、ユーザー自身が完全な管理権限を持ちます。",
-  section3P2:
-    "ユーザーがデバイスから当アプリをアンインストール（削除）した場合、デバイスのOS（iOS/Android）の標準機能により、アプリに関連するローカルデータは100%自動的に完全消去されます。インターネット上や外部システムにバックアップやコピーが残ることは一切ありません。",
-  section3P1Ja: "すべてのデータはユーザーのデバイスに保存されているため、ユーザー自身が完全な管理権限を持ちます。",
-  section3P2Ja:
-    "ユーザーがデバイスから当アプリをアンインストール（削除）した場合、デバイスのOS（iOS/Android）の標準機能により、アプリに関連するローカルデータは100%自動的に完全消去されます。インターネット上や外部システムにバックアップやコピーが残ることは一切ありません。",
-  section4Title: "4. サードパーティサービスおよびリンクについて",
+    "学習データ（試験履歴、進捗、間違えた問題など）はデバイスにローカル保存されます。私たちはサーバーを持たずリモートアクセス致しません。",
+  section3Title: "3. ADMOB広告",
+  section3P1:
+    "当어는Google AdMobを使用して広告を表示しています。AdMobはデバイスの種類、OS、使用データ、推定位置情報などを収集場合があります。",
+  section3P2: "iOS：設定 → プライバシー → トラッキング | Android：設定 → Google → 広告",
+  section3P1Ja:
+    "当어는Google AdMobを使用して広告を表示しています。AdMobはデバイスの種類、OS、使用データ、推定位置情報などを収集場合があります。",
+  section3P2Ja: "iOS：設定 → プライバシー → トラッキング | Android：設定 → Google → 広告",
+  section4Title: "4. データの削除",
   section4P1:
-    "当アプリには、ユーザーのプライバシーに影響を与えるようなサードパーティの広告追跡コード（SDK）、行動収集目的のターゲティング広告、またはサードパーティのユーザー行動分析ツールは一切組み込まれていません。",
+    "データはユーザーのデバイスにのみ保存されます。アプリをアンインストールするとOSが自動Deletesします。サーバーにコピーは残りません。",
   section4P1Ja:
-    "当アプリには、ユーザーのプライバシーに影響を与えるようなサードパーティの広告追跡コード（SDK）、行動収集目的のターゲティング広告、またはサードパーティのユーザー行動分析ツールは一切組み込まれていません。",
-  section5Title: "5. 子ども向けのプライバシー保護",
+    "データはユーザーのデバイスにのみ保存されます。アプリをアンインストールするとOSが自動Deletesします。サーバーにコピーは残りません。",
+  section5Title: "5. 子ども＆GDPR",
   section5P1:
-    "当道は、子どものオンラインプライバシー保護に関する国際的な規則（COPPAなど）を遵守しています。いかなる情報も収集しない特性上、当道は13歳未満のお子様を含むすべての年齢層のユーザーにとって完全に安全です。",
+    "COPPA（米国）およびGDPR（EU）を遵守しています。13歳未満のお子様を含むすべての年齢層のユーザーに安全です。",
   section5P1Ja:
-    "当道は、子どものオンラインプライバシー保護に関する国際的な規則（COPPAなど）を遵守しています。いかなる情報も収集しない特性上、当道は13歳未満のお子様を含むすべての年齢層のユーザーにとって完全に安全です。",
-  section6Title: "6. ポリシーの変更およびお問い合わせ",
-  section6P1:
-    "当道は、機能のアップグレードに合わせて、本プライバシーポリシーを随時更新ことがあります。変更は、このリンクに最新版が公開された時点で即座に有効となります。",
-  section6P2:
-    "本プライバシーポリシーに関するご質問、苦情、またはご意見がございましたら、App Store に記載されているデベロッパーサポート情報、またはアプリ内の「お問い合わせ」項目よりご連絡ください。",
-  section6P1Ja:
-    "当道は、機能のアップグレードに合わせて、本プライバシーポリシーを随時更新ることがあります。変更は、このリンクに最新版が公開された時点で即座に有効となります。",
-  section6P2Ja:
-    "本プライバシーポリシーに関するご質問、苦情、またはご意見がございましたら、App Store に記載されているデベロッパーサポート情報、またはアプリ内の「お問い合わせ」項目よりご連絡ください。",
+    "COPPA（米国）およびGDPR（EU）を遵守しています。13歳未満のお子様を含むすべての年齢層のユーザーに安全です。",
+  section6Title: "6. お問い合わせ",
+  section6P1: "Zaloでサポート：https://zalo.me/07091033238",
+  section6P1Ja: "Zaloでサポート：https://zalo.me/07091033238",
   websiteBtn: "ウェブサイトで全文を見る",
 };
 
 function SectionTitle({ children }: { children: string }) {
   return <Text style={styles.sectionTitle}>{children}</Text>;
 }
+
 function BodyText({ children }: { children: string }) {
   return <Text style={styles.bodyText}>{children}</Text>;
 }
+
 function BilingualText({ vi, ja }: { vi: string; ja: string }) {
   return (
     <>
@@ -135,7 +109,7 @@ function BilingualText({ vi, ja }: { vi: string; ja: string }) {
   );
 }
 
-export function PrivacyScreen({ lang, onBack }: PrivacyScreenProps) {
+export function PrivacyScreen({ lang }: PrivacyScreenProps) {
   const insets = useSafeAreaInsets();
   const T = lang === "vi" ? VI : JA;
 
@@ -153,15 +127,16 @@ export function PrivacyScreen({ lang, onBack }: PrivacyScreenProps) {
 
         <SectionTitle>{T.section1Title}</SectionTitle>
         <BilingualText vi={T.section1P1} ja={T.section1P1Ja} />
-        <BilingualText vi={T.section1P2} ja={T.section1P2Ja} />
 
         <SectionTitle>{T.section2Title}</SectionTitle>
         <BilingualText vi={T.section2P1} ja={T.section2P1Ja} />
-        <BilingualText vi={T.section2P2} ja={T.section2P2Ja} />
 
         <SectionTitle>{T.section3Title}</SectionTitle>
         <BilingualText vi={T.section3P1} ja={T.section3P1Ja} />
-        <BilingualText vi={T.section3P2} ja={T.section3P2Ja} />
+        <BodyText>{T.section3P2}</BodyText>
+        <View style={styles.jaBlock}>
+          <Text style={styles.jaText}>{T.section3P2Ja}</Text>
+        </View>
 
         <SectionTitle>{T.section4Title}</SectionTitle>
         <BilingualText vi={T.section4P1} ja={T.section4P1Ja} />
@@ -171,7 +146,6 @@ export function PrivacyScreen({ lang, onBack }: PrivacyScreenProps) {
 
         <SectionTitle>{T.section6Title}</SectionTitle>
         <BilingualText vi={T.section6P1} ja={T.section6P1Ja} />
-        <BilingualText vi={T.section6P2} ja={T.section6P2Ja} />
 
         <TouchableOpacity
           style={styles.websiteBtn}
@@ -194,21 +168,21 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#rgba(11, 53, 117, 0.81)",
+    color: "#0b3575",
     textAlign: "center",
     marginTop: 8,
     marginBottom: 4,
   },
   versions: {
     fontSize: 11,
-    color: "#525252",
+    color: "#6b7280",
     textAlign: "center",
     paddingHorizontal: 16,
     marginBottom: 2,
   },
   lastUpdated: {
     fontSize: 12,
-    color: "#525252",
+    color: "#6b7280",
     textAlign: "center",
     marginBottom: 16,
   },
@@ -218,14 +192,14 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 15,
     fontWeight: "bold",
-    color: "rgba(15, 47, 95, 0.81)",
+    color: "#0f2f5f",
     paddingHorizontal: 16,
     marginTop: 14,
     marginBottom: 8,
   },
   bodyText: {
     fontSize: 14,
-    color: "#1c1917",
+    color: "#1a1a1a",
     lineHeight: 22,
     paddingHorizontal: 16,
     marginBottom: 6,
@@ -233,32 +207,31 @@ const styles = StyleSheet.create({
   jaBlock: {
     marginHorizontal: 16,
     marginBottom: 10,
-    backgroundColor: "rgba(238, 236, 235, 0.06)",
+    backgroundColor: "#f0f9ff",
     borderRadius: 8,
     padding: 10,
     borderLeftWidth: 3,
-    borderLeftColor: "#93c5fd",
+    borderLeftColor: "#3b82f6",
   },
   jaText: {
     fontSize: 13,
     color: "#1e40af",
     lineHeight: 20,
-    fontStyle: "italic",
   },
   websiteBtn: {
     marginHorizontal: 16,
     marginTop: 24,
     marginBottom: 8,
-    backgroundColor: "rgba(238, 236, 235, 0.12)",
+    backgroundColor: "#f3f4f6",
     borderRadius: 12,
     paddingVertical: 14,
     alignItems: "center",
     borderWidth: 1.5,
-    borderColor: "rgba(202, 198, 196, 0.3)",
+    borderColor: "#d1d5db",
   },
   websiteBtnText: {
     fontSize: 14,
     fontWeight: "600",
-    color: "rgba(11, 53, 117, 0.81)",
+    color: "#0b3575",
   },
 });

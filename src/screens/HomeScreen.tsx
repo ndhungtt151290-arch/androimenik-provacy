@@ -297,7 +297,7 @@ export function HomeScreen({
         <TouchableOpacity onPress={onShowChinhSachBaoMat} activeOpacity={0.7}>
           <Text style={styles.privacyLink}>{L.chinhSachBaoMat}</Text>
         </TouchableOpacity>
-        <Text style={styles.credit}>CREATED BY DUYHUNG</Text>
+        <Text style={styles.credit}>© 2026 DUYHUNG</Text>
       </View>
 
       <Modal
@@ -1018,7 +1018,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   privacyLink: { fontSize: 12, color: "rgb(1, 6, 19)", textDecorationLine: "underline" },
-  credit: { fontSize: 11, color: "rgba(0, 0, 0, 0.95)", fontWeight: "600", letterSpacing: 5 },
+  credit: { fontSize: 11, color: "rgba(0, 0, 0, 0.95)", fontWeight: "600", letterSpacing: 1 },
   overlay: { flex: 1, backgroundColor: "rgba(22, 21, 21, 0.0)", justifyContent: "flex-end" },
   overlayTouch: { flex: 1 },
   bottomSheet: {

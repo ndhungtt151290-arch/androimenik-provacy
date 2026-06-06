@@ -14,7 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.gentsuki.app",
+      "bundleIdentifier": "com.menki1000vn.app",
       "buildNumber": "1",
       "infoPlist": {
         "CFBundleDisplayName": "Menki 1000+",
@@ -34,7 +34,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.gentsuki.app",
+      "package": "com.menki1000vn.app",
       "permissions": [
         "com.google.android.gms.permission.AD_ID"
       ]

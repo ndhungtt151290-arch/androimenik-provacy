@@ -19,7 +19,9 @@ export async function saveHistory(entry: ExamHistoryEntry): Promise<void> {
     history.unshift(entry);
     if (history.length > 20) history.pop();
     await AsyncStorage.setItem(HISTORY_KEY, JSON.stringify(history));
-  } catch {}
+  } catch (e) {
+    console.warn("saveHistory failed:", e);
+  }
 }
 
 export async function loadStats(): Promise<PersonalStats> {
@@ -34,7 +36,9 @@ export async function loadStats(): Promise<PersonalStats> {
 export async function saveStats(stats: PersonalStats): Promise<void> {
   try {
     await AsyncStorage.setItem(STATS_KEY, JSON.stringify(stats));
-  } catch {}
+  } catch (e) {
+    console.warn("saveStats failed:", e);
+  }
 }
 
 const PRACTICE_KEY = "gentsuki_practice_progress_v2";
@@ -62,7 +66,9 @@ export async function savePracticeProgress(
     }
     all[chapterId] = validAnswers;
     await AsyncStorage.setItem(PRACTICE_KEY, JSON.stringify(all));
-  } catch {}
+  } catch (e) {
+    console.warn("savePracticeProgress failed:", e);
+  }
 }
 
 const WRONG_ANSWERS_KEY = "gentsuki_wrong_answers";
@@ -80,7 +86,9 @@ export async function loadWrongAnswers(): Promise<WrongAnswerStats[]> {
 export async function saveWrongAnswers(stats: WrongAnswerStats[]): Promise<void> {
   try {
     await AsyncStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(stats));
-  } catch {}
+  } catch (e) {
+    console.warn("saveWrongAnswers failed:", e);
+  }
 }
 
 export async function addWrongAnswer(questionId: string): Promise<void> {
@@ -116,7 +124,9 @@ export async function addWrongAnswer(questionId: string): Promise<void> {
     }
 
     await saveWrongAnswers(stats);
-  } catch {}
+  } catch (e) {
+    console.warn("addWrongAnswer failed:", e);
+  }
 }
 
 export async function addWrongAnswers(questionIds: string[]): Promise<void> {
@@ -158,7 +168,9 @@ export async function addWrongAnswers(questionIds: string[]): Promise<void> {
     }
 
     await saveWrongAnswers(stats);
-  } catch {}
+  } catch (e) {
+    console.warn("addWrongAnswers failed:", e);
+  }
 }
 
 export async function addExamWrongAnswer(questionId: string): Promise<void> {
@@ -194,5 +206,7 @@ export async function addExamWrongAnswer(questionId: string): Promise<void> {
     }
 
     await saveWrongAnswers(stats);
-  } catch {}
+  } catch (e) {
+    console.warn("addExamWrongAnswer failed:", e);
+  }
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, StyleSheet, Platform, ActivityIndicator } from "react-native";
+import { View, StyleSheet, ActivityIndicator } from "react-native";
 import { getBannerId } from "../lib/adService";
 import { logger } from "../utils/logger";
 
@@ -18,7 +18,7 @@ export function BannerAd() {
           setBannerComponent(() => (props: any) => (
             <Banner
               unitId={unitId}
-              size={Platform.select({ android: "BANNER", ios: "SMART_BANNER", default: "BANNER" }) as any}
+              size="SMART_BANNER"
               requestOptions={{ requestNonPersonalizedAdsOnly: true }}
               {...props}
             />

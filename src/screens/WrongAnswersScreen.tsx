@@ -41,6 +41,9 @@ export function WrongAnswersScreen({ lang, onBack }: WrongAnswersScreenProps) {
   useEffect(() => {
     loadWrongAnswers().then((data) => {
       setWrongList(data);
+    }).catch((e) => {
+      console.warn("loadWrongAnswers failed:", e);
+    }).finally(() => {
       setLoading(false);
     });
   }, []);
@@ -128,7 +131,8 @@ export function WrongAnswersScreen({ lang, onBack }: WrongAnswersScreenProps) {
         {sortedList
           .filter((item) => questionMap.has(item.questionId))
           .map((item) => {
-            const question = questionMap.get(item.questionId)!;
+            const question = questionMap.get(item.questionId);
+            if (!question) return null;
             return (
               <View key={item.questionId} style={styles.card}>
                 <View style={styles.cardHeader}>

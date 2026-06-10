@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, useRef } from "react";
+import React, { useEffect, useState, useCallback, useRef, Component, ReactNode } from "react";
 import {
   View,
   StyleSheet,
@@ -46,6 +46,38 @@ const PASS_SCORE = 45;
 const practiceBg = require("./src/assets/bgs/Q9.png");
 const homeBg = require("./src/assets/bgs/bgh.jpg");
 
+interface ErrorBoundaryProps { children: ReactNode; fallback?: ReactNode; }
+interface ErrorBoundaryState { hasError: boolean; error?: Error; }
+
+class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
+    console.error("App ErrorBoundary caught:", error, info.componentStack);
+  }
+  render() {
+    if (this.state.hasError) {
+      if (this.props.fallback) return this.props.fallback;
+      return (
+        <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#fff", padding: 24 }}>
+          <Text style={{ fontSize: 18, fontWeight: "bold", color: "#dc2626", marginBottom: 8 }}>
+            Đã xảy ra lỗi
+          </Text>
+          <Text style={{ fontSize: 14, color: "#404040", textAlign: "center" }}>
+            {this.state.error?.message ?? "Lỗi không xác định"}
+          </Text>
+        </View>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 function AppContent() {
   const insets = useSafeAreaInsets();
   const HEADER_BUTTON_TOP =insets.top + 8;;
@@ -75,11 +107,17 @@ function AppContent() {
   // Load data on mount
   useEffect(() => {
     initAds();
-    Promise.all([loadStats(), loadHistory()]).then(([stats, history]) => {
-      setPersonalStats(stats);
-      setExamHistory(history);
-      setLoading(false);
-    });
+    Promise.all([loadStats(), loadHistory()])
+      .then(([stats, history]) => {
+        setPersonalStats(stats);
+        setExamHistory(history);
+      })
+      .catch((err) => {
+        console.warn("Failed to load initial data:", err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   // Request ATT permission (iOS only)
@@ -592,7 +630,9 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <SafeAreaProvider>
-      <AppContent />
+      <ErrorBoundary>
+        <AppContent />
+      </ErrorBoundary>
     </SafeAreaProvider>
   );
 }

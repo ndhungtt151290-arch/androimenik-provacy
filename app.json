@@ -15,7 +15,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.menki1000vn.app",
-      "buildNumber": "1",
+      "buildNumber": "6",
       "infoPlist": {
         "CFBundleDisplayName": "Menki 1000+",
         "NSCameraUsageDescription": "Ứng dụng cần truy cập camera để người dùng có thể chụp ảnh làm đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi.",
@@ -53,8 +53,8 @@
       [
         "react-native-google-mobile-ads",
         {
-          "android_app_id": "ca-app-pub-8320439928464026",
-          "ios_app_id": "ca-app-pub-8320439928464026"
+          "androidAppId": "ca-app-pub-8320439928464026~1213542725",
+          "iosAppId": "ca-app-pub-8320439928464026~1213542725"
         }
       ],
       "expo-audio"

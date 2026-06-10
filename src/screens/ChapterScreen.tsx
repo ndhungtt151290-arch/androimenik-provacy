@@ -93,6 +93,8 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
       if (savedAnswers) {
         setAns(savedAnswers);
       }
+    }).catch((e) => {
+      console.warn("loadPracticeProgress failed:", e);
     });
   }, [chapterId]);
 

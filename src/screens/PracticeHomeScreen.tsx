@@ -39,7 +39,9 @@ export function PracticeHomeScreen({ lang, onChapter, onBack, initialSogouModal 
   const [showAllChapters, setShowAllChapters] = useState(initialSogouModal === "allChapters");
 
   useEffect(() => {
-    loadPracticeProgress().then(setPracticeProgress);
+    loadPracticeProgress().then(setPracticeProgress).catch((e) => {
+      console.warn("loadPracticeProgress failed:", e);
+    });
   }, []);
 
   // Sync modal state when initialSogouModal changes (back from chapter)

@@ -11,7 +11,7 @@ import { logger } from "../utils/logger";
 export const BANNER_ID = FALLBACK_ADS.BANNER_ID;
 export const INTERSTITIAL_ID = FALLBACK_ADS.INTERSTITIAL_ID;
 
-let _mobileAds: import("react-native-google-mobile-ads").MobileAds | null = null;
+let _mobileAds: Awaited<ReturnType<typeof import("react-native-google-mobile-ads").default>> | null = null;
 let _initialized = false;
 let _configLoaded = false;
 let _realBannerId = FALLBACK_ADS.BANNER_ID;
@@ -52,7 +52,7 @@ export async function initAds(): Promise<void> {
       await ads.initialize();
       logger.log("[AdMob] Initialized successfully");
     } else {
-      logger.log("[AdMob] Native module not available (Expo Go?), skipping init");
+      logger.log("[AdMob] Native module not available, skipping init");
     }
   } catch (err) {
     logger.warn("[AdMob] Init failed:", err);

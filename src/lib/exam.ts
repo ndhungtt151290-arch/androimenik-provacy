@@ -265,6 +265,11 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
   const scen1 = shuffle(ch11Scenarios)[0];
   const scen2 = shuffle(ch12Scenarios)[0];
 
+  // Safety guard: if no scenarios, use empty stubs to prevent crash
+  if (!scen1 || !scen2) {
+    console.error("Missing scenario chapters: scen1=", !!scen1, "scen2=", !!scen2);
+  }
+
   // === PHASE 3: Build exam items ===
   // Su dung finalPicked da dam bao du so cau co hinh anh
   const simpleItems: ExamItem[] = finalPicked.map((question) => ({
@@ -275,6 +280,7 @@ export function buildMockExam(bank: QuestionBank): ExamItem[] {
   // Flatten each scenario into 3 separate exam items
   const scenItems: ExamItem[] = [];
   for (const group of [scen1, scen2]) {
+    if (!group) continue;
     for (let i = 0; i < group.subs.length; i++) {
       const sub = group.subs[i];
       scenItems.push({

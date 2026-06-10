@@ -78,6 +78,16 @@ export function ExamScreen({
   const currentItem = paper[examIndex];
   const total = paper.length;
 
+  if (!currentItem) {
+    return (
+      <View style={styles.screenContainer}>
+        <Text style={styles.emptyText}>
+          {lang === "vi" ? "Không có câu hỏi." : "問題がありません。"}
+        </Text>
+      </View>
+    );
+  }
+
   // Count answered questions - only count simple items that have .question
   const answeredCount = paper.filter((item) => {
     if (isSimpleItem(item)) {
@@ -371,6 +381,7 @@ export function ExamScreen({
 }
 
 const styles = StyleSheet.create({
+  emptyText: { flex: 1, textAlign: "center", color: "#78350f", fontSize: 14, marginTop: 100 },
   screenContainer: { flex: 1, position: "relative" },
   scrollContent: { flexGrow: 1 },
   container: { flex: 1 },

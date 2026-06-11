@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Check, X, RotateCcw } from "../components/Icons";
-import { AdBanner } from "../components/AdBanner";
+import { BannerAd } from "../components/BannerAd";
 import { showInterstitialRetry } from "../utils/AdManager";
-import { CHAPTER_VI } from "../lib/chapters";
+import { CHAPTER_VI, CHAPTER_JP } from "../lib/chapters";
 import { SoundManager } from "../lib/SoundManager";
 import type { ExamItem, Lang } from "../types";
 
@@ -99,7 +99,7 @@ export function ResultsScreen({
   for (const d of score.details) {
     if (d.item.type !== "simple") continue;
     const chapterId = d.item.question.chapter;
-    const label = CHAPTER_VI[chapterId] ?? chapterId;
+    const label = lang === "vi" ? (CHAPTER_VI[chapterId] ?? chapterId) : (CHAPTER_JP[chapterId] ?? chapterId);
     if (!chapterStats[label]) chapterStats[label] = { correct: 0, total: 0 };
     chapterStats[label].total += 1;
     if (d.points >= 1) chapterStats[label].correct += 1;
@@ -223,7 +223,7 @@ export function ResultsScreen({
         </TouchableOpacity>
 
       </ScrollView>
-      <AdBanner />
+      <BannerAd />
     </View>
   );
 }

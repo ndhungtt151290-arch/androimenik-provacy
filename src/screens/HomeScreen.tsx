@@ -180,26 +180,41 @@ export function HomeScreen({
 
  
   const handleOpenZalo = async () => {
-    const zaloUrl = "https://zalo.me/07091033238";
+    // Thử scheme riêng của Zalo trước (hoạt động tốt trên iOS/Android)
+    const zaloScheme = "zalo://";
+    // Web fallback
+    const zaloWeb = "https://zalo.me/07091033238";
+
     try {
-      const supported = await Linking.canOpenURL(zaloUrl);
-      if (supported) {
-        await Linking.openURL(zaloUrl);
+      const canOpenScheme = await Linking.canOpenURL(zaloScheme);
+      if (canOpenScheme) {
+        await Linking.openURL(zaloScheme);
       } else {
-        Alert.alert(
-          lang === "vi" ? "Không thể mở Zalo" : "Zaloを開けます",
-          lang === "vi"
-            ? "Vui lòng cài đặt ứng dụng Zalo trên thiết bị."
-            : "デバイスにZaloアプリがインストールされていません。"
-        );
+        // Fallback sang web version
+        const canOpenWeb = await Linking.canOpenURL(zaloWeb);
+        if (canOpenWeb) {
+          await Linking.openURL(zaloWeb);
+        } else {
+          Alert.alert(
+            lang === "vi" ? "Không thể mở Zalo" : "Zaloを開けます",
+            lang === "vi"
+              ? "Vui lòng cài đặt ứng dụng Zalo trên thiết bị."
+              : "デバイスにZaloアプリがインストールされていません。"
+          );
+        }
       }
     } catch (error) {
-      Alert.alert(
-        lang === "vi" ? "Đã xảy ra lỗi" : "エラーが発生しました",
-        lang === "vi"
-          ? "Không thể mở liên kết Zalo. Vui lòng thử lại."
-          : "Zaloリンクを開けませんでした。もう一度お試しください。"
-      );
+      // Fallback cuối cùng - thử mở web
+      try {
+        await Linking.openURL(zaloWeb);
+      } catch {
+        Alert.alert(
+          lang === "vi" ? "Đã xảy ra lỗi" : "エラーが発生しました",
+          lang === "vi"
+            ? "Không thể mở liên kết Zalo. Vui lòng thử lại."
+            : "Zaloリンクを開けませんでした。もう一度お試しください。"
+        );
+      }
     }
   };
 

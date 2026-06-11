@@ -6,7 +6,7 @@ import { CHAPTER_VI, CHAPTER_MAP } from "../lib/chapters";
 import { loadPracticeProgress } from "../lib/storage";
 import { getChapterStats, getChapterTotal } from "../lib/dataUtils";
 import { BTN } from "../theme/buttonTokens";
-import { AdBanner } from "../components/AdBanner";
+import { BannerAd } from "../components/BannerAd";
 import { SoundManager } from "../lib/SoundManager";
 import { showInterstitialChapter } from "../utils/AdManager";
 import { ConfirmDialog } from "../components/ConfirmDialog";
@@ -225,7 +225,7 @@ export function PracticeHomeScreen({ lang, onChapter, onBack, initialSogouModal 
       </ScrollView>
 
       {/* Ad Banner */}
-      <AdBanner />
+      <BannerAd />
     </View>
   );
 }

@@ -1,4 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Platform } from "react-native";
 import { adEmitter } from "./AdEventEmitter";
 import { getBannerId, getInterstitialId } from "../lib/adService";
 import { logger } from "./logger";
@@ -8,6 +9,11 @@ const EXAM_BACK_KEY = "exam_back_count";
 const RETRY_KEY = "retry_count";
 
 async function showInterstitialAd(callback: () => void): Promise<void> {
+  if (Platform.OS === "web") {
+    setTimeout(() => callback(), 300);
+    return;
+  }
+
   let hasCompleted = false;
   let cleanupDone = false;
   let unsubLoaded: (() => void) | undefined;

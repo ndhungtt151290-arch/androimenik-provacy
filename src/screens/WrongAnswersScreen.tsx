@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
-import { AdBanner } from "../components/AdBanner";
+import { BannerAd } from "../components/BannerAd";
 import { loadWrongAnswers } from "../lib/storage";
 import type { Lang, QuestionBank, SimpleQuestion, WrongAnswerStats } from "../types";
 
@@ -182,7 +182,7 @@ export function WrongAnswersScreen({ lang, onBack }: WrongAnswersScreenProps) {
         })}
       </ScrollView>
 
-      <AdBanner />
+      <BannerAd />
     </View>
   );
 }

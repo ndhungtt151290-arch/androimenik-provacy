@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-nati
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { BookOpen, Clock, Brain, CircleAlert } from "../components/Icons";
 import { BTN } from "../theme/buttonTokens";
-import { AdBanner } from "../components/AdBanner";
+import { BannerAd } from "../components/BannerAd";
 import { SoundManager } from "../lib/SoundManager";
 import { showInterstitialChapter } from "../utils/AdManager";
 import type { Lang } from "../types";
@@ -157,7 +157,7 @@ export function ExamPrepScreen({ lang, onStart, onBack, onHistory }: ExamPrepScr
       </ScrollView>
 
       {/* Ad Banner */}
-      <AdBanner />
+      <BannerAd />
     </View>
   );
 }

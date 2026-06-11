@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
-import { AdBanner } from "../components/AdBanner";
+import { BannerAd } from "../components/BannerAd";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { showInterstitialChapter } from "../utils/AdManager";
 import { questionsForChapter } from "../lib/exam";
@@ -273,7 +273,7 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
       </ScrollView>
 
       {/* Ad Banner */}
-      <AdBanner />
+      <BannerAd />
 
       {/* Progress Modal */}
       <Modal

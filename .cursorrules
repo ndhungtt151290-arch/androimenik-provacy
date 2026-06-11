@@ -560,3 +560,15 @@ CHỈ được tạo file mới TRONG các thư mục đã có:
 □ Comment bằng tiếng Việt
 □ Tên biến bằng tiếng Anh
 ```
+
+---
+
+## 11. CHECKLIST TRƯỚC KHI LÊN APP STORE
+
+```
+□ Xóa test device ID khỏi adService.ts (chỉ giữ "SIMULATOR" hoặc xóa toàn bộ setRequestConfiguration)
+□ Kiểm tra app.config.ts và eas.json không chứa credentials thật
+□ Kiểm tra ads.ts không chứa test ad unit ID
+□ Tắt debug logging nếu có
+□ Build bằng production profile (EAS build --local --platform ios --profile production)
+```

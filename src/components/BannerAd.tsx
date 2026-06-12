@@ -3,23 +3,24 @@ import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
 import { getBannerId } from "../lib/adService";
 import { logger } from "../utils/logger";
 
-let BannerNative: any = null;
-try {
-  BannerNative = require("react-native-google-mobile-ads").Banner;
-} catch {
-  BannerNative = null;
-}
-
 export function BannerAd() {
-  const [bannerLoaded, setBannerLoaded] = useState(false);
+  const [BannerNative, setBannerNative] = useState<any>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!BannerNative) {
-      setLoadError("Module not found");
-      return;
-    }
-    setBannerLoaded(true);
+    import("react-native-google-mobile-ads")
+      .then((mod) => {
+        const Banner = mod.BannerAd;
+        if (Banner) {
+          setBannerNative(() => Banner);
+        } else {
+          setLoadError("BannerAd not found in module");
+        }
+      })
+      .catch((err) => {
+        logger.warn("[BannerAd] Module load failed:", err);
+        setLoadError("Module not found");
+      });
   }, []);
 
   if (loadError) {
@@ -30,7 +31,7 @@ export function BannerAd() {
     );
   }
 
-  if (!bannerLoaded || !BannerNative) {
+  if (!BannerNative) {
     return (
       <View style={styles.placeholder}>
         <ActivityIndicator size="small" color="#ccc" />
@@ -42,7 +43,7 @@ export function BannerAd() {
     <View style={styles.container}>
       <BannerNative
         unitId={getBannerId()}
-        size="ADAPTIVE_BANNER"
+        size="BANNER"
         requestOptions={{ requestNonPersonalizedAdsOnly: true }}
         onAdLoaded={() => logger.log("[BannerAd] Loaded")}
         onAdFailedToLoad={(e: any) => {

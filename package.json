@@ -10,6 +10,7 @@
     "web": "expo start --web --port 8082"
   },
   "dependencies": {
+    "@agentmemory/agentmemory": "^0.9.27",
     "@emailjs/browser": "^4.4.1",
     "@emailjs/react-native": "^5.1.0",
     "@react-native-async-storage/async-storage": "2.2.0",

@@ -547,62 +547,12 @@ export const AD_IDS = {
 }
 ```
 
-### 7.6 Cấu hình Ad Unit ID cho Production
-
-#### 7.6.1 Thêm Ad Unit ID thật vào `eas.json`
-
-⚠️ **Dùng `eas.json`, KHÔNG dùng `.env` cho EAS Build**
-
-**File: `eas.json`** - Thêm vào profile production:
-
-```json
-{
-  "build": {
-    "production": {
-      "distribution": "store",
-      "env": {
-        "EXPO_PUBLIC_ENV": "production",
-        "EXPO_PUBLIC_AD_BANNER_ID": "ca-app-pub-xxxxxx/xxxxxx",
-        "EXPO_PUBLIC_AD_INTERSTITIAL_ID": "ca-app-pub-xxxxxx/xxxxxx"
-      }
-    }
-  }
-}
-```
-
-#### 7.6.2 Logic chọn Test ID vs Real ID
-
-| Biến `EXPO_PUBLIC_ENV` | `__DEV__` | Ad ID được dùng |
-|------------------------|-----------|------------------|
-| *(không set)* | `true` | Test ID (Google provided) |
-| `staging` | `true`/`false` | Test ID |
-| `production` | `false` | **Real ID từ eas.json** |
-
-#### 7.6.3 Xóa Test Device ID (khuyến nghị)
-
-**File: `src/lib/adService.ts`** - dòng 40-43
-
-```typescript
-// ❌ TRƯỚC (có test device ID):
-await ads.setRequestConfiguration({
-  testDeviceIdentifiers: [
-    "SIMULATOR",
-    "8CBD2E20-A562-49F4-BF9E-6895C33F04B8",  // ← Xóa dòng này
-  ],
-});
-
-// ✅ SAU (xóa test device):
-await ads.setRequestConfiguration({
-  testDeviceIdentifiers: [],
-});
-```
-
-### 7.7 Ad Components
+### 7.6 Ad Components
 
 | Component | Mô tả | Expo Go | Build thật |
 |-----------|-------|---------|------------|
 | `AdBanner` | Placeholder UI (chỉ hiện box trống) | ✅ | ❌ Không load ads |
-| `BannerAd` | Load ads thật qua react-native-google-mobile-ads | ❌ Crash (đã fix) | ✅ Hoạt động |
+| `BannerAd` | Load ads thật qua react-native-google-mobile-ads | ❌ | ✅ |
 
 **Sử dụng:** Dùng `BannerAd` trong code. Nó đã có try-catch để tránh crash khi native module không khả dụng.
 
@@ -610,48 +560,17 @@ await ads.setRequestConfiguration({
 
 ## 8. DEPLOY LÊN APP STORE
 
-### 8.1 Thêm Real Ad Unit IDs
-
-⚠️ **QUAN TRỌNG: Thêm vào `eas.json`, KHÔNG phải `.env`**
-
-`.env` chỉ dùng cho **local development**. EAS Build server **KHÔNG đọc được** `.env`.
-
-**File: `eas.json`** - Thêm vào profile production:
-
-```json
-{
-  "build": {
-    "production": {
-      "distribution": "store",
-      "env": {
-        "EXPO_PUBLIC_ENV": "production",
-        "EXPO_PUBLIC_AD_BANNER_ID": "ca-app-pub-xxxxxx/xxxxxx",
-        "EXPO_PUBLIC_AD_INTERSTITIAL_ID": "ca-app-pub-xxxxxx/xxxxxx"
-      }
-    }
-  }
-}
-```
-
-### 8.2 Quy trình deploy
+### 8.1 Quy trình deploy
 
 ```
 1. Lấy real Ad Unit IDs từ Google AdMob
-2. Thêm vào eas.json production profile (env) ← ĐÚNG
+2. Điền vào eas.json production profile (EXPO_PUBLIC_AD_BANNER_ID, EXPO_PUBLIC_AD_INTERSTITIAL_ID)
 3. Build: eas build --platform ios --profile production
-4. TestFlight → Test với TEST IDs (không tốn tiền)
-5. App Store duyệt → Bản production dùng REAL IDs
+4. TestFlight → Test thật (không click ads nhiều)
+5. Nếu OK → Submit App Store
 ```
 
-### 8.3 TestFlight vs App Store
-
-|| TestFlight (Testing) | App Store (Production) |
-|--|---------------------|------------------------|
-| **Ad IDs** | TEST IDs (ads.ts) | REAL IDs (eas.json) |
-| **Click ads** | ✅ An toàn | ⚠️ Bắt đầu kiếm tiền |
-| **Tốn tiền** | ❌ Không | ✅ Có |
-
-**⚠️ CẢNH BÁO:** Nếu tester bấm nhầm vào ads nhiều lần trong TestFlight → Google có thể **BAN AdMob account**!
+**Lưu ý:** KHÔNG cần sửa code. Chỉ cần sửa `eas.json` là đủ.
 
 ### 8.2 Lưu ý về quảng cáo
 
@@ -663,12 +582,10 @@ await ads.setRequestConfiguration({
 
 ### 8.3 Build TestFlight vs App Store
 
-| Môi trường | ads.ts | EXPO_PUBLIC_ENV | An toàn? |
-|------------|--------|-----------------|----------|
-| TestFlight (test) | Test IDs | `staging` | ✅ An toàn |
-| App Store (production) | Real IDs | `production` | ⚠️ Bắt đầu kiếm tiền |
-
-**⚠️ CẢNH BÁO:** Nếu tester bấm nhầm vào ads nhiều lần trong TestFlight → Google có thể **BAN AdMob account**!
+| Môi trường | ads.ts | EXPO_PUBLIC_ENV |
+|------------|--------|-----------------|
+| TestFlight (test) | Test IDs | `staging` |
+| App Store (production) | Real IDs | `production` |
 
 ---
 
@@ -737,15 +654,9 @@ CHỈ được tạo file mới TRONG các thư mục đã có:
 ## 12. CHECKLIST TRƯỚC KHI LÊN APP STORE
 
 ```
-□ Thêm EXPO_PUBLIC_AD_BANNER_ID vào eas.json (profile production) ← ĐÚNG
-□ Thêm EXPO_PUBLIC_AD_INTERSTITIAL_ID vào eas.json (profile production)
-□ Thêm EXPO_PUBLIC_ENV=production vào eas.json (profile production)
-□ Xóa test device ID khỏi adService.ts (dòng 40-43, chỉ giữ "SIMULATOR")
+□ Điền real Ad Unit IDs vào eas.json production profile
+□ Xóa test device ID khỏi adService.ts (chỉ giữ "SIMULATOR" hoặc xóa toàn bộ setRequestConfiguration)
 □ Kiểm tra app.config.ts và eas.json không chứa credentials thật (ngoài ads)
 □ Tắt debug logging nếu có (kiểm tra logger.ts)
 □ Build bằng production profile: eas build --platform ios --profile production
 ```
-
-**⚠️ LƯU Ý:** 
-- Dùng `eas.json` cho EAS Build, KHÔNG dùng `.env` 
-- `.env` chỉ dùng cho local development

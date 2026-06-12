@@ -10,7 +10,6 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { IllustrationImage } from "../components/IllustrationImage";
-import { BannerAd } from "../components/BannerAd";
 import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { ProgressIndicator } from "../components/ProgressIndicator";
 import { TimerDisplay } from "../components/TimerDisplay";
@@ -323,9 +322,6 @@ export function ExamScreen({
         />
 
       </ScrollView>
-
-      {/* Ad Banner */}
-      <BannerAd />
 
       {/* Drawer Overlay */}
       {drawerOpen && (

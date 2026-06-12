@@ -43,7 +43,7 @@ export function BannerAd() {
     <View style={styles.container}>
       <BannerNative
         unitId={getBannerId()}
-        size="BANNER"
+        size="ANCHORED_ADAPTIVE_BANNER"
         requestOptions={{ requestNonPersonalizedAdsOnly: true }}
         onAdLoaded={() => logger.log("[BannerAd] Loaded")}
         onAdFailedToLoad={(e: any) => {
@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     justifyContent: "center",
-    minHeight: 50,
+    minHeight: 60,
+    width: "100%",
   },
   placeholder: {
     height: 50,

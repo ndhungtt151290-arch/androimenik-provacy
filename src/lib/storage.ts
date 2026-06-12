@@ -210,3 +210,28 @@ export async function addExamWrongAnswer(questionId: string): Promise<void> {
     console.warn("addExamWrongAnswer failed:", e);
   }
 }
+
+// --- Chapter position (question index) ---
+const CHAPTER_POSITION_KEY = "gentsuki_chapter_position_v1";
+
+export async function saveChapterPosition(chapterId: string, questionIndex: number): Promise<void> {
+  try {
+    const raw = await AsyncStorage.getItem(CHAPTER_POSITION_KEY);
+    const positions: Record<string, number> = raw ? JSON.parse(raw) : {};
+    positions[chapterId] = questionIndex;
+    await AsyncStorage.setItem(CHAPTER_POSITION_KEY, JSON.stringify(positions));
+  } catch (e) {
+    console.warn("saveChapterPosition failed:", e);
+  }
+}
+
+export async function loadChapterPosition(chapterId: string): Promise<number | null> {
+  try {
+    const raw = await AsyncStorage.getItem(CHAPTER_POSITION_KEY);
+    if (!raw) return null;
+    const positions: Record<string, number> = JSON.parse(raw);
+    return positions[chapterId] ?? null;
+  } catch {
+    return null;
+  }
+}

@@ -146,6 +146,7 @@ function AppContent() {
   }, []);
 
   const goToPracticeHome = useCallback(() => {
+    setSogouModalSource(null); // Reset để không tự mở popup cũ
     setView({ mode: "practiceHome" });
   }, []);
 

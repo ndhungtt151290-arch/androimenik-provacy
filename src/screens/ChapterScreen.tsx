@@ -14,7 +14,7 @@ import { AnswerNavButtons } from "../components/AnswerNavButtons";
 import { showInterstitialChapter } from "../utils/AdManager";
 import { questionsForChapter } from "../lib/exam";
 import { CHAPTER_VI } from "../lib/chapters";
-import { savePracticeProgress, loadPracticeProgress } from "../lib/storage";
+import { savePracticeProgress, loadPracticeProgress, saveChapterPosition, loadChapterPosition } from "../lib/storage";
 import { SoundManager } from "../lib/SoundManager";
 import type { Lang, MaruBatsu, QuestionBank, ScenarioGroup, ScenarioSub } from "../types";
 
@@ -98,6 +98,17 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
     });
   }, [chapterId]);
 
+  // Load chapter position on mount
+  useEffect(() => {
+    loadChapterPosition(chapterId).then((savedIdx) => {
+      if (savedIdx !== null && savedIdx >= 0 && savedIdx < total) {
+        setCurrentIdx(savedIdx);
+      }
+    }).catch((e) => {
+      console.warn("loadChapterPosition failed:", e);
+    });
+  }, [chapterId]);
+
   // Auto-show answer when user answers
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
@@ -114,6 +125,13 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
   useEffect(() => {
     savePracticeProgress(chapterId, ans);
   }, [ans, chapterId]);
+
+  // Save chapter position on unmount
+  useEffect(() => {
+    return () => {
+      saveChapterPosition(chapterId, currentIdx);
+    };
+  }, [chapterId, currentIdx]);
 
   if (total === 0) {
     return (

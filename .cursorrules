@@ -613,9 +613,7 @@ export const AD_IDS = {
 
 ---
 
-## 10. XỬ LÝ SỰ CỐ
-
-### 9.1 Khi thêm ảnh mới
+## 11. XỬ LÝ SỰ CỐ
 
 ```
 1. Kiểm tra ảnh đã tồn tại trong src/assets/images/ chưa
@@ -623,7 +621,7 @@ export const AD_IDS = {
 3. Đặt tên theo pattern: menkyogentsuki_XXX.png
 ```
 
-### 9.2 Khi cần thêm file mới
+### 10.2 Khi cần thêm file mới
 
 ```
 CHỈ được tạo file mới TRONG các thư mục đã có:
@@ -637,7 +635,90 @@ CHỈ được tạo file mới TRONG các thư mục đã có:
 
 ---
 
-## 11. CHECKLIST TRƯỚC KHI COMMIT
+## 13. HỆ THỐNG ÂM THANH (Sound System)
+
+### 13.1 Cấu trúc
+
+```
+src/lib/
+└── SoundManager.ts        ← Quản lý âm thanh (singleton)
+
+src/components/
+└── SoundToggle.tsx        ← Nút bật/tắt âm thanh
+
+Các file sử dụng:
+├── src/screens/ExamScreen.tsx
+├── src/screens/ResultsScreen.tsx
+├── src/screens/ExamPrepScreen.tsx
+├── src/screens/PracticeHomeScreen.tsx
+├── src/screens/HomeScreen.tsx
+└── src/components/AnswerNavButtons.tsx
+```
+
+### 13.2 Các sound effect
+
+| Sound | File | Khi nào phát |
+|-------|------|--------------|
+| `playTapClick` | tap-click.mp3 | Bấm nút thường |
+| `playConfirmTap` | confirm-tap.mp3 | Xác nhận đáp án |
+| `playCorrectChapter` | correct-chapter.mp3 | Trả lời ĐÚNG (luyện tập) |
+| `playWrongChapter` | wrong-chapter.mp3 | Trả lời SAI (luyện tập) |
+| `playExamSuccess` | exam-success.mp3 | Thi đỗ |
+| `playExamFail` | exam-fail.mp3 | Thi trượt |
+
+### 13.3 Known Bugs & Cách sửa
+
+#### Bug 1: Icon âm thanh hiển thị sai (State sync)
+
+**Mô tả:**
+- Icon chỉ đọc trạng thái 1 lần lúc mount
+- Nếu `toggleMute()` được gọi từ chỗ khác, icon không cập nhật
+
+**Tình huống:**
+1. User bấm nút 🔊/🔇 để tắt tiếng → icon hiện 🔇 (đúng)
+2. User vào phòng thi, bấm nộp bài → code tự bật tiếng lên
+3. Nhưng icon vẫn hiện 🔇 (sai)
+
+**Fix đề xuất:** Thêm `useEffect` để lắng nghe thay đổi của SoundManager
+
+```typescript
+// Trong SoundToggle.tsx
+useEffect(() => {
+  const interval = setInterval(() => {
+    setIsMuted(SoundManager.isMuted);
+  }, 100);
+  return () => clearInterval(interval);
+}, []);
+```
+
+#### Bug 2: Sound chồng nhau (Memory leak nhẹ)
+
+**Mô tả:**
+- Mỗi lần phát sound tạo player mới
+- Nếu phát nhanh nhiều lần, các player cũ chưa kịp dọn
+
+**Tình huống:**
+1. User bấm nhanh 5 lần vào nút "Đúng"
+2. 5 tiếng "bíp" phát cùng lúc, chồng nhau
+
+**Fix đề xuất:**
+- Dừng sound cũ trước khi phát sound mới
+- Thêm timeout cleanup sau X giây
+
+### 13.4 Quy tắc khi làm việc với Sound
+
+```
+✅ Luôn gọi SoundManager.playXxx() cho các tương tác
+✅ Kiểm tra isMuted trước khi phát nếu cần
+✅ Test bấm nhanh nhiều lần để đảm bảo không crash
+
+❌ Không tự tạo Audio object mới (dùng SoundManager)
+❌ Không hardcode đường dẫn file .mp3
+```
+
+---
+
+## 14. CHECKLIST TRƯỚC KHI COMMIT
 
 ```
 □ Import path đúng (relative)
@@ -647,11 +728,13 @@ CHỈ được tạo file mới TRONG các thư mục đã có:
 □ Logic nghiệp vụ (exam.ts) không bị sửa
 □ Comment bằng tiếng Việt
 □ Tên biến bằng tiếng Anh
+□ Âm thanh được phát đúng lúc (không thừa, không thiếu)
+□ Icon âm thanh đồng bộ với trạng thái thực
 ```
 
 ---
 
-## 12. CHECKLIST TRƯỚC KHI LÊN APP STORE
+## 15. CHECKLIST TRƯỚC KHI LÊN APP STORE
 
 ```
 □ Điền real Ad Unit IDs vào eas.json production profile

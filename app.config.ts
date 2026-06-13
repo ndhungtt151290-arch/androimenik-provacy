@@ -16,15 +16,11 @@ const config: ExpoConfig = {
   ios: {
     supportsTablet: true,
     bundleIdentifier: "com.menki1000vn.app",
-    buildNumber: "6",
+    buildNumber: "8",
     infoPlist: {
       CFBundleDisplayName: "Menki 1000+",
-      NSCameraUsageDescription:
-        "Ứng dụng cần truy cập camera để người dùng có thể chụp ảnh làm đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi.",
-      NSPhotoLibraryAddUsageDescription:
-        "Ứng dụng cần lưu ảnh xuống thiết bị để người dùng có thể lưu lại hình ảnh từ ứng dụng.",
       NSPhotoLibraryUsageDescription:
-        "Ứng dụng cần truy cập thư viện ảnh để người dùng có thể chọn ảnh đại diện hoặc gửi hình ảnh phản hồi lỗi trong quá trình luyện thi.",
+        "Ứng dụng cần truy cập thư viện ảnh để người dùng có thể chọn ảnh gửi kèm báo lỗi câu hỏi.",
       ITSAppUsesNonExemptEncryption: false,
       NSUserTrackingUsageDescription:
         "This app may use device data to support advertising and improve the user experience.",
@@ -46,6 +42,7 @@ const config: ExpoConfig = {
   plugins: [
     "expo-image-picker",
     "expo-web-browser",
+    "expo-tracking-transparency",
     [
       "react-native-google-mobile-ads",
       {

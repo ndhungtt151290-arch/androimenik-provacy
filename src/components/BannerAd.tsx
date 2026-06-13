@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     minHeight: 60,
     width: "100%",
+    marginTop: 8,
   },
   placeholder: {
     height: 50,

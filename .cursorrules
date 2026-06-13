@@ -556,6 +556,19 @@ export const AD_IDS = {
 
 **Sử dụng:** Dùng `BannerAd` trong code. Nó đã có try-catch để tránh crash khi native module không khả dụng.
 
+### 7.7 AdManager Interstitial Fallback
+
+**File:** `src/utils/AdManager.ts` (line 62-65)
+
+**Cơ chế bảo vệ:** Khi InterstitialAd crash trên production, code fallback sang AdModal placeholder thay vì crash app. Đây là cơ chế **an toàn**, không phải bug.
+
+**Checklist trước submit App Store:**
+```
+□ Test kỹ production build (không phải Expo Go)
+□ Theo dõi crashlytics sau khi release
+□ Nếu thấy crash liên quan đến InterstitialAd → cần investigate
+```
+
 ---
 
 ## 8. DEPLOY LÊN APP STORE

@@ -216,98 +216,91 @@ export function ExamScreen({
 
   return (
     <View style={styles.screenContainer}>
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={[
-          styles.scrollContent,
-          { paddingBottom: Math.max(100, insets.bottom + 16) },
-        ]}
-        showsVerticalScrollIndicator={false}
-      >
-        {/* Header */}
-        <View style={styles.header}>
-          {/* Left - Progress Indicator */}
-          <View style={styles.headerLeft}>
-            <ProgressIndicator
-              total={total}
-              current={examIndex}
-              displayTotal={displayTotal}
-              displayCurrent={displayCurrent}
-              onToggleExpand={() => setDrawerOpen(!drawerOpen)}
-              lang={lang}
-            />
-          </View>
-
-          {/* Center - Timer (absolute positioned) */}
-          <View style={styles.headerCenter}>
-            <TimerDisplay timeLeft={timeLeft} />
-          </View>
-
-          {/* Right - Submit Button */}
-          <View style={styles.headerRight}>
-            <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onSubmit(); }} style={styles.submitBtn} activeOpacity={0.8}>
-              <Text style={styles.submitText}>{L.submit}</Text>
-            </TouchableOpacity>
-          </View>
+      {/* Header */}
+      <View style={styles.header}>
+        {/* Left - Progress Indicator */}
+        <View style={styles.headerLeft}>
+          <ProgressIndicator
+            total={total}
+            current={examIndex}
+            displayTotal={displayTotal}
+            displayCurrent={displayCurrent}
+            onToggleExpand={() => setDrawerOpen(!drawerOpen)}
+            lang={lang}
+          />
         </View>
 
-        {/* Question card */}
-        <View style={styles.questionCard}>
-          {/* Card header */}
-          <View style={styles.cardHeader}>
-            <View style={styles.partInfo}>
-              {isScenarioSub && (
-                <View style={styles.scenarioHintBadge}>
-                  <Text style={styles.scenarioHintText}>{L.scenarioHint}</Text>
-                </View>
-              )}
-            </View>
-
-            <TouchableOpacity onPress={onToggleFlag} style={[styles.flagBtn, isCurrentFlagged && styles.flagBtnActive]}>
-              <Text style={[styles.flagBtnText, isCurrentFlagged && styles.flagBtnTextActive]}>{isCurrentFlagged ? L.unflag : L.flag}</Text>
-            </TouchableOpacity>
-          </View>
-
-          {/* Question content */}
-          <ScrollView style={styles.questionContent} nestedScrollEnabled>
-            <View>
-              {/* Show stem for scenario sub questions (ExamSimpleItem with scenarioGroupId) */}
-              {isScenarioSub && isSimpleItem(currentItem) && currentItem.stem && (
-                <Text style={styles.stemText}>
-                  {tx(currentItem.stem, currentItem.stemVi, lang)}
-                </Text>
-              )}
-
-              {/* Show image for scenario sub questions (using the question's image) */}
-              {isScenarioSub && isSimpleItem(currentItem) && currentItem.question.image && (
-                <IllustrationImage
-                  file={currentItem.question.image}
-                  style={styles.examImage}
-                  imageStyle={styles.examImageInner}
-                />
-              )}
-
-              {/* Show regular question image */}
-              {!isScenarioSub && isSimpleItem(currentItem) && currentItem.question.image && (
-                <IllustrationImage
-                  file={currentItem.question.image}
-                  style={styles.examImage}
-                  imageStyle={styles.examImageInner}
-                />
-              )}
-
-              {/* Question text - only for simple items */}
-              {isSimpleItem(currentItem) && (
-                <Text style={isScenarioSub ? styles.scenarioQuestionText : styles.questionText}>
-                  {isScenarioSub ? `(${currentItem.subIndex! + 1}) ` : ''}
-                  {tx(currentItem.question.text, currentItem.question.textVi, lang)}
-                </Text>
-              )}
-            </View>
-          </ScrollView>
+        {/* Center - Timer (absolute positioned) */}
+        <View style={styles.headerCenter}>
+          <TimerDisplay timeLeft={timeLeft} />
         </View>
 
-        {/* Answer + Navigation - Show for ALL questions */}
+        {/* Right - Submit Button */}
+        <View style={styles.headerRight}>
+          <TouchableOpacity onPress={() => { SoundManager.playTapClick(); onSubmit(); }} style={styles.submitBtn} activeOpacity={0.8}>
+            <Text style={styles.submitText}>{L.submit}</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/* Question card - co giãn theo không gian */}
+      <View style={styles.questionCard}>
+        {/* Card header */}
+        <View style={styles.cardHeader}>
+          <View style={styles.partInfo}>
+            {isScenarioSub && (
+              <View style={styles.scenarioHintBadge}>
+                <Text style={styles.scenarioHintText}>{L.scenarioHint}</Text>
+              </View>
+            )}
+          </View>
+
+          <TouchableOpacity onPress={onToggleFlag} style={[styles.flagBtn, isCurrentFlagged && styles.flagBtnActive]}>
+            <Text style={[styles.flagBtnText, isCurrentFlagged && styles.flagBtnTextActive]}>{isCurrentFlagged ? L.unflag : L.flag}</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Question content */}
+        <ScrollView style={styles.questionContent} nestedScrollEnabled showsVerticalScrollIndicator={false}>
+          <View>
+            {/* Show stem for scenario sub questions */}
+            {isScenarioSub && isSimpleItem(currentItem) && currentItem.stem && (
+              <Text style={styles.stemText}>
+                {tx(currentItem.stem, currentItem.stemVi, lang)}
+              </Text>
+            )}
+
+            {/* Show image for scenario sub questions */}
+            {isScenarioSub && isSimpleItem(currentItem) && currentItem.question.image && (
+              <IllustrationImage
+                file={currentItem.question.image}
+                style={styles.examImage}
+                imageStyle={styles.examImageInner}
+              />
+            )}
+
+            {/* Show regular question image */}
+            {!isScenarioSub && isSimpleItem(currentItem) && currentItem.question.image && (
+              <IllustrationImage
+                file={currentItem.question.image}
+                style={styles.examImage}
+                imageStyle={styles.examImageInner}
+              />
+            )}
+
+            {/* Question text */}
+            {isSimpleItem(currentItem) && (
+              <Text style={isScenarioSub ? styles.scenarioQuestionText : styles.questionText}>
+                {isScenarioSub ? `(${currentItem.subIndex! + 1}) ` : ''}
+                {tx(currentItem.question.text, currentItem.question.textVi, lang)}
+              </Text>
+            )}
+          </View>
+        </ScrollView>
+      </View>
+
+      {/* Buttons container - cố định bên dưới */}
+      <View style={styles.buttonsContainer}>
         <AnswerNavButtons
           answerValue={getAnswerValue()}
           onPick={handleAnswer}
@@ -320,8 +313,7 @@ export function ExamScreen({
           nextLabel={L.next}
           isExamMode={true}
         />
-
-      </ScrollView>
+      </View>
 
       {/* Drawer Overlay */}
       {drawerOpen && (
@@ -378,9 +370,14 @@ export function ExamScreen({
 
 const styles = StyleSheet.create({
   emptyText: { flex: 1, textAlign: "center", color: "#78350f", fontSize: 14, marginTop: 100 },
-  screenContainer: { flex: 1, position: "relative" },
-  scrollContent: { flexGrow: 1 },
-  container: { flex: 1 },
+  screenContainer: { 
+    flex: 1, 
+    padding: 8, 
+  },
+  buttonsContainer: {
+    paddingTop: 8,
+    paddingBottom: 8,
+  },
   header: {
     flexDirection: "row",
     alignItems: "center",
@@ -416,13 +413,13 @@ const styles = StyleSheet.create({
   },
   submitText: { fontSize: 14, fontWeight: "bold", color: "#fff" },
   questionCard: {
+    flex: 1,
     backgroundColor: "rgba(255, 255, 255, 0.51)",
     borderRadius: 14,
     padding: 14,
-    marginBottom: 12,
+    marginBottom: 13,
     borderWidth: 1,
     borderColor: "rgba(226, 228, 231, 0.03)",
-    minHeight: 280,
   },
   cardHeader: {
     flexDirection: "row",
@@ -460,7 +457,7 @@ const styles = StyleSheet.create({
   flagBtnActive: { backgroundColor: "rgb(247, 164, 12)", borderColor: "rgba(201, 196, 192, 0.25)", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 2, elevation: 2},
   flagBtnText: { fontSize: 11, fontWeight: "600", color: "rgba(15, 15, 15, 0.89)" },
   flagBtnTextActive: { color: "rgba(37, 28, 25, 0.89)" },
-  questionContent: { maxHeight: 220 },
+  questionContent: { flex: 1 },
   questionText: { fontSize: 16, lineHeight: 22, fontWeight: "500", color: "#111", textAlign: "left" } as any,
   scenarioQuestionText: { fontSize: 14, lineHeight: 20, fontWeight: "500", color: "#111", textAlign: "center", adjustsFontSizeToFit: true, numberOfLines: 4, minimumFontScale: 0.75 } as any,
   stemText: { fontSize: 12, fontWeight: "600", color: "#111", marginBottom: 12, adjustsFontSizeToFit: true, numberOfLines: 3, minimumFontScale: 0.8 ,textAlign: "center"} as any,

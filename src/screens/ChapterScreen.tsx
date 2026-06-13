@@ -192,7 +192,7 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
         style={styles.container}
         contentContainerStyle={[
           styles.scrollContent,
-          { paddingBottom: Math.max(100, insets.bottom + 16) },
+          { paddingBottom: 8 },
         ]}
         showsVerticalScrollIndicator={false}
       >
@@ -271,26 +271,26 @@ export function ChapterScreen({ lang, chapterId, onBack }: ChapterScreenProps) {
             </View>
           )}
         </View>
-
-        {/* Answer buttons + Navigation */}
-        <View style={styles.subBtnsWrap}>
-          <AnswerNavButtons
-            answerValue={currentAnswer}
-            onPick={handleAnswer}
-            size="large"
-            disabledPrev={currentIdx === 0}
-            disabledNext={currentIdx >= total - 1}
-            onPrev={goPrev}
-            onNext={goNext}
-            prevLabel={L.prev}
-            nextLabel={L.next}
-            isExamMode={false}
-            correctAnswer={currentItem.kind === "simple" ? currentItem.q.answer : currentItem.sub.answer}
-          />
-        </View>
       </ScrollView>
 
-      {/* Ad Banner */}
+      {/* Buttons container - cố định, không cuộn cùng ScrollView */}
+      <View style={styles.buttonsContainer}>
+        <AnswerNavButtons
+          answerValue={currentAnswer}
+          onPick={handleAnswer}
+          size="large"
+          disabledPrev={currentIdx === 0}
+          disabledNext={currentIdx >= total - 1}
+          onPrev={goPrev}
+          onNext={goNext}
+          prevLabel={L.prev}
+          nextLabel={L.next}
+          isExamMode={false}
+          correctAnswer={currentItem.kind === "simple" ? currentItem.q.answer : currentItem.sub.answer}
+        />
+      </View>
+
+      {/* Ad Banner - luôn ở dưới cùng */}
       <BannerAd />
 
       {/* Progress Modal */}
@@ -426,7 +426,6 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     borderWidth: 1,
     borderColor: "rgba(197, 188, 188, 0.1)",
-    minHeight: 280,
   },
   questionInner: { flex: 1 },
   scenarioHintBadge: {
@@ -490,7 +489,11 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     textAlign: "center",
   },
-  subBtnsWrap: { marginTop: 10 },
+  buttonsContainer: {
+    paddingHorizontal: 16,
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
 
   // Modal styles
   modalOverlay: {

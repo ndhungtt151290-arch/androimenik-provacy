@@ -21,8 +21,9 @@
       "distribution": "store",
       "env": {
         "EXPO_PUBLIC_ENV": "production",
-        "EXPO_PUBLIC_AD_BANNER_ID": "ca-app-pub-XXXXXXXX/XXXXXXXX",
-        "EXPO_PUBLIC_AD_INTERSTITIAL_ID": "ca-app-pub-XXXXXXXX/XXXXXXXX"
+        "EXPO_PUBLIC_IMGBB_API_KEY": "d3b1c1998c988fee3d7d9f2fcfbe01c5",
+        "EXPO_PUBLIC_AD_BANNER_ID": "ca-app-pub-8320439928464026/1571115466",
+        "EXPO_PUBLIC_AD_INTERSTITIAL_ID": "ca-app-pub-8320439928464026/9906420960"
       }
     }
   },

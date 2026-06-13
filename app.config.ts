@@ -16,7 +16,7 @@ const config: ExpoConfig = {
   ios: {
     supportsTablet: true,
     bundleIdentifier: "com.menki1000vn.app",
-    buildNumber: "8",
+    buildNumber: "9",
     infoPlist: {
       CFBundleDisplayName: "Menki 1000+",
       NSPhotoLibraryUsageDescription:

@@ -37,11 +37,7 @@ export async function initAds(): Promise<void> {
     const ads = await getMobileAds();
     if (ads) {
       await ads.setRequestConfiguration({
-        testDeviceIdentifiers: [
-          "SIMULATOR",
-          "8CBD2E20-A562-49F4-BF9E-6895C33F04B8",
-          "bd62f229-a64f-4626-aae0-5d1850838603",
-        ],
+        testDeviceIdentifiers: [],
       });
 
       await ads.initialize();

@@ -151,7 +151,7 @@ export function PrivacyScreen({ lang }: PrivacyScreenProps) {
           style={styles.websiteBtn}
           activeOpacity={0.75}
           onPress={() =>
-            Linking.openURL("https://ndhungtt151290-arch.github.io/menki1000-privacy/")
+            Linking.openURL("https://ndhungtt151290-arch.github.io/androimenik-provacy/android.html")
           }
         >
           <Text style={styles.websiteBtnText}>{T.websiteBtn}</Text>

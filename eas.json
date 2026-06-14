@@ -8,17 +8,21 @@
       "developmentClient": true,
       "distribution": "internal"
     },
-    "preview": {
-      "distribution": "internal",
-      "ios": {
-        "simulator": false
+    "android_preview": {
+      "android": {
+        "distribution": "internal",
+        "gradleCommand": ":app:assembleDebug"
       },
       "env": {
-        "EXPO_PUBLIC_ENV": "staging"
+        "EXPO_PUBLIC_ENV": "staging",
+        "EXPO_PUBLIC_AD_BANNER_ID": "ca-app-pub-3940256099942544/2934735716",
+        "EXPO_PUBLIC_AD_INTERSTITIAL_ID": "ca-app-pub-3940256099942544/4411468910"
       }
     },
-    "production": {
-      "distribution": "store",
+    "android_production": {
+      "android": {
+        "distribution": "store"
+      },
       "env": {
         "EXPO_PUBLIC_ENV": "production",
         "EXPO_PUBLIC_IMGBB_API_KEY": "d3b1c1998c988fee3d7d9f2fcfbe01c5",

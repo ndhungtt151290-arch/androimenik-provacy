@@ -13,23 +13,19 @@ const config: ExpoConfig = {
     resizeMode: "contain",
     backgroundColor: "#FFFFFF",
   },
-  ios: {
-    supportsTablet: true,
-    bundleIdentifier: "com.menki1000vn.app",
-    buildNumber: "9",
-    infoPlist: {
-      CFBundleDisplayName: "Menki 1000+",
-      NSPhotoLibraryUsageDescription:
-        "Ứng dụng cần truy cập thư viện ảnh để người dùng có thể chọn ảnh gửi kèm báo lỗi câu hỏi.",
-      ITSAppUsesNonExemptEncryption: false,
-      NSUserTrackingUsageDescription:
-        "This app may use device data to support advertising and improve the user experience.",
-      PrivacyURL: "https://ndhungtt151290-arch.github.io/menki1000-privacy/",
-    },
-  },
   android: {
     package: "com.menki1000vn.app",
-    permissions: ["INTERNET"],
+    permissions: [
+      "INTERNET",
+      "ACCESS_NETWORK_STATE",
+    ],
+    adaptiveIcon: {
+      foregroundImage: "./assets/adaptive-icon.png",
+      backgroundColor: "#FFFFFF",
+    },
+    config: {
+      googleMobileAdsAppId: "ca-app-pub-8320439928464026~3478148954",
+    },
   },
   web: {
     favicon: "./assets/favicon.png",
@@ -42,12 +38,10 @@ const config: ExpoConfig = {
   plugins: [
     "expo-image-picker",
     "expo-web-browser",
-    "expo-tracking-transparency",
     [
       "react-native-google-mobile-ads",
       {
-        iosAppId: "ca-app-pub-8320439928464026~1213542725",
-        androidAppId: "ca-app-pub-8320439928464026~1213542725",
+        androidAppId: "ca-app-pub-8320439928464026~3478148954",
       },
     ],
     "expo-audio",

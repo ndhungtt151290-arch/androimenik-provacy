@@ -120,18 +120,6 @@ function AppContent() {
       });
   }, []);
 
-  // Request ATT permission (iOS only)
-  useEffect(() => {
-    if (Platform.OS === "web") return;
-    (async () => {
-      const { requestTrackingPermissionsAsync } = await import("expo-tracking-transparency");
-      const { status } = await requestTrackingPermissionsAsync();
-      if (status === "granted") {
-        // Tracking permission granted
-      }
-    })();
-  }, []);
-
   // Init sound manager
   useEffect(() => {
     SoundManager.init();

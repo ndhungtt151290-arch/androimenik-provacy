@@ -41,6 +41,7 @@ const config: ExpoConfig = {
     [
       "react-native-google-mobile-ads",
       {
+        // Android AdMob App ID - required for Android builds
         androidAppId: "ca-app-pub-8320439928464026~3478148954",
       },
     ],

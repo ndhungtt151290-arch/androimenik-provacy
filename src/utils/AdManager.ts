@@ -9,7 +9,7 @@ const EXAM_BACK_KEY = "exam_back_count";
 const RETRY_KEY = "retry_count";
 
 async function showInterstitialAd(callback: () => void): Promise<void> {
-  if (Platform.OS === "web") {
+  if (Platform.OS !== "android") {
     setTimeout(() => callback(), 300);
     return;
   }

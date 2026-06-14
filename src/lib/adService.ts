@@ -18,7 +18,7 @@ let _initialized = false;
 async function getMobileAds() {
   if (_mobileAds) return _mobileAds;
 
-  if (Platform.OS === "web") return null;
+  if (Platform.OS !== "android") return null;
 
   try {
     const mod = await import("react-native-google-mobile-ads");

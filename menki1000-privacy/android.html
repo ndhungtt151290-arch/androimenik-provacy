@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Bảo Mật - Menki 1000+ (Android)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #0b3575;
+            margin-bottom: 10px;
+        }
+
+        .header .meta {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .header .meta span {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .platform-badge {
+            display: inline-block;
+            background: #34A853;
+            color: #ffffff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 4px solid #0b3575;
+        }
+
+        .lang-block {
+            margin-bottom: 30px;
+        }
+
+        .lang-label {
+            display: inline-block;
+            background: #0b3575;
+            color: #ffffff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            color: #0f2f5f;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .section p {
+            margin-bottom: 12px;
+        }
+
+        .section ul {
+            margin: 12px 0;
+            padding-left: 25px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: #fef3c7;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 5px;
+        }
+
+        .permission-box {
+            background: #e8f5e9;
+            border-left: 4px solid #34A853;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .permission-box h3 {
+            color: #2e7d32;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .permission-box ul {
+            margin: 10px 0;
+            color: #1b5e20;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0b3575;
+            color: #ffffff;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #1a4f8a;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #0b3575;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            color: #0b3575;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .ja-block {
+            background: #f0f9ff;
+            border-left: 3px solid #3b82f6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .ja-block p, .ja-block li {
+            color: #1e40af;
+        }
+
+        .en-block {
+            background: #f0fdf4;
+            border-left: 3px solid #22c55e;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .en-block p, .en-block li {
+            color: #166534;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e7eb;
+            margin: 30px 0;
+        }
+
+        .lang-toggle {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .lang-toggle button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            background: #e5e7eb;
+            color: #1a1a1a;
+            transition: all 0.3s;
+        }
+
+        .lang-toggle button:hover {
+            background: #d1d5db;
+        }
+
+        .lang-toggle button.active {
+            background: #0b3575;
+            color: #ffffff;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .switch-link {
+            text-align: center;
+            margin: 30px 0;
+            padding: 15px;
+            background: #f3f4f6;
+            border-radius: 10px;
+        }
+
+        .switch-link a {
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .section h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="platform-badge">ANDROID</div>
+            <h1>Chính Sách Bảo Mật</h1>
+            <p style="font-size: 18px; font-weight: 600; color: #0b3575; margin-bottom: 10px;">Menki 1000+</p>
+            <div class="meta">
+                <span>Áp dụng: Menki 1000+, Menki 1000+ Ôn Thi Xe Máy Nhật, Menki 1000+ 原付免許問題集</span>
+                <span>Cập nhật: Tháng 5, 2026</span>
+            </div>
+        </div>
+
+        <div class="switch-link">
+            <a href="index.html">← iOS Privacy Policy</a>
+        </div>
+
+        <div class="lang-toggle">
+            <button id="btn-vi" class="active" onclick="toggleLang('vi')">Tiếng Việt</button>
+            <button id="btn-ja" onclick="toggleLang('ja')">日本語</button>
+            <button id="btn-en" onclick="toggleLang('en')">English</button>
+        </div>
+
+        <!-- Vietnamese Content -->
+        <div id="content-vi" class="content-section active">
+            <div class="lang-block">
+                <span class="lang-label">TIẾNG VIỆT</span>
+                
+                <div class="intro">
+                    Chào mừng bạn đến với Menki 1000+. Chúng tôi cam kết bảo vệ tuyệt đối quyền riêng tư và dữ liệu cá nhân của bạn. Chính sách này tuân thủ nghiêm ngặt <strong>Google Play Developer Program Policies</strong>.
+                </div>
+
+                <div class="section">
+                    <h2>1. THU THẬP THÔNG TIN CÁ NHÂN</h2>
+                    <p>Menki 1000+ là ứng dụng ngoại tuyến (Offline App).</p>
+                    <p>Chúng tôi <strong>KHÔNG</strong> yêu cầu đăng ký tài khoản, <strong>KHÔNG</strong> thu thập, <strong>KHÔNG</strong> lưu trữ, <strong>KHÔNG</strong> theo dõi và <strong>KHÔNG</strong> chia sẻ bất kỳ thông tin cá nhân nào:</p>
+                    <ul>
+                        <li>Họ tên, số điện thoại, email, địa chỉ</li>
+                        <li>Vị trí địa lý chính xác (GPS)</li>
+                        <li>Số định danh thiết bị (IMEI/Android ID)</li>
+                        <li>Thông tin thanh toán</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>2. QUYỀN TRUY CẬP (PERMISSIONS)</h2>
+                    <div class="permission-box">
+                        <h3>Quyền ứng dụng yêu cầu:</h3>
+                        <ul>
+                            <li><strong>INTERNET</strong> - Cần thiết để hiển thị quảng cáo AdMob</li>
+                            <li><strong>ACCESS_NETWORK_STATE</strong> - Kiểm tra kết nối mạng</li>
+                        </ul>
+                        <p style="margin-top: 10px; font-size: 13px; color: #666;">Không yêu cầu quyền camera, microphone, vị trí chính xác, hay bất kỳ quyền nhạy cảm nào khác.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>3. DỮ LIỆU LƯU TRỮ CỤC BỘ</h2>
+                    <p>Dữ liệu học tập được lưu trữ hoàn toàn cục bộ trên thiết bị qua AsyncStorage:</p>
+                    <ul>
+                        <li>Lịch sử làm đề thi thử</li>
+                        <li>Tiến độ ôn tập từng chương</li>
+                        <li>Danh sách "Câu hỏi hay sai"</li>
+                        <li>Tùy chọn ngôn ngữ (Tiếng Việt / Tiếng Nhật)</li>
+                    </ul>
+                    <p>Chúng tôi <strong>KHÔNG</strong> có máy chủ (Server) và <strong>KHÔNG</strong> truy cập dữ liệu từ xa.</p>
+                </div>
+
+                <div class="section">
+                    <h2>4. DỊCH VỤ QUẢNG CÁO - GOOGLE ADMOB</h2>
+                    <p>Menki 1000+ sử dụng <strong>Google AdMob</strong> để hiển thị quảng cáo và duy trì miễn phí ứng dụng.</p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Google AdMob có thể thu thập:</div>
+                        <ul>
+                            <li>Loại thiết bị và hệ điều hành</li>
+                            <li>Dữ liệu sử dụng ứng dụng</li>
+                            <li>Vị trí địa lý ước tính</li>
+                            <li>Dữ liệu click và impression quảng cáo</li>
+                        </ul>
+                    </div>
+
+                    <p><strong>Kiểm soát quảng cáo:</strong></p>
+                    <p>Android: <strong>Settings → Google → Ads → Toggle "Opt out of Personalized Ads"</strong></p>
+                    <p><a href="https://policies.google.com/technologies/partner-pubs" target="_blank">Xem Google Privacy Policy</a></p>
+                </div>
+
+                <div class="section">
+                    <h2>5. GDPR COMPLIANCE (CHÂU ÂU)</h2>
+                    <p>Menki 1000+ tuân thủ <strong>GDPR (General Data Protection Regulation)</strong> dành cho người dùng tại Liên minh Châu Âu:</p>
+                    <ul>
+                        <li>Thu thập dữ liệu tối thiểu</li>
+                        <li>Không có hồ sơ người dùng</li>
+                        <li>Dữ liệu hoàn toàn cục bộ</li>
+                        <li>Xóa dữ liệu khi gỡ ứng dụng</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>6. BẢO VỆ TRẺ EM</h2>
+                    <p>Ứng dụng tuân thủ:</p>
+                    <ul>
+                        <li><strong>COPPA</strong> (Children's Online Privacy Protection Act - Hoa Kỳ)</li>
+                        <li><strong>GDPR-K</strong> (GDPR for Children - Châu Âu, 13-15 tuổi)</li>
+                    </ul>
+                    <p>An toàn tuyệt đối cho mọi lứa tuổi, bao gồm trẻ em dưới 13 tuổi.</p>
+                </div>
+
+                <div class="section">
+                    <h2>7. QUYỀN SỞ HỮU VÀ XÓA DỮ LIỆU</h2>
+                    <p>Bạn có toàn quyền kiểm soát dữ liệu vì chúng nằm hoàn toàn trên thiết bị của bạn.</p>
+                    <p>Khi gỡ ứng dụng (Uninstall), hệ điều hành Android tự động xóa 100% dữ liệu cục bộ. Không có bản sao nào được giữ trên server.</p>
+                </div>
+
+                <div class="section">
+                    <h2>8. COOKIES</h2>
+                    <p>Menki 1000+ <strong>KHÔNG</strong> sử dụng cookies hoặc công nghệ theo dõi tương tự.</p>
+                    <p>Trang web GitHub Pages có thể sử dụng cookies cơ bản để hoạt động.</p>
+                </div>
+
+                <div class="section">
+                    <h2>9. THAY ĐỔI VÀ LIÊN HỆ</h2>
+                    <p>Chính sách có thể được cập nhật. Mọi thay đổi có hiệu lực khi đăng tải trên trang này.</p>
+                    <p><strong>Liên hệ hỗ trợ:</strong></p>
+                    <ul>
+                        <li>Zalo: <a href="https://zalo.me/07091033238">https://zalo.me/07091033238</a></li>
+                        <li>Tính năng "Liên hệ" trong ứng dụng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Japanese Content -->
+        <div id="content-ja" class="content-section">
+            <div class="lang-block">
+                <span class="lang-label">日本語</span>
+                
+                <div class="intro">
+                    Menki 1000+へようこそ。私たちはユーザーのプライバシーおよび個人情報の保護を最優先に考えております。本プライバシーポリシーは、<strong>Google Play Developer Program Policies</strong>に厳格に準拠しております。
+                </div>
+
+                <div class="section">
+                    <h2>1. 個人情報の収集について</h2>
+                    <p>Menki 1000+は完全なオフラインアプリとして設計・運営されています。</p>
+                    <p>私たちはアカウント登録を要求せず、以下の個人情報を一切収集・保存・追跡・共有致しません：</p>
+                    <ul>
+                        <li>氏名、電話番号、メールアドレス、住所</li>
+                        <li>位置情報（GPS）</li>
+                        <li>デバイス識別子（IMEI/Android ID）</li>
+                        <li>支払い情報</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>2. アクセス権限（パーミッション）</h2>
+                    <div class="permission-box">
+                        <h3>アプリが要求する権限：</h3>
+                        <ul>
+                            <li><strong>INTERNET</strong> - AdMob広告を表示するために必要</li>
+                            <li><strong>ACCESS_NETWORK_STATE</strong> - ネットワーク接続を確認</li>
+                        </ul>
+                        <p style="margin-top: 10px; font-size: 13px; color: #666;">カメラ、マイク、精緻な位置情報、その他の敏感な権限は要求致しません。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>3. ローカルデータの保存について</h2>
+                    <p>学習データはすべてデバイスの AsyncStorageにローカル保存 されます：</p>
+                    <ul>
+                        <li>模擬試験の履歴</li>
+                        <li>章ごとの学習進捗</li>
+                        <li>間違えた問題のリスト</li>
+                        <li>言語設定（ベトナム語 / 日本語）</li>
+                    </ul>
+                    <p>私たちは外部サーバーを保有しておらず、リモートアクセスする権限はありません。</p>
+                </div>
+
+                <div class="section">
+                    <h2>4. 広告サービス - GOOGLE ADMOB</h2>
+                    <p>Menki 1000+は<strong>Google AdMob</strong> を使用して広告を表示し、アプリの無料維持しております。</p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Google AdMobが収集するデータ：</div>
+                        <ul>
+                            <li>デバイスの種類とOS</li>
+                            <li>アプリ使用データ</li>
+                            <li>推定位置情報</li>
+                            <li>広告のクリックとインプレッションのデータ</li>
+                        </ul>
+                    </div>
+
+                    <p><strong>広告の管理：</strong></p>
+                    <p>Android：<strong>設定 → Google → 広告 → 「パーソナライズド広告をオフ」のオン/オフ</strong></p>
+                    <p><a href="https://policies.google.com/technologies/partner-pubs" target="_blank">Googleプライバシーサービスを見る</a></p>
+                </div>
+
+                <div class="section">
+                    <h2>5. GDPRコンプライアンス（EU）</h2>
+                    <p>Menki 1000+はEU域内のユーザー向けの<strong>GDPR（一般データ保護規則）</strong>を遵守しております：</p>
+                    <ul>
+                        <li>最小限のデータ収集</li>
+                        <li>ユーザープロファイルなし</li>
+                        <li>完全なローカルデータ保存</li>
+                        <li>アプリ削除時にデータ削除</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>6. 子ども向けのプライバシー保護</h2>
+                    <p>当アプリは以下の法律を遵守しております：</p>
+                    <ul>
+                        <li><strong>COPPA</strong>（Children's Online Privacy Protection Act - 米国）</li>
+                        <li><strong>GDPR-K</strong>（EU向けGDPR子供向け条款 - 13-15歳）</li>
+                    </ul>
+                    <p>13歳未満のお子様を含むすべての年齢層のユーザーに安全です。</p>
+                </div>
+
+                <div class="section">
+                    <h2>7. ユーザーのデータ管理および削除の権利</h2>
+                    <p>すべてのデータはユーザーのデバイスに保存されているため、ユーザー自身が完全な管理権限を持ちます。</p>
+                    <p>アプリをアンインストール（削除）すると、Android OSの標準機能によりローカルデータが100%自動的に完全消去されます。サーバーにコピーが残ることは一切ありません。</p>
+                </div>
+
+                <div class="section">
+                    <h2>8. Cookieについて</h2>
+                    <p>Menki 1000+はCookieまたは類似のトラッキングテクノロジーを<strong>一切使用しません</strong>。</p>
+                    <p>GitHub Pagesウェブサイトでは基本的なCookieを使用場合があります。</p>
+                </div>
+
+                <div class="section">
+                    <h2>9. ポリシーの変更およびお問い合わせ</h2>
+                    <p>私たちは本プライバシーポリシーを随時更新することがあります。変更はページに最新版が公開された時点で有効となります。</p>
+                    <p><strong>お問い合わせ：</strong></p>
+                    <ul>
+                        <li>Zalo： <a href="https://zalo.me/07091033238">https://zalo.me/07091033238</a></li>
+                        <li>アプリ内のお問い合せ機能</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- English Content -->
+        <div id="content-en" class="content-section">
+            <div class="lang-block">
+                <span class="lang-label">ENGLISH</span>
+                
+                <div class="en-block">
+                    <p>Welcome to Menki 1000+. We are committed to absolutely protecting your privacy and personal data. This policy strictly complies with the <strong>Google Play Developer Program Policies</strong>.</p>
+                </div>
+
+                <div class="section">
+                    <h2>1. COLLECTION OF PERSONAL INFORMATION</h2>
+                    <p>Menki 1000+ is an offline application (Offline App).</p>
+                    <p>We do NOT require account registration, do NOT collect, do NOT store, do NOT track, and do NOT share any personal information:</p>
+                    <ul>
+                        <li>Full name, phone number, email, address</li>
+                        <li>Precise geolocation (GPS)</li>
+                        <li>Device identifiers (IMEI/Android ID)</li>
+                        <li>Payment information</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>2. APP PERMISSIONS</h2>
+                    <div class="permission-box">
+                        <h3>Required app permissions:</h3>
+                        <ul>
+                            <li><strong>INTERNET</strong> - Required to display AdMob ads</li>
+                            <li><strong>ACCESS_NETWORK_STATE</strong> - Check network connectivity</li>
+                        </ul>
+                        <p style="margin-top: 10px; font-size: 13px; color: #666;">We do not request camera, microphone, precise location, or any other sensitive permissions.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>3. LOCAL DATA STORAGE</h2>
+                    <p>Learning data is stored entirely locally on your device via AsyncStorage:</p>
+                    <ul>
+                        <li>Mock exam history</li>
+                        <li>Chapter-by-chapter study progress</li>
+                        <li>"Frequently Wrong Questions" list</li>
+                        <li>Language preferences (Vietnamese / Japanese)</li>
+                    </ul>
+                    <p>We do NOT have a server and do NOT access data remotely.</p>
+                </div>
+
+                <div class="section">
+                    <h2>4. ADVERTISING SERVICE - GOOGLE ADMOB</h2>
+                    <p>Menki 1000+ uses <strong>Google AdMob</strong> to display ads and maintain the free application.</p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Google AdMob may collect:</div>
+                        <ul>
+                            <li>Device type and operating system</li>
+                            <li>App usage data</li>
+                            <li>Estimated geolocation</li>
+                            <li>Ad click and impression data</li>
+                        </ul>
+                    </div>
+
+                    <p><strong>Control ads:</strong></p>
+                    <p>Android: <strong>Settings → Google → Ads → Toggle "Opt out of Personalized Ads"</strong></p>
+                    <p><a href="https://policies.google.com/technologies/partner-pubs" target="_blank">View Google Privacy Policy</a></p>
+                </div>
+
+                <div class="section">
+                    <h2>5. GDPR COMPLIANCE (EUROPE)</h2>
+                    <p>Menki 1000+ complies with <strong>GDPR (General Data Protection Regulation)</strong> for users in the European Union:</p>
+                    <ul>
+                        <li>Minimal data collection</li>
+                        <li>No user profiles</li>
+                        <li>Completely local data storage</li>
+                        <li>Data deletion upon app uninstall</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>6. CHILDREN'S PRIVACY PROTECTION</h2>
+                    <p>The application complies with:</p>
+                    <ul>
+                        <li><strong>COPPA</strong> (Children's Online Privacy Protection Act - United States)</li>
+                        <li><strong>GDPR-K</strong> (GDPR for Children - Europe, ages 13-15)</li>
+                    </ul>
+                    <p>Absolutely safe for all ages, including children under 13 years old.</p>
+                </div>
+
+                <div class="section">
+                    <h2>7. DATA OWNERSHIP AND DELETION</h2>
+                    <p>You have full control over your data because it resides entirely on your device.</p>
+                    <p>When you uninstall the app, Android OS automatically deletes 100% of local data. No copies are kept on any server.</p>
+                </div>
+
+                <div class="section">
+                    <h2>8. COOKIES</h2>
+                    <p>Menki 1000+ does NOT use cookies or similar tracking technologies.</p>
+                    <p>The GitHub Pages website may use basic cookies for functionality.</p>
+                </div>
+
+                <div class="section">
+                    <h2>9. POLICY CHANGES AND CONTACT</h2>
+                    <p>This policy may be updated. Any changes take effect when posted on this page.</p>
+                    <p><strong>Contact support:</strong></p>
+                    <ul>
+                        <li>Zalo: <a href="https://zalo.me/07091033238">https://zalo.me/07091033238</a></li>
+                        <li>"Contact" feature within the application</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="switch-link">
+            <a href="index.html">← iOS Privacy Policy</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Menki 1000+. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleLang(lang) {
+            const viContent = document.getElementById('content-vi');
+            const jaContent = document.getElementById('content-ja');
+            const enContent = document.getElementById('content-en');
+            const btnVi = document.getElementById('btn-vi');
+            const btnJa = document.getElementById('btn-ja');
+            const btnEn = document.getElementById('btn-en');
+
+            // Reset all
+            viContent.classList.remove('active');
+            jaContent.classList.remove('active');
+            enContent.classList.remove('active');
+            btnVi.style.background = '#e5e7eb';
+            btnVi.style.color = '#1a1a1a';
+            btnJa.style.background = '#e5e7eb';
+            btnJa.style.color = '#1a1a1a';
+            btnEn.style.background = '#e5e7eb';
+            btnEn.style.color = '#1a1a1a';
+
+            // Show selected
+            if (lang === 'vi') {
+                viContent.classList.add('active');
+                btnVi.style.background = '#0b3575';
+                btnVi.style.color = 'white';
+            } else if (lang === 'ja') {
+                jaContent.classList.add('active');
+                btnJa.style.background = '#0b3575';
+                btnJa.style.color = 'white';
+            } else if (lang === 'en') {
+                enContent.classList.add('active');
+                btnEn.style.background = '#0b3575';
+                btnEn.style.color = 'white';
+            }
+        }
+    </script>
+</body>
+</html>

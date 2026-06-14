@@ -26,6 +26,9 @@ const config: ExpoConfig = {
     config: {
       googleMobileAdsAppId: "ca-app-pub-8320439928464026~3478148954",
     },
+    rating: {
+      all: "LOW_MATURE",
+    },
   },
   web: {
     favicon: "./assets/favicon.png",

@@ -13,9 +13,9 @@ const VI = {
   versions: "Áp dụng: Menki 1000+, Menki 1000+ Ôn Thi Xe Máy Nhật, Menki 1000+ 原付免許問題集",
   lastUpdated: "Cập nhật: Tháng 5, 2026",
   intro:
-    "Chào mừng bạn đến với Menki 1000+. Chúng tôi cam kết bảo vệ quyền riêng tư của bạn. Chính sách tuân thủ Apple App Store Review Guidelines (Mục 5.1 - Privacy).",
+    "Chào mừng bạn đến với Menki 1000+. Chúng tôi cam kết bảo vệ quyền riêng tư của bạn. Chính sách tuân thủ Google Play Developer Program Policies.",
   introJa:
-    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはApple App Store Review Guidelinesに準拠しております。",
+    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはGoogle Play Developer Program Policiesに準拠しております。",
   section1Title: "1. THU THẬP THÔNG TIN",
   section1P1:
     "Menki 1000+ là ứng dụng ngoại tuyến (Offline). Chúng tôi KHÔNG thu thập thông tin cá nhân (họ tên, email, số điện thoại, vị trí GPS, IMEI/IDFA).",
@@ -29,10 +29,10 @@ const VI = {
   section3Title: "3. QUẢNG CÁO ADMOB",
   section3P1:
     "Ứng dụng sử dụng Google AdMob để hiển thị quảng cáo. AdMob có thể thu thập: loại thiết bị, OS, dữ liệu sử dụng, vị trí ước tính.",
-  section3P2: "iOS: Settings → Privacy → Tracking | Android: Settings → Google → Ads",
+  section3P2: "Android: Settings → Google → Ads",
   section3P1Ja:
     "当어는Google AdMobを使用して広告を表示しています。AdMobはデバイスの種類、OS、使用データ、推定位置情報などを収集場合があります。",
-  section3P2Ja: "iOS：設定 → プライバシー → トラッキング | Android：設定 → Google → 広告",
+  section3P2Ja: "Android：設定 → Google → 広告",
   section4Title: "4. XÓA DỮ LIỆU",
   section4P1:
     "Dữ liệu nằm hoàn toàn trên thiết bị bạn. Gỡ ứng dụng sẽ xóa 100% dữ liệu. Chúng tôi KHÔNG lưu bản sao trên server.",
@@ -54,9 +54,9 @@ const JA = {
   versions: "対象: Menki 1000+, Menki 1000+ Ôn Thi Xe Máy Nhật, Menki 1000+ 原付免許問題集",
   lastUpdated: "最終更新日：2026年5月",
   intro:
-    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはApple App Store Review Guidelinesに準拠しております。",
+    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはGoogle Play Developer Program Policiesに準拠しております。",
   introJa:
-    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはApple App Store Review Guidelinesに準拠しております。",
+    "Menki 1000+へようこそ。私たちはユーザーのプライバシー保護を最優先に考えております。本プライバシーポリシーはGoogle Play Developer Program Policiesに準拠しております。",
   section1Title: "1. 個人情報の収集",
   section1P1:
     "Menki 1000+はオフラインアプリです。私たちは個人情報（氏名、メールアドレス、電話番号、位置情報、IMEI/IDFA）を一切収集致しません。",
@@ -70,10 +70,10 @@ const JA = {
   section3Title: "3. ADMOB広告",
   section3P1:
     "当어는Google AdMobを使用して広告を表示しています。AdMobはデバイスの種類、OS、使用データ、推定位置情報などを収集場合があります。",
-  section3P2: "iOS：設定 → プライバシー → トラッキング | Android：設定 → Google → 広告",
+  section3P2: "Android：設定 → Google → 広告",
   section3P1Ja:
     "当어는Google AdMobを使用して広告を表示しています。AdMobはデバイスの種類、OS、使用データ、推定位置情報などを収集場合があります。",
-  section3P2Ja: "iOS：設定 → プライバシー → トラッキング | Android：設定 → Google → 広告",
+  section3P2Ja: "Android：設定 → Google → 広告",
   section4Title: "4. データの削除",
   section4P1:
     "データはユーザーのデバイスにのみ保存されます。アプリをアンインストールするとOSが自動Deletesします。サーバーにコピーは残りません。",

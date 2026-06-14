@@ -83,11 +83,11 @@ async function checkAndShow(key: string, threshold: number, callback: () => void
 }
 
 export function showInterstitialChapter(callback: () => void): void {
-  checkAndShow(CHAPTER_BACK_KEY, 20, callback);
+  checkAndShow(CHAPTER_BACK_KEY, 10, callback);
 }
 
 export function showInterstitialExam(callback: () => void): void {
-  checkAndShow(EXAM_BACK_KEY, 20, callback);
+  checkAndShow(EXAM_BACK_KEY, 10, callback);
 }
 
 export function showInterstitialRetry(callback: () => void): void {

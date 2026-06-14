@@ -51,8 +51,8 @@ export function AdModal() {
         <View style={styles.content}>
           <Text style={styles.adLabel}>QUẢNG CÁO</Text>
           <View style={styles.adBox}>
-            <Text style={styles.adText}>Quảng cáo Interstitial (Giả lập)</Text>
-            <Text style={styles.adSub}>Nội dung quảng cáo sẽ hiển thị tại đây</Text>
+            <Text style={styles.adText}>Quảng cáo</Text>
+            <Text style={styles.adSub}>Danh sách quảng cáo</Text>
           </View>
         </View>
       </View>

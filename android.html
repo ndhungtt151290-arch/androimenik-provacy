@@ -139,23 +139,6 @@
             color: #1b5e20;
         }
 
-        .btn {
-            display: inline-block;
-            background: #0b3575;
-            color: #ffffff;
-            padding: 14px 28px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            text-align: center;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background: #1a4f8a;
-        }
-
         .footer {
             text-align: center;
             margin-top: 50px;
@@ -183,18 +166,6 @@
             text-decoration: underline;
         }
 
-        .ja-block {
-            background: #f0f9ff;
-            border-left: 3px solid #3b82f6;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .ja-block p, .ja-block li {
-            color: #1e40af;
-        }
-
         .en-block {
             background: #f0fdf4;
             border-left: 3px solid #22c55e;
@@ -205,12 +176,6 @@
 
         .en-block p, .en-block li {
             color: #166534;
-        }
-
-        .divider {
-            height: 1px;
-            background: #e5e7eb;
-            margin: 30px 0;
         }
 
         .lang-toggle {
@@ -249,18 +214,6 @@
             display: block;
         }
 
-        .switch-link {
-            text-align: center;
-            margin: 30px 0;
-            padding: 15px;
-            background: #f3f4f6;
-            border-radius: 10px;
-        }
-
-        .switch-link a {
-            font-weight: 600;
-        }
-
         @media (max-width: 600px) {
             body {
                 padding: 15px;
@@ -288,21 +241,17 @@
             </div>
         </div>
 
-        <div class="switch-link">
-            <a href="index.html">← iOS Privacy Policy</a>
-        </div>
-
         <div class="lang-toggle">
             <button id="btn-vi" class="active" onclick="toggleLang('vi')">Tiếng Việt</button>
             <button id="btn-ja" onclick="toggleLang('ja')">日本語</button>
             <button id="btn-en" onclick="toggleLang('en')">English</button>
         </div>
 
-        <!-- Vietnamese Content -->
+        <!-- ==================== VIETNAMESE ==================== -->
         <div id="content-vi" class="content-section active">
             <div class="lang-block">
                 <span class="lang-label">TIẾNG VIỆT</span>
-                
+
                 <div class="intro">
                     Chào mừng bạn đến với Menki 1000+. Chúng tôi cam kết bảo vệ tuyệt đối quyền riêng tư và dữ liệu cá nhân của bạn. Chính sách này tuân thủ nghiêm ngặt <strong>Google Play Developer Program Policies</strong>.
                 </div>
@@ -324,8 +273,8 @@
                     <div class="permission-box">
                         <h3>Quyền ứng dụng yêu cầu:</h3>
                         <ul>
-                            <li><strong>INTERNET</strong> - Cần thiết để hiển thị quảng cáo AdMob</li>
-                            <li><strong>ACCESS_NETWORK_STATE</strong> - Kiểm tra kết nối mạng</li>
+                            <li><strong>INTERNET</strong> — Cần thiết để hiển thị quảng cáo AdMob</li>
+                            <li><strong>ACCESS_NETWORK_STATE</strong> — Kiểm tra kết nối mạng</li>
                         </ul>
                         <p style="margin-top: 10px; font-size: 13px; color: #666;">Không yêu cầu quyền camera, microphone, vị trí chính xác, hay bất kỳ quyền nhạy cảm nào khác.</p>
                     </div>
@@ -344,9 +293,9 @@
                 </div>
 
                 <div class="section">
-                    <h2>4. DỊCH VỤ QUẢNG CÁO - GOOGLE ADMOB</h2>
-                    <p>Menki 1000+ sử dụng <strong>Google AdMob</strong> để hiển thị quảng cáo và duy trì miễn phí ứng dụng.</p>
-                    
+                    <h2>4. DỊCH VỤ QUẢNG CÁO — GOOGLE ADMOB</h2>
+                    <p>Menki 1000+ sử dụng <strong>Google AdMob</strong> để hiển thị quảng cáo và duy trì miễn phí ứng dụng. Hiện tại ứng dụng sử dụng <strong>quảng cáo không cá nhân hóa (non-personalized ads)</strong> — không theo dõi hành vi người dùng.</p>
+
                     <div class="highlight">
                         <div class="highlight-title">Google AdMob có thể thu thập:</div>
                         <ul>
@@ -377,10 +326,10 @@
                     <h2>6. BẢO VỆ TRẺ EM</h2>
                     <p>Ứng dụng tuân thủ:</p>
                     <ul>
-                        <li><strong>COPPA</strong> (Children's Online Privacy Protection Act - Hoa Kỳ)</li>
-                        <li><strong>GDPR-K</strong> (GDPR for Children - Châu Âu, 13-15 tuổi)</li>
+                        <li><strong>COPPA</strong> (Children's Online Privacy Protection Act — Hoa Kỳ)</li>
+                        <li><strong>GDPR-K</strong> (GDPR for Children — Châu Âu)</li>
                     </ul>
-                    <p>An toàn tuyệt đối cho mọi lứa tuổi, bao gồm trẻ em dưới 13 tuổi.</p>
+                    <p>Menki 1000+ <strong>không hướng đến đối tượng trẻ em.</strong> Người dùng mục tiêu là người từ <strong>16 tuổi trở lên</strong> — độ tuổi đủ điều kiện thi bằng lái xe máy tại Nhật Bản.</p>
                 </div>
 
                 <div class="section">
@@ -400,7 +349,6 @@
                     <p>Chính sách có thể được cập nhật. Mọi thay đổi có hiệu lực khi đăng tải trên trang này.</p>
                     <p><strong>Liên hệ hỗ trợ:</strong></p>
                     <ul>
-                        <li>Zalo: <a href="https://zalo.me/07091033238">https://zalo.me/07091033238</a></li>
                         <li>Email: <a href="mailto:ndhungtt151290@gmail.com">ndhungtt151290@gmail.com</a></li>
                         <li>Tính năng "Liên hệ" trong ứng dụng</li>
                     </ul>
@@ -408,11 +356,11 @@
             </div>
         </div>
 
-        <!-- Japanese Content -->
+        <!-- ==================== JAPANESE ==================== -->
         <div id="content-ja" class="content-section">
             <div class="lang-block">
                 <span class="lang-label">日本語</span>
-                
+
                 <div class="intro">
                     Menki 1000+へようこそ。私たちはユーザーのプライバシーおよび個人情報の保護を最優先に考えております。本プライバシーポリシーは、<strong>Google Play Developer Program Policies</strong>に厳格に準拠しております。
                 </div>
@@ -434,8 +382,8 @@
                     <div class="permission-box">
                         <h3>アプリが要求する権限：</h3>
                         <ul>
-                            <li><strong>INTERNET</strong> - AdMob広告を表示するために必要</li>
-                            <li><strong>ACCESS_NETWORK_STATE</strong> - ネットワーク接続を確認</li>
+                            <li><strong>INTERNET</strong> — AdMob広告を表示するために必要</li>
+                            <li><strong>ACCESS_NETWORK_STATE</strong> — ネットワーク接続を確認</li>
                         </ul>
                         <p style="margin-top: 10px; font-size: 13px; color: #666;">カメラ、マイク、精緻な位置情報、その他の敏感な権限は要求致しません。</p>
                     </div>
@@ -443,7 +391,7 @@
 
                 <div class="section">
                     <h2>3. ローカルデータの保存について</h2>
-                    <p>学習データはすべてデバイスの AsyncStorageにローカル保存 されます：</p>
+                    <p>学習データはすべてデバイスのAsyncStorageにローカル保存されます：</p>
                     <ul>
                         <li>模擬試験の履歴</li>
                         <li>章ごとの学習進捗</li>
@@ -454,9 +402,9 @@
                 </div>
 
                 <div class="section">
-                    <h2>4. 広告サービス - GOOGLE ADMOB</h2>
-                    <p>Menki 1000+は<strong>Google AdMob</strong> を使用して広告を表示し、アプリの無料維持しております。</p>
-                    
+                    <h2>4. 広告サービス — GOOGLE ADMOB</h2>
+                    <p>Menki 1000+は<strong>Google AdMob</strong>を使用して広告を表示し、アプリの無料維持をしております。現在、アプリは<strong>非パーソナライズド広告（non-personalized ads）</strong>を使用しており、ユーザーの行動を追跡しません。</p>
+
                     <div class="highlight">
                         <div class="highlight-title">Google AdMobが収集するデータ：</div>
                         <ul>
@@ -469,7 +417,7 @@
 
                     <p><strong>広告の管理：</strong></p>
                     <p>Android：<strong>設定 → Google → 広告 → 「パーソナライズド広告をオフ」のオン/オフ</strong></p>
-                    <p><a href="https://policies.google.com/technologies/partner-pubs" target="_blank">Googleプライバシーサービスを見る</a></p>
+                    <p><a href="https://policies.google.com/technologies/partner-pubs" target="_blank">Googleプライバシーポリシーを見る</a></p>
                 </div>
 
                 <div class="section">
@@ -487,10 +435,10 @@
                     <h2>6. 子ども向けのプライバシー保護</h2>
                     <p>当アプリは以下の法律を遵守しております：</p>
                     <ul>
-                        <li><strong>COPPA</strong>（Children's Online Privacy Protection Act - 米国）</li>
-                        <li><strong>GDPR-K</strong>（EU向けGDPR子供向け条款 - 13-15歳）</li>
+                        <li><strong>COPPA</strong>（Children's Online Privacy Protection Act — 米国）</li>
+                        <li><strong>GDPR-K</strong>（EU向けGDPR子供向け条款）</li>
                     </ul>
-                    <p>13歳未満のお子様を含むすべての年齢層のユーザーに安全です。</p>
+                    <p>Menki 1000+は<strong>子どもを対象としておりません。</strong>対象ユーザーは原付免許の受験資格を持つ<strong>16歳以上</strong>の方です。</p>
                 </div>
 
                 <div class="section">
@@ -502,7 +450,7 @@
                 <div class="section">
                     <h2>8. Cookieについて</h2>
                     <p>Menki 1000+はCookieまたは類似のトラッキングテクノロジーを<strong>一切使用しません</strong>。</p>
-                    <p>GitHub Pagesウェブサイトでは基本的なCookieを使用場合があります。</p>
+                    <p>GitHub Pagesウェブサイトでは基本的なCookieを使用する場合があります。</p>
                 </div>
 
                 <div class="section">
@@ -510,19 +458,18 @@
                     <p>私たちは本プライバシーポリシーを随時更新することがあります。変更はページに最新版が公開された時点で有効となります。</p>
                     <p><strong>お問い合わせ：</strong></p>
                     <ul>
-                        <li>Zalo： <a href="https://zalo.me/07091033238">https://zalo.me/07091033238</a></li>
                         <li>Email: <a href="mailto:ndhungtt151290@gmail.com">ndhungtt151290@gmail.com</a></li>
-                        <li>アプリ内のお問い合せ機能</li 
+                        <li>アプリ内のお問い合わせ機能</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- English Content -->
+        <!-- ==================== ENGLISH ==================== -->
         <div id="content-en" class="content-section">
             <div class="lang-block">
                 <span class="lang-label">ENGLISH</span>
-                
+
                 <div class="en-block">
                     <p>Welcome to Menki 1000+. We are committed to absolutely protecting your privacy and personal data. This policy strictly complies with the <strong>Google Play Developer Program Policies</strong>.</p>
                 </div>
@@ -544,8 +491,8 @@
                     <div class="permission-box">
                         <h3>Required app permissions:</h3>
                         <ul>
-                            <li><strong>INTERNET</strong> - Required to display AdMob ads</li>
-                            <li><strong>ACCESS_NETWORK_STATE</strong> - Check network connectivity</li>
+                            <li><strong>INTERNET</strong> — Required to display AdMob ads</li>
+                            <li><strong>ACCESS_NETWORK_STATE</strong> — Check network connectivity</li>
                         </ul>
                         <p style="margin-top: 10px; font-size: 13px; color: #666;">We do not request camera, microphone, precise location, or any other sensitive permissions.</p>
                     </div>
@@ -564,9 +511,9 @@
                 </div>
 
                 <div class="section">
-                    <h2>4. ADVERTISING SERVICE - GOOGLE ADMOB</h2>
-                    <p>Menki 1000+ uses <strong>Google AdMob</strong> to display ads and maintain the free application.</p>
-                    
+                    <h2>4. ADVERTISING SERVICE — GOOGLE ADMOB</h2>
+                    <p>Menki 1000+ uses <strong>Google AdMob</strong> to display ads and maintain the free application. The app currently uses <strong>non-personalized ads</strong> — no user behavior tracking is performed.</p>
+
                     <div class="highlight">
                         <div class="highlight-title">Google AdMob may collect:</div>
                         <ul>
@@ -597,10 +544,10 @@
                     <h2>6. CHILDREN'S PRIVACY PROTECTION</h2>
                     <p>The application complies with:</p>
                     <ul>
-                        <li><strong>COPPA</strong> (Children's Online Privacy Protection Act - United States)</li>
-                        <li><strong>GDPR-K</strong> (GDPR for Children - Europe, ages 13-15)</li>
+                        <li><strong>COPPA</strong> (Children's Online Privacy Protection Act — United States)</li>
+                        <li><strong>GDPR-K</strong> (GDPR for Children — Europe)</li>
                     </ul>
-                    <p>Absolutely safe for all ages, including children under 13 years old.</p>
+                    <p>Menki 1000+ is <strong>not directed at children.</strong> The target audience is users <strong>aged 16 and above</strong> — the minimum age to obtain a moped license in Japan.</p>
                 </div>
 
                 <div class="section">
@@ -620,16 +567,11 @@
                     <p>This policy may be updated. Any changes take effect when posted on this page.</p>
                     <p><strong>Contact support:</strong></p>
                     <ul>
-                        <li>Zalo: <a href="https://zalo.me/07091033238">https://zalo.me/07091033238</a></li>
                         <li>Email: <a href="mailto:ndhungtt151290@gmail.com">ndhungtt151290@gmail.com</a></li>
                         <li>"Contact" feature within the application</li>
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <div class="switch-link">
-            <a href="index.html">← iOS Privacy Policy</a>
         </div>
 
         <div class="footer">
@@ -646,7 +588,6 @@
             const btnJa = document.getElementById('btn-ja');
             const btnEn = document.getElementById('btn-en');
 
-            // Reset all
             viContent.classList.remove('active');
             jaContent.classList.remove('active');
             enContent.classList.remove('active');
@@ -657,7 +598,6 @@
             btnEn.style.background = '#e5e7eb';
             btnEn.style.color = '#1a1a1a';
 
-            // Show selected
             if (lang === 'vi') {
                 viContent.classList.add('active');
                 btnVi.style.background = '#0b3575';
